@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <rotate
+            android:fromDegrees="0"
+            android:toDegrees="45"
+            android:pivotX="80%"
+            android:pivotY="50%" >
+            <shape>
+                <gradient android:startColor="@color/bg_product_activity"
+                    android:endColor="@color/white"/>
+            </shape>
+        </rotate>
+    </item>
+
+</layer-list>

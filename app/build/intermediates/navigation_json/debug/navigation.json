@@ -1,0 +1,17 @@
+[
+  {
+    "name": "add_navigation",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "nav_graph",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "nav_seller_graph",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  }
+]
