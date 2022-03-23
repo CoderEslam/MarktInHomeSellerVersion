@@ -48,7 +48,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatViewHolder> {
     public void onBindViewHolder(@NonNull ChatViewHolder holder, int position) {
         holder.textMessage.setText(chatArrayList.get(position).getMessage());
         if (chatArrayList.get(position).getDate()!=0){
-            @SuppressLint("SimpleDateFormat") DateFormat sdf = new SimpleDateFormat("hh:mm:ss");
+            @SuppressLint("SimpleDateFormat") DateFormat sdf = new SimpleDateFormat("EEE, d MMM yyyy HH:mm:ss aaa");
             holder.textTime.setText(sdf.format(chatArrayList.get(position).getDate()));
         }else {
             holder.textTime.setVisibility(View.GONE);

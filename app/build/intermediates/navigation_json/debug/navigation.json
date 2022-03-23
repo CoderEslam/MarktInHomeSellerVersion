@@ -5,6 +5,11 @@
     "deepLinks": []
   },
   {
+    "name": "chat_nav",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
     "name": "nav_graph",
     "navigationXmlIds": [],
     "deepLinks": []

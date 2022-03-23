@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_nav"
+    app:startDestination="@id/allUserFragment">
+
+
+    <fragment
+        android:id="@+id/allUserFragment"
+        android:name="com.doubleclick.marktinhome.ui.MainScreen.Chat.AllUserFragment"
+        android:label="fragment_all_user"
+        tools:layout="@layout/fragment_all_user">
+
+        <action
+            android:id="@+id/action_allUserFragment_to_callUsFragment"
+            app:destination="@id/callUsFragment"
+            app:enterAnim="@anim/lefttoright"
+            app:exitAnim="@anim/righttoleft"
+            app:popEnterAnim="@anim/lefttoright"
+            app:popExitAnim="@anim/righttoleft" />
+    </fragment>
+    <fragment
+        android:id="@+id/callUsFragment"
+        android:name="com.doubleclick.marktinhome.ui.MainScreen.Chat.callUsFragment"
+        android:label="fragment_call_us"
+        tools:layout="@layout/fragment_call_us">
+        <argument
+            android:name="user"
+            app:argType="com.doubleclick.marktinhome.Model.User" />
+        <action
+            android:id="@+id/action_callUsFragment_to_allUserFragment"
+            app:destination="@id/allUserFragment"
+            app:enterAnim="@anim/lefttoright"
+            app:exitAnim="@anim/righttoleft"
+            app:popEnterAnim="@anim/lefttoright"
+            app:popExitAnim="@anim/righttoleft" />
+    </fragment>
+</navigation>

@@ -4,11 +4,13 @@ package com.doubleclick.marktinhome.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.divyanshu.colorseekbar.ColorSeekBar;
 import com.doubleclick.marktinhome.R;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
@@ -21,14 +23,23 @@ public final class AddToggalBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ColorSeekBar colorSeekBar;
+
+  @NonNull
+  public final EditText descriptionOfButton;
+
+  @NonNull
   public final TextInputEditText editname;
 
   @NonNull
   public final TextInputLayout textInputLayout3;
 
-  private AddToggalBinding(@NonNull ConstraintLayout rootView, @NonNull TextInputEditText editname,
+  private AddToggalBinding(@NonNull ConstraintLayout rootView, @NonNull ColorSeekBar colorSeekBar,
+      @NonNull EditText descriptionOfButton, @NonNull TextInputEditText editname,
       @NonNull TextInputLayout textInputLayout3) {
     this.rootView = rootView;
+    this.colorSeekBar = colorSeekBar;
+    this.descriptionOfButton = descriptionOfButton;
     this.editname = editname;
     this.textInputLayout3 = textInputLayout3;
   }
@@ -60,6 +71,18 @@ public final class AddToggalBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.color_seek_bar;
+      ColorSeekBar colorSeekBar = ViewBindings.findChildViewById(rootView, id);
+      if (colorSeekBar == null) {
+        break missingId;
+      }
+
+      id = R.id.descriptionOfButton;
+      EditText descriptionOfButton = ViewBindings.findChildViewById(rootView, id);
+      if (descriptionOfButton == null) {
+        break missingId;
+      }
+
       id = R.id.editname;
       TextInputEditText editname = ViewBindings.findChildViewById(rootView, id);
       if (editname == null) {
@@ -72,7 +95,8 @@ public final class AddToggalBinding implements ViewBinding {
         break missingId;
       }
 
-      return new AddToggalBinding((ConstraintLayout) rootView, editname, textInputLayout3);
+      return new AddToggalBinding((ConstraintLayout) rootView, colorSeekBar, descriptionOfButton,
+          editname, textInputLayout3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

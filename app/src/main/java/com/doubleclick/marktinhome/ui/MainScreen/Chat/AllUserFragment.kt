@@ -53,11 +53,7 @@ class AllUserFragment : BaseFragment(), UserInter {
     override fun AllUser(user: ArrayList<User>?) {}
 
     override fun OnUserLisitner(user: User) {
-        findNavController().navigate(
-            AllUserFragmentDirections.actionAllUserFragmentToConnctUsFragment(
-                user
-            )
-        )
+        findNavController().navigate(AllUserFragmentDirections.actionAllUserFragmentToCallUsFragment(user))
     }
 
     private fun makeChatList() {

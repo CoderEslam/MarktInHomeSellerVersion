@@ -10,7 +10,7 @@ public class callUsFragmentDirections {
   }
 
   @NonNull
-  public static NavDirections actionConnctUsFragmentToAllUserFragment() {
-    return new ActionOnlyNavDirections(R.id.action_connctUsFragment_to_allUserFragment);
+  public static NavDirections actionCallUsFragmentToAllUserFragment() {
+    return new ActionOnlyNavDirections(R.id.action_callUsFragment_to_allUserFragment);
   }
 }

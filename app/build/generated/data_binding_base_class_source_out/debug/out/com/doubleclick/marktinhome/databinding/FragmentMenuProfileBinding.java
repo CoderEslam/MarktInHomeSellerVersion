@@ -64,6 +64,9 @@ public final class FragmentMenuProfileBinding implements ViewBinding {
   public final ImageView fab;
 
   @NonNull
+  public final ImageView imageView12;
+
+  @NonNull
   public final ImageView imageView3;
 
   @NonNull
@@ -109,6 +112,9 @@ public final class FragmentMenuProfileBinding implements ViewBinding {
   public final ConstraintLayout recentOrder;
 
   @NonNull
+  public final ConstraintLayout statistices;
+
+  @NonNull
   public final TextView textView3;
 
   @NonNull
@@ -121,15 +127,15 @@ public final class FragmentMenuProfileBinding implements ViewBinding {
       @NonNull ConstraintLayout constraintLayout4, @NonNull ConstraintLayout constraintLayout5,
       @NonNull ConstraintLayout constraintLayout6, @NonNull ImageView editAddress,
       @NonNull ImageView editPhone, @NonNull ImageView editname, @NonNull TextView email,
-      @NonNull ImageView fab, @NonNull ImageView imageView3, @NonNull ImageView imageView30,
-      @NonNull ImageView imageView32, @NonNull ImageView imageView51,
-      @NonNull ImageView imageView55, @NonNull ImageView imageView555,
-      @NonNull ImageView imageView556, @NonNull ImageView imageView56,
-      @NonNull ImageView imageView564, @NonNull ImageView imageView566,
-      @NonNull ConstraintLayout joinUs, @NonNull ConstraintLayout logout,
-      @NonNull CircleImageView person, @NonNull TextView phone,
-      @NonNull ConstraintLayout recentOrder, @NonNull TextView textView3,
-      @NonNull TextView username) {
+      @NonNull ImageView fab, @NonNull ImageView imageView12, @NonNull ImageView imageView3,
+      @NonNull ImageView imageView30, @NonNull ImageView imageView32,
+      @NonNull ImageView imageView51, @NonNull ImageView imageView55,
+      @NonNull ImageView imageView555, @NonNull ImageView imageView556,
+      @NonNull ImageView imageView56, @NonNull ImageView imageView564,
+      @NonNull ImageView imageView566, @NonNull ConstraintLayout joinUs,
+      @NonNull ConstraintLayout logout, @NonNull CircleImageView person, @NonNull TextView phone,
+      @NonNull ConstraintLayout recentOrder, @NonNull ConstraintLayout statistices,
+      @NonNull TextView textView3, @NonNull TextView username) {
     this.rootView = rootView;
     this.AddAdv = AddAdv;
     this.AddProduct = AddProduct;
@@ -145,6 +151,7 @@ public final class FragmentMenuProfileBinding implements ViewBinding {
     this.editname = editname;
     this.email = email;
     this.fab = fab;
+    this.imageView12 = imageView12;
     this.imageView3 = imageView3;
     this.imageView30 = imageView30;
     this.imageView32 = imageView32;
@@ -160,6 +167,7 @@ public final class FragmentMenuProfileBinding implements ViewBinding {
     this.person = person;
     this.phone = phone;
     this.recentOrder = recentOrder;
+    this.statistices = statistices;
     this.textView3 = textView3;
     this.username = username;
   }
@@ -275,6 +283,12 @@ public final class FragmentMenuProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageView12;
+      ImageView imageView12 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView12 == null) {
+        break missingId;
+      }
+
       id = R.id.imageView3;
       ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
       if (imageView3 == null) {
@@ -365,6 +379,12 @@ public final class FragmentMenuProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.statistices;
+      ConstraintLayout statistices = ViewBindings.findChildViewById(rootView, id);
+      if (statistices == null) {
+        break missingId;
+      }
+
       id = R.id.textView3;
       TextView textView3 = ViewBindings.findChildViewById(rootView, id);
       if (textView3 == null) {
@@ -379,10 +399,10 @@ public final class FragmentMenuProfileBinding implements ViewBinding {
 
       return new FragmentMenuProfileBinding((ConstraintLayout) rootView, AddAdv, AddProduct,
           AddTradmark, address, chat, constraintLayout3, constraintLayout4, constraintLayout5,
-          constraintLayout6, editAddress, editPhone, editname, email, fab, imageView3, imageView30,
-          imageView32, imageView51, imageView55, imageView555, imageView556, imageView56,
-          imageView564, imageView566, joinUs, logout, person, phone, recentOrder, textView3,
-          username);
+          constraintLayout6, editAddress, editPhone, editname, email, fab, imageView12, imageView3,
+          imageView30, imageView32, imageView51, imageView55, imageView555, imageView556,
+          imageView56, imageView564, imageView566, joinUs, logout, person, phone, recentOrder,
+          statistices, textView3, username);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

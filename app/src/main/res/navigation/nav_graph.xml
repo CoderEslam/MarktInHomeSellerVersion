@@ -15,21 +15,21 @@
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
         <action
             android:id="@+id/action_menu_Cart_to_addressFragment"
             app:destination="@id/addressFragment"
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
         <action
             android:id="@+id/action_menu_Cart_to_orderSelllerFragment"
             app:destination="@id/orderSelllerFragment"
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
     </fragment>
     <fragment
         android:id="@+id/menu_store"
@@ -42,7 +42,7 @@
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
     </fragment>
     <fragment
         android:id="@+id/menu_profile"
@@ -55,21 +55,21 @@
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
         <action
             android:id="@+id/action_menu_profile_to_joinUsFragment"
             app:destination="@id/joinUsFragment"
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
         <action
             android:id="@+id/action_menu_profile_to_allUserFragment"
             app:destination="@id/allUserFragment"
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -81,35 +81,35 @@
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
         <action
             android:id="@+id/action_homeFragment_to_productFragment"
             app:destination="@id/productFragment"
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
         <action
             android:id="@+id/action_homeFragment_to_filterParentFragment"
             app:destination="@id/filterParentFragment"
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
         <action
             android:id="@+id/action_homeFragment_to_trademarkFragment"
             app:destination="@id/trademarkFragment"
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
         <action
             android:id="@+id/action_homeFragment_to_ViewMoreFragment"
             app:destination="@id/ViewMoreFragment"
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
     </fragment>
     <fragment
         android:id="@+id/productFragment"
@@ -121,7 +121,7 @@
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
         <argument
             android:name="Product"
             app:argType="com.doubleclick.marktinhome.Model.Product"
@@ -132,7 +132,7 @@
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
 
     </fragment>
     <fragment
@@ -150,7 +150,7 @@
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
     </fragment>
     <fragment
         android:id="@+id/trademarkFragment"
@@ -162,7 +162,7 @@
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
         <argument
             android:name="trademark"
             app:argType="com.doubleclick.marktinhome.Model.Trademark"
@@ -173,7 +173,7 @@
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
     </fragment>
     <fragment
         android:id="@+id/addressFragment"
@@ -185,7 +185,7 @@
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
     </fragment>
     <fragment
         android:id="@+id/orderSelllerFragment"
@@ -203,29 +203,14 @@
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
+            app:popExitAnim="@anim/righttoleft" />
     </fragment>
     <fragment
         android:id="@+id/joinUsFragment"
         android:name="com.doubleclick.marktinhome.ui.MainScreen.Chat.JoinUsFragment"
         android:label="fragment_join_us"
         tools:layout="@layout/fragment_join_us" />
-    <fragment
-        android:id="@+id/connctUsFragment"
-        android:name="com.doubleclick.marktinhome.ui.MainScreen.Chat.callUsFragment"
-        android:label="fragment_connct_us"
-        tools:layout="@layout/fragment_call_us" >
-        <argument
-            android:name="user"
-            app:argType="com.doubleclick.marktinhome.Model.User" />
-        <action
-            android:id="@+id/action_connctUsFragment_to_allUserFragment"
-            app:destination="@id/allUserFragment"
-            app:enterAnim="@anim/lefttoright"
-            app:exitAnim="@anim/righttoleft"
-            app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
-    </fragment>
+
     <fragment
         android:id="@+id/commentsFragment"
         android:name="com.doubleclick.marktinhome.ui.MainScreen.Comments.CommentsFragment"
@@ -240,7 +225,7 @@
         android:id="@+id/ViewMoreFragment"
         android:name="com.doubleclick.marktinhome.ui.MainScreen.Frgments.ViewMoreFragment"
         android:label="fragment_recent_research"
-        tools:layout="@layout/fragment_viewmore" >
+        tools:layout="@layout/fragment_viewmore">
         <argument
             android:name="productArray"
             app:argType="com.doubleclick.marktinhome.Model.Product[]" />
@@ -250,19 +235,7 @@
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft"/>
-    </fragment>
-    <fragment
-        android:id="@+id/allUserFragment"
-        android:name="com.doubleclick.marktinhome.ui.MainScreen.Chat.AllUserFragment"
-        android:label="fragment_all_user"
-        tools:layout="@layout/fragment_all_user" >
-        <action
-            android:id="@+id/action_allUserFragment_to_connctUsFragment"
-            app:destination="@id/connctUsFragment"
-            app:enterAnim="@anim/lefttoright"
-            app:exitAnim="@anim/righttoleft"
-            app:popEnterAnim="@anim/lefttoright"
             app:popExitAnim="@anim/righttoleft" />
     </fragment>
+
 </navigation>

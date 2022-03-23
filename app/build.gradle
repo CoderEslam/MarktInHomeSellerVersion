@@ -5,7 +5,8 @@ plugins {
     id 'kotlin-kapt'
     id 'kotlin-android-extensions'
 //    id "androidx.navigation.safeargs.kotlin" غلط
-    id("androidx.navigation.safeargs") // دي صح
+    id("androidx.navigation.safeargs")
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'// دي صح
     // for Java
 //    id 'androidx.navigation.safeargs'
 }
@@ -86,6 +87,9 @@ dependencies {
     implementation 'com.github.lecho:hellocharts-library:1.5.8@aar'
 
 
+    implementation 'com.divyanshu.colorseekbar:colorseekbar:1.0.2'
+
+    implementation 'com.github.anastr:speedviewlib:1.6.0'
 
 
 }

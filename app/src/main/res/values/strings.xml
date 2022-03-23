@@ -64,11 +64,17 @@
     <string name="custommer_address">custommer address :</string>
     <string name="another_customer_phone">Another customer Phone :</string>
     <string name="customer_location">Customer Location</string>
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAtpMpGCaIxWOPMOH9TNWQ93_zYmwkdc44</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCImMMkk7IwrWpy3zdbd8Bc1_2DFJgmmTQ</string>
     <string name="type_here">type here ......</string>
     <string name="chat_us">Chat Us</string>
     <string name="connect_us">connect us</string>
     <string name="comment">comment</string>
     <string name="put_you_rate">put you rate ....</string>
     <string name="comments">Comments</string>
+    <string name="total_sales">Total Sales</string>
+    <string name="_1000">1000$</string>
+    <string name="statistices">Statistices</string>
+    <string name="orders">Orders</string>
+    <string name="name">name</string>
+    <string name="best_product_sales">best product sales</string>
 </resources>

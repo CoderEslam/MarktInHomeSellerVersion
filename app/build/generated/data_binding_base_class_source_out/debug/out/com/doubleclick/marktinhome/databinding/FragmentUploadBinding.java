@@ -6,9 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
+import android.widget.TableLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatSpinner;
@@ -29,6 +31,12 @@ public final class FragmentUploadBinding implements ViewBinding {
   public final Button Upload;
 
   @NonNull
+  public final TableLayout addTableLayout;
+
+  @NonNull
+  public final ImageView addTableRow;
+
+  @NonNull
   public final LinearLayout addToggleButton;
 
   @NonNull
@@ -36,6 +44,9 @@ public final class FragmentUploadBinding implements ViewBinding {
 
   @NonNull
   public final EditText description;
+
+  @NonNull
+  public final HorizontalScrollView horizontalScrollView;
 
   @NonNull
   public final EditText keywords;
@@ -62,17 +73,21 @@ public final class FragmentUploadBinding implements ViewBinding {
   public final AppCompatSpinner trademark;
 
   private FragmentUploadBinding(@NonNull ConstraintLayout rootView, @NonNull Button Upload,
+      @NonNull TableLayout addTableLayout, @NonNull ImageView addTableRow,
       @NonNull LinearLayout addToggleButton, @NonNull ImageView addView,
-      @NonNull EditText description, @NonNull EditText keywords,
-      @NonNull RecyclerView productImages, @NonNull EditText productLastPrice,
-      @NonNull EditText productName, @NonNull EditText productPrice,
-      @NonNull RatingBar ratingSeller, @NonNull Button selectImages,
+      @NonNull EditText description, @NonNull HorizontalScrollView horizontalScrollView,
+      @NonNull EditText keywords, @NonNull RecyclerView productImages,
+      @NonNull EditText productLastPrice, @NonNull EditText productName,
+      @NonNull EditText productPrice, @NonNull RatingBar ratingSeller, @NonNull Button selectImages,
       @NonNull AppCompatSpinner trademark) {
     this.rootView = rootView;
     this.Upload = Upload;
+    this.addTableLayout = addTableLayout;
+    this.addTableRow = addTableRow;
     this.addToggleButton = addToggleButton;
     this.addView = addView;
     this.description = description;
+    this.horizontalScrollView = horizontalScrollView;
     this.keywords = keywords;
     this.productImages = productImages;
     this.productLastPrice = productLastPrice;
@@ -116,6 +131,18 @@ public final class FragmentUploadBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.addTableLayout;
+      TableLayout addTableLayout = ViewBindings.findChildViewById(rootView, id);
+      if (addTableLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.addTableRow;
+      ImageView addTableRow = ViewBindings.findChildViewById(rootView, id);
+      if (addTableRow == null) {
+        break missingId;
+      }
+
       id = R.id.addToggleButton;
       LinearLayout addToggleButton = ViewBindings.findChildViewById(rootView, id);
       if (addToggleButton == null) {
@@ -131,6 +158,12 @@ public final class FragmentUploadBinding implements ViewBinding {
       id = R.id.description;
       EditText description = ViewBindings.findChildViewById(rootView, id);
       if (description == null) {
+        break missingId;
+      }
+
+      id = R.id.horizontalScrollView;
+      HorizontalScrollView horizontalScrollView = ViewBindings.findChildViewById(rootView, id);
+      if (horizontalScrollView == null) {
         break missingId;
       }
 
@@ -182,9 +215,10 @@ public final class FragmentUploadBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentUploadBinding((ConstraintLayout) rootView, Upload, addToggleButton,
-          addView, description, keywords, productImages, productLastPrice, productName,
-          productPrice, ratingSeller, selectImages, trademark);
+      return new FragmentUploadBinding((ConstraintLayout) rootView, Upload, addTableLayout,
+          addTableRow, addToggleButton, addView, description, horizontalScrollView, keywords,
+          productImages, productLastPrice, productName, productPrice, ratingSeller, selectImages,
+          trademark);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

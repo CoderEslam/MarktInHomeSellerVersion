@@ -19,16 +19,16 @@ public class AllUserFragmentDirections {
   }
 
   @NonNull
-  public static ActionAllUserFragmentToConnctUsFragment actionAllUserFragmentToConnctUsFragment(
+  public static ActionAllUserFragmentToCallUsFragment actionAllUserFragmentToCallUsFragment(
       @NonNull User user) {
-    return new ActionAllUserFragmentToConnctUsFragment(user);
+    return new ActionAllUserFragmentToCallUsFragment(user);
   }
 
-  public static class ActionAllUserFragmentToConnctUsFragment implements NavDirections {
+  public static class ActionAllUserFragmentToCallUsFragment implements NavDirections {
     private final HashMap arguments = new HashMap();
 
     @SuppressWarnings("unchecked")
-    private ActionAllUserFragmentToConnctUsFragment(@NonNull User user) {
+    private ActionAllUserFragmentToCallUsFragment(@NonNull User user) {
       if (user == null) {
         throw new IllegalArgumentException("Argument \"user\" is marked as non-null but was passed a null value.");
       }
@@ -37,7 +37,7 @@ public class AllUserFragmentDirections {
 
     @NonNull
     @SuppressWarnings("unchecked")
-    public ActionAllUserFragmentToConnctUsFragment setUser(@NonNull User user) {
+    public ActionAllUserFragmentToCallUsFragment setUser(@NonNull User user) {
       if (user == null) {
         throw new IllegalArgumentException("Argument \"user\" is marked as non-null but was passed a null value.");
       }
@@ -65,7 +65,7 @@ public class AllUserFragmentDirections {
 
     @Override
     public int getActionId() {
-      return R.id.action_allUserFragment_to_connctUsFragment;
+      return R.id.action_allUserFragment_to_callUsFragment;
     }
 
     @SuppressWarnings("unchecked")
@@ -82,7 +82,7 @@ public class AllUserFragmentDirections {
       if (object == null || getClass() != object.getClass()) {
           return false;
       }
-      ActionAllUserFragmentToConnctUsFragment that = (ActionAllUserFragmentToConnctUsFragment) object;
+      ActionAllUserFragmentToCallUsFragment that = (ActionAllUserFragmentToCallUsFragment) object;
       if (arguments.containsKey("user") != that.arguments.containsKey("user")) {
         return false;
       }
@@ -105,7 +105,7 @@ public class AllUserFragmentDirections {
 
     @Override
     public String toString() {
-      return "ActionAllUserFragmentToConnctUsFragment(actionId=" + getActionId() + "){"
+      return "ActionAllUserFragmentToCallUsFragment(actionId=" + getActionId() + "){"
           + "user=" + getUser()
           + "}";
     }

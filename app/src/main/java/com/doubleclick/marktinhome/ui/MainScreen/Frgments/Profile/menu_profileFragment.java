@@ -19,12 +19,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.doubleclick.DashBoard.DashBoardActivity;
 import com.doubleclick.ViewModel.UserViewModel;
 import com.doubleclick.marktinhome.BaseFragment;
 import com.doubleclick.marktinhome.MainActivity;
 import com.doubleclick.marktinhome.R;
 import com.doubleclick.marktinhome.ui.Add.AddActivity;
 import com.doubleclick.marktinhome.ui.Advertisement.AdvertisementActivity;
+import com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatActivity;
 import com.doubleclick.marktinhome.ui.Trademark.TrademarkActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
@@ -44,7 +46,7 @@ public class menu_profileFragment extends BaseFragment {
     private ImageView editAddress, editPhone, editname;
     private AlertDialog.Builder builder;
     private ImageView fab;
-    private ConstraintLayout AddProduct, AddAdv, AddTradmark, recentOrder, chat, joinUs;
+    private ConstraintLayout AddProduct, AddAdv, AddTradmark, recentOrder, chat, joinUs, statistices;
     private ConstraintLayout logout;
 
     public menu_profileFragment() {
@@ -84,6 +86,7 @@ public class menu_profileFragment extends BaseFragment {
         AddAdv = view.findViewById(R.id.AddAdv);
         AddTradmark = view.findViewById(R.id.AddTradmark);
         recentOrder = view.findViewById(R.id.recentOrder);
+        statistices = view.findViewById(R.id.statistices);
         chat = view.findViewById(R.id.chat);
 
         userViewModel.getUser().observe(getViewLifecycleOwner(), user -> {
@@ -123,7 +126,14 @@ public class menu_profileFragment extends BaseFragment {
             requireActivity().finish();
         });
         chat.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(menu_profileFragmentDirections.actionMenuProfileToAllUserFragment());
+            Intent intent = new Intent(getContext(), ChatActivity.class);
+            startActivity(intent);
+//            Navigation.findNavController(v).navigate(menu_profileFragmentDirections.actionMenuProfileToAllUserFragment());
+        });
+
+        statistices.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), DashBoardActivity.class);
+            startActivity(intent);
         });
 
         joinUs.setOnClickListener(v -> {

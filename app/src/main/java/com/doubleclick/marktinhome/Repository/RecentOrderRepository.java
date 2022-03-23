@@ -54,7 +54,6 @@ public class RecentOrderRepository extends BaseRepository {
 
             }
         });
-
     }
 
 }
