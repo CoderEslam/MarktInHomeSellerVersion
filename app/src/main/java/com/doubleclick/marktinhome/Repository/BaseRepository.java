@@ -21,7 +21,7 @@ public class BaseRepository {
     public static String myId;
 
     public BaseRepository() {
-        reference = FirebaseDatabase.getInstance().getReference();
+        reference = FirebaseDatabase.getInstance("https://marketinhome-99d25-default-rtdb.firebaseio.com/").getReference();
         mAuth = FirebaseAuth.getInstance();
         if (mAuth.getCurrentUser() != null) {
             myId = mAuth.getCurrentUser().getUid().toString();

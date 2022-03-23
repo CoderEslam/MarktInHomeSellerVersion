@@ -10,7 +10,7 @@ public class RecentOrder {
 
     private String ProductId;
     private double price;
-    private long Quantity;
+    private int Quantity;
     private String productName;
     private String images;
     private String id;
@@ -73,10 +73,6 @@ public class RecentOrder {
         return Quantity;
     }
 
-    public void setQuantity(long quantity) {
-        Quantity = quantity;
-    }
-
 
     public double getTotalPrice() {
         return TotalPrice;
@@ -105,6 +101,7 @@ public class RecentOrder {
     public String getImages() {
         return images;
     }
+
     public String getOnlyImage() {
         List<String> image = Arrays.asList(images.replace("[", "").replace("]", "").replace(" ", "").trim().split(","));
         return image.get(0);
@@ -152,5 +149,31 @@ public class RecentOrder {
 
     public void setToggleItem(String toggleItem) {
         ToggleItem = toggleItem;
+    }
+
+
+    public void setQuantity(int quantity) {
+        Quantity = quantity;
+    }
+
+    @Override
+    public String toString() {
+        return "RecentOrder{" +
+                "ProductId='" + ProductId + '\'' +
+                ", price=" + price +
+                ", Quantity=" + Quantity +
+                ", productName='" + productName + '\'' +
+                ", images='" + images + '\'' +
+                ", id='" + id + '\'' +
+                ", BuyerId='" + BuyerId + '\'' +
+                ", SellerId='" + SellerId + '\'' +
+                ", TotalPrice=" + TotalPrice +
+                ", date=" + date +
+                ", address='" + address + '\'' +
+                ", phone='" + phone + '\'' +
+                ", anotherPhone='" + anotherPhone + '\'' +
+                ", locationUri='" + locationUri + '\'' +
+                ", ToggleItem='" + ToggleItem + '\'' +
+                '}';
     }
 }

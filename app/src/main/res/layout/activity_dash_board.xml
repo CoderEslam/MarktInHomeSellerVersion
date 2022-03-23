@@ -91,6 +91,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/textView17"
                         app:layout_constraintTop_toBottomOf="@+id/textView17"
                         app:sv_backgroundCircleColor="@color/black"
@@ -132,6 +133,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/textView1"
                         app:layout_constraintTop_toBottomOf="@+id/textView1"
                         app:sv_indicator="TriangleIndicator"
@@ -167,6 +169,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <FrameLayout
+                        android:layout_margin="5dp"
                         android:id="@+id/mapContiner"
                         android:name="com.google.android.gms.maps.SupportMapFragment"
                         android:layout_width="match_parent"

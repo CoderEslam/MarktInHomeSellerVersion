@@ -3,12 +3,18 @@ package com.doubleclick.DashBoard;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.doubleclick.ViewModel.RecentOrdersForSellerViewModel;
+import com.doubleclick.marktinhome.Model.CustomerLocation;
+import com.doubleclick.marktinhome.Model.RecentOrder;
 import com.doubleclick.marktinhome.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -21,8 +27,9 @@ import java.util.ArrayList;
 
 public class MapsFragment extends Fragment {
 
-    private ArrayList<LatLng> latLngs = new ArrayList<>();
+    private ArrayList<CustomerLocation> customerLocations = new ArrayList<>();
     private GoogleMap map;
+    private RecentOrdersForSellerViewModel recentOrdersForSellerViewModel;
     private OnMapReadyCallback callback = new OnMapReadyCallback() {
 
         /**
@@ -37,10 +44,9 @@ public class MapsFragment extends Fragment {
         @Override
         public void onMapReady(GoogleMap googleMap) {
             map = googleMap;
-            for (int i = 0; i < latLngs.size(); i++) {
-                map.addMarker(new MarkerOptions().position(latLngs.get(i)).title("Marker"));
-                map.animateCamera(CameraUpdateFactory.zoomTo(15f));
-                map.moveCamera(CameraUpdateFactory.newLatLng(latLngs.get(i)));
+            for (int i = 0; i < customerLocations.size(); i++) {
+                map.addMarker(new MarkerOptions().position(customerLocations.get(i).getLatLng()).title(customerLocations.get(i).getAddress()));
+                map.animateCamera(CameraUpdateFactory.newLatLngZoom(customerLocations.get(i).getLatLng(), 9));
             }
         }
     };
@@ -48,11 +54,16 @@ public class MapsFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        latLngs.add(new LatLng(-34, 151));
-        latLngs.add(new LatLng(-31, 150));
-        latLngs.add(new LatLng(-27, 135));
-        latLngs.add(new LatLng(-32, 148));
-        latLngs.add(new LatLng(-32, 151));
+        recentOrdersForSellerViewModel = new ViewModelProvider(this).get(RecentOrdersForSellerViewModel.class);
+        recentOrdersForSellerViewModel.getRecentOrderLiveData().observe(getViewLifecycleOwner(), new Observer<ArrayList<RecentOrder>>() {
+            @Override
+            public void onChanged(ArrayList<RecentOrder> recentOrderArrayList) {
+                for (RecentOrder recentOrder : recentOrderArrayList) {
+                    String[] latlag = recentOrder.getLocationUri().replace("[", "").replace("]", "").replace(" ", "").split(",");
+                    customerLocations.add(new CustomerLocation(new LatLng(Double.parseDouble(latlag[0].trim()), Double.parseDouble(latlag[1].trim())), recentOrder.getAddress()));
+                }
+            }
+        });
         return inflater.inflate(R.layout.fragment_maps, container, false);
     }
 

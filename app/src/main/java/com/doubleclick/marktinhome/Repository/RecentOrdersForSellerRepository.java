@@ -18,12 +18,16 @@ import java.util.Objects;
 /**
  * Created By Eslam Ghazy on 3/23/2022
  */
-public class RecentOrdersForSellerRepository extends BaseRepository{
+public class RecentOrdersForSellerRepository extends BaseRepository {
 
     private ArrayList<RecentOrder> recentOrderArrayList = new ArrayList<>();
+    private recentOrder recentOrder;
 
-    public void getRecentOrders(){
+    public RecentOrdersForSellerRepository(recentOrder recentOrder) {
+        this.recentOrder = recentOrder;
+    }
 
+    public void getRecentOrders() {
         reference.child(RECENTORDER).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DataSnapshot> task) {
@@ -33,11 +37,11 @@ public class RecentOrdersForSellerRepository extends BaseRepository{
                             DataSnapshot dataSnapshot = task.getResult();
                             for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                                 RecentOrder recentOrder = snapshot.getValue(RecentOrder.class);
-                                if (Objects.requireNonNull(recentOrder).getBuyerId().equals(myId)) {
+//                                if (Objects.requireNonNull(recentOrder).getBuyerId().equals(myId)) {
                                     recentOrderArrayList.add(recentOrder);
-                                }
+//                                }
                             }
-
+                            recentOrder.recentOrder(recentOrderArrayList);
                         }
                     } else {
                         ShowToast("No internet Connection");
@@ -49,7 +53,10 @@ public class RecentOrdersForSellerRepository extends BaseRepository{
 
             }
         });
+    }
 
+    public interface recentOrder {
+        void recentOrder(ArrayList<RecentOrder> recentOrderArrayList);
     }
 
 }
