@@ -3305,10 +3305,6 @@ id info
 id invisible
 id inward
 id italic
-id item1
-id item2
-id item3
-id item4
 id itemImage
 id itemName
 id item_touch_helper_previous_elevation
@@ -4011,8 +4007,6 @@ layout user_chat_layout
 layout v_product_recyclerview
 layout widget_navigation_drawer
 menu add_item
-menu example_menu
-menu example_menu2
 menu menu_bottom
 mipmap ic_launcher
 mipmap ic_launcher_round

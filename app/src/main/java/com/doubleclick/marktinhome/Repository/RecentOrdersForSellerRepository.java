@@ -39,7 +39,12 @@ public class RecentOrdersForSellerRepository extends BaseRepository {
 
     private LineChartData lineData;
 
-    private ColumnChartData columnData;
+    String date = "";
+    int currentYear = 0;
+    int currentMonth = 0;
+    String month = "";
+    ArrayList<Integer> Columns = new ArrayList<>();
+    int C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12;
 
     private ArrayList<RecentOrder> recentOrderArrayList = new ArrayList<>();
     private recentOrder recentOrder;
@@ -58,17 +63,16 @@ public class RecentOrdersForSellerRepository extends BaseRepository {
                             DataSnapshot dataSnapshot = task.getResult();
                             for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                                 RecentOrder recentOrder = snapshot.getValue(RecentOrder.class);
-                                if (Objects.requireNonNull(recentOrder).getBuyerId().equals(myId)) {
+                                if (recentOrder.getSellerId().equals(myId)) {
                                     recentOrderArrayList.add(recentOrder);
-                                    getDate(recentOrder);
                                 }
                             }
                             recentOrder.recentOrder(recentOrderArrayList);
+                            getDate(dataSnapshot);
                         }
                     } else {
                         ShowToast("No internet Connection");
                     }
-
                 } catch (Exception e) {
                     Log.e("RecentOrderException", e.getMessage());
                 }
@@ -81,41 +85,96 @@ public class RecentOrdersForSellerRepository extends BaseRepository {
         void recentOrder(ArrayList<RecentOrder> recentOrderArrayList);
     }
 
-    public static void getDate(RecentOrder recentOrder) {
-        @SuppressLint("SimpleDateFormat")
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, d MM yyyy HH:mm:ss aaa");
-        String d = simpleDateFormat.format(recentOrder.getDate());
-        int currentYear = Calendar.getInstance().get(Calendar.YEAR);
-        int currentMonth = Calendar.getInstance().get(Calendar.MONTH) + 1;
-        String month = String.valueOf(Integer.parseInt(d.substring(8, 10)));
-        System.out.println(d.contains(String.valueOf(currentYear)));
-        System.out.println(month.equals(String.valueOf(currentMonth)));
+    public void getDate(DataSnapshot dataSnapshot) {
+        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+            RecentOrder recentOrder = snapshot.getValue(RecentOrder.class);
+            if (recentOrder.getSellerId().equals(myId)) {
+                @SuppressLint("SimpleDateFormat")
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, d MM yyyy HH:mm:ss aaa");
+                date = simpleDateFormat.format(recentOrder.getDate());
+                currentYear = Calendar.getInstance().get(Calendar.YEAR);
+                currentMonth = Calendar.getInstance().get(Calendar.MONTH) + 1;
+                month = String.valueOf(Integer.parseInt(date.substring(8, 10)));
+                date.contains(String.valueOf(currentYear));
+                month.equals(String.valueOf(currentMonth));
+            }
+        }
+        getColumnData();
     }
 
 
-    private void generateColumnData() {
-
+    private ColumnChartData getColumnData() {
+        ColumnChartData columnData;
+        for (int i = 0; i < 12; i++) {
+            Log.e("values", "values.toString()");
+            /*if (date.contains(String.valueOf(currentYear))) {
+                if (Integer.parseInt(String.valueOf(Integer.parseInt(date.substring(8, 10)))) == 1) {
+                    C1 += 1;
+                    Columns.add(1, C1);
+                }
+                if (Integer.parseInt(String.valueOf(Integer.parseInt(date.substring(8, 10)))) == 2) {
+                    C2 += 1;
+                    Columns.add(2, C2);
+                }
+                if (Integer.parseInt(String.valueOf(Integer.parseInt(date.substring(8, 10)))) == 3) {
+                    C3 += 1;
+                    Columns.add(3, C3);
+                }
+                if (Integer.parseInt(String.valueOf(Integer.parseInt(date.substring(8, 10)))) == 4) {
+                    C4 += 1;
+                    Columns.add(4, C4);
+                }
+                if (Integer.parseInt(String.valueOf(Integer.parseInt(date.substring(8, 10)))) == 5) {
+                    C5 += 1;
+                    Columns.add(5, C5);
+                }
+                if (Integer.parseInt(String.valueOf(Integer.parseInt(date.substring(8, 10)))) == 6) {
+                    C6 += 1;
+                    Columns.add(6, C6);
+                }
+                if (Integer.parseInt(String.valueOf(Integer.parseInt(date.substring(8, 10)))) == 7) {
+                    C7 += 1;
+                    Columns.add(7, C7);
+                }
+                if (Integer.parseInt(String.valueOf(Integer.parseInt(date.substring(8, 10)))) == 8) {
+                    C8 += 1;
+                    Columns.add(8, C8);
+                }
+                if (Integer.parseInt(String.valueOf(Integer.parseInt(date.substring(8, 10)))) == 9) {
+                    C9 += 1;
+                    Columns.add(9, C9);
+                }
+                if (Integer.parseInt(String.valueOf(Integer.parseInt(date.substring(8, 10)))) == 10) {
+                    C10 += 1;
+                    Columns.add(10, C10);
+                }
+                if (Integer.parseInt(String.valueOf(Integer.parseInt(date.substring(8, 10)))) == 11) {
+                    C11 += 1;
+                    Columns.add(11, C11);
+                }
+                if (Integer.parseInt(String.valueOf(Integer.parseInt(date.substring(8, 10)))) == 12) {
+                    C12 += 1;
+                    Columns.add(12, C12);
+                }
+            }*/
+        }
         int numSubcolumns = 1;
         int numColumns = months.length;
-
         List<AxisValue> axisValues = new ArrayList<AxisValue>();
         List<Column> columns = new ArrayList<Column>();
         List<SubcolumnValue> values;
         for (int i = 0; i < numColumns; ++i) {
-
             values = new ArrayList<SubcolumnValue>();
             for (int j = 0; j < numSubcolumns; ++j) {
-                values.add(new SubcolumnValue((float) Math.random() * 50f + 5, ChartUtils.pickColor()));// SubcolumnValue ( value ,color )
+                values.add(new SubcolumnValue((float) 10, ChartUtils.pickColor()));// SubcolumnValue ( value ,color )
             }
-
             axisValues.add(new AxisValue(i).setLabel(months[i]));
-
             columns.add(new Column(values).setHasLabelsOnlyForSelected(true));
         }
-
         columnData = new ColumnChartData(columns);
         columnData.setAxisXBottom(new Axis(axisValues).setHasLines(true));
         columnData.setAxisYLeft(new Axis().setHasLines(true).setMaxLabelChars(2));
 
+        return columnData;
     }
 }

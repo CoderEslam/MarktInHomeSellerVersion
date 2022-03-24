@@ -3304,10 +3304,6 @@ int id info 0x7f0a01ac
 int id invisible 0x7f0a01ad
 int id inward 0x7f0a01ae
 int id italic 0x7f0a01af
-int id item1 0x7f0a01b0
-int id item2 0x7f0a01b1
-int id item3 0x7f0a01b2
-int id item4 0x7f0a01b3
 int id itemImage 0x7f0a01b4
 int id itemName 0x7f0a01b5
 int id item_touch_helper_previous_elevation 0x7f0a01b6
@@ -4010,8 +4006,6 @@ int layout user_chat_layout 0x7f0d00d5
 int layout v_product_recyclerview 0x7f0d00d6
 int layout widget_navigation_drawer 0x7f0d00d7
 int menu add_item 0x7f0e0000
-int menu example_menu 0x7f0e0001
-int menu example_menu2 0x7f0e0002
 int menu menu_bottom 0x7f0e0003
 int mipmap ic_launcher 0x7f0f0000
 int mipmap ic_launcher_round 0x7f0f0001

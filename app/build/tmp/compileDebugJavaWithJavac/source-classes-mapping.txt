@@ -158,10 +158,10 @@ com/doubleclick/marktinhome/Views/colorpickerview/ActionMode.java
  com.doubleclick.marktinhome.Views.colorpickerview.ActionMode
 com/doubleclick/marktinhome/Model/MyResponse.java
  com.doubleclick.marktinhome.Model.MyResponse
-com/doubleclick/DashBoard/MapsFragment.java
- com.doubleclick.DashBoard.MapsFragment
- com.doubleclick.DashBoard.MapsFragment$1
- com.doubleclick.DashBoard.MapsFragment$2
+com/doubleclick/DashBoard/LineColumnFragment.java
+ com.doubleclick.DashBoard.LineColumnFragment
+ com.doubleclick.DashBoard.LineColumnFragment$1
+ com.doubleclick.DashBoard.LineColumnFragment$ValueTouchListener
 com/doubleclick/marktinhome/BR.java
  com.doubleclick.marktinhome.BR
 com/doubleclick/marktinhome/databinding/RightChatBinding.java
@@ -714,15 +714,15 @@ com/doubleclick/marktinhome/Adapters/ParentAdapter.java
  com.doubleclick.marktinhome.Adapters.ParentAdapter
  com.doubleclick.marktinhome.Adapters.ParentAdapter$1
  com.doubleclick.marktinhome.Adapters.ParentAdapter$ParentViewHolder
+com/doubleclick/DashBoard/MapsFragment.java
+ com.doubleclick.DashBoard.MapsFragment
+ com.doubleclick.DashBoard.MapsFragment$1
+ com.doubleclick.DashBoard.MapsFragment$2
+com/doubleclick/DashBoard/DashBoardActivity.java
+ com.doubleclick.DashBoard.DashBoardActivity
 com/doubleclick/marktinhome/Repository/RecentOrdersForSellerRepository.java
  com.doubleclick.marktinhome.Repository.RecentOrdersForSellerRepository
  com.doubleclick.marktinhome.Repository.RecentOrdersForSellerRepository$1
  com.doubleclick.marktinhome.Repository.RecentOrdersForSellerRepository$recentOrder
 com/doubleclick/ViewModel/RecentOrdersForSellerViewModel.java
  com.doubleclick.ViewModel.RecentOrdersForSellerViewModel
-com/doubleclick/DashBoard/LineColumnFragment.java
- com.doubleclick.DashBoard.LineColumnFragment
- com.doubleclick.DashBoard.LineColumnFragment$1
- com.doubleclick.DashBoard.LineColumnFragment$ValueTouchListener
-com/doubleclick/DashBoard/DashBoardActivity.java
- com.doubleclick.DashBoard.DashBoardActivity
