@@ -21,6 +21,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\17b233a965ffc21004fd66c1edd08df3\\transformed\\core-1.9.0-alpha02\\res\\values-ru\\values-ru.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "111",
+                        "startColumns": "4",
+                        "startOffsets": "10172",
+                        "endColumns": "100",
+                        "endOffsets": "10268"
+                    }
+                },
+                {
                     "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\9af4f0ec88e4dd8223bcc0ef12f7d8db\\transformed\\jetified-play-services-basement-18.0.0\\res\\values-ru\\values.xml",
                     "from": {
                         "startLines": "4",
@@ -105,23 +122,6 @@
                         "endLines": "7,35,36,37,38,57,58,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,109",
                         "endColumns": "12,83,96,136,91,65,98,76,62,117,64,56,69,60,53,115,56,61,53,73,127,87,85,106,83,84,90,66,65,71,77,95,79,75,76,76,88,72,89,94,73,80,92,54,65,85,84,61,63,62,97,99,94,101,79",
                         "endOffsets": "381,3182,3279,3416,3508,5847,5946,6098,6161,6279,6344,6401,6471,6532,6586,6702,6759,6821,6875,6949,7077,7165,7251,7358,7442,7527,7618,7685,7751,7823,7901,7997,8077,8153,8230,8307,8396,8469,8559,8654,8728,8809,8902,8957,9023,9109,9194,9256,9320,9383,9481,9581,9676,9778,10085"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\ced474622b9905ac30c02b361669a96d\\transformed\\core-1.9.0-alpha01\\res\\values-ru\\values-ru.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "111",
-                        "startColumns": "4",
-                        "startOffsets": "10172",
-                        "endColumns": "100",
-                        "endOffsets": "10268"
                     }
                 }
             ]

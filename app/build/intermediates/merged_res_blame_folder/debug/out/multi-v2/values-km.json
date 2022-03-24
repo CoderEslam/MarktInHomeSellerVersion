@@ -38,23 +38,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\ced474622b9905ac30c02b361669a96d\\transformed\\core-1.9.0-alpha01\\res\\values-km\\values-km.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "109",
-                        "startColumns": "4",
-                        "startOffsets": "9899",
-                        "endColumns": "100",
-                        "endOffsets": "9995"
-                    }
-                },
-                {
                     "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\0ca8af7b8566d3efe5f2f8dc867a4fca\\transformed\\jetified-firebase-messaging-23.0.0\\res\\values-km\\values.xml",
                     "from": {
                         "startLines": "4",
@@ -122,6 +105,23 @@
                         "endLines": "5,33,34,35,36,55,56,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,107",
                         "endColumns": "12,79,99,111,79,64,93,69,61,86,64,58,64,60,56,118,57,60,56,70,129,85,77,107,74,70,96,66,65,79,89,85,78,76,69,74,87,69,99,98,73,75,106,53,72,90,95,61,63,62,98,97,91,99,82",
                         "endOffsets": "269,3037,3137,3249,3329,5615,5709,5854,5916,6003,6068,6127,6192,6253,6310,6429,6487,6548,6605,6676,6806,6892,6970,7078,7153,7224,7321,7388,7454,7534,7624,7710,7789,7866,7936,8011,8099,8169,8269,8368,8442,8518,8625,8679,8752,8843,8939,9001,9065,9128,9227,9325,9417,9517,9810"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\17b233a965ffc21004fd66c1edd08df3\\transformed\\core-1.9.0-alpha02\\res\\values-km\\values-km.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "109",
+                        "startColumns": "4",
+                        "startOffsets": "9899",
+                        "endColumns": "100",
+                        "endOffsets": "9995"
                     }
                 }
             ]

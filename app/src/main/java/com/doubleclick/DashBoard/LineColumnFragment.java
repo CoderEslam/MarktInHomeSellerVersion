@@ -35,8 +35,7 @@ import lecho.lib.hellocharts.view.LineChartView;
  */
 public class LineColumnFragment extends Fragment {
 
-    public final static String[] months = new String[]{"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug",
-            "Sep", "Oct", "Nov", "Dec",};
+    public final static String[] months = new String[]{"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",};
 
     public final static String[] days = new String[]{"Mon", "Tue", "Wen", "Thu", "Fri", "Sat", "Sun",};
 
@@ -67,8 +66,7 @@ public class LineColumnFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_line_column_dependency, container, false);
         // *** TOP LINE CHART ***
@@ -97,7 +95,7 @@ public class LineColumnFragment extends Fragment {
 
             values = new ArrayList<SubcolumnValue>();
             for (int j = 0; j < numSubcolumns; ++j) {
-                values.add(new SubcolumnValue((float) Math.random() * 50f + 5, ChartUtils.pickColor()));
+                values.add(new SubcolumnValue((float) Math.random() * 50f + 5, ChartUtils.pickColor()));// SubcolumnValue ( value ,color )
             }
 
             axisValues.add(new AxisValue(i).setLabel(months[i]));
@@ -106,25 +104,19 @@ public class LineColumnFragment extends Fragment {
         }
 
         columnData = new ColumnChartData(columns);
-
         columnData.setAxisXBottom(new Axis(axisValues).setHasLines(true));
         columnData.setAxisYLeft(new Axis().setHasLines(true).setMaxLabelChars(2));
-
         chartBottom.setColumnChartData(columnData);
-
         // Set value touch listener that will trigger changes for chartTop.
         chartBottom.setOnValueTouchListener(new ValueTouchListener());
-
         // Set selection mode to keep selected month column highlighted.
         chartBottom.setValueSelectionEnabled(true);
-
         chartBottom.setZoomType(ZoomType.HORIZONTAL);
 
     }
 
     private void generateInitialLineData() {
         int numValues = 7;
-
         List<AxisValue> axisValues = new ArrayList<AxisValue>();
         List<PointValue> values = new ArrayList<PointValue>();
         for (int i = 0; i < numValues; ++i) {
