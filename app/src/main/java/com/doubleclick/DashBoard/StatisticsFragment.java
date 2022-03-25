@@ -1,0 +1,237 @@
+package com.doubleclick.DashBoard;
+
+import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
+
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.doubleclick.ViewModel.RecentOrdersForSellerViewModel;
+import com.doubleclick.marktinhome.R;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import lecho.lib.hellocharts.gesture.ZoomType;
+import lecho.lib.hellocharts.listener.ColumnChartOnValueSelectListener;
+import lecho.lib.hellocharts.model.Axis;
+import lecho.lib.hellocharts.model.AxisValue;
+import lecho.lib.hellocharts.model.Column;
+import lecho.lib.hellocharts.model.ColumnChartData;
+import lecho.lib.hellocharts.model.Line;
+import lecho.lib.hellocharts.model.LineChartData;
+import lecho.lib.hellocharts.model.PointValue;
+import lecho.lib.hellocharts.model.SubcolumnValue;
+import lecho.lib.hellocharts.model.Viewport;
+import lecho.lib.hellocharts.util.ChartUtils;
+import lecho.lib.hellocharts.view.ColumnChartView;
+import lecho.lib.hellocharts.view.LineChartView;
+
+
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link StatisticsFragment#newInstance} factory method to
+ * create an instance of this fragment.
+ */
+public class StatisticsFragment extends Fragment {
+
+    public final static String[] months = new String[]{"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",};
+
+    public final static String[] days = new String[]{"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"};
+
+    private LineChartData lineData;
+    private ColumnChartData columnData;
+    private LineChartView chart_top_Line;
+    private ColumnChartView chart_bottom_Column;
+    private RecentOrdersForSellerViewModel recentOrdersForSellerViewModel;
+    private ArrayList<ArrayList<ArrayList<Integer>>> ArrayLists = new ArrayList<>();
+
+    public StatisticsFragment() {
+        // Required empty public constructor
+    }
+
+
+    public static StatisticsFragment newInstance(String param1, String param2) {
+        StatisticsFragment fragment = new StatisticsFragment();
+        Bundle args = new Bundle();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+
+        }
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_statistics, container, false);
+        recentOrdersForSellerViewModel = new ViewModelProvider(this).get(RecentOrdersForSellerViewModel.class);
+        chart_top_Line = view.findViewById(R.id.chart_top_Line);
+        chart_bottom_Column = view.findViewById(R.id.chart_bottom_Column);
+        recentOrdersForSellerViewModel.getYearLiveData().observe(getViewLifecycleOwner(), new Observer<ArrayList<ArrayList<ArrayList<Integer>>>>() {
+            @Override
+            public void onChanged(ArrayList<ArrayList<ArrayList<Integer>>> arrayLists) {
+                ArrayLists = arrayLists;
+                Log.e("Size", "" + arrayLists.toString());
+                int numSubcolumns = 1;
+                int numColumns = months.length; // = 12
+                List<AxisValue> axisValues = new ArrayList<>();
+                List<Column> columns = new ArrayList<>();
+                List<SubcolumnValue> values;
+                for (int i = 0; i < arrayLists.size(); i++) {
+                    for (int j = 0; j < arrayLists.get(i).size(); j++) {
+                        for (int x = 0; x < arrayLists.get(i).get(j).size(); x++) {
+                            Log.e("Print", "" + arrayLists.get(i).get(j).size());
+                        }
+                    }
+                }
+                for (int i = 0; i < arrayLists.size(); i++) {
+                    values = new ArrayList<>();
+                    Log.e("InsidArray", "" + arrayLists.get(i).toString());
+                    for (int j = 0; j < arrayLists.get(i).size(); j++) {
+                        for (int d = 0; d < arrayLists.get(i).get(j).size(); d++) {
+                            Log.e("HerIS5", "" + arrayLists.get(i).get(j).get(d));
+                        }
+//                        values.add(new SubcolumnValue((float) 25 /* value of Month */, ChartUtils.pickColor()));
+                    }
+                    /* to put names by months Bottom of Axis */
+                    axisValues.add(new AxisValue(i).setLabel(months[i]));
+                    /* to put Column by Column in ArrayList {@columns} */
+                    columns.add(new Column(values).setHasLabelsOnlyForSelected(true));
+                }
+
+                columnData = new ColumnChartData(columns);
+
+                columnData.setAxisXBottom(new Axis(axisValues).setHasLines(true));
+                columnData.setAxisYLeft(new Axis().setHasLines(true).setMaxLabelChars(2));
+
+                chart_bottom_Column.setColumnChartData(columnData);
+
+                // Set value touch listener that will trigger changes for chartTop.
+                chart_bottom_Column.setOnValueTouchListener(new ValueTouchListener());
+
+                // Set selection mode to keep selected month column highlighted.
+                chart_bottom_Column.setValueSelectionEnabled(true);
+
+                chart_bottom_Column.setZoomType(ZoomType.HORIZONTAL);
+            }
+        });
+
+        generateInitialLineData();
+//        generateColumnData();
+        return view;
+    }
+
+    private void generateColumnData() {
+
+        int numSubcolumns = 1;
+        int numColumns = months.length; // = 12
+
+        List<AxisValue> axisValues = new ArrayList<>();
+        List<Column> columns = new ArrayList<>();
+        List<SubcolumnValue> values;
+        for (int i = 0; i < numColumns; ++i) {
+            values = new ArrayList<>();
+            for (int j = 0; j < numSubcolumns; ++j) {
+                values.add(new SubcolumnValue((float) 50 /* value of Month */, ChartUtils.pickColor()));
+            }
+            /* to put names by months Bottom of Axis */
+            axisValues.add(new AxisValue(i).setLabel(months[i]));
+            /* to put Column by Column in ArrayList {@columns} */
+            columns.add(new Column(values).setHasLabelsOnlyForSelected(true));
+        }
+
+        columnData = new ColumnChartData(columns);
+
+        columnData.setAxisXBottom(new Axis(axisValues).setHasLines(true));
+        columnData.setAxisYLeft(new Axis().setHasLines(true).setMaxLabelChars(2));
+
+        chart_bottom_Column.setColumnChartData(columnData);
+
+        // Set value touch listener that will trigger changes for chartTop.
+        chart_bottom_Column.setOnValueTouchListener(new ValueTouchListener());
+
+        // Set selection mode to keep selected month column highlighted.
+        chart_bottom_Column.setValueSelectionEnabled(true);
+
+        chart_bottom_Column.setZoomType(ZoomType.HORIZONTAL);
+
+
+    }
+
+    /**
+     * Generates initial data for line chart. At the begining all Y values are equals 0. That will change when user
+     * will select value on column chart.
+     */
+    private void generateInitialLineData() {
+        int numValues = days.length;
+        List<AxisValue> axisValues = new ArrayList<AxisValue>();
+        List<PointValue> values = new ArrayList<PointValue>();
+        for (int i = 0; i < numValues; ++i) {
+            values.add(new PointValue(i, 0));
+            axisValues.add(new AxisValue(i).setLabel(days[i]));
+        }
+
+        Line line = new Line(values);
+        line.setColor(ChartUtils.COLOR_GREEN).setCubic(true);
+
+        List<Line> lines = new ArrayList<Line>();
+        lines.add(line);
+
+        lineData = new LineChartData(lines);
+        lineData.setAxisXBottom(new Axis(axisValues).setHasLines(true));
+        lineData.setAxisYLeft(new Axis().setHasLines(true).setMaxLabelChars(3));
+
+        chart_top_Line.setLineChartData(lineData);
+
+        // For build-up animation you have to disable viewport recalculation.
+        chart_top_Line.setViewportCalculationEnabled(false);
+
+        // And set initial max viewport and current viewport- remember to set viewports after data.
+        Viewport v = new Viewport(0, 100, 31, 0);
+        chart_top_Line.setMaximumViewport(v);
+        chart_top_Line.setCurrentViewport(v);
+        chart_top_Line.setZoomType(ZoomType.HORIZONTAL);
+    }
+
+    private void generateLineData(int color, float range) {
+        // Cancel last animation if not finished.
+        chart_top_Line.cancelDataAnimation();
+
+        // Modify data targets
+        Line line = lineData.getLines().get(0);// For this example there is always only one line. ,i can make two lines or more
+        line.setColor(color);
+        for (PointValue value : line.getValues()) {
+            // Change target only for Y value.
+            value.setTarget(value.getX(), (float) Math.random() * 100 /* value bar day */);
+        }
+
+        // Start new data animation with 300ms duration;
+        chart_top_Line.startDataAnimation(1000);
+    }
+
+    private class ValueTouchListener implements ColumnChartOnValueSelectListener {
+
+        @Override
+        public void onValueSelected(int columnIndex, int subcolumnIndex, SubcolumnValue value) {
+            generateLineData(value.getColor(), 100);
+        }
+
+        @Override
+        public void onValueDeselected() {
+
+            generateLineData(ChartUtils.COLOR_GREEN, 0);
+
+        }
+    }
+}

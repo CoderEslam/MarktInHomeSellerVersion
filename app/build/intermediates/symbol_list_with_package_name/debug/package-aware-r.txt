@@ -2736,6 +2736,14 @@ drawable c1
 drawable c2
 drawable c3
 drawable camera
+drawable cio_card_io_logo
+drawable cio_ic_amex
+drawable cio_ic_discover
+drawable cio_ic_jcb
+drawable cio_ic_mastercard
+drawable cio_ic_paypal_monogram
+drawable cio_ic_visa
+drawable cio_paypal_logo
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -3153,6 +3161,7 @@ id constraintLayout9
 id container
 id containerCV
 id containerLL
+id containerStatistics
 id content
 id contentPanel
 id contiguous
@@ -3868,7 +3877,6 @@ layout fragment_filter_parent
 layout fragment_forget
 layout fragment_home
 layout fragment_join_us
-layout fragment_line_column_dependency
 layout fragment_log_in
 layout fragment_main
 layout fragment_main_login
@@ -3886,6 +3894,7 @@ layout fragment_splash1
 layout fragment_splash2
 layout fragment_splash3
 layout fragment_splash4
+layout fragment_statistics
 layout fragment_top_deals
 layout fragment_trademark
 layout fragment_upload

@@ -18,6 +18,9 @@ public class RecentOrdersForSellerViewModel extends ViewModel implements RecentO
 
     MutableLiveData<ArrayList<RecentOrder>> mutableLiveData = new MutableLiveData<>();
 
+    MutableLiveData<ArrayList<ArrayList<ArrayList<Integer>>>> listMutableLiveDataYear = new MutableLiveData<>();
+
+
     public RecentOrdersForSellerViewModel() {
         recentOrdersForSellerRepository.getRecentOrders();
     }
@@ -26,8 +29,19 @@ public class RecentOrdersForSellerViewModel extends ViewModel implements RecentO
         return mutableLiveData;
     }
 
+    public LiveData<ArrayList<ArrayList<ArrayList<Integer>>>> getYearLiveData() {
+        return listMutableLiveDataYear;
+    }
+
     @Override
     public void recentOrder(ArrayList<RecentOrder> recentOrderArrayList) {
         mutableLiveData.setValue(recentOrderArrayList);
     }
+
+    @Override
+    public void ListOfYear(ArrayList<ArrayList<ArrayList<Integer>>> years) {
+        listMutableLiveDataYear.setValue(years);
+    }
+
+
 }

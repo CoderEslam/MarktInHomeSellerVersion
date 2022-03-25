@@ -91,5 +91,8 @@ dependencies {
 
     implementation 'com.github.anastr:speedviewlib:1.6.0'
 
+    // PayPal
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+
 
 }
