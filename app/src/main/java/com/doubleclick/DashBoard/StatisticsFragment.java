@@ -49,7 +49,7 @@ public class StatisticsFragment extends Fragment {
     private LineChartView chart_top_Line;
     private ColumnChartView chart_bottom_Column;
     private RecentOrdersForSellerViewModel recentOrdersForSellerViewModel;
-    private ArrayList<ArrayList<ArrayList<Integer>>> ArrayLists = new ArrayList<>();
+    private ArrayList<Integer> yValue = new ArrayList<>();
 
     public StatisticsFragment() {
         // Required empty public constructor
@@ -81,58 +81,15 @@ public class StatisticsFragment extends Fragment {
         recentOrdersForSellerViewModel.getYearLiveData().observe(getViewLifecycleOwner(), new Observer<ArrayList<ArrayList<ArrayList<Integer>>>>() {
             @Override
             public void onChanged(ArrayList<ArrayList<ArrayList<Integer>>> arrayLists) {
-                ArrayLists = arrayLists;
-                Log.e("Size", "" + arrayLists.toString());
-                int numSubcolumns = 1;
-                int numColumns = months.length; // = 12
-                List<AxisValue> axisValues = new ArrayList<>();
-                List<Column> columns = new ArrayList<>();
-                List<SubcolumnValue> values;
-                for (int i = 0; i < arrayLists.size(); i++) {
-                    for (int j = 0; j < arrayLists.get(i).size(); j++) {
-                        for (int x = 0; x < arrayLists.get(i).get(j).size(); x++) {
-                            Log.e("Print", "" + arrayLists.get(i).get(j).size());
-                        }
-                    }
-                }
-                for (int i = 0; i < arrayLists.size(); i++) {
-                    values = new ArrayList<>();
-                    Log.e("InsidArray", "" + arrayLists.get(i).toString());
-                    for (int j = 0; j < arrayLists.get(i).size(); j++) {
-                        for (int d = 0; d < arrayLists.get(i).get(j).size(); d++) {
-                            Log.e("HerIS5", "" + arrayLists.get(i).get(j).get(d));
-                        }
-//                        values.add(new SubcolumnValue((float) 25 /* value of Month */, ChartUtils.pickColor()));
-                    }
-                    /* to put names by months Bottom of Axis */
-                    axisValues.add(new AxisValue(i).setLabel(months[i]));
-                    /* to put Column by Column in ArrayList {@columns} */
-                    columns.add(new Column(values).setHasLabelsOnlyForSelected(true));
-                }
-
-                columnData = new ColumnChartData(columns);
-
-                columnData.setAxisXBottom(new Axis(axisValues).setHasLines(true));
-                columnData.setAxisYLeft(new Axis().setHasLines(true).setMaxLabelChars(2));
-
-                chart_bottom_Column.setColumnChartData(columnData);
-
-                // Set value touch listener that will trigger changes for chartTop.
-                chart_bottom_Column.setOnValueTouchListener(new ValueTouchListener());
-
-                // Set selection mode to keep selected month column highlighted.
-                chart_bottom_Column.setValueSelectionEnabled(true);
-
-                chart_bottom_Column.setZoomType(ZoomType.HORIZONTAL);
+                generateColumnData(arrayLists);
             }
         });
 
         generateInitialLineData();
-//        generateColumnData();
         return view;
     }
 
-    private void generateColumnData() {
+    private void generateColumnData(ArrayList<ArrayList<ArrayList<Integer>>> arrayLists) {
 
         int numSubcolumns = 1;
         int numColumns = months.length; // = 12
@@ -140,15 +97,26 @@ public class StatisticsFragment extends Fragment {
         List<AxisValue> axisValues = new ArrayList<>();
         List<Column> columns = new ArrayList<>();
         List<SubcolumnValue> values;
-        for (int i = 0; i < numColumns; ++i) {
+        for (int i = 0; i < arrayLists.size(); i++) {
             values = new ArrayList<>();
-            for (int j = 0; j < numSubcolumns; ++j) {
-                values.add(new SubcolumnValue((float) 50 /* value of Month */, ChartUtils.pickColor()));
+            int counter = 0;
+            for (int j = 0; j < arrayLists.get(i).size(); j++) {
+                for (int x = 0; x < arrayLists.get(i).get(j).size(); x++) {
+                    counter++;
+                    if (counter == arrayLists.get(i).get(j).size()) {
+                        Log.e("Print", "" + arrayLists.get(i).get(j).size());
+                        values.add(new SubcolumnValue((float) arrayLists.get(i).get(j).size() /* value of Month */, ChartUtils.pickColor()));
+                    }
+                }
+//                if (counter == 0) {
+//                    yValue.add(j, 0);
+//                }
             }
             /* to put names by months Bottom of Axis */
             axisValues.add(new AxisValue(i).setLabel(months[i]));
             /* to put Column by Column in ArrayList {@columns} */
             columns.add(new Column(values).setHasLabelsOnlyForSelected(true));
+            yValue.add(counter);
         }
 
         columnData = new ColumnChartData(columns);
@@ -173,7 +141,7 @@ public class StatisticsFragment extends Fragment {
      * Generates initial data for line chart. At the begining all Y values are equals 0. That will change when user
      * will select value on column chart.
      */
-    private void generateInitialLineData() {
+    private void generateInitialLineData() { // for Initial data only ...
         int numValues = days.length;
         List<AxisValue> axisValues = new ArrayList<AxisValue>();
         List<PointValue> values = new ArrayList<PointValue>();
@@ -213,7 +181,14 @@ public class StatisticsFragment extends Fragment {
         line.setColor(color);
         for (PointValue value : line.getValues()) {
             // Change target only for Y value.
-            value.setTarget(value.getX(), (float) Math.random() * 100 /* value bar day */);
+            try {
+                Log.e("XValue", "" + value.getX());
+                Log.e("YValue", "" + yValue.get((int) value.getX()));
+                value.setTarget(value.getX(), (float) yValue.get((int) value.getX()) /* value bar day */);
+            } catch (Exception e) {
+                Log.e("Exception(XY)Value", "" + e.getMessage());
+            }
+
         }
 
         // Start new data animation with 300ms duration;
