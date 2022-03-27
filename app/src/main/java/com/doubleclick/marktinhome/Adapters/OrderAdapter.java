@@ -5,6 +5,7 @@ import static com.doubleclick.marktinhome.Model.Constantes.RECENTORDER;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -62,14 +63,21 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
         holder.AnothercustommerPhone.setText(orders.get(position).getAnotherPhone());
         holder.custommerAddress.setText(orders.get(position).getAddress());
         holder.CustomerLocation.setOnClickListener(v -> {
-            List<String> uri = Arrays.asList(orders.get(position).getLocationUri().replace("[", "").replace("]", "").replace(" ", "").trim().split(","));
-            // https://developer.android.com/guide/components/intents-common#ViewMap
-            Uri i = Uri.parse("geo:0,0?q=" + uri.get(0) + "," + uri.get(1));
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, i);
-            mapIntent.setPackage("com.google.android.apps.maps");
-            if (mapIntent.resolveActivity(holder.itemView.getContext().getPackageManager()) != null) {
-                holder.itemView.getContext().startActivity(mapIntent);
+            if (!TextUtils.isEmpty(orders.get(position).getLocationUri())) {
+                try {
+                    List<String> uri = Arrays.asList(orders.get(position).getLocationUri().replace("[", "").replace("]", "").replace(" ", "").trim().split(","));
+                    // https://developer.android.com/guide/components/intents-common#ViewMap
+                    Uri i = Uri.parse("geo:0,0?q=" + uri.get(0) + "," + uri.get(1));
+                    Intent mapIntent = new Intent(Intent.ACTION_VIEW, i);
+                    mapIntent.setPackage("com.google.android.apps.maps");
+                    if (mapIntent.resolveActivity(holder.itemView.getContext().getPackageManager()) != null) {
+                        holder.itemView.getContext().startActivity(mapIntent);
+                    }
+                } catch (Exception e) {
+                    Toast.makeText(holder.itemView.getContext(), "there is no location", Toast.LENGTH_SHORT).show();
+                }
             }
+
         });
         Glide.with(holder.itemView.getContext()).load(orders.get(holder.getAdapterPosition()).getOnlyImage()).into(holder.orderImage);
         holder.ok.setOnClickListener(v -> {

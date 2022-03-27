@@ -15,11 +15,9 @@ import java.util.ArrayList;
 public class RecentOrdersForSellerViewModel extends ViewModel implements RecentOrdersForSellerRepository.recentOrder {
 
     RecentOrdersForSellerRepository recentOrdersForSellerRepository = new RecentOrdersForSellerRepository(this);
-
     MutableLiveData<ArrayList<RecentOrder>> mutableLiveData = new MutableLiveData<>();
-
     MutableLiveData<ArrayList<ArrayList<ArrayList<Integer>>>> listMutableLiveDataYear = new MutableLiveData<>();
-
+    MutableLiveData<Double> mutableLiveDataMoney = new MutableLiveData<>();
 
     public RecentOrdersForSellerViewModel() {
         recentOrdersForSellerRepository.getRecentOrders();
@@ -33,6 +31,10 @@ public class RecentOrdersForSellerViewModel extends ViewModel implements RecentO
         return listMutableLiveDataYear;
     }
 
+    public LiveData<Double> getMoneyLiveData() {
+        return mutableLiveDataMoney;
+    }
+
     @Override
     public void recentOrder(ArrayList<RecentOrder> recentOrderArrayList) {
         mutableLiveData.setValue(recentOrderArrayList);
@@ -41,6 +43,11 @@ public class RecentOrdersForSellerViewModel extends ViewModel implements RecentO
     @Override
     public void ListOfYear(ArrayList<ArrayList<ArrayList<Integer>>> years) {
         listMutableLiveDataYear.setValue(years);
+    }
+
+    @Override
+    public void recentMoney(double money) {
+        mutableLiveDataMoney.setValue(money);
     }
 
 

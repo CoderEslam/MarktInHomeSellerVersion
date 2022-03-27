@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:1-103:12
-INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:1-103:12
-INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:1-103:12
-INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:1-103:12
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:1-104:12
+INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:1-104:12
+INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:1-104:12
+INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:1-104:12
 MERGED from [androidx.databinding:databinding-adapters:7.0.4] C:\Users\eslam\.gradle\caches\transforms-3\881e1d9c61823481e7a83bad1bb3326c\transformed\databinding-adapters-7.0.4\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.databinding:databinding-ktx:7.0.4] C:\Users\eslam\.gradle\caches\transforms-3\cfd3eec1f82664928881021033ddaacd\transformed\jetified-databinding-ktx-7.0.4\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.databinding:databinding-runtime:7.0.4] C:\Users\eslam\.gradle\caches\transforms-3\b55ea5f7faab5df3b47143aa060b4b6d\transformed\databinding-runtime-7.0.4\AndroidManifest.xml:17:1-22:12
@@ -118,22 +118,22 @@ MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\eslam\.
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\eslam\.gradle\caches\transforms-3\d9a2702b0ebd65f1ea2053aeeead5325\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.41.0] C:\Users\eslam\.gradle\caches\transforms-3\3267d82b0bf0172ffd4e5372ee9d0ab8\transformed\jetified-grpc-android-1.41.0\AndroidManifest.xml:2:1-13:12
 MERGED from [io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\7cc603808d4fc2eb42a4ae8ee7655f93\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:1-103:12
-INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:1-103:12
-INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:1-103:12
+INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:1-104:12
+INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:1-104:12
+INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:1-104:12
 	package
 		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:4:5-42
 		INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:1-103:12
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:1-104:12
 		INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:1-103:12
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:1-104:12
 		INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:11-69
@@ -170,7 +170,7 @@ ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\Mark
 	android:name
 		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:8:22-76
 application
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:10:5-101:19
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:10:5-102:19
 MERGED from [com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\aadbc73d470c4633dc3cae2b1e8458b8\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\aadbc73d470c4633dc3cae2b1e8458b8\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:26:5-30:19
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\eslam\.gradle\caches\transforms-3\5f627eb25ff83e722a9b3a73344955f1\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
@@ -251,6 +251,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\es
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\eslam\.gradle\caches\transforms-3\6f7b219fdbafb66811a39e17ce94a189\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\7cc603808d4fc2eb42a4ae8ee7655f93\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:19:5-24:19
 MERGED from [io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\7cc603808d4fc2eb42a4ae8ee7655f93\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:19:5-24:19
+	android:requestLegacyExternalStorage
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:17:9-52
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0-alpha02] C:\Users\eslam\.gradle\caches\transforms-3\17b233a965ffc21004fd66c1edd08df3\transformed\core-1.9.0-alpha02\AndroidManifest.xml:24:18-86
 	android:supportsRtl
@@ -264,141 +266,141 @@ MERGED from [io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms
 	android:allowBackup
 		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:17:9-49
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:18:9-49
 	android:name
 		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:11:9-40
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:30:9-32:55
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:31:9-33:55
 	android:value
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:32:13-52
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:33:13-52
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:31:13-58
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:32:13-58
 activity#com.doubleclick.DashBoard.DashBoardActivity
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:34:9-36:40
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:35:9-37:40
 	android:exported
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:36:13-37
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:37:13-37
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:35:13-71
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:36:13-71
 activity#com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatActivity
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:37:9-39:40
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:38:9-40:40
 	android:exported
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:39:13-37
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:38:13-60
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:39:13-60
 activity#com.doubleclick.marktinhome.ui.MainScreen.Comments.CommentsActivity
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:40:9-42:40
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:41:9-43:40
 	android:exported
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:42:13-37
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:41:13-68
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:42:13-68
 activity#com.doubleclick.marktinhome.ui.ProductActivity.productActivity
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:43:9-45:40
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:44:9-46:40
 	android:exported
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:45:13-37
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:44:13-63
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:45:13-63
 activity#com.doubleclick.marktinhome.ui.Filter.FilterActivity
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:46:9-48:40
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:47:9-49:40
 	android:exported
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:48:13-37
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:49:13-37
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:47:13-53
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:48:13-53
 activity#com.doubleclick.Address.AddressActivity
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:49:9-51:40
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:50:9-52:40
 	android:exported
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:51:13-37
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:52:13-37
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:50:13-67
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:51:13-67
 activity#com.doubleclick.marktinhome.ui.Trademark.TrademarkActivity
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:52:9-54:40
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:53:9-55:40
 	android:exported
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:54:13-37
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:55:13-37
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:53:13-59
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:54:13-59
 activity#com.doubleclick.marktinhome.ui.Advertisement.AdvertisementActivity
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:55:9-57:40
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:56:9-58:40
 	android:exported
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:57:13-37
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:58:13-37
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:56:13-67
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:57:13-67
 activity#com.doubleclick.marktinhome.Seller.SellerActivity
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:58:9-60:40
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:59:9-61:40
 	android:exported
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:60:13-37
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:61:13-37
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:59:13-50
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:60:13-50
 activity#com.doubleclick.marktinhome.ui.MainScreen.MainScreenActivity
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:61:9-63:38
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:62:9-64:38
 	android:exported
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:63:13-36
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:64:13-36
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:62:13-61
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:63:13-61
 activity#com.doubleclick.marktinhome.MainActivity
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:64:9-82:20
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:65:9-83:20
 	android:exported
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:66:13-36
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:67:13-36
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:65:13-41
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:66:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:67:13-71:29
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:68:13-72:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:68:17-69
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:69:17-69
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:68:25-66
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:69:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:70:17-77
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:71:17-77
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:70:27-74
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:71:27-74
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:www.market.doublethink.com+data:scheme:https
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:72:13-81:29
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:73:13-82:29
 action#android.intent.action.VIEW
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:73:17-69
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:74:17-69
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:73:25-66
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:74:25-66
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:75:17-76
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:76:17-76
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:75:27-73
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:76:27-73
 category#android.intent.category.BROWSABLE
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:76:17-78
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:77:17-78
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:76:27-75
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:77:27-75
 data
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:78:17-80:46
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:79:17-81:46
 	android:host
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:79:21-62
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:80:21-62
 	android:scheme
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:80:21-43
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:81:21-43
 activity#com.doubleclick.marktinhome.ui.Add.AddActivity
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:83:9-85:40
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:84:9-86:40
 	android:exported
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:85:13-37
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:86:13-37
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:84:13-47
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:85:13-47
 meta-data#preloaded_fonts
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:87:9-89:57
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:88:9-90:57
 	android:resource
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:89:13-54
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:90:13-54
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:88:13-43
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:89:13-43
 service#com.doubleclick.marktinhome.Notifications.MyFirebaseMessaging
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:91:9-98:19
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:92:9-99:19
 	android:enabled
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:93:13-35
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:94:13-35
 	android:exported
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:94:13-36
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:95:13-36
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:92:13-62
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:93:13-62
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:95:13-97:29
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:96:13-98:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:96:17-78
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:97:17-78
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:96:25-75
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:97:25-75
 receiver#com.doubleclick.Servies.NotificationReceiver
-ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:100:9-81
+ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:101:9-81
 	android:name
-		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:100:19-78
+		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:101:19-78
 uses-sdk
 INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml

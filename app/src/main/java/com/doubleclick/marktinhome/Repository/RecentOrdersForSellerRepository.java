@@ -34,11 +34,6 @@ import lecho.lib.hellocharts.util.ChartUtils;
  */
 public class RecentOrdersForSellerRepository extends BaseRepository {
 
-    public final static String[] months = new String[]{"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",};
-
-    public final static String[] days = new String[]{"Mon", "Tue", "Wen", "Thu", "Fri", "Sat", "Sun",};
-
-    private LineChartData lineData;
 
     @SuppressLint("SimpleDateFormat")
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, d MM yyyy HH:mm:ss aaa");
@@ -63,12 +58,13 @@ public class RecentOrdersForSellerRepository extends BaseRepository {
                             DataSnapshot dataSnapshot = task.getResult();
                             for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                                 RecentOrder recentOrder = snapshot.getValue(RecentOrder.class);
-                                if (recentOrder.getSellerId().equals(myId)) {
+                                if (Objects.requireNonNull(recentOrder).getSellerId().equals(myId)) {
                                     recentOrderArrayList.add(recentOrder);
                                 }
                             }
                             recentOrder.recentOrder(recentOrderArrayList);
                             getDate(dataSnapshot);
+                            getMyMoney(dataSnapshot);
                         }
                     } else {
                         ShowToast("No internet Connection");
@@ -85,12 +81,14 @@ public class RecentOrdersForSellerRepository extends BaseRepository {
         void recentOrder(ArrayList<RecentOrder> recentOrderArrayList);
 
         void ListOfYear(ArrayList<ArrayList<ArrayList<Integer>>> years);
+
+        void recentMoney(double money);
     }
 
     public void getDate(DataSnapshot dataSnapshot) {
         ArrayList<ArrayList<ArrayList<Integer>>> years = new ArrayList<>();
         for (int month = 1; month <= 12; month++) {
-            ArrayList<ArrayList<Integer>> monthaList = new ArrayList<>();
+            ArrayList<ArrayList<Integer>> monthList = new ArrayList<>();
             for (int day = 1; day <= 31; day++) {
                 ArrayList<Integer> dayList = new ArrayList<>();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
@@ -100,42 +98,27 @@ public class RecentOrdersForSellerRepository extends BaseRepository {
                     Log.e("CounterDay", "" + d);
                     Log.e("currentYear", "" + currentYear);
                     Log.e("test", "" + simpleDateFormat.format(recentOrder.getDate()).substring(5, 7).equals(String.valueOf(d)));*/
-                    if (simpleDateFormat.format(recentOrder.getDate()).contains(String.valueOf(currentYear)) && recentOrder.getSellerId().equals(myId) && simpleDateFormat.format(recentOrder.getDate()).substring(5, 7).equals(String.valueOf(day)) && month == Integer.parseInt(simpleDateFormat.format(recentOrder.getDate()).substring(8, 10))) {
-                        dayList.add(1);
-                        dayList.add(1);
-                        dayList.add(1);
-                        dayList.add(1);
+                    if (simpleDateFormat.format(Objects.requireNonNull(recentOrder).getDate()).contains(String.valueOf(currentYear)) && recentOrder.getSellerId().equals(myId) && simpleDateFormat.format(recentOrder.getDate()).substring(5, 7).equals(String.valueOf(day)) && month == Integer.parseInt(simpleDateFormat.format(recentOrder.getDate()).substring(8, 10))) {
                         dayList.add(1);
                     }
                 }
-                monthaList.add(dayList);
+                monthList.add(dayList);
             }
-            years.add(monthaList);
+            years.add(monthList);
         }
         recentOrder.ListOfYear(years);
-//        getColumnData();
     }
 
 
-    public static ColumnChartData getColumnData() {
-        ColumnChartData columnData;
-        int numSubcolumns = 1;
-        int numColumns = months.length;
-        List<AxisValue> axisValues = new ArrayList<>();
-        List<Column> columns = new ArrayList<>();
-        List<SubcolumnValue> values;
-        for (int i = 0; i < numColumns; ++i) {
-            values = new ArrayList<>();
-            for (int j = 0; j < numSubcolumns; ++j) {
-                values.add(new SubcolumnValue((float) 10, ChartUtils.pickColor()));// SubcolumnValue ( value ,color )
+    public void getMyMoney(DataSnapshot snapshot) {
+        double money = 0.0;
+        for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+            RecentOrder recentOrder = dataSnapshot.getValue(RecentOrder.class);
+            if (simpleDateFormat.format(Objects.requireNonNull(recentOrder).getDate()).contains(String.valueOf(currentYear)) && recentOrder.getSellerId().equals(myId)) {
+                money += recentOrder.getTotalPrice();
             }
-            axisValues.add(new AxisValue(i).setLabel(months[i]));
-            columns.add(new Column(values).setHasLabelsOnlyForSelected(true));
         }
-        columnData = new ColumnChartData(columns);
-        columnData.setAxisXBottom(new Axis(axisValues).setHasLines(true));
-        columnData.setAxisYLeft(new Axis().setHasLines(true).setMaxLabelChars(2));
-
-        return columnData;
+        recentOrder.recentMoney(money);
     }
+
 }

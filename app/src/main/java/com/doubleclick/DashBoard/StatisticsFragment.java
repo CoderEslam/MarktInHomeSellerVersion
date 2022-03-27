@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.doubleclick.ViewModel.RecentOrdersForSellerViewModel;
 import com.doubleclick.marktinhome.R;
@@ -98,8 +99,8 @@ public class StatisticsFragment extends Fragment {
         List<Column> columns = new ArrayList<>();
         List<SubcolumnValue> values;
         for (int i = 0; i < arrayLists.size(); i++) {
-            values = new ArrayList<>();
             int counter = 0;
+            values = new ArrayList<>();
             for (int j = 0; j < arrayLists.get(i).size(); j++) {
                 for (int x = 0; x < arrayLists.get(i).get(j).size(); x++) {
                     counter++;
@@ -184,6 +185,7 @@ public class StatisticsFragment extends Fragment {
             try {
                 Log.e("XValue", "" + value.getX());
                 Log.e("YValue", "" + yValue.get((int) value.getX()));
+                Log.e("AllValue", value.toString());
                 value.setTarget(value.getX(), (float) yValue.get((int) value.getX()) /* value bar day */);
             } catch (Exception e) {
                 Log.e("Exception(XY)Value", "" + e.getMessage());
@@ -200,6 +202,9 @@ public class StatisticsFragment extends Fragment {
         @Override
         public void onValueSelected(int columnIndex, int subcolumnIndex, SubcolumnValue value) {
             generateLineData(value.getColor(), 100);
+
+            Toast.makeText(getContext(), "columnIndex  = " + columnIndex, Toast.LENGTH_SHORT).show();
+
         }
 
         @Override

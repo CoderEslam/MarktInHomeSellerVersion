@@ -1,6 +1,7 @@
 package com.doubleclick.marktinhome.Seller
 
 import android.os.Bundle
+import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -64,17 +65,24 @@ class OrderSelllerFragment : BaseFragment(), OnOrder {
         map["date"] = time;
         map["address"] = orders.address;
         map["phone"] = orders.phone;
-        map["anotherPhone"] = orders.anotherPhone;
-        map["locationUri"] = orders.locationUri;
         map["ToggleItem"] = orders.toggleItem;
-        reference.child(RECENTORDER).child(pushId).updateChildren(map);
-        reference.child(ORDERS).child(orders.id)
-            .removeValue()
-            .addOnCompleteListener {
-                if (it.isSuccessful) {
-                    ShowToast(context, "Deliverd")
-                }
+        map["anotherPhone"] = orders.anotherPhone;
+        try {
+            if(!TextUtils.isEmpty(orders.locationUri)){
+                map["locationUri"] = orders.locationUri;
             }
+        }catch (e:NullPointerException){
+
+        }finally {
+            reference.child(RECENTORDER).child(pushId).updateChildren(map);
+            reference.child(ORDERS).child(orders.id)
+                .removeValue()
+                .addOnCompleteListener {
+                    if (it.isSuccessful) {
+                        ShowToast(context, "Deliverd")
+                    }
+                }
+        }
     }
 
     override fun OnCancelItemOrder(orders: Orders?) {
