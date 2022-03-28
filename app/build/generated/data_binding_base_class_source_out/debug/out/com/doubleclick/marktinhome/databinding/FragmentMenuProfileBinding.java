@@ -12,6 +12,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.doubleclick.marktinhome.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -61,7 +62,7 @@ public final class FragmentMenuProfileBinding implements ViewBinding {
   public final TextView email;
 
   @NonNull
-  public final ImageView fab;
+  public final FloatingActionButton fab;
 
   @NonNull
   public final ImageView imageView12;
@@ -127,8 +128,8 @@ public final class FragmentMenuProfileBinding implements ViewBinding {
       @NonNull ConstraintLayout constraintLayout4, @NonNull ConstraintLayout constraintLayout5,
       @NonNull ConstraintLayout constraintLayout6, @NonNull ImageView editAddress,
       @NonNull ImageView editPhone, @NonNull ImageView editname, @NonNull TextView email,
-      @NonNull ImageView fab, @NonNull ImageView imageView12, @NonNull ImageView imageView3,
-      @NonNull ImageView imageView30, @NonNull ImageView imageView32,
+      @NonNull FloatingActionButton fab, @NonNull ImageView imageView12,
+      @NonNull ImageView imageView3, @NonNull ImageView imageView30, @NonNull ImageView imageView32,
       @NonNull ImageView imageView51, @NonNull ImageView imageView55,
       @NonNull ImageView imageView555, @NonNull ImageView imageView556,
       @NonNull ImageView imageView56, @NonNull ImageView imageView564,
@@ -278,7 +279,7 @@ public final class FragmentMenuProfileBinding implements ViewBinding {
       }
 
       id = R.id.fab;
-      ImageView fab = ViewBindings.findChildViewById(rootView, id);
+      FloatingActionButton fab = ViewBindings.findChildViewById(rootView, id);
       if (fab == null) {
         break missingId;
       }

@@ -50,7 +50,7 @@ public class StatisticsFragment extends Fragment {
     private LineChartView chart_top_Line;
     private ColumnChartView chart_bottom_Column;
     private RecentOrdersForSellerViewModel recentOrdersForSellerViewModel;
-    private ArrayList<Integer> yValue = new ArrayList<>();
+    private ArrayList<ArrayList<Integer>> yValue = new ArrayList<>();
 
     public StatisticsFragment() {
         // Required empty public constructor
@@ -98,10 +98,14 @@ public class StatisticsFragment extends Fragment {
         List<AxisValue> axisValues = new ArrayList<>();
         List<Column> columns = new ArrayList<>();
         List<SubcolumnValue> values;
+        // i for month
         for (int i = 0; i < arrayLists.size(); i++) {
             int counter = 0;
             values = new ArrayList<>();
+            ArrayList<Integer> yValueInMonth = new ArrayList<>();
+            // j for days
             for (int j = 0; j < arrayLists.get(i).size(); j++) {
+                // x for unkown number for order
                 for (int x = 0; x < arrayLists.get(i).get(j).size(); x++) {
                     counter++;
                     if (counter == arrayLists.get(i).get(j).size()) {
@@ -112,12 +116,14 @@ public class StatisticsFragment extends Fragment {
 //                if (counter == 0) {
 //                    yValue.add(j, 0);
 //                }
+                yValueInMonth.add(counter);
             }
             /* to put names by months Bottom of Axis */
             axisValues.add(new AxisValue(i).setLabel(months[i]));
             /* to put Column by Column in ArrayList {@columns} */
             columns.add(new Column(values).setHasLabelsOnlyForSelected(true));
-            yValue.add(counter);
+            yValue.add(yValueInMonth);
+            Log.e("yValueInMonth", yValueInMonth.toString());
         }
 
         columnData = new ColumnChartData(columns);
@@ -173,7 +179,7 @@ public class StatisticsFragment extends Fragment {
         chart_top_Line.setZoomType(ZoomType.HORIZONTAL);
     }
 
-    private void generateLineData(int color, float range) {
+    private void generateLineData(int color, int subcolumnIndex) {
         // Cancel last animation if not finished.
         chart_top_Line.cancelDataAnimation();
 
@@ -186,7 +192,8 @@ public class StatisticsFragment extends Fragment {
                 Log.e("XValue", "" + value.getX());
                 Log.e("YValue", "" + yValue.get((int) value.getX()));
                 Log.e("AllValue", value.toString());
-                value.setTarget(value.getX(), (float) yValue.get((int) value.getX()) /* value bar day */);
+                Log.e("YValueInMonth", "" + yValue.get(subcolumnIndex));
+                value.setTarget(value.getX(), (float) yValue.get(subcolumnIndex).get((int) value.getX()) /* value bar day */);
             } catch (Exception e) {
                 Log.e("Exception(XY)Value", "" + e.getMessage());
             }
@@ -201,7 +208,7 @@ public class StatisticsFragment extends Fragment {
 
         @Override
         public void onValueSelected(int columnIndex, int subcolumnIndex, SubcolumnValue value) {
-            generateLineData(value.getColor(), 100);
+            generateLineData(value.getColor(), subcolumnIndex);
 
             Toast.makeText(getContext(), "columnIndex  = " + columnIndex, Toast.LENGTH_SHORT).show();
 

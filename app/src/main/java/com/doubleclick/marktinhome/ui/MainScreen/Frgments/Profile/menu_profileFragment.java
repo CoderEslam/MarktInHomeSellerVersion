@@ -45,7 +45,7 @@ public class menu_profileFragment extends BaseFragment {
     private TextView username, address, email, phone;
     private ImageView editAddress, editPhone, editname;
     private AlertDialog.Builder builder;
-    private ImageView fab;
+    private FloatingActionButton fab;
     private ConstraintLayout AddProduct, AddAdv, AddTradmark, recentOrder, chat, joinUs, statistices;
     private ConstraintLayout logout;
 
