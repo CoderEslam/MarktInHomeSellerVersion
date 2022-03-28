@@ -50,7 +50,7 @@ public class StatisticsFragment extends Fragment {
     private LineChartView chart_top_Line;
     private ColumnChartView chart_bottom_Column;
     private RecentOrdersForSellerViewModel recentOrdersForSellerViewModel;
-    private ArrayList<ArrayList<Integer>> yValue = new ArrayList<>();
+    private ArrayList<Integer> yValue = new ArrayList<>();
 
     public StatisticsFragment() {
         // Required empty public constructor
@@ -102,7 +102,7 @@ public class StatisticsFragment extends Fragment {
         for (int i = 0; i < arrayLists.size(); i++) {
             int counter = 0;
             values = new ArrayList<>();
-            ArrayList<Integer> yValueInMonth = new ArrayList<>();
+//            ArrayList<Integer> yValueInMonth = new ArrayList<>();
             // j for days
             for (int j = 0; j < arrayLists.get(i).size(); j++) {
                 // x for unkown number for order
@@ -113,17 +113,18 @@ public class StatisticsFragment extends Fragment {
                         values.add(new SubcolumnValue((float) arrayLists.get(i).get(j).size() /* value of Month */, ChartUtils.pickColor()));
                     }
                 }
-//                if (counter == 0) {
-//                    yValue.add(j, 0);
-//                }
-                yValueInMonth.add(counter);
+                if (counter == 0) {
+                    yValue.add(counter);
+                }else {
+                    yValue.add(counter);
+                }
             }
             /* to put names by months Bottom of Axis */
             axisValues.add(new AxisValue(i).setLabel(months[i]));
             /* to put Column by Column in ArrayList {@columns} */
             columns.add(new Column(values).setHasLabelsOnlyForSelected(true));
-            yValue.add(yValueInMonth);
-            Log.e("yValueInMonth", yValueInMonth.toString());
+            yValue.add(counter);
+            Log.e("yValueInMonth", yValue.toString());
         }
 
         columnData = new ColumnChartData(columns);
@@ -193,7 +194,7 @@ public class StatisticsFragment extends Fragment {
                 Log.e("YValue", "" + yValue.get((int) value.getX()));
                 Log.e("AllValue", value.toString());
                 Log.e("YValueInMonth", "" + yValue.get(subcolumnIndex));
-                value.setTarget(value.getX(), (float) yValue.get(subcolumnIndex).get((int) value.getX()) /* value bar day */);
+                value.setTarget(value.getX(), (float) yValue.get((int) value.getX()) /* value bar day */);
             } catch (Exception e) {
                 Log.e("Exception(XY)Value", "" + e.getMessage());
             }
@@ -210,7 +211,7 @@ public class StatisticsFragment extends Fragment {
         public void onValueSelected(int columnIndex, int subcolumnIndex, SubcolumnValue value) {
             generateLineData(value.getColor(), subcolumnIndex);
 
-            Toast.makeText(getContext(), "columnIndex  = " + columnIndex, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(getContext(), "columnIndex  = " + columnIndex, Toast.LENGTH_SHORT).show();
 
         }
 
