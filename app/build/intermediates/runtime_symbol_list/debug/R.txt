@@ -4025,6 +4025,7 @@ int navigation nav_seller_graph 0x7f100003
 int plurals mtrl_badge_content_description 0x7f110000
 int raw loading 0x7f120000
 int raw loading2 0x7f120001
+int raw loading_new 0x7f120005
 int raw online_shopping 0x7f120002
 int raw shopping 0x7f120003
 int raw shopping_cart 0x7f120004

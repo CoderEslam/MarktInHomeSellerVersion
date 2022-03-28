@@ -23,12 +23,14 @@ import com.google.android.gms.tasks.RuntimeExecutionException;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.GenericTypeIndicator;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 
 /**
@@ -62,6 +64,7 @@ public class ProductRepository extends BaseRepository {
                         if (task.getResult().exists()) {
                             if (task.isComplete()) {
                                 DataSnapshot snapshot = task.getResult();
+                                getDataAsHash(snapshot);
                                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                                     Product product = dataSnapshot.getValue(Product.class);
 //                                    HashMap<String, Object> map = new HashMap<>();
@@ -331,7 +334,7 @@ public class ProductRepository extends BaseRepository {
     }
 
     // to get Top Deals
-    public void TopDeals() {
+    public void TopDeals(/*DataSnapshot dataSnapshot*/) {
         reference.child(PRODUCT).orderByChild("discount").limitToFirst(20).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DataSnapshot> task) {
@@ -340,6 +343,7 @@ public class ProductRepository extends BaseRepository {
                         if (task.getResult().exists()) {
                             DataSnapshot snapshot = task.getResult();
                             for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+
                                 Product product = dataSnapshot.getValue(Product.class);
                                 productsTopDeals.add(product);
                             }
@@ -380,4 +384,21 @@ public class ProductRepository extends BaseRepository {
 
     }
 
+    public HashMap getDataAsHash(DataSnapshot snapshot) {
+        Object fieldsObj = new Object();
+        Map<String, Object> fldObj = new HashMap();
+        for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+            try {
+                fldObj = (HashMap) dataSnapshot.getValue(fieldsObj.getClass());
+
+//                Log.e("fldObjValues", fldObj.values().toString());
+//                Log.e("fldObjKey", fldObj.keySet().toString());
+            } catch (Exception ex) {
+                // My custom error handler. See 'ErrorHandler' in Gist
+                continue;
+            }
+        }
+        Log.e("fldObj", fldObj.toString());
+        return (HashMap) fldObj;
+    }
 }

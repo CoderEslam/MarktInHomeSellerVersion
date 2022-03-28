@@ -4026,6 +4026,7 @@ navigation nav_seller_graph
 plurals mtrl_badge_content_description
 raw loading
 raw loading2
+raw loading_new
 raw online_shopping
 raw shopping
 raw shopping_cart
