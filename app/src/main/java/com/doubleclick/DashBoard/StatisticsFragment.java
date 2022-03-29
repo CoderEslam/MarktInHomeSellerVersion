@@ -50,7 +50,7 @@ public class StatisticsFragment extends Fragment {
     private LineChartView chart_top_Line;
     private ColumnChartView chart_bottom_Column;
     private RecentOrdersForSellerViewModel recentOrdersForSellerViewModel;
-    private ArrayList<Integer> yValue = new ArrayList<>();
+    private ArrayList<ArrayList<Integer>> yValue = new ArrayList<>();
 
     public StatisticsFragment() {
         // Required empty public constructor
@@ -102,28 +102,40 @@ public class StatisticsFragment extends Fragment {
         for (int i = 0; i < arrayLists.size(); i++) {
             int counter = 0;
             values = new ArrayList<>();
-//            ArrayList<Integer> yValueInMonth = new ArrayList<>();
+
+            ArrayList<Integer> yValueInMonth = new ArrayList<>();
             // j for days
             for (int j = 0; j < arrayLists.get(i).size(); j++) {
                 // x for unkown number for order
-                for (int x = 0; x < arrayLists.get(i).get(j).size(); x++) {
-                    counter++;
-                    if (counter == arrayLists.get(i).get(j).size()) {
-                        Log.e("Print", "" + arrayLists.get(i).get(j).size());
-                        values.add(new SubcolumnValue((float) arrayLists.get(i).get(j).size() /* value of Month */, ChartUtils.pickColor()));
-                    }
+//                Log.e("arrayLists.size", "" + arrayLists.get(i).size());
+                counter = counter + arrayLists.get(i).get(j).size();
+                Log.e("arraysgetigetjZ", "" + arrayLists.get(i).get(j).size());
+                yValueInMonth.add(arrayLists.get(i).get(j).size());
+                if (j == 30) {
+                    values.add(new SubcolumnValue((float) counter /* value of Month */, ChartUtils.pickColor()));
+                    Log.e("counter", "" + counter);
                 }
-                if (counter == 0) {
-                    yValue.add(counter);
-                }else {
-                    yValue.add(counter);
-                }
+
+//                for (int x = 0; x < arrayLists.get(i).get(j).size(); x++) {
+//                    counter++;
+//                    if (counter == arrayLists.get(i).get(j).size()) {
+//                        Log.e("Print", "" + arrayLists.get(i).get(j).size());
+//                        values.add(new SubcolumnValue((float) arrayLists.get(i).get(j).size() /* value of Month */, ChartUtils.pickColor()));
+//                    }
+//                }
+//                if (counter == 0) {
+//                    yValue.add(counter);
+//                } else {
+//                    yValue.add(counter);
+//                }
+
+
             }
             /* to put names by months Bottom of Axis */
             axisValues.add(new AxisValue(i).setLabel(months[i]));
             /* to put Column by Column in ArrayList {@columns} */
             columns.add(new Column(values).setHasLabelsOnlyForSelected(true));
-            yValue.add(counter);
+            yValue.add(yValueInMonth);
             Log.e("yValueInMonth", yValue.toString());
         }
 
@@ -174,7 +186,7 @@ public class StatisticsFragment extends Fragment {
         chart_top_Line.setViewportCalculationEnabled(false);
 
         // And set initial max viewport and current viewport- remember to set viewports after data.
-        Viewport v = new Viewport(0, 100, 31, 0);
+        Viewport v = new Viewport(0, 10, 31, 0);
         chart_top_Line.setMaximumViewport(v);
         chart_top_Line.setCurrentViewport(v);
         chart_top_Line.setZoomType(ZoomType.HORIZONTAL);
@@ -183,7 +195,6 @@ public class StatisticsFragment extends Fragment {
     private void generateLineData(int color, int subcolumnIndex) {
         // Cancel last animation if not finished.
         chart_top_Line.cancelDataAnimation();
-
         // Modify data targets
         Line line = lineData.getLines().get(0);// For this example there is always only one line. ,i can make two lines or more
         line.setColor(color);
@@ -191,10 +202,10 @@ public class StatisticsFragment extends Fragment {
             // Change target only for Y value.
             try {
                 Log.e("XValue", "" + value.getX());
-                Log.e("YValue", "" + yValue.get((int) value.getX()));
+                Log.e("YYYYVVVVValue", "" + yValue.get(subcolumnIndex));
                 Log.e("AllValue", value.toString());
                 Log.e("YValueInMonth", "" + yValue.get(subcolumnIndex));
-                value.setTarget(value.getX(), (float) yValue.get((int) value.getX()) /* value bar day */);
+                value.setTarget(value.getX(), (float) yValue.get(subcolumnIndex).get((int) value.getX()) /* value bar day */);
             } catch (Exception e) {
                 Log.e("Exception(XY)Value", "" + e.getMessage());
             }

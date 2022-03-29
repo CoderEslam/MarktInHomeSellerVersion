@@ -11,10 +11,12 @@ import com.doubleclick.marktinhome.R;
 import com.doubleclick.marktinhome.databinding.ActivityDashBoardBinding;
 
 
-public class DashBoardActivity extends AppCompatActivity {
+public class DashBoardActivity extends AppCompatActivity implements MonthFragment.MonthFragmentListener {
 
     private ActivityDashBoardBinding binding;
     private RecentOrdersForSellerViewModel recentOrdersForSellerViewModel;
+    private StatisticsFragment statisticsFragment;
+    private MonthFragment monthFragment;
 
 
     @Override
@@ -22,8 +24,14 @@ public class DashBoardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityDashBoardBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        getSupportFragmentManager().beginTransaction().add(R.id.containerStatistics, new StatisticsFragment()).commit();
-        getSupportFragmentManager().beginTransaction().add(R.id.mapContiner, new MapsFragment()).commit();
+        statisticsFragment = new StatisticsFragment();
+        monthFragment = new MonthFragment();
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.containerStatistics, statisticsFragment)
+                .replace(R.id.containerMonth, monthFragment)
+                .replace(R.id.mapContiner, new MapsFragment())
+                .commit();
         recentOrdersForSellerViewModel = new ViewModelProvider(this).get(RecentOrdersForSellerViewModel.class);
         recentOrdersForSellerViewModel.getMoneyLiveData().observe(this, new Observer<Double>() {
             @Override
@@ -35,4 +43,8 @@ public class DashBoardActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onInputASent(CharSequence input) {
+
+    }
 }
