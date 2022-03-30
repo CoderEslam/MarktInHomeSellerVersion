@@ -3160,6 +3160,7 @@ int id constraintLayout9 0x7f0a0114
 int id container 0x7f0a0115
 int id containerCV 0x7f0a0116
 int id containerLL 0x7f0a0117
+int id containerMonth 0x7f0a035b
 int id containerStatistics 0x7f0a0118
 int id content 0x7f0a0119
 int id contentPanel 0x7f0a011a
@@ -3884,6 +3885,7 @@ int layout fragment_menu__cart 0x7f0d0052
 int layout fragment_menu_list 0x7f0d0053
 int layout fragment_menu_profile 0x7f0d0054
 int layout fragment_menu_store 0x7f0d0055
+int layout fragment_month 0x7f0d00d8
 int layout fragment_order_selller 0x7f0d0056
 int layout fragment_parent 0x7f0d0057
 int layout fragment_product 0x7f0d0058

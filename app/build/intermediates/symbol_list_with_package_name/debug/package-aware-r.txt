@@ -3161,6 +3161,7 @@ id constraintLayout9
 id container
 id containerCV
 id containerLL
+id containerMonth
 id containerStatistics
 id content
 id contentPanel
@@ -3885,6 +3886,7 @@ layout fragment_menu__cart
 layout fragment_menu_list
 layout fragment_menu_profile
 layout fragment_menu_store
+layout fragment_month
 layout fragment_order_selller
 layout fragment_parent
 layout fragment_product

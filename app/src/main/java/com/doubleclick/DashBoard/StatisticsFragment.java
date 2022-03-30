@@ -50,7 +50,7 @@ public class StatisticsFragment extends Fragment {
     private LineChartView chart_top_Line;
     private ColumnChartView chart_bottom_Column;
     private RecentOrdersForSellerViewModel recentOrdersForSellerViewModel;
-    private ArrayList<ArrayList<Integer>> yValue = new ArrayList<>();
+    private static final ArrayList<ArrayList<Integer>> yValue = new ArrayList<>();
 
     public StatisticsFragment() {
         // Required empty public constructor
@@ -136,10 +136,9 @@ public class StatisticsFragment extends Fragment {
             /* to put Column by Column in ArrayList {@columns} */
             columns.add(new Column(values).setHasLabelsOnlyForSelected(true));
             yValue.add(yValueInMonth);
-            Log.e("yValueInMonth", yValue.toString());
         }
-
         columnData = new ColumnChartData(columns);
+        Log.e("AllValuesInMonth", yValue.toString());
 
         columnData.setAxisXBottom(new Axis(axisValues).setHasLines(true));
         columnData.setAxisYLeft(new Axis().setHasLines(true).setMaxLabelChars(2));
@@ -173,7 +172,7 @@ public class StatisticsFragment extends Fragment {
         Line line = new Line(values);
         line.setColor(ChartUtils.COLOR_GREEN).setCubic(true);
 
-        List<Line> lines = new ArrayList<Line>();
+        List<Line> lines = new ArrayList<>();
         lines.add(line);
 
         lineData = new LineChartData(lines);
@@ -186,13 +185,13 @@ public class StatisticsFragment extends Fragment {
         chart_top_Line.setViewportCalculationEnabled(false);
 
         // And set initial max viewport and current viewport- remember to set viewports after data.
-        Viewport v = new Viewport(0, 10, 31, 0);
+        Viewport v = new Viewport(0, 100, 31, 0);
         chart_top_Line.setMaximumViewport(v);
         chart_top_Line.setCurrentViewport(v);
         chart_top_Line.setZoomType(ZoomType.HORIZONTAL);
     }
 
-    private void generateLineData(int color, int subcolumnIndex) {
+    private void generateLineData(int color, int columnIndex) {
         // Cancel last animation if not finished.
         chart_top_Line.cancelDataAnimation();
         // Modify data targets
@@ -202,10 +201,10 @@ public class StatisticsFragment extends Fragment {
             // Change target only for Y value.
             try {
                 Log.e("XValue", "" + value.getX());
-                Log.e("YYYYVVVVValue", "" + yValue.get(subcolumnIndex));
+                Log.e("YYYYVVVVValue", "" + yValue.get(columnIndex));
                 Log.e("AllValue", value.toString());
-                Log.e("YValueInMonth", "" + yValue.get(subcolumnIndex));
-                value.setTarget(value.getX(), (float) yValue.get(subcolumnIndex).get((int) value.getX()) /* value bar day */);
+                Log.e("YValueInMonth", "" + value.getX() + " " + yValue.get(2));
+                value.setTarget(value.getX(), (float) yValue.get(columnIndex).get((int) value.getX()) /* value bar day */);
             } catch (Exception e) {
                 Log.e("Exception(XY)Value", "" + e.getMessage());
             }
@@ -220,7 +219,7 @@ public class StatisticsFragment extends Fragment {
 
         @Override
         public void onValueSelected(int columnIndex, int subcolumnIndex, SubcolumnValue value) {
-            generateLineData(value.getColor(), subcolumnIndex);
+            generateLineData(value.getColor(), columnIndex);
 
 //            Toast.makeText(getContext(), "columnIndex  = " + columnIndex, Toast.LENGTH_SHORT).show();
 
