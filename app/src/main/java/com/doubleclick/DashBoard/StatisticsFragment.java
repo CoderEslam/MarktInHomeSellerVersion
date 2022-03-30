@@ -185,7 +185,7 @@ public class StatisticsFragment extends Fragment {
         chart_top_Line.setViewportCalculationEnabled(false);
 
         // And set initial max viewport and current viewport- remember to set viewports after data.
-        Viewport v = new Viewport(0, 100, 31, 0);
+        Viewport v = new Viewport(0, 10, 31, 0);
         chart_top_Line.setMaximumViewport(v);
         chart_top_Line.setCurrentViewport(v);
         chart_top_Line.setZoomType(ZoomType.HORIZONTAL);
