@@ -20,10 +20,10 @@ com/doubleclick/marktinhome/Views/colorpickerview/preference/ColorPickerPreferen
  com.doubleclick.marktinhome.Views.colorpickerview.preference.ColorPickerPreferenceManager
 com/doubleclick/marktinhome/Views/colorpickerview/PointMapper.java
  com.doubleclick.marktinhome.Views.colorpickerview.PointMapper
-com/doubleclick/marktinhome/Repository/RecentOrdersForSellerRepository.java
- com.doubleclick.marktinhome.Repository.RecentOrdersForSellerRepository
- com.doubleclick.marktinhome.Repository.RecentOrdersForSellerRepository$1
- com.doubleclick.marktinhome.Repository.RecentOrdersForSellerRepository$recentOrder
+com/doubleclick/marktinhome/Adapters/ParentAdapter.java
+ com.doubleclick.marktinhome.Adapters.ParentAdapter
+ com.doubleclick.marktinhome.Adapters.ParentAdapter$1
+ com.doubleclick.marktinhome.Adapters.ParentAdapter$ParentViewHolder
 com/doubleclick/marktinhome/Views/flowingdrawer_core/ViewHelper.java
  com.doubleclick.marktinhome.Views.flowingdrawer_core.ViewHelper
 com/doubleclick/marktinhome/DataBindingTriggerClass.java
@@ -84,8 +84,8 @@ com/doubleclick/marktinhome/Model/Advertisement.java
  com.doubleclick.marktinhome.Model.Advertisement
 com/doubleclick/marktinhome/Views/customnavigationdrawer/utils/CustomViewFactory.java
  com.doubleclick.marktinhome.Views.customnavigationdrawer.utils.CustomViewFactory
-com/doubleclick/ViewModel/RecentOrdersForSellerViewModel.java
- com.doubleclick.ViewModel.RecentOrdersForSellerViewModel
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/Profile/menu_profileFragment.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Profile.menu_profileFragment
 com/doubleclick/marktinhome/Views/colorpickerview/listeners/ColorPickerViewListener.java
  com.doubleclick.marktinhome.Views.colorpickerview.listeners.ColorPickerViewListener
 com/doubleclick/marktinhome/Model/ClassificationPC.java
@@ -719,12 +719,12 @@ com/doubleclick/marktinhome/ui/MainScreen/Frgments/RecentOrderFragmentDirections
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections$1
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections$ActionRecentOrderFragmentToProductFragment
-com/doubleclick/marktinhome/Adapters/ParentAdapter.java
- com.doubleclick.marktinhome.Adapters.ParentAdapter
- com.doubleclick.marktinhome.Adapters.ParentAdapter$1
- com.doubleclick.marktinhome.Adapters.ParentAdapter$ParentViewHolder
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/Profile/menu_profileFragment.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Profile.menu_profileFragment
+com/doubleclick/ViewModel/RecentOrdersForSellerViewModel.java
+ com.doubleclick.ViewModel.RecentOrdersForSellerViewModel
+com/doubleclick/marktinhome/Repository/RecentOrdersForSellerRepository.java
+ com.doubleclick.marktinhome.Repository.RecentOrdersForSellerRepository
+ com.doubleclick.marktinhome.Repository.RecentOrdersForSellerRepository$1
+ com.doubleclick.marktinhome.Repository.RecentOrdersForSellerRepository$recentOrder
 com/doubleclick/DashBoard/StatisticsFragment.java
  com.doubleclick.DashBoard.StatisticsFragment
  com.doubleclick.DashBoard.StatisticsFragment$1
