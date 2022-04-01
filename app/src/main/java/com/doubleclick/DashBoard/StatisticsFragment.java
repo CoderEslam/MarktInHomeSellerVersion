@@ -82,6 +82,7 @@ public class StatisticsFragment extends Fragment {
         recentOrdersForSellerViewModel.getYearLiveData().observe(getViewLifecycleOwner(), new Observer<ArrayList<ArrayList<ArrayList<Integer>>>>() {
             @Override
             public void onChanged(ArrayList<ArrayList<ArrayList<Integer>>> arrayLists) {
+                Log.e("arrayLists = ", arrayLists.toString());
                 generateColumnData(arrayLists);
             }
         });
@@ -104,6 +105,7 @@ public class StatisticsFragment extends Fragment {
             values = new ArrayList<>();
 
             ArrayList<Integer> yValueInMonth = new ArrayList<>();
+            yValueInMonth.add(0); // to keep frist value is empty
             // j for days
             for (int j = 0; j < arrayLists.get(i).size(); j++) {
                 // x for unkown number for order

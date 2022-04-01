@@ -93,12 +93,11 @@ public class RecentOrdersForSellerRepository extends BaseRepository {
                 ArrayList<Integer> dayList = new ArrayList<>();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     RecentOrder recentOrder = snapshot.getValue(RecentOrder.class);
-                   /* Log.e("recentOrder", recentOrder.toString());
-                    Log.e("TheDay", simpleDateFormat.format(recentOrder.getDate()).substring(5, 7));
-                    Log.e("CounterDay", "" + d);
-                    Log.e("currentYear", "" + currentYear);
-                    Log.e("test", "" + simpleDateFormat.format(recentOrder.getDate()).substring(5, 7).equals(String.valueOf(d)));*/
-                    if (simpleDateFormat.format(Objects.requireNonNull(recentOrder).getDate()).contains(String.valueOf(currentYear)) && recentOrder.getSellerId().equals(myId) && simpleDateFormat.format(recentOrder.getDate()).substring(5, 7).equals(String.valueOf(day)) && month == Integer.parseInt(simpleDateFormat.format(recentOrder.getDate()).substring(8, 10))) {
+                    Log.e("recentOrder = ", recentOrder.toString());
+//                    Log.e("TheDay", simpleDateFormat.format(recentOrder.getDate()).substring(5, 7));
+//                    Log.e("currentYear", "" + currentYear);
+//                    Log.e("test", ", day = "  + day + simpleDateFormat.format(recentOrder.getDate()).substring(5, 7).equals(String.valueOf(day)));
+                    if (simpleDateFormat.format(Objects.requireNonNull(recentOrder).getDate()).contains(String.valueOf(currentYear)) && recentOrder.getSellerId().equals(myId) && simpleDateFormat.format(recentOrder.getDate()).substring(5, 7).replace(" ","").equals(String.valueOf(day)) && month == Integer.parseInt(simpleDateFormat.format(recentOrder.getDate()).substring(8, 10).replace(" ",""))) {
                         dayList.add(1);
                     }
                 }
