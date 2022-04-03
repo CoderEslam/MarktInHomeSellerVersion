@@ -36,7 +36,7 @@ public class RecentOrdersForSellerRepository extends BaseRepository {
 
 
     @SuppressLint("SimpleDateFormat")
-    SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, d MM yyyy HH:mm:ss aaa");
+    SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, dd MM yyyy HH:mm:ss aaa");
     //    String date = simpleDateFormat.format(recentOrder.getDate());
     int currentYear = Calendar.getInstance().get(Calendar.YEAR);
     int currentMonth = Calendar.getInstance().get(Calendar.MONTH) + 1;
@@ -97,7 +97,7 @@ public class RecentOrdersForSellerRepository extends BaseRepository {
 //                    Log.e("TheDay", simpleDateFormat.format(recentOrder.getDate()).substring(5, 7));
 //                    Log.e("currentYear", "" + currentYear);
 //                    Log.e("test", ", day = "  + day + simpleDateFormat.format(recentOrder.getDate()).substring(5, 7).equals(String.valueOf(day)));
-                    if (simpleDateFormat.format(Objects.requireNonNull(recentOrder).getDate()).contains(String.valueOf(currentYear)) && recentOrder.getSellerId().equals(myId) && simpleDateFormat.format(recentOrder.getDate()).substring(5, 7).replace(" ","").equals(String.valueOf(day)) && month == Integer.parseInt(simpleDateFormat.format(recentOrder.getDate()).substring(8, 10).replace(" ",""))) {
+                    if (simpleDateFormat.format(Objects.requireNonNull(recentOrder).getDate()).contains(String.valueOf(currentYear)) && recentOrder.getSellerId().equals(myId) && Integer.parseInt(simpleDateFormat.format(recentOrder.getDate()).substring(5, 7)) == day && month == Integer.parseInt(simpleDateFormat.format(recentOrder.getDate()).substring(8, 10))) {
                         dayList.add(1);
                     }
                 }
