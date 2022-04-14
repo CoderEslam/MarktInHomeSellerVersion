@@ -11,6 +11,8 @@ int anim abc_slide_out_top 0x7f010009
 int anim abc_tooltip_enter 0x7f01000a
 int anim abc_tooltip_exit 0x7f01000b
 int anim blink_anim 0x7f01000c
+int anim bottom_in 0x7f010031
+int anim bottom_out 0x7f010032
 int anim bounce 0x7f01000d
 int anim btn_checkbox_to_checked_box_inner_merged_animation 0x7f01000e
 int anim btn_checkbox_to_checked_box_outer_merged_animation 0x7f01000f
@@ -28,11 +30,16 @@ int anim design_bottom_sheet_slide_in 0x7f01001a
 int anim design_bottom_sheet_slide_out 0x7f01001b
 int anim design_snackbar_in 0x7f01001c
 int anim design_snackbar_out 0x7f01001d
+int anim fade_in 0x7f010033
 int anim fade_in_colorpickerview_skydoves 0x7f01001e
+int anim fade_out 0x7f010034
 int anim fade_out_colorpickerview_skydoves 0x7f01001f
 int anim fadein 0x7f010020
 int anim fadeout 0x7f010021
 int anim fragment_fast_out_extra_slow_in 0x7f010022
+int anim hide_to_bottom 0x7f010035
+int anim left_in 0x7f010036
+int anim left_out 0x7f010037
 int anim lefttoright 0x7f010023
 int anim mixed_anim 0x7f010024
 int anim mtrl_bottom_sheet_slide_in 0x7f010025
@@ -42,9 +49,16 @@ int anim nav_default_enter_anim 0x7f010028
 int anim nav_default_exit_anim 0x7f010029
 int anim nav_default_pop_enter_anim 0x7f01002a
 int anim nav_default_pop_exit_anim 0x7f01002b
+int anim right_in 0x7f010038
+int anim right_out 0x7f010039
 int anim righttoleft 0x7f01002c
 int anim rotate 0x7f01002d
 int anim sample_anim 0x7f01002e
+int anim scale_in 0x7f01003a
+int anim scale_out 0x7f01003b
+int anim show_from_bottom 0x7f01003c
+int anim top_in 0x7f01003d
+int anim top_out 0x7f01003e
 int anim zoomin 0x7f01002f
 int anim zoomout 0x7f010030
 int animator design_appbar_state_list_animator 0x7f020000
@@ -425,6 +439,12 @@ int attr counterOverflowTextAppearance 0x7f04014e
 int attr counterOverflowTextColor 0x7f04014f
 int attr counterTextAppearance 0x7f040150
 int attr counterTextColor 0x7f040151
+int attr cropBorderColor 0x7f04050f
+int attr cropBorderWidth 0x7f040510
+int attr cropFocusHeight 0x7f040511
+int attr cropFocusWidth 0x7f040512
+int attr cropMaskColor 0x7f040513
+int attr cropStyle 0x7f040514
 int attr crossfade 0x7f040152
 int attr currentState 0x7f040153
 int attr curveFit 0x7f040154
@@ -2012,6 +2032,7 @@ int color secondary_text_default_material_dark 0x7f060260
 int color secondary_text_default_material_light 0x7f060261
 int color secondary_text_disabled_material_dark 0x7f060262
 int color secondary_text_disabled_material_light 0x7f060263
+int color status_bar 0x7f060276
 int color switch_thumb_disabled_material_dark 0x7f060264
 int color switch_thumb_disabled_material_light 0x7f060265
 int color switch_thumb_material_dark 0x7f060266
@@ -2025,8 +2046,11 @@ int color test_mtrl_calendar_day 0x7f06026d
 int color test_mtrl_calendar_day_selected 0x7f06026e
 int color textColor 0x7f06026f
 int color textclor 0x7f060270
+int color theme_body 0x7f060277
 int color tooltip_background_dark 0x7f060271
 int color tooltip_background_light 0x7f060272
+int color top_bar 0x7f060278
+int color transparent 0x7f060279
 int color transparent_black_percent_60 0x7f060273
 int color white 0x7f060274
 int color yellow 0x7f060275
@@ -2129,6 +2153,7 @@ int dimen compat_control_corner_material 0x7f07005f
 int dimen compat_notification_large_icon_max_height 0x7f070060
 int dimen compat_notification_large_icon_max_width 0x7f070061
 int dimen def_drawer_elevation 0x7f070062
+int dimen def_height 0x7f070257
 int dimen default_dimension 0x7f070063
 int dimen design_appbar_elevation 0x7f070064
 int dimen design_bottom_navigation_active_item_max_width 0x7f070065
@@ -2180,6 +2205,10 @@ int dimen design_tab_text_size_2line 0x7f070092
 int dimen design_textinput_caption_translate_y 0x7f070093
 int dimen disabled_alpha_material_dark 0x7f070094
 int dimen disabled_alpha_material_light 0x7f070095
+int dimen dp_10 0x7f070258
+int dimen dp_4 0x7f070259
+int dimen dp_40 0x7f07025a
+int dimen dp_72 0x7f07025b
 int dimen fastscroll_default_thickness 0x7f070096
 int dimen fastscroll_margin 0x7f070097
 int dimen fastscroll_minimum_range 0x7f070098
@@ -2600,6 +2629,9 @@ int dimen notification_top_pad 0x7f070236
 int dimen notification_top_pad_large_text 0x7f070237
 int dimen padding_left 0x7f070238
 int dimen sliding_pane_detail_pane_width 0x7f070239
+int dimen sp_12 0x7f07025c
+int dimen sp_14 0x7f07025d
+int dimen sp_16 0x7f07025e
 int dimen speech_bubble_corners 0x7f07023a
 int dimen speech_bubble_corners_plus_tail 0x7f07023b
 int dimen speech_bubble_spacing 0x7f07023c
@@ -2720,6 +2752,9 @@ int drawable avd_hide_password 0x7f080062
 int drawable avd_pathmorph_drawer_arrow_to_hamburger 0x7f080063
 int drawable avd_pathmorph_drawer_hamburger_to_arrow 0x7f080064
 int drawable avd_show_password 0x7f080065
+int drawable bg_btn_dis 0x7f080102
+int drawable bg_btn_nor 0x7f080103
+int drawable bg_btn_pre 0x7f080104
 int drawable bg_edit 0x7f080066
 int drawable bg_image 0x7f080067
 int drawable bg_product_activity 0x7f080068
@@ -2860,7 +2895,13 @@ int drawable parson 0x7f0800ee
 int drawable password 0x7f0800ef
 int drawable path1306 0x7f0800f0
 int drawable person 0x7f0800f1
+int drawable sample_footer_loading 0x7f080105
+int drawable sample_footer_loading_progress 0x7f080106
 int drawable search 0x7f0800f2
+int drawable selector_back_press 0x7f080107
+int drawable selector_grid_camera_bg 0x7f080108
+int drawable selector_item_checked 0x7f080109
+int drawable selector_top_ok 0x7f08010a
 int drawable send 0x7f0800f3
 int drawable share 0x7f0800f4
 int drawable shopping_cart 0x7f0800f5
@@ -2892,6 +2933,10 @@ int id BOTTOM_LEFT 0x7f0a0008
 int id BOTTOM_RIGHT 0x7f0a0009
 int id BOTTOM_START 0x7f0a000a
 int id BUTT 0x7f0a000b
+int id BaseQuickAdapter_databinding_support 0x7f0a035c
+int id BaseQuickAdapter_dragging_support 0x7f0a035d
+int id BaseQuickAdapter_swiping_support 0x7f0a035e
+int id BaseQuickAdapter_viewholder_support 0x7f0a035f
 int id CENTER 0x7f0a000c
 int id CTRL 0x7f0a000d
 int id CartName 0x7f0a000e
@@ -3080,6 +3125,7 @@ int id bestChoice 0x7f0a00c4
 int id blocking 0x7f0a00c5
 int id bottom 0x7f0a00c6
 int id bottomBar 0x7f0a00c7
+int id bottom_bar 0x7f0a0360
 int id bottom_left 0x7f0a00c8
 int id bottom_right 0x7f0a00c9
 int id bounce 0x7f0a00ca
@@ -3093,12 +3139,18 @@ int id browser_actions_menu_item_icon 0x7f0a00d1
 int id browser_actions_menu_item_text 0x7f0a00d2
 int id browser_actions_menu_items 0x7f0a00d3
 int id browser_actions_menu_view 0x7f0a00d4
+int id btn_back 0x7f0a0361
+int id btn_del 0x7f0a0362
+int id btn_dir 0x7f0a0363
+int id btn_ok 0x7f0a0364
+int id btn_preview 0x7f0a0365
 int id btn_reset 0x7f0a00d5
 int id bubble 0x7f0a00d6
 int id buttonPanel 0x7f0a00d7
 int id cache_measures 0x7f0a00d8
 int id callMeasure 0x7f0a00d9
 int id callUsFragment 0x7f0a00da
+int id camera 0x7f0a0366
 int id cancel 0x7f0a00db
 int id cancel_action 0x7f0a00dc
 int id cancel_button 0x7f0a00dd
@@ -3107,6 +3159,8 @@ int id cardView11 0x7f0a00df
 int id carryVelocity 0x7f0a00e0
 int id cartRate 0x7f0a00e1
 int id cartRecycler 0x7f0a00e2
+int id cb_check 0x7f0a0367
+int id cb_origin 0x7f0a0368
 int id center 0x7f0a00e3
 int id center_horizontal 0x7f0a00e4
 int id center_vertical 0x7f0a00e5
@@ -3127,6 +3181,7 @@ int id chip2 0x7f0a00f3
 int id chip3 0x7f0a00f4
 int id chip_group 0x7f0a00f5
 int id chronometer 0x7f0a00f6
+int id circle 0x7f0a0369
 int id circleImageView 0x7f0a00f7
 int id circle_center 0x7f0a00f8
 int id clear_text 0x7f0a00f9
@@ -3176,6 +3231,7 @@ int id custommerAddress 0x7f0a0123
 int id custommerName 0x7f0a0124
 int id custommerPhone 0x7f0a0125
 int id cut 0x7f0a0126
+int id cv_crop_image 0x7f0a036a
 int id dark 0x7f0a0127
 int id dataBinding 0x7f0a0128
 int id date_picker_actions 0x7f0a0129
@@ -3245,6 +3301,7 @@ int id fitToContents 0x7f0a0168
 int id fixed 0x7f0a0169
 int id flip 0x7f0a016a
 int id floating 0x7f0a016b
+int id footer_bar 0x7f0a036b
 int id forever 0x7f0a016c
 int id fragment_container_view_tag 0x7f0a016d
 int id frameLayout 0x7f0a016e
@@ -3257,6 +3314,7 @@ int id google 0x7f0a0174
 int id graph 0x7f0a0175
 int id graph_wrap 0x7f0a0176
 int id gridViewTopDeals 0x7f0a0177
+int id gridview 0x7f0a036c
 int id group_divider 0x7f0a0178
 int id grouping 0x7f0a0179
 int id groups 0x7f0a017a
@@ -3317,6 +3375,9 @@ int id italic 0x7f0a01b0
 int id itemImage 0x7f0a01b1
 int id itemName 0x7f0a01b2
 int id item_touch_helper_previous_elevation 0x7f0a01b3
+int id iv_cover 0x7f0a036d
+int id iv_folder_check 0x7f0a036e
+int id iv_thumb 0x7f0a036f
 int id joinUs 0x7f0a01b4
 int id joinUsFragment 0x7f0a01b5
 int id jumpToEnd 0x7f0a01b6
@@ -3341,8 +3402,14 @@ int id linearLayout7 0x7f0a01c8
 int id linear_layout 0x7f0a01c9
 int id listMode 0x7f0a01ca
 int id listTitle 0x7f0a01cb
+int id listView 0x7f0a0370
 int id list_item 0x7f0a01cc
+int id load_more_load_end_view 0x7f0a0371
+int id load_more_load_fail_view 0x7f0a0372
+int id load_more_loading_view 0x7f0a0373
 int id loadingAnimView 0x7f0a01cd
+int id loading_progress 0x7f0a0374
+int id loading_text 0x7f0a0375
 int id locale 0x7f0a01ce
 int id login 0x7f0a01cf
 int id logout 0x7f0a01d0
@@ -3353,7 +3420,10 @@ int id mainLoginFragment 0x7f0a01d4
 int id main_fragment 0x7f0a01d5
 int id map 0x7f0a01d6
 int id mapContiner 0x7f0a01d7
+int id margin 0x7f0a0376
+int id mask 0x7f0a0377
 int id masked 0x7f0a01d8
+int id masker 0x7f0a0378
 int id match_constraint 0x7f0a01d9
 int id match_parent 0x7f0a01da
 int id materialToolbar 0x7f0a01db
@@ -3508,7 +3578,9 @@ int id ratio 0x7f0a026f
 int id recentOrder 0x7f0a0270
 int id recentOrderFragment 0x7f0a0271
 int id recentSearch 0x7f0a0272
+int id rectangle 0x7f0a0379
 int id rectangles 0x7f0a0273
+int id recycler 0x7f0a037a
 int id restart 0x7f0a0274
 int id reverse 0x7f0a0275
 int id reverseSawtooth 0x7f0a0276
@@ -3682,6 +3754,7 @@ int id toolbar 0x7f0a031d
 int id top 0x7f0a031e
 int id topPanel 0x7f0a031f
 int id topParents 0x7f0a0320
+int id top_bar 0x7f0a037b
 int id top_left 0x7f0a0321
 int id top_right 0x7f0a0322
 int id topdealsRecycler 0x7f0a0323
@@ -3705,6 +3778,10 @@ int id tvRate2 0x7f0a0334
 int id tvRate3 0x7f0a0335
 int id tvRate4 0x7f0a0336
 int id tvRate5 0x7f0a0337
+int id tv_des 0x7f0a037c
+int id tv_folder_name 0x7f0a037d
+int id tv_image_count 0x7f0a037e
+int id tv_prompt 0x7f0a037f
 int id tv_your_ratins 0x7f0a0338
 int id unchecked 0x7f0a0339
 int id uniform 0x7f0a033a
@@ -3726,6 +3803,7 @@ int id view_tree_lifecycle_owner 0x7f0a0349
 int id view_tree_saved_state_registry_owner 0x7f0a034a
 int id view_tree_view_model_store_owner 0x7f0a034b
 int id viewmore 0x7f0a034c
+int id viewpager 0x7f0a0380
 int id visible 0x7f0a034d
 int id visible_removing_fragment_view_tag 0x7f0a034e
 int id west 0x7f0a034f
@@ -3834,11 +3912,17 @@ int layout activity_chat 0x7f0d001f
 int layout activity_comments 0x7f0d0020
 int layout activity_dash_board 0x7f0d0021
 int layout activity_filter 0x7f0d0022
+int layout activity_image_crop 0x7f0d00d9
+int layout activity_image_grid 0x7f0d00da
+int layout activity_image_preview 0x7f0d00db
 int layout activity_main 0x7f0d0023
 int layout activity_main_screen 0x7f0d0024
 int layout activity_product 0x7f0d0025
 int layout activity_seller 0x7f0d0026
 int layout activity_trademark 0x7f0d0027
+int layout adapter_camera_item 0x7f0d00dc
+int layout adapter_folder_list_item 0x7f0d00dd
+int layout adapter_image_list_item 0x7f0d00de
 int layout add_toggal 0x7f0d0028
 int layout all_tradmark 0x7f0d0029
 int layout botton_navigation 0x7f0d002a
@@ -3904,6 +3988,7 @@ int layout g_v_layout 0x7f0d0064
 int layout h_top_recyclerview 0x7f0d0065
 int layout h_treademark_recyclerview 0x7f0d0066
 int layout images 0x7f0d0067
+int layout include_top_bar 0x7f0d00df
 int layout item_adv 0x7f0d0068
 int layout item_trademark 0x7f0d0069
 int layout layaut_cart 0x7f0d006a
@@ -3985,7 +4070,9 @@ int layout notification_template_media_custom 0x7f0d00b5
 int layout notification_template_part_chronometer 0x7f0d00b6
 int layout notification_template_part_time 0x7f0d00b7
 int layout orders 0x7f0d00b8
+int layout pop_folder 0x7f0d00e0
 int layout product_ratings_layout 0x7f0d00b9
+int layout quick_view_load_more 0x7f0d00e1
 int layout recent_search_layout 0x7f0d00ba
 int layout right_chat 0x7f0d00bb
 int layout select_dialog_item_material 0x7f0d00bc
@@ -4018,8 +4105,16 @@ int layout v_product_recyclerview 0x7f0d00d6
 int layout widget_navigation_drawer 0x7f0d00d7
 int menu add_item 0x7f0e0000
 int menu menu_bottom 0x7f0e0001
+int mipmap checkbox_checked 0x7f0f0002
+int mipmap checkbox_normal 0x7f0f0003
+int mipmap default_image 0x7f0f0004
+int mipmap grid_camera 0x7f0f0005
+int mipmap ic_back 0x7f0f0006
+int mipmap ic_del 0x7f0f0007
 int mipmap ic_launcher 0x7f0f0000
 int mipmap ic_launcher_round 0x7f0f0001
+int mipmap list_selected 0x7f0f0008
+int mipmap text_indicator 0x7f0f0009
 int navigation add_navigation 0x7f100000
 int navigation chat_nav 0x7f100001
 int navigation nav_graph 0x7f100002
@@ -4064,6 +4159,7 @@ int string abc_shareactionprovider_share_with_application 0x7f13001d
 int string abc_toolbar_collapse_description 0x7f13001e
 int string add 0x7f13001f
 int string all_cartegories 0x7f130020
+int string all_images 0x7f1300ee
 int string androidx_startup 0x7f130021
 int string another_customer_phone 0x7f130022
 int string another_number_phone 0x7f130023
@@ -4101,6 +4197,7 @@ int string common_google_play_services_wear_update_text 0x7f130042
 int string common_open_on_phone 0x7f130043
 int string common_signin_button_text 0x7f130044
 int string common_signin_button_text_long 0x7f130045
+int string complete 0x7f1300ef
 int string confirm 0x7f130046
 int string connect_us 0x7f130047
 int string create_by_x_team 0x7f130048
@@ -4121,6 +4218,7 @@ int string fab_transformation_scrim_behavior 0x7f130056
 int string fab_transformation_sheet_behavior 0x7f130057
 int string fcm_fallback_notification_channel_label 0x7f130058
 int string filter 0x7f130059
+int string folder_image_count 0x7f1300f0
 int string froget_password 0x7f13005a
 int string gcm_defaultSenderId 0x7f13005b
 int string get_my_location 0x7f13005c
@@ -4135,6 +4233,9 @@ int string i_have_already_account 0x7f130064
 int string icon_content_description 0x7f130065
 int string item_view_role_description 0x7f130066
 int string keywords 0x7f130067
+int string load_end 0x7f1300f1
+int string load_failed 0x7f1300f2
+int string loading 0x7f1300f3
 int string log_in 0x7f130068
 int string logout 0x7f130069
 int string m3_ref_typeface_brand_display_regular 0x7f13006a
@@ -4232,6 +4333,8 @@ int string new_user 0x7f1300c5
 int string off 0x7f1300c6
 int string on 0x7f1300c7
 int string orders 0x7f1300c8
+int string origin 0x7f1300f4
+int string origin_size 0x7f1300f5
 int string password 0x7f1300c9
 int string password_toggle_content_description 0x7f1300ca
 int string path_arrow 0x7f1300cb
@@ -4240,6 +4343,9 @@ int string path_password_eye 0x7f1300cd
 int string path_password_eye_mask_strike_through 0x7f1300ce
 int string path_password_eye_mask_visible 0x7f1300cf
 int string path_password_strike_through 0x7f1300d0
+int string photo_crop 0x7f1300f6
+int string preview_count 0x7f1300f7
+int string preview_image_count 0x7f1300f8
 int string price 0x7f1300d1
 int string product_last_price 0x7f1300d2
 int string product_name 0x7f1300d3
@@ -4251,6 +4357,8 @@ int string recent_search 0x7f1300d8
 int string search 0x7f1300d9
 int string search_here 0x7f1300da
 int string search_menu_title 0x7f1300db
+int string select_complete 0x7f1300f9
+int string select_limit 0x7f1300fa
 int string sign_in 0x7f1300dc
 int string sign_up 0x7f1300dd
 int string statistices 0x7f1300de
@@ -4269,6 +4377,7 @@ int string write 0x7f1300ea
 int string your_address_clearly 0x7f1300eb
 int string your_name 0x7f1300ec
 int string your_number_phone 0x7f1300ed
+int style ActivityTranslucent 0x7f140403
 int style AlertDialog_AppCompat 0x7f140000
 int style AlertDialog_AppCompat_Light 0x7f140001
 int style AndroidThemeColorAccentYellow 0x7f140002
@@ -4547,6 +4656,8 @@ int style CardView_Dark 0x7f140112
 int style CardView_Light 0x7f140113
 int style Dexter_Internal_Theme_Transparent 0x7f140114
 int style EmptyTheme 0x7f140115
+int style ImagePickerTheme 0x7f140404
+int style ImagePickerThemeFullScreen 0x7f140405
 int style MaterialAlertDialog_Material3 0x7f140116
 int style MaterialAlertDialog_Material3_Body_Text 0x7f140117
 int style MaterialAlertDialog_Material3_Body_Text_CenterStacked 0x7f140118
@@ -4631,6 +4742,7 @@ int style ShapeAppearanceOverlay_TopLeftCut 0x7f140166
 int style ShapeAppearanceOverlay_TopRightDifferentCornerSize 0x7f140167
 int style StyleEdtInput 0x7f140168
 int style StyleInputLayout 0x7f140169
+int style SuperCheckboxTheme 0x7f140406
 int style Test_ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day 0x7f14016a
 int style Test_Theme_MaterialComponents_MaterialCalendar 0x7f14016b
 int style Test_Widget_MaterialComponents_MaterialCalendar 0x7f14016c
@@ -5296,6 +5408,7 @@ int style Widget_MaterialComponents_Toolbar_PrimarySurface 0x7f1403ff
 int style Widget_MaterialComponents_Toolbar_Surface 0x7f140400
 int style Widget_MaterialComponents_Tooltip 0x7f140401
 int style Widget_Support_CoordinatorLayout 0x7f140402
+int style popupwindow_anim_style 0x7f140407
 int[] styleable ActionBar { 0x7f04004f, 0x7f040056, 0x7f040057, 0x7f04012f, 0x7f040130, 0x7f040131, 0x7f040132, 0x7f040133, 0x7f040134, 0x7f04015b, 0x7f040171, 0x7f040172, 0x7f040197, 0x7f040206, 0x7f04020d, 0x7f040213, 0x7f040214, 0x7f040218, 0x7f04022d, 0x7f040245, 0x7f0402c4, 0x7f04033a, 0x7f040372, 0x7f04037d, 0x7f04037e, 0x7f0403f2, 0x7f0403f6, 0x7f0404b6, 0x7f0404c3 }
 int styleable ActionBar_background 0
 int styleable ActionBar_backgroundSplit 1
@@ -6288,6 +6401,13 @@ int styleable CoordinatorLayout_Layout_layout_behavior 3
 int styleable CoordinatorLayout_Layout_layout_dodgeInsetEdges 4
 int styleable CoordinatorLayout_Layout_layout_insetEdge 5
 int styleable CoordinatorLayout_Layout_layout_keyline 6
+int[] styleable CropImageView { 0x7f04050f, 0x7f040510, 0x7f040511, 0x7f040512, 0x7f040513, 0x7f040514 }
+int styleable CropImageView_cropBorderColor 0
+int styleable CropImageView_cropBorderWidth 1
+int styleable CropImageView_cropFocusHeight 2
+int styleable CropImageView_cropFocusWidth 3
+int styleable CropImageView_cropMaskColor 4
+int styleable CropImageView_cropStyle 5
 int[] styleable CustomAttribute { 0x7f040046, 0x7f040155, 0x7f040156, 0x7f040157, 0x7f040158, 0x7f040159, 0x7f04015a, 0x7f04015c, 0x7f04015d, 0x7f04015e, 0x7f04030a }
 int styleable CustomAttribute_attributeName 0
 int styleable CustomAttribute_customBoolean 1
@@ -7515,8 +7635,10 @@ int styleable ViewTransition_upDuration 13
 int styleable ViewTransition_viewTransitionMode 14
 int[] styleable include { 0x7f040127 }
 int styleable include_constraintSet 0
+int xml provider_paths 0x7f160005
 int xml standalone_badge 0x7f160000
 int xml standalone_badge_gravity_bottom_end 0x7f160001
 int xml standalone_badge_gravity_bottom_start 0x7f160002
 int xml standalone_badge_gravity_top_start 0x7f160003
 int xml standalone_badge_offset 0x7f160004
+int xml util_code_provider_paths 0x7f160006

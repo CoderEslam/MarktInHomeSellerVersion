@@ -26,4 +26,9 @@
     <color name="red">#FF0000</color>
     <color name="green">#37FF00</color>
     <color name="offwhite">#F5F5F5</color>
+    <color name="textPrimary">#2F3640</color>
+    <color name="gray_100">#FAFAFA</color>
+    <color name="light_blue_500">#03A9F4</color>
+    <color name="tintColor">#515151</color>
+
 </resources>

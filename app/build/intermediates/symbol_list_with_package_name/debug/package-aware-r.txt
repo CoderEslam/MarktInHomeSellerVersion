@@ -12,6 +12,8 @@ anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
 anim blink_anim
+anim bottom_in
+anim bottom_out
 anim bounce
 anim btn_checkbox_to_checked_box_inner_merged_animation
 anim btn_checkbox_to_checked_box_outer_merged_animation
@@ -29,11 +31,16 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim fade_in
 anim fade_in_colorpickerview_skydoves
+anim fade_out
 anim fade_out_colorpickerview_skydoves
 anim fadein
 anim fadeout
 anim fragment_fast_out_extra_slow_in
+anim hide_to_bottom
+anim left_in
+anim left_out
 anim lefttoright
 anim mixed_anim
 anim mtrl_bottom_sheet_slide_in
@@ -43,9 +50,16 @@ anim nav_default_enter_anim
 anim nav_default_exit_anim
 anim nav_default_pop_enter_anim
 anim nav_default_pop_exit_anim
+anim right_in
+anim right_out
 anim righttoleft
 anim rotate
 anim sample_anim
+anim scale_in
+anim scale_out
+anim show_from_bottom
+anim top_in
+anim top_out
 anim zoomin
 anim zoomout
 animator design_appbar_state_list_animator
@@ -426,6 +440,12 @@ attr counterOverflowTextAppearance
 attr counterOverflowTextColor
 attr counterTextAppearance
 attr counterTextColor
+attr cropBorderColor
+attr cropBorderWidth
+attr cropFocusHeight
+attr cropFocusWidth
+attr cropMaskColor
+attr cropStyle
 attr crossfade
 attr currentState
 attr curveFit
@@ -2013,6 +2033,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color status_bar
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -2026,8 +2047,11 @@ color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color textColor
 color textclor
+color theme_body
 color tooltip_background_dark
 color tooltip_background_light
+color top_bar
+color transparent
 color transparent_black_percent_60
 color white
 color yellow
@@ -2130,6 +2154,7 @@ dimen compat_control_corner_material
 dimen compat_notification_large_icon_max_height
 dimen compat_notification_large_icon_max_width
 dimen def_drawer_elevation
+dimen def_height
 dimen default_dimension
 dimen design_appbar_elevation
 dimen design_bottom_navigation_active_item_max_width
@@ -2181,6 +2206,10 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen dp_10
+dimen dp_4
+dimen dp_40
+dimen dp_72
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -2601,6 +2630,9 @@ dimen notification_top_pad
 dimen notification_top_pad_large_text
 dimen padding_left
 dimen sliding_pane_detail_pane_width
+dimen sp_12
+dimen sp_14
+dimen sp_16
 dimen speech_bubble_corners
 dimen speech_bubble_corners_plus_tail
 dimen speech_bubble_spacing
@@ -2721,6 +2753,9 @@ drawable avd_hide_password
 drawable avd_pathmorph_drawer_arrow_to_hamburger
 drawable avd_pathmorph_drawer_hamburger_to_arrow
 drawable avd_show_password
+drawable bg_btn_dis
+drawable bg_btn_nor
+drawable bg_btn_pre
 drawable bg_edit
 drawable bg_image
 drawable bg_product_activity
@@ -2861,7 +2896,13 @@ drawable parson
 drawable password
 drawable path1306
 drawable person
+drawable sample_footer_loading
+drawable sample_footer_loading_progress
 drawable search
+drawable selector_back_press
+drawable selector_grid_camera_bg
+drawable selector_item_checked
+drawable selector_top_ok
 drawable send
 drawable share
 drawable shopping_cart
@@ -2893,6 +2934,10 @@ id BOTTOM_LEFT
 id BOTTOM_RIGHT
 id BOTTOM_START
 id BUTT
+id BaseQuickAdapter_databinding_support
+id BaseQuickAdapter_dragging_support
+id BaseQuickAdapter_swiping_support
+id BaseQuickAdapter_viewholder_support
 id CENTER
 id CTRL
 id CartName
@@ -3081,6 +3126,7 @@ id bestChoice
 id blocking
 id bottom
 id bottomBar
+id bottom_bar
 id bottom_left
 id bottom_right
 id bounce
@@ -3094,12 +3140,18 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btn_back
+id btn_del
+id btn_dir
+id btn_ok
+id btn_preview
 id btn_reset
 id bubble
 id buttonPanel
 id cache_measures
 id callMeasure
 id callUsFragment
+id camera
 id cancel
 id cancel_action
 id cancel_button
@@ -3108,6 +3160,8 @@ id cardView11
 id carryVelocity
 id cartRate
 id cartRecycler
+id cb_check
+id cb_origin
 id center
 id center_horizontal
 id center_vertical
@@ -3128,6 +3182,7 @@ id chip2
 id chip3
 id chip_group
 id chronometer
+id circle
 id circleImageView
 id circle_center
 id clear_text
@@ -3177,6 +3232,7 @@ id custommerAddress
 id custommerName
 id custommerPhone
 id cut
+id cv_crop_image
 id dark
 id dataBinding
 id date_picker_actions
@@ -3246,6 +3302,7 @@ id fitToContents
 id fixed
 id flip
 id floating
+id footer_bar
 id forever
 id fragment_container_view_tag
 id frameLayout
@@ -3258,6 +3315,7 @@ id google
 id graph
 id graph_wrap
 id gridViewTopDeals
+id gridview
 id group_divider
 id grouping
 id groups
@@ -3318,6 +3376,9 @@ id italic
 id itemImage
 id itemName
 id item_touch_helper_previous_elevation
+id iv_cover
+id iv_folder_check
+id iv_thumb
 id joinUs
 id joinUsFragment
 id jumpToEnd
@@ -3342,8 +3403,14 @@ id linearLayout7
 id linear_layout
 id listMode
 id listTitle
+id listView
 id list_item
+id load_more_load_end_view
+id load_more_load_fail_view
+id load_more_loading_view
 id loadingAnimView
+id loading_progress
+id loading_text
 id locale
 id login
 id logout
@@ -3354,7 +3421,10 @@ id mainLoginFragment
 id main_fragment
 id map
 id mapContiner
+id margin
+id mask
 id masked
+id masker
 id match_constraint
 id match_parent
 id materialToolbar
@@ -3509,7 +3579,9 @@ id ratio
 id recentOrder
 id recentOrderFragment
 id recentSearch
+id rectangle
 id rectangles
+id recycler
 id restart
 id reverse
 id reverseSawtooth
@@ -3683,6 +3755,7 @@ id toolbar
 id top
 id topPanel
 id topParents
+id top_bar
 id top_left
 id top_right
 id topdealsRecycler
@@ -3706,6 +3779,10 @@ id tvRate2
 id tvRate3
 id tvRate4
 id tvRate5
+id tv_des
+id tv_folder_name
+id tv_image_count
+id tv_prompt
 id tv_your_ratins
 id unchecked
 id uniform
@@ -3727,6 +3804,7 @@ id view_tree_lifecycle_owner
 id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id viewmore
+id viewpager
 id visible
 id visible_removing_fragment_view_tag
 id west
@@ -3835,11 +3913,17 @@ layout activity_chat
 layout activity_comments
 layout activity_dash_board
 layout activity_filter
+layout activity_image_crop
+layout activity_image_grid
+layout activity_image_preview
 layout activity_main
 layout activity_main_screen
 layout activity_product
 layout activity_seller
 layout activity_trademark
+layout adapter_camera_item
+layout adapter_folder_list_item
+layout adapter_image_list_item
 layout add_toggal
 layout all_tradmark
 layout botton_navigation
@@ -3905,6 +3989,7 @@ layout g_v_layout
 layout h_top_recyclerview
 layout h_treademark_recyclerview
 layout images
+layout include_top_bar
 layout item_adv
 layout item_trademark
 layout layaut_cart
@@ -3986,7 +4071,9 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout orders
+layout pop_folder
 layout product_ratings_layout
+layout quick_view_load_more
 layout recent_search_layout
 layout right_chat
 layout select_dialog_item_material
@@ -4019,8 +4106,16 @@ layout v_product_recyclerview
 layout widget_navigation_drawer
 menu add_item
 menu menu_bottom
+mipmap checkbox_checked
+mipmap checkbox_normal
+mipmap default_image
+mipmap grid_camera
+mipmap ic_back
+mipmap ic_del
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap list_selected
+mipmap text_indicator
 navigation add_navigation
 navigation chat_nav
 navigation nav_graph
@@ -4065,6 +4160,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string add
 string all_cartegories
+string all_images
 string androidx_startup
 string another_customer_phone
 string another_number_phone
@@ -4102,6 +4198,7 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string complete
 string confirm
 string connect_us
 string create_by_x_team
@@ -4122,6 +4219,7 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string fcm_fallback_notification_channel_label
 string filter
+string folder_image_count
 string froget_password
 string gcm_defaultSenderId
 string get_my_location
@@ -4136,6 +4234,9 @@ string i_have_already_account
 string icon_content_description
 string item_view_role_description
 string keywords
+string load_end
+string load_failed
+string loading
 string log_in
 string logout
 string m3_ref_typeface_brand_display_regular
@@ -4233,6 +4334,8 @@ string new_user
 string off
 string on
 string orders
+string origin
+string origin_size
 string password
 string password_toggle_content_description
 string path_arrow
@@ -4241,6 +4344,9 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string photo_crop
+string preview_count
+string preview_image_count
 string price
 string product_last_price
 string product_name
@@ -4252,6 +4358,8 @@ string recent_search
 string search
 string search_here
 string search_menu_title
+string select_complete
+string select_limit
 string sign_in
 string sign_up
 string statistices
@@ -4270,6 +4378,7 @@ string write
 string your_address_clearly
 string your_name
 string your_number_phone
+style ActivityTranslucent
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -4548,6 +4657,8 @@ style CardView_Dark
 style CardView_Light
 style Dexter_Internal_Theme_Transparent
 style EmptyTheme
+style ImagePickerTheme
+style ImagePickerThemeFullScreen
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Body_Text
 style MaterialAlertDialog_Material3_Body_Text_CenterStacked
@@ -4632,6 +4743,7 @@ style ShapeAppearanceOverlay_TopLeftCut
 style ShapeAppearanceOverlay_TopRightDifferentCornerSize
 style StyleEdtInput
 style StyleInputLayout
+style SuperCheckboxTheme
 style Test_ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day
 style Test_Theme_MaterialComponents_MaterialCalendar
 style Test_Widget_MaterialComponents_MaterialCalendar
@@ -5297,6 +5409,7 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style popupwindow_anim_style
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
@@ -5353,6 +5466,7 @@ styleable ConstraintOverride android_orientation android_id android_visibility a
 styleable ConstraintSet android_orientation android_id android_visibility android_layout_width android_layout_height android_layout_marginLeft android_layout_marginTop android_layout_marginRight android_layout_marginBottom android_maxWidth android_maxHeight android_minWidth android_minHeight android_pivotX android_pivotY android_alpha android_transformPivotX android_transformPivotY android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_layout_marginStart android_layout_marginEnd android_translationZ android_elevation animateCircleAngleTo animateRelativeTo barrierAllowsGoneWidgets barrierDirection barrierMargin chainUseRtl constraintRotate constraint_referenced_ids constraint_referenced_tags deriveConstraintsFrom drawPath flow_firstHorizontalBias flow_firstHorizontalStyle flow_firstVerticalBias flow_firstVerticalStyle flow_horizontalAlign flow_horizontalBias flow_horizontalGap flow_horizontalStyle flow_lastHorizontalBias flow_lastHorizontalStyle flow_lastVerticalBias flow_lastVerticalStyle flow_maxElementsWrap flow_verticalAlign flow_verticalBias flow_verticalGap flow_verticalStyle flow_wrapMode guidelineUseRtl layout_constrainedHeight layout_constrainedWidth layout_constraintBaseline_creator layout_constraintBaseline_toBaselineOf layout_constraintBaseline_toBottomOf layout_constraintBaseline_toTopOf layout_constraintBottom_creator layout_constraintBottom_toBottomOf layout_constraintBottom_toTopOf layout_constraintCircle layout_constraintCircleAngle layout_constraintCircleRadius layout_constraintDimensionRatio layout_constraintEnd_toEndOf layout_constraintEnd_toStartOf layout_constraintGuide_begin layout_constraintGuide_end layout_constraintGuide_percent layout_constraintHeight_default layout_constraintHeight_max layout_constraintHeight_min layout_constraintHeight_percent layout_constraintHorizontal_bias layout_constraintHorizontal_chainStyle layout_constraintHorizontal_weight layout_constraintLeft_creator layout_constraintLeft_toLeftOf layout_constraintLeft_toRightOf layout_constraintRight_creator layout_constraintRight_toLeftOf layout_constraintRight_toRightOf layout_constraintStart_toEndOf layout_constraintStart_toStartOf layout_constraintTag layout_constraintTop_creator layout_constraintTop_toBottomOf layout_constraintTop_toTopOf layout_constraintVertical_bias layout_constraintVertical_chainStyle layout_constraintVertical_weight layout_constraintWidth_default layout_constraintWidth_max layout_constraintWidth_min layout_constraintWidth_percent layout_editor_absoluteX layout_editor_absoluteY layout_goneMarginBaseline layout_goneMarginBottom layout_goneMarginEnd layout_goneMarginLeft layout_goneMarginRight layout_goneMarginStart layout_goneMarginTop layout_marginBaseline layout_wrapBehaviorInParent motionProgress motionStagger pathMotionArc pivotAnchor polarRelativeTo quantizeMotionSteps transitionEasing transitionPathRotate
 styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
+styleable CropImageView cropBorderColor cropBorderWidth cropFocusHeight cropFocusWidth cropMaskColor cropStyle
 styleable CustomAttribute attributeName customBoolean customColorDrawableValue customColorValue customDimension customFloatValue customIntegerValue customPixelDimension customReference customStringValue methodName
 styleable DeluxeSpeedView sv_centerCircleColor sv_centerCircleRadius sv_sectionStyle sv_speedBackgroundColor sv_withEffects
 styleable DialogFragmentNavigator android_name
@@ -5487,8 +5601,10 @@ styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
+xml provider_paths
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start
 xml standalone_badge_gravity_top_start
 xml standalone_badge_offset
+xml util_code_provider_paths

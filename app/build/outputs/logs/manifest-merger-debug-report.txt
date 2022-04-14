@@ -8,6 +8,7 @@ MERGED from [androidx.databinding:databinding-adapters:7.0.4] C:\Users\eslam\.gr
 MERGED from [androidx.databinding:databinding-ktx:7.0.4] C:\Users\eslam\.gradle\caches\transforms-3\cfd3eec1f82664928881021033ddaacd\transformed\jetified-databinding-ktx-7.0.4\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.databinding:databinding-runtime:7.0.4] C:\Users\eslam\.gradle\caches\transforms-3\b55ea5f7faab5df3b47143aa060b4b6d\transformed\databinding-runtime-7.0.4\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.databinding:viewbinding:7.0.4] C:\Users\eslam\.gradle\caches\transforms-3\71d9a81808af07f73a86b71b23ef454a\transformed\jetified-viewbinding-7.0.4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:2:1-41:12
 MERGED from [com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\aadbc73d470c4633dc3cae2b1e8458b8\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:17:1-32:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.4.1] C:\Users\eslam\.gradle\caches\transforms-3\cc50595a1611555a40e080993bca7521\transformed\navigation-ui-ktx-2.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.4.1] C:\Users\eslam\.gradle\caches\transforms-3\d38d838a03a5ad9bebc771b351980d25\transformed\navigation-ui-2.4.1\AndroidManifest.xml:17:1-24:12
@@ -15,9 +16,11 @@ MERGED from [com.google.android.material:material:1.5.0] C:\Users\eslam\.gradle\
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\eslam\.gradle\caches\transforms-3\a959f16170f9e25bb0737464c841f92a\transformed\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [com.airbnb.android:lottie:3.4.0] C:\Users\eslam\.gradle\caches\transforms-3\2b3fb7c11c31ec6eac88fbecce2c3541\transformed\jetified-lottie-3.4.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.divyanshu.colorseekbar:colorseekbar:1.0.2] C:\Users\eslam\.gradle\caches\transforms-3\a4e003a147b0f46fbd69ff38ce942a8a\transformed\jetified-colorseekbar-1.0.2\AndroidManifest.xml:2:1-11:12
+MERGED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:2:1-47:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\eslam\.gradle\caches\transforms-3\55f1946249e7caf65cf7d93ceb079cc4\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.1] C:\Users\eslam\.gradle\caches\transforms-3\a283b9f8ae507025cae1b231b3d2b052\transformed\navigation-runtime-ktx-2.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.firebaseui:firebase-ui-database:6.0.2] C:\Users\eslam\.gradle\caches\transforms-3\a5baab2306d046e9836d5400f9fb32a1\transformed\jetified-firebase-ui-database-6.0.2\AndroidManifest.xml:2:1-13:12
+MERGED from [com.github.chrisbanes.photoview:library:1.2.4] C:\Users\eslam\.gradle\caches\transforms-3\3d8830dbe723498e9847e8b276390e81\transformed\jetified-library-1.2.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\2d77fd761ad478bad6bd662c3b8bc828\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\4cfb5c476fba263eb49b8f2526205ff8\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:17:1-83:12
 MERGED from [com.google.firebase:firebase-database:20.0.3] C:\Users\eslam\.gradle\caches\transforms-3\5eecb75e3b983c8f1d2e88f3fe79519f\transformed\jetified-firebase-database-20.0.3\AndroidManifest.xml:15:1-38:12
@@ -33,7 +36,7 @@ MERGED from [androidx.navigation:navigation-runtime:2.4.1] C:\Users\eslam\.gradl
 MERGED from [androidx.navigation:navigation-common-ktx:2.4.1] C:\Users\eslam\.gradle\caches\transforms-3\e796979b8ef76a53b243eeda509f6e65\transformed\navigation-common-ktx-2.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-common:2.4.1] C:\Users\eslam\.gradle\caches\transforms-3\e06890aab00fd004b187e28917a87440\transformed\navigation-common-2.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity-ktx:1.2.3] C:\Users\eslam\.gradle\caches\transforms-3\c2d6cbb7954b75c7f32fdc8e2b5f323e\transformed\jetified-activity-ktx-1.2.3\AndroidManifest.xml:17:1-24:12
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\eslam\.gradle\caches\transforms-3\503707e153772f1665a437a22a644198\transformed\jetified-glide-4.8.0\AndroidManifest.xml:2:1-12:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\eslam\.gradle\caches\transforms-3\03a815f2aabec6250cfc9635fcafc0aa\transformed\jetified-glide-4.11.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\eslam\.gradle\caches\transforms-3\36d896093575d1a958fffc49daa388e3\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\96518ce6f71d0af0479c150f3ea654f0\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\eslam\.gradle\caches\transforms-3\145d593df6b6fa46da1b115dbadb549a\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:17:1-24:12
@@ -68,6 +71,8 @@ MERGED from [com.mxn.soul:flowingdrawer-core:2.1.0] C:\Users\eslam\.gradle\cache
 MERGED from [com.github.lecho:hellocharts-library:1.5.8] C:\Users\eslam\.gradle\caches\transforms-3\250d146117de155fed5716e3d973580d\transformed\jetified-hellocharts-library-1.5.8\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.anastr:speedviewlib:1.6.0] C:\Users\eslam\.gradle\caches\transforms-3\4c1d02144a0d83d8fdd0a2dd204a1030\transformed\jetified-speedviewlib-1.6.0\AndroidManifest.xml:2:1-12:12
 MERGED from [com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\98dcb68e67e5fac1afbd77adb360f0e2\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:2:1-28:12
+MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34] C:\Users\eslam\.gradle\caches\transforms-3\53707e145b2345a470fdad02eed1b8ff\transformed\jetified-BaseRecyclerViewAdapterHelper-2.9.34\AndroidManifest.xml:2:1-11:12
+MERGED from [com.jakewharton:butterknife:10.1.0] C:\Users\eslam\.gradle\caches\transforms-3\c69ecf75a26682223b5f4d20afbe83fb\transformed\jetified-butterknife-10.1.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\53d8e268d3cc860f7c2ab83dd27cb448\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.2.4] C:\Users\eslam\.gradle\caches\transforms-3\73e6342c729be494019ceba9f14e0f9d\transformed\jetified-activity-1.2.4\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\eslam\.gradle\caches\transforms-3\b1699af171c68aa72b110ff28e85bc32\transformed\jetified-appcompat-resources-1.4.1\AndroidManifest.xml:17:1-24:12
@@ -92,6 +97,7 @@ MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\eslam\.gra
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\cc125f6556f454835735868eca5eba95\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\08ad01771b67678ba44997affcd3785b\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:15:1-41:12
 MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\cbdb42e3d33e43fcb393272003713d28\transformed\jetified-transport-api-3.0.0\AndroidManifest.xml:15:1-22:12
+MERGED from [com.jakewharton:butterknife-runtime:10.1.0] C:\Users\eslam\.gradle\caches\transforms-3\ac91e7b0faf1ad93674fbdf32e8d7eda\transformed\jetified-butterknife-runtime-10.1.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\35488086c8afccf8630e2728c08c8985\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\eslam\.gradle\caches\transforms-3\6cf76b15c062d6e40868b92e3f6b3b52\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\eslam\.gradle\caches\transforms-3\699c43667858f3e0f9f36e3d631b5207\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -99,7 +105,8 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\esla
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\686b1300bed4847ac2bec2c919d603c0\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.4.1] C:\Users\eslam\.gradle\caches\transforms-3\163c161feb1dd2d5f0c9377e90a1dc23\transformed\transition-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.9.0-alpha02] C:\Users\eslam\.gradle\caches\transforms-3\17b233a965ffc21004fd66c1edd08df3\transformed\core-1.9.0-alpha02\AndroidManifest.xml:17:1-26:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\eslam\.gradle\caches\transforms-3\fedbf7c0bb6ff1bd6b9cc79c65e7468d\transformed\jetified-gifdecoder-4.8.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\eslam\.gradle\caches\transforms-3\e1611c0a8a34fc302e085eb717546c93\transformed\jetified-gifdecoder-4.11.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\daea27603a4fefd18c6c88d57268d708\transformed\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\eslam\.gradle\caches\transforms-3\fa6dcdd330592d7b549ad26b3a5429a7\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] C:\Users\eslam\.gradle\caches\transforms-3\4b5c79716a066ed98be9c915b85fb9a2\transformed\jetified-lifecycle-livedata-core-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\eslam\.gradle\caches\transforms-3\7783363e0b4571e3930e730e807ca160\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
@@ -171,6 +178,8 @@ ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\Mark
 		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:8:22-76
 application
 ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:10:5-102:19
+MERGED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:9:5-39:19
+MERGED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:9:5-39:19
 MERGED from [com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\aadbc73d470c4633dc3cae2b1e8458b8\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\aadbc73d470c4633dc3cae2b1e8458b8\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:26:5-30:19
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\eslam\.gradle\caches\transforms-3\5f627eb25ff83e722a9b3a73344955f1\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
@@ -179,6 +188,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\eslam\.g
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\eslam\.gradle\caches\transforms-3\a959f16170f9e25bb0737464c841f92a\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.airbnb.android:lottie:3.4.0] C:\Users\eslam\.gradle\caches\transforms-3\2b3fb7c11c31ec6eac88fbecce2c3541\transformed\jetified-lottie-3.4.0\AndroidManifest.xml:9:5-20
 MERGED from [com.airbnb.android:lottie:3.4.0] C:\Users\eslam\.gradle\caches\transforms-3\2b3fb7c11c31ec6eac88fbecce2c3541\transformed\jetified-lottie-3.4.0\AndroidManifest.xml:9:5-20
+MERGED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:20:5-45:19
+MERGED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:20:5-45:19
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\4cfb5c476fba263eb49b8f2526205ff8\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:26:5-81:19
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\4cfb5c476fba263eb49b8f2526205ff8\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:26:5-81:19
 MERGED from [com.google.firebase:firebase-database:20.0.3] C:\Users\eslam\.gradle\caches\transforms-3\5eecb75e3b983c8f1d2e88f3fe79519f\transformed\jetified-firebase-database-20.0.3\AndroidManifest.xml:28:5-36:19
@@ -195,8 +206,8 @@ MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\eslam\.g
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\eslam\.gradle\caches\transforms-3\91a437daedfda40a7b6b21d8a8089b59\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.android.gms:play-services-location:19.0.1] C:\Users\eslam\.gradle\caches\transforms-3\758383d955acbe149d63fa3fd1b01eac\transformed\jetified-play-services-location-19.0.1\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:19.0.1] C:\Users\eslam\.gradle\caches\transforms-3\758383d955acbe149d63fa3fd1b01eac\transformed\jetified-play-services-location-19.0.1\AndroidManifest.xml:7:5-20
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\eslam\.gradle\caches\transforms-3\503707e153772f1665a437a22a644198\transformed\jetified-glide-4.8.0\AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\eslam\.gradle\caches\transforms-3\503707e153772f1665a437a22a644198\transformed\jetified-glide-4.8.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\eslam\.gradle\caches\transforms-3\03a815f2aabec6250cfc9635fcafc0aa\transformed\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\eslam\.gradle\caches\transforms-3\03a815f2aabec6250cfc9635fcafc0aa\transformed\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\eslam\.gradle\caches\transforms-3\36d896093575d1a958fffc49daa388e3\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\eslam\.gradle\caches\transforms-3\36d896093575d1a958fffc49daa388e3\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\eslam\.gradle\caches\transforms-3\145d593df6b6fa46da1b115dbadb549a\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
@@ -241,8 +252,8 @@ MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\
 MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\08ad01771b67678ba44997affcd3785b\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:25:5-39:19
 MERGED from [androidx.core:core:1.9.0-alpha02] C:\Users\eslam\.gradle\caches\transforms-3\17b233a965ffc21004fd66c1edd08df3\transformed\core-1.9.0-alpha02\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.9.0-alpha02] C:\Users\eslam\.gradle\caches\transforms-3\17b233a965ffc21004fd66c1edd08df3\transformed\core-1.9.0-alpha02\AndroidManifest.xml:24:5-89
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\eslam\.gradle\caches\transforms-3\fedbf7c0bb6ff1bd6b9cc79c65e7468d\transformed\jetified-gifdecoder-4.8.0\AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\eslam\.gradle\caches\transforms-3\fedbf7c0bb6ff1bd6b9cc79c65e7468d\transformed\jetified-gifdecoder-4.8.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\eslam\.gradle\caches\transforms-3\e1611c0a8a34fc302e085eb717546c93\transformed\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\eslam\.gradle\caches\transforms-3\e1611c0a8a34fc302e085eb717546c93\transformed\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\eslam\.gradle\caches\transforms-3\376f757f61fd65dcaa6c46aab428cb2a\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\eslam\.gradle\caches\transforms-3\376f757f61fd65dcaa6c46aab428cb2a\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\d73ca9fe3975f2ac276a3bc575f33b3f\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
@@ -413,6 +424,8 @@ MERGED from [androidx.databinding:databinding-runtime:7.0.4] C:\Users\eslam\.gra
 MERGED from [androidx.databinding:databinding-runtime:7.0.4] C:\Users\eslam\.gradle\caches\transforms-3\b55ea5f7faab5df3b47143aa060b4b6d\transformed\databinding-runtime-7.0.4\AndroidManifest.xml:20:5-44
 MERGED from [androidx.databinding:viewbinding:7.0.4] C:\Users\eslam\.gradle\caches\transforms-3\71d9a81808af07f73a86b71b23ef454a\transformed\jetified-viewbinding-7.0.4\AndroidManifest.xml:20:5-44
 MERGED from [androidx.databinding:viewbinding:7.0.4] C:\Users\eslam\.gradle\caches\transforms-3\71d9a81808af07f73a86b71b23ef454a\transformed\jetified-viewbinding-7.0.4\AndroidManifest.xml:20:5-44
+MERGED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:7:5-44
+MERGED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:7:5-44
 MERGED from [com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\aadbc73d470c4633dc3cae2b1e8458b8\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:22:5-24:41
 MERGED from [com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\aadbc73d470c4633dc3cae2b1e8458b8\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:22:5-24:41
 MERGED from [androidx.navigation:navigation-ui-ktx:2.4.1] C:\Users\eslam\.gradle\caches\transforms-3\cc50595a1611555a40e080993bca7521\transformed\navigation-ui-ktx-2.4.1\AndroidManifest.xml:20:5-22:41
@@ -427,12 +440,16 @@ MERGED from [com.airbnb.android:lottie:3.4.0] C:\Users\eslam\.gradle\caches\tran
 MERGED from [com.airbnb.android:lottie:3.4.0] C:\Users\eslam\.gradle\caches\transforms-3\2b3fb7c11c31ec6eac88fbecce2c3541\transformed\jetified-lottie-3.4.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.divyanshu.colorseekbar:colorseekbar:1.0.2] C:\Users\eslam\.gradle\caches\transforms-3\a4e003a147b0f46fbd69ff38ce942a8a\transformed\jetified-colorseekbar-1.0.2\AndroidManifest.xml:7:5-9:41
 MERGED from [com.divyanshu.colorseekbar:colorseekbar:1.0.2] C:\Users\eslam\.gradle\caches\transforms-3\a4e003a147b0f46fbd69ff38ce942a8a\transformed\jetified-colorseekbar-1.0.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\eslam\.gradle\caches\transforms-3\55f1946249e7caf65cf7d93ceb079cc4\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\eslam\.gradle\caches\transforms-3\55f1946249e7caf65cf7d93ceb079cc4\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.1] C:\Users\eslam\.gradle\caches\transforms-3\a283b9f8ae507025cae1b231b3d2b052\transformed\navigation-runtime-ktx-2.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.1] C:\Users\eslam\.gradle\caches\transforms-3\a283b9f8ae507025cae1b231b3d2b052\transformed\navigation-runtime-ktx-2.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.firebaseui:firebase-ui-database:6.0.2] C:\Users\eslam\.gradle\caches\transforms-3\a5baab2306d046e9836d5400f9fb32a1\transformed\jetified-firebase-ui-database-6.0.2\AndroidManifest.xml:7:5-9:41
 MERGED from [com.firebaseui:firebase-ui-database:6.0.2] C:\Users\eslam\.gradle\caches\transforms-3\a5baab2306d046e9836d5400f9fb32a1\transformed\jetified-firebase-ui-database-6.0.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.chrisbanes.photoview:library:1.2.4] C:\Users\eslam\.gradle\caches\transforms-3\3d8830dbe723498e9847e8b276390e81\transformed\jetified-library-1.2.4\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.chrisbanes.photoview:library:1.2.4] C:\Users\eslam\.gradle\caches\transforms-3\3d8830dbe723498e9847e8b276390e81\transformed\jetified-library-1.2.4\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\2d77fd761ad478bad6bd662c3b8bc828\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\2d77fd761ad478bad6bd662c3b8bc828\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\4cfb5c476fba263eb49b8f2526205ff8\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:21:5-44
@@ -463,8 +480,8 @@ MERGED from [androidx.navigation:navigation-common:2.4.1] C:\Users\eslam\.gradle
 MERGED from [androidx.navigation:navigation-common:2.4.1] C:\Users\eslam\.gradle\caches\transforms-3\e06890aab00fd004b187e28917a87440\transformed\navigation-common-2.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity-ktx:1.2.3] C:\Users\eslam\.gradle\caches\transforms-3\c2d6cbb7954b75c7f32fdc8e2b5f323e\transformed\jetified-activity-ktx-1.2.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity-ktx:1.2.3] C:\Users\eslam\.gradle\caches\transforms-3\c2d6cbb7954b75c7f32fdc8e2b5f323e\transformed\jetified-activity-ktx-1.2.3\AndroidManifest.xml:20:5-22:41
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\eslam\.gradle\caches\transforms-3\503707e153772f1665a437a22a644198\transformed\jetified-glide-4.8.0\AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\eslam\.gradle\caches\transforms-3\503707e153772f1665a437a22a644198\transformed\jetified-glide-4.8.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\eslam\.gradle\caches\transforms-3\03a815f2aabec6250cfc9635fcafc0aa\transformed\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\eslam\.gradle\caches\transforms-3\03a815f2aabec6250cfc9635fcafc0aa\transformed\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\eslam\.gradle\caches\transforms-3\36d896093575d1a958fffc49daa388e3\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\eslam\.gradle\caches\transforms-3\36d896093575d1a958fffc49daa388e3\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\96518ce6f71d0af0479c150f3ea654f0\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
@@ -533,6 +550,10 @@ MERGED from [com.github.anastr:speedviewlib:1.6.0] C:\Users\eslam\.gradle\caches
 MERGED from [com.github.anastr:speedviewlib:1.6.0] C:\Users\eslam\.gradle\caches\transforms-3\4c1d02144a0d83d8fdd0a2dd204a1030\transformed\jetified-speedviewlib-1.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\98dcb68e67e5fac1afbd77adb360f0e2\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\98dcb68e67e5fac1afbd77adb360f0e2\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34] C:\Users\eslam\.gradle\caches\transforms-3\53707e145b2345a470fdad02eed1b8ff\transformed\jetified-BaseRecyclerViewAdapterHelper-2.9.34\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34] C:\Users\eslam\.gradle\caches\transforms-3\53707e145b2345a470fdad02eed1b8ff\transformed\jetified-BaseRecyclerViewAdapterHelper-2.9.34\AndroidManifest.xml:7:5-9:41
+MERGED from [com.jakewharton:butterknife:10.1.0] C:\Users\eslam\.gradle\caches\transforms-3\c69ecf75a26682223b5f4d20afbe83fb\transformed\jetified-butterknife-10.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton:butterknife:10.1.0] C:\Users\eslam\.gradle\caches\transforms-3\c69ecf75a26682223b5f4d20afbe83fb\transformed\jetified-butterknife-10.1.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\53d8e268d3cc860f7c2ab83dd27cb448\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\53d8e268d3cc860f7c2ab83dd27cb448\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.2.4] C:\Users\eslam\.gradle\caches\transforms-3\73e6342c729be494019ceba9f14e0f9d\transformed\jetified-activity-1.2.4\AndroidManifest.xml:20:5-22:41
@@ -581,6 +602,8 @@ MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\
 MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\08ad01771b67678ba44997affcd3785b\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\cbdb42e3d33e43fcb393272003713d28\transformed\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\cbdb42e3d33e43fcb393272003713d28\transformed\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.jakewharton:butterknife-runtime:10.1.0] C:\Users\eslam\.gradle\caches\transforms-3\ac91e7b0faf1ad93674fbdf32e8d7eda\transformed\jetified-butterknife-runtime-10.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton:butterknife-runtime:10.1.0] C:\Users\eslam\.gradle\caches\transforms-3\ac91e7b0faf1ad93674fbdf32e8d7eda\transformed\jetified-butterknife-runtime-10.1.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\35488086c8afccf8630e2728c08c8985\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\35488086c8afccf8630e2728c08c8985\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\eslam\.gradle\caches\transforms-3\6cf76b15c062d6e40868b92e3f6b3b52\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -595,8 +618,10 @@ MERGED from [androidx.transition:transition:1.4.1] C:\Users\eslam\.gradle\caches
 MERGED from [androidx.transition:transition:1.4.1] C:\Users\eslam\.gradle\caches\transforms-3\163c161feb1dd2d5f0c9377e90a1dc23\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.9.0-alpha02] C:\Users\eslam\.gradle\caches\transforms-3\17b233a965ffc21004fd66c1edd08df3\transformed\core-1.9.0-alpha02\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.9.0-alpha02] C:\Users\eslam\.gradle\caches\transforms-3\17b233a965ffc21004fd66c1edd08df3\transformed\core-1.9.0-alpha02\AndroidManifest.xml:20:5-22:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\eslam\.gradle\caches\transforms-3\fedbf7c0bb6ff1bd6b9cc79c65e7468d\transformed\jetified-gifdecoder-4.8.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\eslam\.gradle\caches\transforms-3\fedbf7c0bb6ff1bd6b9cc79c65e7468d\transformed\jetified-gifdecoder-4.8.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\eslam\.gradle\caches\transforms-3\e1611c0a8a34fc302e085eb717546c93\transformed\jetified-gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\eslam\.gradle\caches\transforms-3\e1611c0a8a34fc302e085eb717546c93\transformed\jetified-gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\daea27603a4fefd18c6c88d57268d708\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\daea27603a4fefd18c6c88d57268d708\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\eslam\.gradle\caches\transforms-3\fa6dcdd330592d7b549ad26b3a5429a7\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\eslam\.gradle\caches\transforms-3\fa6dcdd330592d7b549ad26b3a5429a7\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] C:\Users\eslam\.gradle\caches\transforms-3\4b5c79716a066ed98be9c915b85fb9a2\transformed\jetified-lifecycle-livedata-core-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
@@ -643,12 +668,126 @@ INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\M
 		INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml
+activity#com.blankj.utilcode.util.UtilsTransActivity4MainProcess
+ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:10:9-14:75
+	android:windowSoftInputMode
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:14:13-72
+	android:configChanges
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:12:13-74
+	android:theme
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:13:13-55
+	android:name
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:11:13-83
+activity#com.blankj.utilcode.util.UtilsTransActivity
+ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:15:9-20:75
+	android:multiprocess
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:18:13-40
+	android:windowSoftInputMode
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:20:13-72
+	android:configChanges
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:17:13-74
+	android:theme
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:19:13-55
+	android:name
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:16:13-71
+provider#com.blankj.utilcode.util.UtilsFileProvider
+ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:22:9-30:20
+	android:grantUriPermissions
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:26:13-47
+	android:authorities
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:24:13-69
+	android:exported
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:23:13-70
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:27:13-29:68
+	android:resource
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:29:17-65
+	android:name
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:28:17-67
+service#com.blankj.utilcode.util.MessengerUtils$ServerService
+ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:32:9-38:19
+	android:exported
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:33:13-81
+intent-filter#action:name:${applicationId}.messenger
+ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:35:13-37:29
+intent-filter#action:name:com.doubleclick.marktinhome.messenger
+ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:35:13-37:29
+action#${applicationId}.messenger
+ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:36:25-66
+action#com.doubleclick.marktinhome.messenger
+ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:36:25-66
 activity#com.karumi.dexter.DexterActivity
 ADDED from [com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\aadbc73d470c4633dc3cae2b1e8458b8\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:27:9-29:72
 	android:theme
 		ADDED from [com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\aadbc73d470c4633dc3cae2b1e8458b8\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:29:13-69
 	android:name
 		ADDED from [com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\aadbc73d470c4633dc3cae2b1e8458b8\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:28:13-60
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:12:5-84
+	android:name
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:12:22-81
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:14:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:16:5-80
+	android:name
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:16:22-77
+uses-permission#android.permission.CAMERA
+ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:18:5-65
+MERGED from [io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\7cc603808d4fc2eb42a4ae8ee7655f93\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:9:5-65
+MERGED from [io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\7cc603808d4fc2eb42a4ae8ee7655f93\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:18:22-62
+activity#com.lzy.imagepicker.ui.ImageBaseActivity
+ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:21:9-77
+	android:name
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:21:19-74
+activity#com.lzy.imagepicker.ui.ImageGridActivity
+ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:22:9-25:55
+	android:configChanges
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:24:13-59
+	android:theme
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:25:13-52
+	android:name
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:23:13-68
+activity#com.lzy.imagepicker.ui.ImageCropActivity
+ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:26:9-30:55
+	android:hardwareAccelerated
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:29:13-48
+	android:configChanges
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:28:13-59
+	android:theme
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:30:13-52
+	android:name
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:27:13-68
+activity#com.lzy.imagepicker.ui.ImagePreviewActivity
+ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:31:9-34:65
+	android:configChanges
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:33:13-59
+	android:theme
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:34:13-62
+	android:name
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:32:13-71
+provider#com.lzy.imagepicker.ImagePickerProvider
+ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:36:9-44:20
+	android:grantUriPermissions
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:40:13-47
+	android:authorities
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:38:13-60
+	android:exported
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from [com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\beff20545125d922abaa5ab3cc95b59d\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:37:13-67
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\4cfb5c476fba263eb49b8f2526205ff8\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-database:20.0.3] C:\Users\eslam\.gradle\caches\transforms-3\5eecb75e3b983c8f1d2e88f3fe79519f\transformed\jetified-firebase-database-20.0.3\AndroidManifest.xml:25:5-79
@@ -989,10 +1128,6 @@ ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\eslam\.gradle\c
 		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\eslam\.gradle\caches\transforms-3\376f757f61fd65dcaa6c46aab428cb2a\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
 	android:name
 		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\eslam\.gradle\caches\transforms-3\376f757f61fd65dcaa6c46aab428cb2a\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-uses-permission#android.permission.CAMERA
-ADDED from [io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\7cc603808d4fc2eb42a4ae8ee7655f93\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:9:5-65
-	android:name
-		ADDED from [io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\7cc603808d4fc2eb42a4ae8ee7655f93\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:9:22-62
 uses-permission#android.permission.VIBRATE
 ADDED from [io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\7cc603808d4fc2eb42a4ae8ee7655f93\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:10:5-66
 	android:name

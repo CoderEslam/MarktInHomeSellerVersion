@@ -123,4 +123,8 @@
         <attr name="tileEvenColor" format="color" />
     </declare-styleable>
 
+    <declare-styleable name="roundView">
+        <attr format="reference|color" name="backgroundColor" />
+    </declare-styleable>
+
 </resources>
