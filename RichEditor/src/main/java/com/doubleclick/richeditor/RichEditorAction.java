@@ -7,10 +7,10 @@ import androidx.annotation.NonNull;
 
 
 public class RichEditorAction {
-    private WebView mWebView;
+    private WebView webView;
 
     public RichEditorAction(WebView webView) {
-        this.mWebView = webView;
+        this.webView = webView;
     }
 
     public void undo() {
@@ -192,9 +192,9 @@ public class RichEditorAction {
 
     private void load(String trigger) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            this.mWebView.evaluateJavascript(trigger, null);
+            this.webView.evaluateJavascript(trigger, null);
         } else {
-            this.mWebView.loadUrl(trigger);
+            this.webView.loadUrl(trigger);
         }
     }
 }

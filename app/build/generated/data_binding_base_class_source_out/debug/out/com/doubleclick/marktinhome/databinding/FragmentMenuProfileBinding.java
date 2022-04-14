@@ -4,6 +4,7 @@ package com.doubleclick.marktinhome.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -104,6 +105,9 @@ public final class FragmentMenuProfileBinding implements ViewBinding {
   public final ConstraintLayout logout;
 
   @NonNull
+  public final Button open;
+
+  @NonNull
   public final CircleImageView person;
 
   @NonNull
@@ -134,9 +138,10 @@ public final class FragmentMenuProfileBinding implements ViewBinding {
       @NonNull ImageView imageView555, @NonNull ImageView imageView556,
       @NonNull ImageView imageView56, @NonNull ImageView imageView564,
       @NonNull ImageView imageView566, @NonNull ConstraintLayout joinUs,
-      @NonNull ConstraintLayout logout, @NonNull CircleImageView person, @NonNull TextView phone,
-      @NonNull ConstraintLayout recentOrder, @NonNull ConstraintLayout statistices,
-      @NonNull TextView textView3, @NonNull TextView username) {
+      @NonNull ConstraintLayout logout, @NonNull Button open, @NonNull CircleImageView person,
+      @NonNull TextView phone, @NonNull ConstraintLayout recentOrder,
+      @NonNull ConstraintLayout statistices, @NonNull TextView textView3,
+      @NonNull TextView username) {
     this.rootView = rootView;
     this.AddAdv = AddAdv;
     this.AddProduct = AddProduct;
@@ -165,6 +170,7 @@ public final class FragmentMenuProfileBinding implements ViewBinding {
     this.imageView566 = imageView566;
     this.joinUs = joinUs;
     this.logout = logout;
+    this.open = open;
     this.person = person;
     this.phone = phone;
     this.recentOrder = recentOrder;
@@ -362,6 +368,12 @@ public final class FragmentMenuProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.open;
+      Button open = ViewBindings.findChildViewById(rootView, id);
+      if (open == null) {
+        break missingId;
+      }
+
       id = R.id.person;
       CircleImageView person = ViewBindings.findChildViewById(rootView, id);
       if (person == null) {
@@ -402,7 +414,7 @@ public final class FragmentMenuProfileBinding implements ViewBinding {
           AddTradmark, address, chat, constraintLayout3, constraintLayout4, constraintLayout5,
           constraintLayout6, editAddress, editPhone, editname, email, fab, imageView12, imageView3,
           imageView30, imageView32, imageView51, imageView55, imageView555, imageView556,
-          imageView56, imageView564, imageView566, joinUs, logout, person, phone, recentOrder,
+          imageView56, imageView564, imageView566, joinUs, logout, open, person, phone, recentOrder,
           statistices, textView3, username);
     }
     String missingId = rootView.getResources().getResourceName(id);

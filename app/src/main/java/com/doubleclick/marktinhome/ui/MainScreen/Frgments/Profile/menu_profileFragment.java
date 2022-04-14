@@ -15,11 +15,13 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.doubleclick.DashBoard.DashBoardActivity;
+import com.doubleclick.RichEditor.sample.RichEditorActivity;
 import com.doubleclick.ViewModel.UserViewModel;
 import com.doubleclick.marktinhome.BaseFragment;
 import com.doubleclick.marktinhome.MainActivity;
@@ -48,6 +50,7 @@ public class menu_profileFragment extends BaseFragment {
     private FloatingActionButton fab;
     private ConstraintLayout AddProduct, AddAdv, AddTradmark, recentOrder, chat, joinUs, statistices;
     private ConstraintLayout logout;
+    private Button open;
 
     public menu_profileFragment() {
         // Required empty public constructor
@@ -88,6 +91,10 @@ public class menu_profileFragment extends BaseFragment {
         recentOrder = view.findViewById(R.id.recentOrder);
         statistices = view.findViewById(R.id.statistices);
         chat = view.findViewById(R.id.chat);
+        open = view.findViewById(R.id.open);
+        open.setOnClickListener(v -> {
+            startActivity(new Intent(getContext(), RichEditorActivity.class));
+        });
 
         userViewModel.getUser().observe(getViewLifecycleOwner(), user -> {
             if (user != null) {

@@ -23,6 +23,7 @@
                 android:layout_toStartOf="@+id/iv_action_undo"
                 android:layout_toLeftOf="@+id/iv_action_undo"
                 android:background="@drawable/btn_colored_primary"
+                android:onClick="onClickGetHtml"
                 android:padding="8dp"
                 android:src="@drawable/ic_content"
                 app:tint="@android:color/white" />
@@ -35,6 +36,7 @@
                 android:layout_toStartOf="@+id/iv_action_redo"
                 android:layout_toLeftOf="@+id/iv_action_redo"
                 android:background="@drawable/btn_colored_primary"
+                android:onClick="onClickUndo"
                 android:padding="8dp"
                 android:src="@drawable/ic_undo"
                 app:tint="@android:color/white" />
@@ -47,6 +49,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:background="@drawable/btn_colored_primary"
+                android:onClick="onClickRedo"
                 android:padding="8dp"
                 android:src="@drawable/ic_redo"
                 app:tint="@android:color/white" />
@@ -69,6 +72,7 @@
             <ImageView
                 android:id="@+id/iv_action"
                 style="@style/ActionImageView"
+                android:onClick="onClickAction"
                 android:padding="10dp"
                 android:src="@drawable/ic_action" />
 
@@ -91,6 +95,7 @@
                     <ImageView
                         android:id="@+id/iv_action_txt_color"
                         style="@style/ActionImageView"
+                        android:onClick="onClickTextColor"
                         android:padding="9dp"
                         android:src="@drawable/ic_format_text_color"
                         android:visibility="gone" />
@@ -98,6 +103,7 @@
                     <ImageView
                         android:id="@+id/iv_action_txt_bg_color"
                         style="@style/ActionImageView"
+                        android:onClick="onClickHighlight"
                         android:padding="9dp"
                         android:src="@drawable/ic_format_text_bg_clolr"
                         android:visibility="gone" />
@@ -105,24 +111,28 @@
                     <ImageView
                         android:id="@+id/iv_action_insert_image"
                         style="@style/ActionImageView"
+                        android:onClick="onClickInsertImage"
                         android:padding="8dp"
                         android:src="@drawable/ic_insert_photo" />
 
                     <ImageView
                         android:id="@+id/iv_action_insert_link"
                         style="@style/ActionImageView"
+                        android:onClick="onClickInsertLink"
                         android:padding="8dp"
                         android:src="@drawable/ic_insert_link" />
 
                     <ImageView
                         android:id="@+id/iv_action_table"
                         style="@style/ActionImageView"
+                        android:onClick="onClickInsertTable"
                         android:padding="11dp"
                         android:src="@drawable/ic_table" />
 
                     <ImageView
                         android:id="@+id/iv_action_line_height"
                         style="@style/ActionImageView"
+                        android:onClick="onClickLineHeight"
                         android:padding="11dp"
                         android:src="@drawable/ic_line_height"
                         android:visibility="gone" />

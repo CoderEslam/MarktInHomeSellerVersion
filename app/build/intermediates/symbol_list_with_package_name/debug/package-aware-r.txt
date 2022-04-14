@@ -102,6 +102,7 @@ array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array preloaded_fonts
+attr BackgroundColor
 attr HamMenuIconSize
 attr HamMenuIconTintColor
 attr HamMenuItemSemiTransparentColor
@@ -1030,7 +1031,6 @@ attr rippleColor
 attr rotationCenterId
 attr round
 attr roundPercent
-attr roundView_backgroundColor
 attr route
 attr saturation
 attr scaleFromTextSize
@@ -3653,6 +3653,7 @@ id on
 id onAttachStateChangeListener
 id onDateChanged
 id onInterceptTouchReturnSwipe
+id open
 id openDrawer
 id order
 id orderImage
@@ -4126,7 +4127,6 @@ layout fragment_parent
 layout fragment_product
 layout fragment_recent_order
 layout fragment_register
-layout fragment_rich
 layout fragment_splash1
 layout fragment_splash2
 layout fragment_splash3
@@ -5777,7 +5777,7 @@ styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
-styleable roundView roundView_backgroundColor
+styleable roundView BackgroundColor
 xml provider_paths
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end

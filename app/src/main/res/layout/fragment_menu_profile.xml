@@ -67,10 +67,10 @@
             tools:src="@drawable/e" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:background="@drawable/bg_image"
             android:id="@+id/fab"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:background="@drawable/bg_image"
             android:contentDescription="@string/change_image"
             android:src="@drawable/camera"
             app:fabCustomSize="30dp"
@@ -438,7 +438,6 @@
             android:layout_height="36dp"
             android:layout_marginTop="8dp"
             android:gravity="center"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/statistices">
@@ -548,10 +547,10 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <TextView
+    <Button
+        android:id="@+id/open"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:fontFamily="@font/roboto"
         android:text="@string/create_by_x_team"
         android:textAllCaps="false"

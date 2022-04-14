@@ -118,6 +118,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.doubleclick.RichEditor.sample.RichEditorActivity"
+            android:exported="false" />
+        <activity
             android:name="com.doubleclick.marktinhome.ui.Add.AddActivity"
             android:exported="false" />
 

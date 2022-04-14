@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.FrameLayout;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -44,7 +43,7 @@ public final class FragmentUploadBinding implements ViewBinding {
   public final ImageView addView;
 
   @NonNull
-  public final FrameLayout description;
+  public final EditText description;
 
   @NonNull
   public final HorizontalScrollView horizontalScrollView;
@@ -76,7 +75,7 @@ public final class FragmentUploadBinding implements ViewBinding {
   private FragmentUploadBinding(@NonNull ConstraintLayout rootView, @NonNull Button Upload,
       @NonNull TableLayout addTableLayout, @NonNull ImageView addTableRow,
       @NonNull LinearLayout addToggleButton, @NonNull ImageView addView,
-      @NonNull FrameLayout description, @NonNull HorizontalScrollView horizontalScrollView,
+      @NonNull EditText description, @NonNull HorizontalScrollView horizontalScrollView,
       @NonNull EditText keywords, @NonNull RecyclerView productImages,
       @NonNull EditText productLastPrice, @NonNull EditText productName,
       @NonNull EditText productPrice, @NonNull RatingBar ratingSeller, @NonNull Button selectImages,
@@ -157,7 +156,7 @@ public final class FragmentUploadBinding implements ViewBinding {
       }
 
       id = R.id.description;
-      FrameLayout description = ViewBindings.findChildViewById(rootView, id);
+      EditText description = ViewBindings.findChildViewById(rootView, id);
       if (description == null) {
         break missingId;
       }

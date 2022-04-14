@@ -4,81 +4,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
-  <RelativeLayout
-      android:layout_width="match_parent"
-      android:layout_height="48dp"
-      android:background="@color/blue"
-      >
-
-    <ImageView
-        android:id="@+id/iv_back"
-        android:layout_width="48dp"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_centerVertical="true"
-        android:background="@drawable/btn_colored_primary"
-        android:padding="16dp"
-        android:src="@drawable/ic_back"
-        app:tint="@android:color/white" />
+        android:background="@color/blue">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/edit_hyperlink"
-        android:textColor="@color/white"
-        />
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_colored_primary"
+            android:onClick="onClickBack"
+            android:padding="16dp"
+            android:src="@drawable/ic_back"
+            app:tint="@android:color/white" />
 
-  </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/edit_hyperlink"
+            android:textColor="@color/white" />
 
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="vertical"
-      android:padding="16dp"
-      >
+    </RelativeLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/address"
-        />
-
-    <EditText
-        android:id="@+id/et_address"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"
-        android:maxLines="1"
-        />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/text_to_display"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address" />
 
-    <EditText
-        android:id="@+id/et_display_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:maxLines="1"
-        />
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1" />
 
-    <Button
-        android:id="@+id/btn_ok"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/btn_colored_primary"
-        android:text="@string/ok"
-        android:textColor="@color/white"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/text_to_display" />
 
-  </LinearLayout>
+        <EditText
+            android:id="@+id/et_display_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_colored_primary"
+            android:onClick="onClickOK"
+            android:text="@string/ok"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
 
 </LinearLayout>

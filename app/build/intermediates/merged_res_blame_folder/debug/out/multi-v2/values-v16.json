@@ -4,17 +4,7 @@
             "outputFile": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\17b233a965ffc21004fd66c1edd08df3\\transformed\\core-1.9.0-alpha02\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\55f1946249e7caf65cf7d93ceb079cc4\\transformed\\appcompat-1.4.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\c726dec9c84f99e0a634229073a13e90\\transformed\\appcompat-1.4.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\0f77e958cd3af70ff6983d58aa684d43\\transformed\\core-1.9.0-alpha02\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]
