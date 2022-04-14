@@ -8,12 +8,7 @@ import com.doubleclick.marktinhome.R;
 
 import java.util.List;
 
-/**
- * Font Setting Adapter
- *
- * @author even.wu
- * @date 9/8/17
- */
+
 
 public class FontSettingAdapter extends BaseQuickAdapter<String, BaseViewHolder> {
 

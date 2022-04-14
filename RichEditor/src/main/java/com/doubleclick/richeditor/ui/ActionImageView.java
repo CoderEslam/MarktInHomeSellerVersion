@@ -13,10 +13,7 @@ import com.doubleclick.richeditor.R;
 import com.doubleclick.richeditor.RichEditorAction;
 
 
-/**
- * The Interface of Action Button
- * Created by even.wu on 22/8/17.
- */
+
 
 public class ActionImageView extends AppCompatImageView {
     private ActionType mActionType;

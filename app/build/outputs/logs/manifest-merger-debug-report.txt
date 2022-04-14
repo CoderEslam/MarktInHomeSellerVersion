@@ -9,6 +9,7 @@ MERGED from [androidx.databinding:databinding-ktx:7.0.4] C:\Users\eslam\.gradle\
 MERGED from [androidx.databinding:databinding-runtime:7.0.4] C:\Users\eslam\.gradle\caches\transforms-3\b55ea5f7faab5df3b47143aa060b4b6d\transformed\databinding-runtime-7.0.4\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.databinding:viewbinding:7.0.4] C:\Users\eslam\.gradle\caches\transforms-3\71d9a81808af07f73a86b71b23ef454a\transformed\jetified-viewbinding-7.0.4\AndroidManifest.xml:17:1-22:12
 MERGED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:2:1-41:12
+MERGED from [:RichEditor] C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\RichEditor\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\aadbc73d470c4633dc3cae2b1e8458b8\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:17:1-32:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.4.1] C:\Users\eslam\.gradle\caches\transforms-3\cc50595a1611555a40e080993bca7521\transformed\navigation-ui-ktx-2.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.4.1] C:\Users\eslam\.gradle\caches\transforms-3\d38d838a03a5ad9bebc771b351980d25\transformed\navigation-ui-2.4.1\AndroidManifest.xml:17:1-24:12
@@ -426,6 +427,8 @@ MERGED from [androidx.databinding:viewbinding:7.0.4] C:\Users\eslam\.gradle\cach
 MERGED from [androidx.databinding:viewbinding:7.0.4] C:\Users\eslam\.gradle\caches\transforms-3\71d9a81808af07f73a86b71b23ef454a\transformed\jetified-viewbinding-7.0.4\AndroidManifest.xml:20:5-44
 MERGED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:7:5-44
 MERGED from [com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\bbb9d39c2e065df301ce43fe5fc874a9\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:7:5-44
+MERGED from [:RichEditor] C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\RichEditor\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:RichEditor] C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\RichEditor\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\aadbc73d470c4633dc3cae2b1e8458b8\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:22:5-24:41
 MERGED from [com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\aadbc73d470c4633dc3cae2b1e8458b8\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:22:5-24:41
 MERGED from [androidx.navigation:navigation-ui-ktx:2.4.1] C:\Users\eslam\.gradle\caches\transforms-3\cc50595a1611555a40e080993bca7521\transformed\navigation-ui-ktx-2.4.1\AndroidManifest.xml:20:5-22:41

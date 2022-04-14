@@ -124,7 +124,7 @@
     </declare-styleable>
 
     <declare-styleable name="roundView">
-        <attr format="reference|color" name="backgroundColor" />
+        <attr format="reference|color" name="roundView_backgroundColor" />
     </declare-styleable>
 
 </resources>

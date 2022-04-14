@@ -9,10 +9,6 @@ import com.lzy.imagepicker.loader.ImageLoader;
 
 import java.io.File;
 
-/**
- * Glide Image Loader
- * Created by even.wu on 10/8/17.
- */
 
 public class GlideImageLoader implements ImageLoader {
 

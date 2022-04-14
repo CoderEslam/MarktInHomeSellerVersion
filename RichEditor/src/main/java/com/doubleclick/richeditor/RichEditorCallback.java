@@ -8,12 +8,6 @@ import com.google.gson.Gson;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Rich Editor Callback
- *
- * @author even.wu
- * @date 8/8/17
- */
 
 public abstract class RichEditorCallback {
     private Gson gson = new Gson();

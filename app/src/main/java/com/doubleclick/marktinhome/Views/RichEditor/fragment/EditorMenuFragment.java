@@ -24,10 +24,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-/**
- * Editor Menu Fragment
- * Created by even.wu on 8/8/17.
- */
+
 
 public class EditorMenuFragment extends Fragment {
     private View rootView;

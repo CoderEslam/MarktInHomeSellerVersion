@@ -20,12 +20,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-/**
- * Color PaletteView
- *
- * @author even.wu
- * @date 10/8/17
- */
+
 
 public class ColorPaletteView extends LinearLayout {
     @BindView(R.id.ll_color_container) LinearLayout llColorContainer;

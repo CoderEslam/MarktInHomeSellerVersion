@@ -5,12 +5,6 @@ import android.webkit.WebView;
 
 import androidx.annotation.NonNull;
 
-/**
- * Rich Editor Action
- *
- * @author even.wu
- * @date 8/8/17
- */
 
 public class RichEditorAction {
     private WebView mWebView;

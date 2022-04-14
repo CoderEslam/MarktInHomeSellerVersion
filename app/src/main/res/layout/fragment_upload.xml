@@ -69,10 +69,10 @@
                 app:layout_constraintStart_toEndOf="@+id/productPrice"
                 app:layout_constraintTop_toBottomOf="@+id/productName" />
 
-            <EditText
+            <FrameLayout
                 android:id="@+id/description"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="500dp"
                 android:hint="@string/description"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

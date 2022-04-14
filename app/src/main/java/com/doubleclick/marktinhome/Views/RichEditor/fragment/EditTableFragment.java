@@ -13,12 +13,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-/**
- * Edit Table Fragment
- *
- * @author even.wu
- * @date 10/8/17
- */
+
 
 public class EditTableFragment extends Fragment {
     @BindView(R.id.et_rows) EditText etRows;

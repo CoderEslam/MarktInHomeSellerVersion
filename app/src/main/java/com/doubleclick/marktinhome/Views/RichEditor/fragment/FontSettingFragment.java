@@ -18,12 +18,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-/**
- * Font Setting Fragment
- *
- * @author even.wu
- * @date 9/8/17
- */
+
 
 public class FontSettingFragment extends Fragment {
     public static final String TYPE = "type";

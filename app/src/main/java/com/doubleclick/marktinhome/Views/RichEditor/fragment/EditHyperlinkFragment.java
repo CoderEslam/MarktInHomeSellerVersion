@@ -12,12 +12,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-/**
- * Edit Hyperlink Activity
- *
- * @author even.wu
- * @date 10/8/17
- */
+
 
 public class EditHyperlinkFragment extends Fragment {
     @BindView(R.id.et_address) EditText etAddress;

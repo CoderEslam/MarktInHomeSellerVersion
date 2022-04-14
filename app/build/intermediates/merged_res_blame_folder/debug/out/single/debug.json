@@ -8,6 +8,10 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\share.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_code_review.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_code_review.png"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_left_chat.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\left_chat.xml"
     },
@@ -80,6 +84,10 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_button.png"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_align_right.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_align_right.png"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_avd_pathmorph_drawer_hamburger_to_arrow.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\avd_pathmorph_drawer_hamburger_to_arrow.xml"
     },
@@ -108,6 +116,10 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\widget_navigation_drawer.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_italic.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_italic.png"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\navigation_add_navigation.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\navigation\\add_navigation.xml"
     },
@@ -120,8 +132,16 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\navigation\\chat_nav.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_h1.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_h1.png"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_arrow_back_24.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\ic_arrow_back_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_back.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_back.png"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_splash2.xml.flat",
@@ -168,24 +188,48 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\fragment_statistics.xml"
     },
     {
-        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_wheel.png.flat",
-        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\wheel.png"
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_indent_increase.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_indent_increase.png"
     },
     {
-        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_feed_bg.jpeg.flat",
-        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\feed_bg.jpeg"
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_popupwindow.xml.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\popupwindow.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main_rich_editor.xml.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\activity_main_rich_editor.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_wheel.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\wheel.png"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_mins_circle.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\mins_circle.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_feed_bg.jpeg.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\feed_bg.jpeg"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_nav_header_main.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\nav_header_main.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_strikethrough.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_strikethrough.png"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_img.png.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\img.png"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_code_block.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_code_block.png"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_undo.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_undo.png"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_trademark.xml.flat",
@@ -200,12 +244,20 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\bg_edit.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_text_color.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_text_color.png"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_layout_chat.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\layout_chat.xml"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_fram_blue.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\fram_blue.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_bold.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_bold.png"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_flag_bubble_colorpickerview_skydoves.xml.flat",
@@ -220,8 +272,20 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\all_tradmark.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_list_numbered.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_list_numbered.png"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_h3.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_h3.png"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_call_us.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\fragment_call_us.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-v21_btn_white_round_rectangle.xml.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-v21\\btn_white_round_rectangle.xml"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_group934.png.flat",
@@ -268,6 +332,10 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-v24\\arrow_up.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-v21_btn_colored_primary.xml.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-v21\\btn_colored_primary.xml"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_layaut_cart.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\layaut_cart.xml"
     },
@@ -300,6 +368,10 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-v24\\ic_stars_black_cercil24dp.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_round_rectangle_blue.xml.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\round_rectangle_blue.xml"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable__dot_white.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\_dot_white.xml"
     },
@@ -310,6 +382,10 @@
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_product_activity.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\bg_product_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_para.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_para.png"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_dialog_colorpicker_colorpickerview_skydoves.xml.flat",
@@ -324,12 +400,32 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_button.png"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_align_center.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_align_center.png"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_line_height.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_line_height.png"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_button.png.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_button.png"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_align_left.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_align_left.png"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_h_treademark_recyclerview.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\h_treademark_recyclerview.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_start.xml.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\activity_start.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_superscript.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_superscript.png"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_music_bg.jpeg.flat",
@@ -338,6 +434,14 @@
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\font_alegreya_sc_italic.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\font\\alegreya_sc_italic.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_editor_menu.xml.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\fragment_editor_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_redo.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_redo.png"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_list_group.xml.flat",
@@ -364,6 +468,10 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\layout_categories.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_rich.xml.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\fragment_rich.xml"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_nex_button.png.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\nex_button.png"
     },
@@ -384,8 +492,16 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\text_message_right.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_edit_table.xml.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\fragment_edit_table.xml"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_connct_us.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\fragment_connct_us.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_h2.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_h2.png"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_vd_pathmorph_drawer_arrow.xml.flat",
@@ -416,6 +532,10 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\user_chat_layout.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_edit_hyperlink.xml.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\fragment_edit_hyperlink.xml"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
@@ -432,12 +552,24 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\activity_filter.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_align_justify.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_align_justify.png"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_action.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action.png"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\font_roboto.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\font\\roboto.xml"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_group861.png.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\group861.png"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_insert_link.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_insert_link.png"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
@@ -516,6 +648,10 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\statistics.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_subscript.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_subscript.png"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_forget.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\fragment_forget.xml"
     },
@@ -524,8 +660,16 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\orders.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_text_bg_clolr.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_text_bg_clolr.png"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_group645.png.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\group645.png"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_insert_photo.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_insert_photo.png"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_register.xml.flat",
@@ -542,6 +686,10 @@
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_font_setting.xml.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\fragment_font_setting.xml"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_send.xml.flat",
@@ -566,6 +714,10 @@
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_comments.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\fragment_comments.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_h6.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_h6.png"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_vd_pathmorph_drawer_hamburger.xml.flat",
@@ -608,8 +760,16 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\ic_bubble_big_colorpickerview_skydoves.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-v21_btn_white_material.xml.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-v21\\btn_white_material.xml"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_all_user.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\fragment_all_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_content.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_content.png"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_item_trademark.xml.flat",
@@ -648,8 +808,24 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\layout_small_product.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_underlined.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_underlined.png"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_table.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_table.png"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_list_bulleted.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_list_bulleted.png"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_order_selller.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\fragment_order_selller.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_round_rectangle_white.xml.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\round_rectangle_white.xml"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_month.xml.flat",
@@ -658,6 +834,10 @@
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\anim_rotate.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\anim\\rotate.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_quote.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_quote.png"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_h_top_recyclerview.xml.flat",
@@ -716,8 +896,20 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_icon_google.png"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_item_font_setting.xml.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\item_font_setting.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_h4.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_h4.png"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_line_spacing.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_line_spacing.png"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_top_deal_layout.xml.flat",
@@ -726,6 +918,10 @@
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_home_white_24dp.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\ic_home_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-v21_btn_colored_material.xml.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-v21\\btn_colored_material.xml"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_each_item.xml.flat",
@@ -752,6 +948,10 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable\\ic_person_outline_white_24dp.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_line.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_line.png"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_button.png.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_button.png"
     },
@@ -772,6 +972,14 @@
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\fragment_product.xml"
     },
     {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_selected.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_indent_decrease.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_indent_decrease.png"
+    },
+    {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_v_product_recyclerview.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\v_product_recyclerview.xml"
     },
@@ -782,6 +990,10 @@
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\navigation_nav_seller_graph.xml.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\navigation\\nav_seller_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\layout_view_color_palette.xml.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\layout\\view_color_palette.xml"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_dot.xml.flat",
@@ -838,6 +1050,10 @@
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_format_h5.png.flat",
+        "source": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\src\\main\\res\\drawable-xxhdpi\\ic_format_h5.png"
     },
     {
         "merged": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\merged_res\\debug\\drawable_palette.png.flat",
