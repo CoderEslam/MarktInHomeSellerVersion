@@ -4127,6 +4127,7 @@ layout fragment_parent
 layout fragment_product
 layout fragment_recent_order
 layout fragment_register
+layout fragment_rich
 layout fragment_splash1
 layout fragment_splash2
 layout fragment_splash3

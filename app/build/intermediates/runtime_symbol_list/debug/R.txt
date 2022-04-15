@@ -4126,6 +4126,7 @@ int layout fragment_parent 0x7f0d0064
 int layout fragment_product 0x7f0d0065
 int layout fragment_recent_order 0x7f0d0066
 int layout fragment_register 0x7f0d0067
+int layout fragment_rich 0x7f0d00eb
 int layout fragment_splash1 0x7f0d0068
 int layout fragment_splash2 0x7f0d0069
 int layout fragment_splash3 0x7f0d006a

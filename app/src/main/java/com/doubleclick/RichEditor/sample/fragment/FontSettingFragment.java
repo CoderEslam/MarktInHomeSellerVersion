@@ -48,8 +48,7 @@ public class FontSettingFragment extends Fragment {
     @Nullable
     @Override
 
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_font_setting, container, false);
         rvContainer = rootView.findViewById(R.id.rv_container);
 

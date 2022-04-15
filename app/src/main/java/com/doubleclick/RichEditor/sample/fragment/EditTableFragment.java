@@ -7,17 +7,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
-
 import com.doubleclick.marktinhome.R;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 
 public class EditTableFragment extends Fragment {
@@ -25,8 +18,6 @@ public class EditTableFragment extends Fragment {
     private EditText etCols;
     private Button btn_ok;
     private ImageView iv_back;
-
-
     private OnTableListener mOnTableListener;
 
     @Nullable
@@ -37,7 +28,6 @@ public class EditTableFragment extends Fragment {
         etCols = rootView.findViewById(R.id.et_cols);
         btn_ok = rootView.findViewById(R.id.btn_ok);
         iv_back = rootView.findViewById(R.id.iv_back);
-        ButterKnife.bind(this, rootView);
 
         btn_ok.setOnClickListener(v -> {
             onClickBack();
@@ -50,6 +40,7 @@ public class EditTableFragment extends Fragment {
     }
 
     void onClickBack() {
+        assert getFragmentManager() != null;
         getFragmentManager().beginTransaction().remove(this).commit();
     }
 
