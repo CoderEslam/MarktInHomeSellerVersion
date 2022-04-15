@@ -1,5 +1,6 @@
 package com.doubleclick.RichEditor.sample.fragment;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,12 +8,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
 import com.doubleclick.marktinhome.R;
 
-
+@SuppressLint("SetJavaScriptEnabled")
 public class EditTableFragment extends Fragment {
     private EditText etRows;
     private EditText etCols;
@@ -30,11 +33,11 @@ public class EditTableFragment extends Fragment {
         iv_back = rootView.findViewById(R.id.iv_back);
 
         btn_ok.setOnClickListener(v -> {
-            onClickBack();
+            onClickOK();
         });
 
         iv_back.setOnClickListener(v -> {
-            onClickOK();
+            onClickBack();
         });
         return rootView;
     }
@@ -46,7 +49,11 @@ public class EditTableFragment extends Fragment {
 
     void onClickOK() {
         if (mOnTableListener != null) {
-            mOnTableListener.onTableOK(Integer.parseInt(etRows.getText().toString().trim()), Integer.parseInt(etCols.getText().toString().trim()));
+            try {
+                mOnTableListener.onTableOK(Integer.parseInt(etRows.getText().toString()), Integer.parseInt(etCols.getText().toString()));
+            } catch (NumberFormatException e) {
+                Toast.makeText(getContext(), "no data insrted" + e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
             onClickBack();
         }
     }

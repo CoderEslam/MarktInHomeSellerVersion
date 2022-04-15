@@ -44,7 +44,8 @@ class UploadFragment : BaseFragment() {
     private lateinit var productName: EditText;
     private lateinit var productPrice: EditText;
     private lateinit var productLastPrice: EditText;
-    private lateinit var description: FrameLayout;
+    private lateinit var RichTable: FrameLayout;
+    private lateinit var description: EditText;
     private lateinit var keywords: EditText
     private lateinit var trademark: AppCompatSpinner;
     private lateinit var Upload: Button;
@@ -83,8 +84,9 @@ class UploadFragment : BaseFragment() {
         productPrice = view.findViewById(R.id.productPrice);
         productLastPrice = view.findViewById(R.id.productLastPrice);
         description = view.findViewById(R.id.description);
+        RichTable = view.findViewById(R.id.RichTable);
         requireActivity().supportFragmentManager.beginTransaction()
-            .replace(description.id, RichFragment()).commit()
+            .replace(RichTable.id, RichFragment()).commit()
         trademark = view.findViewById(R.id.trademark);
         Upload = view.findViewById(R.id.Upload);
         keywords = view.findViewById(R.id.keywords);
@@ -129,7 +131,7 @@ class UploadFragment : BaseFragment() {
                 productName.text.toString(),
                 productPrice.text.toString().toDouble(),
                 productLastPrice.text.toString().toDouble(),
-                "description.text.toString()",
+                description.text.toString(),
                 keywords.text.toString(),
                 marke,
                 parent_child.parent!!.pushId,

@@ -11,6 +11,7 @@ import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
+import android.widget.ScrollView;
 import android.widget.TableLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -29,6 +30,9 @@ public final class FragmentUploadBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final FrameLayout RichTable;
+
+  @NonNull
   public final Button Upload;
 
   @NonNull
@@ -44,7 +48,7 @@ public final class FragmentUploadBinding implements ViewBinding {
   public final ImageView addView;
 
   @NonNull
-  public final FrameLayout description;
+  public final EditText description;
 
   @NonNull
   public final HorizontalScrollView horizontalScrollView;
@@ -68,20 +72,25 @@ public final class FragmentUploadBinding implements ViewBinding {
   public final RatingBar ratingSeller;
 
   @NonNull
+  public final ScrollView scrollView3;
+
+  @NonNull
   public final Button selectImages;
 
   @NonNull
   public final AppCompatSpinner trademark;
 
-  private FragmentUploadBinding(@NonNull ConstraintLayout rootView, @NonNull Button Upload,
-      @NonNull TableLayout addTableLayout, @NonNull ImageView addTableRow,
+  private FragmentUploadBinding(@NonNull ConstraintLayout rootView, @NonNull FrameLayout RichTable,
+      @NonNull Button Upload, @NonNull TableLayout addTableLayout, @NonNull ImageView addTableRow,
       @NonNull LinearLayout addToggleButton, @NonNull ImageView addView,
-      @NonNull FrameLayout description, @NonNull HorizontalScrollView horizontalScrollView,
+      @NonNull EditText description, @NonNull HorizontalScrollView horizontalScrollView,
       @NonNull EditText keywords, @NonNull RecyclerView productImages,
       @NonNull EditText productLastPrice, @NonNull EditText productName,
-      @NonNull EditText productPrice, @NonNull RatingBar ratingSeller, @NonNull Button selectImages,
+      @NonNull EditText productPrice, @NonNull RatingBar ratingSeller,
+      @NonNull ScrollView scrollView3, @NonNull Button selectImages,
       @NonNull AppCompatSpinner trademark) {
     this.rootView = rootView;
+    this.RichTable = RichTable;
     this.Upload = Upload;
     this.addTableLayout = addTableLayout;
     this.addTableRow = addTableRow;
@@ -95,6 +104,7 @@ public final class FragmentUploadBinding implements ViewBinding {
     this.productName = productName;
     this.productPrice = productPrice;
     this.ratingSeller = ratingSeller;
+    this.scrollView3 = scrollView3;
     this.selectImages = selectImages;
     this.trademark = trademark;
   }
@@ -126,6 +136,12 @@ public final class FragmentUploadBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.RichTable;
+      FrameLayout RichTable = ViewBindings.findChildViewById(rootView, id);
+      if (RichTable == null) {
+        break missingId;
+      }
+
       id = R.id.Upload;
       Button Upload = ViewBindings.findChildViewById(rootView, id);
       if (Upload == null) {
@@ -157,7 +173,7 @@ public final class FragmentUploadBinding implements ViewBinding {
       }
 
       id = R.id.description;
-      FrameLayout description = ViewBindings.findChildViewById(rootView, id);
+      EditText description = ViewBindings.findChildViewById(rootView, id);
       if (description == null) {
         break missingId;
       }
@@ -204,6 +220,12 @@ public final class FragmentUploadBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.scrollView3;
+      ScrollView scrollView3 = ViewBindings.findChildViewById(rootView, id);
+      if (scrollView3 == null) {
+        break missingId;
+      }
+
       id = R.id.selectImages;
       Button selectImages = ViewBindings.findChildViewById(rootView, id);
       if (selectImages == null) {
@@ -216,10 +238,10 @@ public final class FragmentUploadBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentUploadBinding((ConstraintLayout) rootView, Upload, addTableLayout,
-          addTableRow, addToggleButton, addView, description, horizontalScrollView, keywords,
-          productImages, productLastPrice, productName, productPrice, ratingSeller, selectImages,
-          trademark);
+      return new FragmentUploadBinding((ConstraintLayout) rootView, RichTable, Upload,
+          addTableLayout, addTableRow, addToggleButton, addView, description, horizontalScrollView,
+          keywords, productImages, productLastPrice, productName, productPrice, ratingSeller,
+          scrollView3, selectImages, trademark);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

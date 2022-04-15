@@ -42,9 +42,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 @SuppressLint("SetJavaScriptEnabled")
 public class RichEditorActivity extends AppCompatActivity {
@@ -121,7 +118,6 @@ public class RichEditorActivity extends AppCompatActivity {
         iv_action_txt_bg_color = findViewById(R.id.iv_action_txt_bg_color);
         iv_action_line_height = findViewById(R.id.iv_action_line_height);
         iv_action_insert_image = findViewById(R.id.iv_action_insert_image);
-        ButterKnife.bind(this);
 
         initImageLoader();
         initView();
@@ -347,7 +343,9 @@ public class RichEditorActivity extends AppCompatActivity {
     void onClickInsertTable() {
         KeyboardUtils.hideSoftInput(RichEditorActivity.this);
         EditTableFragment fragment = new EditTableFragment();
-        fragment.setOnTableListener((rows, cols) -> mRichEditorAction.insertTable(rows, cols));
+        fragment.setOnTableListener((rows, cols) ->
+                mRichEditorAction.insertTable(rows, cols)
+        );
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.fl_container, fragment, EditHyperlinkFragment.class.getName())
                 .commit();

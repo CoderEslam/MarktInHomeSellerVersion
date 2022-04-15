@@ -59,26 +59,26 @@ public class UserRepository extends BaseRepository {
         reference.child(CHAT_LIST).child(myId).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Log.e("chatList",myId);
+                Log.e("chatList", myId);
                 try {
                     if (isNetworkConnected()) {
                         if (dataSnapshot.exists()) {
                             userArrayList.clear();
 //                            for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                                ChatList chatList = dataSnapshot.getValue(ChatList.class);
-                                Log.e("snapshot",chatList.toString());
-                                reference.child(USER).child(chatList.getId()).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
-                                    @Override
-                                    public void onComplete(@NonNull Task<DataSnapshot> task) {
-                                        if (task.getResult().exists()) {
-                                            Log.e("Userrr",task.getResult().getValue(User.class).toString());
-                                            DataSnapshot dataSnapshot = task.getResult();
-                                            User user = dataSnapshot.getValue(User.class);
-                                            userArrayList.add(user);
-                                            userInter.AllUser(userArrayList);
-                                        }
+                            ChatList chatList = dataSnapshot.getValue(ChatList.class);
+                            Log.e("snapshot", chatList.toString());
+                            reference.child(USER).child(chatList.getId()).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+                                @Override
+                                public void onComplete(@NonNull Task<DataSnapshot> task) {
+                                    if (task.getResult().exists()) {
+                                        Log.e("Userrr", task.getResult().getValue(User.class).toString());
+                                        DataSnapshot dataSnapshot = task.getResult();
+                                        User user = dataSnapshot.getValue(User.class);
+                                        userArrayList.add(user);
+                                        userInter.AllUser(userArrayList);
                                     }
-                                });
+                                }
+                            });
 //                            }
 
                         }

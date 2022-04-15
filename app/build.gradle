@@ -9,7 +9,8 @@ plugins {
     id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'// دي صح
     // for Java
 //    id 'androidx.navigation.safeargs'
-    id 'com.jakewharton.butterknife'
+    // TODO butterknife
+//    id 'com.jakewharton.butterknife'
 }
 apply plugin: 'kotlin-android'
 
@@ -99,9 +100,11 @@ dependencies {
     // Rich Editor
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
     implementation 'com.lzy.widget:imagepicker:0.5.5'
-    implementation 'com.jakewharton:butterknife:10.2.3'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
     implementation 'com.blankj:utilcodex:1.29.0'
+    // TODO butterknife
+//    implementation 'com.jakewharton:butterknife:10.2.3'
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+
 
 
 }

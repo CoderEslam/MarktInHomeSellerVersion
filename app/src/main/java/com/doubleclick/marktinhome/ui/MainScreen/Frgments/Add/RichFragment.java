@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.navigation.Navigation;
 
 import android.text.TextUtils;
 import android.util.Base64;
@@ -362,10 +363,10 @@ public class RichFragment extends Fragment {
     }
 
     void onClickInsertLink() {
-        KeyboardUtils.hideSoftInput(getActivity());
+        KeyboardUtils.hideSoftInput(requireActivity());
         EditHyperlinkFragment fragment = new EditHyperlinkFragment();
-        fragment.setOnHyperlinkListener(
-                (address, text) -> mRichEditorAction.createLink(text, address));
+        fragment.setOnHyperlinkListener((address, text) -> mRichEditorAction.createLink(text, address));
+//        Navigation.findNavController(requireActivity(),R.id.fl_container).navigate(RichFragmentDirections.actionRichFragmentToLinkFragment());
         getActivity().getSupportFragmentManager().beginTransaction()
                 .add(R.id.fl_container, fragment, EditHyperlinkFragment.class.getName())
                 .commit();

@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rXC\\values-en-rXC.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\0f77e958cd3af70ff6983d58aa684d43\\transformed\\core-1.9.0-alpha02\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\17b233a965ffc21004fd66c1edd08df3\\transformed\\core-1.9.0-alpha02\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\c726dec9c84f99e0a634229073a13e90\\transformed\\appcompat-1.4.1\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\55f1946249e7caf65cf7d93ceb079cc4\\transformed\\appcompat-1.4.1\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

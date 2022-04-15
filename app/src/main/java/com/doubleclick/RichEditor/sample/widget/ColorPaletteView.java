@@ -17,9 +17,6 @@ import com.doubleclick.marktinhome.R;
 import java.util.Arrays;
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 
 public class ColorPaletteView extends LinearLayout {
     LinearLayout llColorContainer;
@@ -52,10 +49,8 @@ public class ColorPaletteView extends LinearLayout {
     }
 
     private void init(Context context) {
-        final View rootView =
-                LayoutInflater.from(context).inflate(R.layout.view_color_palette, this, true);
+        final View rootView = LayoutInflater.from(context).inflate(R.layout.view_color_palette, this, true);
         llColorContainer = rootView.findViewById(R.id.ll_color_container);
-        ButterKnife.bind(this, rootView);
 
         int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 25,
                 getResources().getDisplayMetrics());

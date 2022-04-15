@@ -18,8 +18,6 @@ import com.doubleclick.marktinhome.R;
 import java.util.Arrays;
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 
 public class FontSettingFragment extends Fragment {
@@ -51,8 +49,6 @@ public class FontSettingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_font_setting, container, false);
         rvContainer = rootView.findViewById(R.id.rv_container);
-
-        ButterKnife.bind(this, rootView);
 
         type = getArguments().getInt(TYPE);
         if (type == TYPE_SIZE) {

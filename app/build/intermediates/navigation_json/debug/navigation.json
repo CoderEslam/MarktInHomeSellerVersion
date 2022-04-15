@@ -18,5 +18,10 @@
     "name": "nav_seller_graph",
     "navigationXmlIds": [],
     "deepLinks": []
+  },
+  {
+    "name": "rich_nav",
+    "navigationXmlIds": [],
+    "deepLinks": []
   }
 ]

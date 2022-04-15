@@ -14,7 +14,7 @@ import androidx.fragment.app.Fragment;
 
 import com.doubleclick.marktinhome.R;
 
-import butterknife.ButterKnife;
+
 
 
 public class EditHyperlinkFragment extends Fragment {
@@ -27,8 +27,7 @@ public class EditHyperlinkFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_edit_hyperlink, container, false);
         etAddress = rootView.findViewById(R.id.et_address);
         etDisplayText = rootView.findViewById(R.id.et_display_text);
@@ -40,7 +39,6 @@ public class EditHyperlinkFragment extends Fragment {
         iv_back.setOnClickListener(v -> {
             onClickBack();
         });
-        ButterKnife.bind(this, rootView);
         return rootView;
     }
 

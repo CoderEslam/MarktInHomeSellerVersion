@@ -3009,6 +3009,7 @@ id INTEGER
 id KiteIndicator
 id LEFT
 id LineIndicator
+id LinkFragment
 id META
 id MainRecyceler
 id MyOrder
@@ -3026,6 +3027,8 @@ id ProductRecycler
 id QuarterLineIndicator
 id RIGHT
 id ROUND
+id RichFragment
+id RichTable
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -3039,6 +3042,7 @@ id TOP_END
 id TOP_LEFT
 id TOP_RIGHT
 id TOP_START
+id TableFragment
 id TotalRating
 id TriangleIndicator
 id Upload
@@ -3083,6 +3087,10 @@ id action0
 id actionDown
 id actionDownUp
 id actionUp
+id action_LinkFragment_to_RichFragment
+id action_RichFragment_to_LinkFragment
+id action_RichFragment_to_TableFragment
+id action_TableFragment_to_RichFragment
 id action_ViewMoreFragment_to_productFragment
 id action_addressFragment_to_homeFragment
 id action_allUserFragment_to_callUsFragment
@@ -3716,6 +3724,7 @@ id recycler
 id restart
 id reverse
 id reverseSawtooth
+id rich_nav
 id right
 id rightToLeft
 id right_icon
@@ -3738,6 +3747,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollView2
+id scrollView3
 id scrollable
 id search
 id search_badge
@@ -4275,6 +4285,7 @@ navigation add_navigation
 navigation chat_nav
 navigation nav_graph
 navigation nav_seller_graph
+navigation rich_nav
 plurals mtrl_badge_content_description
 raw loading
 raw loading2
