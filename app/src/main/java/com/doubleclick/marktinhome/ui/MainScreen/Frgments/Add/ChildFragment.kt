@@ -106,7 +106,8 @@ class ChildFragment : BaseFragment(), ChildAdapter.OnChild {
             findNavController().navigate(
                 ChildFragmentDirections.actionChildFragmentToUploadFragment(
                     childCategory,
-                    parentCategory.parent
+                    parentCategory.parent,
+                    ""
                 )
             );
         }

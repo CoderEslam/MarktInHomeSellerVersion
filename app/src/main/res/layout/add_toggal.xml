@@ -5,8 +5,9 @@
     android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:background="@color/white"
         app:cardCornerRadius="5dp"
@@ -17,7 +18,7 @@
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -43,37 +44,19 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <EditText
-                    android:id="@+id/descriptionOfButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
-                    android:hint="@string/description" />
-
-
-<!--                <com.doubleclick.marktinhome.Views.colorpickerview.ColorPickerView-->
-<!--                    android:layout_gravity="center"-->
-<!--                    android:id="@+id/colorPickerView"-->
-<!--                    android:layout_width="300dp"-->
-<!--                    android:layout_height="300dp"-->
-<!--                    app:initialColor="@color/dot"-->
-<!--                    />-->
                 <com.divyanshu.colorseekbar.ColorSeekBar
                     android:id="@+id/color_seek_bar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </LinearLayout>
 
         </androidx.core.widget.NestedScrollView>
-
 
     </androidx.cardview.widget.CardView>
 

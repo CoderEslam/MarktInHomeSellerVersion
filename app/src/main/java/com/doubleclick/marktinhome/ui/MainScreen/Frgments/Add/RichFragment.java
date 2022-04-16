@@ -75,13 +75,33 @@ public class RichFragment extends Fragment {
     private EditorMenuFragment mEditorMenuFragment;
 
     private List<ActionType> mActionTypeList =
-            Arrays.asList(ActionType.BOLD, ActionType.ITALIC, ActionType.UNDERLINE,
-                    ActionType.STRIKETHROUGH, ActionType.SUBSCRIPT, ActionType.SUPERSCRIPT,
-                    ActionType.NORMAL, ActionType.H1, ActionType.H2, ActionType.H3, ActionType.H4,
-                    ActionType.H5, ActionType.H6, ActionType.INDENT, ActionType.OUTDENT,
-                    ActionType.JUSTIFY_LEFT, ActionType.JUSTIFY_CENTER, ActionType.JUSTIFY_RIGHT,
-                    ActionType.JUSTIFY_FULL, ActionType.ORDERED, ActionType.UNORDERED, ActionType.LINE,
-                    ActionType.BLOCK_CODE, ActionType.BLOCK_QUOTE, ActionType.CODE_VIEW);
+            Arrays.asList(ActionType.BOLD,
+                    ActionType.ITALIC,
+                    ActionType.UNDERLINE,
+                    ActionType.STRIKETHROUGH,
+                    ActionType.SUBSCRIPT,
+                    ActionType.SUPERSCRIPT,
+                    ActionType.NORMAL,
+                    ActionType.H1,
+                    ActionType.H2,
+                    ActionType.H3,
+                    ActionType.H4,
+                    ActionType.H5,
+                    ActionType.H6,
+                    ActionType.INDENT,
+                    ActionType.OUTDENT,
+                    ActionType.JUSTIFY_LEFT,
+                    ActionType.JUSTIFY_CENTER,
+                    ActionType.JUSTIFY_RIGHT,
+                    ActionType.JUSTIFY_FULL,
+                    ActionType.ORDERED,
+                    ActionType.UNORDERED,
+                    ActionType.LINE,
+                    ActionType.BLOCK_CODE,
+                    ActionType.BLOCK_QUOTE
+                    // to view the html code
+//                    ,ActionType.CODE_VIEW
+            );
 
     private List<Integer> mActionTypeIconList =
             Arrays.asList(R.drawable.ic_format_bold,
@@ -107,8 +127,10 @@ public class RichFragment extends Fragment {
                     R.drawable.ic_format_list_bulleted,
                     R.drawable.ic_line,
                     R.drawable.ic_code_block,
-                    R.drawable.ic_format_quote,
-                    R.drawable.ic_code_review);
+                    R.drawable.ic_format_quote
+                    // to view the html code
+//                    ,R.drawable.ic_code_review
+            );
 
     private static final int REQUEST_CODE_CHOOSE = 0;
 
@@ -120,7 +142,6 @@ public class RichFragment extends Fragment {
     public static RichFragment newInstance(String param1, String param2) {
         RichFragment fragment = new RichFragment();
         Bundle args = new Bundle();
-
         return fragment;
     }
 
@@ -136,7 +157,6 @@ public class RichFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_rich, container, false);
-
         llActionBarContainer = view.findViewById(R.id.ll_action_bar_container);
         flAction = view.findViewById(R.id.fl_action);
         iv_action_insert_link = view.findViewById(R.id.iv_action_insert_link);
@@ -298,11 +318,11 @@ public class RichFragment extends Fragment {
 
     private RichEditorCallback.OnGetHtmlListener onGetHtmlListener = html -> {
         if (TextUtils.isEmpty(html)) {
-            Toast.makeText(getActivity(), "Empty Html String", Toast.LENGTH_SHORT)
-                    .show();
+            Toast.makeText(getActivity(), "Empty Html String", Toast.LENGTH_SHORT).show();
             return;
         }
         Toast.makeText(getActivity(), html, Toast.LENGTH_SHORT).show();
+
     };
 
     void onClickGetHtml() {
@@ -366,9 +386,9 @@ public class RichFragment extends Fragment {
         KeyboardUtils.hideSoftInput(requireActivity());
         EditHyperlinkFragment fragment = new EditHyperlinkFragment();
         fragment.setOnHyperlinkListener((address, text) -> mRichEditorAction.createLink(text, address));
-//        Navigation.findNavController(requireActivity(),R.id.fl_container).navigate(RichFragmentDirections.actionRichFragmentToLinkFragment());
-        getActivity().getSupportFragmentManager().beginTransaction()
-                .add(R.id.fl_container, fragment, EditHyperlinkFragment.class.getName())
+        requireActivity().getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fl_container, fragment, EditHyperlinkFragment.class.getName())
+                .setCustomAnimations(R.anim.lefttoright,R.anim.lefttoright)
                 .commit();
     }
 
@@ -376,8 +396,9 @@ public class RichFragment extends Fragment {
         KeyboardUtils.hideSoftInput(getActivity());
         EditTableFragment fragment = new EditTableFragment();
         fragment.setOnTableListener((rows, cols) -> mRichEditorAction.insertTable(rows, cols));
-        getActivity().getSupportFragmentManager().beginTransaction()
-                .add(R.id.fl_container, fragment, EditHyperlinkFragment.class.getName())
+        requireActivity().getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fl_container, fragment, EditHyperlinkFragment.class.getName())
+                .setCustomAnimations(R.anim.lefttoright,R.anim.lefttoright)
                 .commit();
     }
 
@@ -398,6 +419,7 @@ public class RichFragment extends Fragment {
     public void onDestroy() {
         super.onDestroy();
     }
+
 
     class MRichEditorCallback extends RichEditorCallback {
 

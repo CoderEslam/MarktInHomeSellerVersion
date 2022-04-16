@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MarktInHome.iml" filepath="$PROJECT_DIR$/.idea/modules/MarktInHome.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RichEditor/MarktInHome.RichEditor.iml" filepath="$PROJECT_DIR$/.idea/modules/RichEditor/MarktInHome.RichEditor.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MarktInHome.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MarktInHome.app.iml" />
     </modules>
   </component>

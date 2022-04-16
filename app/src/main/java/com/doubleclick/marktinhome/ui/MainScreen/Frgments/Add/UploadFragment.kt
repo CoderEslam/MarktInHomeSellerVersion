@@ -15,6 +15,7 @@ import android.webkit.MimeTypeMap
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AppCompatSpinner
+import androidx.cardview.widget.CardView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
@@ -58,9 +59,7 @@ class UploadFragment : BaseFragment() {
     lateinit var mapToggleButton: HashMap<String, Any>
     var rate: Float = 0f
     lateinit var addToggleButton: LinearLayout
-    lateinit var addTableRow: ImageView
     lateinit var addView: ImageView
-    lateinit var addTableLayout: TableLayout
     private lateinit var builder: AlertDialog.Builder
 
     val parent_child by navArgs<UploadFragmentArgs>()
@@ -95,8 +94,6 @@ class UploadFragment : BaseFragment() {
         ratingSeller = view.findViewById(R.id.ratingSeller);
         addToggleButton = view.findViewById(R.id.addToggleButton);
         addView = view.findViewById(R.id.addView);
-        addTableRow = view.findViewById(R.id.addTableRow);
-        addTableLayout = view.findViewById(R.id.addTableLayout);
         uris = ArrayList()
         downloadUri = HashMap();
         mapToggleButton = HashMap();
@@ -148,12 +145,14 @@ class UploadFragment : BaseFragment() {
             builder = AlertDialog.Builder(requireContext())
             var radio = RadioButton(requireContext())
             val view = LayoutInflater.from(context).inflate(R.layout.add_toggal, null, false)
+            val cardView: CardView = view.findViewById(R.id.cardView);
             val editorder: TextInputEditText = view.findViewById(R.id.editname)
             val color_seek_bar: ColorSeekBar = view.findViewById(R.id.color_seek_bar);
             color_seek_bar.setOnColorChangeListener(object : ColorSeekBar.OnColorChangeListener {
                 override fun onColorChangeListener(color: Int) {
                     //gives the selected color
-                    editorder.setBackgroundColor(color)
+                    cardView.setBackgroundColor(color)
+                    radio.setBackgroundColor(color)
                 }
             })
             builder.setTitle("Add Options")
@@ -170,13 +169,8 @@ class UploadFragment : BaseFragment() {
             builder.setView(view)
             builder.show()
 
-        }
-        addTableRow.setOnClickListener {
-            var tableRow = TableRow(context);
-            tableRow.orientation = LinearLayout.VERTICAL
-            var view = LayoutInflater.from(context).inflate(R.layout.table_row, null, false);
-            tableRow.addView(view)
-            addTableLayout.addView(tableRow)
+            Toast.makeText(context, "" + parent_child.description, Toast.LENGTH_LONG).show();
+
         }
         return view;
     }

@@ -152,6 +152,8 @@ public class EditorMenuFragment extends Fragment implements View.OnClickListener
         ll_normal.setOnClickListener(this);
         iv_action_insert_image.setOnClickListener(this);
         iv_action_insert_link.setOnClickListener(this);
+        iv_action_table.setOnClickListener(this);
+        iv_action_line.setOnClickListener(this);
         ll_h1.setOnClickListener(this);
         ll_h2.setOnClickListener(this);
         ll_h3.setOnClickListener(this);
