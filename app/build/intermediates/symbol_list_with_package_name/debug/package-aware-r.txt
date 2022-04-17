@@ -3138,8 +3138,6 @@ id actions
 id activity_chooser_view_content
 id add
 id addParent
-id addTableLayout
-id addTableRow
 id addToggalsLinearLayout
 id addToggalsScrollView
 id addToggleButton
@@ -3315,7 +3313,6 @@ id delete
 id deltaRelative
 id dependency_ordering
 id description
-id descriptionOfButton
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3747,7 +3744,6 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollView2
-id scrollView3
 id scrollable
 id search
 id search_badge

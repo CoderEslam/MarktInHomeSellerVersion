@@ -65,6 +65,8 @@ public class RichFragment extends Fragment {
             iv_action_insert_image,
             iv_action_table;
     private WebView webView;
+    public static String HTML = "";
+    private FrameLayout rootFrame;
 
     private boolean isKeyboardShowing;
     private String htmlContent = "<p>Hello World</p>";
@@ -157,6 +159,7 @@ public class RichFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_rich, container, false);
+        rootFrame = requireActivity().findViewById(R.id.nav_host_fragment);
         llActionBarContainer = view.findViewById(R.id.ll_action_bar_container);
         flAction = view.findViewById(R.id.fl_action);
         iv_action_insert_link = view.findViewById(R.id.iv_action_insert_link);
@@ -321,13 +324,14 @@ public class RichFragment extends Fragment {
             Toast.makeText(getActivity(), "Empty Html String", Toast.LENGTH_SHORT).show();
             return;
         }
-        Toast.makeText(getActivity(), html, Toast.LENGTH_SHORT).show();
-
+        HTML = html;
+        Toast.makeText(getActivity(), HTML, Toast.LENGTH_SHORT).show();
     };
 
     void onClickGetHtml() {
         mRichEditorAction.refreshHtml(mRichEditorCallback, onGetHtmlListener);
     }
+
 
     void onClickUndo() {
         mRichEditorAction.undo();
@@ -388,7 +392,7 @@ public class RichFragment extends Fragment {
         fragment.setOnHyperlinkListener((address, text) -> mRichEditorAction.createLink(text, address));
         requireActivity().getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fl_container, fragment, EditHyperlinkFragment.class.getName())
-                .setCustomAnimations(R.anim.lefttoright,R.anim.lefttoright)
+                .setCustomAnimations(R.anim.lefttoright, R.anim.lefttoright)
                 .commit();
     }
 
@@ -398,7 +402,7 @@ public class RichFragment extends Fragment {
         fragment.setOnTableListener((rows, cols) -> mRichEditorAction.insertTable(rows, cols));
         requireActivity().getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fl_container, fragment, EditHyperlinkFragment.class.getName())
-                .setCustomAnimations(R.anim.lefttoright,R.anim.lefttoright)
+                .setCustomAnimations(R.anim.lefttoright, R.anim.lefttoright)
                 .commit();
     }
 

@@ -18,6 +18,7 @@ import androidx.appcompat.widget.AppCompatSpinner
 import androidx.cardview.widget.CardView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.RecyclerView
 import com.divyanshu.colorseekbar.ColorSeekBar
@@ -120,6 +121,7 @@ class UploadFragment : BaseFragment() {
             val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, it)
             trademark.setAdapter(adapter)
         })
+
         ratingSeller.setOnRatingBarChangeListener({ ratingBar, rating, fromUser ->
             rate = rating;
         })
@@ -169,7 +171,6 @@ class UploadFragment : BaseFragment() {
             builder.setView(view)
             builder.show()
 
-            Toast.makeText(context, "" + parent_child.description, Toast.LENGTH_LONG).show();
 
         }
         return view;

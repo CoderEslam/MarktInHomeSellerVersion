@@ -107,7 +107,6 @@ class ChildFragment : BaseFragment(), ChildAdapter.OnChild {
                 ChildFragmentDirections.actionChildFragmentToUploadFragment(
                     childCategory,
                     parentCategory.parent,
-                    ""
                 )
             );
         }

@@ -29,12 +29,16 @@ com/doubleclick/marktinhome/ui/MainScreen/Frgments/HomeFragmentDirections.java
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.HomeFragmentDirections$ActionHomeFragmentToViewMoreFragment
 com/doubleclick/marktinhome/databinding/DialogColorpickerColorpickerviewSkydovesBinding.java
  com.doubleclick.marktinhome.databinding.DialogColorpickerColorpickerviewSkydovesBinding
-com/doubleclick/marktinhome/Views/colorpickerview/preference/ColorPickerPreferenceManager.java
- com.doubleclick.marktinhome.Views.colorpickerview.preference.ColorPickerPreferenceManager
-com/doubleclick/marktinhome/Adapters/ParentAdapter.java
- com.doubleclick.marktinhome.Adapters.ParentAdapter
- com.doubleclick.marktinhome.Adapters.ParentAdapter$1
- com.doubleclick.marktinhome.Adapters.ParentAdapter$ParentViewHolder
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/RichFragment.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$1
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$2
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$3
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$CustomWebChromeClient
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$MOnActionPerformListener
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$MRichEditorCallback
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/Profile/menu_profileFragment.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Profile.menu_profileFragment
 com/doubleclick/marktinhome/Views/colorpickerview/PointMapper.java
  com.doubleclick.marktinhome.Views.colorpickerview.PointMapper
 com/doubleclick/marktinhome/ui/MainScreen/Frgments/CartFragmentDirections.java
@@ -223,10 +227,8 @@ com/doubleclick/marktinhome/MainFragment.java
  com.doubleclick.marktinhome.MainFragment
 com/doubleclick/marktinhome/Model/Sender.java
  com.doubleclick.marktinhome.Model.Sender
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/RecentOrderFragmentDirections.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections$1
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections$ActionRecentOrderFragmentToProductFragment
+com/doubleclick/ViewModel/UserViewModel.java
+ com.doubleclick.ViewModel.UserViewModel
 com/doubleclick/marktinhome/Adapters/TrademarkAdapter.java
  com.doubleclick.marktinhome.Adapters.TrademarkAdapter
  com.doubleclick.marktinhome.Adapters.TrademarkAdapter$TrademarkViewHolder
@@ -244,9 +246,13 @@ com/doubleclick/marktinhome/ui/MainScreen/Frgments/ViewMoreFragmentDirections.ja
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.ViewMoreFragmentDirections$ActionViewMoreFragmentToProductFragment
 com/doubleclick/marktinhome/databinding/MenuRowItemBinding.java
  com.doubleclick.marktinhome.databinding.MenuRowItemBinding
-com/doubleclick/marktinhome/Views/PhotoView/Util.java
- com.doubleclick.marktinhome.Views.PhotoView.Util
- com.doubleclick.marktinhome.Views.PhotoView.Util$1
+com/doubleclick/RichEditor/sample/fragment/EditorMenuFragment.java
+ com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment
+ com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment$1
+ com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment$2
+ com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment$3
+ com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment$4
+ com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment$5
 com/doubleclick/marktinhome/databinding/ActivityDashBoardBinding.java
  com.doubleclick.marktinhome.databinding.ActivityDashBoardBinding
 com/doubleclick/marktinhome/databinding/ListItemBinding.java
@@ -269,8 +275,9 @@ com/doubleclick/marktinhome/ui/MainScreen/Frgments/FilterParentFragmentArgs.java
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.FilterParentFragmentArgs
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.FilterParentFragmentArgs$1
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.FilterParentFragmentArgs$Builder
-com/doubleclick/marktinhome/databinding/ActivityAddBinding.java
- com.doubleclick.marktinhome.databinding.ActivityAddBinding
+com/doubleclick/RichEditor/sample/fragment/EditTableFragment.java
+ com.doubleclick.RichEditor.sample.fragment.EditTableFragment
+ com.doubleclick.RichEditor.sample.fragment.EditTableFragment$OnTableListener
 com/doubleclick/ViewModel/CartViewModel.java
  com.doubleclick.ViewModel.CartViewModel
 com/doubleclick/marktinhome/databinding/ActivityMainBinding.java
@@ -418,8 +425,9 @@ com/doubleclick/marktinhome/ui/Splash/Splash2Fragment.java
  com.doubleclick.marktinhome.ui.Splash.Splash2Fragment
 com/doubleclick/marktinhome/ui/MainScreen/Frgments/Profile/menu_profileFragmentDirections.java
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Profile.menu_profileFragmentDirections
-com/doubleclick/marktinhome/databinding/FragmentProductBinding.java
- com.doubleclick.marktinhome.databinding.FragmentProductBinding
+com/doubleclick/RichEditor/sample/fragment/FontSettingFragment.java
+ com.doubleclick.RichEditor.sample.fragment.FontSettingFragment
+ com.doubleclick.RichEditor.sample.fragment.FontSettingFragment$OnResultListener
 com/doubleclick/marktinhome/ui/MainScreen/Chat/callUsFragmentDirections.java
  com.doubleclick.marktinhome.ui.MainScreen.Chat.callUsFragmentDirections
 com/doubleclick/marktinhome/Model/Seller.java
@@ -481,8 +489,6 @@ com/doubleclick/marktinhome/databinding/FragmentFontSettingBinding.java
  com.doubleclick.marktinhome.databinding.FragmentFontSettingBinding
 com/doubleclick/marktinhome/Model/User.java
  com.doubleclick.marktinhome.Model.User
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/RichFragmentDirections.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragmentDirections
 com/doubleclick/marktinhome/databinding/TopDealsBinding.java
  com.doubleclick.marktinhome.databinding.TopDealsBinding
 com/doubleclick/marktinhome/ui/Advertisement/AdvertisementActivity.java
@@ -696,8 +702,8 @@ com/doubleclick/marktinhome/Repository/RateingRepository.java
  com.doubleclick.marktinhome.Repository.RateingRepository
  com.doubleclick.marktinhome.Repository.RateingRepository$1
  com.doubleclick.marktinhome.Repository.RateingRepository$2
-com/doubleclick/ViewModel/RecentOrderViewModel.java
- com.doubleclick.ViewModel.RecentOrderViewModel
+com/doubleclick/RichEditor/sample/StartActivity.java
+ com.doubleclick.RichEditor.sample.StartActivity
 com/doubleclick/RichEditor/sample/fragment/EditHyperlinkFragment.java
  com.doubleclick.RichEditor.sample.fragment.EditHyperlinkFragment
  com.doubleclick.RichEditor.sample.fragment.EditHyperlinkFragment$OnHyperlinkListener
@@ -780,30 +786,21 @@ com/doubleclick/marktinhome/ui/MainScreen/Frgments/FilterParentFragmentDirection
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.FilterParentFragmentDirections$ActionFilterParentFragmentToProductFragment
 com/doubleclick/marktinhome/Notifications/Client.java
  com.doubleclick.marktinhome.Notifications.Client
-com/doubleclick/RichEditor/sample/StartActivity.java
- com.doubleclick.RichEditor.sample.StartActivity
-com/doubleclick/RichEditor/sample/fragment/FontSettingFragment.java
- com.doubleclick.RichEditor.sample.fragment.FontSettingFragment
- com.doubleclick.RichEditor.sample.fragment.FontSettingFragment$OnResultListener
+com/doubleclick/ViewModel/RecentOrderViewModel.java
+ com.doubleclick.ViewModel.RecentOrderViewModel
 com/doubleclick/marktinhome/Repository/UserRepository.java
  com.doubleclick.marktinhome.Repository.UserRepository
  com.doubleclick.marktinhome.Repository.UserRepository$1
  com.doubleclick.marktinhome.Repository.UserRepository$2
  com.doubleclick.marktinhome.Repository.UserRepository$2$1
-com/doubleclick/ViewModel/UserViewModel.java
- com.doubleclick.ViewModel.UserViewModel
-com/doubleclick/RichEditor/sample/fragment/EditTableFragment.java
- com.doubleclick.RichEditor.sample.fragment.EditTableFragment
- com.doubleclick.RichEditor.sample.fragment.EditTableFragment$OnTableListener
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/Profile/menu_profileFragment.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Profile.menu_profileFragment
-com/doubleclick/RichEditor/sample/fragment/EditorMenuFragment.java
- com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment
- com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment$1
- com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment$2
- com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment$3
- com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment$4
- com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment$5
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/RecentOrderFragmentDirections.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections$1
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections$ActionRecentOrderFragmentToProductFragment
+com/doubleclick/marktinhome/Adapters/ParentAdapter.java
+ com.doubleclick.marktinhome.Adapters.ParentAdapter
+ com.doubleclick.marktinhome.Adapters.ParentAdapter$1
+ com.doubleclick.marktinhome.Adapters.ParentAdapter$ParentViewHolder
 com/doubleclick/RichEditor/sample/RichEditorActivity.java
  com.doubleclick.RichEditor.sample.RichEditorActivity
  com.doubleclick.RichEditor.sample.RichEditorActivity$1
@@ -812,11 +809,12 @@ com/doubleclick/RichEditor/sample/RichEditorActivity.java
  com.doubleclick.RichEditor.sample.RichEditorActivity$CustomWebChromeClient
  com.doubleclick.RichEditor.sample.RichEditorActivity$MOnActionPerformListener
  com.doubleclick.RichEditor.sample.RichEditorActivity$MRichEditorCallback
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/RichFragment.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$1
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$2
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$3
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$CustomWebChromeClient
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$MOnActionPerformListener
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$MRichEditorCallback
+com/doubleclick/marktinhome/Views/colorpickerview/preference/ColorPickerPreferenceManager.java
+ com.doubleclick.marktinhome.Views.colorpickerview.preference.ColorPickerPreferenceManager
+com/doubleclick/marktinhome/databinding/ActivityAddBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityAddBinding
+com/doubleclick/marktinhome/Views/PhotoView/Util.java
+ com.doubleclick.marktinhome.Views.PhotoView.Util
+ com.doubleclick.marktinhome.Views.PhotoView.Util$1
+com/doubleclick/marktinhome/databinding/FragmentProductBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentProductBinding
