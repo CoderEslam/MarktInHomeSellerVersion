@@ -189,6 +189,8 @@ class UploadFragment : BaseFragment() {
         Log.e("HTMLLLLLLLLLLLLLL", "" + text);
     }
 
+
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == IMAGES_REQUEST && resultCode == RESULT_OK) {
