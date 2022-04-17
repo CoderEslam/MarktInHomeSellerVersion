@@ -12,6 +12,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.os.Handler;
 import android.text.TextUtils;
 import android.util.Base64;
 import android.util.Log;
@@ -39,6 +40,7 @@ import com.doubleclick.RichEditor.sample.fragment.EditHyperlinkFragment;
 import com.doubleclick.RichEditor.sample.fragment.EditTableFragment;
 import com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment;
 import com.doubleclick.RichEditor.sample.interfaces.OnActionPerformListener;
+import com.doubleclick.marktinhome.BaseFragment;
 import com.doubleclick.marktinhome.R;
 import com.lzy.imagepicker.ImagePicker;
 import com.lzy.imagepicker.bean.ImageItem;
@@ -48,13 +50,15 @@ import com.lzy.imagepicker.view.CropImageView;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link RichFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class RichFragment extends Fragment {
+public class RichFragment extends BaseFragment {
 
     FrameLayout flAction;
     LinearLayout llActionBarContainer;
@@ -157,8 +161,7 @@ public class RichFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_rich, container, false);
         rootFrame = requireActivity().findViewById(R.id.nav_host_fragment);
@@ -181,6 +184,7 @@ public class RichFragment extends Fragment {
 
         initImageLoader();
         initView();
+        UpdateHTML();
 
         int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 40, getResources().getDisplayMetrics());
         int padding = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 9, getResources().getDisplayMetrics());
@@ -331,6 +335,7 @@ public class RichFragment extends Fragment {
             Toast.makeText(getActivity(), "Empty Html String", Toast.LENGTH_SHORT).show();
             return;
         }
+        HTMLText = html;
         shareHTML.input(html);
         Log.e("RichFragment=336", html);
     };
@@ -540,6 +545,24 @@ public class RichFragment extends Fragment {
                     break;
             }
         }
+    }
+
+
+    private void UpdateHTML() {
+        Timer timer = new Timer();
+        Handler handler = new Handler();
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                onClickGetHtml();
+            }
+        };
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                handler.post(runnable);
+            }
+        }, 500, 500);
     }
 
 }

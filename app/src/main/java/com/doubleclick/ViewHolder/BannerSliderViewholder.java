@@ -82,7 +82,6 @@ public class BannerSliderViewholder extends RecyclerView.ViewHolder {
                 if (currentPage >= advertisementList.size()) {
                     currentPage = 0;
                 }
-
                 bannerSliderViewPager.setCurrentItem(currentPage++);
             }
         };

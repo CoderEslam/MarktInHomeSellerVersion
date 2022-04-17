@@ -3,6 +3,7 @@ package com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add
 
 import android.app.Activity.RESULT_OK
 import android.app.ProgressDialog
+import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
 import android.net.Uri
@@ -11,7 +12,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.webkit.*
+import android.webkit.MimeTypeMap
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AppCompatSpinner
@@ -28,6 +29,7 @@ import com.doubleclick.marktinhome.BaseApplication.HTMLText
 import com.doubleclick.marktinhome.BaseFragment
 import com.doubleclick.marktinhome.Model.Constantes.PRODUCT
 import com.doubleclick.marktinhome.R
+import com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment.ShareHTML
 import com.google.android.gms.tasks.Continuation
 import com.google.android.gms.tasks.OnSuccessListener
 import com.google.android.gms.tasks.Task
@@ -64,6 +66,7 @@ class UploadFragment : BaseFragment() {
     private lateinit var builder: AlertDialog.Builder
     val parent_child by navArgs<UploadFragmentArgs>()
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -84,7 +87,8 @@ class UploadFragment : BaseFragment() {
         productLastPrice = view.findViewById(R.id.productLastPrice);
         description = view.findViewById(R.id.description);
         RichTable = view.findViewById(R.id.RichTable);
-        requireActivity().supportFragmentManager.beginTransaction().replace(RichTable.id, RichFragment()).commit()
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(RichTable.id, RichFragment()).commit()
         trademark = view.findViewById(R.id.trademark);
         Upload = view.findViewById(R.id.Upload);
         keywords = view.findViewById(R.id.keywords);
@@ -122,6 +126,9 @@ class UploadFragment : BaseFragment() {
         ratingSeller.setOnRatingBarChangeListener({ ratingBar, rating, fromUser ->
             rate = rating;
         })
+        description.setOnClickListener {
+            Toast.makeText(BaseApplication.context, HTMLText, Toast.LENGTH_LONG).show()
+        }
         Upload.setOnClickListener {
             UploadImages(
                 productName.text.toString(),
@@ -185,6 +192,7 @@ class UploadFragment : BaseFragment() {
         Log.e("HTMLLLLLLLLLLLLLL", "" + html);
         HTMLText = html;
     }
+
 
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -310,8 +318,9 @@ class UploadFragment : BaseFragment() {
         map["Images"] = downloadUri.values.toString()
         map["Toggals"] = mapToggleButton.values.toString()
         reference.child(PRODUCT).child(Objects.requireNonNull(push)).updateChildren(map)
-
-
     }
+
+
+
 }
 

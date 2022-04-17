@@ -8,7 +8,6 @@ import com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.UploadFragment
 
 class AddActivity : AppCompatActivity(), RichFragment.ShareHTML {
 
-
     var uploadFragment = UploadFragment();
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

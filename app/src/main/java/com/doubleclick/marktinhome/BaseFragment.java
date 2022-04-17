@@ -69,7 +69,7 @@ public class BaseFragment extends Fragment {
     private String Location = "";
     private String PushIdParents;
     private APIService apiService;
-
+    public static String HTMLText = "";
 
     public BaseFragment() {
         super();
