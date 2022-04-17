@@ -84,8 +84,7 @@ class UploadFragment : BaseFragment() {
         productLastPrice = view.findViewById(R.id.productLastPrice);
         description = view.findViewById(R.id.description);
         RichTable = view.findViewById(R.id.RichTable);
-        requireActivity().supportFragmentManager.beginTransaction()
-            .replace(RichTable.id, RichFragment()).commit()
+        requireActivity().supportFragmentManager.beginTransaction().replace(RichTable.id, RichFragment()).commit()
         trademark = view.findViewById(R.id.trademark);
         Upload = view.findViewById(R.id.Upload);
         keywords = view.findViewById(R.id.keywords);
@@ -153,6 +152,7 @@ class UploadFragment : BaseFragment() {
                     //gives the selected color
                     cardView.setBackgroundColor(color)
                     radio.setBackgroundColor(color)
+                    radio.setTextColor(color)
                 }
             })
             builder.setTitle("Add Options")

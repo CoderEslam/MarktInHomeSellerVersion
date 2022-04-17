@@ -37,16 +37,6 @@ class productFragment : BaseFragment() {
     private lateinit var lastPrice: TextView
     private lateinit var description: TextView
     private lateinit var TotalRating: TextView;
-//    private lateinit var tvRate1: TextView
-//    private lateinit var tvRate2: TextView
-//    private lateinit var tvRate3: TextView
-//    private lateinit var tvRate4: TextView
-//    private lateinit var tvRate5: TextView
-//    private lateinit var progressBar1: ProgressBar
-//    private lateinit var progressBar2: ProgressBar
-//    private lateinit var progressBar3: ProgressBar
-//    private lateinit var progressBar4: ProgressBar
-//    private lateinit var progressBar5: ProgressBar
     private lateinit var yourRate: RatingBar;
     private lateinit var rateViewModel: RateViewModel;
     private lateinit var addToggalsLinearLayout: LinearLayout
@@ -59,7 +49,7 @@ class productFragment : BaseFragment() {
     lateinit var ratingSeller: TextView
     private var ToggleItem: String? = ""
     lateinit var comments: TextView;
-    lateinit var radioGroup:RadioGroup
+    lateinit var radioGroup: RadioGroup
 
 
     private val product by navArgs<productFragmentArgs>()
@@ -67,7 +57,6 @@ class productFragment : BaseFragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-
 
 
         }
@@ -89,16 +78,6 @@ class productFragment : BaseFragment() {
         lastPrice = view.findViewById(R.id.lastPrice)
         description = view.findViewById(R.id.description)
         TotalRating = view.findViewById(R.id.TotalRating)
-//        tvRate1 = view.findViewById(R.id.tvRate1)
-//        tvRate2 = view.findViewById(R.id.tvRate2)
-//        tvRate3 = view.findViewById(R.id.tvRate3)
-//        tvRate4 = view.findViewById(R.id.tvRate4)
-//        tvRate5 = view.findViewById(R.id.tvRate5)
-//        progressBar1 = view.findViewById(R.id.progressBar1);
-//        progressBar2 = view.findViewById(R.id.progressBar2);
-//        progressBar3 = view.findViewById(R.id.progressBar3);
-//        progressBar4 = view.findViewById(R.id.progressBar4);
-//        progressBar5 = view.findViewById(R.id.progressBar5);
         yourRate = view.findViewById(R.id.yourRate);
         comments = view.findViewById(R.id.comments);
         addToggalsLinearLayout = view.findViewById(R.id.addToggalsLinearLayout);
@@ -138,7 +117,11 @@ class productFragment : BaseFragment() {
             val map: HashMap<String, Any> = HashMap();
             map["TotalRating"] = (it.size);
             reference.child(PRODUCT).child(product.product!!.productId).updateChildren(map);
-            var r1 = 0f; var r2 = 0f; var r3 = 0f; var r4 = 0f; var r5 = 0f
+            var r1 = 0f;
+            var r2 = 0f;
+            var r3 = 0f;
+            var r4 = 0f;
+            var r5 = 0f
             val list: MutableList<SliceValue> = ArrayList();
             for (i in it) {
                 if (0.0 < i.rate.toFloat() && i.rate.toFloat() <= 1.0) {
@@ -189,7 +172,8 @@ class productFragment : BaseFragment() {
                 map["ProductId"] = product.product!!.productId;
                 map["BuyerId"] = myId;
                 map["SellerId"] = product.product!!.adminId;
-                map["TotalPrice"] = (qNumber.toDouble() * product.product!!.price.toDouble()).toLong();
+                map["TotalPrice"] =
+                    (qNumber.toDouble() * product.product!!.price.toDouble()).toLong();
                 map["Quantity"] = qNumber.toLong();
                 map["price"] = product.product!!.price.toLong();
                 map["images"] = product.product!!.images;
