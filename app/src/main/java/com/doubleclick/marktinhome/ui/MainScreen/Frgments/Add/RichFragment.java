@@ -1,12 +1,16 @@
 package com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.navigation.Navigation;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 
 import android.text.TextUtils;
 import android.util.Base64;
@@ -30,7 +34,6 @@ import com.doubleclick.RichEditor.mricheditor.RichEditorAction;
 import com.doubleclick.RichEditor.mricheditor.RichEditorCallback;
 import com.doubleclick.RichEditor.mricheditor.ui.ActionImageView;
 import com.doubleclick.RichEditor.sample.GlideImageLoader;
-import com.doubleclick.RichEditor.sample.RichEditorActivity;
 import com.doubleclick.RichEditor.sample.fragment.EditHyperlinkFragment;
 import com.doubleclick.RichEditor.sample.fragment.EditTableFragment;
 import com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment;
@@ -65,15 +68,12 @@ public class RichFragment extends Fragment {
             iv_action_insert_image,
             iv_action_table;
     private WebView webView;
-    public static String HTML = "";
     private FrameLayout rootFrame;
-
     private boolean isKeyboardShowing;
     private String htmlContent = "<p>Hello World</p>";
-
     private RichEditorAction mRichEditorAction;
     private RichEditorCallback mRichEditorCallback;
-
+    private ShareHTML shareHTML;
     private EditorMenuFragment mEditorMenuFragment;
 
     private List<ActionType> mActionTypeList =
@@ -147,6 +147,8 @@ public class RichFragment extends Fragment {
         return fragment;
     }
 
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -173,6 +175,9 @@ public class RichFragment extends Fragment {
         iv_action_insert_image = view.findViewById(R.id.iv_action_insert_image);
         iv_action_table = view.findViewById(R.id.iv_action_table);
         webView = view.findViewById(R.id.wv_container);
+        webView.setNestedScrollingEnabled(true);
+        webView.setVerticalScrollbarOverlay(true);
+        webView.setVerticalScrollBarEnabled(true);
 
         initImageLoader();
         initView();
@@ -319,19 +324,38 @@ public class RichFragment extends Fragment {
         }
     }
 
+    public interface ShareHTML {
+        void input(String html);
+    }
+
     private RichEditorCallback.OnGetHtmlListener onGetHtmlListener = html -> {
         if (TextUtils.isEmpty(html)) {
             Toast.makeText(getActivity(), "Empty Html String", Toast.LENGTH_SHORT).show();
             return;
         }
-        HTML = html;
-        Toast.makeText(getActivity(), HTML, Toast.LENGTH_SHORT).show();
+        shareHTML.input(html);
+        Toast.makeText(getActivity(), html, Toast.LENGTH_SHORT).show();
     };
 
     void onClickGetHtml() {
         mRichEditorAction.refreshHtml(mRichEditorCallback, onGetHtmlListener);
     }
 
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        if (context instanceof ShareHTML) {
+            shareHTML = (ShareHTML) context;
+        } else {
+            throw new RuntimeException(context.toString() + "must implement shareHTML");
+        }
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        shareHTML = null;
+    }
 
     void onClickUndo() {
         mRichEditorAction.undo();

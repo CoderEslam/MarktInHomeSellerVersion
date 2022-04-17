@@ -18,11 +18,9 @@ import androidx.appcompat.widget.AppCompatSpinner
 import androidx.cardview.widget.CardView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.RecyclerView
 import com.divyanshu.colorseekbar.ColorSeekBar
-import com.doubleclick.RichEditor.sample.RichEditorActivity
 import com.doubleclick.ViewModel.TradmarkViewModel
 import com.doubleclick.marktinhome.Adapters.ImageAdapter
 import com.doubleclick.marktinhome.BaseFragment
@@ -62,9 +60,8 @@ class UploadFragment : BaseFragment() {
     lateinit var addToggleButton: LinearLayout
     lateinit var addView: ImageView
     private lateinit var builder: AlertDialog.Builder
-
+    private var text: String? = "";
     val parent_child by navArgs<UploadFragmentArgs>()
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -72,6 +69,7 @@ class UploadFragment : BaseFragment() {
 
         }
     }
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -121,7 +119,6 @@ class UploadFragment : BaseFragment() {
             val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, it)
             trademark.setAdapter(adapter)
         })
-
         ratingSeller.setOnRatingBarChangeListener({ ratingBar, rating, fromUser ->
             rate = rating;
         })
@@ -144,7 +141,7 @@ class UploadFragment : BaseFragment() {
         }
 
         addView.setOnClickListener {
-            builder = AlertDialog.Builder(requireContext())
+            /*builder = AlertDialog.Builder(requireContext())
             var radio = RadioButton(requireContext())
             val view = LayoutInflater.from(context).inflate(R.layout.add_toggal, null, false)
             val cardView: CardView = view.findViewById(R.id.cardView);
@@ -170,7 +167,9 @@ class UploadFragment : BaseFragment() {
             })
             builder.setView(view)
             builder.show()
+*/
 
+            Toast.makeText(requireContext(), text, Toast.LENGTH_LONG).show()
 
         }
         return view;
@@ -184,6 +183,11 @@ class UploadFragment : BaseFragment() {
         startActivityForResult(intent, IMAGES_REQUEST)
     }
 
+
+    public fun ShowHTML(html: String) {
+        text = html;
+        Log.e("HTMLLLLLLLLLLLLLL", "" + text);
+    }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
@@ -309,7 +313,6 @@ class UploadFragment : BaseFragment() {
         map["Toggals"] = mapToggleButton.values.toString()
         reference.child(PRODUCT).child(Objects.requireNonNull(push)).updateChildren(map)
     }
-
 
 }
 
