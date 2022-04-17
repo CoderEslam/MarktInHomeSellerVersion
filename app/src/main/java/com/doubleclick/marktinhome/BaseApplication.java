@@ -29,6 +29,7 @@ public class BaseApplication extends Application {
     public static Context context;
     public static final String CHANNEL_ID = "marktinhome";
     public static NotificationManagerCompat notificationManager;
+    public static String HTMLText = "";
 
     @Override
     public void onCreate() {

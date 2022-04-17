@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import android.text.TextUtils;
 import android.util.Base64;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -148,7 +149,6 @@ public class RichFragment extends Fragment {
     }
 
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -182,10 +182,8 @@ public class RichFragment extends Fragment {
         initImageLoader();
         initView();
 
-        int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 40,
-                getResources().getDisplayMetrics());
-        int padding = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 9,
-                getResources().getDisplayMetrics());
+        int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 40, getResources().getDisplayMetrics());
+        int padding = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 9, getResources().getDisplayMetrics());
         for (int i = 0, size = mActionTypeList.size(); i < size; i++) {
             ActionImageView actionImageView = new ActionImageView(getContext());
             actionImageView.setLayoutParams(new LinearLayout.LayoutParams(width, width));
@@ -334,7 +332,7 @@ public class RichFragment extends Fragment {
             return;
         }
         shareHTML.input(html);
-        Toast.makeText(getActivity(), html, Toast.LENGTH_SHORT).show();
+        Log.e("RichFragment=336", html);
     };
 
     void onClickGetHtml() {
