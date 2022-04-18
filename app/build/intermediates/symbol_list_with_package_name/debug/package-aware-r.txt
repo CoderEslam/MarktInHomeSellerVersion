@@ -4341,6 +4341,7 @@ string chat_us
 string chip_text
 string clear_text_end_icon_content_description
 string client_id
+string cols
 string comment
 string comments
 string common_google_play_services_enable_button
@@ -4536,6 +4537,7 @@ string project_id
 string put_you_rate
 string quantity
 string recent_search
+string rows
 string search
 string search_here
 string search_menu_title
@@ -4551,6 +4553,7 @@ string totalPrice
 string total_sales
 string trademark
 string type_here
+string typehere
 string uplaod
 string user_name
 string welcome

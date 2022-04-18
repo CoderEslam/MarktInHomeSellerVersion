@@ -97,4 +97,7 @@
     <string name="heading_5">Heading 5</string>
     <string name="heading_6">Heading 6</string>
     <string name="m_rich_editor">MRichEditor</string>
+    <string name="cols">Cols</string>
+    <string name="rows">Rows</string>
+    <string name="typehere">type here.....</string>
 </resources>

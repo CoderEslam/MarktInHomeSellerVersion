@@ -75,7 +75,7 @@ public class RichFragment extends BaseFragment {
     private WebView webView;
     private FrameLayout rootFrame;
     private boolean isKeyboardShowing;
-    private String htmlContent = "<p>Hello World</p>";
+    private String htmlContent = "<p>" + "type here....." + "</p>";
     private RichEditorAction mRichEditorAction;
     private RichEditorCallback mRichEditorCallback;
     private ShareHTML shareHTML;
@@ -156,14 +156,13 @@ public class RichFragment extends BaseFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_rich, container, false);
+        htmlContent = "<p>" + getResources().getString(R.string.typehere) + "</p>";
         rootFrame = requireActivity().findViewById(R.id.nav_host_fragment);
         llActionBarContainer = view.findViewById(R.id.ll_action_bar_container);
         flAction = view.findViewById(R.id.fl_action);
@@ -316,8 +315,9 @@ public class RichFragment extends BaseFragment {
     }
 
     void onClickAction() {
+//        flAction.setVisibility(View.VISIBLE);
         if (flAction.getVisibility() == View.VISIBLE) {
-            flAction.setVisibility(View.GONE);
+            flAction.setVisibility(View.VISIBLE);
         } else {
             if (isKeyboardShowing) {
                 KeyboardUtils.hideSoftInput(getActivity());

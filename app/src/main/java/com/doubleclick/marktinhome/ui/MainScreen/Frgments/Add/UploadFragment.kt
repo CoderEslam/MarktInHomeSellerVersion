@@ -1,9 +1,9 @@
 package com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add
 
 
+import android.annotation.SuppressLint
 import android.app.Activity.RESULT_OK
 import android.app.ProgressDialog
-import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
 import android.net.Uri
@@ -24,12 +24,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.divyanshu.colorseekbar.ColorSeekBar
 import com.doubleclick.ViewModel.TradmarkViewModel
 import com.doubleclick.marktinhome.Adapters.ImageAdapter
-import com.doubleclick.marktinhome.BaseApplication
-import com.doubleclick.marktinhome.BaseApplication.HTMLText
 import com.doubleclick.marktinhome.BaseFragment
 import com.doubleclick.marktinhome.Model.Constantes.PRODUCT
 import com.doubleclick.marktinhome.R
-import com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment.ShareHTML
 import com.google.android.gms.tasks.Continuation
 import com.google.android.gms.tasks.OnSuccessListener
 import com.google.android.gms.tasks.Task
@@ -65,7 +62,27 @@ class UploadFragment : BaseFragment() {
     lateinit var addView: ImageView
     private lateinit var builder: AlertDialog.Builder
     val parent_child by navArgs<UploadFragmentArgs>()
-
+    var begin = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "\n" +
+            "<head>\n" +
+            "    <style>\n" +
+            "        table,\n" +
+            "        th,\n" +
+            "        td {\n" +
+            "            border: 2px solid black;\n" +
+            "            border-collapse: collapse;\n" +
+            "        }\n" +
+            "      table{\n" +
+            "        width: 100%\n" +
+            "      }\n" +
+            "    </style>\n" +
+            "</head>\n" +
+            "\n" +
+            "<body>";
+    var end = "</body>\n" +
+            "\n" +
+            "</html>";
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -75,6 +92,7 @@ class UploadFragment : BaseFragment() {
     }
 
 
+    @SuppressLint("SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -126,9 +144,6 @@ class UploadFragment : BaseFragment() {
         ratingSeller.setOnRatingBarChangeListener({ ratingBar, rating, fromUser ->
             rate = rating;
         })
-        description.setOnClickListener {
-            Toast.makeText(BaseApplication.context, HTMLText, Toast.LENGTH_LONG).show()
-        }
         Upload.setOnClickListener {
             UploadImages(
                 productName.text.toString(),
@@ -158,7 +173,6 @@ class UploadFragment : BaseFragment() {
                 override fun onColorChangeListener(color: Int) {
                     //gives the selected color
                     cardView.setBackgroundColor(color)
-                    radio.setBackgroundColor(color)
                     radio.setTextColor(color)
                 }
             })
@@ -189,10 +203,9 @@ class UploadFragment : BaseFragment() {
 
 
     fun ShowHTML(html: String) {
-        Log.e("HTMLLLLLLLLLLLLLL", "" + html);
         HTMLText = html;
+        Log.e("HTMLLLLLLLLLLLLLL", "" + begin + HTMLText + end);
     }
-
 
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -301,7 +314,9 @@ class UploadFragment : BaseFragment() {
         val discount = (-1 * (100 - ((price / LastPrice) * 100.0)))
         map["productId"] = push.toString()
         map["price"] = money
-        map["description"] = descroiprion.toString()
+        if (descroiprion.toString() != "" || HTMLText.toString() != "") {
+            map["description"] = descroiprion.toString() + begin + HTMLText + end
+        }
         map["date"] = (-1 * (date.time))
         map["adminId"] = myId.toString()
         map["productName"] = name!!.toString()
@@ -319,7 +334,6 @@ class UploadFragment : BaseFragment() {
         map["Toggals"] = mapToggleButton.values.toString()
         reference.child(PRODUCT).child(Objects.requireNonNull(push)).updateChildren(map)
     }
-
 
 
 }
