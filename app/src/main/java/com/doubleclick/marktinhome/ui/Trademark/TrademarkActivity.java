@@ -4,23 +4,29 @@ import static com.doubleclick.marktinhome.Model.Constantes.ADVERTISEMENT;
 import static com.doubleclick.marktinhome.Model.Constantes.TRADEMARK;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.doubleclick.Tradmarkinterface;
 import com.doubleclick.ViewModel.TradmarkViewModel;
 import com.doubleclick.marktinhome.Adapters.AdvAdapter;
 import com.doubleclick.marktinhome.Adapters.TrademarkAdapter;
@@ -43,8 +49,9 @@ import com.google.firebase.storage.UploadTask;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
-public class TrademarkActivity extends AppCompatActivity {
+public class TrademarkActivity extends AppCompatActivity implements Tradmarkinterface {
 
 
     private ImageView imageTrademark;
@@ -60,6 +67,8 @@ public class TrademarkActivity extends AppCompatActivity {
     private StorageTask uploadTask;
     private Button upload;
     private TradmarkViewModel tradmarkViewModel;
+    private TrademarkAdapter trademarkAdapter;
+    private AlertDialog.Builder builder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,7 +78,7 @@ public class TrademarkActivity extends AppCompatActivity {
         trademark = findViewById(R.id.trademark);
         MyTrademark = findViewById(R.id.MyTrademark);
         upload = findViewById(R.id.upload);
-        storageReference = storageReference = FirebaseStorage.getInstance().getReference(TRADEMARK);
+        storageReference = FirebaseStorage.getInstance().getReference(TRADEMARK);
         mAuth = FirebaseAuth.getInstance();
         currentUser = mAuth.getCurrentUser();
         reference = FirebaseDatabase.getInstance("https://marketinhome-99d25-default-rtdb.firebaseio.com").getReference();
@@ -77,10 +86,23 @@ public class TrademarkActivity extends AppCompatActivity {
         tradmarkViewModel.getAllMark().observe(this, new Observer<ArrayList<Trademark>>() {
             @Override
             public void onChanged(ArrayList<Trademark> trademarks) {
-                TrademarkAdapter trademarkAdapter = new TrademarkAdapter(trademarks);
+                trademarkAdapter = new TrademarkAdapter(trademarks, TrademarkActivity.this);
                 MyTrademark.setAdapter(trademarkAdapter);
             }
         });
+        new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
+            @Override
+            public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
+                return false;
+            }
+
+            @Override
+            public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
+                int position = viewHolder.getAdapterPosition();
+                Trademark trademark = trademarkAdapter.getTrademarkAt(position);
+                Toast.makeText(TrademarkActivity.this, "" + trademark.toString(), Toast.LENGTH_SHORT).show();
+            }
+        }).attachToRecyclerView(MyTrademark);
 
         imageTrademark.setOnClickListener(v -> {
             openImage();
@@ -113,7 +135,7 @@ public class TrademarkActivity extends AppCompatActivity {
             imageUri = data.getData();
             imageTrademark.setImageURI(imageUri);
             if (uploadTask != null && uploadTask.isInProgress()) {
-                Toast.makeText(TrademarkActivity.this, "Upload in preogress", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TrademarkActivity.this, "Upload in progress", Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -141,11 +163,17 @@ public class TrademarkActivity extends AppCompatActivity {
                         String mUri = downloadUri.toString();
                         String pushId = reference.push().getKey().toString();
                         HashMap<String, Object> map = new HashMap<>();
-                        map.put("image", mUri);
-                        map.put("name", trademark.getText().toString());
-                        map.put("id", pushId);
+                        if (!trademark.getText().toString().equals("") && !mUri.equals("")) {
+                            map.put("image", mUri);
+                            map.put("name", trademark.getText().toString());
+                            map.put("id", pushId);
+                        } else {
+                            Toast.makeText(TrademarkActivity.this, "name is empty", Toast.LENGTH_LONG).show();
+                        }
                         reference.child(TRADEMARK).child(pushId).setValue(map);
                         pd.dismiss();
+                        trademark.setText("");
+                        imageTrademark.setImageURI(null);
                     } else {
                         Toast.makeText(TrademarkActivity.this, "Failed!", Toast.LENGTH_SHORT).show();
                         pd.dismiss();
@@ -163,4 +191,30 @@ public class TrademarkActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void AllTradmark(@Nullable ArrayList<Trademark> tradmark) {
+
+    }
+
+    @Override
+    public void AllNameTradmark(@Nullable List<String> names) {
+
+    }
+
+    @Override
+    public void OnItemTradmark(@Nullable Trademark tradmark) {
+
+    }
+
+    @Override
+    public void onEditTradmark(@NonNull Trademark tradmark) {
+        Intent intent = new Intent(TrademarkActivity.this, EditTradmarkActivity.class);
+        intent.putExtra("tradmark", tradmark);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onDeleteTradmark(@NonNull Trademark tradmark) {
+        FirebaseDatabase.getInstance().getReference().child(TRADEMARK).child(tradmark.getId()).removeValue();
+    }
 }

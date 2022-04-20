@@ -6,6 +6,7 @@ import android.app.Activity.RESULT_OK
 import android.app.ProgressDialog
 import android.content.DialogInterface
 import android.content.Intent
+import android.content.Intent.getIntent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
@@ -61,6 +62,7 @@ class UploadFragment : BaseFragment() {
     lateinit var addToggleButton: LinearLayout
     lateinit var addView: ImageView
     private lateinit var builder: AlertDialog.Builder
+    private var colorToggle: Int = 0
     val parent_child by navArgs<UploadFragmentArgs>()
     var begin = "<!DOCTYPE html>\n" +
             "<html>\n" +
@@ -145,18 +147,38 @@ class UploadFragment : BaseFragment() {
             rate = rating;
         })
         Upload.setOnClickListener {
-            UploadImages(
-                productName.text.toString(),
-                productPrice.text.toString().toDouble(),
-                productLastPrice.text.toString().toDouble(),
-                description.text.toString(),
-                keywords.text.toString(),
-                marke,
-                parent_child.parent!!.pushId,
-                parent_child.child!!.pushId,
-                parent_child.parent!!.name,
-                parent_child.child!!.name
-            )
+            if (productName.text.toString() == "") {
+                productName.error = "input name of product"
+            } else if (productPrice.text.toString() == "") {
+                productPrice.error = "input price of product"
+            } else if (productLastPrice.text.toString() == "") {
+                productLastPrice.error = "input last of product"
+            } else if (description.text.toString() == "") {
+                description.error = "input description of product"
+            } else if (keywords.text.toString() == "") {
+                keywords.error = "input keywords of product"
+            } else {
+                try {
+                    UploadImages(
+                        productName.text.toString(),
+                        productPrice.text.toString().toDouble(),
+                        productLastPrice.text.toString().toDouble(),
+                        description.text.toString(),
+                        keywords.text.toString(),
+                        marke,
+                        parent_child.parent!!.pushId,
+                        parent_child.child!!.pushId,
+                        parent_child.parent!!.name,
+                        parent_child.child!!.name
+                    )
+                } catch (e: Exception) {
+                    Toast.makeText(
+                        context,
+                        "" + resources.getString(R.string.cantUploadEmpty),
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+            }
         }
         selectImages.setOnClickListener {
             openImage()
@@ -169,17 +191,19 @@ class UploadFragment : BaseFragment() {
             val cardView: CardView = view.findViewById(R.id.cardView);
             val editorder: TextInputEditText = view.findViewById(R.id.editname)
             val color_seek_bar: ColorSeekBar = view.findViewById(R.id.color_seek_bar);
-            color_seek_bar.setOnColorChangeListener(object : ColorSeekBar.OnColorChangeListener {
-                override fun onColorChangeListener(color: Int) {
-                    //gives the selected color
-                    cardView.setBackgroundColor(color)
-                    radio.setTextColor(color)
-                }
-            })
+//            color_seek_bar.setOnColorChangeListener(object : ColorSeekBar.OnColorChangeListener {
+//                override fun onColorChangeListener(color: Int) {
+//                    //gives the selected color
+//                    colorToggle = color;
+//                    cardView.setBackgroundColor(color)
+//                    radio.setTextColor(color)
+//                }
+//            })
             builder.setTitle("Add Options")
             builder.setPositiveButton("ok", DialogInterface.OnClickListener { dialog, which ->
                 radio.setText("" + editorder.text.toString().trim())
                 mapToggleButton["" + addToggleButton.childCount] = editorder.text.toString().trim()
+                mapToggleButton["color"] = colorToggle
                 addToggleButton.addView(radio)
                 Log.e("addToggleButton", editorder.text.toString())
                 dialog.dismiss()
@@ -243,9 +267,7 @@ class UploadFragment : BaseFragment() {
         ChildName: String?
     ) {
         if (uris.size != 0) {
-            val pd = ProgressDialog(requireContext())
-            pd.setMessage("Uploading")
-            pd.show()
+            progress();
             var storageReference = FirebaseStorage.getInstance().getReference("Uploads")
             for (i in 0 until uris.size) {
                 val fileReference = storageReference.child(
@@ -281,8 +303,6 @@ class UploadFragment : BaseFragment() {
                     }
                 }
             }
-
-            pd.dismiss()
         }
     }
 
@@ -335,6 +355,23 @@ class UploadFragment : BaseFragment() {
         reference.child(PRODUCT).child(Objects.requireNonNull(push)).updateChildren(map)
     }
 
+    private fun progress() {
+        val builder = AlertDialog.Builder(requireContext());
+        val view =
+            LayoutInflater.from(context).inflate(R.layout.upload_progress_layout, null, false);
+//        builder.setPositiveButton("Ok", DialogInterface.OnClickListener { dialog, which ->
+//
+//        })
+        builder.setNegativeButton("Cancel", DialogInterface.OnClickListener { dialog, which ->
+            dialog.dismiss()
+            var intent = requireActivity().intent;
+            requireActivity().finish()
+            startActivity(intent)
+        })
+        builder.setView(view)
+        builder.show()
+
+    }
 
 }
 

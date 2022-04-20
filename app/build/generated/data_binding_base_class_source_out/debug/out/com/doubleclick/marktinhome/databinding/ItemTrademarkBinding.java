@@ -4,6 +4,7 @@ package com.doubleclick.marktinhome.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -26,11 +27,15 @@ public final class ItemTrademarkBinding implements ViewBinding {
   @NonNull
   public final TextView name;
 
+  @NonNull
+  public final ImageView option;
+
   private ItemTrademarkBinding(@NonNull ConstraintLayout rootView,
-      @NonNull CircleImageView imageTrademark, @NonNull TextView name) {
+      @NonNull CircleImageView imageTrademark, @NonNull TextView name, @NonNull ImageView option) {
     this.rootView = rootView;
     this.imageTrademark = imageTrademark;
     this.name = name;
+    this.option = option;
   }
 
   @Override
@@ -72,7 +77,13 @@ public final class ItemTrademarkBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemTrademarkBinding((ConstraintLayout) rootView, imageTrademark, name);
+      id = R.id.option;
+      ImageView option = ViewBindings.findChildViewById(rootView, id);
+      if (option == null) {
+        break missingId;
+      }
+
+      return new ItemTrademarkBinding((ConstraintLayout) rootView, imageTrademark, name, option);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -6,6 +6,7 @@ import static com.doubleclick.marktinhome.Model.Constantes.PARENTS;
 import static com.doubleclick.marktinhome.Model.Constantes.USER;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
@@ -23,6 +24,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.doubleclick.AdvInterface;
 import com.doubleclick.ViewModel.AdvertisementViewModel;
 import com.doubleclick.marktinhome.Adapters.AdvAdapter;
 import com.doubleclick.marktinhome.Model.Advertisement;
@@ -44,16 +46,13 @@ import com.google.firebase.storage.UploadTask;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class AdvertisementActivity extends AppCompatActivity {
+public class AdvertisementActivity extends AppCompatActivity implements AdvInterface {
 
     private ImageView imageAdv;
     private EditText description;
     private RecyclerView myAdv;
     private final int IMAGE_REQUEST = 1000;
-    private FirebaseAuth mAuth;
-    private FirebaseUser currentUser;
     private DatabaseReference reference;
-    private String myId;
     private StorageReference storageReference;
     private static Uri imageUri;
     private StorageTask uploadTask;
@@ -70,13 +69,11 @@ public class AdvertisementActivity extends AppCompatActivity {
         upload = findViewById(R.id.upload);
         advertisementViewModel = new ViewModelProvider(this).get(AdvertisementViewModel.class);
         storageReference = storageReference = FirebaseStorage.getInstance().getReference(ADVERTISEMENT);
-        mAuth = FirebaseAuth.getInstance();
-        currentUser = mAuth.getCurrentUser();
         reference = FirebaseDatabase.getInstance("https://marketinhome-99d25-default-rtdb.firebaseio.com").getReference();
         advertisementViewModel.getAllAdv().observe(this, new Observer<ArrayList<Advertisement>>() {
             @Override
             public void onChanged(ArrayList<Advertisement> advertisements) {
-                AdvAdapter advAdapter = new AdvAdapter(advertisements);
+                AdvAdapter advAdapter = new AdvAdapter(advertisements, AdvertisementActivity.this);
                 myAdv.setAdapter(advAdapter);
             }
         });
@@ -126,31 +123,31 @@ public class AdvertisementActivity extends AppCompatActivity {
         if (imageUri != null) {
             final StorageReference fileReference = storageReference.child(System.currentTimeMillis() + "." + getFileExtension(imageUri));
             uploadTask = fileReference.putFile(imageUri);
-            uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
-                @Override
-                public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
-                    if (!task.isSuccessful()) {
-                        throw task.getException();
-                    }
-                    return fileReference.getDownloadUrl();
+            uploadTask.continueWithTask((Continuation<UploadTask.TaskSnapshot, Task<Uri>>) task -> {
+                if (!task.isSuccessful()) {
+                    throw task.getException();
                 }
-            }).addOnCompleteListener(new OnCompleteListener<Uri>() {
-                @Override
-                public void onComplete(@NonNull Task<Uri> task) {
-                    if (task.isSuccessful()) {
-                        Uri downloadUri = task.getResult();
-                        String mUri = downloadUri.toString();
-                        String pushId = reference.push().getKey().toString();
-                        HashMap<String, Object> map = new HashMap<>();
-                        map.put("image", mUri);
-                        map.put("text", description.getText().toString());
-                        map.put("id", pushId);
-                        reference.child(ADVERTISEMENT).child(pushId).setValue(map);
-                        pd.dismiss();
+                return fileReference.getDownloadUrl();
+            }).addOnCompleteListener((OnCompleteListener<Uri>) task -> {
+                if (task.isSuccessful()) {
+                    Uri downloadUri = task.getResult();
+                    String mUri = downloadUri.toString();
+                    String pushId = reference.push().getKey().toString();
+                    HashMap<String, Object> map = new HashMap<>();
+                    map.put("image", mUri);
+                    if (description.getText().toString().equals("")) {
+                        map.put("text", "");
                     } else {
-                        Toast.makeText(AdvertisementActivity.this, "Failed!", Toast.LENGTH_SHORT).show();
-                        pd.dismiss();
+                        map.put("text", description.getText().toString());
                     }
+                    map.put("id", pushId);
+                    description.setText("");
+                    imageAdv.setImageURI(null);
+                    reference.child(ADVERTISEMENT).child(pushId).setValue(map);
+                    pd.dismiss();
+                } else {
+                    Toast.makeText(AdvertisementActivity.this, "Failed!", Toast.LENGTH_SHORT).show();
+                    pd.dismiss();
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
@@ -162,5 +159,22 @@ public class AdvertisementActivity extends AppCompatActivity {
         } else {
             Toast.makeText(AdvertisementActivity.this, "No image selected", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    @Override
+    public void AllAdvertisement(@Nullable ArrayList<Advertisement> advertisement) {
+
+    }
+
+    @Override
+    public void OnEditAdvertisement(@NonNull Advertisement advertisement) {
+        Intent intent = new Intent(AdvertisementActivity.this, EditAdvertisementActivity.class);
+        intent.putExtra("Advertisement", advertisement);
+        startActivity(intent);
+    }
+
+    @Override
+    public void OnDeleteAdvertisement(@NonNull Advertisement advertisement) {
+        reference.child(ADVERTISEMENT).child(advertisement.getId()).removeValue();
     }
 }

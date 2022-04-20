@@ -11,6 +11,9 @@ interface Tradmarkinterface {
     fun AllTradmark(tradmark: ArrayList<Trademark?>?)
     fun AllNameTradmark(names: List<String?>?)
     fun OnItemTradmark(tradmark: Trademark?)
+    fun onEditTradmark(tradmark: Trademark)
+    fun onDeleteTradmark(tradmark: Trademark)
+
 
 
 

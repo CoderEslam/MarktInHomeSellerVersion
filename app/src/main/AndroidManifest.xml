@@ -16,7 +16,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MarktInHome">
-
+        <activity
+            android:name=".ui.Advertisement.EditAdvertisementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Trademark.EditTradmarkActivity"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -81,7 +86,6 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-
         <activity
             android:name="com.doubleclick.RichEditor.sample.RichEditorActivity"
             android:exported="false" />

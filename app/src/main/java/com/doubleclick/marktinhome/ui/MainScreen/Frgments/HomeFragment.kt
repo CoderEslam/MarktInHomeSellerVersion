@@ -168,6 +168,14 @@ class HomeFragment : BaseFragment(), OnItem, OnProduct, Tradmarkinterface, ViewM
         )
     }
 
+    override fun onEditTradmark(tradmark: Trademark) {
+
+    }
+
+    override fun onDeleteTradmark(tradmark: Trademark) {
+
+    }
+
     override fun getViewMore(products: ArrayList<Product>) {
         findNavController().navigate(
             HomeFragmentDirections.actionHomeFragmentToViewMoreFragment(

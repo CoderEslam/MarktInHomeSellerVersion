@@ -7,11 +7,11 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import com.doubleclick.Adv;
+import com.doubleclick.AdvInterface;
 import com.doubleclick.marktinhome.Model.Advertisement;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -21,28 +21,34 @@ import java.util.ArrayList;
 public class AdvertisementRepository extends BaseRepository {
 
     private ArrayList<Advertisement> advertisements = new ArrayList<>();
-    private Adv adv;
+    private AdvInterface advInterface;
 
-    public AdvertisementRepository(Adv adv) {
-        this.adv = adv;
+    public AdvertisementRepository(AdvInterface advInterface) {
+        this.advInterface = advInterface;
     }
 
     public void getAdvertisement() {
-        reference.child(ADVERTISEMENT).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+        reference.child(ADVERTISEMENT).addValueEventListener(new ValueEventListener() {
             @Override
-            public void onComplete(@NonNull Task<DataSnapshot> task) {
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                advertisements.clear();
                 try {
-                    if (isNetworkConnected() && task.getResult().exists()) {
-                        for (DataSnapshot snapshot : task.getResult().getChildren()) {
-                            Advertisement advertisement = snapshot.getValue(Advertisement.class);
+                    if (isNetworkConnected() && snapshot.exists()) {
+                        for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                            Advertisement advertisement = dataSnapshot.getValue(Advertisement.class);
                             advertisements.add(advertisement);
                         }
-                        adv.AllAdvertisement(advertisements);
+                        advInterface.AllAdvertisement(advertisements);
                     }
                 } catch (Exception e) {
                     ShowToast("No Internet Connection");
                     Log.e("Exception", e.getMessage());
                 }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
             }
         });
     }

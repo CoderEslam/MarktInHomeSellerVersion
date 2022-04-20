@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
 
 import android.os.Handler;
 import android.text.TextUtils;
@@ -180,11 +181,9 @@ public class RichFragment extends BaseFragment {
         webView.setNestedScrollingEnabled(true);
         webView.setVerticalScrollbarOverlay(true);
         webView.setVerticalScrollBarEnabled(true);
-
         initImageLoader();
         initView();
         UpdateHTML();
-
         int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 40, getResources().getDisplayMetrics());
         int padding = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 9, getResources().getDisplayMetrics());
         for (int i = 0, size = mActionTypeList.size(); i < size; i++) {
@@ -315,9 +314,8 @@ public class RichFragment extends BaseFragment {
     }
 
     void onClickAction() {
-//        flAction.setVisibility(View.VISIBLE);
         if (flAction.getVisibility() == View.VISIBLE) {
-            flAction.setVisibility(View.VISIBLE);
+            flAction.setVisibility(View.GONE);
         } else {
             if (isKeyboardShowing) {
                 KeyboardUtils.hideSoftInput(getActivity());

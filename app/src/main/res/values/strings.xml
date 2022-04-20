@@ -100,4 +100,11 @@
     <string name="cols">Cols</string>
     <string name="rows">Rows</string>
     <string name="typehere">type here.....</string>
+    <string name="cantUploadEmpty">you can\'t Upload Empty Data</string>
+    <string name="edit">edit</string>
+    <string name="delete">delete</string>
+    <string name="add_advertisement">Add Advertisement</string>
+    <string name="add_tradmark">Add Tradmark</string>
+    <string name="add_products">Add Products</string>
+    <string name="option">option</string>
 </resources>

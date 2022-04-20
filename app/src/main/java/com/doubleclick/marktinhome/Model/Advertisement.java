@@ -1,6 +1,8 @@
 package com.doubleclick.marktinhome.Model;
 
-public class Advertisement {
+import java.io.Serializable;
+
+public class Advertisement implements Serializable {
 
     private String image;
     private String id;

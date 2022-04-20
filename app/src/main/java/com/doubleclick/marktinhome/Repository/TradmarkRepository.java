@@ -12,6 +12,8 @@ import com.doubleclick.marktinhome.Model.Trademark;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,12 +32,12 @@ public class TradmarkRepository extends BaseRepository {
     }
 
     public void getTradmark() {
-        reference.child(TRADEMARK).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+        reference.child(TRADEMARK).addValueEventListener(new ValueEventListener() {
             @Override
-            public void onComplete(@NonNull Task<DataSnapshot> task) {
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                tradmarks.clear();
                 try {
-                    if (isNetworkConnected() && task.getResult().exists()) {
-                        DataSnapshot snapshot = task.getResult();
+                    if (isNetworkConnected() && snapshot.exists()) {
                         for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                             Trademark tradmark = dataSnapshot.getValue(Trademark.class);
                             tradmarks.add(tradmark);
@@ -46,6 +48,10 @@ public class TradmarkRepository extends BaseRepository {
                     ShowToast("No Internet Connection");
                     Log.e("Exception", e.getMessage());
                 }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
 
             }
         });

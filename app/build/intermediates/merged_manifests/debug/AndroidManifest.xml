@@ -52,7 +52,12 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.MarktInHome" >
-
+        <activity
+            android:name="com.doubleclick.marktinhome.ui.Advertisement.EditAdvertisementActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.doubleclick.marktinhome.ui.Trademark.EditTradmarkActivity"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 

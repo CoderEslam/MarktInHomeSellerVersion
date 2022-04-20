@@ -2824,6 +2824,7 @@ drawable dot_white
 drawable e
 drawable edit
 drawable email
+drawable error
 drawable feed_bg
 drawable filter_list
 drawable fram_blue
@@ -2968,6 +2969,7 @@ drawable test_level_drawable
 drawable text_message_left
 drawable text_message_right
 drawable textsms
+drawable threedot
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable vd_pathmorph_drawer_arrow
@@ -3658,8 +3660,8 @@ id on
 id onAttachStateChangeListener
 id onDateChanged
 id onInterceptTouchReturnSwipe
-id open
 id openDrawer
+id option
 id order
 id orderImage
 id orderSelllerFragment
@@ -3696,6 +3698,7 @@ id productImages
 id productLastPrice
 id productName
 id productPrice
+id progressBar
 id progressBar1
 id progressBar2
 id progressBar3
@@ -4063,6 +4066,8 @@ layout activity_advertisement
 layout activity_chat
 layout activity_comments
 layout activity_dash_board
+layout activity_edit_advertisement
+layout activity_edit_tradmark
 layout activity_filter
 layout activity_image_crop
 layout activity_image_grid
@@ -4261,12 +4266,14 @@ layout text_view_without_line_height
 layout top_deal_layout
 layout top_deals
 layout tradmark_layout
+layout upload_progress_layout
 layout user_chat_layout
 layout v_product_recyclerview
 layout view_color_palette
 layout widget_navigation_drawer
 menu add_item
 menu menu_bottom
+menu option_tradmark
 mipmap checkbox_checked
 mipmap checkbox_normal
 mipmap default_image
@@ -4321,6 +4328,9 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string add
+string add_advertisement
+string add_products
+string add_tradmark
 string address
 string all_cartegories
 string all_images
@@ -4333,6 +4343,7 @@ string best_product_sales
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
 string cancel
+string cantUploadEmpty
 string change_image
 string character_counter_content_description
 string character_counter_overflowed_content_description
@@ -4371,8 +4382,10 @@ string customer_name
 string customer_phone
 string custommer_address
 string default_web_client_id
+string delete
 string description
 string easy_to_hundel
+string edit
 string edit_hyperlink
 string edit_on_order
 string edit_on_product
@@ -4515,6 +4528,7 @@ string new_user
 string off
 string ok
 string on
+string option
 string orders
 string origin
 string origin_size

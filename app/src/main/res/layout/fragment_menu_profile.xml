@@ -125,7 +125,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="10dp"
-                android:text="Alexandria"
+                tools:text="Alexandria"
                 android:textColor="@color/textclor"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView3"
@@ -172,7 +172,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="10dp"
-                android:text="eslam@gmail.com"
+                tools:text="eslam@gmail.com"
                 android:textColor="@color/textclor"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView32"
@@ -208,7 +208,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="10dp"
-                android:text="01221930858"
+                tools:text="01221930858"
                 android:textColor="@color/textclor"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView30"
@@ -324,7 +324,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="10dp"
-                android:text="Add Products"
+                android:text="@string/add_products"
                 android:textColor="@color/textclor"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView55"
@@ -369,7 +369,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="10dp"
-                android:text="Add Adv"
+                android:text="@string/add_advertisement"
                 android:textColor="@color/textclor"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView555"
@@ -414,7 +414,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="10dp"
-                android:text="Add Tradmark"
+                android:text="@string/add_tradmark"
                 android:textColor="@color/textclor"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView556"
@@ -543,22 +543,6 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <Button
-        android:id="@+id/open"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto"
-        android:text="@string/create_by_x_team"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.439"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
