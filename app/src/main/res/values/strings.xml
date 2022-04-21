@@ -108,4 +108,8 @@
     <string name="add_products">Add Products</string>
     <string name="option">option</string>
     <string name="groups">Groups</string>
+    <string name="history">history</string>
+    <string name="creator">creator</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="save">save</string>
 </resources>
