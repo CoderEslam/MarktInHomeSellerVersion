@@ -125,12 +125,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="10dp"
-                tools:text="Alexandria"
                 android:textColor="@color/textclor"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView3"
                 app:layout_constraintStart_toEndOf="@+id/imageView3"
-                app:layout_constraintTop_toTopOf="@+id/imageView3" />
+                app:layout_constraintTop_toTopOf="@+id/imageView3"
+                tools:text="Alexandria" />
 
 
             <ImageView
@@ -172,12 +172,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="10dp"
-                tools:text="eslam@gmail.com"
                 android:textColor="@color/textclor"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView32"
                 app:layout_constraintStart_toEndOf="@+id/imageView32"
-                app:layout_constraintTop_toTopOf="@+id/imageView32" />
+                app:layout_constraintTop_toTopOf="@+id/imageView32"
+                tools:text="eslam@gmail.com" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -208,12 +208,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="10dp"
-                tools:text="01221930858"
                 android:textColor="@color/textclor"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView30"
                 app:layout_constraintStart_toEndOf="@+id/imageView30"
-                app:layout_constraintTop_toTopOf="@+id/imageView30" />
+                app:layout_constraintTop_toTopOf="@+id/imageView30"
+                tools:text="01221930858" />
 
             <ImageView
                 android:id="@+id/editPhone"
@@ -436,11 +436,10 @@
             android:id="@+id/logout"
             android:layout_width="match_parent"
             android:layout_height="36dp"
-            android:layout_marginTop="8dp"
             android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/statistices">
+            app:layout_constraintStart_toStartOf="parent">
 
             <ImageView
                 android:id="@+id/imageView56"
@@ -521,7 +520,6 @@
                 android:layout_width="30dp"
                 android:layout_height="30sp"
                 android:padding="5dp"
-                android:rotation="180"
                 android:src="@drawable/statistics"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -539,6 +537,42 @@
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView12"
                 app:layout_constraintStart_toEndOf="@+id/imageView12"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Groups"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statistices">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="30dp"
+                android:layout_height="30sp"
+                android:padding="5dp"
+                android:src="@drawable/groups"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/groups"
+                android:textColor="@color/textclor"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+                app:layout_constraintStart_toEndOf="@+id/imageView13"
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

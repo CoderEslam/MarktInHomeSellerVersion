@@ -48,7 +48,7 @@ public class menu_profileFragment extends BaseFragment {
     private ImageView editAddress, editPhone, editname;
     private AlertDialog.Builder builder;
     private FloatingActionButton fab;
-    private ConstraintLayout AddProduct, AddAdv, AddTradmark, recentOrder, chat, joinUs, statistices;
+    private ConstraintLayout AddProduct, AddAdv, AddTradmark, recentOrder, chat, joinUs, statistices,Groups;
     private ConstraintLayout logout;
 
     public menu_profileFragment() {
@@ -89,6 +89,7 @@ public class menu_profileFragment extends BaseFragment {
         AddTradmark = view.findViewById(R.id.AddTradmark);
         recentOrder = view.findViewById(R.id.recentOrder);
         statistices = view.findViewById(R.id.statistices);
+        Groups = view.findViewById(R.id.Groups);
         chat = view.findViewById(R.id.chat);
 
         userViewModel.getUser().observe(getViewLifecycleOwner(), user -> {
@@ -145,7 +146,11 @@ public class menu_profileFragment extends BaseFragment {
         recentOrder.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(menu_profileFragmentDirections.actionMenuProfileToRecentOrderFragment());
         });
+        Groups.setOnClickListener(v -> {
 
+
+
+        });
         return view;
     }
 
