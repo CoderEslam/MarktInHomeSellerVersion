@@ -85,7 +85,8 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
             images.setHasFixedSize(true);
             images.addOnScrollListener(new CenterScrollListener());
             layoutManager.setPostLayoutListener(new CarouselZoomPostLayoutListener());
-            images.setAdapter(new ImagesGroupAdapter());
+            // Todo images in to adapter
+            images.setAdapter(new ImagesGroupAdapter(null));
 
             itemView.setOnClickListener(v -> {
                 itemView.getContext().startActivity(new Intent(itemView.getContext(), GroupsActivity.class));
