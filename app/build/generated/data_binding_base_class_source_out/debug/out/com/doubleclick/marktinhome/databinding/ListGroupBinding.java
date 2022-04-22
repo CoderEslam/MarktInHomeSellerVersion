@@ -21,21 +21,20 @@ public final class ListGroupBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final CircleImageView circleImageView;
-
-  @NonNull
   public final TextView listTitle;
 
   @NonNull
   public final TextView order;
 
-  private ListGroupBinding(@NonNull ConstraintLayout rootView,
-      @NonNull CircleImageView circleImageView, @NonNull TextView listTitle,
-      @NonNull TextView order) {
+  @NonNull
+  public final CircleImageView selectImage;
+
+  private ListGroupBinding(@NonNull ConstraintLayout rootView, @NonNull TextView listTitle,
+      @NonNull TextView order, @NonNull CircleImageView selectImage) {
     this.rootView = rootView;
-    this.circleImageView = circleImageView;
     this.listTitle = listTitle;
     this.order = order;
+    this.selectImage = selectImage;
   }
 
   @Override
@@ -65,12 +64,6 @@ public final class ListGroupBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.circleImageView;
-      CircleImageView circleImageView = ViewBindings.findChildViewById(rootView, id);
-      if (circleImageView == null) {
-        break missingId;
-      }
-
       id = R.id.listTitle;
       TextView listTitle = ViewBindings.findChildViewById(rootView, id);
       if (listTitle == null) {
@@ -83,7 +76,13 @@ public final class ListGroupBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ListGroupBinding((ConstraintLayout) rootView, circleImageView, listTitle, order);
+      id = R.id.selectImage;
+      CircleImageView selectImage = ViewBindings.findChildViewById(rootView, id);
+      if (selectImage == null) {
+        break missingId;
+      }
+
+      return new ListGroupBinding((ConstraintLayout) rootView, listTitle, order, selectImage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

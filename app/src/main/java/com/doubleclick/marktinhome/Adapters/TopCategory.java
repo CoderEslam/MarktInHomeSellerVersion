@@ -62,7 +62,7 @@ public class TopCategory extends RecyclerView.Adapter<TopCategory.TopViewHilder>
 
         public TopViewHilder(@NonNull View itemView) {
             super(itemView);
-            circleImageView = itemView.findViewById(R.id.circleImageView);
+            circleImageView = itemView.findViewById(R.id.selectImage);
             listTitle = itemView.findViewById(R.id.listTitle);
         }
     }

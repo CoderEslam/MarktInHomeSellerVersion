@@ -21,16 +21,16 @@ public final class LayoutCategoriesBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final CircleImageView circleImageView;
-
-  @NonNull
   public final TextView listTitle;
 
-  private LayoutCategoriesBinding(@NonNull ConstraintLayout rootView,
-      @NonNull CircleImageView circleImageView, @NonNull TextView listTitle) {
+  @NonNull
+  public final CircleImageView selectImage;
+
+  private LayoutCategoriesBinding(@NonNull ConstraintLayout rootView, @NonNull TextView listTitle,
+      @NonNull CircleImageView selectImage) {
     this.rootView = rootView;
-    this.circleImageView = circleImageView;
     this.listTitle = listTitle;
+    this.selectImage = selectImage;
   }
 
   @Override
@@ -60,19 +60,19 @@ public final class LayoutCategoriesBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.circleImageView;
-      CircleImageView circleImageView = ViewBindings.findChildViewById(rootView, id);
-      if (circleImageView == null) {
-        break missingId;
-      }
-
       id = R.id.listTitle;
       TextView listTitle = ViewBindings.findChildViewById(rootView, id);
       if (listTitle == null) {
         break missingId;
       }
 
-      return new LayoutCategoriesBinding((ConstraintLayout) rootView, circleImageView, listTitle);
+      id = R.id.selectImage;
+      CircleImageView selectImage = ViewBindings.findChildViewById(rootView, id);
+      if (selectImage == null) {
+        break missingId;
+      }
+
+      return new LayoutCategoriesBinding((ConstraintLayout) rootView, listTitle, selectImage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

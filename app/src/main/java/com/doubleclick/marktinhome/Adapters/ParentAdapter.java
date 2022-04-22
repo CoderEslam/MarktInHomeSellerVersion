@@ -74,7 +74,7 @@ public class ParentAdapter extends RecyclerView.Adapter<ParentAdapter.ParentView
 
         public ParentViewHolder(@NonNull View itemView) {
             super(itemView);
-            circleImageView = itemView.findViewById(R.id.circleImageView);
+            circleImageView = itemView.findViewById(R.id.selectImage);
             listTitle = itemView.findViewById(R.id.listTitle);
             order = itemView.findViewById(R.id.order);
         }

@@ -17,9 +17,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MarktInHome">
         <activity
+            android:name=".ui.MainScreen.Groups.CreateGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainScreen.Groups.CreatePostActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.MainScreen.Groups.GroupsActivity"
             android:exported="false"
-            android:label="@string/title_activity_groups"
             android:theme="@style/Theme.MarktInHome.NoActionBar" />
         <activity
             android:name=".ui.Advertisement.EditAdvertisementActivity"

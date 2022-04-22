@@ -17,10 +17,10 @@
         android:contentDescription="@string/menu_profile"
         android:icon="@drawable/ic_person_outline_white_24dp"
         android:title="@string/menu_profile" />
-<!--    <item-->
-<!--        android:id="@+id/menu_list"-->
-<!--        android:contentDescription="@string/menu_list"-->
-<!--        android:icon="@drawable/ic_multiline_chart_white_24dp"-->
-<!--        android:title="@string/menu_list" />-->
+    <item
+        android:id="@+id/menu_group"
+        android:contentDescription="@string/menu_groups"
+        android:icon="@drawable/groupsxml"
+        android:title="@string/menu_groups" />
 
 </menu>

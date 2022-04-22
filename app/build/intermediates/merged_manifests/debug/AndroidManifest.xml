@@ -53,6 +53,16 @@
         android:testOnly="true"
         android:theme="@style/Theme.MarktInHome" >
         <activity
+            android:name="com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.doubleclick.marktinhome.ui.MainScreen.Groups.CreatePostActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MarktInHome.NoActionBar" />
+        <activity
             android:name="com.doubleclick.marktinhome.ui.Advertisement.EditAdvertisementActivity"
             android:exported="false" />
         <activity

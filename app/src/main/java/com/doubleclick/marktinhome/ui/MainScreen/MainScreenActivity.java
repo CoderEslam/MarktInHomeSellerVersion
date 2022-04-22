@@ -20,6 +20,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ImageView;
+
 import com.bumptech.glide.Glide;
 import com.doubleclick.ViewModel.ProductViewModel;
 import com.doubleclick.ViewModel.RecentSearchViewModel;
@@ -35,7 +36,9 @@ import com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragment;
 import com.doubleclick.marktinhome.ui.ProductActivity.productFragment;
 import com.mxn.soul.flowingdrawer_core.ElasticDrawer;
 import com.mxn.soul.flowingdrawer_core.FlowingDrawer;
+
 import de.hdodenhof.circleimageview.CircleImageView;
+
 public class MainScreenActivity extends AppCompatActivity implements NavAdapter.onClickChild {
 
     private SmoothBottomBar bottomBar;
@@ -77,7 +80,7 @@ public class MainScreenActivity extends AppCompatActivity implements NavAdapter.
         });
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("");
-        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(R.id.menu_Cart,/* R.id.menu_list, */R.id.homeFragment, R.id.menu_profile).build();
+        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(R.id.menu_Cart, R.id.menu_group, R.id.homeFragment, R.id.menu_profile).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         setupSmoothBottomMenu();
         productViewModel = new ViewModelProvider(this).get(ProductViewModel.class);
@@ -97,14 +100,14 @@ public class MainScreenActivity extends AppCompatActivity implements NavAdapter.
                     String[] url = query.split("com.doubleclick.marktinhome/");
                     String idProduct = url[1];
                     Intent intent = new Intent(MainScreenActivity.this, FilterActivity.class);
-                    intent.putExtra("id",idProduct);
-                    intent.putExtra("type","ProductId");
+                    intent.putExtra("id", idProduct);
+                    intent.putExtra("type", "ProductId");
                     startActivity(intent);
                 } else {
                     Sending.Check(query, MainScreenActivity.this, MainScreenActivity.this);
                     Intent intent = new Intent(MainScreenActivity.this, FilterActivity.class);
-                    intent.putExtra("id",query);
-                    intent.putExtra("type","search");
+                    intent.putExtra("id", query);
+                    intent.putExtra("type", "search");
                     startActivity(intent);
                 }
                 return true;
@@ -125,8 +128,8 @@ public class MainScreenActivity extends AppCompatActivity implements NavAdapter.
         try {
             if (!ProductId.equals("")) {
                 Intent intent = new Intent(MainScreenActivity.this, FilterActivity.class);
-                intent.putExtra("id",idProduct);
-                intent.putExtra("type","ProductId");
+                intent.putExtra("id", idProduct);
+                intent.putExtra("type", "ProductId");
                 startActivity(intent);
             }
         } catch (NullPointerException e) {
@@ -146,8 +149,8 @@ public class MainScreenActivity extends AppCompatActivity implements NavAdapter.
     @Override
     public void onClickedNavChild(ChildCategory childCategory) {
         Intent intent = new Intent(MainScreenActivity.this, FilterActivity.class);
-        intent.putExtra("id",childCategory.getPushId());
-        intent.putExtra("type","childId");
+        intent.putExtra("id", childCategory.getPushId());
+        intent.putExtra("type", "childId");
         startActivity(intent);
     }
 

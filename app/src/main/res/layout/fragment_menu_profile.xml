@@ -556,7 +556,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30sp"
                 android:padding="5dp"
-                android:src="@drawable/groups"
+                android:src="@drawable/groupsxml"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.25"

@@ -70,6 +70,9 @@
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
             app:popExitAnim="@anim/righttoleft" />
+        <action
+            android:id="@+id/action_menu_profile_to_groupFragment"
+            app:destination="@id/menu_group" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -237,5 +240,10 @@
             app:popEnterAnim="@anim/lefttoright"
             app:popExitAnim="@anim/righttoleft" />
     </fragment>
+    <fragment
+        android:id="@+id/menu_group"
+        android:name="com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupFragment"
+        android:label="fragment_group"
+        tools:layout="@layout/fragment_group" />
 
 </navigation>

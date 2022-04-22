@@ -20,7 +20,7 @@
             android:layout_height="match_parent">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/circleImageView"
+                android:id="@+id/selectImage"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="16dp"
@@ -45,9 +45,9 @@
                 android:textColor="@color/textclor"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/circleImageView"
-                app:layout_constraintStart_toStartOf="@+id/circleImageView"
-                app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+                app:layout_constraintEnd_toEndOf="@+id/selectImage"
+                app:layout_constraintStart_toStartOf="@+id/selectImage"
+                app:layout_constraintTop_toBottomOf="@+id/selectImage" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

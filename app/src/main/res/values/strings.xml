@@ -2,7 +2,7 @@
     <string name="app_name">MarktInHome</string>
     <string name="ellipsis">&#8230;</string>
     <string name="menu_Cart">Cart</string>
-    <string name="menu_list">List</string>
+    <string name="menu_groups">Groups</string>
     <string name="menu_store">Home</string>
     <string name="menu_profile">Profile</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -112,4 +112,7 @@
     <string name="creator">creator</string>
     <string name="edit_profile">Edit profile</string>
     <string name="save">save</string>
+    <string name="my_groups">My Groups</string>
+    <string name="action_settings">Setting</string>
+    <string name="create">Create</string>
 </resources>

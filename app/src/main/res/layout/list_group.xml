@@ -25,7 +25,7 @@
             android:layout_margin="5dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/circleImageView"
+                android:id="@+id/selectImage"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="8dp"
@@ -51,10 +51,10 @@
                 android:text="@string/product_name"
                 android:textColor="@color/textclor"
                 android:textSize="20dp"
-                app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
+                app:layout_constraintBottom_toBottomOf="@+id/selectImage"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/circleImageView"
-                app:layout_constraintTop_toTopOf="@+id/circleImageView" />
+                app:layout_constraintStart_toEndOf="@+id/selectImage"
+                app:layout_constraintTop_toTopOf="@+id/selectImage" />
 
 
             <TextView

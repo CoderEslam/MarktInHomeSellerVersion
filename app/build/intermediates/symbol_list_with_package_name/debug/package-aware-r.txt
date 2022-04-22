@@ -521,6 +521,7 @@ attr elevation
 attr elevationOverlayAccentColor
 attr elevationOverlayColor
 attr elevationOverlayEnabled
+attr emailColor
 attr emojiCompatEnabled
 attr enableEdgeToEdge
 attr endIconCheckable
@@ -627,6 +628,7 @@ attr graph
 attr guidelineUseRtl
 attr haloColor
 attr haloRadius
+attr hashtagColor
 attr headerLayout
 attr height
 attr helperText
@@ -802,6 +804,7 @@ attr limitBoundsTo
 attr lineHeight
 attr lineSpacing
 attr linearProgressIndicatorStyle
+attr linkModes
 attr listChoiceBackgroundIndicator
 attr listChoiceIndicatorMultipleAnimated
 attr listChoiceIndicatorSingleAnimated
@@ -886,6 +889,7 @@ attr maxLines
 attr maxVelocity
 attr maxWidth
 attr measureWithLargestChild
+attr mentionColor
 attr menu
 attr menuGravity
 attr methodName
@@ -978,6 +982,7 @@ attr percentWidth
 attr percentX
 attr percentY
 attr perpendicularPath_percent
+attr phoneColor
 attr pivotAnchor
 attr placeholderActivityName
 attr placeholderText
@@ -1048,6 +1053,7 @@ attr secondaryMenuItemTextSize
 attr seekBarStyle
 attr selectableItemBackground
 attr selectableItemBackgroundBorderless
+attr selectedColor
 attr selectionRequired
 attr selector
 attr selectorSize
@@ -1369,8 +1375,10 @@ attr uiScrollGesturesDuringRotateOrZoom
 attr uiTiltGestures
 attr uiZoomControls
 attr uiZoomGestures
+attr underlineEnabled
 attr upDuration
 attr uri
+attr urlColor
 attr useCompatPadding
 attr useMaterialThemeColors
 attr useViewLifecycle
@@ -1463,6 +1471,7 @@ color background_material_light
 color bg_product_activity
 color black
 color blue
+color blueDark
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -2145,6 +2154,7 @@ dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
+dimen app_bar_height
 dimen appcompat_dialog_background_inset
 dimen browser_actions_context_menu_max_width
 dimen browser_actions_context_menu_min_padding
@@ -2216,6 +2226,7 @@ dimen dp_10
 dimen dp_4
 dimen dp_40
 dimen dp_72
+dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -2661,6 +2672,7 @@ dimen test_navigation_bar_label_padding
 dimen test_navigation_bar_shadow_height
 dimen test_navigation_bar_text_size
 dimen text_large
+dimen text_margin
 dimen text_medium
 dimen text_micro
 dimen text_small
@@ -2780,12 +2792,14 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable btn_round
 drawable btn_white_material
 drawable btn_white_round_rectangle
 drawable c1
 drawable c2
 drawable c3
 drawable camera
+drawable cancel
 drawable cio_card_io_logo
 drawable cio_ic_amex
 drawable cio_ic_discover
@@ -2794,6 +2808,7 @@ drawable cio_ic_mastercard
 drawable cio_ic_paypal_monogram
 drawable cio_ic_visa
 drawable cio_paypal_logo
+drawable circle
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -2813,6 +2828,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable cover
 drawable delete
 drawable design_fab_background
 drawable design_ic_visibility
@@ -2834,7 +2850,12 @@ drawable group645
 drawable group861
 drawable group934
 drawable group983
+drawable group_cover
+drawable groupjpg
+drawable groupsxml
+drawable history
 drawable ic_action
+drawable ic_aperture
 drawable ic_arrow_back_24
 drawable ic_back
 drawable ic_bubble_big_colorpickerview_skydoves
@@ -2877,11 +2898,14 @@ drawable ic_insert_photo
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_like
 drawable ic_line
 drawable ic_line_height
+drawable ic_link
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
+drawable ic_message
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -2891,10 +2915,12 @@ drawable ic_path_1306
 drawable ic_person_outline_white_24dp
 drawable ic_redo
 drawable ic_selected
+drawable ic_share
 drawable ic_stars_black_cercil24dp
 drawable ic_store_white_24dp
 drawable ic_table
 drawable ic_undo
+drawable ic_video
 drawable icon_app
 drawable image
 drawable img
@@ -2983,6 +3009,7 @@ id ALT
 id AddAdv
 id AddProduct
 id AddTradmark
+id AllGroupsRecycler
 id AnothercustommerPhone
 id BOTTOM
 id BOTTOM_CENTER
@@ -2999,12 +3026,14 @@ id CENTER
 id CTRL
 id CartName
 id ChildRecycler
+id ConstraintLayoutimage_name
 id Continue
 id CustomerLocation
 id FLOAT
 id FUNCTION
 id FilterRecycler
 id FilterRecyclerView
+id Groups
 id HORIZONTAL
 id HalfLineIndicator
 id INTEGER
@@ -3014,6 +3043,7 @@ id LineIndicator
 id LinkFragment
 id META
 id MainRecyceler
+id MyGroupsRecycler
 id MyOrder
 id MyTrademark
 id NORMAL
@@ -3122,6 +3152,7 @@ id action_menu_Cart_to_orderSelllerFragment
 id action_menu_divider
 id action_menu_presenter
 id action_menu_profile_to_allUserFragment
+id action_menu_profile_to_groupFragment
 id action_menu_profile_to_joinUsFragment
 id action_menu_profile_to_recentOrderFragment
 id action_menu_store_to_menu_Cart
@@ -3132,6 +3163,10 @@ id action_parentFragment_to_childFragment
 id action_productFragment_to_commentsFragment
 id action_productFragment_to_homeFragment
 id action_recentOrderFragment_to_productFragment
+id action_settings
+id action_stepOneFragment_to_stepTwoFragment
+id action_stepTwoFragment_to_stepOneFragment
+id action_stepTwoFragment_to_stepThreeFragment
 id action_text
 id action_trademarkFragment_to_homeFragment
 id action_trademarkFragment_to_productFragment
@@ -3139,6 +3174,7 @@ id action_uploadFragment_to_childFragment
 id actions
 id activity_chooser_view_content
 id add
+id addGroup
 id addParent
 id addToggalsLinearLayout
 id addToggalsScrollView
@@ -3167,6 +3203,7 @@ id antiClockwise
 id anticipate
 id appBarRL
 id appBarTitleTV
+id appbar
 id arc
 id arro_imageview
 id arrow
@@ -3177,6 +3214,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id automatic
+id back
 id backColor
 id backgroundCV
 id backgroundIV
@@ -3187,6 +3225,8 @@ id baseline
 id beginOnFirstDraw
 id beginning
 id bestChoice
+id bg_image
+id bio
 id blockCode
 id blockQuote
 id blocking
@@ -3215,7 +3255,9 @@ id btn_preview
 id btn_reset
 id btn_rich_editor
 id bubble
+id button
 id buttonPanel
+id buttons
 id cache_measures
 id callMeasure
 id callUsFragment
@@ -3225,6 +3267,8 @@ id cancel_action
 id cancel_button
 id cardView
 id cardView11
+id cardView6
+id cardView7
 id carryVelocity
 id cartRate
 id cartRecycler
@@ -3251,7 +3295,7 @@ id chip3
 id chip_group
 id chronometer
 id circle
-id circleImageView
+id circleImageView2
 id circle_center
 id clear_text
 id clip_horizontal
@@ -3294,8 +3338,12 @@ id continuousVelocity
 id coordinator
 id cos
 id counterclockwise
+id cover
+id cover_layout
 id cpv_font_text_color
 id cpv_highlight_color
+id create_post
+id creator
 id currentState
 id custom
 id customPanel
@@ -3312,6 +3360,7 @@ id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
 id delete
+id deleteOption
 id deltaRelative
 id dependency_ordering
 id description
@@ -3320,6 +3369,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id details
 id dialog_button
 id dimensions
 id direct
@@ -3344,6 +3394,7 @@ id easeOut
 id east
 id edit
 id editAddress
+id editOption
 id editPhone
 id editProduct
 id edit_query
@@ -3395,6 +3446,7 @@ id graph_wrap
 id gridViewTopDeals
 id gridview
 id group_divider
+id group_nav
 id grouping
 id groups
 id guideline
@@ -3406,6 +3458,7 @@ id h5
 id h6
 id hamburger
 id hardware
+id hashtag
 id header_title
 id hideable
 id home
@@ -3427,6 +3480,7 @@ id ihaveaccount
 id image
 id imageAdv
 id imageCart
+id imageGroup
 id imageParent
 id imagePerson
 id imageProduct
@@ -3434,6 +3488,7 @@ id imageTrademark
 id imageUser
 id imageView
 id imageView12
+id imageView13
 id imageView2
 id imageView3
 id imageView30
@@ -3452,6 +3507,7 @@ id imageView7
 id imageView8
 id image_view_expanded
 id imagemark
+id images
 id immediateStop
 id included
 id indent
@@ -3512,6 +3568,9 @@ id left
 id leftToRight
 id legacy
 id light
+id likeButton
+id like_img
+id like_text
 id line
 id line1
 id line3
@@ -3524,6 +3583,7 @@ id linearLayout5
 id linearLayout7
 id linear_layout
 id link
+id link_layout
 id listMode
 id listTitle
 id listView
@@ -3546,13 +3606,17 @@ id loadingAnimView
 id loading_progress
 id loading_text
 id locale
+id location
+id location_layout
 id login
 id logout
 id lottie_layer_name
 id ltr
+id main
 id mainFragment
 id mainLoginFragment
 id main_fragment
+id main_fragment_group
 id map
 id mapContiner
 id margin
@@ -3582,10 +3646,14 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id media_actions
+id members
+id mention
+id menu
 id menuIV
 id menuLL
 id menuSV
 id menu_Cart
+id menu_group
 id menu_profile
 id menu_recycler_view
 id menu_store
@@ -3599,6 +3667,7 @@ id month_navigation_fragment_toggle
 id month_navigation_next
 id month_navigation_previous
 id month_title
+id more
 id motion_base
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
@@ -3646,14 +3715,17 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id next
 id noScroll
 id noState
 id none
 id normal
 id north
+id nothing
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id numbers
 id off
 id ok
 id on
@@ -3691,7 +3763,10 @@ id pin
 id plus
 id popuplayout
 id position
+id post
 id postLayout
+id postText
+id posts
 id price
 id productFragment
 id productImages
@@ -3721,6 +3796,7 @@ id recentSearch
 id rectangle
 id rectangles
 id recycler
+id relativeLayout
 id restart
 id reverse
 id reverseSawtooth
@@ -3737,6 +3813,7 @@ id rr
 id rtl
 id rv_container
 id satellite
+id saveOption
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3759,6 +3836,8 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id selectCover
+id selectImage
 id selectImages
 id select_dialog_listview
 id selected
@@ -3776,6 +3855,7 @@ id showTitle
 id signup
 id sin
 id size
+id skip
 id skipCollapsed
 id skipped
 id slide
@@ -3811,6 +3891,9 @@ id staticLayout
 id staticPostLayout
 id statistices
 id status_bar_latest_event_content
+id stepOneFragment
+id stepThreeFragment
+id stepTwoFragment
 id stop
 id stretch
 id strikethrough
@@ -3820,6 +3903,7 @@ id subscript
 id superscript
 id supportScrollUp
 id tabMode
+id tab_layout
 id table
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3899,6 +3983,7 @@ id title_template
 id toggle
 id toolbar
 id top
+id topName
 id topPanel
 id topParents
 id top_bar
@@ -3942,12 +4027,15 @@ id unordered
 id up
 id upload
 id uploadFragment
+id url
 id useLogo
 id userName
 id user_profile_image
 id user_profile_name
 id username
+id verify
 id vertical_only
+id video
 id view
 id view2
 id view_offset_helper
@@ -4065,10 +4153,13 @@ layout activity_address
 layout activity_advertisement
 layout activity_chat
 layout activity_comments
+layout activity_create_group
+layout activity_create_post
 layout activity_dash_board
 layout activity_edit_advertisement
 layout activity_edit_tradmark
 layout activity_filter
+layout activity_groups
 layout activity_image_crop
 layout activity_image_grid
 layout activity_image_preview
@@ -4110,6 +4201,7 @@ layout each_item
 layout edit_on_product
 layout flag_bubble_colorpickerview_skydoves
 layout fragment_address
+layout fragment_all_groups
 layout fragment_all_user
 layout fragment_call_us
 layout fragment_cart
@@ -4122,6 +4214,7 @@ layout fragment_editor_menu
 layout fragment_filter_parent
 layout fragment_font_setting
 layout fragment_forget
+layout fragment_group
 layout fragment_home
 layout fragment_join_us
 layout fragment_log_in
@@ -4133,6 +4226,7 @@ layout fragment_menu_list
 layout fragment_menu_profile
 layout fragment_menu_store
 layout fragment_month
+layout fragment_my_groups
 layout fragment_order_selller
 layout fragment_parent
 layout fragment_product
@@ -4144,13 +4238,18 @@ layout fragment_splash2
 layout fragment_splash3
 layout fragment_splash4
 layout fragment_statistics
+layout fragment_step_one
+layout fragment_step_three
+layout fragment_step_two
 layout fragment_top_deals
 layout fragment_trademark
 layout fragment_upload
 layout fragment_viewmore
 layout g_v_layout
+layout group
 layout h_top_recyclerview
 layout h_treademark_recyclerview
+layout ic_history
 layout images
 layout include_top_bar
 layout item_adv
@@ -4160,6 +4259,9 @@ layout layaut_cart
 layout layout_categories
 layout layout_chat
 layout layout_edit
+layout layout_group_list
+layout layout_images
+layout layout_item_group
 layout layout_product
 layout layout_recent_order
 layout layout_small_product
@@ -4273,6 +4375,8 @@ layout view_color_palette
 layout widget_navigation_drawer
 menu add_item
 menu menu_bottom
+menu menu_groups
+menu option_group
 menu option_tradmark
 mipmap checkbox_checked
 mipmap checkbox_normal
@@ -4286,6 +4390,7 @@ mipmap list_selected
 mipmap text_indicator
 navigation add_navigation
 navigation chat_nav
+navigation group_nav
 navigation nav_graph
 navigation nav_seller_graph
 navigation rich_nav
@@ -4327,6 +4432,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_settings
 string add
 string add_advertisement
 string add_products
@@ -4376,7 +4482,9 @@ string common_signin_button_text_long
 string complete
 string confirm
 string connect_us
+string create
 string create_by_x_team
+string creator
 string customer_location
 string customer_name
 string customer_phone
@@ -4389,6 +4497,7 @@ string edit
 string edit_hyperlink
 string edit_on_order
 string edit_on_product
+string edit_profile
 string edit_table
 string ellipsis
 string email
@@ -4418,11 +4527,13 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_maps_key
 string google_storage_bucket
+string groups
 string heading_4
 string heading_5
 string heading_6
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
+string history
 string i_have_already_account
 string icon_content_description
 string item_view_role_description
@@ -4479,7 +4590,7 @@ string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
 string menu_Cart
-string menu_list
+string menu_groups
 string menu_profile
 string menu_store
 string mtrl_badge_numberless_content_description
@@ -4518,6 +4629,7 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
+string my_groups
 string my_order
 string my_recent_order
 string name
@@ -4552,6 +4664,7 @@ string put_you_rate
 string quantity
 string recent_search
 string rows
+string save
 string search
 string search_here
 string search_menu_title
@@ -5091,6 +5204,9 @@ style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
 style Theme_MarktInHome
+style Theme_MarktInHome_AppBarOverlay
+style Theme_MarktInHome_NoActionBar
+style Theme_MarktInHome_PopupOverlay
 style Theme_Material3_Dark
 style Theme_Material3_Dark_BottomSheetDialog
 style Theme_Material3_Dark_Dialog
@@ -5771,6 +5887,7 @@ styleable Slider android_enabled android_value android_stepSize android_valueFro
 styleable SmoothBottomBar activeItem backgroundColor cornerRadius corners duration iconMargin iconSize iconTint iconTintActive indicatorColor indicatorRadius itemFontFamily itemPadding menu sideMargins textColor textSize
 styleable Snackbar snackbarButtonStyle snackbarStyle snackbarTextViewStyle
 styleable SnackbarLayout android_maxWidth actionTextColorAlpha animationMode backgroundOverlayColorAlpha backgroundTint backgroundTintMode elevation maxActionInlineWidth
+styleable SocialTextView android_text android_hint emailColor hashtagColor linkModes mentionColor phoneColor selectedColor underlineEnabled urlColor
 styleable SpeedView sv_centerCircleColor sv_centerCircleRadius sv_sectionStyle
 styleable Speedometer sv_backgroundCircleColor sv_cutPadding sv_endDegree sv_indicator sv_indicatorColor sv_indicatorLightColor sv_indicatorWidth sv_markColor sv_markHeight sv_markStyle sv_markWidth sv_marksNumber sv_marksPadding sv_speedometerMode sv_startDegree sv_tickNumber sv_tickPadding sv_tickRotation sv_tickTextFormat sv_withIndicatorLight
 styleable Spinner android_entries android_popupBackground android_prompt android_dropDownWidth popupTheme
