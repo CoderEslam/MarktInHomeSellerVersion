@@ -47,7 +47,7 @@
         tools:ignore="ContentDescription,HardcodedText" />
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/selectImage"
+        android:id="@+id/myImage"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
@@ -64,10 +64,10 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/selectImage"
+        app:layout_constraintBottom_toBottomOf="@+id/myImage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/selectImage"
-        app:layout_constraintTop_toTopOf="@+id/selectImage">
+        app:layout_constraintStart_toEndOf="@+id/myImage"
+        app:layout_constraintTop_toTopOf="@+id/myImage">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -76,7 +76,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/name"
+                android:id="@+id/myName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Name"
@@ -88,7 +88,7 @@
     </LinearLayout>
 
 
-    <com.doubleclick.marktinhome.Views.socialtextview.SocialTextView
+    <com.doubleclick.marktinhome.Views.socialtextview.widget.SocialEditText
         android:id="@+id/postText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -100,28 +100,35 @@
         android:background="@null"
         android:hint="What’s on your mind ? @mention #hashtag"
         android:maxHeight="200dp"
-        android:textColor="@color/gray"
+        android:textColor="@color/black"
         android:textSize="15sp"
-        app:hashtagColor="#1E88E5"
+        app:HashtagColor="#1E88E5"
+        app:HyperlinkColor="#1E88E5"
+        app:MentionColor="#1E88E5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_max="200dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selectImage"
-        app:mentionColor="#1E88E5" />
+        app:layout_constraintTop_toBottomOf="@+id/myImage" />
 
-    <ImageView
-        android:id="@+id/bg_image"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imageRecycler"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_centerInParent="true"
-        android:contentDescription="TODO"
-        android:scaleType="centerCrop"
-        android:src="@drawable/cover"
+        app:layout_constraintBottom_toTopOf="@+id/postbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/postText"
-        tools:ignore="ContentDescription,HardcodedText" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/layout_images" />
 
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postText" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
@@ -154,6 +161,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
+                android:id="@+id/addImages"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginEnd="8dp"
@@ -162,6 +170,7 @@
                 tools:ignore="ContentDescription,UnusedAttribute,UseAppTint" />
 
             <ImageView
+                android:id="@+id/addVideo"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginEnd="8dp"
@@ -171,9 +180,9 @@
 
         </LinearLayout>
 
-        <RelativeLayout
+        <View
             android:layout_width="match_parent"
-            android:layout_height="0.1dp"
+            android:layout_height="1dp"
             android:alpha="0.5"
             android:background="#596C84"
             app:layout_constraintEnd_toEndOf="parent"
@@ -183,7 +192,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/postbtn"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginEnd="16dp"
@@ -198,53 +207,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="ContentDescription,HardcodedText" />
 
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageView
-            android:id="@+id/image"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:contentDescription="TODO"
-            android:scaleType="centerCrop"
-            android:src="@drawable/cover"
-            android:visibility="gone"
-            tools:ignore="ContentDescription,HardcodedText" />
-
-        <VideoView
-            android:id="@+id/video"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:visibility="gone" />
-
-        <ImageView
-            android:id="@+id/cancel"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/circle"
-            android:backgroundTint="#F0F2F6"
-            android:padding="5dp"
-            android:src="@drawable/cancel"
-            android:tint="#596C84"
-            tools:ignore="ContentDescription,UnusedAttribute,UseAppTint" />
-
-    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -55,4 +55,9 @@
         <item name="android:background">@android:color/transparent</item>
 
     </style>
+    <style name="Widget.SocialView" parent="android:Widget.TextView">
+        <item name="HashtagColor">@color/blueDark</item>
+        <item name="MentionColor">@color/blueDark</item>
+        <item name="HyperlinkColor">@color/blueDark</item>
+    </style>
 </resources>

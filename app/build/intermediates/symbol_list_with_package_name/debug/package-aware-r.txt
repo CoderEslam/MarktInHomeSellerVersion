@@ -106,6 +106,9 @@ attr BackgroundColor
 attr HamMenuIconSize
 attr HamMenuIconTintColor
 attr HamMenuItemSemiTransparentColor
+attr HashtagColor
+attr HyperlinkColor
+attr MentionColor
 attr SharedValue
 attr SharedValueId
 attr SmoothBottomBarStyle
@@ -1128,6 +1131,8 @@ attr sliderStyle
 attr snackbarButtonStyle
 attr snackbarStyle
 attr snackbarTextViewStyle
+attr socialFlags
+attr socialViewStyle
 attr spanCount
 attr spinBars
 attr spinnerDropDownItemStyle
@@ -3217,10 +3222,12 @@ id actions
 id activity_chooser_view_content
 id add
 id addGroup
+id addImages
 id addParent
 id addToggalsLinearLayout
 id addToggalsScrollView
 id addToggleButton
+id addVideo
 id addView
 id add_navigation
 id address
@@ -3267,7 +3274,6 @@ id baseline
 id beginOnFirstDraw
 id beginning
 id bestChoice
-id bg_image
 id bio
 id blockCode
 id blockQuote
@@ -3300,7 +3306,6 @@ id btn_reset
 id btn_rich_editor
 id btn_save_bottom_sheet
 id bubble
-id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3516,6 +3521,7 @@ id horizontalScrollView
 id horizontal_only
 id hsv_action_bar
 id hybrid
+id hyperlink
 id icon
 id icon_group
 id icon_only
@@ -3531,6 +3537,7 @@ id imageGroup
 id imageParent
 id imagePerson
 id imageProduct
+id imageRecycler
 id imageTrademark
 id imageUser
 id imageView
@@ -3741,6 +3748,7 @@ id multiply
 id myAdv
 id myImage
 id myLocation
+id myName
 id myRecentOrder
 id name
 id nameMark
@@ -3811,6 +3819,7 @@ id position
 id post
 id postLayout
 id postText
+id postbtn
 id postsNum
 id price
 id productFragment
@@ -3842,7 +3851,6 @@ id recentSearch
 id rectangle
 id rectangles
 id recycler
-id relativeLayout
 id restart
 id reverse
 id reverseSawtooth
@@ -5776,6 +5784,7 @@ style Widget_MaterialComponents_Toolbar_Primary
 style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
+style Widget_SocialView
 style Widget_Support_CoordinatorLayout
 style popupwindow_anim_style
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
@@ -5942,6 +5951,8 @@ styleable SmoothBottomBar activeItem backgroundColor cornerRadius corners durati
 styleable Snackbar snackbarButtonStyle snackbarStyle snackbarTextViewStyle
 styleable SnackbarLayout android_maxWidth actionTextColorAlpha animationMode backgroundOverlayColorAlpha backgroundTint backgroundTintMode elevation maxActionInlineWidth
 styleable SocialTextView android_text android_hint emailColor hashtagColor linkModes mentionColor phoneColor selectedColor underlineEnabled urlColor
+styleable SocialView HashtagColor HyperlinkColor MentionColor socialFlags
+styleable SocialViewStyle socialViewStyle
 styleable SpeedView sv_centerCircleColor sv_centerCircleRadius sv_sectionStyle
 styleable Speedometer sv_backgroundCircleColor sv_cutPadding sv_endDegree sv_indicator sv_indicatorColor sv_indicatorLightColor sv_indicatorWidth sv_markColor sv_markHeight sv_markStyle sv_markWidth sv_marksNumber sv_marksPadding sv_speedometerMode sv_startDegree sv_tickNumber sv_tickPadding sv_tickRotation sv_tickTextFormat sv_withIndicatorLight
 styleable Spinner android_entries android_popupBackground android_prompt android_dropDownWidth popupTheme

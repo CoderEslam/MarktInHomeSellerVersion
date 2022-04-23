@@ -1,5 +1,7 @@
 package com.doubleclick.marktinhome.Adapters;
 
+import android.net.Uri;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,8 +23,17 @@ public class ImagesGroupAdapter extends RecyclerView.Adapter<ImagesGroupAdapter.
 
     private ArrayList<String> images = new ArrayList<>();
 
+    private ArrayList<Uri> uris = new ArrayList<>();
+    private String type;
+
+
     public ImagesGroupAdapter(ArrayList<String> images) {
         this.images = images;
+    }
+
+    public ImagesGroupAdapter(ArrayList<Uri> uris, String type) {
+        this.uris = uris;
+        this.type = type;
     }
 
     @NonNull
@@ -33,16 +44,29 @@ public class ImagesGroupAdapter extends RecyclerView.Adapter<ImagesGroupAdapter.
 
     @Override
     public int getItemCount() {
-        return images.size();
+        if (images.size() != 0) {
+            return images.size();
+        } else if (uris.size() != 0) {
+            return uris.size();
+        } else {
+            return 0;
+        }
+
     }
 
     @Override
     public void onBindViewHolder(@NonNull ImagesGroupViewHolder holder, int position) {
-        Glide.with(holder.itemView.getContext()).load(images.get(holder.getAdapterPosition())).into(holder.image);
+        Log.e("clipDataOO", uris.toString());
+        if (type.equals("uri")) {
+            Log.e("clipDataII", uris.toString());
+            holder.image.setImageURI(uris.get(holder.getAdapterPosition()));
+        } else {
+            Glide.with(holder.itemView.getContext()).load(images.get(holder.getAdapterPosition())).into(holder.image);
+        }
+
     }
 
     public class ImagesGroupViewHolder extends RecyclerView.ViewHolder {
-
         private PhotoView image;
 
         public ImagesGroupViewHolder(@NonNull View itemView) {
