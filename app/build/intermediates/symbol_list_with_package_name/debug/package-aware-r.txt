@@ -1067,6 +1067,48 @@ attr shapeAppearanceLargeComponent
 attr shapeAppearanceMediumComponent
 attr shapeAppearanceOverlay
 attr shapeAppearanceSmallComponent
+attr shimmer_auto_start
+attr shimmer_base_alpha
+attr shimmer_base_color
+attr shimmer_clip_to_children
+attr shimmer_colored
+attr shimmer_direction
+attr shimmer_dropoff
+attr shimmer_duration
+attr shimmer_fixed_height
+attr shimmer_fixed_width
+attr shimmer_height_ratio
+attr shimmer_highlight_alpha
+attr shimmer_highlight_color
+attr shimmer_intensity
+attr shimmer_recycler_auto_start
+attr shimmer_recycler_base_alpha
+attr shimmer_recycler_base_color
+attr shimmer_recycler_clip_to_children
+attr shimmer_recycler_colored
+attr shimmer_recycler_direction
+attr shimmer_recycler_dropoff
+attr shimmer_recycler_duration
+attr shimmer_recycler_fixed_height
+attr shimmer_recycler_fixed_width
+attr shimmer_recycler_height_ratio
+attr shimmer_recycler_highlight_alpha
+attr shimmer_recycler_highlight_color
+attr shimmer_recycler_intensity
+attr shimmer_recycler_item_count
+attr shimmer_recycler_layout
+attr shimmer_recycler_repeat_count
+attr shimmer_recycler_repeat_delay
+attr shimmer_recycler_repeat_mode
+attr shimmer_recycler_shape
+attr shimmer_recycler_tilt
+attr shimmer_recycler_width_ratio
+attr shimmer_repeat_count
+attr shimmer_repeat_delay
+attr shimmer_repeat_mode
+attr shimmer_shape
+attr shimmer_tilt
+attr shimmer_width_ratio
 attr shortcutMatchRequired
 attr showAnimationBehavior
 attr showAsAction
@@ -3236,6 +3278,7 @@ id bottomBar
 id bottom_bar
 id bottom_left
 id bottom_right
+id bottom_to_top
 id bounce
 id bounceBoth
 id bounceEnd
@@ -3248,16 +3291,17 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_back
+id btn_cancel_bottom_sheet
 id btn_del
 id btn_dir
 id btn_ok
 id btn_preview
 id btn_reset
 id btn_rich_editor
+id btn_save_bottom_sheet
 id bubble
 id button
 id buttonPanel
-id buttons
 id cache_measures
 id callMeasure
 id callUsFragment
@@ -3343,7 +3387,6 @@ id cover_layout
 id cpv_font_text_color
 id cpv_highlight_color
 id create_post
-id creator
 id currentState
 id custom
 id customPanel
@@ -3394,9 +3437,12 @@ id easeOut
 id east
 id edit
 id editAddress
+id editCover
+id editName
 id editOption
 id editPhone
 id editProduct
+id editProfile
 id edit_query
 id editname
 id editorder
@@ -3413,6 +3459,7 @@ id et_cols
 id et_display_text
 id et_rows
 id et_text_message
+id et_user_input_bottom_sheet_fragment
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3443,7 +3490,6 @@ id gone
 id google
 id graph
 id graph_wrap
-id gridViewTopDeals
 id gridview
 id group_divider
 id group_nav
@@ -3461,6 +3507,7 @@ id hardware
 id hashtag
 id header_title
 id hideable
+id history
 id home
 id homeAsUp
 id homeFragment
@@ -3566,6 +3613,7 @@ id lastPrice
 id layout
 id left
 id leftToRight
+id left_to_right
 id legacy
 id light
 id likeButton
@@ -3606,7 +3654,6 @@ id loadingAnimView
 id loading_progress
 id loading_text
 id locale
-id location
 id location_layout
 id login
 id logout
@@ -3648,7 +3695,6 @@ id material_value_index
 id media_actions
 id members
 id mention
-id menu
 id menuIV
 id menuLL
 id menuSV
@@ -3667,7 +3713,6 @@ id month_navigation_fragment_toggle
 id month_navigation_next
 id month_navigation_previous
 id month_title
-id more
 id motion_base
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
@@ -3766,7 +3811,7 @@ id position
 id post
 id postLayout
 id postText
-id posts
+id postsNum
 id price
 id productFragment
 id productImages
@@ -3784,6 +3829,7 @@ id progress_horizontal
 id putRate
 id quantity
 id quantityOrder
+id radial
 id radio
 id radioGroup
 id rate_now_container
@@ -3805,6 +3851,7 @@ id right
 id rightToLeft
 id right_icon
 id right_side
+id right_to_left
 id rootLayout
 id rootRL
 id rounded
@@ -3983,12 +4030,12 @@ id title_template
 id toggle
 id toolbar
 id top
-id topName
 id topPanel
 id topParents
 id top_bar
 id top_left
 id top_right
+id top_to_bottom
 id topdealsRecycler
 id totalPrice
 id total_sales
@@ -4033,7 +4080,6 @@ id userName
 id user_profile_image
 id user_profile_name
 id username
-id verify
 id vertical_only
 id video
 id view
@@ -4175,6 +4221,7 @@ layout adapter_folder_list_item
 layout adapter_image_list_item
 layout add_toggal
 layout all_tradmark
+layout bottom_sheet_editor
 layout botton_navigation
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -4238,18 +4285,15 @@ layout fragment_splash2
 layout fragment_splash3
 layout fragment_splash4
 layout fragment_statistics
-layout fragment_step_one
-layout fragment_step_three
-layout fragment_step_two
-layout fragment_top_deals
+layout fragment_step_1
+layout fragment_step_2
+layout fragment_step_3
 layout fragment_trademark
 layout fragment_upload
 layout fragment_viewmore
 layout g_v_layout
-layout group
 layout h_top_recyclerview
 layout h_treademark_recyclerview
-layout ic_history
 layout images
 layout include_top_bar
 layout item_adv
@@ -4260,8 +4304,10 @@ layout layout_categories
 layout layout_chat
 layout layout_edit
 layout layout_group_list
+layout layout_group_list_shimmer
 layout layout_images
 layout layout_item_group
+layout layout_item_group_shimmer
 layout layout_product
 layout layout_recent_order
 layout layout_small_product
@@ -4342,6 +4388,9 @@ layout popupwindow
 layout product_ratings_layout
 layout quick_view_load_more
 layout recent_search_layout
+layout recyclerview_shimmer_item_grid
+layout recyclerview_shimmer_item_list
+layout recyclerview_shimmer_viewholder_layout
 layout right_chat
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
@@ -4435,6 +4484,7 @@ string abc_toolbar_collapse_description
 string action_settings
 string add
 string add_advertisement
+string add_group
 string add_products
 string add_tradmark
 string address
@@ -4968,6 +5018,8 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style CustomBottomSheetDialogTheme
+style CustomBottomSheetStyle
 style Dexter_Internal_Theme_Transparent
 style EmptyTheme
 style ImagePickerTheme
@@ -5882,6 +5934,8 @@ styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
 styleable ShapeAppearance cornerFamily cornerFamilyBottomLeft cornerFamilyBottomRight cornerFamilyTopLeft cornerFamilyTopRight cornerSize cornerSizeBottomLeft cornerSizeBottomRight cornerSizeTopLeft cornerSizeTopRight
 styleable ShapeableImageView contentPadding contentPaddingBottom contentPaddingEnd contentPaddingLeft contentPaddingRight contentPaddingStart contentPaddingTop shapeAppearance shapeAppearanceOverlay strokeColor strokeWidth
+styleable ShimmerFrameLayout shimmer_auto_start shimmer_base_alpha shimmer_base_color shimmer_clip_to_children shimmer_colored shimmer_direction shimmer_dropoff shimmer_duration shimmer_fixed_height shimmer_fixed_width shimmer_height_ratio shimmer_highlight_alpha shimmer_highlight_color shimmer_intensity shimmer_repeat_count shimmer_repeat_delay shimmer_repeat_mode shimmer_shape shimmer_tilt shimmer_width_ratio
+styleable ShimmerRecyclerView shimmer_recycler_auto_start shimmer_recycler_base_alpha shimmer_recycler_base_color shimmer_recycler_clip_to_children shimmer_recycler_colored shimmer_recycler_direction shimmer_recycler_dropoff shimmer_recycler_duration shimmer_recycler_fixed_height shimmer_recycler_fixed_width shimmer_recycler_height_ratio shimmer_recycler_highlight_alpha shimmer_recycler_highlight_color shimmer_recycler_intensity shimmer_recycler_item_count shimmer_recycler_layout shimmer_recycler_repeat_count shimmer_recycler_repeat_delay shimmer_recycler_repeat_mode shimmer_recycler_shape shimmer_recycler_tilt shimmer_recycler_width_ratio
 styleable SignInButton buttonSize colorScheme scopeUris
 styleable Slider android_enabled android_value android_stepSize android_valueFrom android_valueTo haloColor haloRadius labelBehavior labelStyle thumbColor thumbElevation thumbRadius thumbStrokeColor thumbStrokeWidth tickColor tickColorActive tickColorInactive tickVisible trackColor trackColorActive trackColorInactive trackHeight
 styleable SmoothBottomBar activeItem backgroundColor cornerRadius corners duration iconMargin iconSize iconTint iconTintActive indicatorColor indicatorRadius itemFontFamily itemPadding menu sideMargins textColor textSize

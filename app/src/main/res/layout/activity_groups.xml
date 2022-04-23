@@ -5,7 +5,7 @@
     android:id="@+id/scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/offwhite"
     tools:ignore="Overdraw">
 
     <LinearLayout
@@ -33,17 +33,6 @@
                 app:trackCornerRadius="2dp"
                 app:trackThickness="2dp" />
 
-            <TextView
-                android:id="@+id/topName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
             <ImageView
                 android:id="@+id/back"
                 android:layout_width="35dp"
@@ -57,19 +46,6 @@
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="ContentDescription,UnusedAttribute,UseAppTint" />
 
-            <ImageView
-                android:id="@+id/menu"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/circle"
-                android:padding="8dp"
-                android:src="@drawable/add"
-                android:tint="#596C84"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="ContentDescription,UnusedAttribute,UseAppTint" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.core.widget.NestedScrollView
@@ -77,18 +53,20 @@
             android:layout_height="wrap_content">
 
             <LinearLayout
+                android:background="@color/offwhite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:background="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
-                    <RelativeLayout
+                    <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/cover_layout"
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
@@ -102,8 +80,28 @@
                             android:layout_height="200dp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/group_cover"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="ContentDescription" />
-                    </RelativeLayout>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/editCover"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:backgroundTint="@color/blueDark"
+                            android:clickable="true"
+                            android:contentDescription="@string/change_image"
+                            android:focusable="true"
+                            android:padding="2dp"
+                            android:src="@drawable/edit"
+                            app:fabSize="mini"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imageGroup"
@@ -116,6 +114,18 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/cover_layout" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/editProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:contentDescription="@string/change_image"
+                        android:focusable="true"
+                        android:src="@drawable/camera"
+                        app:fabCustomSize="25dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageGroup"
+                        app:layout_constraintEnd_toEndOf="@+id/imageGroup" />
 
                     <LinearLayout
                         android:id="@+id/main"
@@ -139,14 +149,12 @@
                             tools:ignore="ContentDescription,HardcodedText" />
 
                         <ImageView
-                            android:id="@+id/verify"
-                            android:layout_width="18dp"
-                            android:layout_height="18dp"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="2dp"
-                            android:visibility="gone"
-                            tools:ignore="ContentDescription" />
+                            android:id="@+id/editName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="2dp"
+                            android:src="@drawable/edit" />
 
                     </LinearLayout>
 
@@ -174,6 +182,7 @@
                         app:urlColor="#1877F2" />
 
                     <LinearLayout
+                        android:background="@color/white"
                         android:id="@+id/numbers"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -189,7 +198,6 @@
                             android:id="@+id/linearLayout3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="50dp"
                             android:layout_weight="1"
                             android:orientation="vertical"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -198,7 +206,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
-                                android:id="@+id/posts"
+                                android:id="@+id/postsNum"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
@@ -224,6 +232,7 @@
                             android:layout_marginEnd="50dp"
                             android:layout_weight="1"
                             android:orientation="vertical"
+                            android:visibility="gone"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -252,67 +261,18 @@
 
                     </LinearLayout>
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/buttons"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="40dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginRight="40dp"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/numbers">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/more"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent">
-
-                            <Button
-                                android:id="@+id/edit"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/btn_round"
-                                android:backgroundTint="#1877F2"
-                                android:text="@string/edit_profile"
-                                android:textAllCaps="false"
-                                android:textColor="#fff" />
-
-                        </LinearLayout>
-
-                        <ImageView
-                            android:id="@+id/more"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
-                            android:background="@drawable/circle"
-                            android:backgroundTint="@color/black"
-                            android:contentDescription="TODO"
-                            android:padding="8dp"
-                            android:src="@drawable/add"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="ContentDescription,HardcodedText,UnusedAttribute" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
                     <LinearLayout
+                        android:background="@color/white"
                         android:id="@+id/details"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
                         android:orientation="vertical"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/buttons">
+                        app:layout_constraintTop_toBottomOf="@+id/numbers">
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -356,10 +316,11 @@
                                 android:layout_height="32dp"
                                 android:padding="4dp"
                                 android:src="@drawable/history"
+                                app:tint="@color/gray"
                                 tools:ignore="ContentDescription" />
 
                             <TextView
-                                android:id="@+id/location"
+                                android:id="@+id/history"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
@@ -418,6 +379,7 @@
 
 
                 <LinearLayout
+                    android:background="@color/white"
                     android:id="@+id/create_post"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -530,12 +492,14 @@
 
                 </LinearLayout>
 
-                <androidx.recyclerview.widget.RecyclerView
+                <com.todkars.shimmer.ShimmerRecyclerView
+                    app:shimmer_recycler_item_count="1"
                     android:id="@+id/post"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                    tools:listitem="@layout/layout_item_group" />
+                    tools:listitem="@layout/layout_item_group"
+                    app:shimmer_recycler_layout="@layout/layout_item_group_shimmer"/>
 
                 <TextView
                     android:id="@+id/nothing"

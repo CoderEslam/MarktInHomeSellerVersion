@@ -19,6 +19,7 @@ public class Constantes {
     public static final String CHATS = "chats";
     public static final String COMMENTS = "comments";
     public static final String CHAT_LIST = "chatList";
+    public static final String GROUPS = "Groups";
 
 
 }

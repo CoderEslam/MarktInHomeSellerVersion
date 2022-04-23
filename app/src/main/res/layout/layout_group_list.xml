@@ -35,19 +35,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ellipsize="end"
-            android:text="@string/my_groups"
             android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/creator"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:ellipsize="end"
-            android:text="@string/creator"
-            android:textColor="@color/gray"
-            android:textSize="16sp" />
+            android:textSize="18sp"
+            tools:text="@string/my_groups" />
 
     </LinearLayout>
 

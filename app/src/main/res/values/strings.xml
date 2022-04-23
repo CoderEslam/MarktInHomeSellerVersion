@@ -115,4 +115,5 @@
     <string name="my_groups">My Groups</string>
     <string name="action_settings">Setting</string>
     <string name="create">Create</string>
+    <string name="add_group">add Group</string>
 </resources>

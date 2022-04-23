@@ -140,7 +140,7 @@
                 android:layout_height="45dp"
                 android:background="@null"
                 android:gravity="center_vertical"
-                android:hint="Bio"
+                android:hint="Details"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
                 android:textColorHint="#8B8D93"

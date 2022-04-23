@@ -6,13 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ui.MainScreen.Groups.MyGroupsFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
+    <com.todkars.shimmer.ShimmerRecyclerView
         android:id="@+id/AllGroupsRecycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_recycler_item_count="10"
+        app:shimmer_recycler_layout="@layout/layout_group_list_shimmer"
         tools:listitem="@layout/layout_group_list" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

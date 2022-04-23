@@ -13,6 +13,7 @@ import android.widget.ImageView;
 
 import com.doubleclick.marktinhome.Adapters.ViewPagerGroupAdapter;
 import com.doubleclick.marktinhome.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 
 /**
@@ -22,7 +23,7 @@ import com.google.android.material.tabs.TabLayout;
  */
 public class GroupFragment extends Fragment {
 
-    private ImageView addGroup;
+    private FloatingActionButton addGroup;
     private ViewPager pager;
     private TabLayout tab_layout;
 

@@ -9,8 +9,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.doubleclick.marktinhome.Model.Group;
 import com.doubleclick.marktinhome.R;
 import com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity;
+
+import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -19,6 +23,12 @@ import de.hdodenhof.circleimageview.CircleImageView;
  */
 public class ItemGroupsAdapter extends RecyclerView.Adapter<ItemGroupsAdapter.ItemViewHolder> {
 
+
+    private ArrayList<Group> groups;
+
+    public ItemGroupsAdapter(ArrayList<Group> groups) {
+        this.groups = groups;
+    }
 
     @NonNull
     @Override
@@ -29,8 +39,14 @@ public class ItemGroupsAdapter extends RecyclerView.Adapter<ItemGroupsAdapter.It
     @Override
     public void onBindViewHolder(@NonNull ItemGroupsAdapter.ItemViewHolder holder, int position) {
 
+        if (groups.size() != 0) {
+            holder.name.setText(groups.get(holder.getAdapterPosition()).getName());
+            Glide.with(holder.itemView.getContext()).load(groups.get(holder.getAdapterPosition()).getImage()).into(holder.imageGroup);
+        }
+
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(holder.itemView.getContext(), GroupsActivity.class);
+            intent.putExtra("id", groups.get(holder.getAdapterPosition()).getId());
             holder.itemView.getContext().startActivity(intent);
         });
 
@@ -38,19 +54,17 @@ public class ItemGroupsAdapter extends RecyclerView.Adapter<ItemGroupsAdapter.It
 
     @Override
     public int getItemCount() {
-        return 20;
+        return groups.size();
     }
 
     public class ItemViewHolder extends RecyclerView.ViewHolder {
         private CircleImageView imageGroup;
-        private TextView name, creator;
+        private TextView name;
 
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
             imageGroup = itemView.findViewById(R.id.imageGroup);
             name = itemView.findViewById(R.id.name);
-            creator = itemView.findViewById(R.id.creator);
-
         }
     }
 }
