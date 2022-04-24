@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public class ChatViewModel extends ViewModel implements ChatReopsitory.Chats {
 
     MutableLiveData<ArrayList<Chat>> mutableLiveData = new MutableLiveData<>();
+    MutableLiveData<Chat> newInsertChat = new MutableLiveData<>();
 
     ChatReopsitory chatReopsitory = new ChatReopsitory(this);
 
@@ -28,9 +29,17 @@ public class ChatViewModel extends ViewModel implements ChatReopsitory.Chats {
         return mutableLiveData;
     }
 
+    public LiveData<Chat> newInsertChat(){
+        return newInsertChat;
+    }
 
     @Override
     public void getChat(ArrayList<Chat> chats) {
         mutableLiveData.setValue(chats);
+    }
+
+    @Override
+    public void newInsertChat(Chat chat) {
+        newInsertChat.setValue(chat);
     }
 }

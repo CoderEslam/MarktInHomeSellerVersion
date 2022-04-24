@@ -43,7 +43,7 @@ class ChatListFragment : BaseFragment(), UserInter {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        var view = inflater.inflate(R.layout.fragment_chat_list, container, false)
+        val view = inflater.inflate(R.layout.fragment_chat_list, container, false)
         allUser = view.findViewById(R.id.allUser);
         allUser.showShimmer();
         chatUser = view.findViewById(R.id.chatUser);

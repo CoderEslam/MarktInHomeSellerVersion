@@ -2942,6 +2942,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable dot
 drawable dot_white
+drawable download
 drawable e
 drawable edit
 drawable email
@@ -3011,6 +3012,7 @@ drawable emoji_google_sheet_7
 drawable emoji_google_sheet_8
 drawable emoji_google_sheet_9
 drawable emoji_recent
+drawable empty
 drawable error
 drawable feed_bg
 drawable filter_list
@@ -3148,7 +3150,9 @@ drawable palette
 drawable parson
 drawable password
 drawable path1306
+drawable pause
 drawable person
+drawable play
 drawable recv_basket_animated
 drawable recv_bg_mic
 drawable recv_ic_arrow
@@ -3206,6 +3210,9 @@ id CTRL
 id CartName
 id ChildRecycler
 id ConstraintLayoutimage_name
+id ContinerViedo
+id ContinerVoice
+id ContinnerImage
 id Continue
 id CustomerLocation
 id FLOAT
@@ -3452,6 +3459,10 @@ id cancel_action
 id cancel_button
 id cardView
 id cardView11
+id cardView2
+id cardView3
+id cardView4
+id cardView5
 id cardView6
 id cardView7
 id carryVelocity
@@ -3567,6 +3578,9 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id downloadImage
+id downloadVideo
+id downloadVoice
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -3601,6 +3615,9 @@ id emojiViewDivider
 id emojiViewPager
 id emojiViewTab
 id emotion
+id emptyImage
+id emptyText
+id emptyView
 id end
 id endToStart
 id end_padder
@@ -3618,6 +3635,7 @@ id expanded_menu
 id fab
 id fade
 id family
+id file
 id fill
 id fill_horizontal
 id fill_vertical
@@ -3811,6 +3829,7 @@ id loading_progress
 id loading_text
 id locale
 id location_layout
+id location_lotte
 id login
 id logout
 id lottie_layer_name
@@ -3899,6 +3918,7 @@ id myLocation
 id myName
 id myRecentOrder
 id name
+id nameContact
 id nameMark
 id nameOrder
 id nav_controller_view_tag
@@ -3926,6 +3946,7 @@ id nothing
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id numberContact
 id numbers
 id off
 id ok
@@ -3976,6 +3997,7 @@ id productImages
 id productLastPrice
 id productName
 id productPrice
+id progress
 id progressBar
 id progressBar1
 id progressBar2
@@ -4414,6 +4436,7 @@ layout emoji_adapter_item
 layout emoji_popup_window_skin
 layout emoji_view
 layout emoji_view_category
+layout empty_view
 layout flag_bubble_colorpickerview_skydoves
 layout fragment_address
 layout fragment_all_groups
@@ -4467,8 +4490,18 @@ layout h_treademark_recyclerview
 layout images
 layout include_top_bar
 layout item_adv
+layout item_contact_left
+layout item_contact_right
+layout item_file_left
+layout item_file_right
 layout item_font_setting
+layout item_image_left
+layout item_image_right
+layout item_location_left
+layout item_location_right
 layout item_trademark
+layout item_video_left
+layout item_video_right
 layout layaut_cart
 layout layout_categories
 layout layout_chat
@@ -4553,6 +4586,8 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout orders
+layout play_voice_left
+layout play_voice_right
 layout pop_folder
 layout popupwindow
 layout product_ratings_layout
@@ -4615,15 +4650,28 @@ navigation nav_graph
 navigation nav_seller_graph
 navigation rich_nav
 plurals mtrl_badge_content_description
+raw __location_new
+raw contact
+raw empty_screen
+raw file_icon
+raw file_upload
+raw image
 raw loading
 raw loading2
 raw loading_new
+raw location
 raw online_shopping
+raw pdf
 raw record_error
 raw record_finished
 raw record_start
 raw shopping
 raw shopping_cart
+raw siri
+raw video
+raw voice_icon_animation
+raw voice_recognition
+raw waves
 string Continue
 string Ok
 string _1000
@@ -4706,6 +4754,7 @@ string common_signin_button_text_long
 string complete
 string confirm
 string connect_us
+string contact
 string create
 string create_by_x_team
 string creator
@@ -4736,11 +4785,13 @@ string emoji_google_category_objects
 string emoji_google_category_smileysandpeople
 string emoji_google_category_symbols
 string emoji_google_category_travelandplaces
+string empty_text_chat_list
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string fcm_fallback_notification_channel_label
+string file
 string filter
 string folder_image_count
 string font_color
@@ -4771,6 +4822,7 @@ string hide_bottom_view_on_scroll_behavior
 string history
 string i_have_already_account
 string icon_content_description
+string image
 string item_view_role_description
 string keywords
 string library_emoji_author
@@ -4786,6 +4838,7 @@ string library_emoji_year
 string load_end
 string load_failed
 string loading
+string location
 string log_in
 string logout
 string m3_ref_typeface_brand_display_regular
@@ -4919,6 +4972,7 @@ string sign_in
 string sign_up
 string statistices
 string status_bar_notification_info_overflow
+string text_copied
 string text_to_display
 string top_deals
 string totalPrice
@@ -4929,6 +4983,8 @@ string type_here
 string typehere
 string uplaod
 string user_name
+string video
+string voice
 string welcome
 string welcome_back
 string what_you_wait
@@ -6141,7 +6197,7 @@ styleable SearchView android_focusable android_maxWidth android_inputType androi
 styleable ShapeAppearance cornerFamily cornerFamilyBottomLeft cornerFamilyBottomRight cornerFamilyTopLeft cornerFamilyTopRight cornerSize cornerSizeBottomLeft cornerSizeBottomRight cornerSizeTopLeft cornerSizeTopRight
 styleable ShapeableImageView contentPadding contentPaddingBottom contentPaddingEnd contentPaddingLeft contentPaddingRight contentPaddingStart contentPaddingTop shapeAppearance shapeAppearanceOverlay strokeColor strokeWidth
 styleable ShimmerFrameLayout shimmer_auto_start shimmer_base_alpha shimmer_base_color shimmer_clip_to_children shimmer_colored shimmer_direction shimmer_dropoff shimmer_duration shimmer_fixed_height shimmer_fixed_width shimmer_height_ratio shimmer_highlight_alpha shimmer_highlight_color shimmer_intensity shimmer_repeat_count shimmer_repeat_delay shimmer_repeat_mode shimmer_shape shimmer_tilt shimmer_width_ratio
-styleable ShimmerLayout shimmer_auto_start shimmer_angle shimmer_animation_duration shimmer_color shimmer_gradient_center_color_width shimmer_mask_width shimmer_reverse_animation
+styleable ShimmerLayout shimmer_angle shimmer_animation_duration shimmer_auto_start shimmer_color shimmer_gradient_center_color_width shimmer_mask_width shimmer_reverse_animation
 styleable ShimmerRecyclerView shimmer_recycler_auto_start shimmer_recycler_base_alpha shimmer_recycler_base_color shimmer_recycler_clip_to_children shimmer_recycler_colored shimmer_recycler_direction shimmer_recycler_dropoff shimmer_recycler_duration shimmer_recycler_fixed_height shimmer_recycler_fixed_width shimmer_recycler_height_ratio shimmer_recycler_highlight_alpha shimmer_recycler_highlight_color shimmer_recycler_intensity shimmer_recycler_item_count shimmer_recycler_layout shimmer_recycler_repeat_count shimmer_recycler_repeat_delay shimmer_recycler_repeat_mode shimmer_recycler_shape shimmer_recycler_tilt shimmer_recycler_width_ratio
 styleable SignInButton buttonSize colorScheme scopeUris
 styleable Slider android_enabled android_value android_stepSize android_valueFrom android_valueTo haloColor haloRadius labelBehavior labelStyle thumbColor thumbElevation thumbRadius thumbStrokeColor thumbStrokeWidth tickColor tickColorActive tickColorInactive tickVisible trackColor trackColorActive trackColorInactive trackHeight

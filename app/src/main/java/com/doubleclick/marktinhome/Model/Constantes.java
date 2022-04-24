@@ -21,5 +21,21 @@ public class Constantes {
     public static final String CHAT_LIST = "chatList";
     public static final String GROUPS = "Groups";
 
+    public static final int TEXT_RIGHT = 10;
+    public static final int VOICE_RIGHT = 20;
+    public static final int CONTACT_RIGHT = 30;
+    public static final int IMAGE_RIGHT = 40;
+    public static final int LOCATION_RIGHT = 50;
+    public static final int VIDEO_RIGHT = 60;
+    public static final int FILE_RIGHT = 70;
+    public static final int TEXT_LEFT = 100;
+    public static final int VOICE_LEFT = 200;
+    public static final int CONTACT_LEFT = 300;
+    public static final int IMAGE_LEFT = 400;
+    public static final int LOCATION_LEFT = 500;
+    public static final int VIDEO_LEFT = 600;
+    public static final int FILE_LEFT = 700;
+    public static final int DEFAULT_LAYOUT = 0;
+
 
 }

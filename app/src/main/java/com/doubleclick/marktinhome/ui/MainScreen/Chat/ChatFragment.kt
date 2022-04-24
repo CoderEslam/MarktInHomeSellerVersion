@@ -26,6 +26,7 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.app.ActivityCompat
+import androidx.core.view.size
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.RecyclerView
@@ -33,8 +34,10 @@ import com.devlomi.record_view.OnRecordListener
 import com.devlomi.record_view.RecordButton
 import com.devlomi.record_view.RecordView
 import com.doubleclick.ViewModel.ChatViewModel
+import com.doubleclick.marktinhome.Adapters.BaseMessageAdapter
 import com.doubleclick.marktinhome.Adapters.ChatAdapter
 import com.doubleclick.marktinhome.BaseFragment
+import com.doubleclick.marktinhome.Model.Chat
 import com.doubleclick.marktinhome.Model.Constantes
 import com.doubleclick.marktinhome.Model.Constantes.CHATS
 import com.doubleclick.marktinhome.Model.Constantes.USER
@@ -49,9 +52,11 @@ import com.google.android.gms.tasks.Task
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.UploadTask
 import com.vanniktech.emoji.EmojiPopup
+import kotlinx.android.synthetic.main.fragment_menu_profile.*
 import java.io.File
 import java.io.IOException
 import java.util.*
+import kotlin.collections.ArrayList
 
 
 class ChatFragment : BaseFragment(), OnMapReadyCallback {
@@ -61,7 +66,7 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
     private lateinit var et_text_message: EditText
     private lateinit var chatRecycler: RecyclerView;
     private lateinit var chatViewModel: ChatViewModel
-    private lateinit var chatAdapter: ChatAdapter
+    private lateinit var chatAdapter: BaseMessageAdapter
     private lateinit var recordView: RecordView
     private lateinit var sendRecord: RecordButton
     private lateinit var mediaRecorder: MediaRecorder
@@ -81,10 +86,9 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
     private lateinit var emotion: ImageView
     private lateinit var attach_file: ImageView
     private lateinit var layout_text: ConstraintLayout
+    private var chats: ArrayList<Chat> = ArrayList();
     var audioPath: String? = null
     private var cklicked = true
-
-
     val user by navArgs<ChatFragmentArgs>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -102,7 +106,9 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
         val view = inflater.inflate(R.layout.fragment_chat, container, false)
         sendText = view.findViewById(R.id.sendText);
         et_text_message = view.findViewById(R.id.et_text_message);
+//        supportMapFragment = (requireActivity().supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?)!!
         chatRecycler = view.findViewById(R.id.chatRecycler);
+        chatRecycler.setHasFixedSize(true);
         sendRecord = view.findViewById(R.id.sendRecord);
         recordView = view.findViewById(R.id.recordView);
         emotion = view.findViewById(R.id.emotion);
@@ -111,16 +117,25 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
         sendRecord.setRecordView(recordView)
         chatViewModel = ViewModelProvider(this)[ChatViewModel::class.java]
         chatViewModel.ChatById(user.user.id)
+
         chatViewModel.myChat.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
-            chatAdapter = ChatAdapter(it);
-            chatRecycler.adapter = chatAdapter
+//            chats = it;
+
         })
         sendText.setOnClickListener {
             sentMessage(et_text_message.text.toString().trim(), "text")
         }
+        chatViewModel.newInsertChat().observe(viewLifecycleOwner, androidx.lifecycle.Observer {
+            chats.add(it)
+            chatAdapter = BaseMessageAdapter(chats, myId);
+            chatRecycler.adapter = chatAdapter
+            chatAdapter.notifyItemInserted((chatRecycler.adapter as BaseMessageAdapter).itemCount - 1)
+            chatRecycler.scrollToPosition((chatRecycler.adapter as BaseMessageAdapter).itemCount - 1)
+            chatRecycler.smoothScrollToPosition((chatRecycler.adapter as BaseMessageAdapter).itemCount - 1)
+        });
 
         val emojiPopup =
-            EmojiPopup.Builder.fromRootView(view.findViewById<View>(R.id.root_view)).build(
+            EmojiPopup.Builder.fromRootView(view.findViewById(R.id.root_view)).build(
                 et_text_message
             )
         emotion.setOnClickListener {
