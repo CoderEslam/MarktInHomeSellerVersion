@@ -23,6 +23,8 @@ import com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselZoomPostL
 import com.doubleclick.marktinhome.Views.carousellayoutmanager.CenterScrollListener;
 import com.doubleclick.marktinhome.Views.socialtextview.SocialTextView;
 import com.doubleclick.marktinhome.Views.socialtextview.widget.SocialEditText;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
@@ -41,6 +43,7 @@ public class CreatePostActivity extends AppCompatActivity {
     private ImageView addImages, addVideo;
     private Button postbtn;
     private ArrayList<Uri> uris = new ArrayList<>();
+    private DatabaseReference reference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +58,7 @@ public class CreatePostActivity extends AppCompatActivity {
         addImages = findViewById(R.id.addImages);
         addVideo = findViewById(R.id.addVideo);
         postbtn = findViewById(R.id.postbtn);
+        reference = FirebaseDatabase.getInstance().getReference();
         CarouselLayoutManager layoutManager = new CarouselLayoutManager(CarouselLayoutManager.HORIZONTAL);
         imageRecycler.setLayoutManager(layoutManager);
         imageRecycler.setHasFixedSize(true);
@@ -94,5 +98,12 @@ public class CreatePostActivity extends AppCompatActivity {
                 imageRecycler.setAdapter(new ImagesGroupAdapter(uris, "uri"));
             }
         }
+    }
+
+    private void UploadPost(){
+
+
+
+
     }
 }

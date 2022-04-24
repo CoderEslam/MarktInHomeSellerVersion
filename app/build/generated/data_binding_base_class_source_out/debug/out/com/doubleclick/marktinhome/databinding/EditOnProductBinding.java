@@ -37,19 +37,19 @@ public final class EditOnProductBinding implements ViewBinding {
   public final TextInputLayout textInputLayout2;
 
   @NonNull
-  public final TextInputLayout textInputLayout3;
+  public final TextInputLayout textInputLayoutEditOrder;
 
   private EditOnProductBinding(@NonNull ConstraintLayout rootView, @NonNull TextView cancel,
       @NonNull TextInputEditText editProduct, @NonNull TextInputEditText editorder,
       @NonNull TextView ok, @NonNull TextInputLayout textInputLayout2,
-      @NonNull TextInputLayout textInputLayout3) {
+      @NonNull TextInputLayout textInputLayoutEditOrder) {
     this.rootView = rootView;
     this.cancel = cancel;
     this.editProduct = editProduct;
     this.editorder = editorder;
     this.ok = ok;
     this.textInputLayout2 = textInputLayout2;
-    this.textInputLayout3 = textInputLayout3;
+    this.textInputLayoutEditOrder = textInputLayoutEditOrder;
   }
 
   @Override
@@ -109,14 +109,14 @@ public final class EditOnProductBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textInputLayout3;
-      TextInputLayout textInputLayout3 = ViewBindings.findChildViewById(rootView, id);
-      if (textInputLayout3 == null) {
+      id = R.id.textInputLayoutEditOrder;
+      TextInputLayout textInputLayoutEditOrder = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayoutEditOrder == null) {
         break missingId;
       }
 
       return new EditOnProductBinding((ConstraintLayout) rootView, cancel, editProduct, editorder,
-          ok, textInputLayout2, textInputLayout3);
+          ok, textInputLayout2, textInputLayoutEditOrder);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -119,7 +119,7 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout3"
+                android:id="@+id/textInputLayoutEditOrder"
                 style="@style/StyleInputLayout"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
@@ -145,10 +145,10 @@
                 android:layout_marginTop="8dp"
                 android:padding="5dp"
                 android:text="@string/i_have_already_account"
-                app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
+                app:layout_constraintEnd_toEndOf="@+id/textInputLayoutEditOrder"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@+id/textInputLayout3"
-                app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+                app:layout_constraintStart_toStartOf="@+id/textInputLayoutEditOrder"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutEditOrder" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/login"

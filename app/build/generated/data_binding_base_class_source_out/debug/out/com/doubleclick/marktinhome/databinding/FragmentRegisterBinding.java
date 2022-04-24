@@ -52,7 +52,7 @@ public final class FragmentRegisterBinding implements ViewBinding {
   public final TextInputLayout textInputLayout2;
 
   @NonNull
-  public final TextInputLayout textInputLayout3;
+  public final TextInputLayout textInputLayoutEditOrder;
 
   @NonNull
   public final TextView textView;
@@ -62,7 +62,7 @@ public final class FragmentRegisterBinding implements ViewBinding {
       @NonNull AppCompatImageView google, @NonNull TextView ihaveaccount,
       @NonNull LottieAnimationView loadingAnimView, @NonNull AppCompatButton login,
       @NonNull TextInputEditText password, @NonNull TextInputLayout textInputLayout,
-      @NonNull TextInputLayout textInputLayout2, @NonNull TextInputLayout textInputLayout3,
+      @NonNull TextInputLayout textInputLayout2, @NonNull TextInputLayout textInputLayoutEditOrder,
       @NonNull TextView textView) {
     this.rootView = rootView;
     this.edtUserName = edtUserName;
@@ -74,7 +74,7 @@ public final class FragmentRegisterBinding implements ViewBinding {
     this.password = password;
     this.textInputLayout = textInputLayout;
     this.textInputLayout2 = textInputLayout2;
-    this.textInputLayout3 = textInputLayout3;
+    this.textInputLayoutEditOrder = textInputLayoutEditOrder;
     this.textView = textView;
   }
 
@@ -159,9 +159,9 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textInputLayout3;
-      TextInputLayout textInputLayout3 = ViewBindings.findChildViewById(rootView, id);
-      if (textInputLayout3 == null) {
+      id = R.id.textInputLayoutEditOrder;
+      TextInputLayout textInputLayoutEditOrder = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayoutEditOrder == null) {
         break missingId;
       }
 
@@ -173,7 +173,7 @@ public final class FragmentRegisterBinding implements ViewBinding {
 
       return new FragmentRegisterBinding((ConstraintLayout) rootView, edtUserName, email, google,
           ihaveaccount, loadingAnimView, login, password, textInputLayout, textInputLayout2,
-          textInputLayout3, textView);
+          textInputLayoutEditOrder, textView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -32,16 +32,16 @@ public final class AddToggalBinding implements ViewBinding {
   public final TextInputEditText editname;
 
   @NonNull
-  public final TextInputLayout textInputLayout3;
+  public final TextInputLayout textInputLayoutEditOrder;
 
   private AddToggalBinding(@NonNull ConstraintLayout rootView, @NonNull CardView cardView,
       @NonNull ColorSeekBar colorSeekBar, @NonNull TextInputEditText editname,
-      @NonNull TextInputLayout textInputLayout3) {
+      @NonNull TextInputLayout textInputLayoutEditOrder) {
     this.rootView = rootView;
     this.cardView = cardView;
     this.colorSeekBar = colorSeekBar;
     this.editname = editname;
-    this.textInputLayout3 = textInputLayout3;
+    this.textInputLayoutEditOrder = textInputLayoutEditOrder;
   }
 
   @Override
@@ -89,14 +89,14 @@ public final class AddToggalBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textInputLayout3;
-      TextInputLayout textInputLayout3 = ViewBindings.findChildViewById(rootView, id);
-      if (textInputLayout3 == null) {
+      id = R.id.textInputLayoutEditOrder;
+      TextInputLayout textInputLayoutEditOrder = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayoutEditOrder == null) {
         break missingId;
       }
 
       return new AddToggalBinding((ConstraintLayout) rootView, cardView, colorSeekBar, editname,
-          textInputLayout3);
+          textInputLayoutEditOrder);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

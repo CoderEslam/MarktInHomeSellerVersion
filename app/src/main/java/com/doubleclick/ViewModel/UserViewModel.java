@@ -23,17 +23,19 @@ public class UserViewModel extends ViewModel implements UserInter {
 
     public UserViewModel() {
         userRepository.getUser();
+        userRepository.getAllUser("");
     }
 
-    public void getChatList() {
-        userRepository.getAllUserChat();
+    public void getUserByName(String name){
+        userRepository.getAllUser(name);
     }
+
 
     public LiveData<User> getUser() {
         return mutableLiveData;
     }
 
-    public LiveData<ArrayList<User>> getChatUser() {
+    public LiveData<ArrayList<User>> getAllUsers() {
         return arrayListMutableLiveData;
     }
 

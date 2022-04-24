@@ -2,14 +2,13 @@ package com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add;
 
 import java.lang.System;
 
-@kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000r\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u0000 )2\u00020\u00012\u00020\u0002:\u0001)B\u0005\u00a2\u0006\u0002\u0010\u0003J\u0006\u0010\u0012\u001a\u00020\u0013J\u0012\u0010\u0014\u001a\u00020\u00132\b\u0010\u0015\u001a\u0004\u0018\u00010\u0016H\u0016J\u0012\u0010\u0017\u001a\u00020\u00132\b\u0010\u0015\u001a\u0004\u0018\u00010\u0016H\u0016J\u0012\u0010\u0018\u001a\u00020\u00132\b\u0010\u0019\u001a\u0004\u0018\u00010\u001aH\u0016J\u0018\u0010\u001b\u001a\u00020\u00132\u0006\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fH\u0016J&\u0010 \u001a\u0004\u0018\u00010!2\u0006\u0010\u001e\u001a\u00020\"2\b\u0010#\u001a\u0004\u0018\u00010$2\b\u0010\u0019\u001a\u0004\u0018\u00010\u001aH\u0017J\u0010\u0010%\u001a\u00020&2\u0006\u0010\'\u001a\u00020(H\u0016R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082.\u00a2\u0006\u0002\n\u0000R\u001b\u0010\b\u001a\u00020\t8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\f\u0010\r\u001a\u0004\b\n\u0010\u000bR\u000e\u0010\u000e\u001a\u00020\u000fX\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0011X\u0082.\u00a2\u0006\u0002\n\u0000\u00a8\u0006*"}, d2 = {"Lcom/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/ChildFragment;", "Lcom/doubleclick/marktinhome/BaseFragment;", "Lcom/doubleclick/marktinhome/Adapters/ChildAdapter$OnChild;", "()V", "ChildRecycler", "Landroidx/recyclerview/widget/RecyclerView;", "builder", "Landroidx/appcompat/app/AlertDialog$Builder;", "parentCategory", "Lcom/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/ChildFragmentArgs;", "getParentCategory", "()Lcom/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/ChildFragmentArgs;", "parentCategory$delegate", "Landroidx/navigation/NavArgsLazy;", "productViewModel", "Lcom/doubleclick/ViewModel/ProductViewModel;", "toolbar", "Landroidx/appcompat/widget/Toolbar;", "UplaodChild", "", "onChild", "childCategory", "Lcom/doubleclick/marktinhome/Model/ChildCategory;", "onChildLongClickListner", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onCreateOptionsMenu", "menu", "Landroid/view/Menu;", "inflater", "Landroid/view/MenuInflater;", "onCreateView", "Landroid/view/View;", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "onOptionsItemSelected", "", "item", "Landroid/view/MenuItem;", "Companion", "app_debug"})
+@kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u0000 #2\u00020\u00012\u00020\u0002:\u0001#B\u0005\u00a2\u0006\u0002\u0010\u0003J\u0006\u0010\u0014\u001a\u00020\u0015J\u0012\u0010\u0016\u001a\u00020\u00152\b\u0010\u0017\u001a\u0004\u0018\u00010\u0018H\u0016J\u0012\u0010\u0019\u001a\u00020\u00152\b\u0010\u0017\u001a\u0004\u0018\u00010\u0018H\u0016J\u0012\u0010\u001a\u001a\u00020\u00152\b\u0010\u001b\u001a\u0004\u0018\u00010\u001cH\u0016J&\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\u0006\u0010\u001f\u001a\u00020 2\b\u0010!\u001a\u0004\u0018\u00010\"2\b\u0010\u001b\u001a\u0004\u0018\u00010\u001cH\u0017R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082.\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0006\u001a\u00020\u0007X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\b\u0010\t\"\u0004\b\n\u0010\u000bR\u001b\u0010\f\u001a\u00020\r8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0010\u0010\u0011\u001a\u0004\b\u000e\u0010\u000fR\u000e\u0010\u0012\u001a\u00020\u0013X\u0082.\u00a2\u0006\u0002\n\u0000\u00a8\u0006$"}, d2 = {"Lcom/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/ChildFragment;", "Lcom/doubleclick/marktinhome/BaseFragment;", "Lcom/doubleclick/marktinhome/Adapters/ChildAdapter$OnChild;", "()V", "ChildRecycler", "Landroidx/recyclerview/widget/RecyclerView;", "addChild", "Lcom/google/android/material/floatingactionbutton/FloatingActionButton;", "getAddChild", "()Lcom/google/android/material/floatingactionbutton/FloatingActionButton;", "setAddChild", "(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;)V", "parentCategory", "Lcom/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/ChildFragmentArgs;", "getParentCategory", "()Lcom/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/ChildFragmentArgs;", "parentCategory$delegate", "Landroidx/navigation/NavArgsLazy;", "productViewModel", "Lcom/doubleclick/ViewModel/ProductViewModel;", "UplaodChild", "", "onChild", "childCategory", "Lcom/doubleclick/marktinhome/Model/ChildCategory;", "onChildLongClickListner", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "Companion", "app_debug"})
 public final class ChildFragment extends com.doubleclick.marktinhome.BaseFragment implements com.doubleclick.marktinhome.Adapters.ChildAdapter.OnChild {
     private androidx.recyclerview.widget.RecyclerView ChildRecycler;
     private com.doubleclick.ViewModel.ProductViewModel productViewModel;
-    private androidx.appcompat.widget.Toolbar toolbar;
     @org.jetbrains.annotations.NotNull()
     private final androidx.navigation.NavArgsLazy parentCategory$delegate = null;
-    private androidx.appcompat.app.AlertDialog.Builder builder;
+    public com.google.android.material.floatingactionbutton.FloatingActionButton addChild;
     @org.jetbrains.annotations.NotNull()
     public static final com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ChildFragment.Companion Companion = null;
     private java.util.HashMap _$_findViewCache;
@@ -21,6 +20,15 @@ public final class ChildFragment extends com.doubleclick.marktinhome.BaseFragmen
     @org.jetbrains.annotations.NotNull()
     public final com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ChildFragmentArgs getParentCategory() {
         return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.google.android.material.floatingactionbutton.FloatingActionButton getAddChild() {
+        return null;
+    }
+    
+    public final void setAddChild(@org.jetbrains.annotations.NotNull()
+    com.google.android.material.floatingactionbutton.FloatingActionButton p0) {
     }
     
     @java.lang.Override()
@@ -44,18 +52,6 @@ public final class ChildFragment extends com.doubleclick.marktinhome.BaseFragmen
     java.lang.String param1, @org.jetbrains.annotations.NotNull()
     java.lang.String param2) {
         return null;
-    }
-    
-    @java.lang.Override()
-    public void onCreateOptionsMenu(@org.jetbrains.annotations.NotNull()
-    android.view.Menu menu, @org.jetbrains.annotations.NotNull()
-    android.view.MenuInflater inflater) {
-    }
-    
-    @java.lang.Override()
-    public boolean onOptionsItemSelected(@org.jetbrains.annotations.NotNull()
-    android.view.MenuItem item) {
-        return false;
     }
     
     public final void UplaodChild() {

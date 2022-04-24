@@ -18,6 +18,13 @@
             app:launchSingleTop="true"
             app:popEnterAnim="@anim/lefttoright"
             app:popExitAnim="@anim/righttoleft" />
+        <action
+            android:id="@+id/action_parentFragment_to_editFragment"
+            app:destination="@id/editFragment"
+            app:enterAnim="@anim/lefttoright"
+            app:exitAnim="@anim/righttoleft"
+            app:popEnterAnim="@anim/lefttoright"
+            app:popExitAnim="@anim/righttoleft" />
 
     </fragment>
     <fragment
@@ -40,8 +47,15 @@
         <action
             android:id="@+id/action_childFragment_to_uploadFragment"
             app:destination="@id/uploadFragment"
-            app:enterAnim="@anim/bounce"
-            app:exitAnim="@anim/zoomout"
+            app:enterAnim="@anim/righttoleft"
+            app:exitAnim="@anim/lefttoright"
+            app:popEnterAnim="@anim/righttoleft"
+            app:popExitAnim="@anim/lefttoright" />
+        <action
+            android:id="@+id/action_childFragment_to_editFragment"
+            app:destination="@id/editFragment"
+            app:enterAnim="@anim/lefttoright"
+            app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
             app:popExitAnim="@anim/righttoleft" />
     </fragment>
@@ -61,10 +75,35 @@
         <action
             android:id="@+id/action_uploadFragment_to_childFragment"
             app:destination="@id/childFragment"
-            app:enterAnim="@anim/zoomin"
-            app:exitAnim="@anim/zoomout"
-            app:popEnterAnim="@anim/zoomin"
-            app:popExitAnim="@anim/zoomout" />
+            app:enterAnim="@anim/righttoleft"
+            app:exitAnim="@anim/lefttoright"
+            app:popEnterAnim="@anim/righttoleft"
+            app:popExitAnim="@anim/lefttoright" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit">
+        <argument
+            android:name="id"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="type"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="order"
+            app:argType="string"
+            app:nullable="true" />
     </fragment>
 
 

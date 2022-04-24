@@ -6,13 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.doubleclick.marktinhome.R;
-import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -25,18 +24,13 @@ public final class FragmentChildBinding implements ViewBinding {
   public final RecyclerView ChildRecycler;
 
   @NonNull
-  public final MaterialToolbar materialToolbar;
-
-  @NonNull
-  public final Toolbar toolbar;
+  public final FloatingActionButton addChild;
 
   private FragmentChildBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView ChildRecycler, @NonNull MaterialToolbar materialToolbar,
-      @NonNull Toolbar toolbar) {
+      @NonNull RecyclerView ChildRecycler, @NonNull FloatingActionButton addChild) {
     this.rootView = rootView;
     this.ChildRecycler = ChildRecycler;
-    this.materialToolbar = materialToolbar;
-    this.toolbar = toolbar;
+    this.addChild = addChild;
   }
 
   @Override
@@ -72,20 +66,13 @@ public final class FragmentChildBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.materialToolbar;
-      MaterialToolbar materialToolbar = ViewBindings.findChildViewById(rootView, id);
-      if (materialToolbar == null) {
+      id = R.id.addChild;
+      FloatingActionButton addChild = ViewBindings.findChildViewById(rootView, id);
+      if (addChild == null) {
         break missingId;
       }
 
-      id = R.id.toolbar;
-      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
-      if (toolbar == null) {
-        break missingId;
-      }
-
-      return new FragmentChildBinding((ConstraintLayout) rootView, ChildRecycler, materialToolbar,
-          toolbar);
+      return new FragmentChildBinding((ConstraintLayout) rootView, ChildRecycler, addChild);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

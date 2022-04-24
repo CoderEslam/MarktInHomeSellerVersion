@@ -4,13 +4,16 @@ package com.doubleclick.marktinhome.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatEditText;
-import androidx.appcompat.widget.AppCompatImageView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.devlomi.record_view.RecordButton;
+import com.devlomi.record_view.RecordView;
 import com.doubleclick.marktinhome.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -21,15 +24,46 @@ public final class LayoutChatBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final AppCompatEditText etTextMessage;
+  public final ImageView attachFile;
 
   @NonNull
-  public final AppCompatImageView sendText;
+  public final ConstraintLayout constraintLayout;
 
-  private LayoutChatBinding(@NonNull ConstraintLayout rootView,
-      @NonNull AppCompatEditText etTextMessage, @NonNull AppCompatImageView sendText) {
+  @NonNull
+  public final ImageView emotion;
+
+  @NonNull
+  public final EditText etTextMessage;
+
+  @NonNull
+  public final ConstraintLayout layoutText;
+
+  @NonNull
+  public final RecordView recordView;
+
+  @NonNull
+  public final RelativeLayout relativeLayout;
+
+  @NonNull
+  public final RecordButton sendRecord;
+
+  @NonNull
+  public final ImageView sendText;
+
+  private LayoutChatBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView attachFile,
+      @NonNull ConstraintLayout constraintLayout, @NonNull ImageView emotion,
+      @NonNull EditText etTextMessage, @NonNull ConstraintLayout layoutText,
+      @NonNull RecordView recordView, @NonNull RelativeLayout relativeLayout,
+      @NonNull RecordButton sendRecord, @NonNull ImageView sendText) {
     this.rootView = rootView;
+    this.attachFile = attachFile;
+    this.constraintLayout = constraintLayout;
+    this.emotion = emotion;
     this.etTextMessage = etTextMessage;
+    this.layoutText = layoutText;
+    this.recordView = recordView;
+    this.relativeLayout = relativeLayout;
+    this.sendRecord = sendRecord;
     this.sendText = sendText;
   }
 
@@ -60,19 +94,62 @@ public final class LayoutChatBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.attach_file;
+      ImageView attachFile = ViewBindings.findChildViewById(rootView, id);
+      if (attachFile == null) {
+        break missingId;
+      }
+
+      id = R.id.constraintLayout;
+      ConstraintLayout constraintLayout = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.emotion;
+      ImageView emotion = ViewBindings.findChildViewById(rootView, id);
+      if (emotion == null) {
+        break missingId;
+      }
+
       id = R.id.et_text_message;
-      AppCompatEditText etTextMessage = ViewBindings.findChildViewById(rootView, id);
+      EditText etTextMessage = ViewBindings.findChildViewById(rootView, id);
       if (etTextMessage == null) {
         break missingId;
       }
 
+      id = R.id.layout_text;
+      ConstraintLayout layoutText = ViewBindings.findChildViewById(rootView, id);
+      if (layoutText == null) {
+        break missingId;
+      }
+
+      id = R.id.recordView;
+      RecordView recordView = ViewBindings.findChildViewById(rootView, id);
+      if (recordView == null) {
+        break missingId;
+      }
+
+      id = R.id.relativeLayout;
+      RelativeLayout relativeLayout = ViewBindings.findChildViewById(rootView, id);
+      if (relativeLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.sendRecord;
+      RecordButton sendRecord = ViewBindings.findChildViewById(rootView, id);
+      if (sendRecord == null) {
+        break missingId;
+      }
+
       id = R.id.sendText;
-      AppCompatImageView sendText = ViewBindings.findChildViewById(rootView, id);
+      ImageView sendText = ViewBindings.findChildViewById(rootView, id);
       if (sendText == null) {
         break missingId;
       }
 
-      return new LayoutChatBinding((ConstraintLayout) rootView, etTextMessage, sendText);
+      return new LayoutChatBinding((ConstraintLayout) rootView, attachFile, constraintLayout,
+          emotion, etTextMessage, layoutText, recordView, relativeLayout, sendRecord, sendText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

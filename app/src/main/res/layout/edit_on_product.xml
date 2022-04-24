@@ -40,7 +40,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout3"
+                android:id="@+id/textInputLayoutEditOrder"
                 style="@style/StyleInputLayout"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
@@ -98,7 +98,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/cancel"
-                app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutEditOrder" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

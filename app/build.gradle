@@ -108,6 +108,15 @@ dependencies {
     implementation 'com.facebook.shimmer:shimmer:0.5.0'
     implementation 'com.todkars:shimmer-recyclerview:0.4.1'
 
+//for AppCompat use:
+    //appcompat v26+ is higly recommended to support older APIs
+    implementation 'com.devlomi.record-view:record-view:2.0.1'
 
+    implementation 'io.supercharge:shimmerlayout:2.1.0'
+
+    implementation 'com.vanniktech:emoji:0.8.0'
+    implementation "com.vanniktech:emoji-google:0.8.0"
+//    //for AndroidX use:
+//    implementation 'com.github.3llomi:RecordView:3.1.1'
 
 }

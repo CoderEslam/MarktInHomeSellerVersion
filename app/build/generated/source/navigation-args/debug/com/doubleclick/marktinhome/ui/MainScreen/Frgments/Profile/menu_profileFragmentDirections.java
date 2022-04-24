@@ -20,11 +20,6 @@ public class menu_profileFragmentDirections {
   }
 
   @NonNull
-  public static NavDirections actionMenuProfileToAllUserFragment() {
-    return new ActionOnlyNavDirections(R.id.action_menu_profile_to_allUserFragment);
-  }
-
-  @NonNull
   public static NavDirections actionMenuProfileToGroupFragment() {
     return new ActionOnlyNavDirections(R.id.action_menu_profile_to_groupFragment);
   }

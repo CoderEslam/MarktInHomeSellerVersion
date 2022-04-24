@@ -5,16 +5,20 @@ import static com.doubleclick.marktinhome.Model.Constantes.CHAT_LIST;
 import static com.doubleclick.marktinhome.Model.Constantes.USER;
 
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
 import com.doubleclick.UserInter;
+import com.doubleclick.marktinhome.BaseApplication;
 import com.doubleclick.marktinhome.Model.ChatList;
 import com.doubleclick.marktinhome.Model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
@@ -55,32 +59,23 @@ public class UserRepository extends BaseRepository {
         });
     }
 
-    public void getAllUserChat() {
-        reference.child(CHAT_LIST).child(myId).addValueEventListener(new ValueEventListener() {
+    public void getAllUser(String s) {
+        Query query = FirebaseDatabase.getInstance().getReference(USER).orderByChild("name").startAt(s).endAt(s + "\uf8ff");
+        query.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Log.e("chatList", myId);
                 try {
                     if (isNetworkConnected()) {
                         if (dataSnapshot.exists()) {
                             userArrayList.clear();
-//                            for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                            ChatList chatList = dataSnapshot.getValue(ChatList.class);
-                            Log.e("snapshot", chatList.toString());
-                            reference.child(USER).child(chatList.getId()).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
-                                @Override
-                                public void onComplete(@NonNull Task<DataSnapshot> task) {
-                                    if (task.getResult().exists()) {
-                                        Log.e("Userrr", task.getResult().getValue(User.class).toString());
-                                        DataSnapshot dataSnapshot = task.getResult();
-                                        User user = dataSnapshot.getValue(User.class);
-                                        userArrayList.add(user);
-                                        userInter.AllUser(userArrayList);
-                                    }
+                            for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                                User user = snapshot.getValue(User.class);
+                                assert user != null;
+                                if (!user.getId().equals(myId)) {
+                                    userArrayList.add(user);
                                 }
-                            });
-//                            }
-
+                            }
+                            userInter.AllUser(userArrayList);
                         }
                     } else {
                         ShowToast("No Internet Connection");

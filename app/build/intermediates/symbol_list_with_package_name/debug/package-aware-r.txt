@@ -62,6 +62,8 @@ anim top_in
 anim top_out
 anim zoomin
 anim zoomout
+animator basket_path
+animator delete_mic_animation
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -445,6 +447,7 @@ attr counterOverflowTextAppearance
 attr counterOverflowTextColor
 attr counterTextAppearance
 attr counterTextColor
+attr counter_time_color
 attr cropBorderColor
 attr cropBorderWidth
 attr cropFocusHeight
@@ -525,7 +528,11 @@ attr elevationOverlayAccentColor
 attr elevationOverlayColor
 attr elevationOverlayEnabled
 attr emailColor
+attr emojiBackground
 attr emojiCompatEnabled
+attr emojiDivider
+attr emojiIcons
+attr emojiSize
 attr enableEdgeToEdge
 attr endIconCheckable
 attr endIconContentDescription
@@ -896,6 +903,7 @@ attr mentionColor
 attr menu
 attr menuGravity
 attr methodName
+attr mic_icon
 attr mimeType
 attr minHeight
 attr minHideDelay
@@ -1070,20 +1078,25 @@ attr shapeAppearanceLargeComponent
 attr shapeAppearanceMediumComponent
 attr shapeAppearanceOverlay
 attr shapeAppearanceSmallComponent
+attr shimmer_angle
+attr shimmer_animation_duration
 attr shimmer_auto_start
 attr shimmer_base_alpha
 attr shimmer_base_color
 attr shimmer_clip_to_children
+attr shimmer_color
 attr shimmer_colored
 attr shimmer_direction
 attr shimmer_dropoff
 attr shimmer_duration
 attr shimmer_fixed_height
 attr shimmer_fixed_width
+attr shimmer_gradient_center_color_width
 attr shimmer_height_ratio
 attr shimmer_highlight_alpha
 attr shimmer_highlight_color
 attr shimmer_intensity
+attr shimmer_mask_width
 attr shimmer_recycler_auto_start
 attr shimmer_recycler_base_alpha
 attr shimmer_recycler_base_color
@@ -1109,6 +1122,7 @@ attr shimmer_recycler_width_ratio
 attr shimmer_repeat_count
 attr shimmer_repeat_delay
 attr shimmer_repeat_mode
+attr shimmer_reverse_animation
 attr shimmer_shape
 attr shimmer_tilt
 attr shimmer_width_ratio
@@ -1127,6 +1141,11 @@ attr singleChoiceItemLayout
 attr singleLine
 attr singleSelection
 attr sizePercent
+attr slide_to_cancel_arrow
+attr slide_to_cancel_arrow_color
+attr slide_to_cancel_bounds
+attr slide_to_cancel_margin_right
+attr slide_to_cancel_text
 attr sliderStyle
 attr snackbarButtonStyle
 attr snackbarStyle
@@ -1538,6 +1557,9 @@ color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
 color checkbox_themeable_attribute_color
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
 color colorTxt
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
@@ -1593,6 +1615,14 @@ color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
 color dot
+color emoji_background
+color emoji_black
+color emoji_divider
+color emoji_gray20
+color emoji_gray70
+color emoji_grey_900
+color emoji_icons
+color emoji_white
 color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
@@ -2093,6 +2123,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color shimmer_color
 color status_bar
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
@@ -2273,6 +2304,8 @@ dimen dp_10
 dimen dp_4
 dimen dp_40
 dimen dp_72
+dimen emoji_grid_view_column_width
+dimen emoji_grid_view_spacing
 dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
@@ -2692,6 +2725,26 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen padding1
+dimen padding10
+dimen padding12
+dimen padding15
+dimen padding16
+dimen padding2
+dimen padding20
+dimen padding24
+dimen padding26
+dimen padding3
+dimen padding30
+dimen padding32
+dimen padding35
+dimen padding40
+dimen padding46
+dimen padding5
+dimen padding50
+dimen padding56
+dimen padding7
+dimen padding8
 dimen padding_left
 dimen sliding_pane_detail_pane_width
 dimen sp_12
@@ -2819,16 +2872,21 @@ drawable add_circle
 drawable arrow_down
 drawable arrow_up
 drawable asl_pathmorph_drawer
+drawable attach_file
 drawable avd_hide_password
 drawable avd_pathmorph_drawer_arrow_to_hamburger
 drawable avd_pathmorph_drawer_hamburger_to_arrow
 drawable avd_show_password
+drawable back1
+drawable back2
 drawable bg_btn_dis
 drawable bg_btn_nor
 drawable bg_btn_pre
 drawable bg_edit
 drawable bg_image
 drawable bg_product_activity
+drawable bg_text_chat
+drawable bg_white
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2887,6 +2945,72 @@ drawable dot_white
 drawable e
 drawable edit
 drawable email
+drawable emoji_backspace
+drawable emoji_google_category_activities
+drawable emoji_google_category_animalsandnature
+drawable emoji_google_category_flags
+drawable emoji_google_category_foodanddrink
+drawable emoji_google_category_objects
+drawable emoji_google_category_smileysandpeople
+drawable emoji_google_category_symbols
+drawable emoji_google_category_travelandplaces
+drawable emoji_google_sheet_0
+drawable emoji_google_sheet_1
+drawable emoji_google_sheet_10
+drawable emoji_google_sheet_11
+drawable emoji_google_sheet_12
+drawable emoji_google_sheet_13
+drawable emoji_google_sheet_14
+drawable emoji_google_sheet_15
+drawable emoji_google_sheet_16
+drawable emoji_google_sheet_17
+drawable emoji_google_sheet_18
+drawable emoji_google_sheet_19
+drawable emoji_google_sheet_2
+drawable emoji_google_sheet_20
+drawable emoji_google_sheet_21
+drawable emoji_google_sheet_22
+drawable emoji_google_sheet_23
+drawable emoji_google_sheet_24
+drawable emoji_google_sheet_25
+drawable emoji_google_sheet_26
+drawable emoji_google_sheet_27
+drawable emoji_google_sheet_28
+drawable emoji_google_sheet_29
+drawable emoji_google_sheet_3
+drawable emoji_google_sheet_30
+drawable emoji_google_sheet_31
+drawable emoji_google_sheet_32
+drawable emoji_google_sheet_33
+drawable emoji_google_sheet_34
+drawable emoji_google_sheet_35
+drawable emoji_google_sheet_36
+drawable emoji_google_sheet_37
+drawable emoji_google_sheet_38
+drawable emoji_google_sheet_39
+drawable emoji_google_sheet_4
+drawable emoji_google_sheet_40
+drawable emoji_google_sheet_41
+drawable emoji_google_sheet_42
+drawable emoji_google_sheet_43
+drawable emoji_google_sheet_44
+drawable emoji_google_sheet_45
+drawable emoji_google_sheet_46
+drawable emoji_google_sheet_47
+drawable emoji_google_sheet_48
+drawable emoji_google_sheet_49
+drawable emoji_google_sheet_5
+drawable emoji_google_sheet_50
+drawable emoji_google_sheet_51
+drawable emoji_google_sheet_52
+drawable emoji_google_sheet_53
+drawable emoji_google_sheet_54
+drawable emoji_google_sheet_55
+drawable emoji_google_sheet_6
+drawable emoji_google_sheet_7
+drawable emoji_google_sheet_8
+drawable emoji_google_sheet_9
+drawable emoji_recent
 drawable error
 drawable feed_bg
 drawable filter_list
@@ -2905,6 +3029,7 @@ drawable ic_action
 drawable ic_aperture
 drawable ic_arrow_back_24
 drawable ic_back
+drawable ic_baseline_insert_emoticon_24
 drawable ic_bubble_big_colorpickerview_skydoves
 drawable ic_bubble_small_colorpickerview_skydoves
 drawable ic_button
@@ -2971,6 +3096,7 @@ drawable ic_video
 drawable icon_app
 drawable image
 drawable img
+drawable keyboard
 drawable logout
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
@@ -3023,6 +3149,12 @@ drawable parson
 drawable password
 drawable path1306
 drawable person
+drawable recv_basket_animated
+drawable recv_bg_mic
+drawable recv_ic_arrow
+drawable recv_ic_delete
+drawable recv_ic_mic
+drawable recv_ic_mic_white
 drawable round_rectangle_blue
 drawable round_rectangle_white
 drawable sample_footer_loading
@@ -3172,7 +3304,7 @@ id action_RichFragment_to_TableFragment
 id action_TableFragment_to_RichFragment
 id action_ViewMoreFragment_to_productFragment
 id action_addressFragment_to_homeFragment
-id action_allUserFragment_to_callUsFragment
+id action_allUsersFragment_to_chatFragment
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -3180,7 +3312,9 @@ id action_bar_root
 id action_bar_spinner
 id action_bar_subtitle
 id action_bar_title
-id action_callUsFragment_to_allUserFragment
+id action_chatListFragment_to_allUsersFragment
+id action_chatListFragment_to_chatFragment
+id action_childFragment_to_editFragment
 id action_childFragment_to_parentFragment
 id action_childFragment_to_uploadFragment
 id action_container
@@ -3198,7 +3332,6 @@ id action_menu_Cart_to_menu_profile
 id action_menu_Cart_to_orderSelllerFragment
 id action_menu_divider
 id action_menu_presenter
-id action_menu_profile_to_allUserFragment
 id action_menu_profile_to_groupFragment
 id action_menu_profile_to_joinUsFragment
 id action_menu_profile_to_recentOrderFragment
@@ -3207,6 +3340,7 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_parentFragment_to_childFragment
+id action_parentFragment_to_editFragment
 id action_productFragment_to_commentsFragment
 id action_productFragment_to_homeFragment
 id action_recentOrderFragment_to_productFragment
@@ -3221,6 +3355,7 @@ id action_uploadFragment_to_childFragment
 id actions
 id activity_chooser_view_content
 id add
+id addChild
 id addGroup
 id addImages
 id addParent
@@ -3239,7 +3374,7 @@ id aligned
 id all
 id allStates
 id allUser
-id allUserFragment
+id allUsersFragment
 id alphaSlideBar
 id alphaSlideBarFrame
 id always
@@ -3258,6 +3393,7 @@ id arro_imageview
 id arrow
 id asConfigured
 id async
+id attach_file
 id auto
 id autoComplete
 id autoCompleteToEnd
@@ -3271,6 +3407,7 @@ id banner_sliderImageView
 id banner_slier_view_pager
 id barrier
 id baseline
+id basket_img
 id beginOnFirstDraw
 id beginning
 id bestChoice
@@ -3309,7 +3446,6 @@ id bubble
 id buttonPanel
 id cache_measures
 id callMeasure
-id callUsFragment
 id camera
 id cancel
 id cancel_action
@@ -3332,7 +3468,10 @@ id chains
 id chart_bottom_Column
 id chart_top_Line
 id chat
+id chatFragment
+id chatListFragment
 id chatRecycler
+id chatUser
 id chat_nav
 id checkbox
 id checked
@@ -3367,6 +3506,7 @@ id constraint
 id constraintLayout
 id constraintLayout10
 id constraintLayout11
+id constraintLayout12
 id constraintLayout2
 id constraintLayout3
 id constraintLayout4
@@ -3386,6 +3526,7 @@ id contiguous
 id continuousVelocity
 id coordinator
 id cos
+id counter_tv
 id counterclockwise
 id cover
 id cover_layout
@@ -3443,6 +3584,7 @@ id east
 id edit
 id editAddress
 id editCover
+id editFragment
 id editName
 id editOption
 id editPhone
@@ -3454,6 +3596,11 @@ id editorder
 id edt_user_name
 id elastic
 id email
+id emojiPopupWindowSkinPopupContainer
+id emojiViewDivider
+id emojiViewPager
+id emojiViewTab
+id emotion
 id end
 id endToStart
 id end_padder
@@ -3491,6 +3638,7 @@ id frost
 id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
+id glowing_mic
 id gone
 id google
 id graph
@@ -3618,6 +3766,7 @@ id labeled
 id last
 id lastPrice
 id layout
+id layout_text
 id left
 id leftToRight
 id left_to_right
@@ -3679,7 +3828,6 @@ id masked
 id masker
 id match_constraint
 id match_parent
-id materialToolbar
 id material_clock_display
 id material_clock_face
 id material_clock_hand
@@ -3802,6 +3950,7 @@ id parent
 id parentFragment
 id parentPanel
 id parentRelative
+id parent_layout
 id parent_matrix
 id password
 id password_toggle
@@ -3848,9 +3997,11 @@ id ratio
 id recentOrder
 id recentOrderFragment
 id recentSearch
+id recordView
 id rectangle
 id rectangles
 id recycler
+id relativeLayout
 id restart
 id reverse
 id reverseSawtooth
@@ -3862,6 +4013,7 @@ id right_side
 id right_to_left
 id rootLayout
 id rootRL
+id root_view
 id rounded
 id row_index_key
 id rr
@@ -3890,6 +4042,7 @@ id search_go_btn
 id search_mag_icon
 id search_plate
 id search_src_text
+id search_users
 id search_voice_btn
 id selectCover
 id selectImage
@@ -3898,11 +4051,13 @@ id select_dialog_listview
 id selected
 id selection_type
 id send
+id sendRecord
 id sendText
 id send_email
 id share
 id sharedValueSet
 id sharedValueUnset
+id shimmer_layout
 id shortcut
 id showCustom
 id showHome
@@ -3914,6 +4069,7 @@ id skip
 id skipCollapsed
 id skipped
 id slide
+id slide_to_cancel
 id sliding_pane_detail_container
 id sliding_pane_layout
 id snackbar_action
@@ -3983,13 +4139,13 @@ id text2
 id textEnd
 id textInputLayout
 id textInputLayout2
-id textInputLayout3
 id textInputLayout4
 id textInputLayout5
 id textInputLayout6
 id textInputLayout7
 id textInputLayout8
 id textInputLayout9
+id textInputLayoutEditOrder
 id textMessage
 id textSpacerNoButtons
 id textSpacerNoTitle
@@ -4254,15 +4410,21 @@ layout design_text_input_start_icon
 layout dialog_colorpicker_colorpickerview_skydoves
 layout each_item
 layout edit_on_product
+layout emoji_adapter_item
+layout emoji_popup_window_skin
+layout emoji_view
+layout emoji_view_category
 layout flag_bubble_colorpickerview_skydoves
 layout fragment_address
 layout fragment_all_groups
-layout fragment_all_user
-layout fragment_call_us
+layout fragment_all_users
 layout fragment_cart
+layout fragment_chat
+layout fragment_chat_list
 layout fragment_child
 layout fragment_comments
 layout fragment_connct_us
+layout fragment_edit
 layout fragment_edit_hyperlink
 layout fragment_edit_table
 layout fragment_editor_menu
@@ -4396,6 +4558,7 @@ layout popupwindow
 layout product_ratings_layout
 layout quick_view_load_more
 layout recent_search_layout
+layout record_view_layout
 layout recyclerview_shimmer_item_grid
 layout recyclerview_shimmer_item_list
 layout recyclerview_shimmer_viewholder_layout
@@ -4427,10 +4590,10 @@ layout top_deals
 layout tradmark_layout
 layout upload_progress_layout
 layout user_chat_layout
+layout user_chat_layout_shimmer
 layout v_product_recyclerview
 layout view_color_palette
 layout widget_navigation_drawer
-menu add_item
 menu menu_bottom
 menu menu_groups
 menu option_group
@@ -4456,6 +4619,9 @@ raw loading
 raw loading2
 raw loading_new
 raw online_shopping
+raw record_error
+raw record_finished
+raw record_start
 raw shopping
 raw shopping_cart
 string Continue
@@ -4548,6 +4714,7 @@ string customer_name
 string customer_phone
 string custommer_address
 string default_web_client_id
+string define_emoji
 string delete
 string description
 string easy_to_hundel
@@ -4559,6 +4726,16 @@ string edit_profile
 string edit_table
 string ellipsis
 string email
+string emoji_backspace
+string emoji_category_recent
+string emoji_google_category_activities
+string emoji_google_category_animalsandnature
+string emoji_google_category_flags
+string emoji_google_category_foodanddrink
+string emoji_google_category_objects
+string emoji_google_category_smileysandpeople
+string emoji_google_category_symbols
+string emoji_google_category_travelandplaces
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -4596,6 +4773,16 @@ string i_have_already_account
 string icon_content_description
 string item_view_role_description
 string keywords
+string library_emoji_author
+string library_emoji_isOpenSource
+string library_emoji_libraryDescription
+string library_emoji_libraryName
+string library_emoji_libraryVersion
+string library_emoji_libraryWebsite
+string library_emoji_licenseId
+string library_emoji_owner
+string library_emoji_repositoryLink
+string library_emoji_year
 string load_end
 string load_failed
 string loading
@@ -4737,6 +4924,7 @@ string top_deals
 string totalPrice
 string total_sales
 string trademark
+string type_a_message
 string type_here
 string typehere
 string uplaod
@@ -4758,6 +4946,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style AppTheme
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -5786,6 +5975,7 @@ style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_SocialView
 style Widget_Support_CoordinatorLayout
+style emoji_fade_animation_style
 style popupwindow_anim_style
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
@@ -5851,6 +6041,11 @@ styleable DialogFragmentNavigator android_name
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
 styleable DrawerLayout elevation
 styleable ElasticDrawer edMaxAnimationDuration edMenuBackground edMenuSize edPosition edTouchBezelSize
+styleable EmojiAutoCompleteTextView emojiSize
+styleable EmojiButton emojiSize
+styleable EmojiEditText emojiSize
+styleable EmojiMultiAutoCompleteTextView emojiSize
+styleable EmojiTextView emojiSize
 styleable ExtendedFloatingActionButton collapsedSize elevation extendMotionSpec hideMotionSpec showMotionSpec shrinkMotionSpec
 styleable ExtendedFloatingActionButton_Behavior_Layout behavior_autoHide behavior_autoShrink
 styleable FloatingActionButton android_enabled backgroundTint backgroundTintMode borderWidth elevation ensureMinTouchTargetSize fabCustomSize fabSize hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec useCompatPadding
@@ -5935,6 +6130,8 @@ styleable PropertySet android_visibility android_alpha layout_constraintTag moti
 styleable RadialViewGroup materialCircleRadius
 styleable RangeSlider minSeparation values
 styleable RaySpeedometer sv_degreeBetweenMark sv_rayColor sv_rayMarkWidth sv_speedBackgroundColor sv_withEffects
+styleable RecordButton mic_icon
+styleable RecordView counter_time_color slide_to_cancel_arrow slide_to_cancel_arrow_color slide_to_cancel_bounds slide_to_cancel_margin_right slide_to_cancel_text
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
 styleable RecyclerView android_orientation android_clipToPadding android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
 styleable SNavigationDrawer HamMenuIconSize HamMenuIconTintColor HamMenuItemSemiTransparentColor appbarColor appbarTitleTextColor appbarTitleTextSize navigationDrawerBackgroundColor primaryMenuItemTextColor primaryMenuItemTextSize secondaryMenuItemTextColor secondaryMenuItemTextSize
@@ -5944,6 +6141,7 @@ styleable SearchView android_focusable android_maxWidth android_inputType androi
 styleable ShapeAppearance cornerFamily cornerFamilyBottomLeft cornerFamilyBottomRight cornerFamilyTopLeft cornerFamilyTopRight cornerSize cornerSizeBottomLeft cornerSizeBottomRight cornerSizeTopLeft cornerSizeTopRight
 styleable ShapeableImageView contentPadding contentPaddingBottom contentPaddingEnd contentPaddingLeft contentPaddingRight contentPaddingStart contentPaddingTop shapeAppearance shapeAppearanceOverlay strokeColor strokeWidth
 styleable ShimmerFrameLayout shimmer_auto_start shimmer_base_alpha shimmer_base_color shimmer_clip_to_children shimmer_colored shimmer_direction shimmer_dropoff shimmer_duration shimmer_fixed_height shimmer_fixed_width shimmer_height_ratio shimmer_highlight_alpha shimmer_highlight_color shimmer_intensity shimmer_repeat_count shimmer_repeat_delay shimmer_repeat_mode shimmer_shape shimmer_tilt shimmer_width_ratio
+styleable ShimmerLayout shimmer_auto_start shimmer_angle shimmer_animation_duration shimmer_color shimmer_gradient_center_color_width shimmer_mask_width shimmer_reverse_animation
 styleable ShimmerRecyclerView shimmer_recycler_auto_start shimmer_recycler_base_alpha shimmer_recycler_base_color shimmer_recycler_clip_to_children shimmer_recycler_colored shimmer_recycler_direction shimmer_recycler_dropoff shimmer_recycler_duration shimmer_recycler_fixed_height shimmer_recycler_fixed_width shimmer_recycler_height_ratio shimmer_recycler_highlight_alpha shimmer_recycler_highlight_color shimmer_recycler_intensity shimmer_recycler_item_count shimmer_recycler_layout shimmer_recycler_repeat_count shimmer_recycler_repeat_delay shimmer_recycler_repeat_mode shimmer_recycler_shape shimmer_recycler_tilt shimmer_recycler_width_ratio
 styleable SignInButton buttonSize colorScheme scopeUris
 styleable Slider android_enabled android_value android_stepSize android_valueFrom android_valueTo haloColor haloRadius labelBehavior labelStyle thumbColor thumbElevation thumbRadius thumbStrokeColor thumbStrokeWidth tickColor tickColorActive tickColorInactive tickVisible trackColor trackColorActive trackColorInactive trackHeight

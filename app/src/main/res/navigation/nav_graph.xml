@@ -64,13 +64,6 @@
             app:popEnterAnim="@anim/lefttoright"
             app:popExitAnim="@anim/righttoleft" />
         <action
-            android:id="@+id/action_menu_profile_to_allUserFragment"
-            app:destination="@id/allUserFragment"
-            app:enterAnim="@anim/lefttoright"
-            app:exitAnim="@anim/righttoleft"
-            app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft" />
-        <action
             android:id="@+id/action_menu_profile_to_groupFragment"
             app:destination="@id/menu_group" />
     </fragment>

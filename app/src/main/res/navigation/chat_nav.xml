@@ -3,37 +3,51 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/chat_nav"
-    app:startDestination="@id/allUserFragment">
+    app:startDestination="@id/chatListFragment">
 
 
     <fragment
-        android:id="@+id/allUserFragment"
-        android:name="com.doubleclick.marktinhome.ui.MainScreen.Chat.AllUserFragment"
-        android:label="fragment_all_user"
-        tools:layout="@layout/fragment_all_user">
-
+        android:id="@+id/chatListFragment"
+        android:name="com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatListFragment"
+        android:label="ChatListFragment"
+        tools:layout="@layout/fragment_chat_list">
         <action
-            android:id="@+id/action_allUserFragment_to_callUsFragment"
-            app:destination="@id/callUsFragment"
+            android:id="@+id/action_chatListFragment_to_allUsersFragment"
+            app:destination="@id/allUsersFragment"
+            app:enterAnim="@anim/lefttoright"
+            app:exitAnim="@anim/righttoleft"
+            app:popEnterAnim="@anim/lefttoright"
+            app:popExitAnim="@anim/righttoleft" />
+        <action
+            android:id="@+id/action_chatListFragment_to_chatFragment"
+            app:destination="@id/chatFragment"
             app:enterAnim="@anim/lefttoright"
             app:exitAnim="@anim/righttoleft"
             app:popEnterAnim="@anim/lefttoright"
             app:popExitAnim="@anim/righttoleft" />
     </fragment>
     <fragment
-        android:id="@+id/callUsFragment"
-        android:name="com.doubleclick.marktinhome.ui.MainScreen.Chat.callUsFragment"
-        android:label="fragment_call_us"
-        tools:layout="@layout/fragment_call_us">
+        android:id="@+id/allUsersFragment"
+        android:name="com.doubleclick.marktinhome.ui.MainScreen.Chat.AllUsersFragment"
+        android:label="fragment_all_users"
+        tools:layout="@layout/fragment_all_users">
+        <action
+            android:id="@+id/action_allUsersFragment_to_chatFragment"
+            app:destination="@id/chatFragment"
+            app:enterAnim="@anim/lefttoright"
+            app:exitAnim="@anim/righttoleft"
+            app:popEnterAnim="@anim/lefttoright"
+            app:popExitAnim="@anim/righttoleft" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat">
         <argument
             android:name="user"
             app:argType="com.doubleclick.marktinhome.Model.User" />
-        <action
-            android:id="@+id/action_callUsFragment_to_allUserFragment"
-            app:destination="@id/allUserFragment"
-            app:enterAnim="@anim/lefttoright"
-            app:exitAnim="@anim/righttoleft"
-            app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft" />
     </fragment>
+
+
 </navigation>
