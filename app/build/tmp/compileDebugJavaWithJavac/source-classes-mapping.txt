@@ -126,11 +126,8 @@ com/doubleclick/ViewModel/OrderViewModel.java
  com.doubleclick.ViewModel.OrderViewModel
 com/doubleclick/marktinhome/databinding/LayoutChatBinding.java
  com.doubleclick.marktinhome.databinding.LayoutChatBinding
-com/doubleclick/marktinhome/Repository/ChatReopsitory.java
- com.doubleclick.marktinhome.Repository.ChatReopsitory
- com.doubleclick.marktinhome.Repository.ChatReopsitory$1
- com.doubleclick.marktinhome.Repository.ChatReopsitory$2
- com.doubleclick.marktinhome.Repository.ChatReopsitory$Chats
+com/doubleclick/marktinhome/databinding/FragmentChatBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentChatBinding
 com/doubleclick/marktinhome/Adapters/ImagesGroupAdapter.java
  com.doubleclick.marktinhome.Adapters.ImagesGroupAdapter
  com.doubleclick.marktinhome.Adapters.ImagesGroupAdapter$ImagesGroupViewHolder
@@ -219,8 +216,10 @@ com/doubleclick/marktinhome/ui/MainScreen/Comments/CommentsFragmentArgs.java
  com.doubleclick.marktinhome.ui.MainScreen.Comments.CommentsFragmentArgs$Builder
 com/doubleclick/marktinhome/Adapters/SliderAdapter.java
  com.doubleclick.marktinhome.Adapters.SliderAdapter
-com/doubleclick/marktinhome/databinding/ActivityAddBinding.java
- com.doubleclick.marktinhome.databinding.ActivityAddBinding
+com/doubleclick/marktinhome/Repository/ChatReopsitory.java
+ com.doubleclick.marktinhome.Repository.ChatReopsitory
+ com.doubleclick.marktinhome.Repository.ChatReopsitory$1
+ com.doubleclick.marktinhome.Repository.ChatReopsitory$Chats
 com/doubleclick/marktinhome/Views/PhotoView/OnOutsidePhotoTapListener.java
  com.doubleclick.marktinhome.Views.PhotoView.OnOutsidePhotoTapListener
 com/doubleclick/Servies/NotificationReceiver.java
@@ -643,8 +642,8 @@ com/doubleclick/marktinhome/ui/ProductActivity/productFragmentArgs.java
  com.doubleclick.marktinhome.ui.ProductActivity.productFragmentArgs
  com.doubleclick.marktinhome.ui.ProductActivity.productFragmentArgs$1
  com.doubleclick.marktinhome.ui.ProductActivity.productFragmentArgs$Builder
-com/doubleclick/marktinhome/databinding/FragmentProductBinding.java
- com.doubleclick.marktinhome.databinding.FragmentProductBinding
+com/doubleclick/ViewModel/ChatViewModel.java
+ com.doubleclick.ViewModel.ChatViewModel
 com/doubleclick/marktinhome/databinding/FragmentAddressBinding.java
  com.doubleclick.marktinhome.databinding.FragmentAddressBinding
 com/doubleclick/marktinhome/Model/Sender.java
@@ -1038,7 +1037,7 @@ com/doubleclick/marktinhome/Adapters/ParentAdapter.java
  com.doubleclick.marktinhome.Adapters.ParentAdapter
  com.doubleclick.marktinhome.Adapters.ParentAdapter$1
  com.doubleclick.marktinhome.Adapters.ParentAdapter$ParentViewHolder
-com/doubleclick/ViewModel/ChatViewModel.java
- com.doubleclick.ViewModel.ChatViewModel
-com/doubleclick/marktinhome/databinding/FragmentChatBinding.java
- com.doubleclick.marktinhome.databinding.FragmentChatBinding
+com/doubleclick/marktinhome/databinding/ActivityAddBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityAddBinding
+com/doubleclick/marktinhome/databinding/FragmentProductBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentProductBinding

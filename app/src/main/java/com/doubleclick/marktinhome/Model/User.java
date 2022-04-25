@@ -20,6 +20,16 @@ public class User implements Serializable {
     private String image;
     private String token;
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    private String status;
+
 
     public String getToken() {
         return token;

@@ -1,8 +1,10 @@
 package com.doubleclick.marktinhome.ui.MainScreen.Chat
 
 import android.Manifest
+import android.animation.Animator
 import android.annotation.SuppressLint
 import android.app.Activity
+import android.app.ProgressDialog
 import android.content.Context
 import android.content.ContextWrapper
 import android.content.Intent
@@ -20,27 +22,30 @@ import android.text.TextWatcher
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewAnimationUtils
 import android.view.ViewGroup
+import android.webkit.MimeTypeMap
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.app.ActivityCompat
-import androidx.core.view.size
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.devlomi.record_view.OnRecordListener
 import com.devlomi.record_view.RecordButton
 import com.devlomi.record_view.RecordView
+import com.doubleclick.Api.APIService
 import com.doubleclick.ViewModel.ChatViewModel
 import com.doubleclick.marktinhome.Adapters.BaseMessageAdapter
-import com.doubleclick.marktinhome.Adapters.ChatAdapter
 import com.doubleclick.marktinhome.BaseFragment
-import com.doubleclick.marktinhome.Model.Chat
-import com.doubleclick.marktinhome.Model.Constantes
+import com.doubleclick.marktinhome.Model.*
 import com.doubleclick.marktinhome.Model.Constantes.CHATS
 import com.doubleclick.marktinhome.Model.Constantes.USER
+import com.doubleclick.marktinhome.Notifications.Client
 import com.doubleclick.marktinhome.R
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationRequest
@@ -48,15 +53,23 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.tasks.Continuation
+import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.Task
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.*
 import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.StorageReference
+import com.google.firebase.storage.StorageTask
 import com.google.firebase.storage.UploadTask
 import com.vanniktech.emoji.EmojiPopup
-import kotlinx.android.synthetic.main.fragment_menu_profile.*
+import de.hdodenhof.circleimageview.CircleImageView
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import java.io.File
 import java.io.IOException
 import java.util.*
-import kotlin.collections.ArrayList
 
 
 class ChatFragment : BaseFragment(), OnMapReadyCallback {
@@ -86,6 +99,16 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
     private lateinit var emotion: ImageView
     private lateinit var attach_file: ImageView
     private lateinit var layout_text: ConstraintLayout
+    private lateinit var profile_image: CircleImageView
+    private lateinit var continer_attacht: ConstraintLayout;
+    private lateinit var username: TextView;
+    private lateinit var status: TextView;
+    private lateinit var apiService: APIService
+
+    private lateinit var storageReference: StorageReference
+    var fileType: kotlin.String? = null
+
+
     private var chats: ArrayList<Chat> = ArrayList();
     var audioPath: String? = null
     private var cklicked = true
@@ -106,6 +129,8 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
         val view = inflater.inflate(R.layout.fragment_chat, container, false)
         sendText = view.findViewById(R.id.sendText);
         et_text_message = view.findViewById(R.id.et_text_message);
+        continer_attacht = view.findViewById(R.id.continer_attacht);
+        apiService = Client.getClient("https://fcm.googleapis.com/").create(APIService::class.java)
 //        supportMapFragment = (requireActivity().supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?)!!
         chatRecycler = view.findViewById(R.id.chatRecycler);
         chatRecycler.setHasFixedSize(true);
@@ -115,13 +140,23 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
         layout_text = view.findViewById(R.id.layout_text)
         attach_file = view.findViewById(R.id.attach_file);
         sendRecord.setRecordView(recordView)
+        file = view.findViewById(R.id.file)
+        location = view.findViewById(R.id.location)
+        image = view.findViewById(R.id.image)
+        video = view.findViewById(R.id.video)
+        contact = view.findViewById(R.id.contact)
+        profile_image = view.findViewById(R.id.profile_image)
+        username = view.findViewById(R.id.username)
+        status = view.findViewById(R.id.status)
         chatViewModel = ViewModelProvider(this)[ChatViewModel::class.java]
         chatViewModel.ChatById(user.user.id)
+        Glide.with(requireContext()).load(user.user.image).into(profile_image)
+        username.text = user.user.name;
+        status.text = user.user.status;
 
-        chatViewModel.myChat.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
-//            chats = it;
-
-        })
+//        chatViewModel.myChat.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
+////            chats = it;
+//        })
         sendText.setOnClickListener {
             sentMessage(et_text_message.text.toString().trim(), "text")
         }
@@ -147,6 +182,13 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
                 emojiPopup.dismiss()
                 cklicked = true
                 emotion.setImageDrawable(resources.getDrawable(R.drawable.ic_baseline_insert_emoticon_24))
+            }
+        }
+        attach_file.setOnClickListener {
+            if (continer_attacht.visibility == View.GONE) {
+                showLayout()
+            } else {
+                hideLayout()
             }
         }
         et_text_message.addTextChangedListener(object : TextWatcher {
@@ -253,7 +295,25 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
             Toast.makeText(context, "Deleted", Toast.LENGTH_SHORT).show()
             Log.d("RecordView", "Basket Animation Finished")
         }
-
+        image.setOnClickListener {
+            fileType = "image"
+            openFiles("image/*")
+        }
+        video.setOnClickListener {
+            fileType = "video"
+            openFiles("video/*")
+        }
+        file.setOnClickListener {
+            fileType = "file"
+            openFiles("application/*")
+        }
+        location.setOnClickListener {
+            getMyLocation()
+        }
+        contact.setOnClickListener {
+            val intent = Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI)
+            startActivityForResult(intent, PICK_CONTACT)
+        }
         return view;
     }
 
@@ -269,6 +329,7 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
         reference.child(CHATS).child(id).updateChildren(map)
         et_text_message.setText("")
         makeChatList();
+        sendNotifiaction(text);
     }
 
     private fun makeChatList() {
@@ -398,6 +459,7 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
 //                            map["StatusMessage"] = "Uploaded" // "Delivered" , "beenSeen"
                             reference.child(CHATS).child(id).setValue(map)
                             makeChatList()
+                            sendNotifiaction("audio")
                         }
                     }
                 }
@@ -412,14 +474,17 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
         mLocationRequest.priority = LocationRequest.PRIORITY_HIGH_ACCURACY
     }
 
+    override fun getFileExtension(uri: Uri?): String? {
+        val contentResolver = requireContext().contentResolver
+        val mimeTypeMap = MimeTypeMap.getSingleton()
+        return mimeTypeMap.getExtensionFromMimeType(contentResolver.getType(uri!!))
+    }
+
     @Deprecated("Deprecated in Java")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == REQUEST_CODE && resultCode == Activity.RESULT_OK && data != null && data.data != null) {
-//            sendingData.sendFileData(
-//                requireContext(), FirebaseAuth.getInstance().currentUser!!
-//                    .uid, user.user!!.id, data.data, fileType
-//            )
+            sendFileData(data.data!!)
         } else if (requestCode == PICK_CONTACT && resultCode == Activity.RESULT_OK) {
             PickConact(data!!.data)
         }
@@ -450,4 +515,115 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
         }
     }
 
+    private fun showLayout() {
+        val radius = Math.max(continer_attacht.width, continer_attacht.height).toFloat()
+        val animator =
+            ViewAnimationUtils.createCircularReveal(
+                continer_attacht,
+                continer_attacht.left,
+                continer_attacht.top,
+                0f,
+                radius * 2
+            )
+        animator.duration = 500
+        continer_attacht.visibility = View.VISIBLE
+        animator.start()
+    }
+
+
+    private fun hideLayout() {
+        val radius = Math.max(continer_attacht.width, continer_attacht.height).toFloat()
+        val animator =
+            ViewAnimationUtils.createCircularReveal(
+                continer_attacht,
+                continer_attacht.left,
+                continer_attacht.top,
+                radius * 2,
+                0f
+            )
+        animator.duration = 500
+        animator.addListener(object : Animator.AnimatorListener {
+            override fun onAnimationStart(animation: Animator) {}
+            override fun onAnimationEnd(animation: Animator) {
+                continer_attacht.visibility = View.GONE
+            }
+
+            override fun onAnimationCancel(animation: Animator) {}
+            override fun onAnimationRepeat(animation: Animator) {}
+        })
+        animator.start()
+    }
+
+    fun sendFileData(uri: Uri) {
+        val uploadTask: StorageTask<*>
+        val progressDialog = ProgressDialog(context)
+        progressDialog.setMessage("Uploading")
+        progressDialog.show()
+        if (uri.toString() != "") {
+            storageReference =
+                FirebaseStorage.getInstance().getReference("/Media/Recording/ChatData")
+            val fileReference = storageReference.child(
+                System.currentTimeMillis().toString() + "." + getFileExtension(uri)
+            )
+            uploadTask = fileReference.putFile(uri)
+            uploadTask.continueWithTask(Continuation { task ->
+                if (!task.isSuccessful) {
+                    throw task.exception!!
+                }
+                fileReference.downloadUrl
+            }).addOnCompleteListener(OnCompleteListener<Uri> { task ->
+                if (task.isSuccessful) {
+                    val url = task.result.toString()
+                    val hashMap = HashMap<String, Any>()
+                    val id = reference.push().key.toString()
+                    hashMap["sender"] = myId
+                    hashMap["receiver"] = user.user.id
+                    hashMap["message"] = url
+                    hashMap["type"] = fileType.toString()
+                    hashMap["id"] = id
+                    hashMap["date"] = Date().time
+//                    hashMap["StatusMessage"] = "Uploaded" // "Stored" , "beenSeen"
+                    reference.child(CHATS).child(id).setValue(hashMap)
+                    progressDialog.dismiss()
+                    makeChatList()
+                    sendNotifiaction("file")
+                } else {
+                    Toast.makeText(context, "Failed!", Toast.LENGTH_SHORT).show()
+                    progressDialog.dismiss()
+                }
+            }).addOnFailureListener { e ->
+                Toast.makeText(context, e.message, Toast.LENGTH_SHORT).show()
+                progressDialog.dismiss()
+            }
+        } else {
+            Toast.makeText(context, "No image selected", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun sendNotifiaction(message: String) {
+        val data = Data(
+            myId,
+            R.mipmap.ic_launcher,
+            "${user.user.name.toString()}: $message",
+            "New Message",
+            user.user.id.toString()
+        )
+        val sender = Sender(data, user.user.token.toString())
+        apiService.sendNotification(sender)
+            .enqueue(object : Callback<MyResponse> {
+                override fun onResponse(
+                    call: Call<MyResponse>,
+                    response: Response<MyResponse>
+                ) {
+                    if (response.code() == 200) {
+                        if (response.body()!!.success != 1) {
+                            Toast.makeText(context, "Failed!", Toast.LENGTH_SHORT)
+                                .show()
+                        }
+                    }
+                }
+
+                override fun onFailure(call: Call<MyResponse>, t: Throwable) {}
+            })
+    }
 }

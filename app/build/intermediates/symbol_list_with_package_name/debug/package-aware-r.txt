@@ -3412,6 +3412,7 @@ id backgroundCV
 id backgroundIV
 id banner_sliderImageView
 id banner_slier_view_pager
+id bar_layout
 id barrier
 id baseline
 id basket_img
@@ -3526,6 +3527,7 @@ id constraintLayout6
 id constraintLayout7
 id constraintLayout8
 id constraintLayout9
+id contact
 id container
 id containerCV
 id containerLL
@@ -3534,6 +3536,7 @@ id containerStatistics
 id content
 id contentPanel
 id contiguous
+id continer_attacht
 id continuousVelocity
 id coordinator
 id cos
@@ -3828,6 +3831,7 @@ id loadingAnimView
 id loading_progress
 id loading_text
 id locale
+id location
 id location_layout
 id location_lotte
 id login
@@ -3997,6 +4001,7 @@ id productImages
 id productLastPrice
 id productName
 id productPrice
+id profile_image
 id progress
 id progressBar
 id progressBar1
@@ -4123,6 +4128,7 @@ id startVertical
 id staticLayout
 id staticPostLayout
 id statistices
+id status
 id status_bar_latest_event_content
 id stepOneFragment
 id stepThreeFragment
@@ -4936,6 +4942,7 @@ string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string new_user
 string off
+string offline
 string ok
 string on
 string option

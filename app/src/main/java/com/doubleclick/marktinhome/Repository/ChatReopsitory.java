@@ -31,29 +31,29 @@ public class ChatReopsitory extends BaseRepository {
     }
 
     public void getChats(String userId) {
-        reference.child(CHATS).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<DataSnapshot> task) {
-                try {
-                    if (isNetworkConnected()) {
-                        DataSnapshot snapshot = task.getResult();
-                        if (snapshot.exists()) {
-                            for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                                Chat chat = dataSnapshot.getValue(Chat.class);
-                                assert chat != null;
-                                if ((chat.getReceiver().equals(myId) && chat.getSender().equals(userId)) || (chat.getSender().equals(myId) && chat.getReceiver().equals(userId))) {
-                                    myChats.add(chat);
-                                    Log.e("chat", chat.toString());
-                                }
-                            }
-                            chats.getChat(myChats);
-                        }
-                    }
-                } catch (Exception e) {
-                    Log.e("ExceptionChat", e.getMessage());
-                }
-            }
-        });
+//        reference.child(CHATS).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+//            @Override
+//            public void onComplete(@NonNull Task<DataSnapshot> task) {
+//                try {
+//                    if (isNetworkConnected()) {
+//                        DataSnapshot snapshot = task.getResult();
+//                        if (snapshot.exists()) {
+//                            for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+//                                Chat chat = dataSnapshot.getValue(Chat.class);
+//                                assert chat != null;
+//                                if ((chat.getReceiver().equals(myId) && chat.getSender().equals(userId)) || (chat.getSender().equals(myId) && chat.getReceiver().equals(userId))) {
+//                                    myChats.add(chat);
+//                                    Log.e("chat", chat.toString());
+//                                }
+//                            }
+//                            chats.getChat(myChats);
+//                        }
+//                    }
+//                } catch (Exception e) {
+//                    Log.e("ExceptionChat", e.getMessage());
+//                }
+//            }
+//        });
 
         reference.child(CHATS).addChildEventListener(new ChildEventListener() {
             @Override
