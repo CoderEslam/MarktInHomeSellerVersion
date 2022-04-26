@@ -73,10 +73,8 @@ com/doubleclick/marktinhome/Views/colorpickerview/AlphaTileView.java
  com.doubleclick.marktinhome.Views.colorpickerview.AlphaTileView
 com/doubleclick/marktinhome/databinding/LayoutSmallProductBinding.java
  com.doubleclick.marktinhome.databinding.LayoutSmallProductBinding
-com/doubleclick/marktinhome/ui/MainScreen/Groups/GroupsActivity.java
- com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity
- com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity$1
- com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity$2
+com/doubleclick/ViewModel/PostsViewModel.java
+ com.doubleclick.ViewModel.PostsViewModel
 com/doubleclick/marktinhome/Views/colorpickerview/listeners/ColorEnvelopeListener.java
  com.doubleclick.marktinhome.Views.colorpickerview.listeners.ColorEnvelopeListener
 com/doubleclick/RichEditor/mricheditor/RichEditorCallback.java
@@ -300,8 +298,9 @@ com/doubleclick/marktinhome/Views/socialtextview/SocialTextView.java
  com.doubleclick.marktinhome.Views.socialtextview.SocialTextView$LinkItem
  com.doubleclick.marktinhome.Views.socialtextview.SocialTextView$LinkOptions
  com.doubleclick.marktinhome.Views.socialtextview.SocialTextView$OnLinkClickListener
-com/doubleclick/marktinhome/databinding/FragmentProductBinding.java
- com.doubleclick.marktinhome.databinding.FragmentProductBinding
+com/doubleclick/marktinhome/Adapters/ItemGroupsAdapter.java
+ com.doubleclick.marktinhome.Adapters.ItemGroupsAdapter
+ com.doubleclick.marktinhome.Adapters.ItemGroupsAdapter$ItemViewHolder
 com/doubleclick/marktinhome/databinding/OrdersBinding.java
  com.doubleclick.marktinhome.databinding.OrdersBinding
 com/doubleclick/marktinhome/databinding/PlayVoiceLeftBinding.java
@@ -517,9 +516,11 @@ com/doubleclick/marktinhome/Notifications/Client.java
  com.doubleclick.marktinhome.Notifications.Client
 com/doubleclick/marktinhome/Adapters/BaseMessageAdapter.java
  com.doubleclick.marktinhome.Adapters.BaseMessageAdapter
-com/doubleclick/marktinhome/Adapters/ItemGroupsAdapter.java
- com.doubleclick.marktinhome.Adapters.ItemGroupsAdapter
- com.doubleclick.marktinhome.Adapters.ItemGroupsAdapter$ItemViewHolder
+com/doubleclick/marktinhome/Repository/PostsRepository.java
+ com.doubleclick.marktinhome.Repository.PostsRepository
+ com.doubleclick.marktinhome.Repository.PostsRepository$1
+ com.doubleclick.marktinhome.Repository.PostsRepository$1$1
+ com.doubleclick.marktinhome.Repository.PostsRepository$PostInterface
 com/doubleclick/RichEditor/sample/RichEditorActivity.java
  com.doubleclick.RichEditor.sample.RichEditorActivity
  com.doubleclick.RichEditor.sample.RichEditorActivity$1
@@ -601,14 +602,10 @@ com/doubleclick/marktinhome/Adapters/AllCategoryAdapter.java
  com.doubleclick.marktinhome.Adapters.AllCategoryAdapter$TopViewHilder
 com/doubleclick/marktinhome/databinding/ItemAdvBinding.java
  com.doubleclick.marktinhome.databinding.ItemAdvBinding
-com/doubleclick/marktinhome/Adapters/ParentAdapter.java
- com.doubleclick.marktinhome.Adapters.ParentAdapter
- com.doubleclick.marktinhome.Adapters.ParentAdapter$1
- com.doubleclick.marktinhome.Adapters.ParentAdapter$ParentViewHolder
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/RecentOrderFragmentDirections.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections$1
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections$ActionRecentOrderFragmentToProductFragment
+com/doubleclick/marktinhome/databinding/FragmentProductBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentProductBinding
+com/doubleclick/marktinhome/Model/PostData.java
+ com.doubleclick.marktinhome.Model.PostData
 com/doubleclick/marktinhome/Views/carousellayoutmanager/ItemTransformation.java
  com.doubleclick.marktinhome.Views.carousellayoutmanager.ItemTransformation
 com/doubleclick/marktinhome/databinding/ImagesBinding.java
@@ -1065,17 +1062,24 @@ com/doubleclick/marktinhome/Repository/UserRepository.java
  com.doubleclick.marktinhome.Repository.UserRepository
  com.doubleclick.marktinhome.Repository.UserRepository$1
  com.doubleclick.marktinhome.Repository.UserRepository$2
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/RecentOrderFragmentDirections.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections$1
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections$ActionRecentOrderFragmentToProductFragment
+com/doubleclick/marktinhome/Adapters/ParentAdapter.java
+ com.doubleclick.marktinhome.Adapters.ParentAdapter
+ com.doubleclick.marktinhome.Adapters.ParentAdapter$1
+ com.doubleclick.marktinhome.Adapters.ParentAdapter$ParentViewHolder
 com/doubleclick/marktinhome/Adapters/GroupsAdapter.java
  com.doubleclick.marktinhome.Adapters.GroupsAdapter
  com.doubleclick.marktinhome.Adapters.GroupsAdapter$1
  com.doubleclick.marktinhome.Adapters.GroupsAdapter$2
+ com.doubleclick.marktinhome.Adapters.GroupsAdapter$3
+ com.doubleclick.marktinhome.Adapters.GroupsAdapter$3$1
  com.doubleclick.marktinhome.Adapters.GroupsAdapter$GroupViewHolder
-com/doubleclick/marktinhome/Model/PostData.java
- com.doubleclick.marktinhome.Model.PostData
-com/doubleclick/ViewModel/PostsViewModel.java
- com.doubleclick.ViewModel.PostsViewModel
-com/doubleclick/marktinhome/Repository/PostsRepository.java
- com.doubleclick.marktinhome.Repository.PostsRepository
- com.doubleclick.marktinhome.Repository.PostsRepository$1
- com.doubleclick.marktinhome.Repository.PostsRepository$1$1
- com.doubleclick.marktinhome.Repository.PostsRepository$PostInterface
+ com.doubleclick.marktinhome.Adapters.GroupsAdapter$GroupViewHolder$1
+com/doubleclick/marktinhome/ui/MainScreen/Groups/GroupsActivity.java
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity$1
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity$2
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity$PostViewHolder

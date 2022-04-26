@@ -24,7 +24,7 @@ MERGED from [com.vanniktech:emoji-google:0.8.0] C:\Users\eslam\.gradle\caches\tr
 MERGED from [com.vanniktech:emoji:0.8.0] C:\Users\eslam\.gradle\caches\transforms-3\6c45df736476c0daf326607767b3afc7\transformed\jetified-emoji-0.8.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\eslam\.gradle\caches\transforms-3\208fb426913b8815f9415bbf54507c82\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.1] C:\Users\eslam\.gradle\caches\transforms-3\05f1a0ad9fb750bdcd867eb76f91b5c4\transformed\navigation-runtime-ktx-2.4.1\AndroidManifest.xml:17:1-24:12
-MERGED from [com.firebaseui:firebase-ui-database:6.0.2] C:\Users\eslam\.gradle\caches\transforms-3\135c9d8bdbecf4ac6255a5dfeafbb178\transformed\jetified-firebase-ui-database-6.0.2\AndroidManifest.xml:2:1-13:12
+MERGED from [com.firebaseui:firebase-ui-database:6.2.0] C:\Users\eslam\.gradle\caches\transforms-3\1df92b2f019c11cfe8245b7339e7e78a\transformed\jetified-firebase-ui-database-6.2.0\AndroidManifest.xml:2:1-13:12
 MERGED from [com.github.chrisbanes.photoview:library:1.2.4] C:\Users\eslam\.gradle\caches\transforms-3\1f6a9ef6fdd6619fe23debcf83072a21\transformed\jetified-library-1.2.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\48efa7890f88f68677a41a943cedd30e\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:17:1-83:12
@@ -95,7 +95,7 @@ MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\eslam\.gradle\caches\transfo
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bf43bf088723e935a10dd94ae4eed90d\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\e221a4099d3caf5a3d3dc1998ecd20e5\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\2fdd66e0629e43f103890cb8b6068770\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.firebaseui:firebase-ui-common:6.0.2] C:\Users\eslam\.gradle\caches\transforms-3\7dfcce1fe31105538731b8710421a64c\transformed\jetified-firebase-ui-common-6.0.2\AndroidManifest.xml:2:1-11:12
+MERGED from [com.firebaseui:firebase-ui-common:6.2.0] C:\Users\eslam\.gradle\caches\transforms-3\247adebbe829fe1ff7ded53e7544fc0b\transformed\jetified-firebase-ui-common-6.2.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\eslam\.gradle\caches\transforms-3\831251845b32ef60d152a182df9229ef\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\eslam\.gradle\caches\transforms-3\5ff97af3136d87f6ca2873abb5e74dca\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\7c34ec237dbd8c82ec91c4b91572f46f\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -154,8 +154,8 @@ INJECTED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\M
 		ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
 ADDED from C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:6:5-67
-MERGED from [com.firebaseui:firebase-ui-database:6.0.2] C:\Users\eslam\.gradle\caches\transforms-3\135c9d8bdbecf4ac6255a5dfeafbb178\transformed\jetified-firebase-ui-database-6.0.2\AndroidManifest.xml:11:5-67
-MERGED from [com.firebaseui:firebase-ui-database:6.0.2] C:\Users\eslam\.gradle\caches\transforms-3\135c9d8bdbecf4ac6255a5dfeafbb178\transformed\jetified-firebase-ui-database-6.0.2\AndroidManifest.xml:11:5-67
+MERGED from [com.firebaseui:firebase-ui-database:6.2.0] C:\Users\eslam\.gradle\caches\transforms-3\1df92b2f019c11cfe8245b7339e7e78a\transformed\jetified-firebase-ui-database-6.2.0\AndroidManifest.xml:11:5-67
+MERGED from [com.firebaseui:firebase-ui-database:6.2.0] C:\Users\eslam\.gradle\caches\transforms-3\1df92b2f019c11cfe8245b7339e7e78a\transformed\jetified-firebase-ui-database-6.2.0\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-database:20.0.3] C:\Users\eslam\.gradle\caches\transforms-3\91f5c8d1c11bfaa58be7c8421ec72fe6\transformed\jetified-firebase-database-20.0.3\AndroidManifest.xml:26:5-67
@@ -558,8 +558,8 @@ MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\eslam\.gradle\caches\t
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\eslam\.gradle\caches\transforms-3\208fb426913b8815f9415bbf54507c82\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.1] C:\Users\eslam\.gradle\caches\transforms-3\05f1a0ad9fb750bdcd867eb76f91b5c4\transformed\navigation-runtime-ktx-2.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.1] C:\Users\eslam\.gradle\caches\transforms-3\05f1a0ad9fb750bdcd867eb76f91b5c4\transformed\navigation-runtime-ktx-2.4.1\AndroidManifest.xml:20:5-22:41
-MERGED from [com.firebaseui:firebase-ui-database:6.0.2] C:\Users\eslam\.gradle\caches\transforms-3\135c9d8bdbecf4ac6255a5dfeafbb178\transformed\jetified-firebase-ui-database-6.0.2\AndroidManifest.xml:7:5-9:41
-MERGED from [com.firebaseui:firebase-ui-database:6.0.2] C:\Users\eslam\.gradle\caches\transforms-3\135c9d8bdbecf4ac6255a5dfeafbb178\transformed\jetified-firebase-ui-database-6.0.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-database:6.2.0] C:\Users\eslam\.gradle\caches\transforms-3\1df92b2f019c11cfe8245b7339e7e78a\transformed\jetified-firebase-ui-database-6.2.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-database:6.2.0] C:\Users\eslam\.gradle\caches\transforms-3\1df92b2f019c11cfe8245b7339e7e78a\transformed\jetified-firebase-ui-database-6.2.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.chrisbanes.photoview:library:1.2.4] C:\Users\eslam\.gradle\caches\transforms-3\1f6a9ef6fdd6619fe23debcf83072a21\transformed\jetified-library-1.2.4\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.chrisbanes.photoview:library:1.2.4] C:\Users\eslam\.gradle\caches\transforms-3\1f6a9ef6fdd6619fe23debcf83072a21\transformed\jetified-library-1.2.4\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\48efa7890f88f68677a41a943cedd30e\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
@@ -700,8 +700,8 @@ MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\eslam\.gr
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\e221a4099d3caf5a3d3dc1998ecd20e5\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\2fdd66e0629e43f103890cb8b6068770\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\2fdd66e0629e43f103890cb8b6068770\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.firebaseui:firebase-ui-common:6.0.2] C:\Users\eslam\.gradle\caches\transforms-3\7dfcce1fe31105538731b8710421a64c\transformed\jetified-firebase-ui-common-6.0.2\AndroidManifest.xml:7:5-9:41
-MERGED from [com.firebaseui:firebase-ui-common:6.0.2] C:\Users\eslam\.gradle\caches\transforms-3\7dfcce1fe31105538731b8710421a64c\transformed\jetified-firebase-ui-common-6.0.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-common:6.2.0] C:\Users\eslam\.gradle\caches\transforms-3\247adebbe829fe1ff7ded53e7544fc0b\transformed\jetified-firebase-ui-common-6.2.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-common:6.2.0] C:\Users\eslam\.gradle\caches\transforms-3\247adebbe829fe1ff7ded53e7544fc0b\transformed\jetified-firebase-ui-common-6.2.0\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\eslam\.gradle\caches\transforms-3\831251845b32ef60d152a182df9229ef\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\eslam\.gradle\caches\transforms-3\831251845b32ef60d152a182df9229ef\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\eslam\.gradle\caches\transforms-3\5ff97af3136d87f6ca2873abb5e74dca\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41

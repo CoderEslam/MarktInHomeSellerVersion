@@ -4,14 +4,17 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.doubleclick.ViewModel.GroupViewModel;
@@ -23,6 +26,7 @@ import com.doubleclick.marktinhome.Model.PostsGroup;
 import com.doubleclick.marktinhome.R;
 import com.doubleclick.marktinhome.Views.socialtextview.SocialTextView;
 import com.doubleclick.marktinhome.ui.MainScreen.MainScreenActivity;
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.progressindicator.LinearProgressIndicator;
 import com.todkars.shimmer.ShimmerRecyclerView;
@@ -49,6 +53,7 @@ public class GroupsActivity extends AppCompatActivity {
     private ShimmerRecyclerView post;
     private GroupViewModel groupViewModel;
     private PostsViewModel postsViewModel;
+    private FirebaseRecyclerAdapter<PostsGroup, GroupsActivity.PostViewHolder> firebaseRecyclerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -138,4 +143,11 @@ public class GroupsActivity extends AppCompatActivity {
     }
 
 
+    public class PostViewHolder extends RecyclerView.ViewHolder {
+
+        public PostViewHolder(@NonNull View itemView) {
+            super(itemView);
+
+        }
+    }
 }

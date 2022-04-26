@@ -21,6 +21,7 @@ public class Constantes {
     public static final String CHAT_LIST = "chatList";
     public static final String GROUPS = "Groups";
     public static final String POSTS = "Posts";
+    public static final String LIKES = "Likes";
     public static final int TEXT_RIGHT = 10;
     public static final int VOICE_RIGHT = 20;
     public static final int CONTACT_RIGHT = 30;

@@ -117,7 +117,7 @@ dependencies {
 
     implementation 'com.vanniktech:emoji:0.8.0'
     implementation "com.vanniktech:emoji-google:0.8.0"
-
+    implementation 'com.firebaseui:firebase-ui-database:6.2.0'
     implementation('io.realm:android-adapters:3.0.0')
 
 }

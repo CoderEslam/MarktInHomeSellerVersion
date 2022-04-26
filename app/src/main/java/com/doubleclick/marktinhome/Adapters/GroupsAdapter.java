@@ -1,5 +1,7 @@
 package com.doubleclick.marktinhome.Adapters;
 
+import static com.doubleclick.marktinhome.Model.Constantes.LIKES;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -23,31 +25,43 @@ import com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutMan
 import com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselZoomPostLayoutListener;
 import com.doubleclick.marktinhome.Views.carousellayoutmanager.CenterScrollListener;
 import com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Created By Eslam Ghazy on 4/20/2022
  */
 public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewHolder> {
 
-    private ArrayList<PostData> postsGroups = new ArrayList<>();
+    private ArrayList<PostData> postsData;
+    private DatabaseReference reference;
+    String myId = Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid().toString();
+    private boolean LikeChecker = false;
 
-    public GroupsAdapter(ArrayList<PostData> postsGroups) {
-        this.postsGroups = postsGroups;
+    public GroupsAdapter(ArrayList<PostData> postsData) {
+        this.postsData = postsData;
     }
 
     @NonNull
     @Override
     public GroupViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        reference = FirebaseDatabase.getInstance().getReference();
         return new GroupViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_item_group, parent, false));
     }
 
     @Override
     public int getItemCount() {
-        return postsGroups.size();
+        return postsData.size();
     }
 
     @Override
@@ -76,24 +90,63 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
             });
             popupMenu.show();
         });
-        List<String> image = Arrays.asList(postsGroups.get(holder.getAdapterPosition()).getPostsGroup().getImages().replace("[", "").replace("]", "").replace(" ", "").split(","));
+        List<String> image = Arrays.asList(postsData.get(holder.getAdapterPosition()).getPostsGroup().getImages().replace("[", "").replace("]", "").replace(" ", "").split(","));
         holder.images.setAdapter(new ImagesGroupAdapter(image));
-        holder.namePublisher.setText(postsGroups.get(holder.getAdapterPosition()).getUser().getName());
-        holder.likeButton.setOnClickListener(new View.OnClickListener() {
+        holder.namePublisher.setText(postsData.get(holder.getAdapterPosition()).getUser().getName());
+
+        reference.child(LIKES).child(postsData.get(holder.getAdapterPosition()).getPostsGroup().getId()).addValueEventListener(new ValueEventListener() {
             @SuppressLint("UseCompatLoadingForDrawables")
             @Override
-            public void onClick(View v) {
-                holder.likeButton.setBackgroundDrawable(holder.itemView.getContext().getResources().getDrawable(R.drawable.add));
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.child(myId).exists()) {
+                    holder.likeButton.setBackgroundDrawable(holder.itemView.getContext().getResources().getDrawable(R.drawable.add));
+                } else {
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
             }
         });
+        holder.likeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LikeChecker = true;
+                reference.child(LIKES).addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        //CHECKING IF THE POST IS LIKED OR NOT.....
+                        if (LikeChecker == true) {
+                            if (dataSnapshot.child(postsData.get(holder.getAdapterPosition()).getPostsGroup().getId()).hasChild(myId)) {
+                                reference.child(LIKES).child(postsData.get(holder.getAdapterPosition()).getPostsGroup().getId()).child(myId).removeValue();
+                                LikeChecker = false;
+                            } else {
+                                reference.child(LIKES).child(postsData.get(holder.getAdapterPosition()).getPostsGroup().getId()).child(myId).setValue(true);
+                                LikeChecker = false;
+                            }
+                        }
+                    }
 
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+//                HashMap<String, Object> map = new HashMap<>();
+//                map.put(myId, true);
+//                reference.child(LIKES).child(postsData.get(holder.getAdapterPosition()).getPostsGroup().getId()).updateChildren(map);
+            }
+        });
+        holder.setLikeButtonStatus(postsData.get(holder.getAdapterPosition()).getPostsGroup().getId());
     }
 
     public class GroupViewHolder extends RecyclerView.ViewHolder {
         private RecyclerView images;
         private ConstraintLayout ConstraintLayoutimage_name;
-        private ImageView option;
-        private TextView namePublisher;
+        private ImageView option, like_img;
+        private TextView namePublisher, like_text;
         private LinearLayout likeButton, comment, share;
 
         public GroupViewHolder(@NonNull View itemView) {
@@ -105,12 +158,34 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
             comment = itemView.findViewById(R.id.comment);
             namePublisher = itemView.findViewById(R.id.namePublisher);
             share = itemView.findViewById(R.id.share);
+            like_img = itemView.findViewById(R.id.like_img);
+            like_text = itemView.findViewById(R.id.like_text);
             CarouselLayoutManager layoutManager = new CarouselLayoutManager(CarouselLayoutManager.HORIZONTAL);
             images.setLayoutManager(layoutManager);
             images.setHasFixedSize(true);
             images.addOnScrollListener(new CenterScrollListener());
             layoutManager.setPostLayoutListener(new CarouselZoomPostLayoutListener());
 
+        }
+
+        public void setLikeButtonStatus(String PostKey) {
+            reference.child(LIKES).addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    if (dataSnapshot.child(PostKey).hasChild(myId)) {
+                        like_text.setText(String.valueOf(dataSnapshot.child(postsData.get(getAdapterPosition()).getPostsGroup().getId()).getChildrenCount()));
+                        like_img.setImageResource(R.drawable.ic_like);
+                    } else {
+                        like_text.setText(String.valueOf(dataSnapshot.child(postsData.get(getAdapterPosition()).getPostsGroup().getId()).getChildrenCount()));
+                        like_img.setImageResource(R.drawable.add);
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
         }
     }
 }
