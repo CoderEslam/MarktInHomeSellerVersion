@@ -3099,6 +3099,7 @@ drawable icon_app
 drawable image
 drawable img
 drawable keyboard
+drawable like_thumb_up
 drawable logout
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay

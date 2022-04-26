@@ -1074,8 +1074,7 @@ com/doubleclick/marktinhome/Adapters/GroupsAdapter.java
  com.doubleclick.marktinhome.Adapters.GroupsAdapter
  com.doubleclick.marktinhome.Adapters.GroupsAdapter$1
  com.doubleclick.marktinhome.Adapters.GroupsAdapter$2
- com.doubleclick.marktinhome.Adapters.GroupsAdapter$3
- com.doubleclick.marktinhome.Adapters.GroupsAdapter$3$1
+ com.doubleclick.marktinhome.Adapters.GroupsAdapter$2$1
  com.doubleclick.marktinhome.Adapters.GroupsAdapter$GroupViewHolder
  com.doubleclick.marktinhome.Adapters.GroupsAdapter$GroupViewHolder$1
 com/doubleclick/marktinhome/ui/MainScreen/Groups/GroupsActivity.java

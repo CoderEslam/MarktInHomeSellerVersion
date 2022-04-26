@@ -3098,6 +3098,7 @@ int drawable icon_app 0x7f080141
 int drawable image 0x7f080142
 int drawable img 0x7f080143
 int drawable keyboard 0x7f080144
+int drawable like_thumb_up 0x7f08019b
 int drawable logout 0x7f080145
 int drawable m3_appbar_background 0x7f080146
 int drawable m3_popupmenu_background_overlay 0x7f080147

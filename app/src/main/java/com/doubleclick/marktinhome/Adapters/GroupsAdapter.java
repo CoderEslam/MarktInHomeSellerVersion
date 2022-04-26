@@ -93,23 +93,6 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
         List<String> image = Arrays.asList(postsData.get(holder.getAdapterPosition()).getPostsGroup().getImages().replace("[", "").replace("]", "").replace(" ", "").split(","));
         holder.images.setAdapter(new ImagesGroupAdapter(image));
         holder.namePublisher.setText(postsData.get(holder.getAdapterPosition()).getUser().getName());
-
-        reference.child(LIKES).child(postsData.get(holder.getAdapterPosition()).getPostsGroup().getId()).addValueEventListener(new ValueEventListener() {
-            @SuppressLint("UseCompatLoadingForDrawables")
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot.child(myId).exists()) {
-                    holder.likeButton.setBackgroundDrawable(holder.itemView.getContext().getResources().getDrawable(R.drawable.add));
-                } else {
-
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
         holder.likeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -134,9 +117,6 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
 
                     }
                 });
-//                HashMap<String, Object> map = new HashMap<>();
-//                map.put(myId, true);
-//                reference.child(LIKES).child(postsData.get(holder.getAdapterPosition()).getPostsGroup().getId()).updateChildren(map);
             }
         });
         holder.setLikeButtonStatus(postsData.get(holder.getAdapterPosition()).getPostsGroup().getId());
@@ -173,11 +153,11 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     if (dataSnapshot.child(PostKey).hasChild(myId)) {
-                        like_text.setText(String.valueOf(dataSnapshot.child(postsData.get(getAdapterPosition()).getPostsGroup().getId()).getChildrenCount()));
-                        like_img.setImageResource(R.drawable.ic_like);
+                        like_text.setText(String.format("%s Like", String.valueOf(dataSnapshot.child(postsData.get(getAdapterPosition()).getPostsGroup().getId()).getChildrenCount())));
+                        like_img.setImageResource(R.drawable.like_thumb_up);
                     } else {
-                        like_text.setText(String.valueOf(dataSnapshot.child(postsData.get(getAdapterPosition()).getPostsGroup().getId()).getChildrenCount()));
-                        like_img.setImageResource(R.drawable.add);
+                        like_text.setText(String.format("%s Like", String.valueOf(dataSnapshot.child(postsData.get(getAdapterPosition()).getPostsGroup().getId()).getChildrenCount())));
+                        like_img.setImageResource(R.drawable.ic_like);
                     }
                 }
 
