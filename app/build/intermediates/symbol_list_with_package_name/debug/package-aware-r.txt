@@ -3519,6 +3519,7 @@ id constraintLayout
 id constraintLayout10
 id constraintLayout11
 id constraintLayout12
+id constraintLayout13
 id constraintLayout2
 id constraintLayout3
 id constraintLayout4
@@ -3563,7 +3564,9 @@ id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
 id delete
+id deleteForme
 id deleteOption
+id deleteforeveryone
 id deltaRelative
 id dependency_ordering
 id description
@@ -3581,8 +3584,7 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
-id downloadImage
-id downloadVideo
+id download
 id downloadVoice
 id dragAnticlockwise
 id dragClockwise
@@ -3925,6 +3927,7 @@ id name
 id nameContact
 id nameMark
 id nameOrder
+id namePublisher
 id nav_controller_view_tag
 id nav_graph
 id nav_host_fragment
@@ -3959,7 +3962,9 @@ id onAttachStateChangeListener
 id onDateChanged
 id onInterceptTouchReturnSwipe
 id openDrawer
+id optins
 id option
+id options
 id order
 id orderImage
 id orderSelllerFragment
@@ -4636,6 +4641,7 @@ layout v_product_recyclerview
 layout view_color_palette
 layout widget_navigation_drawer
 menu menu_bottom
+menu menu_chat
 menu menu_groups
 menu option_group
 menu option_tradmark
@@ -4771,7 +4777,10 @@ string custommer_address
 string default_web_client_id
 string define_emoji
 string delete
+string delete_for_everyone
+string delete_for_me
 string description
+string download
 string easy_to_hundel
 string edit
 string edit_hyperlink

@@ -2,6 +2,7 @@ package com.doubleclick.marktinhome.Repository;
 
 import static com.doubleclick.marktinhome.BaseApplication.isNetworkConnected;
 import static com.doubleclick.marktinhome.Model.Constantes.GROUPS;
+import static com.doubleclick.marktinhome.Model.Constantes.USER;
 
 import android.util.Log;
 
@@ -10,6 +11,7 @@ import androidx.annotation.NonNull;
 import com.doubleclick.GroupInterface;
 import com.doubleclick.marktinhome.Model.Group;
 import com.doubleclick.marktinhome.Model.GroupData;
+import com.doubleclick.marktinhome.Model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
@@ -24,7 +26,7 @@ public class GroupRepository extends BaseRepository {
     private GroupInterface groupInterface;
     private ArrayList<Group> myGroups = new ArrayList<>();
     private ArrayList<Group> allGroups = new ArrayList<>();
-    private GroupData groupData;
+    private GroupData groupData = new GroupData();
 
     public GroupRepository(GroupInterface groupInterface) {
         this.groupInterface = groupInterface;
@@ -82,21 +84,29 @@ public class GroupRepository extends BaseRepository {
     }
 
     public void getGroupDataById(String id) {
-        Log.e("iddddddddddddddd",id);
         reference.child(GROUPS).child(id).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DataSnapshot> task) {
                 try {
                     if (isNetworkConnected()) {
                         if (task.getResult().exists()) {
-                                Group group = task.getResult().getValue(Group.class);
-                                groupData = new GroupData(group);
-                                Log.e("fffffffffffffff",groupData.toString());
-                            groupInterface.groupData(groupData);
+                            Group group = task.getResult().getValue(Group.class);
+                            assert group != null;
+                            groupData.setGroup(group);
+                            reference.child(USER).child(group.getCreatedBy()).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+                                @Override
+                                public void onComplete(@NonNull Task<DataSnapshot> task) {
+                                    User user = task.getResult().getValue(User.class);
+//                                    ShowToast(user.getName() + "    " + user.getId());
+                                    groupData.setUser(user);
+                                    Log.e("groupData", groupData.toString());
+                                    groupInterface.groupData(groupData);
+                                }
+                            });
                         }
                     }
                 } catch (Exception e) {
-                    Log.e("Exception", e.getMessage());
+                    Log.e("ExceptionGroupRep", e.getMessage());
                 }
             }
         });

@@ -10,12 +10,14 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.widget.PopupMenu;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -32,38 +34,46 @@ import com.doubleclick.marktinhome.Views.PhotoView.PhotoView;
  */
 public class ImageViewHolder extends RecyclerView.ViewHolder {
     public PhotoView imageView;
-    public ImageView download;
+    public ImageView optins;
     private ConstraintLayout ContinnerImage;
 
     public ImageViewHolder(@NonNull View itemView) {
         super(itemView);
         imageView = itemView.findViewById(R.id.image);
-        download = itemView.findViewById(R.id.downloadImage);
+        optins = itemView.findViewById(R.id.optins);
         ContinnerImage = itemView.findViewById(R.id.ContinnerImage);
     }
 
     public void ShowImage(Chat chat, int position) {
-        if (chat.getMessage().equals("")) {
-            download.setVisibility(View.VISIBLE);
-            ContinnerImage.setEnabled(false);
-        } else {
-            ContinnerImage.setEnabled(true);
-            download.setVisibility(View.GONE);
-            Glide.with(itemView.getContext()).load(Uri.parse(chat.getMessage())).into(imageView);
-        }
-
-        download.setOnClickListener(new View.OnClickListener() {
+        Glide.with(itemView.getContext()).load(Uri.parse(chat.getMessage())).into(imageView);
+        optins.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View v) {
-                if (chat.getMessage().equals("") || chat.getMessage() == null) {
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                        try {
-                            download(chat);
-                        } catch (Exception e) {
-                            e.printStackTrace();
+                PopupMenu popupMenu = new PopupMenu(imageView.getContext(), v);
+                popupMenu.getMenuInflater().inflate(R.menu.menu_chat, popupMenu.getMenu());
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        int id = item.getItemId();
+                        if (R.id.deleteforeveryone == id) {
+                            Toast.makeText(itemView.getContext(), "deleteforeveryone", Toast.LENGTH_LONG).show();
                         }
+                        if (R.id.deleteForme == id) {
+                            Toast.makeText(itemView.getContext(), "deleteForme", Toast.LENGTH_LONG).show();
+                        }
+                        if (R.id.download == id) {
+                            try {
+                                download(chat);
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        return true;
                     }
-                }
+                });
+                popupMenu.show();
 
             }
         });
@@ -85,7 +95,7 @@ public class ImageViewHolder extends RecyclerView.ViewHolder {
                 request.allowScanningByMediaScanner();// if you want to be available from media players
                 DownloadManager manager = (DownloadManager) itemView.getContext().getSystemService(DOWNLOAD_SERVICE);
                 Uri uri = manager.getUriForDownloadedFile(manager.enqueue(request));
-                Log.e("ImageURI",uri.toString());
+                Log.e("ImageURI", uri.toString());
             } catch (IllegalStateException | NullPointerException e) {
                 Log.e("ExeptionImage", e.getMessage());
             }

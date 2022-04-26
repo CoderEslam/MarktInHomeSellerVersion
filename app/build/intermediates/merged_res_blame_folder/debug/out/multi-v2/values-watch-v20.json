@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\9ee6bbab7a31f4be9ababc07bf296564\\transformed\\jetified-play-services-auth-20.1.0\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\92f7093ba88374251dfed936a2ddebd2\\transformed\\jetified-play-services-auth-20.1.0\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\2ef18d2063123929ab2f45d98d255bc5\\transformed\\appcompat-1.4.1\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\208fb426913b8815f9415bbf54507c82\\transformed\\appcompat-1.4.1\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

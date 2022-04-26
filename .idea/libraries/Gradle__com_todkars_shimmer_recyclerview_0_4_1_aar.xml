@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.todkars:shimmer-recyclerview:0.4.1@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0a94b93731d47b97300c506e3aa4bf45/transformed/jetified-shimmer-recyclerview-0.4.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9ad13c51bacadda3c94c49ed59882ee8/transformed/jetified-shimmer-recyclerview-0.4.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0a94b93731d47b97300c506e3aa4bf45/transformed/jetified-shimmer-recyclerview-0.4.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0a94b93731d47b97300c506e3aa4bf45/transformed/jetified-shimmer-recyclerview-0.4.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0a94b93731d47b97300c506e3aa4bf45/transformed/jetified-shimmer-recyclerview-0.4.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9ad13c51bacadda3c94c49ed59882ee8/transformed/jetified-shimmer-recyclerview-0.4.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9ad13c51bacadda3c94c49ed59882ee8/transformed/jetified-shimmer-recyclerview-0.4.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9ad13c51bacadda3c94c49ed59882ee8/transformed/jetified-shimmer-recyclerview-0.4.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -126,4 +126,7 @@
     <string name="contact">contact</string>
     <string name="video">video</string>
     <string name="offline">offline</string>
+    <string name="download">download</string>
+    <string name="delete_for_me">delete for me</string>
+    <string name="delete_for_everyone">delete for everyone</string>
 </resources>

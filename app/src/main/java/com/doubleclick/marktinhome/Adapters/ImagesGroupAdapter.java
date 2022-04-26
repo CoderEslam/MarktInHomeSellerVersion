@@ -15,19 +15,20 @@ import com.doubleclick.marktinhome.R;
 import com.doubleclick.marktinhome.Views.PhotoView.PhotoView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created By Eslam Ghazy on 4/20/2022
  */
 public class ImagesGroupAdapter extends RecyclerView.Adapter<ImagesGroupAdapter.ImagesGroupViewHolder> {
 
-    private ArrayList<String> images = new ArrayList<>();
+    private List<String> images = new ArrayList<>();
 
     private ArrayList<Uri> uris = new ArrayList<>();
-    private String type;
+    private String type = "";
 
 
-    public ImagesGroupAdapter(ArrayList<String> images) {
+    public ImagesGroupAdapter(List<String> images) {
         this.images = images;
     }
 
@@ -56,7 +57,6 @@ public class ImagesGroupAdapter extends RecyclerView.Adapter<ImagesGroupAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull ImagesGroupViewHolder holder, int position) {
-        Log.e("clipDataOO", uris.toString());
         if (type.equals("uri")) {
             Log.e("clipDataII", uris.toString());
             holder.image.setImageURI(uris.get(holder.getAdapterPosition()));

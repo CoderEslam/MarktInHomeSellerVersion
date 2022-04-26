@@ -3,6 +3,7 @@ plugins {
     id 'com.google.gms.google-services'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'realm-android'
     id 'kotlin-android-extensions'
 //    id "androidx.navigation.safeargs.kotlin" غلط
     id("androidx.navigation.safeargs")
@@ -116,7 +117,7 @@ dependencies {
 
     implementation 'com.vanniktech:emoji:0.8.0'
     implementation "com.vanniktech:emoji-google:0.8.0"
-//    //for AndroidX use:
-//    implementation 'com.github.3llomi:RecordView:3.1.1'
+
+    implementation('io.realm:android-adapters:3.0.0')
 
 }

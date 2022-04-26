@@ -13,6 +13,7 @@ import android.widget.Toast;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.multidex.MultiDex;
 
+import com.doubleclick.marktinhome.RealmDatabase.MyRealmMigration;
 import com.google.firebase.database.FirebaseDatabase;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.MultiplePermissionsReport;
@@ -22,6 +23,10 @@ import com.vanniktech.emoji.EmojiManager;
 import com.vanniktech.emoji.google.GoogleEmojiProvider;
 
 import java.util.List;
+
+import io.realm.Realm;
+import io.realm.RealmConfiguration;
+import io.realm.exceptions.RealmMigrationNeededException;
 
 /**
  * Created By Eslam Ghazy on 3/1/2022
@@ -38,6 +43,19 @@ public class BaseApplication extends Application {
         super.onCreate();
         context = getApplicationContext();
         EmojiManager.install(new GoogleEmojiProvider());
+
+        Realm.init(this); // context, usually an Activity or Application
+        RealmConfiguration config = new RealmConfiguration.Builder()
+                .allowQueriesOnUiThread(true)
+                .allowWritesOnUiThread(true)
+                .migration(new MyRealmMigration())
+//                .deleteRealmIfMigrationNeeded()
+                .build();
+        Realm realm = Realm.getInstance(config);
+        realm.beginTransaction();
+
+
+
         createNotificationChannel();
         notificationManager = NotificationManagerCompat.from(this);
         FirebaseDatabase.getInstance().setPersistenceEnabled(false);

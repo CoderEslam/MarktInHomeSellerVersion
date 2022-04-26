@@ -11,6 +11,7 @@ public class Chat {
     private String receiver;
     private long date;
     private String id;
+    private String StatusMessage;
 
     public Chat() {
     }

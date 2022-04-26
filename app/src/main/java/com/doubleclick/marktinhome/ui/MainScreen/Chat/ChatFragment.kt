@@ -29,6 +29,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.annotation.NonNull
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.app.ActivityCompat
 import androidx.lifecycle.ViewModelProvider
@@ -62,6 +63,8 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.google.firebase.storage.StorageTask
 import com.google.firebase.storage.UploadTask
+import com.paypal.android.sdk.dy
+import com.paypal.android.sdk.x
 import com.vanniktech.emoji.EmojiPopup
 import de.hdodenhof.circleimageview.CircleImageView
 import retrofit2.Call
@@ -70,6 +73,7 @@ import retrofit2.Response
 import java.io.File
 import java.io.IOException
 import java.util.*
+import kotlin.collections.HashMap
 
 
 class ChatFragment : BaseFragment(), OnMapReadyCallback {
@@ -168,6 +172,7 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
             chatRecycler.scrollToPosition((chatRecycler.adapter as BaseMessageAdapter).itemCount - 1)
             chatRecycler.smoothScrollToPosition((chatRecycler.adapter as BaseMessageAdapter).itemCount - 1)
         });
+
 
         val emojiPopup =
             EmojiPopup.Builder.fromRootView(view.findViewById(R.id.root_view)).build(
@@ -326,10 +331,19 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
         map["receiver"] = user.user.id // Id of Admin
         map["date"] = Date().time
         map["id"] = id
-        reference.child(CHATS).child(id).updateChildren(map)
+        map["StatusMessage"] = "Uploaded"
+//        reference.child(CHATS).child(id).updateChildren(map)
+        upload(id, map);
         et_text_message.setText("")
         makeChatList();
         sendNotifiaction(text);
+    }
+
+    private fun upload(id: String, map: HashMap<String, Any>) {
+        reference.child(CHATS).child(myId).child(user.user.id.toString())
+            .child(id).updateChildren(map);
+        reference.child(CHATS).child(user.user.id.toString()).child(myId)
+            .child(id).updateChildren(map);
     }
 
     private fun makeChatList() {
@@ -456,8 +470,9 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
                             map["type"] = "voice"
                             map["id"] = id
                             map["date"] = time
-//                            map["StatusMessage"] = "Uploaded" // "Delivered" , "beenSeen"
-                            reference.child(CHATS).child(id).setValue(map)
+                            map["StatusMessage"] = "Uploaded" // "Stored" , "beenSeen"
+//                            reference.child(CHATS).child(id).setValue(map)
+                            upload(id, map);
                             makeChatList()
                             sendNotifiaction("audio")
                         }
@@ -574,16 +589,17 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
             }).addOnCompleteListener(OnCompleteListener<Uri> { task ->
                 if (task.isSuccessful) {
                     val url = task.result.toString()
-                    val hashMap = HashMap<String, Any>()
+                    val map = HashMap<String, Any>()
                     val id = reference.push().key.toString()
-                    hashMap["sender"] = myId
-                    hashMap["receiver"] = user.user.id
-                    hashMap["message"] = url
-                    hashMap["type"] = fileType.toString()
-                    hashMap["id"] = id
-                    hashMap["date"] = Date().time
-//                    hashMap["StatusMessage"] = "Uploaded" // "Stored" , "beenSeen"
-                    reference.child(CHATS).child(id).setValue(hashMap)
+                    map["sender"] = myId
+                    map["receiver"] = user.user.id
+                    map["message"] = url
+                    map["type"] = fileType.toString()
+                    map["id"] = id
+                    map["date"] = Date().time
+                    map["StatusMessage"] = "Uploaded" // "Stored" , "beenSeen"
+//                    reference.child(CHATS).child(id).setValue(hashMap)
+                    upload(id, map);
                     progressDialog.dismiss()
                     makeChatList()
                     sendNotifiaction("file")

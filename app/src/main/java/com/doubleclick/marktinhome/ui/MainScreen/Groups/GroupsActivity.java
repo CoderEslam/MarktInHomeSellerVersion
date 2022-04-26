@@ -3,6 +3,7 @@ package com.doubleclick.marktinhome.ui.MainScreen.Groups;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -14,7 +15,11 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.bumptech.glide.Glide;
 import com.doubleclick.ViewModel.GroupViewModel;
+import com.doubleclick.ViewModel.PostsViewModel;
+import com.doubleclick.marktinhome.Adapters.GroupsAdapter;
 import com.doubleclick.marktinhome.Model.GroupData;
+import com.doubleclick.marktinhome.Model.PostData;
+import com.doubleclick.marktinhome.Model.PostsGroup;
 import com.doubleclick.marktinhome.R;
 import com.doubleclick.marktinhome.Views.socialtextview.SocialTextView;
 import com.doubleclick.marktinhome.ui.MainScreen.MainScreenActivity;
@@ -23,6 +28,9 @@ import com.google.android.material.progressindicator.LinearProgressIndicator;
 import com.todkars.shimmer.ShimmerRecyclerView;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -40,13 +48,14 @@ public class GroupsActivity extends AppCompatActivity {
     private LinearLayout create_post;
     private ShimmerRecyclerView post;
     private GroupViewModel groupViewModel;
+    private PostsViewModel postsViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_groups);
         // id of Group
-        id = getIntent().getStringExtra("id");
+        id = getIntent().getStringExtra("id" /* id of group*/);
         back = findViewById(R.id.back);
         cover = findViewById(R.id.cover);
         editName = findViewById(R.id.editName);
@@ -61,9 +70,12 @@ public class GroupsActivity extends AppCompatActivity {
         bio = findViewById(R.id.bio);
         link = findViewById(R.id.link);
         post = findViewById(R.id.post);
+        create_post = findViewById(R.id.create_post);
         editCover = findViewById(R.id.editCover);
         editProfile = findViewById(R.id.editProfile);
         groupViewModel = new ViewModelProvider(this).get(GroupViewModel.class);
+        postsViewModel = new ViewModelProvider(this).get(PostsViewModel.class);
+        postsViewModel.loadPosts(id /*  Group Id */);
         groupViewModel.getGroupDataById(id);
         groupViewModel.GroupData().observe(this, new Observer<GroupData>() {
             @Override
@@ -71,14 +83,25 @@ public class GroupsActivity extends AppCompatActivity {
                 Glide.with(GroupsActivity.this).load(groupData.getGroup().getImage()).into(imageGroup);
                 Glide.with(GroupsActivity.this).load(groupData.getGroup().getCover()).into(cover);
                 name.setText(groupData.getGroup().getName());
-                username.setText(groupData.getGroup().getCreatedBy());
-                @SuppressLint("SimpleDateFormat") SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, dd MM yyyy HH:mm:ss aaa");
-                history.setText(String.format("Created By %s at %s ", groupData.getGroup().getCreatedBy(), simpleDateFormat.format(groupData.getGroup().getTime())));
+                username.setText(groupData.getUser().getName());
+                @SuppressLint("SimpleDateFormat") SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, dd/MM/yyyy HH:mm aa");
+                history.setText(String.format("Created By %s at %s ", groupData.getUser().getName(), simpleDateFormat.format(groupData.getGroup().getTime())));
                 link.setText(groupData.getGroup().getLink());
             }
         });
-        post.showShimmer();
-        create_post = findViewById(R.id.create_post);
+
+        postsViewModel.getPosts().observe(this, new Observer<ArrayList<PostData>>() {
+            @Override
+            public void onChanged(ArrayList<PostData> postData) {
+                postsNum.setText(String.valueOf(postData.size()));
+                GroupsAdapter groupsAdapter = new GroupsAdapter(postData);
+                post.setAdapter(groupsAdapter);
+//                if (postsGroups.size() != 0) {
+//                    post.showShimmer();
+//                }
+            }
+        });
+
         create_post.setOnClickListener(v -> {
             Intent intent = new Intent(GroupsActivity.this, CreatePostActivity.class);
             intent.putExtra("id", id);
