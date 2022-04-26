@@ -110,7 +110,7 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
     private lateinit var apiService: APIService
 
     private lateinit var storageReference: StorageReference
-    var fileType: kotlin.String? = null
+    var fileType: String? = null
 
 
     private var chats: ArrayList<Chat> = ArrayList();
@@ -602,7 +602,7 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
                     upload(id, map);
                     progressDialog.dismiss()
                     makeChatList()
-                    sendNotifiaction("file")
+                    sendNotifiaction(fileType.toString())
                 } else {
                     Toast.makeText(context, "Failed!", Toast.LENGTH_SHORT).show()
                     progressDialog.dismiss()
