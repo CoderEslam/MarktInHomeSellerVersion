@@ -55,7 +55,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.recyclerview.widget.RecyclerView
+        <com.todkars.shimmer.ShimmerRecyclerView
             android:id="@+id/Comments"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -65,7 +65,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:listitem="@layout/comments_group_layout" />
+            tools:listitem="@layout/comments_group_layout"
+            app:shimmer_recycler_layout="@layout/comments_group_layout_shimmer"/>
 
     </androidx.core.widget.NestedScrollView>
 

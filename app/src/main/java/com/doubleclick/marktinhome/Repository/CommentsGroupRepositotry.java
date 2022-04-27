@@ -4,6 +4,8 @@ import static com.doubleclick.marktinhome.BaseApplication.isNetworkConnected;
 import static com.doubleclick.marktinhome.Model.Constantes.COMMENTS_GROUP;
 import static com.doubleclick.marktinhome.Model.Constantes.USER;
 
+import android.util.Log;
+
 import androidx.annotation.NonNull;
 
 import com.doubleclick.marktinhome.Model.CommentsGroup;
@@ -21,23 +23,22 @@ import java.util.ArrayList;
 public class CommentsGroupRepositotry extends BaseRepository {
 
     private ArrayList<CommentsGroupData> commentsGroupData = new ArrayList<>();
-    private CommentsGroupData commentGroupData = new CommentsGroupData();
     private CommentData commentData;
 
     public CommentsGroupRepositotry(CommentData commentData) {
         this.commentData = commentData;
     }
 
-    public void loadComments(String id) {
-        reference.child(COMMENTS_GROUP).child(id).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+    public void loadComments(String groupId, String postId) {
+        reference.child(COMMENTS_GROUP).child(groupId).child(postId).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DataSnapshot> task) {
-
                 try {
                     if (isNetworkConnected()) {
                         if (task.getResult().exists()) {
                             for (DataSnapshot dataSnapshot : task.getResult().getChildren()) {
                                 CommentsGroup commentsGroup = dataSnapshot.getValue(CommentsGroup.class);
+                                CommentsGroupData commentGroupData = new CommentsGroupData();
                                 commentGroupData.setCommentsGroup(commentsGroup);
                                 reference.child(USER).child(commentsGroup.getUserId()).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
                                     @Override

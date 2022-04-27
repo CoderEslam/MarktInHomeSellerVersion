@@ -12,6 +12,7 @@ public class PostsGroup {
     private String type;
     private String images;
     private String video;
+    private String groupId;
 
 
     public String getId() {
@@ -82,5 +83,13 @@ public class PostsGroup {
                 ", images='" + images + '\'' +
                 ", video='" + video + '\'' +
                 '}';
+    }
+
+    public String getGroupId() {
+        return groupId;
+    }
+
+    public void setGroupId(String groupId) {
+        this.groupId = groupId;
     }
 }

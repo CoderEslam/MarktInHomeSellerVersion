@@ -82,7 +82,7 @@ public class CreatePostActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_post);
-        id = getIntent().getStringExtra("id");
+        id = getIntent().getStringExtra("id" /* group id*/);
         myImage = findViewById(R.id.myImage);
         myName = findViewById(R.id.myName);
         postText = findViewById(R.id.postText);
@@ -162,6 +162,7 @@ public class CreatePostActivity extends AppCompatActivity {
         map.put("type", "image");
         map.put("images", urls.toString());
         map.put("video", "");
+        map.put("groupId", id);
         reference.child(GROUPS).child(id).child(POSTS).child(Pushid).updateChildren(map);
     }
 

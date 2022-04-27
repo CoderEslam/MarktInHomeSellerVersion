@@ -1,5 +1,6 @@
 package com.doubleclick.marktinhome.Adapters;
 
+import static com.doubleclick.marktinhome.Model.Constantes.COMMENTS_GROUP;
 import static com.doubleclick.marktinhome.Model.Constantes.LIKES;
 
 import android.annotation.SuppressLint;
@@ -60,10 +61,6 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
         return new GroupViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_item_group, parent, false));
     }
 
-    @Override
-    public int getItemCount() {
-        return postsData.size();
-    }
 
     @Override
     public void onBindViewHolder(@NonNull GroupViewHolder holder, int position) {
@@ -120,17 +117,24 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
                 });
             }
         });
-        holder.setLikeButtonStatus(postsData.get(holder.getAdapterPosition()).getPostsGroup().getId());
+        holder.setLike(postsData.get(holder.getAdapterPosition()).getPostsGroup().getId());
 
         holder.comment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(holder.itemView.getContext(), CommentGroupActivity.class);
-                intent.putExtra("id", postsData.get(holder.getAdapterPosition()).getPostsGroup().getId());
+                intent.putExtra("postId", postsData.get(holder.getAdapterPosition()).getPostsGroup().getId());
+                intent.putExtra("groupId", postsData.get(holder.getAdapterPosition()).getPostsGroup().getGroupId());
                 holder.itemView.getContext().startActivity(intent);
             }
         });
     }
+
+    @Override
+    public int getItemCount() {
+        return postsData.size();
+    }
+
 
     public class GroupViewHolder extends RecyclerView.ViewHolder {
         private RecyclerView images;
@@ -158,8 +162,28 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
 
         }
 
-        public void setLikeButtonStatus(String PostKey) {
+        public void setLike(String PostKey) {
             reference.child(LIKES).addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    if (dataSnapshot.child(PostKey).hasChild(myId)) {
+                        like_text.setText(String.format("%s Like", String.valueOf(dataSnapshot.child(postsData.get(getAdapterPosition()).getPostsGroup().getId()).getChildrenCount())));
+                        like_img.setImageResource(R.drawable.like_thumb_up);
+                    } else {
+                        like_text.setText(String.format("%s Like", String.valueOf(dataSnapshot.child(postsData.get(getAdapterPosition()).getPostsGroup().getId()).getChildrenCount())));
+                        like_img.setImageResource(R.drawable.ic_like);
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
+        }
+
+        public void setComment(String PostKey) {
+            reference.child(COMMENTS_GROUP).addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     if (dataSnapshot.child(PostKey).hasChild(myId)) {

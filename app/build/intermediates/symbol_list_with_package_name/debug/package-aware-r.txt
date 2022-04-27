@@ -3247,6 +3247,7 @@ id ProductRecycler
 id QuarterLineIndicator
 id RIGHT
 id ROUND
+id RecyclerReplay
 id RichFragment
 id RichTable
 id SHIFT
@@ -3737,6 +3738,7 @@ id imageView8
 id image_view_expanded
 id imagemark
 id images
+id img_like
 id immediateStop
 id included
 id indent
@@ -4039,6 +4041,7 @@ id rectangle
 id rectangles
 id recycler
 id relativeLayout
+id replay
 id restart
 id reverse
 id reverseSawtooth
@@ -4431,6 +4434,7 @@ layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout child_layout
 layout comments_group_layout
+layout comments_group_layout_shimmer
 layout comments_layout
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -4986,6 +4990,7 @@ string project_id
 string put_you_rate
 string quantity
 string recent_search
+string replay
 string rows
 string save
 string search

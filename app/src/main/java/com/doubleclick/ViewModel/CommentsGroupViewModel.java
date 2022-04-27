@@ -20,8 +20,8 @@ public class CommentsGroupViewModel extends ViewModel implements CommentsGroupRe
     public CommentsGroupViewModel() {
     }
 
-    public void GetComments(String id) {
-        commentsGroupRepositotry.loadComments(id);
+    public void GetComments(String groupId, String postId) {
+        commentsGroupRepositotry.loadComments(groupId,postId);
     }
 
     public LiveData<ArrayList<CommentsGroupData>> getCommentsLiveData() {

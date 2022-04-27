@@ -130,4 +130,5 @@
     <string name="delete_for_me">delete for me</string>
     <string name="delete_for_everyone">delete for everyone</string>
     <string name="like">like</string>
+    <string name="replay">replay</string>
 </resources>
