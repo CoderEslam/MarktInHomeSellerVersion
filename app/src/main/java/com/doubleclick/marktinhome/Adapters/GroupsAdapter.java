@@ -24,6 +24,7 @@ import com.doubleclick.marktinhome.R;
 import com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager;
 import com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselZoomPostLayoutListener;
 import com.doubleclick.marktinhome.Views.carousellayoutmanager.CenterScrollListener;
+import com.doubleclick.marktinhome.ui.MainScreen.Groups.Comments.CommentGroupActivity;
 import com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -120,6 +121,15 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
             }
         });
         holder.setLikeButtonStatus(postsData.get(holder.getAdapterPosition()).getPostsGroup().getId());
+
+        holder.comment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(holder.itemView.getContext(), CommentGroupActivity.class);
+                intent.putExtra("id", postsData.get(holder.getAdapterPosition()).getPostsGroup().getId());
+                holder.itemView.getContext().startActivity(intent);
+            }
+        });
     }
 
     public class GroupViewHolder extends RecyclerView.ViewHolder {

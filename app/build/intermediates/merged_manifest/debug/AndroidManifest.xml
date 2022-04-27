@@ -56,6 +56,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.MarktInHome" >
         <activity
+            android:name="com.doubleclick.marktinhome.ui.MainScreen.Groups.Comments.CommentGroupActivity"
+            android:exported="false" />
+        <activity
             android:name="com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroupActivity"
             android:exported="false" />
         <activity

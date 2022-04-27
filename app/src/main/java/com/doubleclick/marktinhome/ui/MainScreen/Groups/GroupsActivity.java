@@ -98,9 +98,12 @@ public class GroupsActivity extends AppCompatActivity {
         postsViewModel.getPosts().observe(this, new Observer<ArrayList<PostData>>() {
             @Override
             public void onChanged(ArrayList<PostData> postData) {
-                postsNum.setText(String.valueOf(postData.size()));
-                GroupsAdapter groupsAdapter = new GroupsAdapter(postData);
-                post.setAdapter(groupsAdapter);
+                if (postData.size() != 0) {
+                    progressIndicator.setVisibility(View.GONE);
+                    postsNum.setText(String.valueOf(postData.size()));
+                    post.setAdapter(new GroupsAdapter(postData));
+                }
+
 //                if (postsGroups.size() != 0) {
 //                    post.showShimmer();
 //                }

@@ -3210,6 +3210,7 @@ id CENTER
 id CTRL
 id CartName
 id ChildRecycler
+id Comments
 id ConstraintLayoutimage_name
 id ContinerViedo
 id ContinerVoice
@@ -3467,6 +3468,7 @@ id cardView4
 id cardView5
 id cardView6
 id cardView7
+id cardView8
 id carryVelocity
 id cartRate
 id cartRecycler
@@ -3521,6 +3523,7 @@ id constraintLayout10
 id constraintLayout11
 id constraintLayout12
 id constraintLayout13
+id constraintLayout14
 id constraintLayout2
 id constraintLayout3
 id constraintLayout4
@@ -3796,6 +3799,7 @@ id leftToRight
 id left_to_right
 id legacy
 id light
+id like
 id likeButton
 id like_img
 id like_text
@@ -4170,6 +4174,7 @@ id test_radiobutton_android_button_tint
 id test_radiobutton_app_button_tint
 id text
 id text2
+id textComment
 id textEnd
 id textInputLayout
 id textInputLayout2
@@ -4396,6 +4401,7 @@ layout activity_add
 layout activity_address
 layout activity_advertisement
 layout activity_chat
+layout activity_comment_group
 layout activity_comments
 layout activity_create_group
 layout activity_create_post
@@ -4424,6 +4430,7 @@ layout botton_navigation
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout child_layout
+layout comments_group_layout
 layout comments_layout
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -4851,6 +4858,7 @@ string library_emoji_licenseId
 string library_emoji_owner
 string library_emoji_repositoryLink
 string library_emoji_year
+string like
 string load_end
 string load_failed
 string loading

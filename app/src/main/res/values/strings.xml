@@ -68,7 +68,7 @@
     <string name="type_here">type here ......</string>
     <string name="chat_us">Chat Us</string>
     <string name="connect_us">connect us</string>
-    <string name="comment">comment</string>
+    <string name="comment">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
     <string name="put_you_rate">put you rate ....</string>
     <string name="comments">Comments</string>
     <string name="total_sales">Total Sales</string>
@@ -129,4 +129,5 @@
     <string name="download">download</string>
     <string name="delete_for_me">delete for me</string>
     <string name="delete_for_everyone">delete for everyone</string>
+    <string name="like">like</string>
 </resources>
