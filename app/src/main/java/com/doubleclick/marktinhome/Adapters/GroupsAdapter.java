@@ -17,6 +17,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.PopupMenu;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.doubleclick.marktinhome.Model.PostData;
@@ -25,6 +27,8 @@ import com.doubleclick.marktinhome.R;
 import com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager;
 import com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselZoomPostLayoutListener;
 import com.doubleclick.marktinhome.Views.carousellayoutmanager.CenterScrollListener;
+import com.doubleclick.marktinhome.ui.MainScreen.Frgments.BottomDialogComment;
+import com.doubleclick.marktinhome.ui.MainScreen.Groups.BottomSheetEditor;
 import com.doubleclick.marktinhome.ui.MainScreen.Groups.Comments.CommentGroupActivity;
 import com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity;
 import com.google.firebase.auth.FirebaseAuth;
@@ -202,4 +206,6 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
             });
         }
     }
+
+
 }

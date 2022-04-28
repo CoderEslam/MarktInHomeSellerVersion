@@ -9,6 +9,7 @@ public class CommentsGroup {
     private long time;
     private String comment;
     private String userId;
+    private String groupId;
 
     public CommentsGroup() {
     }
@@ -43,5 +44,13 @@ public class CommentsGroup {
 
     public void setUserId(String userId) {
         this.userId = userId;
+    }
+
+    public String getGroupId() {
+        return groupId;
+    }
+
+    public void setGroupId(String groupId) {
+        this.groupId = groupId;
     }
 }
