@@ -34,6 +34,11 @@
         <package android:name="com.google.android.apps.maps" />
     </queries>
 
+    <permission
+        android:name="com.doubleclick.marktinhome.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.doubleclick.marktinhome.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <uses-feature
@@ -55,6 +60,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.MarktInHome" >
+        <activity
+            android:name="com.doubleclick.marktinhome.ui.MainScreen.Parents.ParentActivity"
+            android:exported="false" />
         <activity
             android:name="com.doubleclick.marktinhome.ui.MainScreen.Groups.Comments.CommentGroupActivity"
             android:exported="false" />

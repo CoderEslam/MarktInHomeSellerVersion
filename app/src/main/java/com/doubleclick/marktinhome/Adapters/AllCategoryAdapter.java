@@ -4,6 +4,7 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -42,7 +43,7 @@ public class AllCategoryAdapter extends RecyclerView.Adapter<AllCategoryAdapter.
     public void onBindViewHolder(@NonNull TopViewHilder holder, int position) {
         if (!TextUtils.isEmpty(parentCategories.get(position).getImage()) && !TextUtils.isEmpty(parentCategories.get(position).getName())) {
             holder.listTitle.setText(parentCategories.get(position).getName());
-            Glide.with(holder.itemView.getContext()).load(parentCategories.get(position).getImage()).into(holder.circleImageView);
+            Glide.with(holder.itemView.getContext()).load(parentCategories.get(position).getImage()).into(holder.selectImage);
         }
         holder.itemView.setOnClickListener(v -> {
             if (position != RecyclerView.NO_POSITION) {
@@ -57,12 +58,12 @@ public class AllCategoryAdapter extends RecyclerView.Adapter<AllCategoryAdapter.
     }
 
     public class TopViewHilder extends RecyclerView.ViewHolder {
-        private CircleImageView circleImageView;
+        private ImageView selectImage;
         private TextView listTitle;
 
         public TopViewHilder(@NonNull View itemView) {
             super(itemView);
-            circleImageView = itemView.findViewById(R.id.selectImage);
+            selectImage = itemView.findViewById(R.id.selectImage);
             listTitle = itemView.findViewById(R.id.listTitle);
         }
     }

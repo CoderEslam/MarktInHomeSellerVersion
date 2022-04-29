@@ -2883,6 +2883,7 @@ drawable bg_btn_dis
 drawable bg_btn_nor
 drawable bg_btn_pre
 drawable bg_edit
+drawable bg_gray
 drawable bg_image
 drawable bg_product_activity
 drawable bg_text_chat
@@ -3172,6 +3173,8 @@ drawable selector_top_ok
 drawable send
 drawable share
 drawable shopping_cart
+drawable small_arrow_left
+drawable small_arrow_right
 drawable statistics
 drawable table_chart
 drawable test_custom_background
@@ -3368,6 +3371,7 @@ id add
 id addChild
 id addGroup
 id addImages
+id addKeywords
 id addParent
 id addToggalsLinearLayout
 id addToggalsScrollView
@@ -3397,6 +3401,7 @@ id antiClockwise
 id anticipate
 id appBarRL
 id appBarTitleTV
+id app_bar
 id appbar
 id arc
 id arro_imageview
@@ -3499,7 +3504,6 @@ id chip3
 id chip_group
 id chronometer
 id circle
-id circleImageView2
 id circle_center
 id clear_text
 id clip_horizontal
@@ -3714,6 +3718,7 @@ id imageGroup
 id imageParent
 id imagePerson
 id imageProduct
+id imagePublisher
 id imageRecycler
 id imageTrademark
 id imageUser
@@ -3791,6 +3796,8 @@ id justifyCenter
 id justifyFull
 id justifyLeft
 id justifyRight
+id keys
+id keyword
 id keywords
 id labeled
 id last
@@ -3834,6 +3841,7 @@ id ll_h5
 id ll_h6
 id ll_line_height
 id ll_normal
+id lldescription
 id load_more_load_end_view
 id load_more_load_fail_view
 id load_more_loading_view
@@ -3852,6 +3860,7 @@ id main
 id mainFragment
 id mainLoginFragment
 id main_fragment
+id main_fragment_Chat
 id main_fragment_group
 id map
 id mapContiner
@@ -3895,6 +3904,7 @@ id message
 id middle
 id mini
 id mins
+id minsone
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -4002,6 +4012,7 @@ id phone
 id pieChartView
 id pin
 id plus
+id plusone
 id popuplayout
 id position
 id post
@@ -4015,6 +4026,7 @@ id productImages
 id productLastPrice
 id productName
 id productPrice
+id products
 id profile_image
 id progress
 id progressBar
@@ -4158,6 +4170,7 @@ id superscript
 id supportScrollUp
 id tabMode
 id tab_layout
+id tab_layout_parent
 id table
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -4237,6 +4250,7 @@ id titleTV1
 id title_template
 id toggle
 id toolbar
+id toolbar_Collapsinglayout
 id top
 id topPanel
 id topParents
@@ -4292,7 +4306,9 @@ id vertical_only
 id video
 id view
 id view2
+id viewPager
 id view_offset_helper
+id view_pager_Parent
 id view_transition
 id view_tree_lifecycle_owner
 id view_tree_saved_state_registry_owner
@@ -4301,6 +4317,7 @@ id viewmore
 id viewpager
 id visible
 id visible_removing_fragment_view_tag
+id webView
 id west
 id wide
 id withText
@@ -4421,6 +4438,7 @@ layout activity_image_preview
 layout activity_main
 layout activity_main_rich_editor
 layout activity_main_screen
+layout activity_parent
 layout activity_product
 layout activity_seller
 layout activity_start
@@ -4431,6 +4449,7 @@ layout adapter_image_list_item
 layout add_toggal
 layout all_tradmark
 layout bottom_dialog_comment
+layout bottom_dialog_keyword
 layout bottom_sheet_editor
 layout botton_navigation
 layout browser_actions_context_menu_page
@@ -4495,6 +4514,7 @@ layout fragment_menu_store
 layout fragment_month
 layout fragment_my_groups
 layout fragment_order_selller
+layout fragment_pager
 layout fragment_parent
 layout fragment_product
 layout fragment_recent_order
@@ -4511,7 +4531,6 @@ layout fragment_step_3
 layout fragment_trademark
 layout fragment_upload
 layout fragment_viewmore
-layout g_v_layout
 layout h_top_recyclerview
 layout h_treademark_recyclerview
 layout images
@@ -4529,6 +4548,7 @@ layout item_location_right
 layout item_trademark
 layout item_video_left
 layout item_video_right
+layout keyword_layout
 layout layaut_cart
 layout layout_categories
 layout layout_chat
@@ -4539,6 +4559,7 @@ layout layout_images
 layout layout_item_group
 layout layout_item_group_shimmer
 layout layout_product
+layout layout_product_with_view_pager
 layout layout_recent_order
 layout layout_small_product
 layout layout_top_deals
@@ -4679,6 +4700,7 @@ navigation nav_seller_graph
 navigation rich_nav
 plurals mtrl_badge_content_description
 raw __location_new
+raw cart
 raw contact
 raw empty_screen
 raw file_icon
@@ -5536,6 +5558,8 @@ style Theme_AppCompat_Light_Dialog_MinWidth
 style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
+style Theme_Collapsing_AppBarOverlay
+style Theme_Collapsing_PopupOverlay
 style Theme_Design
 style Theme_Design_BottomSheetDialog
 style Theme_Design_Light

@@ -21,23 +21,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\43337579f268c92d97d1141a874332b4\\transformed\\core-1.9.0-alpha02\\res\\values-or\\values-or.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "109",
-                        "startColumns": "4",
-                        "startOffsets": "9942",
-                        "endColumns": "100",
-                        "endOffsets": "10038"
-                    }
-                },
-                {
                     "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\0ca5a5a97098ed5fc734e43731ad9e73\\transformed\\jetified-play-services-base-18.0.1\\res\\values-or\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
@@ -71,6 +54,23 @@
                         "endLines": "5,33,34,35,36,55,56,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,107",
                         "endColumns": "12,76,93,104,78,64,88,64,58,85,63,62,72,63,53,111,57,61,53,71,121,86,85,109,76,80,90,66,65,69,76,86,70,76,68,68,90,71,88,88,73,71,85,49,65,79,83,61,63,62,99,96,91,98,83",
                         "endOffsets": "272,3113,3207,3312,3391,5736,5825,5967,6026,6112,6176,6239,6312,6376,6430,6542,6600,6662,6716,6788,6910,6997,7083,7193,7270,7351,7442,7509,7575,7645,7722,7809,7880,7957,8026,8095,8186,8258,8347,8436,8510,8582,8668,8718,8784,8864,8948,9010,9074,9137,9237,9334,9426,9525,9847"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\f37046d9bce6eca0a8e6f83da3399fa3\\transformed\\core-1.9.0-alpha03\\res\\values-or\\values-or.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "109",
+                        "startColumns": "4",
+                        "startOffsets": "9942",
+                        "endColumns": "100",
+                        "endOffsets": "10038"
                     }
                 },
                 {

@@ -106,13 +106,13 @@ public class menu_profileFragment extends BaseFragment {
             openImage("", USER, "");
         });
         editAddress.setOnClickListener(v -> {
-            ShowEdite("address");
+            ShowEdit("address");
         });
         editPhone.setOnClickListener(v -> {
-            ShowEdite("phone");
+            ShowEdit("phone");
         });
         editname.setOnClickListener(v -> {
-            ShowEdite("name");
+            ShowEdit("name");
         });
         AddProduct.setOnClickListener(v -> {
             startActivity(new Intent(getContext(), AddActivity.class));
@@ -154,7 +154,7 @@ public class menu_profileFragment extends BaseFragment {
         return view;
     }
 
-    private void ShowEdite(String type) {
+    private void ShowEdit(String type) {
         builder = new AlertDialog.Builder(getContext());
         View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_edit, null, false);
         TextView ok = view.findViewById(R.id.ok);
@@ -168,9 +168,7 @@ public class menu_profileFragment extends BaseFragment {
                 ShowToast(getContext(), "Done");
             } else {
                 ShowToast(getContext(), "you can't set empty text");
-
             }
-
         });
         builder.setView(view);
         builder.setCancelable(true);

@@ -93,10 +93,6 @@ class AllUsersFragment : BaseFragment(), UserInter {
     }
 
     override fun OnUserLisitner(user: User) {
-        findNavController().navigate(
-            AllUsersFragmentDirections.actionAllUsersFragmentToChatFragment(
-                user
-            )
-        )
+        findNavController().navigate(AllUsersFragmentDirections.actionAllUsersFragmentToChatFragment(user))
     }
 }

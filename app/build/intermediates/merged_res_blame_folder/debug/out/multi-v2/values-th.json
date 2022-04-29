@@ -4,23 +4,6 @@
             "outputFile": "C:\\Users\\eslam\\AndroidStudioProjects\\Eslam\\MarketAtHomeforSeller\\MarktInHome\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-th\\values-th.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\43337579f268c92d97d1141a874332b4\\transformed\\core-1.9.0-alpha02\\res\\values-th\\values-th.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "109",
-                        "startColumns": "4",
-                        "startOffsets": "9661",
-                        "endColumns": "100",
-                        "endOffsets": "9757"
-                    }
-                },
-                {
                     "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\bd3f53b35b258cfd444e85babd75eb89\\transformed\\jetified-firebase-messaging-23.0.0\\res\\values-th\\values.xml",
                     "from": {
                         "startLines": "4",
@@ -105,6 +88,23 @@
                         "endLines": "5,33,34,35,36,55,56,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,107",
                         "endColumns": "12,82,98,112,79,69,89,69,59,86,64,60,63,60,53,100,60,59,53,69,110,86,80,112,78,81,91,66,65,69,77,85,71,77,68,68,81,87,92,93,73,68,94,51,67,84,87,61,63,62,99,92,96,92,76",
                         "endOffsets": "285,2997,3096,3209,3289,5483,5573,5721,5781,5868,5933,5994,6058,6119,6173,6274,6335,6395,6449,6519,6630,6717,6798,6911,6990,7072,7164,7231,7297,7367,7445,7531,7603,7681,7750,7819,7901,7989,8082,8176,8250,8319,8414,8466,8534,8619,8707,8769,8833,8896,8996,9089,9186,9279,9574"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\f37046d9bce6eca0a8e6f83da3399fa3\\transformed\\core-1.9.0-alpha03\\res\\values-th\\values-th.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "109",
+                        "startColumns": "4",
+                        "startOffsets": "9661",
+                        "endColumns": "100",
+                        "endOffsets": "9757"
                     }
                 },
                 {

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.webkit.WebView
 import android.widget.*
 import androidx.appcompat.widget.AppCompatToggleButton
 import androidx.lifecycle.Observer
@@ -52,6 +53,7 @@ class productActivity : AppCompatActivity() {
     lateinit var comments: TextView;
     lateinit var product: Product
     lateinit var radioGroup: RadioGroup
+    lateinit var webView: WebView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -63,6 +65,7 @@ class productActivity : AppCompatActivity() {
         productName = findViewById(R.id.productName)
         trarmark = findViewById(R.id.trarmark)
         price = findViewById(R.id.price)
+        webView = findViewById(R.id.webView);
         lastPrice = findViewById(R.id.lastPrice)
         description = findViewById(R.id.description)
         TotalRating = findViewById(R.id.TotalRating)
@@ -81,7 +84,18 @@ class productActivity : AppCompatActivity() {
         trarmark.text = product!!.tradeMark
         price.text = product!!.price.toString()
         lastPrice.text = product!!.lastPrice.toString()
-        description.text = product!!.description
+        if (product.description.contains("</")) {
+            description.visibility = View.GONE
+            webView.loadDataWithBaseURL(
+                null,
+                product.description,
+                "text/html",
+                "utf-8",
+                null
+            );
+        } else {
+            description.text = product.description
+        }
         var spliter =
             product!!.toggals.toString().replace("[", "").replace("]", "").replace(" ", "")
                 .split(",")

@@ -4,6 +4,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -65,7 +66,7 @@ public class RecentSearchAdapter extends RecyclerView.Adapter<RecentSearchAdapte
 
 
     public class ProductViewHolder extends RecyclerView.ViewHolder {
-        public CircleImageView imageProduct;
+        public ImageView imageProduct;
         public TextView productName;
         public TextView description;
         public TextView productPrice;

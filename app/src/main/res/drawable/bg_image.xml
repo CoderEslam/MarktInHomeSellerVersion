@@ -2,13 +2,12 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-
     <solid android:color="@color/ripplecoloreffect" />
 
-    <size android:width="50dp"
-        android:height="50dp"/>
-    <corners android:radius="20dp"/>
-
+    <size
+        android:width="50dp"
+        android:height="50dp" />
+    <corners android:radius="20dp" />
 
 
 </shape>

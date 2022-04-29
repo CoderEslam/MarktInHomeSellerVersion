@@ -1,12 +1,10 @@
 package com.doubleclick.marktinhome.Adapters;
 
 import android.os.Handler;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -39,7 +37,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
     @NonNull
     @Override
     public ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ProductViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.g_v_layout, parent, false));
+        return new ProductViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_product_with_view_pager, parent, false));
     }
 
     @Override

@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/circleImageView2"
+            android:id="@+id/imagePublisher"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="5dp"
@@ -31,9 +31,9 @@
             android:text="Eslam Ghazy"
             android:textColor="#1877F2"
             android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="@+id/circleImageView2"
-            app:layout_constraintStart_toEndOf="@+id/circleImageView2"
-            app:layout_constraintTop_toTopOf="@+id/circleImageView2" />
+            app:layout_constraintBottom_toBottomOf="@+id/imagePublisher"
+            app:layout_constraintStart_toEndOf="@+id/imagePublisher"
+            app:layout_constraintTop_toTopOf="@+id/imagePublisher" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

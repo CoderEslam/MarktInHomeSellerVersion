@@ -21,12 +21,14 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.doubleclick.marktinhome.Model.PostData;
 import com.doubleclick.marktinhome.Model.PostsGroup;
 import com.doubleclick.marktinhome.R;
 import com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager;
 import com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselZoomPostLayoutListener;
 import com.doubleclick.marktinhome.Views.carousellayoutmanager.CenterScrollListener;
+import com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatActivity;
 import com.doubleclick.marktinhome.ui.MainScreen.Frgments.BottomDialogComment;
 import com.doubleclick.marktinhome.ui.MainScreen.Groups.BottomSheetEditor;
 import com.doubleclick.marktinhome.ui.MainScreen.Groups.Comments.CommentGroupActivity;
@@ -43,6 +45,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
  * Created By Eslam Ghazy on 4/20/2022
@@ -95,6 +99,7 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
         List<String> image = Arrays.asList(postsData.get(holder.getAdapterPosition()).getPostsGroup().getImages().replace("[", "").replace("]", "").replace(" ", "").split(","));
         holder.images.setAdapter(new ImagesGroupAdapter(image));
         holder.namePublisher.setText(postsData.get(holder.getAdapterPosition()).getUser().getName());
+        Glide.with(holder.itemView.getContext()).load(postsData.get(holder.getAdapterPosition()).getUser().getImage()).into(holder.imagePublisher);
         holder.likeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -132,6 +137,11 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
                 holder.itemView.getContext().startActivity(intent);
             }
         });
+        holder.ConstraintLayoutimage_name.setOnClickListener(v -> {
+            Intent intent = new Intent(holder.itemView.getContext(), ChatActivity.class);
+            intent.putExtra("user", postsData.get(holder.getAdapterPosition()).getUser());
+            holder.itemView.getContext().startActivity(intent);
+        });
     }
 
     @Override
@@ -146,6 +156,7 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
         private ImageView option, like_img;
         private TextView namePublisher, like_text;
         private LinearLayout likeButton, comment, share;
+        private CircleImageView imagePublisher;
 
         public GroupViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -155,6 +166,7 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
             likeButton = itemView.findViewById(R.id.likeButton);
             comment = itemView.findViewById(R.id.comment);
             namePublisher = itemView.findViewById(R.id.namePublisher);
+            imagePublisher = itemView.findViewById(R.id.imagePublisher);
             share = itemView.findViewById(R.id.share);
             like_img = itemView.findViewById(R.id.like_img);
             like_text = itemView.findViewById(R.id.like_text);

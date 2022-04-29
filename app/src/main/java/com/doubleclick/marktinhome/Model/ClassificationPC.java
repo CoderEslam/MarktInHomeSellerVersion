@@ -1,12 +1,18 @@
 package com.doubleclick.marktinhome.Model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created By Eslam Ghazy on 3/6/2022
  */
-public class ClassificationPC {
+public class ClassificationPC implements Serializable {
 
+    private boolean isExpendable;
+    private String ParentPushId;
+    private String image;
+    private ArrayList<ChildCategory> childCategory;
+    private String name;
 
     public ClassificationPC(ArrayList<ChildCategory> childCategory, String name) {
         this.childCategory = childCategory;
@@ -26,6 +32,14 @@ public class ClassificationPC {
         this.isExpendable = isExpendable;
     }
 
+    public ClassificationPC(ArrayList<ChildCategory> childCategory, String name, String image, boolean isExpendable, String parentPushId) {
+        this.isExpendable = isExpendable;
+        ParentPushId = parentPushId;
+        this.image = image;
+        this.childCategory = childCategory;
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
@@ -42,8 +56,6 @@ public class ClassificationPC {
         this.childCategory = childCategory;
     }
 
-    private ArrayList<ChildCategory> childCategory;
-    private String name;
 
     public String getImage() {
         return image;
@@ -53,7 +65,6 @@ public class ClassificationPC {
         this.image = image;
     }
 
-    private String image;
 
     public boolean isExpendable() {
         return isExpendable;
@@ -63,7 +74,6 @@ public class ClassificationPC {
         isExpendable = expendable;
     }
 
-    private boolean isExpendable;
 
     @Override
     public String toString() {
@@ -71,5 +81,13 @@ public class ClassificationPC {
                 "childCategory=" + childCategory +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    public String getParentPushId() {
+        return ParentPushId;
+    }
+
+    public void setParentPushId(String parentPushId) {
+        ParentPushId = parentPushId;
     }
 }

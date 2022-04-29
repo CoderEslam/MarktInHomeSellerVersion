@@ -4,6 +4,7 @@ package com.doubleclick.marktinhome.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -19,6 +20,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import androidx.viewpager.widget.ViewPager;
+import com.airbnb.lottie.LottieAnimationView;
 import com.doubleclick.marktinhome.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
@@ -38,6 +40,9 @@ public final class ActivityProductBinding implements ViewBinding {
 
   @NonNull
   public final HorizontalScrollView addToggalsScrollView;
+
+  @NonNull
+  public final LottieAnimationView animationView;
 
   @NonNull
   public final ViewPager bannerSlierViewPager;
@@ -104,6 +109,9 @@ public final class ActivityProductBinding implements ViewBinding {
 
   @NonNull
   public final ConstraintLayout linearLayout7;
+
+  @NonNull
+  public final LinearLayout lldescription;
 
   @NonNull
   public final ImageView mins;
@@ -205,11 +213,15 @@ public final class ActivityProductBinding implements ViewBinding {
   public final TextView tvYourRatins;
 
   @NonNull
+  public final WebView webView;
+
+  @NonNull
   public final RatingBar yourRate;
 
   private ActivityProductBinding(@NonNull ConstraintLayout rootView, @NonNull TextView TotalRating,
       @NonNull LinearLayout addToggalsLinearLayout,
-      @NonNull HorizontalScrollView addToggalsScrollView, @NonNull ViewPager bannerSlierViewPager,
+      @NonNull HorizontalScrollView addToggalsScrollView,
+      @NonNull LottieAnimationView animationView, @NonNull ViewPager bannerSlierViewPager,
       @NonNull CardView cardView, @NonNull CardView cardView11, @NonNull TextView comments,
       @NonNull ConstraintLayout constraintLayout, @NonNull ConstraintLayout constraintLayout11,
       @NonNull ConstraintLayout constraintLayout2, @NonNull ConstraintLayout constraintLayout3,
@@ -219,8 +231,9 @@ public final class ActivityProductBinding implements ViewBinding {
       @NonNull ImageView imageView4, @NonNull ImageView imageView5, @NonNull ImageView imageView6,
       @NonNull ImageView imageView7, @NonNull ImageView imageView8, @NonNull TextView lastPrice,
       @NonNull LinearLayout linearLayout5, @NonNull ConstraintLayout linearLayout7,
-      @NonNull ImageView mins, @NonNull PieChartView pieChartView, @NonNull ImageView plus,
-      @NonNull TextView price, @NonNull TextView productName, @NonNull ProgressBar progressBar1,
+      @NonNull LinearLayout lldescription, @NonNull ImageView mins,
+      @NonNull PieChartView pieChartView, @NonNull ImageView plus, @NonNull TextView price,
+      @NonNull TextView productName, @NonNull ProgressBar progressBar1,
       @NonNull ProgressBar progressBar2, @NonNull ProgressBar progressBar3,
       @NonNull ProgressBar progressBar4, @NonNull ProgressBar progressBar5,
       @NonNull TextView quantity, @NonNull RadioGroup radioGroup,
@@ -231,11 +244,12 @@ public final class ActivityProductBinding implements ViewBinding {
       @NonNull TextView textView6, @NonNull TextView textView60, @NonNull TextView textView7,
       @NonNull TextView trarmark, @NonNull TextView tvRate1, @NonNull TextView tvRate2,
       @NonNull TextView tvRate3, @NonNull TextView tvRate4, @NonNull TextView tvRate5,
-      @NonNull TextView tvYourRatins, @NonNull RatingBar yourRate) {
+      @NonNull TextView tvYourRatins, @NonNull WebView webView, @NonNull RatingBar yourRate) {
     this.rootView = rootView;
     this.TotalRating = TotalRating;
     this.addToggalsLinearLayout = addToggalsLinearLayout;
     this.addToggalsScrollView = addToggalsScrollView;
+    this.animationView = animationView;
     this.bannerSlierViewPager = bannerSlierViewPager;
     this.cardView = cardView;
     this.cardView11 = cardView11;
@@ -258,6 +272,7 @@ public final class ActivityProductBinding implements ViewBinding {
     this.lastPrice = lastPrice;
     this.linearLayout5 = linearLayout5;
     this.linearLayout7 = linearLayout7;
+    this.lldescription = lldescription;
     this.mins = mins;
     this.pieChartView = pieChartView;
     this.plus = plus;
@@ -291,6 +306,7 @@ public final class ActivityProductBinding implements ViewBinding {
     this.tvRate4 = tvRate4;
     this.tvRate5 = tvRate5;
     this.tvYourRatins = tvYourRatins;
+    this.webView = webView;
     this.yourRate = yourRate;
   }
 
@@ -336,6 +352,12 @@ public final class ActivityProductBinding implements ViewBinding {
       id = R.id.addToggalsScrollView;
       HorizontalScrollView addToggalsScrollView = ViewBindings.findChildViewById(rootView, id);
       if (addToggalsScrollView == null) {
+        break missingId;
+      }
+
+      id = R.id.animationView;
+      LottieAnimationView animationView = ViewBindings.findChildViewById(rootView, id);
+      if (animationView == null) {
         break missingId;
       }
 
@@ -468,6 +490,12 @@ public final class ActivityProductBinding implements ViewBinding {
       id = R.id.linearLayout7;
       ConstraintLayout linearLayout7 = ViewBindings.findChildViewById(rootView, id);
       if (linearLayout7 == null) {
+        break missingId;
+      }
+
+      id = R.id.lldescription;
+      LinearLayout lldescription = ViewBindings.findChildViewById(rootView, id);
+      if (lldescription == null) {
         break missingId;
       }
 
@@ -669,6 +697,12 @@ public final class ActivityProductBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.webView;
+      WebView webView = ViewBindings.findChildViewById(rootView, id);
+      if (webView == null) {
+        break missingId;
+      }
+
       id = R.id.yourRate;
       RatingBar yourRate = ViewBindings.findChildViewById(rootView, id);
       if (yourRate == null) {
@@ -676,15 +710,16 @@ public final class ActivityProductBinding implements ViewBinding {
       }
 
       return new ActivityProductBinding((ConstraintLayout) rootView, TotalRating,
-          addToggalsLinearLayout, addToggalsScrollView, bannerSlierViewPager, cardView, cardView11,
-          comments, constraintLayout, constraintLayout11, constraintLayout2, constraintLayout3,
-          constraintLayout4, constraintLayout7, constraintLayout8, description, fab, imageView3,
-          imageView4, imageView5, imageView6, imageView7, imageView8, lastPrice, linearLayout5,
-          linearLayout7, mins, pieChartView, plus, price, productName, progressBar1, progressBar2,
-          progressBar3, progressBar4, progressBar5, quantity, radioGroup, rateNowContainer,
-          ratingSeller, scrollView2, share, textView12, textView13, textView14, textView15,
-          textView16, textView4, textView5, textView6, textView60, textView7, trarmark, tvRate1,
-          tvRate2, tvRate3, tvRate4, tvRate5, tvYourRatins, yourRate);
+          addToggalsLinearLayout, addToggalsScrollView, animationView, bannerSlierViewPager,
+          cardView, cardView11, comments, constraintLayout, constraintLayout11, constraintLayout2,
+          constraintLayout3, constraintLayout4, constraintLayout7, constraintLayout8, description,
+          fab, imageView3, imageView4, imageView5, imageView6, imageView7, imageView8, lastPrice,
+          linearLayout5, linearLayout7, lldescription, mins, pieChartView, plus, price, productName,
+          progressBar1, progressBar2, progressBar3, progressBar4, progressBar5, quantity,
+          radioGroup, rateNowContainer, ratingSeller, scrollView2, share, textView12, textView13,
+          textView14, textView15, textView16, textView4, textView5, textView6, textView60,
+          textView7, trarmark, tvRate1, tvRate2, tvRate3, tvRate4, tvRate5, tvYourRatins, webView,
+          yourRate);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

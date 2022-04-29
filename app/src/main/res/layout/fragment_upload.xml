@@ -91,15 +91,37 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/description" />
 
-            <EditText
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/keywords"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="start"
-                android:hint="@string/keywords"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/trademark" />
+                app:layout_constraintTop_toBottomOf="@+id/trademark">
+
+                <Button
+                    android:id="@+id/addKeywords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keywords"
+                    android:textAllCaps="false"
+                    android:textSize="8sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/keys"
+                    tools:listitem="@layout/keyword_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="@+id/addKeywords"
+                    app:layout_constraintStart_toEndOf="@+id/addKeywords"
+                    app:layout_constraintTop_toTopOf="@+id/addKeywords" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
             <RatingBar

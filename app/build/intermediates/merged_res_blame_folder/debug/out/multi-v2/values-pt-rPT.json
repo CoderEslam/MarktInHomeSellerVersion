@@ -21,6 +21,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\f37046d9bce6eca0a8e6f83da3399fa3\\transformed\\core-1.9.0-alpha03\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "109",
+                        "startColumns": "4",
+                        "startOffsets": "10171",
+                        "endColumns": "100",
+                        "endOffsets": "10267"
+                    }
+                },
+                {
                     "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\bd3f53b35b258cfd444e85babd75eb89\\transformed\\jetified-firebase-messaging-23.0.0\\res\\values-pt-rPT\\values.xml",
                     "from": {
                         "startLines": "4",
@@ -105,23 +122,6 @@
                         "endLines": "5,33,34,35,36,55,56,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,107",
                         "endColumns": "12,81,102,119,80,63,91,78,64,89,67,61,72,63,53,125,57,61,53,75,142,86,81,108,81,81,86,66,65,74,79,86,72,76,72,73,92,76,92,97,73,80,98,52,65,88,87,61,63,62,115,102,106,103,85",
                         "endOffsets": "273,3086,3189,3309,3390,5788,5880,6036,6101,6191,6259,6321,6394,6458,6512,6638,6696,6758,6812,6888,7031,7118,7200,7309,7391,7473,7560,7627,7693,7768,7848,7935,8008,8085,8158,8232,8325,8402,8495,8593,8667,8748,8847,8900,8966,9055,9143,9205,9269,9332,9448,9551,9658,9762,10080"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\eslam\\.gradle\\caches\\transforms-3\\43337579f268c92d97d1141a874332b4\\transformed\\core-1.9.0-alpha02\\res\\values-pt-rPT\\values-pt-rPT.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "109",
-                        "startColumns": "4",
-                        "startOffsets": "10171",
-                        "endColumns": "100",
-                        "endOffsets": "10267"
                     }
                 }
             ]

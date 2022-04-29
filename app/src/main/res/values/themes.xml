@@ -55,9 +55,17 @@
         <item name="android:background">@android:color/transparent</item>
 
     </style>
+
     <style name="Widget.SocialView" parent="android:Widget.TextView">
         <item name="HashtagColor">@color/blueDark</item>
         <item name="MentionColor">@color/blueDark</item>
         <item name="HyperlinkColor">@color/blueDark</item>
     </style>
+
+
+    <style name="Theme.Collapsing.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Collapsing.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
 </resources>

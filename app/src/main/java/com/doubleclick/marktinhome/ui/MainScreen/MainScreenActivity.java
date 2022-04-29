@@ -27,12 +27,14 @@ import com.doubleclick.ViewModel.RecentSearchViewModel;
 import com.doubleclick.ViewModel.UserViewModel;
 import com.doubleclick.marktinhome.Adapters.NavAdapter;
 import com.doubleclick.marktinhome.Model.ChildCategory;
+import com.doubleclick.marktinhome.Model.ClassificationPC;
 import com.doubleclick.marktinhome.Model.User;
 import com.doubleclick.marktinhome.R;
 import com.doubleclick.marktinhome.Repository.Sending;
 import com.doubleclick.marktinhome.Views.SmoothButtom.SmoothBottomBar;
 import com.doubleclick.marktinhome.ui.Filter.FilterActivity;
 import com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragment;
+import com.doubleclick.marktinhome.ui.MainScreen.Parents.ParentActivity;
 import com.doubleclick.marktinhome.ui.ProductActivity.productFragment;
 import com.mxn.soul.flowingdrawer_core.ElasticDrawer;
 import com.mxn.soul.flowingdrawer_core.FlowingDrawer;
@@ -151,6 +153,13 @@ public class MainScreenActivity extends AppCompatActivity implements NavAdapter.
         Intent intent = new Intent(MainScreenActivity.this, FilterActivity.class);
         intent.putExtra("id", childCategory.getPushId());
         intent.putExtra("type", "childId");
+        startActivity(intent);
+    }
+
+    @Override
+    public void onClickedNavParent(ClassificationPC classificationPC) {
+        Intent intent = new Intent(MainScreenActivity.this, ParentActivity.class);
+        intent.putExtra("classificationPC", classificationPC);
         startActivity(intent);
     }
 

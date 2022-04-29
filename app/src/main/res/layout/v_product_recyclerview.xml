@@ -14,7 +14,6 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:numColumns="2"
             android:clipToPadding="false"
             app:spanCount="2"
             android:orientation="horizontal"
@@ -24,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            tools:listitem="@layout/layout_product" />
+            tools:listitem="@layout/layout_small_product" />
 
     </androidx.core.widget.NestedScrollView>
 

@@ -18,6 +18,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/cart" />
+
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
@@ -44,15 +57,40 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <androidx.viewpager.widget.ViewPager
-                    android:id="@+id/banner_slier_view_pager"
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:padding="15dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0" />
+                    android:layout_height="match_parent">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/banner_slier_view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:padding="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="@+id/banner_slier_view_pager"
+                        app:layout_constraintStart_toStartOf="@+id/banner_slier_view_pager"
+                        app:layout_constraintTop_toBottomOf="@+id/banner_slier_view_pager">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/small_arrow_left" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/small_arrow_right" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -189,21 +227,46 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:src="@drawable/share"
-                        app:layout_constraintStart_toStartOf="@+id/description"
+                        app:layout_constraintStart_toStartOf="@+id/lldescription"
                         app:layout_constraintTop_toBottomOf="@+id/addToggalsScrollView" />
 
 
-                    <TextView
-                        android:id="@+id/description"
+                    <LinearLayout
+                        android:id="@+id/lldescription"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="300dp"
                         android:layout_marginStart="8dp"
+                        android:orientation="vertical"
                         android:text="@string/description"
                         android:textColor="@color/black"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+                        <androidx.core.widget.NestedScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/description"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <WebView
+                                    android:id="@+id/webView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1000dp" />
+                            </LinearLayout>
+
+                        </androidx.core.widget.NestedScrollView>
+
+                    </LinearLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/constraintLayout8"
@@ -248,27 +311,30 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
                     <HorizontalScrollView
-                        android:orientation="horizontal"
                         android:id="@+id/addToggalsScrollView"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
                         android:layout_marginEnd="16dp"
-                        app:layout_constraintEnd_toEndOf="@+id/description"
-                        app:layout_constraintStart_toStartOf="@+id/description"
-                        app:layout_constraintTop_toBottomOf="@+id/description">
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="@+id/lldescription"
+                        app:layout_constraintStart_toStartOf="@+id/lldescription"
+                        app:layout_constraintTop_toBottomOf="@+id/lldescription">
+
                         <LinearLayout
-                            android:orientation="horizontal"
                             android:id="@+id/addToggalsLinearLayout"
                             android:layout_width="200dp"
-                            android:layout_height="50dp">
+                            android:layout_height="50dp"
+                            android:orientation="horizontal">
+
                             <RadioGroup
-                                android:orientation="horizontal"
                                 android:id="@+id/radioGroup"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent">
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                             </RadioGroup>
                         </LinearLayout>
@@ -280,7 +346,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@+id/description"
+                        app:layout_constraintStart_toStartOf="@+id/lldescription"
                         app:layout_constraintTop_toBottomOf="@+id/constraintLayout8">
 
                         <TextView
@@ -342,9 +408,9 @@
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:id="@+id/linearLayout7"
-                            android:visibility="gone"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
+                            android:visibility="gone"
                             app:layout_constraintEnd_toEndOf="@+id/TotalRating"
                             app:layout_constraintStart_toStartOf="@+id/TotalRating"
                             app:layout_constraintTop_toBottomOf="@+id/TotalRating">

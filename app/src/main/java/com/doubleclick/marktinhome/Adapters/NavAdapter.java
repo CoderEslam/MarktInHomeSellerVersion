@@ -41,7 +41,7 @@ public class NavAdapter extends RecyclerView.Adapter<NavAdapter.NavViewHolder> i
     @Override
     public void onBindViewHolder(@NonNull NavViewHolder holder, int position) {
         holder.name.setText(classificationPCS.get(holder.getAdapterPosition()).getName());
-        holder.nestedRecyclerView.setAdapter(new NavChildAdapter(classificationPCS.get(holder.getAdapterPosition()).getChildCategory(),this));
+        holder.nestedRecyclerView.setAdapter(new NavChildAdapter(classificationPCS.get(holder.getAdapterPosition()).getChildCategory(), this));
         boolean isExpandable = classificationPCS.get(holder.getAdapterPosition()).isExpendable();
         Glide.with(holder.itemView.getContext()).load(classificationPCS.get(holder.getAdapterPosition()).getImage()).into(holder.imageParent);
         holder.nestedRecyclerView.setVisibility(isExpandable ? View.VISIBLE : View.GONE);
@@ -50,6 +50,9 @@ public class NavAdapter extends RecyclerView.Adapter<NavAdapter.NavViewHolder> i
         } else {
             holder.mArrowImage.setImageResource(R.drawable.arrow_down);
         }
+        holder.itemView.setOnClickListener(v -> {
+            onClickChild.onClickedNavParent(classificationPCS.get(position));
+        });
         holder.mArrowImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,8 +62,10 @@ public class NavAdapter extends RecyclerView.Adapter<NavAdapter.NavViewHolder> i
         });
     }
 
-    public interface onClickChild{
+    public interface onClickChild {
         void onClickedNavChild(ChildCategory childCategory);
+
+        void onClickedNavParent(ClassificationPC classificationPC);
     }
 
     @Override
@@ -78,6 +83,7 @@ public class NavAdapter extends RecyclerView.Adapter<NavAdapter.NavViewHolder> i
         private ImageView mArrowImage;
         private RecyclerView nestedRecyclerView;
         public CircleImageView imageParent;
+
         public NavViewHolder(@NonNull View itemView) {
             super(itemView);
             imageParent = itemView.findViewById(R.id.imageParent);

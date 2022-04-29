@@ -18,13 +18,16 @@ import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AppCompatSpinner
 import androidx.cardview.widget.CardView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.RecyclerView
 import com.divyanshu.colorseekbar.ColorSeekBar
+import com.doubleclick.ViewModel.KeywordsViewModel
 import com.doubleclick.ViewModel.TradmarkViewModel
 import com.doubleclick.marktinhome.Adapters.ImageAdapter
+import com.doubleclick.marktinhome.Adapters.KeywordAdapter
 import com.doubleclick.marktinhome.BaseFragment
 import com.doubleclick.marktinhome.Model.Constantes.PRODUCT
 import com.doubleclick.marktinhome.R
@@ -36,9 +39,10 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageTask
 import com.google.firebase.storage.UploadTask
 import java.util.*
+import kotlin.collections.ArrayList
 
 
-class UploadFragment : BaseFragment() {
+class UploadFragment : BaseFragment(), KeywordAdapter.OnDelete, KeywordBottomSheet.Keywords {
 
 
     lateinit var marke: String
@@ -48,7 +52,9 @@ class UploadFragment : BaseFragment() {
     private lateinit var productLastPrice: EditText;
     private lateinit var RichTable: FrameLayout;
     private lateinit var description: EditText;
-    private lateinit var keywords: EditText
+    private lateinit var keywords: ConstraintLayout
+    private lateinit var addKeywords: Button
+    private lateinit var keys: RecyclerView;
     private lateinit var trademark: AppCompatSpinner;
     private lateinit var Upload: Button;
     private lateinit var tradmarkViewModel: TradmarkViewModel
@@ -63,6 +69,9 @@ class UploadFragment : BaseFragment() {
     lateinit var addView: ImageView
     private lateinit var builder: AlertDialog.Builder
     private var colorToggle: Int = 0
+    private var texts: ArrayList<String> = ArrayList();
+    private lateinit var keywordsViewModel: KeywordsViewModel
+    private lateinit var keywordAdapter: KeywordAdapter;
     val parent_child by navArgs<UploadFragmentArgs>()
     var begin = "<!DOCTYPE html>\n" +
             "<html>\n" +
@@ -107,6 +116,8 @@ class UploadFragment : BaseFragment() {
         productLastPrice = view.findViewById(R.id.productLastPrice);
         description = view.findViewById(R.id.description);
         RichTable = view.findViewById(R.id.RichTable);
+        addKeywords = view.findViewById(R.id.addKeywords);
+        keys = view.findViewById(R.id.keys);
         requireActivity().supportFragmentManager.beginTransaction()
             .replace(RichTable.id, RichFragment()).commit()
         trademark = view.findViewById(R.id.trademark);
@@ -120,6 +131,7 @@ class UploadFragment : BaseFragment() {
         uris = ArrayList()
         downloadUri = HashMap();
         mapToggleButton = HashMap();
+        keywordsViewModel = ViewModelProvider(this)[KeywordsViewModel::class.java]
         tradmarkViewModel = ViewModelProvider(this)[TradmarkViewModel::class.java]
         tradmarkViewModel.namesMark.observe(viewLifecycleOwner, Observer {
 //            var trademarkAdapter  = TrademarkAdapter(it)
@@ -143,6 +155,9 @@ class UploadFragment : BaseFragment() {
             val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, it)
             trademark.setAdapter(adapter)
         })
+        keywordsViewModel.keys.observe(viewLifecycleOwner, Observer {
+            Toast.makeText(context, it.toString(), Toast.LENGTH_LONG).show()
+        })
         ratingSeller.setOnRatingBarChangeListener({ ratingBar, rating, fromUser ->
             rate = rating;
         })
@@ -155,8 +170,8 @@ class UploadFragment : BaseFragment() {
                 productLastPrice.error = "input last of product"
             } else if (description.text.toString() == "") {
                 description.error = "input description of product"
-            } else if (keywords.text.toString() == "") {
-                keywords.error = "input keywords of product"
+            } else if (texts.size != 0) {
+                Toast.makeText(context, "input keywords of product", Toast.LENGTH_LONG).show()
             } else {
                 try {
                     UploadImages(
@@ -164,7 +179,7 @@ class UploadFragment : BaseFragment() {
                         productPrice.text.toString().toDouble(),
                         productLastPrice.text.toString().toDouble(),
                         description.text.toString(),
-                        keywords.text.toString(),
+                        texts.toString(),
                         marke,
                         parent_child.parent!!.pushId,
                         parent_child.child!!.pushId,
@@ -182,6 +197,11 @@ class UploadFragment : BaseFragment() {
         }
         selectImages.setOnClickListener {
             openImage()
+        }
+
+        addKeywords.setOnClickListener {
+            var keywordBottomSheet = KeywordBottomSheet(this);
+            keywordBottomSheet.show(requireActivity().supportFragmentManager, "keywords")
         }
 
         addView.setOnClickListener {
@@ -371,6 +391,22 @@ class UploadFragment : BaseFragment() {
         builder.setView(view)
         builder.show()
 
+    }
+
+    override fun onItemDelete(pos: Int) {
+        try {
+            texts.removeAt(pos)
+            keywordAdapter.notifyItemRemoved(pos)
+        } catch (e: IndexOutOfBoundsException) {
+
+        }
+
+    }
+
+    override fun ItemsKeyword(items: ArrayList<String>) {
+        texts = items;
+        keywordAdapter = KeywordAdapter(items, this)
+        keys.adapter = keywordAdapter
     }
 
 }

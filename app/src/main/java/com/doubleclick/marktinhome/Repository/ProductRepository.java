@@ -197,7 +197,7 @@ public class ProductRepository extends BaseRepository {
                     c1.add(childCategory);
                 }
             }
-            classificationPCS.add(new ClassificationPC(c1, parentCategory.getName(), parentCategory.getImage(), false));
+            classificationPCS.add(new ClassificationPC(c1, parentCategory.getName(), parentCategory.getImage(), false, parentCategory.getPushId()));
         }
         product.getClassificationPC(classificationPCS);
     }

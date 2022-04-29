@@ -34,6 +34,9 @@ public final class FragmentUploadBinding implements ViewBinding {
   public final Button Upload;
 
   @NonNull
+  public final Button addKeywords;
+
+  @NonNull
   public final LinearLayout addToggleButton;
 
   @NonNull
@@ -46,7 +49,10 @@ public final class FragmentUploadBinding implements ViewBinding {
   public final HorizontalScrollView horizontalScrollView;
 
   @NonNull
-  public final EditText keywords;
+  public final RecyclerView keys;
+
+  @NonNull
+  public final ConstraintLayout keywords;
 
   @NonNull
   public final RecyclerView productImages;
@@ -70,19 +76,22 @@ public final class FragmentUploadBinding implements ViewBinding {
   public final AppCompatSpinner trademark;
 
   private FragmentUploadBinding(@NonNull ConstraintLayout rootView, @NonNull FrameLayout RichTable,
-      @NonNull Button Upload, @NonNull LinearLayout addToggleButton, @NonNull ImageView addView,
-      @NonNull EditText description, @NonNull HorizontalScrollView horizontalScrollView,
-      @NonNull EditText keywords, @NonNull RecyclerView productImages,
+      @NonNull Button Upload, @NonNull Button addKeywords, @NonNull LinearLayout addToggleButton,
+      @NonNull ImageView addView, @NonNull EditText description,
+      @NonNull HorizontalScrollView horizontalScrollView, @NonNull RecyclerView keys,
+      @NonNull ConstraintLayout keywords, @NonNull RecyclerView productImages,
       @NonNull EditText productLastPrice, @NonNull EditText productName,
       @NonNull EditText productPrice, @NonNull RatingBar ratingSeller, @NonNull Button selectImages,
       @NonNull AppCompatSpinner trademark) {
     this.rootView = rootView;
     this.RichTable = RichTable;
     this.Upload = Upload;
+    this.addKeywords = addKeywords;
     this.addToggleButton = addToggleButton;
     this.addView = addView;
     this.description = description;
     this.horizontalScrollView = horizontalScrollView;
+    this.keys = keys;
     this.keywords = keywords;
     this.productImages = productImages;
     this.productLastPrice = productLastPrice;
@@ -132,6 +141,12 @@ public final class FragmentUploadBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.addKeywords;
+      Button addKeywords = ViewBindings.findChildViewById(rootView, id);
+      if (addKeywords == null) {
+        break missingId;
+      }
+
       id = R.id.addToggleButton;
       LinearLayout addToggleButton = ViewBindings.findChildViewById(rootView, id);
       if (addToggleButton == null) {
@@ -156,8 +171,14 @@ public final class FragmentUploadBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.keys;
+      RecyclerView keys = ViewBindings.findChildViewById(rootView, id);
+      if (keys == null) {
+        break missingId;
+      }
+
       id = R.id.keywords;
-      EditText keywords = ViewBindings.findChildViewById(rootView, id);
+      ConstraintLayout keywords = ViewBindings.findChildViewById(rootView, id);
       if (keywords == null) {
         break missingId;
       }
@@ -204,9 +225,10 @@ public final class FragmentUploadBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentUploadBinding((ConstraintLayout) rootView, RichTable, Upload,
-          addToggleButton, addView, description, horizontalScrollView, keywords, productImages,
-          productLastPrice, productName, productPrice, ratingSeller, selectImages, trademark);
+      return new FragmentUploadBinding((ConstraintLayout) rootView, RichTable, Upload, addKeywords,
+          addToggleButton, addView, description, horizontalScrollView, keys, keywords,
+          productImages, productLastPrice, productName, productPrice, ratingSeller, selectImages,
+          trademark);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

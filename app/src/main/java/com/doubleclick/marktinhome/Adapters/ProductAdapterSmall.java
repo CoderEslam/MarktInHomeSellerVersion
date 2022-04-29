@@ -72,7 +72,7 @@ public class ProductAdapterSmall extends RecyclerView.Adapter<ProductAdapterSmal
 
 
     public class ProductViewHolder extends RecyclerView.ViewHolder {
-        public CircleImageView imageProduct;
+        public ImageView imageProduct;
         public TextView productName;
         public TextView description;
         public TextView productPrice;

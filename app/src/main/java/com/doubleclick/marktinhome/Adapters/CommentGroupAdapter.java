@@ -147,8 +147,6 @@ public class CommentGroupAdapter extends RecyclerView.Adapter<CommentGroupAdapte
                                 User user = task.getResult().getValue(User.class);
                                 assert user != null;
                                 commentsReplyData.setUser(user);
-//                                Log.e("commentsReplyData", commentsReplyData.toString());
-//                                commentsReplies.add(new CommentsReplyData(commentsReply,user));
                                 nestedScroll.setVisibility(View.VISIBLE);
                                 commentsReplies.add(commentsReplyData);
                                 RecyclerReplay.setAdapter(new ReplyAdapter(commentsReplies));

@@ -4,6 +4,8 @@ package com.doubleclick.marktinhome.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,7 +14,6 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.doubleclick.marktinhome.R;
-import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -28,7 +29,7 @@ public final class LayoutSmallProductBinding implements ViewBinding {
   public final TextView description;
 
   @NonNull
-  public final CircleImageView imageProduct;
+  public final ImageView imageProduct;
 
   @NonNull
   public final TextView productLastPrice;
@@ -40,12 +41,15 @@ public final class LayoutSmallProductBinding implements ViewBinding {
   public final TextView productPrice;
 
   @NonNull
+  public final RatingBar ratingBar;
+
+  @NonNull
   public final TextView trademark;
 
   private LayoutSmallProductBinding(@NonNull ConstraintLayout rootView, @NonNull CardView cardView,
-      @NonNull TextView description, @NonNull CircleImageView imageProduct,
+      @NonNull TextView description, @NonNull ImageView imageProduct,
       @NonNull TextView productLastPrice, @NonNull TextView productName,
-      @NonNull TextView productPrice, @NonNull TextView trademark) {
+      @NonNull TextView productPrice, @NonNull RatingBar ratingBar, @NonNull TextView trademark) {
     this.rootView = rootView;
     this.cardView = cardView;
     this.description = description;
@@ -53,6 +57,7 @@ public final class LayoutSmallProductBinding implements ViewBinding {
     this.productLastPrice = productLastPrice;
     this.productName = productName;
     this.productPrice = productPrice;
+    this.ratingBar = ratingBar;
     this.trademark = trademark;
   }
 
@@ -96,7 +101,7 @@ public final class LayoutSmallProductBinding implements ViewBinding {
       }
 
       id = R.id.imageProduct;
-      CircleImageView imageProduct = ViewBindings.findChildViewById(rootView, id);
+      ImageView imageProduct = ViewBindings.findChildViewById(rootView, id);
       if (imageProduct == null) {
         break missingId;
       }
@@ -119,6 +124,12 @@ public final class LayoutSmallProductBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.ratingBar;
+      RatingBar ratingBar = ViewBindings.findChildViewById(rootView, id);
+      if (ratingBar == null) {
+        break missingId;
+      }
+
       id = R.id.trademark;
       TextView trademark = ViewBindings.findChildViewById(rootView, id);
       if (trademark == null) {
@@ -126,7 +137,7 @@ public final class LayoutSmallProductBinding implements ViewBinding {
       }
 
       return new LayoutSmallProductBinding((ConstraintLayout) rootView, cardView, description,
-          imageProduct, productLastPrice, productName, productPrice, trademark);
+          imageProduct, productLastPrice, productName, productPrice, ratingBar, trademark);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

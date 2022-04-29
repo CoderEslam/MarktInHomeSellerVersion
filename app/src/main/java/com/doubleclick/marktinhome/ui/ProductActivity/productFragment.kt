@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.WebView
 import android.widget.*
 import androidx.appcompat.widget.AppCompatToggleButton
 import androidx.lifecycle.Observer
@@ -50,6 +51,7 @@ class productFragment : BaseFragment() {
     private var ToggleItem: String? = ""
     lateinit var comments: TextView;
     lateinit var radioGroup: RadioGroup
+    lateinit var webView: WebView
 
 
     private val product by navArgs<productFragmentArgs>()
@@ -75,6 +77,7 @@ class productFragment : BaseFragment() {
         productName = view.findViewById(R.id.productName)
         trarmark = view.findViewById(R.id.trarmark)
         price = view.findViewById(R.id.price)
+        webView = view.findViewById(R.id.webView)
         lastPrice = view.findViewById(R.id.lastPrice)
         description = view.findViewById(R.id.description)
         TotalRating = view.findViewById(R.id.TotalRating)
@@ -92,7 +95,18 @@ class productFragment : BaseFragment() {
         trarmark.text = product.product!!.tradeMark
         price.text = product.product!!.price.toString()
         lastPrice.text = product.product!!.lastPrice.toString()
-        description.text = product.product!!.description
+        if (product.product!!.description.contains("</")) {
+            description.visibility = View.GONE
+            webView.loadDataWithBaseURL(
+                null,
+                product.product!!.description,
+                "text/html",
+                "utf-8",
+                null
+            );
+        } else {
+            description.text = product.product!!.description
+        }
         var spliter = product!!.product!!.toggals.toString().replace("[", "").replace("]", "")
             .replace(" ", "").split(",")
         for (i in 0 until spliter.size) {
