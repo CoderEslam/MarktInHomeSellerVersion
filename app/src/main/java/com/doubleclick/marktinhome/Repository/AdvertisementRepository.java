@@ -33,15 +33,18 @@ public class AdvertisementRepository extends BaseRepository {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 advertisements.clear();
                 try {
-                    if (isNetworkConnected() && snapshot.exists()) {
-                        for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                            Advertisement advertisement = dataSnapshot.getValue(Advertisement.class);
-                            advertisements.add(advertisement);
+                    if (isNetworkConnected()) {
+                        if (snapshot.exists()) {
+                            for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                                Advertisement advertisement = dataSnapshot.getValue(Advertisement.class);
+                                advertisements.add(advertisement);
+                            }
+                            advInterface.AllAdvertisement(advertisements);
                         }
-                        advInterface.AllAdvertisement(advertisements);
+                    } else {
+                        ShowToast("No Internet Connection");
                     }
                 } catch (Exception e) {
-                    ShowToast("No Internet Connection");
                     Log.e("Exception", e.getMessage());
                 }
             }

@@ -94,7 +94,6 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
     private lateinit var client: FusedLocationProviderClient
     private var PICK_CONTACT = 100
     private val REQUEST_CODE = 101;
-    private var openFile = true
     private lateinit var file: ImageView
     private lateinit var video: ImageView
     private lateinit var contact: ImageView
@@ -116,12 +115,18 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
     private var chats: ArrayList<Chat> = ArrayList();
     var audioPath: String? = null
     private var cklicked = true
-    val user by navArgs<ChatFragmentArgs>()
+    private var user: User? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-
+            if (it.isEmpty) {
+                val User by navArgs<ChatFragmentArgs>()
+                user = User.user;
+            } else {
+                user = it.getSerializable("user") as User?
+            }
         }
     }
 
@@ -153,10 +158,10 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
         username = view.findViewById(R.id.username)
         status = view.findViewById(R.id.status)
         chatViewModel = ViewModelProvider(this)[ChatViewModel::class.java]
-        chatViewModel.ChatById(user.user!!.id)
-        Glide.with(requireContext()).load(user.user!!.image).into(profile_image)
-        username.text = user.user!!.name;
-        status.text = user.user!!.status;
+        chatViewModel.ChatById(user!!.id)
+        Glide.with(requireContext()).load(user!!.image).into(profile_image)
+        username.text = user!!.name;
+        status.text = user!!.status;
 
 //        chatViewModel.myChat.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
 ////            chats = it;
@@ -328,7 +333,7 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
         map["sender"] = myId
         map["message"] = text
         map["type"] = type
-        map["receiver"] = user.user!!.id // Id of Admin
+        map["receiver"] = user!!.id // Id of Admin
         map["date"] = Date().time
         map["id"] = id
         map["StatusMessage"] = "Uploaded"
@@ -340,21 +345,21 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
     }
 
     private fun upload(id: String, map: HashMap<String, Any>) {
-        reference.child(CHATS).child(myId).child(user.user!!.id.toString())
+        reference.child(CHATS).child(myId).child(user!!.id.toString())
             .child(id).updateChildren(map);
-        reference.child(CHATS).child(user.user!!.id.toString()).child(myId)
+        reference.child(CHATS).child(user!!.id.toString()).child(myId)
             .child(id).updateChildren(map);
     }
 
     private fun makeChatList() {
         val map1: HashMap<String, Any> = HashMap();
-        map1["id"] = user.user!!.id
+        map1["id"] = user!!.id
         map1["time"] = Date().time;
-        reference.child(Constantes.CHAT_LIST).child(myId).child(user.user!!.id).updateChildren(map1)
+        reference.child(Constantes.CHAT_LIST).child(myId).child(user!!.id).updateChildren(map1)
         val map2: HashMap<String, Any> = HashMap();
         map2["id"] = myId
         map2["time"] = Date().time;
-        reference.child(Constantes.CHAT_LIST).child(user.user!!.id).child(myId).updateChildren(map2)
+        reference.child(Constantes.CHAT_LIST).child(user!!.id).child(myId).updateChildren(map2)
 
     }
 
@@ -431,7 +436,7 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
     override fun onResume() {
         super.onResume()
         status("online")
-        currentUser(user.user!!.id!!)
+        currentUser(user!!.id!!)
     }
 
     override fun onPause() {
@@ -451,7 +456,7 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
     fun sendRecodingMessage(audioPath: String?) {
         if (audioPath != null) {
             val storageReference = FirebaseStorage.getInstance()
-                .getReference("/Media/Recording/" + myId + ":" + user.user!!.id.toString() + System.currentTimeMillis())
+                .getReference("/Media/Recording/" + myId + ":" + user!!.id.toString() + System.currentTimeMillis())
             Log.e("audio path", audioPath)
             val audioFile = Uri.fromFile(File(audioPath))
             Log.e("audioFile = ", audioFile.toString())
@@ -465,7 +470,7 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
                             val time = Date().time
                             val id = reference.push().key.toString()
                             map["sender"] = myId
-                            map["receiver"] = user.user!!.id.toString()
+                            map["receiver"] = user!!.id.toString()
                             map["message"] = url
                             map["type"] = "voice"
                             map["id"] = id
@@ -592,7 +597,7 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
                     val map = HashMap<String, Any>()
                     val id = reference.push().key.toString()
                     map["sender"] = myId
-                    map["receiver"] = user.user!!.id
+                    map["receiver"] = user!!.id
                     map["message"] = url
                     map["type"] = fileType.toString()
                     map["id"] = id
@@ -620,11 +625,11 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
         val data = Data(
             myId,
             R.mipmap.ic_launcher,
-            "${user.user!!.name.toString()}: $message",
+            "${user!!.name.toString()}: $message",
             "New Message",
-            user.user!!.id.toString()
+            user!!.id.toString()
         )
-        val sender = Sender(data, user.user!!.token.toString())
+        val sender = Sender(data, user!!.token.toString())
         apiService.sendNotification(sender)
             .enqueue(object : Callback<MyResponse> {
                 override fun onResponse(

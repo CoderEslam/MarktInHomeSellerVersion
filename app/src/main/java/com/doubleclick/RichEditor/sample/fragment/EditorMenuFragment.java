@@ -11,7 +11,6 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import com.doubleclick.RichEditor.mricheditor.ActionType;
 import com.doubleclick.RichEditor.sample.interfaces.OnActionPerformListener;
@@ -20,6 +19,7 @@ import com.doubleclick.marktinhome.R;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -31,35 +31,12 @@ public class EditorMenuFragment extends Fragment implements View.OnClickListener
     TextView tvFontSpacing;
     ColorPaletteView cpvFontTextColor;
     ColorPaletteView cpvHighlightColor;
-    private LinearLayout ll_font_size, ll_line_height;
-    private ImageView iv_action_bold,
-            iv_action_italic,
-            iv_action_underline,
-            iv_action_strikethrough,
-            iv_action_justify_left,
-            iv_action_justify_center,
-            iv_action_justify_right,
-            iv_action_justify_full,
-            iv_action_subscript,
-            iv_action_superscript,
-            iv_action_insert_numbers,
-            iv_action_insert_bullets,
-            iv_action_indent,
-            iv_action_outdent,
-            iv_action_code_view,
-            iv_action_blockquote,
-            iv_action_code_block,
-            iv_action_insert_image,
-            iv_action_insert_link,
-            iv_action_table,
-            iv_action_line;
-    private LinearLayout ll_h1, ll_h2, ll_h3, ll_h4, ll_h5, ll_h6, ll_normal;
     private OnActionPerformListener mActionClickListener;
 
     private final static Pattern PATTERN_RGB =
             Pattern.compile("rgb *\\( *([0-9]+), *([0-9]+), *([0-9]+) *\\)");
 
-    private Map<Integer, ActionType> mViewTypeMap = new HashMap<Integer, ActionType>() {
+    private final Map<Integer, ActionType> mViewTypeMap = new HashMap<Integer, ActionType>() {
         {
             put(R.id.iv_action_bold, ActionType.BOLD);
             put(R.id.iv_action_italic, ActionType.ITALIC);
@@ -94,44 +71,43 @@ public class EditorMenuFragment extends Fragment implements View.OnClickListener
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
-        rootView = inflater.inflate(R.layout.fragment_editor_menu, null);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        rootView = inflater.inflate(R.layout.fragment_editor_menu, container, false);
         cpvFontTextColor = rootView.findViewById(R.id.cpv_font_text_color);
         cpvHighlightColor = rootView.findViewById(R.id.cpv_highlight_color);
         tvFontName = rootView.findViewById(R.id.tv_font_name);
         tvFontSpacing = rootView.findViewById(R.id.tv_font_spacing);
         tvFontSize = rootView.findViewById(R.id.tv_font_size);
-        ll_font_size = rootView.findViewById(R.id.ll_font_size);
-        ll_line_height = rootView.findViewById(R.id.ll_line_height);
-        iv_action_bold = rootView.findViewById(R.id.iv_action_bold);
-        iv_action_italic = rootView.findViewById(R.id.iv_action_italic);
-        iv_action_underline = rootView.findViewById(R.id.iv_action_underline);
-        iv_action_strikethrough = rootView.findViewById(R.id.iv_action_strikethrough);
-        iv_action_justify_left = rootView.findViewById(R.id.iv_action_justify_left);
-        iv_action_justify_center = rootView.findViewById(R.id.iv_action_justify_center);
-        iv_action_justify_right = rootView.findViewById(R.id.iv_action_justify_right);
-        iv_action_justify_full = rootView.findViewById(R.id.iv_action_justify_full);
-        iv_action_subscript = rootView.findViewById(R.id.iv_action_subscript);
-        iv_action_superscript = rootView.findViewById(R.id.iv_action_superscript);
-        iv_action_insert_numbers = rootView.findViewById(R.id.iv_action_insert_numbers);
-        iv_action_insert_bullets = rootView.findViewById(R.id.iv_action_insert_bullets);
-        iv_action_indent = rootView.findViewById(R.id.iv_action_indent);
-        iv_action_outdent = rootView.findViewById(R.id.iv_action_outdent);
-        iv_action_code_view = rootView.findViewById(R.id.iv_action_code_view);
-        iv_action_blockquote = rootView.findViewById(R.id.iv_action_blockquote);
-        iv_action_code_block = rootView.findViewById(R.id.iv_action_code_block);
-        ll_normal = rootView.findViewById(R.id.ll_normal);
-        iv_action_insert_image = rootView.findViewById(R.id.iv_action_insert_image);
-        iv_action_insert_link = rootView.findViewById(R.id.iv_action_insert_link);
-        iv_action_table = rootView.findViewById(R.id.iv_action_table);
-        iv_action_line = rootView.findViewById(R.id.iv_action_line);
-        ll_h1 = rootView.findViewById(R.id.ll_h1);
-        ll_h2 = rootView.findViewById(R.id.ll_h2);
-        ll_h3 = rootView.findViewById(R.id.ll_h3);
-        ll_h4 = rootView.findViewById(R.id.ll_h4);
-        ll_h5 = rootView.findViewById(R.id.ll_h5);
-        ll_h6 = rootView.findViewById(R.id.ll_h6);
+        LinearLayout ll_font_size = rootView.findViewById(R.id.ll_font_size);
+        LinearLayout ll_line_height = rootView.findViewById(R.id.ll_line_height);
+        ImageView iv_action_bold = rootView.findViewById(R.id.iv_action_bold);
+        ImageView iv_action_italic = rootView.findViewById(R.id.iv_action_italic);
+        ImageView iv_action_underline = rootView.findViewById(R.id.iv_action_underline);
+        ImageView iv_action_strikethrough = rootView.findViewById(R.id.iv_action_strikethrough);
+        ImageView iv_action_justify_left = rootView.findViewById(R.id.iv_action_justify_left);
+        ImageView iv_action_justify_center = rootView.findViewById(R.id.iv_action_justify_center);
+        ImageView iv_action_justify_right = rootView.findViewById(R.id.iv_action_justify_right);
+        ImageView iv_action_justify_full = rootView.findViewById(R.id.iv_action_justify_full);
+        ImageView iv_action_subscript = rootView.findViewById(R.id.iv_action_subscript);
+        ImageView iv_action_superscript = rootView.findViewById(R.id.iv_action_superscript);
+        ImageView iv_action_insert_numbers = rootView.findViewById(R.id.iv_action_insert_numbers);
+        ImageView iv_action_insert_bullets = rootView.findViewById(R.id.iv_action_insert_bullets);
+        ImageView iv_action_indent = rootView.findViewById(R.id.iv_action_indent);
+        ImageView iv_action_outdent = rootView.findViewById(R.id.iv_action_outdent);
+        ImageView iv_action_code_view = rootView.findViewById(R.id.iv_action_code_view);
+        ImageView iv_action_blockquote = rootView.findViewById(R.id.iv_action_blockquote);
+        ImageView iv_action_code_block = rootView.findViewById(R.id.iv_action_code_block);
+        LinearLayout ll_normal = rootView.findViewById(R.id.ll_normal);
+        ImageView iv_action_insert_image = rootView.findViewById(R.id.iv_action_insert_image);
+        ImageView iv_action_insert_link = rootView.findViewById(R.id.iv_action_insert_link);
+        ImageView iv_action_table = rootView.findViewById(R.id.iv_action_table);
+        ImageView iv_action_line = rootView.findViewById(R.id.iv_action_line);
+        LinearLayout ll_h1 = rootView.findViewById(R.id.ll_h1);
+        LinearLayout ll_h2 = rootView.findViewById(R.id.ll_h2);
+        LinearLayout ll_h3 = rootView.findViewById(R.id.ll_h3);
+        LinearLayout ll_h4 = rootView.findViewById(R.id.ll_h4);
+        LinearLayout ll_h5 = rootView.findViewById(R.id.ll_h5);
+        LinearLayout ll_h6 = rootView.findViewById(R.id.ll_h6);
         iv_action_bold.setOnClickListener(this);
         iv_action_italic.setOnClickListener(this);
         iv_action_underline.setOnClickListener(this);
@@ -162,15 +138,9 @@ public class EditorMenuFragment extends Fragment implements View.OnClickListener
         ll_h6.setOnClickListener(this);
         initView();
 
-        ll_font_size.setOnClickListener(v -> {
-            onClickFontSize();
-        });
-        ll_line_height.setOnClickListener(v -> {
-            onClickLineHeight();
-        });
-        tvFontName.setOnClickListener(v -> {
-            onClickFontFamily();
-        });
+        ll_font_size.setOnClickListener(v -> onClickFontSize());
+        ll_line_height.setOnClickListener(v -> onClickLineHeight());
+        tvFontName.setOnClickListener(v -> onClickFontFamily());
 
         return rootView;
     }
@@ -230,8 +200,8 @@ public class EditorMenuFragment extends Fragment implements View.OnClickListener
             }
         });
 
-        FragmentManager fm = getFragmentManager();
-        fm.beginTransaction()
+
+        requireActivity().getSupportFragmentManager().beginTransaction()
                 .add(R.id.fl_action, fontSettingFragment, FontSettingFragment.class.getName())
                 .hide(EditorMenuFragment.this)
                 .commit();
@@ -268,10 +238,10 @@ public class EditorMenuFragment extends Fragment implements View.OnClickListener
                 case UNORDERED:
                     if (isActive) {
                         ((ImageView) view).setColorFilter(
-                                ContextCompat.getColor(getContext(), R.color.blue));
+                                ContextCompat.getColor(requireContext(), R.color.blue));
                     } else {
                         ((ImageView) view).setColorFilter(
-                                ContextCompat.getColor(getContext(), R.color.tintColor));
+                                ContextCompat.getColor(requireContext(), R.color.tintColor));
                     }
                     break;
                 case NORMAL:
@@ -303,14 +273,14 @@ public class EditorMenuFragment extends Fragment implements View.OnClickListener
                 updateFontFamilyStates(value);
                 break;
             case SIZE:
-                updateFontStates(ActionType.SIZE, Double.valueOf(value));
+                updateFontStates(ActionType.SIZE, Double.parseDouble(value));
                 break;
             case FORE_COLOR:
             case BACK_COLOR:
                 updateFontColorStates(type, value);
                 break;
             case LINE_HEIGHT:
-                updateFontStates(ActionType.LINE_HEIGHT, Double.valueOf(value));
+                updateFontStates(ActionType.LINE_HEIGHT, Double.parseDouble(value));
                 break;
             case BOLD:
             case ITALIC:
@@ -331,7 +301,7 @@ public class EditorMenuFragment extends Fragment implements View.OnClickListener
             case H6:
             case ORDERED:
             case UNORDERED:
-                updateActionStates(type, Boolean.valueOf(value));
+                updateActionStates(type, Boolean.parseBoolean(value));
                 break;
             default:
                 break;
@@ -339,43 +309,32 @@ public class EditorMenuFragment extends Fragment implements View.OnClickListener
     }
 
     private void updateFontFamilyStates(final String font) {
-        rootView.post(new Runnable() {
-            @Override
-            public void run() {
-                tvFontName.setText(font);
-            }
-        });
+        rootView.post(() -> tvFontName.setText(font));
     }
 
     private void updateFontStates(final ActionType type, final double value) {
-        rootView.post(new Runnable() {
-            @Override
-            public void run() {
-                switch (type) {
-                    case SIZE:
-                        tvFontSize.setText(String.valueOf((int) value));
-                        break;
-                    case LINE_HEIGHT:
-                        tvFontSpacing.setText(String.valueOf(value));
-                        break;
-                    default:
-                        break;
-                }
+        rootView.post(() -> {
+            switch (type) {
+                case SIZE:
+                    tvFontSize.setText(String.valueOf((int) value));
+                    break;
+                case LINE_HEIGHT:
+                    tvFontSpacing.setText(String.valueOf(value));
+                    break;
+                default:
+                    break;
             }
         });
     }
 
     private void updateFontColorStates(final ActionType type, final String color) {
-        rootView.post(new Runnable() {
-            @Override
-            public void run() {
-                String selectedColor = rgbToHex(color);
-                if (selectedColor != null) {
-                    if (type == ActionType.FORE_COLOR) {
-                        cpvFontTextColor.setSelectedColor(selectedColor);
-                    } else if (type == ActionType.BACK_COLOR) {
-                        cpvHighlightColor.setSelectedColor(selectedColor);
-                    }
+        rootView.post(() -> {
+            String selectedColor = rgbToHex(color);
+            if (selectedColor != null) {
+                if (type == ActionType.FORE_COLOR) {
+                    cpvFontTextColor.setSelectedColor(selectedColor);
+                } else if (type == ActionType.BACK_COLOR) {
+                    cpvHighlightColor.setSelectedColor(selectedColor);
                 }
             }
         });
@@ -384,8 +343,8 @@ public class EditorMenuFragment extends Fragment implements View.OnClickListener
     public static String rgbToHex(String rgb) {
         Matcher m = PATTERN_RGB.matcher(rgb);
         if (m.matches()) {
-            return String.format("#%02x%02x%02x", Integer.valueOf(m.group(1)),
-                    Integer.valueOf(m.group(2)), Integer.valueOf(m.group(3)));
+            return String.format("#%02x%02x%02x", Integer.valueOf(Objects.requireNonNull(m.group(1))),
+                    Integer.valueOf(Objects.requireNonNull(m.group(2))), Integer.valueOf(Objects.requireNonNull(m.group(3))));
         }
         return null;
     }

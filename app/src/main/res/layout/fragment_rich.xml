@@ -78,6 +78,8 @@
                 android:layout_height="match_parent">
 
                 <WebView
+
+                    android:forceHasOverlappingRendering="true"
                     android:id="@+id/wv_container"
                     android:layout_width="match_parent"
                     android:layout_height="1000dp"
@@ -126,7 +128,7 @@
                         android:onClick="onClickTextColor"
                         android:padding="9dp"
                         android:src="@drawable/ic_format_text_color"
-                        android:visibility="gone" />
+ />
 
                     <ImageView
                         android:id="@+id/iv_action_txt_bg_color"
@@ -134,7 +136,7 @@
                         android:onClick="onClickHighlight"
                         android:padding="9dp"
                         android:src="@drawable/ic_format_text_bg_clolr"
-                        android:visibility="gone" />
+ />
 
                     <ImageView
                         android:id="@+id/iv_action_insert_image"

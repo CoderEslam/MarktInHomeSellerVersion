@@ -3,10 +3,8 @@ package com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add
 
 import android.annotation.SuppressLint
 import android.app.Activity.RESULT_OK
-import android.app.ProgressDialog
 import android.content.DialogInterface
 import android.content.Intent
-import android.content.Intent.getIntent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
@@ -24,7 +22,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.RecyclerView
 import com.divyanshu.colorseekbar.ColorSeekBar
-import com.doubleclick.ViewModel.KeywordsViewModel
 import com.doubleclick.ViewModel.TradmarkViewModel
 import com.doubleclick.marktinhome.Adapters.ImageAdapter
 import com.doubleclick.marktinhome.Adapters.KeywordAdapter
@@ -70,7 +67,6 @@ class UploadFragment : BaseFragment(), KeywordAdapter.OnDelete, KeywordBottomShe
     private lateinit var builder: AlertDialog.Builder
     private var colorToggle: Int = 0
     private var texts: ArrayList<String> = ArrayList();
-    private lateinit var keywordsViewModel: KeywordsViewModel
     private lateinit var keywordAdapter: KeywordAdapter;
     val parent_child by navArgs<UploadFragmentArgs>()
     var begin = "<!DOCTYPE html>\n" +
@@ -131,7 +127,6 @@ class UploadFragment : BaseFragment(), KeywordAdapter.OnDelete, KeywordBottomShe
         uris = ArrayList()
         downloadUri = HashMap();
         mapToggleButton = HashMap();
-        keywordsViewModel = ViewModelProvider(this)[KeywordsViewModel::class.java]
         tradmarkViewModel = ViewModelProvider(this)[TradmarkViewModel::class.java]
         tradmarkViewModel.namesMark.observe(viewLifecycleOwner, Observer {
 //            var trademarkAdapter  = TrademarkAdapter(it)
@@ -155,9 +150,7 @@ class UploadFragment : BaseFragment(), KeywordAdapter.OnDelete, KeywordBottomShe
             val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, it)
             trademark.setAdapter(adapter)
         })
-        keywordsViewModel.keys.observe(viewLifecycleOwner, Observer {
-            Toast.makeText(context, it.toString(), Toast.LENGTH_LONG).show()
-        })
+
         ratingSeller.setOnRatingBarChangeListener({ ratingBar, rating, fromUser ->
             rate = rating;
         })
@@ -248,7 +241,7 @@ class UploadFragment : BaseFragment(), KeywordAdapter.OnDelete, KeywordBottomShe
 
     fun ShowHTML(html: String) {
         HTMLText = html;
-        Log.e("HTMLLLLLLLLLLLLLL", "" + begin + HTMLText + end);
+//        Log.e("HTMLLLLLLLLLLLLLL", "" + begin + HTMLText + end);
     }
 
 

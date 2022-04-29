@@ -1,5 +1,6 @@
 package com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -208,9 +209,8 @@ public class RichFragment extends BaseFragment {
 
         mEditorMenuFragment = new EditorMenuFragment();
         mEditorMenuFragment.setActionClickListener(new MOnActionPerformListener(mRichEditorAction));
-        FragmentManager fm = getActivity().getSupportFragmentManager();
-        fm.beginTransaction().add(R.id.fl_action, mEditorMenuFragment, EditorMenuFragment.class.getName()).commit();
-        KeyboardUtils.registerSoftInputChangedListener(getActivity(), height -> {
+        requireActivity().getSupportFragmentManager().beginTransaction().add(R.id.fl_action, mEditorMenuFragment, EditorMenuFragment.class.getName()).commit();
+        KeyboardUtils.registerSoftInputChangedListener(requireActivity(), height -> {
             isKeyboardShowing = height > 0;
             if (height > 0) {
                 flAction.setVisibility(View.INVISIBLE);
@@ -273,6 +273,7 @@ public class RichFragment extends BaseFragment {
         imagePicker.setOutPutY(256);
     }
 
+    @SuppressLint("SetJavaScriptEnabled")
     private void initView() {
         webView.setWebViewClient(new WebViewClient() {
             @Override
@@ -303,7 +304,7 @@ public class RichFragment extends BaseFragment {
                 if (!TextUtils.isEmpty(htmlContent)) {
                     mRichEditorAction.insertHtml(htmlContent);
                 }
-                KeyboardUtils.showSoftInput(getActivity());
+                KeyboardUtils.showSoftInput(requireActivity());
             }
         }
 
@@ -318,7 +319,7 @@ public class RichFragment extends BaseFragment {
             flAction.setVisibility(View.GONE);
         } else {
             if (isKeyboardShowing) {
-                KeyboardUtils.hideSoftInput(getActivity());
+                KeyboardUtils.hideSoftInput(requireActivity());
             }
             flAction.setVisibility(View.VISIBLE);
         }
@@ -330,12 +331,12 @@ public class RichFragment extends BaseFragment {
 
     private RichEditorCallback.OnGetHtmlListener onGetHtmlListener = html -> {
         if (TextUtils.isEmpty(html)) {
-            Toast.makeText(getActivity(), "Empty Html String", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(getActivity(), "Empty Html String", Toast.LENGTH_SHORT).show();
             return;
         }
         HTMLText = html;
         shareHTML.input(html);
-        Log.e("RichFragment=336", html);
+//        Log.e("RichFragment=336", html);
     };
 
     void onClickGetHtml() {
@@ -422,7 +423,7 @@ public class RichFragment extends BaseFragment {
     }
 
     void onClickInsertTable() {
-        KeyboardUtils.hideSoftInput(getActivity());
+        KeyboardUtils.hideSoftInput(requireActivity());
         EditTableFragment fragment = new EditTableFragment();
         fragment.setOnTableListener((rows, cols) -> mRichEditorAction.insertTable(rows, cols));
         requireActivity().getSupportFragmentManager().beginTransaction()

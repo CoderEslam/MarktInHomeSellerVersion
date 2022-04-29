@@ -3474,6 +3474,7 @@ int id cardView5 0x7f0a0116
 int id cardView6 0x7f0a0117
 int id cardView7 0x7f0a0118
 int id cardView8 0x7f0a0119
+int id cardView9 0x7f0a0474
 int id carryVelocity 0x7f0a011a
 int id cartRate 0x7f0a011b
 int id cartRecycler 0x7f0a011c
