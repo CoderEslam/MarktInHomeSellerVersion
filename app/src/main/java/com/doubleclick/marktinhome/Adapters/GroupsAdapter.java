@@ -55,6 +55,7 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
     String myId = Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid().toString();
     private boolean LikeChecker = false;
     private Loadmore loadmore;
+    private OptionPost optionPost;
 
     public GroupsAdapter(ArrayList<PostData> postsData) {
         this.postsData = postsData;
@@ -63,6 +64,12 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
     public GroupsAdapter(ArrayList<PostData> postsData, Loadmore loadmore) {
         this.postsData = postsData;
         this.loadmore = loadmore;
+    }
+
+    public GroupsAdapter(ArrayList<PostData> postsData, Loadmore loadmore, OptionPost optionPost) {
+        this.postsData = postsData;
+        this.loadmore = loadmore;
+        this.optionPost = optionPost;
     }
 
     @NonNull
@@ -84,15 +91,13 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
                 public boolean onMenuItemClick(MenuItem item) {
                     int id = item.getItemId();
                     if (id == R.id.deleteOption) {
-                        Toast.makeText(holder.itemView.getContext(), "ddddd", Toast.LENGTH_SHORT).show();
+                        optionPost.delete(postsData.get(holder.getAdapterPosition()).getPostsGroup().getId());
                     }
                     if (id == R.id.editOption) {
-                        Toast.makeText(holder.itemView.getContext(), "eeeee", Toast.LENGTH_SHORT).show();
-
+                        optionPost.edit(postsData.get(holder.getAdapterPosition()).getPostsGroup().getId());
                     }
                     if (id == R.id.saveOption) {
-                        Toast.makeText(holder.itemView.getContext(), "ssssss", Toast.LENGTH_SHORT).show();
-
+                        optionPost.save(postsData.get(holder.getAdapterPosition()).getPostsGroup().getId());
                     }
                     return true;
                 }
@@ -163,12 +168,13 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
             holder.itemView.getContext().startActivity(intent);
         });
 
-//        if (postsData.size() - 1 == position) {
-//            holder.loadmore.setVisibility(View.VISIBLE);
-//            holder.loadmore.setOnClickListener(v -> {
-//                loadmore.loadmore(postsData.size() + 1);
-//            });
-//        }
+        if (0 == position) {
+            holder.loadmore.setVisibility(View.VISIBLE);
+            holder.loadmore.setOnClickListener(v -> {
+                loadmore.loadmore(1000);
+            });
+        }
+
     }
 
     @Override
@@ -235,30 +241,20 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
             });
         }
 
-        public void setComment(String PostKey) {
-            reference.child(COMMENTS_GROUP).addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
-                    if (dataSnapshot.child(PostKey).hasChild(myId)) {
-                        like_text.setText(String.format("%s Like", String.valueOf(dataSnapshot.child(postsData.get(getAdapterPosition()).getPostsGroup().getId()).getChildrenCount())));
-                        like_img.setImageResource(R.drawable.like_thumb_up);
-                    } else {
-                        like_text.setText(String.format("%s Like", String.valueOf(dataSnapshot.child(postsData.get(getAdapterPosition()).getPostsGroup().getId()).getChildrenCount())));
-                        like_img.setImageResource(R.drawable.ic_like);
-                    }
-                }
-
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-
-                }
-            });
-        }
     }
 
 
     public interface Loadmore {
         void loadmore(int num);
+    }
+
+    public interface OptionPost {
+        void delete(String id);
+
+        void edit(String id);
+
+        void save(String id);
+
     }
 
 }

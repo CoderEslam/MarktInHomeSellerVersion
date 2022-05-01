@@ -25,7 +25,12 @@ public class BottomSheetEditor extends BottomSheetDialogFragment {
 
     private EditText et_user_input_bottom_sheet_fragment;
     private TextView btn_save_bottom_sheet, btn_cancel_bottom_sheet;
+    private String id;
 
+
+    public BottomSheetEditor(String id) {
+        this.id = id;
+    }
 
 
     @Override
@@ -54,7 +59,6 @@ public class BottomSheetEditor extends BottomSheetDialogFragment {
     }
 
     private void updateUsernameAndBio() {
-
 
 
     }

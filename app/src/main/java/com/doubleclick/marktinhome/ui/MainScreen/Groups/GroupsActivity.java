@@ -38,7 +38,7 @@ import java.util.TimerTask;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class GroupsActivity extends AppCompatActivity implements GroupsAdapter.Loadmore {
+public class GroupsActivity extends AppCompatActivity implements GroupsAdapter.Loadmore, GroupsAdapter.OptionPost {
 
 
     private static final int IMAGE_REQUEST = 100;
@@ -53,6 +53,7 @@ public class GroupsActivity extends AppCompatActivity implements GroupsAdapter.L
     private ShimmerRecyclerView post;
     private GroupViewModel groupViewModel;
     private PostsViewModel postsViewModel;
+    private GroupsAdapter groupsAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,7 +80,7 @@ public class GroupsActivity extends AppCompatActivity implements GroupsAdapter.L
         editProfile = findViewById(R.id.editProfile);
         groupViewModel = new ViewModelProvider(this).get(GroupViewModel.class);
         postsViewModel = new ViewModelProvider(this).get(PostsViewModel.class);
-        postsViewModel.loadPosts(id /*  Group Id */, 1);
+        postsViewModel.loadPosts(id /*  Group Id */, 1000);
         groupViewModel.getGroupDataById(id);
         groupViewModel.GroupData().observe(this, new Observer<GroupData>() {
             @Override
@@ -93,20 +94,23 @@ public class GroupsActivity extends AppCompatActivity implements GroupsAdapter.L
                 link.setText(groupData.getGroup().getLink());
             }
         });
-
+        post.showShimmer();
         postsViewModel.getPosts().observe(this, new Observer<ArrayList<PostData>>() {
             @Override
             public void onChanged(ArrayList<PostData> postData) {
                 if (postData.size() != 0) {
                     progressIndicator.setVisibility(View.GONE);
                     postsNum.setText(String.valueOf(postData.size()));
-                    GroupsAdapter groupsAdapter = new GroupsAdapter(postData, GroupsActivity.this);
+                    groupsAdapter = new GroupsAdapter(postData, GroupsActivity.this, GroupsActivity.this);
                     post.setAdapter(groupsAdapter);
+                    post.hideShimmer();
                 }
 
-//                if (postsGroups.size() != 0) {
-//                    post.showShimmer();
-//                }
+
+                for (int i = 0; i <= 1000; i++) {
+                    Log.e("IIIIIIII", "" + i);
+                }
+
             }
         });
 
@@ -127,7 +131,7 @@ public class GroupsActivity extends AppCompatActivity implements GroupsAdapter.L
             openImage();
         });
         editName.setOnClickListener(v -> {
-            openBottomSheet();
+            openBottomSheet(id /*group id */);
         });
 
     }
@@ -139,8 +143,8 @@ public class GroupsActivity extends AppCompatActivity implements GroupsAdapter.L
         startActivityForResult(intent, IMAGE_REQUEST);
     }
 
-    private void openBottomSheet() {
-        BottomSheetEditor bottomSheetFragmentUsernameAndBioUpdate = new BottomSheetEditor();
+    private void openBottomSheet(String id) {
+        BottomSheetEditor bottomSheetFragmentUsernameAndBioUpdate = new BottomSheetEditor(id);
         assert getFragmentManager() != null;
         bottomSheetFragmentUsernameAndBioUpdate.show(getSupportFragmentManager(), "edit");
     }
@@ -148,5 +152,22 @@ public class GroupsActivity extends AppCompatActivity implements GroupsAdapter.L
     @Override
     public void loadmore(int num) {
         postsViewModel.loadPosts(id /*  Group Id */, num);
+    }
+
+    @Override
+    public void delete(String id) {
+        Toast.makeText(GroupsActivity.this, "" + id, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void edit(String id) {
+        Toast.makeText(GroupsActivity.this, "" + id, Toast.LENGTH_SHORT).show();
+
+    }
+
+    @Override
+    public void save(String id) {
+        Toast.makeText(GroupsActivity.this, "" + id, Toast.LENGTH_SHORT).show();
+
     }
 }

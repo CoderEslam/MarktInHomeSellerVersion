@@ -61,6 +61,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.MarktInHome" >
         <activity
+            android:name="com.doubleclick.marktinhome.ui.MainScreen.Groups.ViewActivity"
+            android:exported="false" />
+        <activity
             android:name="com.doubleclick.marktinhome.ui.MainScreen.Parents.ParentActivity"
             android:exported="false" />
         <activity
