@@ -43,7 +43,7 @@ class HomeFragment : BaseFragment(), OnItem, OnProduct, Tradmarkinterface, ViewM
     lateinit var advertisementViewModel: AdvertisementViewModel
     lateinit var trademarkViewModel: TradmarkViewModel
     lateinit var animationView: LottieAnimationView
-    lateinit var recentSearchViewModel: RecentSearchViewModel
+//    lateinit var recentSearchViewModel: RecentSearchViewModel
     private var idProduct: String = ""
 
 
@@ -66,7 +66,7 @@ class HomeFragment : BaseFragment(), OnItem, OnProduct, Tradmarkinterface, ViewM
         productViewModel = ViewModelProvider(this).get(ProductViewModel::class.java)
         advertisementViewModel = ViewModelProvider(this)[AdvertisementViewModel::class.java];
         trademarkViewModel = ViewModelProvider(this)[TradmarkViewModel::class.java]
-        recentSearchViewModel = ViewModelProvider(this)[RecentSearchViewModel::class.java]
+//        recentSearchViewModel = ViewModelProvider(this)[RecentSearchViewModel::class.java]
         productViewModel.parent.observe(viewLifecycleOwner, Observer {
             if (it.size != 0) {
                 homeModels.add(0, HomeModel(it, HomeModel.TopCategory, this))
@@ -99,11 +99,11 @@ class HomeFragment : BaseFragment(), OnItem, OnProduct, Tradmarkinterface, ViewM
         });
 
 
-        recentSearchViewModel.lastSearchListLiveDataOneTime.observe(viewLifecycleOwner, Observer {
-            if (it.size != 0) {
-                homeModels.add(HomeModel(HomeModel.RecentSearch, it, this, this, 0))
-            }
-        })
+//        recentSearchViewModel.lastSearchListLiveDataOneTime.observe(viewLifecycleOwner, Observer {
+//            if (it.size != 0) {
+//                homeModels.add(HomeModel(HomeModel.RecentSearch, it, this, this, 0))
+//            }
+//        })
 
         if (idProduct != "") {
             reference.child(PRODUCT).child(idProduct).addListenerForSingleValueEvent(object :ValueEventListener{

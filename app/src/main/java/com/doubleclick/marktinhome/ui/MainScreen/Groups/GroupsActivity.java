@@ -38,7 +38,7 @@ import java.util.TimerTask;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class GroupsActivity extends AppCompatActivity {
+public class GroupsActivity extends AppCompatActivity implements GroupsAdapter.Loadmore {
 
 
     private static final int IMAGE_REQUEST = 100;
@@ -53,7 +53,6 @@ public class GroupsActivity extends AppCompatActivity {
     private ShimmerRecyclerView post;
     private GroupViewModel groupViewModel;
     private PostsViewModel postsViewModel;
-    private FirebaseRecyclerAdapter<PostsGroup, GroupsActivity.PostViewHolder> firebaseRecyclerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,7 +79,7 @@ public class GroupsActivity extends AppCompatActivity {
         editProfile = findViewById(R.id.editProfile);
         groupViewModel = new ViewModelProvider(this).get(GroupViewModel.class);
         postsViewModel = new ViewModelProvider(this).get(PostsViewModel.class);
-        postsViewModel.loadPosts(id /*  Group Id */);
+        postsViewModel.loadPosts(id /*  Group Id */, 1);
         groupViewModel.getGroupDataById(id);
         groupViewModel.GroupData().observe(this, new Observer<GroupData>() {
             @Override
@@ -101,7 +100,8 @@ public class GroupsActivity extends AppCompatActivity {
                 if (postData.size() != 0) {
                     progressIndicator.setVisibility(View.GONE);
                     postsNum.setText(String.valueOf(postData.size()));
-                    post.setAdapter(new GroupsAdapter(postData));
+                    GroupsAdapter groupsAdapter = new GroupsAdapter(postData, GroupsActivity.this);
+                    post.setAdapter(groupsAdapter);
                 }
 
 //                if (postsGroups.size() != 0) {
@@ -145,12 +145,8 @@ public class GroupsActivity extends AppCompatActivity {
         bottomSheetFragmentUsernameAndBioUpdate.show(getSupportFragmentManager(), "edit");
     }
 
-
-    public class PostViewHolder extends RecyclerView.ViewHolder {
-
-        public PostViewHolder(@NonNull View itemView) {
-            super(itemView);
-
-        }
+    @Override
+    public void loadmore(int num) {
+        postsViewModel.loadPosts(id /*  Group Id */, num);
     }
 }

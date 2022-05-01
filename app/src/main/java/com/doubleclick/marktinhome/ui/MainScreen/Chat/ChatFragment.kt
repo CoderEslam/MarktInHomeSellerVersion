@@ -29,7 +29,6 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import androidx.annotation.NonNull
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.app.ActivityCompat
 import androidx.lifecycle.ViewModelProvider
@@ -48,8 +47,11 @@ import com.doubleclick.marktinhome.Model.Constantes.CHATS
 import com.doubleclick.marktinhome.Model.Constantes.USER
 import com.doubleclick.marktinhome.Notifications.Client
 import com.doubleclick.marktinhome.R
+import com.doubleclick.marktinhome.RealmDatabase.ChatRealm
+import com.doubleclick.marktinhome.RealmDatabase.RealmBaseAdapter
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationRequest
+import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
@@ -57,23 +59,20 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.tasks.Continuation
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.Task
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.*
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.google.firebase.storage.StorageTask
 import com.google.firebase.storage.UploadTask
-import com.paypal.android.sdk.dy
-import com.paypal.android.sdk.x
 import com.vanniktech.emoji.EmojiPopup
 import de.hdodenhof.circleimageview.CircleImageView
+import io.realm.Realm
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.io.File
 import java.io.IOException
+import java.security.SecureRandom
 import java.util.*
-import kotlin.collections.HashMap
 
 
 class ChatFragment : BaseFragment(), OnMapReadyCallback {
@@ -88,10 +87,10 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
     private lateinit var sendRecord: RecordButton
     private lateinit var mediaRecorder: MediaRecorder
     private lateinit var googleMap: GoogleMap
-    private lateinit var supportMapFragment: SupportMapFragment
-    private lateinit var mLocationRequest: LocationRequest
-    private lateinit var locationManager: LocationManager
-    private lateinit var client: FusedLocationProviderClient
+    var supportMapFragment: SupportMapFragment? = null
+    var mLocationRequest: LocationRequest? = null
+    var locationManager: LocationManager? = null
+    var client: FusedLocationProviderClient? = null
     private var PICK_CONTACT = 100
     private val REQUEST_CODE = 101;
     private lateinit var file: ImageView
@@ -107,6 +106,8 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
     private lateinit var username: TextView;
     private lateinit var status: TextView;
     private lateinit var apiService: APIService
+    private var realm: Realm? = null
+
 
     private lateinit var storageReference: StorageReference
     var fileType: String? = null
@@ -136,11 +137,19 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_chat, container, false)
+        realm = Realm.getDefaultInstance();
+        var realmBase = RealmBaseAdapter(realm!!.where(ChatRealm::class.java).findAll());
+        Log.e("Allllllllll", realm!!.where(ChatRealm::class.java).findAll().asJSON().toString());
         sendText = view.findViewById(R.id.sendText);
         et_text_message = view.findViewById(R.id.et_text_message);
         continer_attacht = view.findViewById(R.id.continer_attacht);
         apiService = Client.getClient("https://fcm.googleapis.com/").create(APIService::class.java)
-//        supportMapFragment = (requireActivity().supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?)!!
+        supportMapFragment =
+            requireActivity().supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
+        client = LocationServices.getFusedLocationProviderClient(requireContext())
+        locationManager =
+            requireActivity().getSystemService(Context.LOCATION_SERVICE) as LocationManager
+
         chatRecycler = view.findViewById(R.id.chatRecycler);
         chatRecycler.setHasFixedSize(true);
         sendRecord = view.findViewById(R.id.sendRecord);
@@ -330,11 +339,12 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
     private fun sentMessage(text: String, type: String) {
         val map: HashMap<String, Any> = HashMap()
         val id = reference.push().key.toString()
+        val time = Date().time;
         map["sender"] = myId
         map["message"] = text
         map["type"] = type
         map["receiver"] = user!!.id // Id of Admin
-        map["date"] = Date().time
+        map["date"] = time
         map["id"] = id
         map["StatusMessage"] = "Uploaded"
 //        reference.child(CHATS).child(id).updateChildren(map)
@@ -342,6 +352,19 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
         et_text_message.setText("")
         makeChatList();
         sendNotifiaction(text);
+        realm!!.beginTransaction()
+        val chatRealm =
+            realm!!.createObject(ChatRealm::class.java, SecureRandom().nextInt(1000000000))
+        chatRealm.id = id;
+        chatRealm.sender = myId;
+        chatRealm.type = type;
+        chatRealm.message = text;
+        chatRealm.receiver = user!!.id;
+        chatRealm.date = time;
+        chatRealm.statusMessage = "Uploaded";
+        realm!!.commitTransaction()
+
+
     }
 
     private fun upload(id: String, map: HashMap<String, Any>) {
@@ -354,11 +377,11 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
     private fun makeChatList() {
         val map1: HashMap<String, Any> = HashMap();
         map1["id"] = user!!.id
-        map1["time"] = Date().time;
+        map1["time"] = -1 * Date().time;
         reference.child(Constantes.CHAT_LIST).child(myId).child(user!!.id).updateChildren(map1)
         val map2: HashMap<String, Any> = HashMap();
         map2["id"] = myId
-        map2["time"] = Date().time;
+        map2["time"] = -1 * Date().time;
         reference.child(Constantes.CHAT_LIST).child(user!!.id).child(myId).updateChildren(map2)
 
     }
@@ -373,10 +396,10 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
                 Manifest.permission.ACCESS_COARSE_LOCATION
             ) == PackageManager.PERMISSION_GRANTED
         ) {
-            val task = client.lastLocation
+            val task = client!!.lastLocation
             task.addOnSuccessListener { location ->
                 if (location != null) {
-                    supportMapFragment.getMapAsync {
+                    supportMapFragment!!.getMapAsync {
                         val latLng = LatLng(
                             location.latitude,
                             location.longitude
@@ -489,9 +512,9 @@ class ChatFragment : BaseFragment(), OnMapReadyCallback {
     override fun onMapReady(map: GoogleMap) {
         googleMap = map
         mLocationRequest = LocationRequest()
-        mLocationRequest.interval = 1000
-        mLocationRequest.fastestInterval = 1000
-        mLocationRequest.priority = LocationRequest.PRIORITY_HIGH_ACCURACY
+        mLocationRequest!!.interval = 1000
+        mLocationRequest!!.fastestInterval = 1000
+        mLocationRequest!!.priority = LocationRequest.PRIORITY_HIGH_ACCURACY
     }
 
     override fun getFileExtension(uri: Uri?): String? {

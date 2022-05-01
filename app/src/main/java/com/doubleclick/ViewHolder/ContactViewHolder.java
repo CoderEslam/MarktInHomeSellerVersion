@@ -14,7 +14,7 @@ import com.doubleclick.marktinhome.R;
 /**
  * Created By Eslam Ghazy on 2/7/2022
  */
-public class ContactViewHolder extends RecyclerView.ViewHolder {
+public class ContactViewHolder extends BaseViewHolder {
 
     private TextView nameContact, numberContact;
     private String massege;

@@ -23,6 +23,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MarktInHome">
         <activity
+            android:name=".ui.MainScreen.Groups.ViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.MainScreen.Parents.ParentActivity"
             android:exported="false" />
         <activity

@@ -75,4 +75,12 @@ public class Chat {
                 ", id='" + id + '\'' +
                 '}';
     }
+
+    public String getStatusMessage() {
+        return StatusMessage;
+    }
+
+    public void setStatusMessage(String statusMessage) {
+        StatusMessage = statusMessage;
+    }
 }

@@ -1,17 +1,18 @@
 package com.doubleclick.marktinhome.Model;
 
+import java.util.Comparator;
+
 /**
  * Created By Eslam Ghazy on 4/25/2022
  */
-public class PostsGroup {
+public class PostsGroup implements Comparable<PostsGroup> {
 
     private String id;
     private String adminId;
     private long time;
     private String text;
     private String type;
-    private String images;
-    private String video;
+    private String meme;
     private String groupId;
 
 
@@ -48,28 +49,42 @@ public class PostsGroup {
         this.type = type;
     }
 
-    public String getImages() {
-        return images;
-    }
-
-    public void setImages(String images) {
-        this.images = images;
-    }
-
-    public String getVideo() {
-        return video;
-    }
-
-    public void setVideo(String video) {
-        this.video = video;
-    }
-
     public long getTime() {
         return time;
     }
 
     public void setTime(long time) {
         this.time = time;
+    }
+
+
+    public String getGroupId() {
+        return groupId;
+    }
+
+    public void setGroupId(String groupId) {
+        this.groupId = groupId;
+    }
+
+    public static Comparator<PostsGroup> postsGroupComparator = new Comparator<PostsGroup>() {
+        @Override
+        public int compare(PostsGroup o1, PostsGroup o2) {
+            return (int) (o1.getTime() - o2.getTime());
+        }
+
+    };
+
+    @Override
+    public int compareTo(PostsGroup o) {
+        return (int) (this.time - o.getTime());
+    }
+
+    public String getMeme() {
+        return meme;
+    }
+
+    public void setMeme(String meme) {
+        this.meme = meme;
     }
 
     @Override
@@ -80,16 +95,8 @@ public class PostsGroup {
                 ", time=" + time +
                 ", text='" + text + '\'' +
                 ", type='" + type + '\'' +
-                ", images='" + images + '\'' +
-                ", video='" + video + '\'' +
+                ", meme='" + meme + '\'' +
+                ", groupId='" + groupId + '\'' +
                 '}';
-    }
-
-    public String getGroupId() {
-        return groupId;
-    }
-
-    public void setGroupId(String groupId) {
-        this.groupId = groupId;
     }
 }

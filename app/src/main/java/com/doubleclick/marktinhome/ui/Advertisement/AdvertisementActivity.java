@@ -15,8 +15,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
@@ -25,17 +28,16 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.doubleclick.AdvInterface;
+import com.doubleclick.Servies.FileUtil;
 import com.doubleclick.ViewModel.AdvertisementViewModel;
 import com.doubleclick.marktinhome.Adapters.AdvAdapter;
 import com.doubleclick.marktinhome.Model.Advertisement;
-import com.doubleclick.marktinhome.Model.Product;
 import com.doubleclick.marktinhome.R;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -43,8 +45,15 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.StorageTask;
 import com.google.firebase.storage.UploadTask;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import id.zelory.compressor.Compressor;
+
 
 public class AdvertisementActivity extends AppCompatActivity implements AdvInterface {
 
@@ -58,6 +67,7 @@ public class AdvertisementActivity extends AppCompatActivity implements AdvInter
     private StorageTask uploadTask;
     private Button upload;
     private AdvertisementViewModel advertisementViewModel;
+    private File file = new File("");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -123,6 +133,15 @@ public class AdvertisementActivity extends AppCompatActivity implements AdvInter
         if (imageUri != null) {
             final StorageReference fileReference = storageReference.child(System.currentTimeMillis() + "." + getFileExtension(imageUri));
             uploadTask = fileReference.putFile(imageUri);
+                   /* .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                    Task<Uri> task = taskSnapshot.getStorage().getDownloadUrl();
+                    while (!task.isSuccessful()) ;
+                    Uri u = task.getResult();
+                    Log.e("uuuuuuuuuuu", u.toString());
+                }
+            });*/
             uploadTask.continueWithTask((Continuation<UploadTask.TaskSnapshot, Task<Uri>>) task -> {
                 if (!task.isSuccessful()) {
                     throw task.getException();

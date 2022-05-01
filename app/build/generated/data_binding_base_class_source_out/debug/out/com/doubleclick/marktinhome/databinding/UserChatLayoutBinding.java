@@ -21,14 +21,18 @@ public final class UserChatLayoutBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TextView countMessage;
+
+  @NonNull
   public final CircleImageView image;
 
   @NonNull
   public final TextView name;
 
-  private UserChatLayoutBinding(@NonNull ConstraintLayout rootView, @NonNull CircleImageView image,
-      @NonNull TextView name) {
+  private UserChatLayoutBinding(@NonNull ConstraintLayout rootView, @NonNull TextView countMessage,
+      @NonNull CircleImageView image, @NonNull TextView name) {
     this.rootView = rootView;
+    this.countMessage = countMessage;
     this.image = image;
     this.name = name;
   }
@@ -60,6 +64,12 @@ public final class UserChatLayoutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.countMessage;
+      TextView countMessage = ViewBindings.findChildViewById(rootView, id);
+      if (countMessage == null) {
+        break missingId;
+      }
+
       id = R.id.image;
       CircleImageView image = ViewBindings.findChildViewById(rootView, id);
       if (image == null) {
@@ -72,7 +82,7 @@ public final class UserChatLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      return new UserChatLayoutBinding((ConstraintLayout) rootView, image, name);
+      return new UserChatLayoutBinding((ConstraintLayout) rootView, countMessage, image, name);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

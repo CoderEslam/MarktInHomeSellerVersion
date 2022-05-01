@@ -16,7 +16,7 @@ import com.doubleclick.marktinhome.R;
 /**
  * Created By Eslam Ghazy on 2/7/2022
  */
-public class LocationViewHolder extends RecyclerView.ViewHolder {
+public class LocationViewHolder extends BaseViewHolder {
     private LottieAnimationView location_lotte;
     public LocationViewHolder(@NonNull View itemView) {
         super(itemView);

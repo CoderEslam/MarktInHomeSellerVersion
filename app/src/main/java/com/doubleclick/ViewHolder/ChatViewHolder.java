@@ -11,7 +11,7 @@ import com.doubleclick.marktinhome.R;
 /**
  * Created By Eslam Ghazy on 3/17/2022
  */
-public class ChatViewHolder extends RecyclerView.ViewHolder {
+public class ChatViewHolder extends BaseViewHolder {
     public TextView textMessage, textTime;
 
     public ChatViewHolder(@NonNull View itemView) {

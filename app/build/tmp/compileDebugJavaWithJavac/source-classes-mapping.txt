@@ -1,82 +1,78 @@
-com/doubleclick/marktinhome/ui/MainScreen/Chat/ChatFragmentArgs.java
- com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatFragmentArgs
- com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatFragmentArgs$1
- com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatFragmentArgs$Builder
-com/doubleclick/marktinhome/BR.java
- com.doubleclick.marktinhome.BR
+com/doubleclick/marktinhome/databinding/FragmentCommentsBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentCommentsBinding
+com/doubleclick/marktinhome/Adapters/RecentOrderAdapter.java
+ com.doubleclick.marktinhome.Adapters.RecentOrderAdapter
+ com.doubleclick.marktinhome.Adapters.RecentOrderAdapter$RecentOrderViewHolder
 com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/ChildFragmentArgs.java
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ChildFragmentArgs
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ChildFragmentArgs$1
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ChildFragmentArgs$Builder
 com/doubleclick/marktinhome/Views/socialtextview/widget/SocialEditText.java
  com.doubleclick.marktinhome.Views.socialtextview.widget.SocialEditText
-com/doubleclick/marktinhome/ui/ProductActivity/productFragmentArgs.java
- com.doubleclick.marktinhome.ui.ProductActivity.productFragmentArgs
- com.doubleclick.marktinhome.ui.ProductActivity.productFragmentArgs$1
- com.doubleclick.marktinhome.ui.ProductActivity.productFragmentArgs$Builder
-com/doubleclick/RichEditor/sample/interfaces/OnActionPerformListener.java
- com.doubleclick.RichEditor.sample.interfaces.OnActionPerformListener
+com/doubleclick/marktinhome/Adapters/ProductSliderAdapter.java
+ com.doubleclick.marktinhome.Adapters.ProductSliderAdapter
+com/doubleclick/DashBoard/MonthFragment.java
+ com.doubleclick.DashBoard.MonthFragment
+ com.doubleclick.DashBoard.MonthFragment$MonthFragmentListener
 com/doubleclick/marktinhome/Model/RecentSearch.java
  com.doubleclick.marktinhome.Model.RecentSearch
-com/doubleclick/marktinhome/Repository/ChatListRepository.java
- com.doubleclick.marktinhome.Repository.ChatListRepository
- com.doubleclick.marktinhome.Repository.ChatListRepository$1
- com.doubleclick.marktinhome.Repository.ChatListRepository$1$1
-com/doubleclick/ViewModel/RecentOrderViewModel.java
- com.doubleclick.ViewModel.RecentOrderViewModel
-com/doubleclick/marktinhome/Repository/CommentsGroupRepositotry.java
- com.doubleclick.marktinhome.Repository.CommentsGroupRepositotry
- com.doubleclick.marktinhome.Repository.CommentsGroupRepositotry$1
- com.doubleclick.marktinhome.Repository.CommentsGroupRepositotry$1$1
- com.doubleclick.marktinhome.Repository.CommentsGroupRepositotry$CommentData
-com/doubleclick/marktinhome/Model/PostData.java
- com.doubleclick.marktinhome.Model.PostData
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/RichFragment.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$1
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$2
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$3
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$4
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$5
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$CustomWebChromeClient
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$MOnActionPerformListener
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$MRichEditorCallback
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$ShareHTML
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/Profile/menu_profileFragment.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Profile.menu_profileFragment
+com/doubleclick/RichEditor/sample/fragment/EditTableFragmentDirections.java
+ com.doubleclick.RichEditor.sample.fragment.EditTableFragmentDirections
+com/doubleclick/marktinhome/databinding/LayautCartBinding.java
+ com.doubleclick.marktinhome.databinding.LayautCartBinding
 com/doubleclick/marktinhome/DataBindingTriggerClass.java
  com.doubleclick.marktinhome.DataBindingTriggerClass
 com/doubleclick/RichEditor/mricheditor/ActionType.java
  com.doubleclick.RichEditor.mricheditor.ActionType
-com/doubleclick/ViewModel/UserViewModel.java
- com.doubleclick.ViewModel.UserViewModel
-com/doubleclick/ViewModel/ChatListViewModel.java
- com.doubleclick.ViewModel.ChatListViewModel
-com/doubleclick/marktinhome/Model/GroupData.java
- com.doubleclick.marktinhome.Model.GroupData
-com/doubleclick/marktinhome/Views/carousellayoutmanager/ItemTransformation.java
- com.doubleclick.marktinhome.Views.carousellayoutmanager.ItemTransformation
+com/doubleclick/marktinhome/Adapters/CatecoriesAdapter.java
+ com.doubleclick.marktinhome.Adapters.CatecoriesAdapter
+ com.doubleclick.marktinhome.Adapters.CatecoriesAdapter$1
+ com.doubleclick.marktinhome.Adapters.CatecoriesAdapter$CatecoriesViewHolder
+com/doubleclick/marktinhome/databinding/ActivityEditTradmarkBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityEditTradmarkBinding
+com/doubleclick/marktinhome/databinding/WidgetNavigationDrawerBinding.java
+ com.doubleclick.marktinhome.databinding.WidgetNavigationDrawerBinding
+com/doubleclick/marktinhome/databinding/FragmentSplash1Binding.java
+ com.doubleclick.marktinhome.databinding.FragmentSplash1Binding
 com/doubleclick/marktinhome/Views/colorpickerview/Dp.java
  com.doubleclick.marktinhome.Views.colorpickerview.Dp
-com/doubleclick/marktinhome/Repository/GroupRepository.java
- com.doubleclick.marktinhome.Repository.GroupRepository
- com.doubleclick.marktinhome.Repository.GroupRepository$1
- com.doubleclick.marktinhome.Repository.GroupRepository$2
- com.doubleclick.marktinhome.Repository.GroupRepository$3
- com.doubleclick.marktinhome.Repository.GroupRepository$3$1
-com/doubleclick/RichEditor/mricheditor/RichEditorAction.java
- com.doubleclick.RichEditor.mricheditor.RichEditorAction
+com/doubleclick/marktinhome/databinding/FragmentSplash4Binding.java
+ com.doubleclick.marktinhome.databinding.FragmentSplash4Binding
+com/doubleclick/marktinhome/Repository/ChatListRepository.java
+ com.doubleclick.marktinhome.Repository.ChatListRepository
+ com.doubleclick.marktinhome.Repository.ChatListRepository$1
+ com.doubleclick.marktinhome.Repository.ChatListRepository$1$1
 com/doubleclick/ViewModel/RateViewModel.java
  com.doubleclick.ViewModel.RateViewModel
-com/doubleclick/ViewModel/CommentsViewModel.java
- com.doubleclick.ViewModel.CommentsViewModel
-com/doubleclick/ViewModel/ProductViewModel.java
- com.doubleclick.ViewModel.ProductViewModel
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/ViewMoreFragmentArgs.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.ViewMoreFragmentArgs
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.ViewMoreFragmentArgs$1
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.ViewMoreFragmentArgs$Builder
-com/doubleclick/marktinhome/RealmDatabase/RealmBaseAdapter.java
- com.doubleclick.marktinhome.RealmDatabase.RealmBaseAdapter
- com.doubleclick.marktinhome.RealmDatabase.RealmBaseAdapter$RealmBaseViewHolder
-com/doubleclick/marktinhome/Repository/RateingRepository.java
- com.doubleclick.marktinhome.Repository.RateingRepository
- com.doubleclick.marktinhome.Repository.RateingRepository$1
- com.doubleclick.marktinhome.Repository.RateingRepository$2
+com/doubleclick/marktinhome/databinding/FragmentViewmoreBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentViewmoreBinding
+com/doubleclick/marktinhome/databinding/UserChatLayoutBinding.java
+ com.doubleclick.marktinhome.databinding.UserChatLayoutBinding
+com/doubleclick/marktinhome/databinding/FragmentSplash2Binding.java
+ com.doubleclick.marktinhome.databinding.FragmentSplash2Binding
+com/doubleclick/marktinhome/databinding/FlagBubbleColorpickerviewSkydovesBinding.java
+ com.doubleclick.marktinhome.databinding.FlagBubbleColorpickerviewSkydovesBinding
+com/doubleclick/marktinhome/databinding/FragmentSplash3Binding.java
+ com.doubleclick.marktinhome.databinding.FragmentSplash3Binding
 com/doubleclick/marktinhome/Model/ClassificationPC.java
  com.doubleclick.marktinhome.Model.ClassificationPC
-com/doubleclick/marktinhome/Views/PhotoView/Util.java
- com.doubleclick.marktinhome.Views.PhotoView.Util
- com.doubleclick.marktinhome.Views.PhotoView.Util$1
-com/doubleclick/marktinhome/Views/flowingdrawer_core/SmoothInterpolator.java
- com.doubleclick.marktinhome.Views.flowingdrawer_core.SmoothInterpolator
+com/doubleclick/marktinhome/Views/colorpickerview/AlphaTileView.java
+ com.doubleclick.marktinhome.Views.colorpickerview.AlphaTileView
+com/doubleclick/marktinhome/databinding/LayoutSmallProductBinding.java
+ com.doubleclick.marktinhome.databinding.LayoutSmallProductBinding
 com/doubleclick/ViewModel/PostsViewModel.java
  com.doubleclick.ViewModel.PostsViewModel
 com/doubleclick/marktinhome/Views/colorpickerview/listeners/ColorEnvelopeListener.java
@@ -84,16 +80,14 @@ com/doubleclick/marktinhome/Views/colorpickerview/listeners/ColorEnvelopeListene
 com/doubleclick/RichEditor/mricheditor/RichEditorCallback.java
  com.doubleclick.RichEditor.mricheditor.RichEditorCallback
  com.doubleclick.RichEditor.mricheditor.RichEditorCallback$OnGetHtmlListener
-com/doubleclick/marktinhome/Notifications/Client.java
- com.doubleclick.marktinhome.Notifications.Client
-com/doubleclick/marktinhome/Views/colorpickerview/listeners/ColorListener.java
- com.doubleclick.marktinhome.Views.colorpickerview.listeners.ColorListener
-com/doubleclick/marktinhome/Views/carousellayoutmanager/CarouselChildSelectionListener.java
- com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselChildSelectionListener
- com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselChildSelectionListener$1
- com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselChildSelectionListener$2
-com/doubleclick/marktinhome/Model/CommentsReplyData.java
- com.doubleclick.marktinhome.Model.CommentsReplyData
+com/doubleclick/marktinhome/databinding/FragmentGroupBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentGroupBinding
+com/doubleclick/marktinhome/Adapters/ImageProductSliderAdapter.java
+ com.doubleclick.marktinhome.Adapters.ImageProductSliderAdapter
+com/doubleclick/marktinhome/databinding/ItemLocationRightBinding.java
+ com.doubleclick.marktinhome.databinding.ItemLocationRightBinding
+com/doubleclick/marktinhome/databinding/FragmentRegisterBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentRegisterBinding
 com/doubleclick/marktinhome/Views/colorpickerview/ColorPickerDialog.java
  com.doubleclick.marktinhome.Views.colorpickerview.ColorPickerDialog
  com.doubleclick.marktinhome.Views.colorpickerview.ColorPickerDialog$Builder
@@ -106,129 +100,142 @@ com/doubleclick/marktinhome/Adapters/ViewPagerAdapter.java
  com.doubleclick.marktinhome.Adapters.ViewPagerAdapter
 com/doubleclick/marktinhome/Model/ChatList.java
  com.doubleclick.marktinhome.Model.ChatList
-com/doubleclick/marktinhome/Views/carousellayoutmanager/DefaultChildSelectionListener.java
- com.doubleclick.marktinhome.Views.carousellayoutmanager.DefaultChildSelectionListener
- com.doubleclick.marktinhome.Views.carousellayoutmanager.DefaultChildSelectionListener$OnCenterItemClickListener
-com/doubleclick/marktinhome/Model/RecentOrder.java
- com.doubleclick.marktinhome.Model.RecentOrder
+com/doubleclick/marktinhome/databinding/FragmentMenuCartBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentMenuCartBinding
+com/doubleclick/RichEditor/mricheditor/ui/ActionImageView.java
+ com.doubleclick.RichEditor.mricheditor.ui.ActionImageView
+ com.doubleclick.RichEditor.mricheditor.ui.ActionImageView$1
+ com.doubleclick.RichEditor.mricheditor.ui.ActionImageView$2
 com/doubleclick/marktinhome/Model/ChildCategory.java
  com.doubleclick.marktinhome.Model.ChildCategory
 com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/UploadFragmentArgs.java
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.UploadFragmentArgs
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.UploadFragmentArgs$1
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.UploadFragmentArgs$Builder
-com/doubleclick/marktinhome/Model/User.java
- com.doubleclick.marktinhome.Model.User
+com/doubleclick/marktinhome/databinding/BottomSheetEditorBinding.java
+ com.doubleclick.marktinhome.databinding.BottomSheetEditorBinding
 com/doubleclick/Api/APIService.java
  com.doubleclick.Api.APIService
-com/doubleclick/marktinhome/Views/colorpickerview/PointMapper.java
- com.doubleclick.marktinhome.Views.colorpickerview.PointMapper
+com/doubleclick/ViewHolder/TopDealsViewHolder.java
+ com.doubleclick.ViewHolder.TopDealsViewHolder
 com/doubleclick/marktinhome/Views/PhotoView/PhotoView.java
  com.doubleclick.marktinhome.Views.PhotoView.PhotoView
-com/doubleclick/marktinhome/Model/Favorite.java
- com.doubleclick.marktinhome.Model.Favorite
-com/doubleclick/marktinhome/Model/CommentsGroupData.java
- com.doubleclick.marktinhome.Model.CommentsGroupData
-com/doubleclick/marktinhome/Views/colorpickerview/sliders/AlphaTileDrawable.java
- com.doubleclick.marktinhome.Views.colorpickerview.sliders.AlphaTileDrawable
- com.doubleclick.marktinhome.Views.colorpickerview.sliders.AlphaTileDrawable$Builder
+com/doubleclick/marktinhome/databinding/ItemContactRightBinding.java
+ com.doubleclick.marktinhome.databinding.ItemContactRightBinding
+com/doubleclick/marktinhome/databinding/FragmentEditTableBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentEditTableBinding
+com/doubleclick/marktinhome/databinding/UploadProgressLayoutBinding.java
+ com.doubleclick.marktinhome.databinding.UploadProgressLayoutBinding
 com/doubleclick/ViewModel/OrderViewModel.java
  com.doubleclick.ViewModel.OrderViewModel
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/EditFragmentArgs.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.EditFragmentArgs
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.EditFragmentArgs$1
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.EditFragmentArgs$Builder
-com/doubleclick/marktinhome/Notifications/OreoNotification.java
- com.doubleclick.marktinhome.Notifications.OreoNotification
-com/doubleclick/marktinhome/Views/carousellayoutmanager/CenterScrollListener.java
- com.doubleclick.marktinhome.Views.carousellayoutmanager.CenterScrollListener
-com/doubleclick/marktinhome/Model/Group.java
- com.doubleclick.marktinhome.Model.Group
-com/doubleclick/marktinhome/Views/colorpickerview/flag/FlagMode.java
- com.doubleclick.marktinhome.Views.colorpickerview.flag.FlagMode
+com/doubleclick/marktinhome/databinding/LayoutChatBinding.java
+ com.doubleclick.marktinhome.databinding.LayoutChatBinding
+com/doubleclick/marktinhome/databinding/FragmentChatBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentChatBinding
+com/doubleclick/marktinhome/Adapters/CommentGroupAdapter.java
+ com.doubleclick.marktinhome.Adapters.CommentGroupAdapter
+ com.doubleclick.marktinhome.Adapters.CommentGroupAdapter$1
+ com.doubleclick.marktinhome.Adapters.CommentGroupAdapter$CommentsViewHolder
+ com.doubleclick.marktinhome.Adapters.CommentGroupAdapter$CommentsViewHolder$1
+ com.doubleclick.marktinhome.Adapters.CommentGroupAdapter$CommentsViewHolder$2
+com/doubleclick/marktinhome/Adapters/ImagesGroupAdapter.java
+ com.doubleclick.marktinhome.Adapters.ImagesGroupAdapter
+ com.doubleclick.marktinhome.Adapters.ImagesGroupAdapter$ImagesGroupViewHolder
+com/doubleclick/marktinhome/databinding/FragmentPagerBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentPagerBinding
 com/doubleclick/marktinhome/Model/MyResponse.java
  com.doubleclick.marktinhome.Model.MyResponse
 com/doubleclick/marktinhome/Views/carousellayoutmanager/CarouselZoomPostLayoutListener.java
  com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselZoomPostLayoutListener
-io/realm/DefaultRealmModule.java
- io.realm.DefaultRealmModule
-com/doubleclick/marktinhome/Views/PhotoView/OnViewDragListener.java
- com.doubleclick.marktinhome.Views.PhotoView.OnViewDragListener
+com/doubleclick/marktinhome/databinding/ItemFileLeftBinding.java
+ com.doubleclick.marktinhome.databinding.ItemFileLeftBinding
+com/doubleclick/marktinhome/databinding/ItemFontSettingBinding.java
+ com.doubleclick.marktinhome.databinding.ItemFontSettingBinding
 com/doubleclick/marktinhome/Repository/TradmarkRepository.java
  com.doubleclick.marktinhome.Repository.TradmarkRepository
  com.doubleclick.marktinhome.Repository.TradmarkRepository$1
  com.doubleclick.marktinhome.Repository.TradmarkRepository$2
-com/doubleclick/marktinhome/Repository/UserRepository.java
- com.doubleclick.marktinhome.Repository.UserRepository
- com.doubleclick.marktinhome.Repository.UserRepository$1
- com.doubleclick.marktinhome.Repository.UserRepository$2
-com/doubleclick/marktinhome/Model/Data.java
- com.doubleclick.marktinhome.Model.Data
-com/doubleclick/marktinhome/Views/PhotoView/OnSingleFlingListener.java
- com.doubleclick.marktinhome.Views.PhotoView.OnSingleFlingListener
-com/doubleclick/marktinhome/Views/PhotoView/CustomGestureDetector.java
- com.doubleclick.marktinhome.Views.PhotoView.CustomGestureDetector
- com.doubleclick.marktinhome.Views.PhotoView.CustomGestureDetector$1
-com/doubleclick/marktinhome/Views/PhotoView/OnGestureListener.java
- com.doubleclick.marktinhome.Views.PhotoView.OnGestureListener
-com/doubleclick/marktinhome/Model/Chat.java
- com.doubleclick.marktinhome.Model.Chat
-com/doubleclick/Servies/Servies.java
- com.doubleclick.Servies.Servies
-com/doubleclick/marktinhome/DataBinderMapperImpl.java
- com.doubleclick.marktinhome.DataBinderMapperImpl
- com.doubleclick.marktinhome.DataBinderMapperImpl$InnerBrLookup
- com.doubleclick.marktinhome.DataBinderMapperImpl$InnerLayoutIdLookup
-com/doubleclick/marktinhome/Views/flowingdrawer_core/BuildLayerFrameLayout.java
- com.doubleclick.marktinhome.Views.flowingdrawer_core.BuildLayerFrameLayout
- com.doubleclick.marktinhome.Views.flowingdrawer_core.BuildLayerFrameLayout$1
- com.doubleclick.marktinhome.Views.flowingdrawer_core.BuildLayerFrameLayout$2
-io/realm/DefaultRealmModuleMediator.java
- io.realm.DefaultRealmModuleMediator
-com/doubleclick/marktinhome/ui/MainScreen/Groups/CreateGroup/Step2FragmentArgs.java
- com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroup.Step2FragmentArgs
- com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroup.Step2FragmentArgs$1
- com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroup.Step2FragmentArgs$Builder
-com/doubleclick/ViewModel/GroupViewModel.java
- com.doubleclick.ViewModel.GroupViewModel
-com/doubleclick/marktinhome/Views/flowingdrawer_core/FlowingAnimationListener.java
- com.doubleclick.marktinhome.Views.flowingdrawer_core.FlowingAnimationListener
-com/doubleclick/marktinhome/Views/customnavigationdrawer/data/MenuItem.java
- com.doubleclick.marktinhome.Views.customnavigationdrawer.data.MenuItem
-com/doubleclick/marktinhome/Notifications/MyFirebaseIdService.java
- com.doubleclick.marktinhome.Notifications.MyFirebaseIdService
-com/doubleclick/marktinhome/Views/flowingdrawer_core/FlowingDrawer.java
- com.doubleclick.marktinhome.Views.flowingdrawer_core.FlowingDrawer
+com/doubleclick/marktinhome/Model/GroupData.java
+ com.doubleclick.marktinhome.Model.GroupData
+com/doubleclick/ViewHolder/LocationViewHolder.java
+ com.doubleclick.ViewHolder.LocationViewHolder
+ com.doubleclick.ViewHolder.LocationViewHolder$1
+com/doubleclick/marktinhome/MainFragment.java
+ com.doubleclick.marktinhome.MainFragment
+com/doubleclick/marktinhome/databinding/ItemVideoLeftBinding.java
+ com.doubleclick.marktinhome.databinding.ItemVideoLeftBinding
+com/doubleclick/marktinhome/Adapters/TrademarkAdapter.java
+ com.doubleclick.marktinhome.Adapters.TrademarkAdapter
+ com.doubleclick.marktinhome.Adapters.TrademarkAdapter$1
+ com.doubleclick.marktinhome.Adapters.TrademarkAdapter$TrademarkViewHolder
+com/doubleclick/marktinhome/databinding/FragmentUploadBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentUploadBinding
+com/doubleclick/marktinhome/databinding/ActivityAdvertisementBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityAdvertisementBinding
+com/doubleclick/marktinhome/ui/MainScreen/Groups/CreatePostActivity.java
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.CreatePostActivity
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.CreatePostActivity$1
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.CreatePostActivity$2
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.CreatePostActivity$3
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.CreatePostActivity$4
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.CreatePostActivity$5
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.CreatePostActivity$6
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.CreatePostActivity$7
+com/doubleclick/marktinhome/ui/MainScreen/Groups/GroupFragment.java
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupFragment
+com/doubleclick/marktinhome/databinding/MenuRowItemBinding.java
+ com.doubleclick.marktinhome.databinding.MenuRowItemBinding
+com/doubleclick/marktinhome/databinding/FragmentAllGroupsBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentAllGroupsBinding
+com/doubleclick/marktinhome/ui/MainScreen/Chat/ChatListFragmentDirections.java
+ com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatListFragmentDirections
+ com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatListFragmentDirections$1
+ com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatListFragmentDirections$ActionChatListFragmentToChatFragment
+com/doubleclick/RichEditor/sample/fragment/EditorMenuFragment.java
+ com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment
+ com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment$1
+ com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment$2
+com/doubleclick/marktinhome/MainLoginFragment.java
+ com.doubleclick.marktinhome.MainLoginFragment
+com/doubleclick/RichEditor/sample/fragment/EditTableFragment.java
+ com.doubleclick.RichEditor.sample.fragment.EditTableFragment
+ com.doubleclick.RichEditor.sample.fragment.EditTableFragment$OnTableListener
+com/doubleclick/marktinhome/ui/MainScreen/Groups/GroupsActivity.java
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity$1
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity$2
 com/doubleclick/marktinhome/Views/carousellayoutmanager/CarouselSmoothScroller.java
  com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselSmoothScroller
-com/doubleclick/marktinhome/Views/PhotoView/OnScaleChangedListener.java
- com.doubleclick.marktinhome.Views.PhotoView.OnScaleChangedListener
-com/doubleclick/ViewModel/CommentsGroupViewModel.java
- com.doubleclick.ViewModel.CommentsGroupViewModel
-com/doubleclick/marktinhome/Views/PhotoView/OnViewTapListener.java
- com.doubleclick.marktinhome.Views.PhotoView.OnViewTapListener
-com/doubleclick/ViewModel/CartViewModel.java
- com.doubleclick.ViewModel.CartViewModel
+com/doubleclick/marktinhome/databinding/ActivityMainBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityMainBinding
+com/doubleclick/DashBoard/DashBoardActivity.java
+ com.doubleclick.DashBoard.DashBoardActivity
+ com.doubleclick.DashBoard.DashBoardActivity$1
+com/doubleclick/marktinhome/MainActivity.java
+ com.doubleclick.marktinhome.MainActivity
+com/doubleclick/ViewHolder/RecentResearchViewHolder.java
+ com.doubleclick.ViewHolder.RecentResearchViewHolder
 com/doubleclick/marktinhome/Views/PhotoView/OnPhotoTapListener.java
  com.doubleclick.marktinhome.Views.PhotoView.OnPhotoTapListener
-com/doubleclick/RichEditor/sample/GlideImageLoader.java
- com.doubleclick.RichEditor.sample.GlideImageLoader
-com/doubleclick/ViewModel/RecentSearchViewModel.java
- com.doubleclick.ViewModel.RecentSearchViewModel
+com/doubleclick/marktinhome/databinding/FragmentMenuStoreBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentMenuStoreBinding
+com/doubleclick/marktinhome/databinding/FragmentConnctUsBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentConnctUsBinding
 com/doubleclick/marktinhome/Model/ParentCategory.java
  com.doubleclick.marktinhome.Model.ParentCategory
 com/doubleclick/marktinhome/Model/PostsGroup.java
  com.doubleclick.marktinhome.Model.PostsGroup
-com/doubleclick/marktinhome/Views/customnavigationdrawer/utils/CustomViewFactory.java
- com.doubleclick.marktinhome.Views.customnavigationdrawer.utils.CustomViewFactory
+ com.doubleclick.marktinhome.Model.PostsGroup$1
+com/doubleclick/marktinhome/ui/Splash/Splash1Fragment.java
+ com.doubleclick.marktinhome.ui.Splash.Splash1Fragment
 com/doubleclick/marktinhome/Views/colorpickerview/flag/FlagView.java
  com.doubleclick.marktinhome.Views.colorpickerview.flag.FlagView
 com/doubleclick/marktinhome/ui/MainScreen/Comments/CommentsFragmentArgs.java
  com.doubleclick.marktinhome.ui.MainScreen.Comments.CommentsFragmentArgs
  com.doubleclick.marktinhome.ui.MainScreen.Comments.CommentsFragmentArgs$1
  com.doubleclick.marktinhome.ui.MainScreen.Comments.CommentsFragmentArgs$Builder
-androidx/databinding/library/baseAdapters/BR.java
- androidx.databinding.library.baseAdapters.BR
+com/doubleclick/marktinhome/Adapters/SliderAdapter.java
+ com.doubleclick.marktinhome.Adapters.SliderAdapter
 com/doubleclick/marktinhome/Repository/ChatReopsitory.java
  com.doubleclick.marktinhome.Repository.ChatReopsitory
  com.doubleclick.marktinhome.Repository.ChatReopsitory$1
@@ -239,511 +246,18 @@ com/doubleclick/marktinhome/Views/PhotoView/OnOutsidePhotoTapListener.java
  com.doubleclick.marktinhome.Views.PhotoView.OnOutsidePhotoTapListener
 com/doubleclick/Servies/NotificationReceiver.java
  com.doubleclick.Servies.NotificationReceiver
-com/doubleclick/marktinhome/Views/socialtextview/TouchableSpan.java
- com.doubleclick.marktinhome.Views.socialtextview.TouchableSpan
-com/doubleclick/marktinhome/Views/flowingdrawer_core/FlowingMenuLayout.java
- com.doubleclick.marktinhome.Views.flowingdrawer_core.FlowingMenuLayout
-com/doubleclick/marktinhome/Views/flowingdrawer_core/ViewHelper.java
- com.doubleclick.marktinhome.Views.flowingdrawer_core.ViewHelper
-com/doubleclick/marktinhome/Views/colorpickerview/SizeUtils.java
- com.doubleclick.marktinhome.Views.colorpickerview.SizeUtils
-com/doubleclick/marktinhome/Model/CommentsGroup.java
- com.doubleclick.marktinhome.Model.CommentsGroup
-com/doubleclick/marktinhome/Model/Cart.java
- com.doubleclick.marktinhome.Model.Cart
- com.doubleclick.marktinhome.Model.Cart$1
-com/doubleclick/marktinhome/Repository/ProductRepository.java
- com.doubleclick.marktinhome.Repository.ProductRepository
- com.doubleclick.marktinhome.Repository.ProductRepository$1
- com.doubleclick.marktinhome.Repository.ProductRepository$10
- com.doubleclick.marktinhome.Repository.ProductRepository$2
- com.doubleclick.marktinhome.Repository.ProductRepository$3
- com.doubleclick.marktinhome.Repository.ProductRepository$4
- com.doubleclick.marktinhome.Repository.ProductRepository$5
- com.doubleclick.marktinhome.Repository.ProductRepository$6
- com.doubleclick.marktinhome.Repository.ProductRepository$7
- com.doubleclick.marktinhome.Repository.ProductRepository$8
- com.doubleclick.marktinhome.Repository.ProductRepository$9
-com/doubleclick/marktinhome/Views/socialtextview/widget/SocialTextView.java
- com.doubleclick.marktinhome.Views.socialtextview.widget.SocialTextView
-com/doubleclick/marktinhome/Model/Constantes.java
- com.doubleclick.marktinhome.Model.Constantes
-com/doubleclick/marktinhome/Repository/RecentOrdersForSellerRepository.java
- com.doubleclick.marktinhome.Repository.RecentOrdersForSellerRepository
- com.doubleclick.marktinhome.Repository.RecentOrdersForSellerRepository$1
- com.doubleclick.marktinhome.Repository.RecentOrdersForSellerRepository$recentOrder
-com/doubleclick/marktinhome/Repository/BaseRepository.java
- com.doubleclick.marktinhome.Repository.BaseRepository
-com/doubleclick/marktinhome/Views/PhotoView/Compat.java
- com.doubleclick.marktinhome.Views.PhotoView.Compat
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/FilterParentFragmentArgs.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.FilterParentFragmentArgs
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.FilterParentFragmentArgs$1
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.FilterParentFragmentArgs$Builder
-com/doubleclick/marktinhome/Model/Advertisement.java
- com.doubleclick.marktinhome.Model.Advertisement
-com/doubleclick/marktinhome/RealmDatabase/ChatRealm.java
- com.doubleclick.marktinhome.RealmDatabase.ChatRealm
-io/realm/com_doubleclick_marktinhome_RealmDatabase_ChatRealmRealmProxyInterface.java
- io.realm.com_doubleclick_marktinhome_RealmDatabase_ChatRealmRealmProxyInterface
-com/doubleclick/marktinhome/Model/Seller.java
- com.doubleclick.marktinhome.Model.Seller
-com/doubleclick/RichEditor/mricheditor/FontStyle.java
- com.doubleclick.RichEditor.mricheditor.FontStyle
- com.doubleclick.RichEditor.mricheditor.FontStyle$AncestorsBean
- com.doubleclick.RichEditor.mricheditor.FontStyle$RangeBean
- com.doubleclick.RichEditor.mricheditor.FontStyle$RangeBean$EcBean
- com.doubleclick.RichEditor.mricheditor.FontStyle$RangeBean$ScBean
-com/doubleclick/marktinhome/RealmDatabase/MyRealmMigration.java
- com.doubleclick.marktinhome.RealmDatabase.MyRealmMigration
-com/doubleclick/marktinhome/Repository/Sending.java
- com.doubleclick.marktinhome.Repository.Sending
- com.doubleclick.marktinhome.Repository.Sending$1
-com/doubleclick/marktinhome/Repository/OrdersRepository.java
- com.doubleclick.marktinhome.Repository.OrdersRepository
- com.doubleclick.marktinhome.Repository.OrdersRepository$1
-com/doubleclick/marktinhome/Views/colorpickerview/listeners/ColorPickerViewListener.java
- com.doubleclick.marktinhome.Views.colorpickerview.listeners.ColorPickerViewListener
-com/doubleclick/marktinhome/Model/Orders.java
- com.doubleclick.marktinhome.Model.Orders
-com/doubleclick/marktinhome/Views/colorpickerview/ColorHsvPalette.java
- com.doubleclick.marktinhome.Views.colorpickerview.ColorHsvPalette
-com/doubleclick/marktinhome/Model/Comments.java
- com.doubleclick.marktinhome.Model.Comments
-com/doubleclick/marktinhome/Model/Rate.java
- com.doubleclick.marktinhome.Model.Rate
-com/doubleclick/marktinhome/Model/Sender.java
- com.doubleclick.marktinhome.Model.Sender
-com/doubleclick/marktinhome/Views/flowingdrawer_core/NoClickThroughFrameLayout.java
- com.doubleclick.marktinhome.Views.flowingdrawer_core.NoClickThroughFrameLayout
-com/doubleclick/marktinhome/Views/colorpickerview/sliders/AbstractSlider.java
- com.doubleclick.marktinhome.Views.colorpickerview.sliders.AbstractSlider
- com.doubleclick.marktinhome.Views.colorpickerview.sliders.AbstractSlider$1
-com/doubleclick/ViewModel/ChatViewModel.java
- com.doubleclick.ViewModel.ChatViewModel
-com/doubleclick/ViewModel/RecentOrdersForSellerViewModel.java
- com.doubleclick.ViewModel.RecentOrdersForSellerViewModel
-com/doubleclick/marktinhome/Repository/RecentOrderRepository.java
- com.doubleclick.marktinhome.Repository.RecentOrderRepository
- com.doubleclick.marktinhome.Repository.RecentOrderRepository$1
-androidx/databinding/DataBinderMapperImpl.java
- androidx.databinding.DataBinderMapperImpl
-com/doubleclick/marktinhome/Model/Trademark.java
- com.doubleclick.marktinhome.Model.Trademark
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/TrademarkFragmentArgs.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.TrademarkFragmentArgs
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.TrademarkFragmentArgs$1
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.TrademarkFragmentArgs$Builder
-com/doubleclick/marktinhome/Repository/RecentSearchRepository.java
- com.doubleclick.marktinhome.Repository.RecentSearchRepository
- com.doubleclick.marktinhome.Repository.RecentSearchRepository$1
- com.doubleclick.marktinhome.Repository.RecentSearchRepository$2
- com.doubleclick.marktinhome.Repository.RecentSearchRepository$3
-com/doubleclick/marktinhome/Repository/CommentsRepository.java
- com.doubleclick.marktinhome.Repository.CommentsRepository
- com.doubleclick.marktinhome.Repository.CommentsRepository$1
-com/doubleclick/marktinhome/Views/PhotoView/OnMatrixChangedListener.java
- com.doubleclick.marktinhome.Views.PhotoView.OnMatrixChangedListener
-com/doubleclick/marktinhome/Views/PhotoView/PhotoViewAttacher.java
- com.doubleclick.marktinhome.Views.PhotoView.PhotoViewAttacher
- com.doubleclick.marktinhome.Views.PhotoView.PhotoViewAttacher$1
- com.doubleclick.marktinhome.Views.PhotoView.PhotoViewAttacher$2
- com.doubleclick.marktinhome.Views.PhotoView.PhotoViewAttacher$3
- com.doubleclick.marktinhome.Views.PhotoView.PhotoViewAttacher$4
- com.doubleclick.marktinhome.Views.PhotoView.PhotoViewAttacher$AnimatedZoomRunnable
- com.doubleclick.marktinhome.Views.PhotoView.PhotoViewAttacher$FlingRunnable
-com/doubleclick/ViewModel/TradmarkViewModel.java
- com.doubleclick.ViewModel.TradmarkViewModel
-com/doubleclick/marktinhome/ui/MainScreen/Groups/CreateGroup/Step3FragmentArgs.java
- com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroup.Step3FragmentArgs
- com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroup.Step3FragmentArgs$1
- com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroup.Step3FragmentArgs$Builder
-com/doubleclick/marktinhome/Views/colorpickerview/ActionMode.java
- com.doubleclick.marktinhome.Views.colorpickerview.ActionMode
-com/doubleclick/marktinhome/Model/CustomerLocation.java
- com.doubleclick.marktinhome.Model.CustomerLocation
-com/doubleclick/marktinhome/Model/Product.java
- com.doubleclick.marktinhome.Model.Product
- com.doubleclick.marktinhome.Model.Product$1
-com/doubleclick/marktinhome/Model/CatecoriesModel.java
- com.doubleclick.marktinhome.Model.CatecoriesModel
-io/realm/com_doubleclick_marktinhome_RealmDatabase_ChatRealmRealmProxy.java
- io.realm.com_doubleclick_marktinhome_RealmDatabase_ChatRealmRealmProxy
- io.realm.com_doubleclick_marktinhome_RealmDatabase_ChatRealmRealmProxy$ChatRealmColumnInfo
- io.realm.com_doubleclick_marktinhome_RealmDatabase_ChatRealmRealmProxy$ClassNameHelper
-com/doubleclick/marktinhome/BuildConfig.java
- com.doubleclick.marktinhome.BuildConfig
-com/doubleclick/marktinhome/BaseApplication.java
- com.doubleclick.marktinhome.BaseApplication
- com.doubleclick.marktinhome.BaseApplication$1
-com/doubleclick/marktinhome/Views/carousellayoutmanager/CarouselLayoutManager.java
- com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager
- com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager$1
- com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager$2
- com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager$CarouselSavedState
- com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager$CarouselSavedState$1
- com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager$LayoutHelper
- com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager$LayoutOrder
- com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager$OnCenterItemSelectionListener
- com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager$PostLayoutListener
-com/doubleclick/marktinhome/Model/HomeModel.java
- com.doubleclick.marktinhome.Model.HomeModel
-com/doubleclick/marktinhome/Repository/CartRepository.java
- com.doubleclick.marktinhome.Repository.CartRepository
- com.doubleclick.marktinhome.Repository.CartRepository$1
-com/doubleclick/marktinhome/Views/colorpickerview/preference/ColorPickerPreferenceManager.java
- com.doubleclick.marktinhome.Views.colorpickerview.preference.ColorPickerPreferenceManager
-com/doubleclick/marktinhome/Views/colorpickerview/ColorUtils.java
- com.doubleclick.marktinhome.Views.colorpickerview.ColorUtils
-com/doubleclick/marktinhome/Adapters/ViewPagerGroupAdapter.java
- com.doubleclick.marktinhome.Adapters.ViewPagerGroupAdapter
-com/doubleclick/ViewModel/AdvertisementViewModel.java
- com.doubleclick.ViewModel.AdvertisementViewModel
-com/doubleclick/marktinhome/Repository/PostsRepository.java
- com.doubleclick.marktinhome.Repository.PostsRepository
- com.doubleclick.marktinhome.Repository.PostsRepository$1
- com.doubleclick.marktinhome.Repository.PostsRepository$1$1
- com.doubleclick.marktinhome.Repository.PostsRepository$PostInterface
-androidx/databinding/DataBindingComponent.java
- androidx.databinding.DataBindingComponent
-com/doubleclick/marktinhome/Model/CommentsReply.java
- com.doubleclick.marktinhome.Model.CommentsReply
-com/doubleclick/marktinhome/Views/colorpickerview/ColorEnvelope.java
- com.doubleclick.marktinhome.Views.colorpickerview.ColorEnvelope
-com/doubleclick/marktinhome/Model/Token.java
- com.doubleclick.marktinhome.Model.Token
-com/doubleclick/marktinhome/Views/socialtextview/AccurateMovementMethod.java
- com.doubleclick.marktinhome.Views.socialtextview.AccurateMovementMethod
-com/doubleclick/marktinhome/Views/socialtextview/widget/SocialView.java
- com.doubleclick.marktinhome.Views.socialtextview.widget.SocialView
- com.doubleclick.marktinhome.Views.socialtextview.widget.SocialView$OnChangedListener
- com.doubleclick.marktinhome.Views.socialtextview.widget.SocialView$OnClickListener
-com/doubleclick/marktinhome/databinding/FragmentCommentsBinding.java
- com.doubleclick.marktinhome.databinding.FragmentCommentsBinding
-com/doubleclick/marktinhome/databinding/PopupwindowBinding.java
- com.doubleclick.marktinhome.databinding.PopupwindowBinding
-com/doubleclick/marktinhome/Adapters/RecentOrderAdapter.java
- com.doubleclick.marktinhome.Adapters.RecentOrderAdapter
- com.doubleclick.marktinhome.Adapters.RecentOrderAdapter$RecentOrderViewHolder
-com/doubleclick/marktinhome/Adapters/ProductSliderAdapter.java
- com.doubleclick.marktinhome.Adapters.ProductSliderAdapter
-com/doubleclick/DashBoard/MonthFragment.java
- com.doubleclick.DashBoard.MonthFragment
- com.doubleclick.DashBoard.MonthFragment$MonthFragmentListener
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/HomeFragmentDirections.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.HomeFragmentDirections
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.HomeFragmentDirections$1
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.HomeFragmentDirections$ActionHomeFragmentToFilterParentFragment
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.HomeFragmentDirections$ActionHomeFragmentToProductFragment
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.HomeFragmentDirections$ActionHomeFragmentToTrademarkFragment
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.HomeFragmentDirections$ActionHomeFragmentToViewMoreFragment
-com/doubleclick/marktinhome/databinding/DialogColorpickerColorpickerviewSkydovesBinding.java
- com.doubleclick.marktinhome.databinding.DialogColorpickerColorpickerviewSkydovesBinding
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/RichFragment.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$1
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$2
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$3
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$4
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$5
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$CustomWebChromeClient
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$MOnActionPerformListener
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$MRichEditorCallback
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$ShareHTML
-com/doubleclick/marktinhome/ui/MainScreen/Groups/Comments/CommentGroupActivity.java
- com.doubleclick.marktinhome.ui.MainScreen.Groups.Comments.CommentGroupActivity
- com.doubleclick.marktinhome.ui.MainScreen.Groups.Comments.CommentGroupActivity$1
- com.doubleclick.marktinhome.ui.MainScreen.Groups.Comments.CommentGroupActivity$2
-com/doubleclick/RichEditor/sample/RichEditorActivity.java
- com.doubleclick.RichEditor.sample.RichEditorActivity
- com.doubleclick.RichEditor.sample.RichEditorActivity$1
- com.doubleclick.RichEditor.sample.RichEditorActivity$2
- com.doubleclick.RichEditor.sample.RichEditorActivity$3
- com.doubleclick.RichEditor.sample.RichEditorActivity$CustomWebChromeClient
- com.doubleclick.RichEditor.sample.RichEditorActivity$MOnActionPerformListener
- com.doubleclick.RichEditor.sample.RichEditorActivity$MRichEditorCallback
-com/doubleclick/ViewHolder/VoiceViewHolder.java
- com.doubleclick.ViewHolder.VoiceViewHolder
- com.doubleclick.ViewHolder.VoiceViewHolder$1
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/CartFragmentDirections.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.CartFragmentDirections
-com/doubleclick/RichEditor/sample/fragment/EditTableFragmentDirections.java
- com.doubleclick.RichEditor.sample.fragment.EditTableFragmentDirections
-com/doubleclick/marktinhome/databinding/LayautCartBinding.java
- com.doubleclick.marktinhome.databinding.LayautCartBinding
-com/doubleclick/marktinhome/databinding/LayoutProductWithViewPagerBinding.java
- com.doubleclick.marktinhome.databinding.LayoutProductWithViewPagerBinding
-com/doubleclick/DashBoard/StatisticsFragment.java
- com.doubleclick.DashBoard.StatisticsFragment
- com.doubleclick.DashBoard.StatisticsFragment$1
- com.doubleclick.DashBoard.StatisticsFragment$ValueTouchListener
-com/doubleclick/marktinhome/Adapters/CatecoriesAdapter.java
- com.doubleclick.marktinhome.Adapters.CatecoriesAdapter
- com.doubleclick.marktinhome.Adapters.CatecoriesAdapter$1
- com.doubleclick.marktinhome.Adapters.CatecoriesAdapter$CatecoriesViewHolder
-com/doubleclick/marktinhome/databinding/ActivityEditTradmarkBinding.java
- com.doubleclick.marktinhome.databinding.ActivityEditTradmarkBinding
-com/doubleclick/marktinhome/databinding/UserChatLayoutShimmerBinding.java
- com.doubleclick.marktinhome.databinding.UserChatLayoutShimmerBinding
-com/doubleclick/marktinhome/databinding/WidgetNavigationDrawerBinding.java
- com.doubleclick.marktinhome.databinding.WidgetNavigationDrawerBinding
-com/doubleclick/marktinhome/databinding/FragmentSplash1Binding.java
- com.doubleclick.marktinhome.databinding.FragmentSplash1Binding
-com/doubleclick/marktinhome/databinding/ActivityTrademarkBinding.java
- com.doubleclick.marktinhome.databinding.ActivityTrademarkBinding
-com/doubleclick/marktinhome/databinding/FragmentSplash4Binding.java
- com.doubleclick.marktinhome.databinding.FragmentSplash4Binding
-com/doubleclick/marktinhome/databinding/EachItemBinding.java
- com.doubleclick.marktinhome.databinding.EachItemBinding
-com/doubleclick/marktinhome/databinding/FragmentViewmoreBinding.java
- com.doubleclick.marktinhome.databinding.FragmentViewmoreBinding
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/menu_listFragment.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.menu_listFragment
-com/doubleclick/marktinhome/databinding/UserChatLayoutBinding.java
- com.doubleclick.marktinhome.databinding.UserChatLayoutBinding
-com/doubleclick/marktinhome/databinding/FragmentSplash2Binding.java
- com.doubleclick.marktinhome.databinding.FragmentSplash2Binding
-com/doubleclick/marktinhome/databinding/FlagBubbleColorpickerviewSkydovesBinding.java
- com.doubleclick.marktinhome.databinding.FlagBubbleColorpickerviewSkydovesBinding
-com/doubleclick/marktinhome/databinding/FragmentSplash3Binding.java
- com.doubleclick.marktinhome.databinding.FragmentSplash3Binding
-com/doubleclick/marktinhome/Views/colorpickerview/AlphaTileView.java
- com.doubleclick.marktinhome.Views.colorpickerview.AlphaTileView
-com/doubleclick/marktinhome/Notifications/MyFirebaseMessaging.java
- com.doubleclick.marktinhome.Notifications.MyFirebaseMessaging
-com/doubleclick/marktinhome/databinding/LayoutSmallProductBinding.java
- com.doubleclick.marktinhome.databinding.LayoutSmallProductBinding
-com/doubleclick/marktinhome/databinding/LayoutItemGroupShimmerBinding.java
- com.doubleclick.marktinhome.databinding.LayoutItemGroupShimmerBinding
-com/doubleclick/marktinhome/databinding/FragmentGroupBinding.java
- com.doubleclick.marktinhome.databinding.FragmentGroupBinding
-com/doubleclick/marktinhome/databinding/FragmentAllUsersBinding.java
- com.doubleclick.marktinhome.databinding.FragmentAllUsersBinding
-com/doubleclick/marktinhome/Adapters/ImageProductSliderAdapter.java
- com.doubleclick.marktinhome.Adapters.ImageProductSliderAdapter
-com/doubleclick/marktinhome/databinding/ItemLocationRightBinding.java
- com.doubleclick.marktinhome.databinding.ItemLocationRightBinding
-com/doubleclick/marktinhome/databinding/FragmentRegisterBinding.java
- com.doubleclick.marktinhome.databinding.FragmentRegisterBinding
-com/doubleclick/marktinhome/databinding/ItemTrademarkBinding.java
- com.doubleclick.marktinhome.databinding.ItemTrademarkBinding
-com/doubleclick/marktinhome/Adapters/AllCategoryAdapter.java
- com.doubleclick.marktinhome.Adapters.AllCategoryAdapter
- com.doubleclick.marktinhome.Adapters.AllCategoryAdapter$TopViewHilder
-com/doubleclick/marktinhome/databinding/ItemAdvBinding.java
- com.doubleclick.marktinhome.databinding.ItemAdvBinding
-com/doubleclick/marktinhome/Adapters/GroupsAdapter.java
- com.doubleclick.marktinhome.Adapters.GroupsAdapter
- com.doubleclick.marktinhome.Adapters.GroupsAdapter$1
- com.doubleclick.marktinhome.Adapters.GroupsAdapter$2
- com.doubleclick.marktinhome.Adapters.GroupsAdapter$2$1
- com.doubleclick.marktinhome.Adapters.GroupsAdapter$3
- com.doubleclick.marktinhome.Adapters.GroupsAdapter$GroupViewHolder
- com.doubleclick.marktinhome.Adapters.GroupsAdapter$GroupViewHolder$1
- com.doubleclick.marktinhome.Adapters.GroupsAdapter$GroupViewHolder$2
-com/doubleclick/marktinhome/databinding/FragmentMenuCartBinding.java
- com.doubleclick.marktinhome.databinding.FragmentMenuCartBinding
-com/doubleclick/RichEditor/mricheditor/ui/ActionImageView.java
- com.doubleclick.RichEditor.mricheditor.ui.ActionImageView
- com.doubleclick.RichEditor.mricheditor.ui.ActionImageView$1
- com.doubleclick.RichEditor.mricheditor.ui.ActionImageView$2
-com/doubleclick/marktinhome/databinding/ImagesBinding.java
- com.doubleclick.marktinhome.databinding.ImagesBinding
-com/doubleclick/marktinhome/databinding/BottomSheetEditorBinding.java
- com.doubleclick.marktinhome.databinding.BottomSheetEditorBinding
-com/doubleclick/marktinhome/databinding/CommentsLayoutBinding.java
- com.doubleclick.marktinhome.databinding.CommentsLayoutBinding
-com/doubleclick/ViewHolder/TopDealsViewHolder.java
- com.doubleclick.ViewHolder.TopDealsViewHolder
-com/doubleclick/ViewHolder/ProductViewHolder.java
- com.doubleclick.ViewHolder.ProductViewHolder
-com/doubleclick/marktinhome/databinding/ItemContactRightBinding.java
- com.doubleclick.marktinhome.databinding.ItemContactRightBinding
-com/doubleclick/marktinhome/ui/Login/LoginFragment.java
- com.doubleclick.marktinhome.ui.Login.LoginFragment
- com.doubleclick.marktinhome.ui.Login.LoginFragment$1
-com/doubleclick/marktinhome/databinding/FragmentEditTableBinding.java
- com.doubleclick.marktinhome.databinding.FragmentEditTableBinding
-com/doubleclick/marktinhome/databinding/UploadProgressLayoutBinding.java
- com.doubleclick.marktinhome.databinding.UploadProgressLayoutBinding
-com/doubleclick/marktinhome/databinding/LayoutChatBinding.java
- com.doubleclick.marktinhome.databinding.LayoutChatBinding
-com/doubleclick/marktinhome/databinding/AddToggalBinding.java
- com.doubleclick.marktinhome.databinding.AddToggalBinding
-com/doubleclick/marktinhome/databinding/FragmentChatBinding.java
- com.doubleclick.marktinhome.databinding.FragmentChatBinding
-com/doubleclick/marktinhome/Adapters/CommentGroupAdapter.java
- com.doubleclick.marktinhome.Adapters.CommentGroupAdapter
- com.doubleclick.marktinhome.Adapters.CommentGroupAdapter$1
- com.doubleclick.marktinhome.Adapters.CommentGroupAdapter$CommentsViewHolder
- com.doubleclick.marktinhome.Adapters.CommentGroupAdapter$CommentsViewHolder$1
- com.doubleclick.marktinhome.Adapters.CommentGroupAdapter$CommentsViewHolder$2
-com/doubleclick/marktinhome/databinding/LayoutCategoriesBinding.java
- com.doubleclick.marktinhome.databinding.LayoutCategoriesBinding
-com/doubleclick/marktinhome/databinding/FragmentParentBinding.java
- com.doubleclick.marktinhome.databinding.FragmentParentBinding
-com/doubleclick/marktinhome/Adapters/ImagesGroupAdapter.java
- com.doubleclick.marktinhome.Adapters.ImagesGroupAdapter
- com.doubleclick.marktinhome.Adapters.ImagesGroupAdapter$ImagesGroupViewHolder
-com/doubleclick/marktinhome/databinding/FragmentMenuListBinding.java
- com.doubleclick.marktinhome.databinding.FragmentMenuListBinding
-com/doubleclick/marktinhome/databinding/FragmentPagerBinding.java
- com.doubleclick.marktinhome.databinding.FragmentPagerBinding
-com/doubleclick/DashBoard/MapsFragment.java
- com.doubleclick.DashBoard.MapsFragment
- com.doubleclick.DashBoard.MapsFragment$1
- com.doubleclick.DashBoard.MapsFragment$2
-com/doubleclick/marktinhome/databinding/RightChatBinding.java
- com.doubleclick.marktinhome.databinding.RightChatBinding
-com/doubleclick/marktinhome/databinding/FragmentEditBinding.java
- com.doubleclick.marktinhome.databinding.FragmentEditBinding
-com/doubleclick/marktinhome/databinding/ItemFileLeftBinding.java
- com.doubleclick.marktinhome.databinding.ItemFileLeftBinding
-com/doubleclick/marktinhome/databinding/ActivitySellerBinding.java
- com.doubleclick.marktinhome.databinding.ActivitySellerBinding
-com/doubleclick/marktinhome/databinding/ActivityCreatePostBinding.java
- com.doubleclick.marktinhome.databinding.ActivityCreatePostBinding
-com/doubleclick/marktinhome/databinding/ItemFontSettingBinding.java
- com.doubleclick.marktinhome.databinding.ItemFontSettingBinding
-com/doubleclick/marktinhome/databinding/ActivityAddressBinding.java
- com.doubleclick.marktinhome.databinding.ActivityAddressBinding
-com/doubleclick/marktinhome/databinding/FragmentAddressBinding.java
- com.doubleclick.marktinhome.databinding.FragmentAddressBinding
-com/doubleclick/ViewHolder/LocationViewHolder.java
- com.doubleclick.ViewHolder.LocationViewHolder
- com.doubleclick.ViewHolder.LocationViewHolder$1
-com/doubleclick/marktinhome/MainFragment.java
- com.doubleclick.marktinhome.MainFragment
-com/doubleclick/marktinhome/databinding/ItemVideoLeftBinding.java
- com.doubleclick.marktinhome.databinding.ItemVideoLeftBinding
-com/doubleclick/marktinhome/databinding/ActivityParentBinding.java
- com.doubleclick.marktinhome.databinding.ActivityParentBinding
-com/doubleclick/marktinhome/Adapters/TrademarkAdapter.java
- com.doubleclick.marktinhome.Adapters.TrademarkAdapter
- com.doubleclick.marktinhome.Adapters.TrademarkAdapter$1
- com.doubleclick.marktinhome.Adapters.TrademarkAdapter$TrademarkViewHolder
-com/doubleclick/marktinhome/databinding/FragmentUploadBinding.java
- com.doubleclick.marktinhome.databinding.FragmentUploadBinding
-com/doubleclick/marktinhome/databinding/ActivityAdvertisementBinding.java
- com.doubleclick.marktinhome.databinding.ActivityAdvertisementBinding
-com/doubleclick/marktinhome/Adapters/ChatAdapter.java
- com.doubleclick.marktinhome.Adapters.ChatAdapter
-com/doubleclick/marktinhome/ui/MainScreen/Groups/CreatePostActivity.java
- com.doubleclick.marktinhome.ui.MainScreen.Groups.CreatePostActivity
- com.doubleclick.marktinhome.ui.MainScreen.Groups.CreatePostActivity$1
- com.doubleclick.marktinhome.ui.MainScreen.Groups.CreatePostActivity$2
- com.doubleclick.marktinhome.ui.MainScreen.Groups.CreatePostActivity$3
- com.doubleclick.marktinhome.ui.MainScreen.Groups.CreatePostActivity$4
- com.doubleclick.marktinhome.ui.MainScreen.Groups.CreatePostActivity$5
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/ViewMoreFragmentDirections.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.ViewMoreFragmentDirections
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.ViewMoreFragmentDirections$1
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.ViewMoreFragmentDirections$ActionViewMoreFragmentToProductFragment
-com/doubleclick/marktinhome/ui/Trademark/EditTradmarkActivity.java
- com.doubleclick.marktinhome.ui.Trademark.EditTradmarkActivity
- com.doubleclick.marktinhome.ui.Trademark.EditTradmarkActivity$1
-com/doubleclick/marktinhome/ui/MainScreen/Groups/GroupFragment.java
- com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupFragment
-com/doubleclick/marktinhome/databinding/MenuRowItemBinding.java
- com.doubleclick.marktinhome.databinding.MenuRowItemBinding
-com/doubleclick/marktinhome/databinding/FragmentAllGroupsBinding.java
- com.doubleclick.marktinhome.databinding.FragmentAllGroupsBinding
-com/doubleclick/marktinhome/databinding/ActivityEditAdvertisementBinding.java
- com.doubleclick.marktinhome.databinding.ActivityEditAdvertisementBinding
-com/doubleclick/ViewHolder/ContactViewHolder.java
- com.doubleclick.ViewHolder.ContactViewHolder
- com.doubleclick.ViewHolder.ContactViewHolder$1
-com/doubleclick/marktinhome/ui/MainScreen/Chat/ChatListFragmentDirections.java
- com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatListFragmentDirections
- com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatListFragmentDirections$1
- com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatListFragmentDirections$ActionChatListFragmentToChatFragment
-com/doubleclick/RichEditor/sample/fragment/EditorMenuFragment.java
- com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment
- com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment$1
- com.doubleclick.RichEditor.sample.fragment.EditorMenuFragment$2
-com/doubleclick/marktinhome/databinding/ActivityDashBoardBinding.java
- com.doubleclick.marktinhome.databinding.ActivityDashBoardBinding
-com/doubleclick/marktinhome/ui/MainScreen/Groups/BottomSheetEditor.java
- com.doubleclick.marktinhome.ui.MainScreen.Groups.BottomSheetEditor
-com/doubleclick/marktinhome/databinding/ListItemBinding.java
- com.doubleclick.marktinhome.databinding.ListItemBinding
-com/doubleclick/marktinhome/MainLoginFragment.java
- com.doubleclick.marktinhome.MainLoginFragment
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/TrademarkFragmentDirections.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.TrademarkFragmentDirections
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.TrademarkFragmentDirections$1
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.TrademarkFragmentDirections$ActionTrademarkFragmentToProductFragment
-com/doubleclick/RichEditor/sample/fragment/EditTableFragment.java
- com.doubleclick.RichEditor.sample.fragment.EditTableFragment
- com.doubleclick.RichEditor.sample.fragment.EditTableFragment$OnTableListener
-com/doubleclick/marktinhome/databinding/FragmentStep2Binding.java
- com.doubleclick.marktinhome.databinding.FragmentStep2Binding
-com/doubleclick/marktinhome/ui/MainScreen/Groups/GroupsActivity.java
- com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity
- com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity$1
- com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity$2
- com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity$PostViewHolder
-com/doubleclick/marktinhome/databinding/LayoutGroupListShimmerBinding.java
- com.doubleclick.marktinhome.databinding.LayoutGroupListShimmerBinding
-com/doubleclick/marktinhome/databinding/ActivityMainBinding.java
- com.doubleclick.marktinhome.databinding.ActivityMainBinding
-com/doubleclick/RichEditor/sample/adapter/FontSettingAdapter.java
- com.doubleclick.RichEditor.sample.adapter.FontSettingAdapter
-com/doubleclick/DashBoard/DashBoardActivity.java
- com.doubleclick.DashBoard.DashBoardActivity
- com.doubleclick.DashBoard.DashBoardActivity$1
-com/doubleclick/marktinhome/ui/MainScreen/Groups/AllGroupsFragment.java
- com.doubleclick.marktinhome.ui.MainScreen.Groups.AllGroupsFragment
- com.doubleclick.marktinhome.ui.MainScreen.Groups.AllGroupsFragment$1
-com/doubleclick/marktinhome/MainActivity.java
- com.doubleclick.marktinhome.MainActivity
-com/doubleclick/ViewHolder/RecentResearchViewHolder.java
- com.doubleclick.ViewHolder.RecentResearchViewHolder
-com/doubleclick/marktinhome/ui/Login/RegisterFragment.java
- com.doubleclick.marktinhome.ui.Login.RegisterFragment
- com.doubleclick.marktinhome.ui.Login.RegisterFragment$1
- com.doubleclick.marktinhome.ui.Login.RegisterFragment$1$1
- com.doubleclick.marktinhome.ui.Login.RegisterFragment$2
-com/doubleclick/marktinhome/ui/MainScreen/Groups/CreateGroupActivity.java
- com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroupActivity
-com/doubleclick/marktinhome/databinding/FragmentMenuStoreBinding.java
- com.doubleclick.marktinhome.databinding.FragmentMenuStoreBinding
-com/doubleclick/marktinhome/databinding/FragmentConnctUsBinding.java
- com.doubleclick.marktinhome.databinding.FragmentConnctUsBinding
-com/doubleclick/marktinhome/ui/Trademark/TrademarkActivity.java
- com.doubleclick.marktinhome.ui.Trademark.TrademarkActivity
- com.doubleclick.marktinhome.ui.Trademark.TrademarkActivity$1
- com.doubleclick.marktinhome.ui.Trademark.TrademarkActivity$2
- com.doubleclick.marktinhome.ui.Trademark.TrademarkActivity$3
- com.doubleclick.marktinhome.ui.Trademark.TrademarkActivity$4
- com.doubleclick.marktinhome.ui.Trademark.TrademarkActivity$5
-com/doubleclick/marktinhome/ui/Splash/Splash1Fragment.java
- com.doubleclick.marktinhome.ui.Splash.Splash1Fragment
-com/doubleclick/marktinhome/databinding/FragmentHomeBinding.java
- com.doubleclick.marktinhome.databinding.FragmentHomeBinding
-com/doubleclick/Address/AddressActivity.java
- com.doubleclick.Address.AddressActivity
-com/doubleclick/marktinhome/Adapters/SliderAdapter.java
- com.doubleclick.marktinhome.Adapters.SliderAdapter
-com/doubleclick/marktinhome/databinding/FragmentOrderSelllerBinding.java
- com.doubleclick.marktinhome.databinding.FragmentOrderSelllerBinding
-com/doubleclick/ViewHolder/FileViewHolder.java
- com.doubleclick.ViewHolder.FileViewHolder
- com.doubleclick.ViewHolder.FileViewHolder$1
 com/doubleclick/marktinhome/Views/colorpickerview/sliders/BrightnessSlideBar.java
  com.doubleclick.marktinhome.Views.colorpickerview.sliders.BrightnessSlideBar
 com/doubleclick/marktinhome/databinding/LayoutGroupListBinding.java
  com.doubleclick.marktinhome.databinding.LayoutGroupListBinding
 com/doubleclick/marktinhome/databinding/FragmentRichBinding.java
  com.doubleclick.marktinhome.databinding.FragmentRichBinding
-com/doubleclick/marktinhome/databinding/FragmentCartBinding.java
- com.doubleclick.marktinhome.databinding.FragmentCartBinding
+com/doubleclick/marktinhome/Views/colorpickerview/SizeUtils.java
+ com.doubleclick.marktinhome.Views.colorpickerview.SizeUtils
 com/doubleclick/marktinhome/ui/MainScreen/Groups/CreateGroup/Step1FragmentDirections.java
  com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroup.Step1FragmentDirections
  com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroup.Step1FragmentDirections$1
  com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroup.Step1FragmentDirections$ActionStepOneFragmentToStepTwoFragment
-com/doubleclick/marktinhome/databinding/AllTradmarkBinding.java
- com.doubleclick.marktinhome.databinding.AllTradmarkBinding
 com/doubleclick/marktinhome/databinding/ItemFileRightBinding.java
  com.doubleclick.marktinhome.databinding.ItemFileRightBinding
 com/doubleclick/marktinhome/databinding/HTreademarkRecyclerviewBinding.java
@@ -759,10 +273,551 @@ com/doubleclick/marktinhome/Views/customnavigationdrawer/widget/SNavigationDrawe
  com.doubleclick.marktinhome.Views.customnavigationdrawer.widget.SNavigationDrawer$OnHamMenuClickListener
  com.doubleclick.marktinhome.Views.customnavigationdrawer.widget.SNavigationDrawer$OnMenuItemClickListener
  com.doubleclick.marktinhome.Views.customnavigationdrawer.widget.SNavigationDrawer$State
-com/doubleclick/marktinhome/databinding/ActivityMainRichEditorBinding.java
- com.doubleclick.marktinhome.databinding.ActivityMainRichEditorBinding
 com/doubleclick/marktinhome/databinding/CommentReplyLayoutBinding.java
  com.doubleclick.marktinhome.databinding.CommentReplyLayoutBinding
+com/doubleclick/marktinhome/Repository/RecentOrdersForSellerRepository.java
+ com.doubleclick.marktinhome.Repository.RecentOrdersForSellerRepository
+ com.doubleclick.marktinhome.Repository.RecentOrdersForSellerRepository$1
+ com.doubleclick.marktinhome.Repository.RecentOrdersForSellerRepository$recentOrder
+com/doubleclick/marktinhome/databinding/FragmentMapsBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentMapsBinding
+com/doubleclick/marktinhome/Views/PhotoView/Compat.java
+ com.doubleclick.marktinhome.Views.PhotoView.Compat
+com/doubleclick/marktinhome/databinding/ActivityFilterBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityFilterBinding
+com/doubleclick/marktinhome/Model/Advertisement.java
+ com.doubleclick.marktinhome.Model.Advertisement
+com/doubleclick/marktinhome/RealmDatabase/ChatRealm.java
+ com.doubleclick.marktinhome.RealmDatabase.ChatRealm
+io/realm/com_doubleclick_marktinhome_RealmDatabase_ChatRealmRealmProxyInterface.java
+ io.realm.com_doubleclick_marktinhome_RealmDatabase_ChatRealmRealmProxyInterface
+com/doubleclick/marktinhome/databinding/CommentsGroupLayoutBinding.java
+ com.doubleclick.marktinhome.databinding.CommentsGroupLayoutBinding
+com/doubleclick/RichEditor/mricheditor/FontStyle.java
+ com.doubleclick.RichEditor.mricheditor.FontStyle
+ com.doubleclick.RichEditor.mricheditor.FontStyle$AncestorsBean
+ com.doubleclick.RichEditor.mricheditor.FontStyle$RangeBean
+ com.doubleclick.RichEditor.mricheditor.FontStyle$RangeBean$EcBean
+ com.doubleclick.RichEditor.mricheditor.FontStyle$RangeBean$ScBean
+com/doubleclick/RichEditor/sample/fragment/FontSettingFragment.java
+ com.doubleclick.RichEditor.sample.fragment.FontSettingFragment
+ com.doubleclick.RichEditor.sample.fragment.FontSettingFragment$OnResultListener
+com/doubleclick/marktinhome/databinding/KeywordLayoutBinding.java
+ com.doubleclick.marktinhome.databinding.KeywordLayoutBinding
+com/doubleclick/marktinhome/databinding/FragmentRecentOrderBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentRecentOrderBinding
+com/doubleclick/marktinhome/databinding/ActivityGroupsBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityGroupsBinding
+com/doubleclick/marktinhome/Views/colorpickerview/listeners/ColorPickerViewListener.java
+ com.doubleclick.marktinhome.Views.colorpickerview.listeners.ColorPickerViewListener
+com/doubleclick/marktinhome/Model/Orders.java
+ com.doubleclick.marktinhome.Model.Orders
+com/doubleclick/marktinhome/Views/socialtextview/SocialTextView.java
+ com.doubleclick.marktinhome.Views.socialtextview.SocialTextView
+ com.doubleclick.marktinhome.Views.socialtextview.SocialTextView$1
+ com.doubleclick.marktinhome.Views.socialtextview.SocialTextView$LinkItem
+ com.doubleclick.marktinhome.Views.socialtextview.SocialTextView$LinkOptions
+ com.doubleclick.marktinhome.Views.socialtextview.SocialTextView$OnLinkClickListener
+com/doubleclick/marktinhome/Adapters/ItemGroupsAdapter.java
+ com.doubleclick.marktinhome.Adapters.ItemGroupsAdapter
+ com.doubleclick.marktinhome.Adapters.ItemGroupsAdapter$ItemViewHolder
+com/doubleclick/marktinhome/databinding/OrdersBinding.java
+ com.doubleclick.marktinhome.databinding.OrdersBinding
+com/doubleclick/marktinhome/databinding/PlayVoiceLeftBinding.java
+ com.doubleclick.marktinhome.databinding.PlayVoiceLeftBinding
+com/doubleclick/marktinhome/Views/flowingdrawer_core/NoClickThroughFrameLayout.java
+ com.doubleclick.marktinhome.Views.flowingdrawer_core.NoClickThroughFrameLayout
+com/doubleclick/marktinhome/Adapters/CartAdapter.java
+ com.doubleclick.marktinhome.Adapters.CartAdapter
+ com.doubleclick.marktinhome.Adapters.CartAdapter$CartViewHolder
+com/doubleclick/marktinhome/databinding/TableRowBinding.java
+ com.doubleclick.marktinhome.databinding.TableRowBinding
+com/doubleclick/marktinhome/databinding/FragmentEditorMenuBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentEditorMenuBinding
+com/doubleclick/marktinhome/databinding/FragmentFontSettingBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentFontSettingBinding
+com/doubleclick/marktinhome/Model/User.java
+ com.doubleclick.marktinhome.Model.User
+com/doubleclick/marktinhome/databinding/FragmentMyGroupsBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentMyGroupsBinding
+com/doubleclick/marktinhome/ui/Advertisement/AdvertisementActivity.java
+ com.doubleclick.marktinhome.ui.Advertisement.AdvertisementActivity
+ com.doubleclick.marktinhome.ui.Advertisement.AdvertisementActivity$1
+ com.doubleclick.marktinhome.ui.Advertisement.AdvertisementActivity$2
+ com.doubleclick.marktinhome.ui.Advertisement.AdvertisementActivity$3
+com/doubleclick/marktinhome/ui/ProductActivity/productFragmentDirections.java
+ com.doubleclick.marktinhome.ui.ProductActivity.productFragmentDirections
+ com.doubleclick.marktinhome.ui.ProductActivity.productFragmentDirections$1
+ com.doubleclick.marktinhome.ui.ProductActivity.productFragmentDirections$ActionProductFragmentToCommentsFragment
+com/doubleclick/marktinhome/Repository/CommentsRepository.java
+ com.doubleclick.marktinhome.Repository.CommentsRepository
+ com.doubleclick.marktinhome.Repository.CommentsRepository$1
+com/doubleclick/marktinhome/Views/PhotoView/OnMatrixChangedListener.java
+ com.doubleclick.marktinhome.Views.PhotoView.OnMatrixChangedListener
+com/doubleclick/marktinhome/ui/MainScreen/Chat/AllUsersFragmentDirections.java
+ com.doubleclick.marktinhome.ui.MainScreen.Chat.AllUsersFragmentDirections
+ com.doubleclick.marktinhome.ui.MainScreen.Chat.AllUsersFragmentDirections$1
+ com.doubleclick.marktinhome.ui.MainScreen.Chat.AllUsersFragmentDirections$ActionAllUsersFragmentToChatFragment
+com/doubleclick/ViewModel/TradmarkViewModel.java
+ com.doubleclick.ViewModel.TradmarkViewModel
+com/doubleclick/marktinhome/ui/MainScreen/Groups/CreateGroup/Step3FragmentArgs.java
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroup.Step3FragmentArgs
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroup.Step3FragmentArgs$1
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroup.Step3FragmentArgs$Builder
+com/doubleclick/marktinhome/databinding/BottonNavigationBinding.java
+ com.doubleclick.marktinhome.databinding.BottonNavigationBinding
+com/doubleclick/marktinhome/databinding/ActivityChatBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityChatBinding
+com/doubleclick/marktinhome/Model/Product.java
+ com.doubleclick.marktinhome.Model.Product
+ com.doubleclick.marktinhome.Model.Product$1
+com/doubleclick/marktinhome/Model/CatecoriesModel.java
+ com.doubleclick.marktinhome.Model.CatecoriesModel
+io/realm/com_doubleclick_marktinhome_RealmDatabase_ChatRealmRealmProxy.java
+ io.realm.com_doubleclick_marktinhome_RealmDatabase_ChatRealmRealmProxy
+ io.realm.com_doubleclick_marktinhome_RealmDatabase_ChatRealmRealmProxy$ChatRealmColumnInfo
+ io.realm.com_doubleclick_marktinhome_RealmDatabase_ChatRealmRealmProxy$ClassNameHelper
+com/doubleclick/marktinhome/Views/customnavigationdrawer/Adapter/RecyclerAdapter.java
+ com.doubleclick.marktinhome.Views.customnavigationdrawer.Adapter.RecyclerAdapter
+ com.doubleclick.marktinhome.Views.customnavigationdrawer.Adapter.RecyclerAdapter$RecyclerViewHolder
+com/doubleclick/marktinhome/BaseApplication.java
+ com.doubleclick.marktinhome.BaseApplication
+ com.doubleclick.marktinhome.BaseApplication$1
+com/doubleclick/marktinhome/Views/carousellayoutmanager/CarouselLayoutManager.java
+ com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager
+ com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager$1
+ com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager$2
+ com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager$CarouselSavedState
+ com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager$CarouselSavedState$1
+ com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager$LayoutHelper
+ com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager$LayoutOrder
+ com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager$OnCenterItemSelectionListener
+ com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager$PostLayoutListener
+com/doubleclick/marktinhome/Model/HomeModel.java
+ com.doubleclick.marktinhome.Model.HomeModel
+com/doubleclick/ViewHolder/TopViewHolder.java
+ com.doubleclick.ViewHolder.TopViewHolder
+com/doubleclick/marktinhome/ui/MainScreen/Chat/ChatFragmentArgs.java
+ com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatFragmentArgs
+ com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatFragmentArgs$1
+ com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatFragmentArgs$Builder
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/UploadFragmentDirections.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.UploadFragmentDirections
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.UploadFragmentDirections$1
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.UploadFragmentDirections$ActionUploadFragmentToChildFragment
+com/doubleclick/marktinhome/Adapters/NavAdapter.java
+ com.doubleclick.marktinhome.Adapters.NavAdapter
+ com.doubleclick.marktinhome.Adapters.NavAdapter$1
+ com.doubleclick.marktinhome.Adapters.NavAdapter$NavViewHolder
+ com.doubleclick.marktinhome.Adapters.NavAdapter$onClickChild
+com/doubleclick/ViewHolder/BannerSliderViewholder.java
+ com.doubleclick.ViewHolder.BannerSliderViewholder
+ com.doubleclick.ViewHolder.BannerSliderViewholder$1
+ com.doubleclick.ViewHolder.BannerSliderViewholder$2
+ com.doubleclick.ViewHolder.BannerSliderViewholder$3
+ com.doubleclick.ViewHolder.BannerSliderViewholder$4
+com/doubleclick/marktinhome/databinding/SlidsAdBannerBinding.java
+ com.doubleclick.marktinhome.databinding.SlidsAdBannerBinding
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/menu_storeFragmentDirections.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.menu_storeFragmentDirections
+com/doubleclick/marktinhome/Adapters/AllUserChatListAdapter.java
+ com.doubleclick.marktinhome.Adapters.AllUserChatListAdapter
+ com.doubleclick.marktinhome.Adapters.AllUserChatListAdapter$AllUserViewHolder
+ com.doubleclick.marktinhome.Adapters.AllUserChatListAdapter$AllUserViewHolder$1
+com/doubleclick/marktinhome/databinding/FragmentChatListBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentChatListBinding
+com/doubleclick/marktinhome/ui/Login/ForgetFragment.java
+ com.doubleclick.marktinhome.ui.Login.ForgetFragment
+ com.doubleclick.marktinhome.ui.Login.ForgetFragment$1
+com/doubleclick/ViewHolder/ChatViewHolder.java
+ com.doubleclick.ViewHolder.ChatViewHolder
+com/doubleclick/marktinhome/Views/PhotoView/OnViewTapListener.java
+ com.doubleclick.marktinhome.Views.PhotoView.OnViewTapListener
+com/doubleclick/marktinhome/Views/flowingdrawer_core/FlowingDrawer.java
+ com.doubleclick.marktinhome.Views.flowingdrawer_core.FlowingDrawer
+com/doubleclick/marktinhome/databinding/VProductRecyclerviewBinding.java
+ com.doubleclick.marktinhome.databinding.VProductRecyclerviewBinding
+com/doubleclick/marktinhome/databinding/ListGroupBinding.java
+ com.doubleclick.marktinhome.databinding.ListGroupBinding
+com/doubleclick/marktinhome/databinding/EditOnProductBinding.java
+ com.doubleclick.marktinhome.databinding.EditOnProductBinding
+com/doubleclick/marktinhome/databinding/LayoutUploadBinding.java
+ com.doubleclick.marktinhome.databinding.LayoutUploadBinding
+com/doubleclick/marktinhome/databinding/ActivityProductBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityProductBinding
+com/doubleclick/marktinhome/Model/Token.java
+ com.doubleclick.marktinhome.Model.Token
+com/doubleclick/marktinhome/Views/colorpickerview/listeners/ColorListener.java
+ com.doubleclick.marktinhome.Views.colorpickerview.listeners.ColorListener
+com/doubleclick/marktinhome/Views/flowingdrawer_core/FlowingAnimationListener.java
+ com.doubleclick.marktinhome.Views.flowingdrawer_core.FlowingAnimationListener
+com/doubleclick/marktinhome/Adapters/ProductAdapterSmall.java
+ com.doubleclick.marktinhome.Adapters.ProductAdapterSmall
+ com.doubleclick.marktinhome.Adapters.ProductAdapterSmall$ProductViewHolder
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/ParentFragmentDirections.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ParentFragmentDirections
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ParentFragmentDirections$1
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ParentFragmentDirections$ActionParentFragmentToChildFragment
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ParentFragmentDirections$ActionParentFragmentToEditFragment
+com/doubleclick/marktinhome/databinding/NavHeaderMainBinding.java
+ com.doubleclick.marktinhome.databinding.NavHeaderMainBinding
+com/doubleclick/marktinhome/Model/Comments.java
+ com.doubleclick.marktinhome.Model.Comments
+com/doubleclick/marktinhome/databinding/HTopRecyclerviewBinding.java
+ com.doubleclick.marktinhome.databinding.HTopRecyclerviewBinding
+com/doubleclick/marktinhome/Adapters/CommentAdapter.java
+ com.doubleclick.marktinhome.Adapters.CommentAdapter
+ com.doubleclick.marktinhome.Adapters.CommentAdapter$CommentViewHolder
+com/doubleclick/marktinhome/databinding/LeftChatBinding.java
+ com.doubleclick.marktinhome.databinding.LeftChatBinding
+com/doubleclick/marktinhome/DataBinderMapperImpl.java
+ com.doubleclick.marktinhome.DataBinderMapperImpl
+ com.doubleclick.marktinhome.DataBinderMapperImpl$InnerBrLookup
+ com.doubleclick.marktinhome.DataBinderMapperImpl$InnerLayoutIdLookup
+com/doubleclick/marktinhome/databinding/LayoutTopDealsBinding.java
+ com.doubleclick.marktinhome.databinding.LayoutTopDealsBinding
+com/doubleclick/marktinhome/databinding/ItemLocationLeftBinding.java
+ com.doubleclick.marktinhome.databinding.ItemLocationLeftBinding
+com/doubleclick/marktinhome/Views/colorpickerview/sliders/AlphaSlideBar.java
+ com.doubleclick.marktinhome.Views.colorpickerview.sliders.AlphaSlideBar
+com/doubleclick/marktinhome/Views/colorpickerview/ColorEnvelope.java
+ com.doubleclick.marktinhome.Views.colorpickerview.ColorEnvelope
+com/doubleclick/RichEditor/sample/StartActivity.java
+ com.doubleclick.RichEditor.sample.StartActivity
+com/doubleclick/marktinhome/databinding/FragmentStep1Binding.java
+ com.doubleclick.marktinhome.databinding.FragmentStep1Binding
+com/doubleclick/marktinhome/Views/colorpickerview/sliders/AbstractSlider.java
+ com.doubleclick.marktinhome.Views.colorpickerview.sliders.AbstractSlider
+ com.doubleclick.marktinhome.Views.colorpickerview.sliders.AbstractSlider$1
+com/doubleclick/RichEditor/sample/widget/ColorPaletteView.java
+ com.doubleclick.RichEditor.sample.widget.ColorPaletteView
+ com.doubleclick.RichEditor.sample.widget.ColorPaletteView$OnColorChangeListener
+com/doubleclick/marktinhome/databinding/ItemContactLeftBinding.java
+ com.doubleclick.marktinhome.databinding.ItemContactLeftBinding
+com/doubleclick/ViewHolder/TrademarkViewHolder.java
+ com.doubleclick.ViewHolder.TrademarkViewHolder
+com/doubleclick/marktinhome/databinding/NotificationCollapsedBinding.java
+ com.doubleclick.marktinhome.databinding.NotificationCollapsedBinding
+com/doubleclick/ViewModel/ProductViewModel.java
+ com.doubleclick.ViewModel.ProductViewModel
+com/doubleclick/marktinhome/databinding/BottomDialogKeywordBinding.java
+ com.doubleclick.marktinhome.databinding.BottomDialogKeywordBinding
+com/doubleclick/marktinhome/Views/flowingdrawer_core/SmoothInterpolator.java
+ com.doubleclick.marktinhome.Views.flowingdrawer_core.SmoothInterpolator
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/ViewMoreFragmentArgs.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.ViewMoreFragmentArgs
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.ViewMoreFragmentArgs$1
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.ViewMoreFragmentArgs$Builder
+com/doubleclick/marktinhome/RealmDatabase/RealmBaseAdapter.java
+ com.doubleclick.marktinhome.RealmDatabase.RealmBaseAdapter
+com/doubleclick/ViewHolder/VideoViewHolder.java
+ com.doubleclick.ViewHolder.VideoViewHolder
+ com.doubleclick.ViewHolder.VideoViewHolder$1
+ com.doubleclick.ViewHolder.VideoViewHolder$2
+com/doubleclick/marktinhome/databinding/FragmentTrademarkBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentTrademarkBinding
+com/doubleclick/marktinhome/databinding/ChildLayoutBinding.java
+ com.doubleclick.marktinhome.databinding.ChildLayoutBinding
+com/doubleclick/marktinhome/databinding/ActivityCommentsBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityCommentsBinding
+com/doubleclick/marktinhome/Views/socialtextview/widget/SocialView.java
+ com.doubleclick.marktinhome.Views.socialtextview.widget.SocialView
+ com.doubleclick.marktinhome.Views.socialtextview.widget.SocialView$OnChangedListener
+ com.doubleclick.marktinhome.Views.socialtextview.widget.SocialView$OnClickListener
+com/doubleclick/RichEditor/sample/fragment/EditHyperlinkFragmentDirections.java
+ com.doubleclick.RichEditor.sample.fragment.EditHyperlinkFragmentDirections
+com/doubleclick/marktinhome/Views/colorpickerview/flag/FlagMode.java
+ com.doubleclick.marktinhome.Views.colorpickerview.flag.FlagMode
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/FilterParentFragmentDirections.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.FilterParentFragmentDirections
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.FilterParentFragmentDirections$1
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.FilterParentFragmentDirections$ActionFilterParentFragmentToProductFragment
+com/doubleclick/marktinhome/Notifications/Client.java
+ com.doubleclick.marktinhome.Notifications.Client
+com/doubleclick/marktinhome/Adapters/BaseMessageAdapter.java
+ com.doubleclick.marktinhome.Adapters.BaseMessageAdapter
+com/doubleclick/marktinhome/Repository/PostsRepository.java
+ com.doubleclick.marktinhome.Repository.PostsRepository
+ com.doubleclick.marktinhome.Repository.PostsRepository$1
+ com.doubleclick.marktinhome.Repository.PostsRepository$1$1
+ com.doubleclick.marktinhome.Repository.PostsRepository$PostInterface
+com/doubleclick/RichEditor/sample/RichEditorActivity.java
+ com.doubleclick.RichEditor.sample.RichEditorActivity
+ com.doubleclick.RichEditor.sample.RichEditorActivity$1
+ com.doubleclick.RichEditor.sample.RichEditorActivity$2
+ com.doubleclick.RichEditor.sample.RichEditorActivity$3
+ com.doubleclick.RichEditor.sample.RichEditorActivity$CustomWebChromeClient
+ com.doubleclick.RichEditor.sample.RichEditorActivity$MOnActionPerformListener
+ com.doubleclick.RichEditor.sample.RichEditorActivity$MRichEditorCallback
+com/doubleclick/marktinhome/Views/colorpickerview/preference/ColorPickerPreferenceManager.java
+ com.doubleclick.marktinhome.Views.colorpickerview.preference.ColorPickerPreferenceManager
+com/doubleclick/marktinhome/Views/PhotoView/Util.java
+ com.doubleclick.marktinhome.Views.PhotoView.Util
+ com.doubleclick.marktinhome.Views.PhotoView.Util$1
+com/doubleclick/marktinhome/databinding/PopupwindowBinding.java
+ com.doubleclick.marktinhome.databinding.PopupwindowBinding
+com/doubleclick/marktinhome/databinding/ActivityViewBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityViewBinding
+com/doubleclick/RichEditor/mricheditor/RichEditorAction.java
+ com.doubleclick.RichEditor.mricheditor.RichEditorAction
+androidx/databinding/DataBinderMapperImpl.java
+ androidx.databinding.DataBinderMapperImpl
+com/doubleclick/marktinhome/Model/CommentsReply.java
+ com.doubleclick.marktinhome.Model.CommentsReply
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/HomeFragmentDirections.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.HomeFragmentDirections
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.HomeFragmentDirections$1
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.HomeFragmentDirections$ActionHomeFragmentToFilterParentFragment
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.HomeFragmentDirections$ActionHomeFragmentToProductFragment
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.HomeFragmentDirections$ActionHomeFragmentToTrademarkFragment
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.HomeFragmentDirections$ActionHomeFragmentToViewMoreFragment
+com/doubleclick/marktinhome/databinding/DialogColorpickerColorpickerviewSkydovesBinding.java
+ com.doubleclick.marktinhome.databinding.DialogColorpickerColorpickerviewSkydovesBinding
+com/doubleclick/marktinhome/ui/MainScreen/Groups/Comments/CommentGroupActivity.java
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.Comments.CommentGroupActivity
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.Comments.CommentGroupActivity$1
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.Comments.CommentGroupActivity$2
+com/doubleclick/marktinhome/Views/colorpickerview/PointMapper.java
+ com.doubleclick.marktinhome.Views.colorpickerview.PointMapper
+com/doubleclick/ViewHolder/VoiceViewHolder.java
+ com.doubleclick.ViewHolder.VoiceViewHolder
+ com.doubleclick.ViewHolder.VoiceViewHolder$1
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/CartFragmentDirections.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.CartFragmentDirections
+com/doubleclick/marktinhome/databinding/LayoutProductWithViewPagerBinding.java
+ com.doubleclick.marktinhome.databinding.LayoutProductWithViewPagerBinding
+com/doubleclick/DashBoard/StatisticsFragment.java
+ com.doubleclick.DashBoard.StatisticsFragment
+ com.doubleclick.DashBoard.StatisticsFragment$1
+ com.doubleclick.DashBoard.StatisticsFragment$ValueTouchListener
+com/doubleclick/ViewModel/GroupViewModel.java
+ com.doubleclick.ViewModel.GroupViewModel
+com/doubleclick/marktinhome/databinding/UserChatLayoutShimmerBinding.java
+ com.doubleclick.marktinhome.databinding.UserChatLayoutShimmerBinding
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/EditFragmentArgs.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.EditFragmentArgs
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.EditFragmentArgs$1
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.EditFragmentArgs$Builder
+com/doubleclick/marktinhome/databinding/ActivityTrademarkBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityTrademarkBinding
+com/doubleclick/marktinhome/Notifications/OreoNotification.java
+ com.doubleclick.marktinhome.Notifications.OreoNotification
+com/doubleclick/marktinhome/databinding/EachItemBinding.java
+ com.doubleclick.marktinhome.databinding.EachItemBinding
+com/doubleclick/marktinhome/BuildConfig.java
+ com.doubleclick.marktinhome.BuildConfig
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/menu_listFragment.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.menu_listFragment
+com/doubleclick/marktinhome/Notifications/MyFirebaseMessaging.java
+ com.doubleclick.marktinhome.Notifications.MyFirebaseMessaging
+com/doubleclick/marktinhome/databinding/LayoutItemGroupShimmerBinding.java
+ com.doubleclick.marktinhome.databinding.LayoutItemGroupShimmerBinding
+com/doubleclick/marktinhome/Repository/RecentSearchRepository.java
+ com.doubleclick.marktinhome.Repository.RecentSearchRepository
+ com.doubleclick.marktinhome.Repository.RecentSearchRepository$1
+ com.doubleclick.marktinhome.Repository.RecentSearchRepository$2
+ com.doubleclick.marktinhome.Repository.RecentSearchRepository$3
+com/doubleclick/marktinhome/Views/socialtextview/AccurateMovementMethod.java
+ com.doubleclick.marktinhome.Views.socialtextview.AccurateMovementMethod
+com/doubleclick/marktinhome/databinding/FragmentAllUsersBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentAllUsersBinding
+com/doubleclick/marktinhome/Model/Trademark.java
+ com.doubleclick.marktinhome.Model.Trademark
+com/doubleclick/marktinhome/databinding/ItemTrademarkBinding.java
+ com.doubleclick.marktinhome.databinding.ItemTrademarkBinding
+com/doubleclick/marktinhome/Model/CommentsGroupData.java
+ com.doubleclick.marktinhome.Model.CommentsGroupData
+com/doubleclick/marktinhome/Adapters/AllCategoryAdapter.java
+ com.doubleclick.marktinhome.Adapters.AllCategoryAdapter
+ com.doubleclick.marktinhome.Adapters.AllCategoryAdapter$TopViewHilder
+com/doubleclick/marktinhome/databinding/ItemAdvBinding.java
+ com.doubleclick.marktinhome.databinding.ItemAdvBinding
+com/doubleclick/marktinhome/Adapters/GroupsAdapter.java
+ com.doubleclick.marktinhome.Adapters.GroupsAdapter
+ com.doubleclick.marktinhome.Adapters.GroupsAdapter$1
+ com.doubleclick.marktinhome.Adapters.GroupsAdapter$2
+ com.doubleclick.marktinhome.Adapters.GroupsAdapter$2$1
+ com.doubleclick.marktinhome.Adapters.GroupsAdapter$3
+ com.doubleclick.marktinhome.Adapters.GroupsAdapter$GroupViewHolder
+ com.doubleclick.marktinhome.Adapters.GroupsAdapter$GroupViewHolder$1
+ com.doubleclick.marktinhome.Adapters.GroupsAdapter$GroupViewHolder$2
+ com.doubleclick.marktinhome.Adapters.GroupsAdapter$Loadmore
+com/doubleclick/marktinhome/Model/PostData.java
+ com.doubleclick.marktinhome.Model.PostData
+com/doubleclick/marktinhome/Views/carousellayoutmanager/ItemTransformation.java
+ com.doubleclick.marktinhome.Views.carousellayoutmanager.ItemTransformation
+com/doubleclick/marktinhome/databinding/ImagesBinding.java
+ com.doubleclick.marktinhome.databinding.ImagesBinding
+com/doubleclick/marktinhome/databinding/CommentsLayoutBinding.java
+ com.doubleclick.marktinhome.databinding.CommentsLayoutBinding
+com/doubleclick/ViewModel/AdvertisementViewModel.java
+ com.doubleclick.ViewModel.AdvertisementViewModel
+com/doubleclick/marktinhome/Views/PhotoView/OnSingleFlingListener.java
+ com.doubleclick.marktinhome.Views.PhotoView.OnSingleFlingListener
+com/doubleclick/ViewHolder/ProductViewHolder.java
+ com.doubleclick.ViewHolder.ProductViewHolder
+com/doubleclick/marktinhome/ui/Login/LoginFragment.java
+ com.doubleclick.marktinhome.ui.Login.LoginFragment
+ com.doubleclick.marktinhome.ui.Login.LoginFragment$1
+com/doubleclick/marktinhome/Repository/CartRepository.java
+ com.doubleclick.marktinhome.Repository.CartRepository
+ com.doubleclick.marktinhome.Repository.CartRepository$1
+com/doubleclick/marktinhome/databinding/AddToggalBinding.java
+ com.doubleclick.marktinhome.databinding.AddToggalBinding
+com/doubleclick/marktinhome/databinding/LayoutCategoriesBinding.java
+ com.doubleclick.marktinhome.databinding.LayoutCategoriesBinding
+com/doubleclick/marktinhome/databinding/FragmentParentBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentParentBinding
+com/doubleclick/Servies/Servies.java
+ com.doubleclick.Servies.Servies
+com/doubleclick/marktinhome/databinding/FragmentMenuListBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentMenuListBinding
+com/doubleclick/marktinhome/Model/CustomerLocation.java
+ com.doubleclick.marktinhome.Model.CustomerLocation
+com/doubleclick/marktinhome/Views/colorpickerview/ActionMode.java
+ com.doubleclick.marktinhome.Views.colorpickerview.ActionMode
+com/doubleclick/DashBoard/MapsFragment.java
+ com.doubleclick.DashBoard.MapsFragment
+ com.doubleclick.DashBoard.MapsFragment$1
+ com.doubleclick.DashBoard.MapsFragment$2
+com/doubleclick/marktinhome/BR.java
+ com.doubleclick.marktinhome.BR
+com/doubleclick/marktinhome/databinding/RightChatBinding.java
+ com.doubleclick.marktinhome.databinding.RightChatBinding
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/TrademarkFragmentArgs.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.TrademarkFragmentArgs
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.TrademarkFragmentArgs$1
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.TrademarkFragmentArgs$Builder
+com/doubleclick/marktinhome/databinding/FragmentEditBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentEditBinding
+io/realm/DefaultRealmModuleMediator.java
+ io.realm.DefaultRealmModuleMediator
+com/doubleclick/marktinhome/databinding/ActivitySellerBinding.java
+ com.doubleclick.marktinhome.databinding.ActivitySellerBinding
+com/doubleclick/marktinhome/databinding/ActivityCreatePostBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityCreatePostBinding
+com/doubleclick/marktinhome/Repository/RecentOrderRepository.java
+ com.doubleclick.marktinhome.Repository.RecentOrderRepository
+ com.doubleclick.marktinhome.Repository.RecentOrderRepository$1
+com/doubleclick/marktinhome/databinding/ActivityAddressBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityAddressBinding
+com/doubleclick/ViewModel/RecentOrdersForSellerViewModel.java
+ com.doubleclick.ViewModel.RecentOrdersForSellerViewModel
+com/doubleclick/marktinhome/ui/ProductActivity/productFragmentArgs.java
+ com.doubleclick.marktinhome.ui.ProductActivity.productFragmentArgs
+ com.doubleclick.marktinhome.ui.ProductActivity.productFragmentArgs$1
+ com.doubleclick.marktinhome.ui.ProductActivity.productFragmentArgs$Builder
+com/doubleclick/ViewModel/ChatViewModel.java
+ com.doubleclick.ViewModel.ChatViewModel
+com/doubleclick/marktinhome/databinding/FragmentAddressBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentAddressBinding
+com/doubleclick/marktinhome/Model/Sender.java
+ com.doubleclick.marktinhome.Model.Sender
+com/doubleclick/marktinhome/databinding/ActivityParentBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityParentBinding
+com/doubleclick/ViewModel/UserViewModel.java
+ com.doubleclick.ViewModel.UserViewModel
+com/doubleclick/marktinhome/Notifications/MyFirebaseIdService.java
+ com.doubleclick.marktinhome.Notifications.MyFirebaseIdService
+com/doubleclick/marktinhome/Adapters/ChatAdapter.java
+ com.doubleclick.marktinhome.Adapters.ChatAdapter
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/ViewMoreFragmentDirections.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.ViewMoreFragmentDirections
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.ViewMoreFragmentDirections$1
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.ViewMoreFragmentDirections$ActionViewMoreFragmentToProductFragment
+com/doubleclick/Servies/FileUtil.java
+ com.doubleclick.Servies.FileUtil
+com/doubleclick/marktinhome/ui/Trademark/EditTradmarkActivity.java
+ com.doubleclick.marktinhome.ui.Trademark.EditTradmarkActivity
+ com.doubleclick.marktinhome.ui.Trademark.EditTradmarkActivity$1
+com/doubleclick/marktinhome/databinding/ActivityEditAdvertisementBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityEditAdvertisementBinding
+com/doubleclick/ViewHolder/ContactViewHolder.java
+ com.doubleclick.ViewHolder.ContactViewHolder
+ com.doubleclick.ViewHolder.ContactViewHolder$1
+com/doubleclick/marktinhome/databinding/ActivityDashBoardBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityDashBoardBinding
+com/doubleclick/marktinhome/ui/MainScreen/Groups/BottomSheetEditor.java
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.BottomSheetEditor
+com/doubleclick/marktinhome/databinding/ListItemBinding.java
+ com.doubleclick.marktinhome.databinding.ListItemBinding
+com/doubleclick/marktinhome/Repository/OrdersRepository.java
+ com.doubleclick.marktinhome.Repository.OrdersRepository
+ com.doubleclick.marktinhome.Repository.OrdersRepository$1
+com/doubleclick/marktinhome/Repository/Sending.java
+ com.doubleclick.marktinhome.Repository.Sending
+ com.doubleclick.marktinhome.Repository.Sending$1
+com/doubleclick/marktinhome/Views/PhotoView/OnScaleChangedListener.java
+ com.doubleclick.marktinhome.Views.PhotoView.OnScaleChangedListener
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/TrademarkFragmentDirections.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.TrademarkFragmentDirections
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.TrademarkFragmentDirections$1
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.TrademarkFragmentDirections$ActionTrademarkFragmentToProductFragment
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/FilterParentFragmentArgs.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.FilterParentFragmentArgs
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.FilterParentFragmentArgs$1
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.FilterParentFragmentArgs$Builder
+com/doubleclick/marktinhome/databinding/FragmentStep2Binding.java
+ com.doubleclick.marktinhome.databinding.FragmentStep2Binding
+com/doubleclick/ViewModel/CartViewModel.java
+ com.doubleclick.ViewModel.CartViewModel
+com/doubleclick/marktinhome/databinding/LayoutGroupListShimmerBinding.java
+ com.doubleclick.marktinhome.databinding.LayoutGroupListShimmerBinding
+com/doubleclick/RichEditor/sample/adapter/FontSettingAdapter.java
+ com.doubleclick.RichEditor.sample.adapter.FontSettingAdapter
+com/doubleclick/ViewModel/RecentSearchViewModel.java
+ com.doubleclick.ViewModel.RecentSearchViewModel
+com/doubleclick/marktinhome/ui/MainScreen/Groups/AllGroupsFragment.java
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.AllGroupsFragment
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.AllGroupsFragment$1
+com/doubleclick/marktinhome/ui/Login/RegisterFragment.java
+ com.doubleclick.marktinhome.ui.Login.RegisterFragment
+ com.doubleclick.marktinhome.ui.Login.RegisterFragment$1
+ com.doubleclick.marktinhome.ui.Login.RegisterFragment$1$1
+ com.doubleclick.marktinhome.ui.Login.RegisterFragment$2
+com/doubleclick/marktinhome/Repository/BaseRepository.java
+ com.doubleclick.marktinhome.Repository.BaseRepository
+com/doubleclick/marktinhome/ui/MainScreen/Groups/CreateGroupActivity.java
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroupActivity
+com/doubleclick/marktinhome/ui/Trademark/TrademarkActivity.java
+ com.doubleclick.marktinhome.ui.Trademark.TrademarkActivity
+ com.doubleclick.marktinhome.ui.Trademark.TrademarkActivity$1
+ com.doubleclick.marktinhome.ui.Trademark.TrademarkActivity$2
+ com.doubleclick.marktinhome.ui.Trademark.TrademarkActivity$3
+ com.doubleclick.marktinhome.ui.Trademark.TrademarkActivity$4
+ com.doubleclick.marktinhome.ui.Trademark.TrademarkActivity$5
+com/doubleclick/marktinhome/Model/Constantes.java
+ com.doubleclick.marktinhome.Model.Constantes
+com/doubleclick/marktinhome/databinding/FragmentHomeBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentHomeBinding
+com/doubleclick/Address/AddressActivity.java
+ com.doubleclick.Address.AddressActivity
+com/doubleclick/marktinhome/databinding/FragmentOrderSelllerBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentOrderSelllerBinding
+com/doubleclick/marktinhome/Model/Cart.java
+ com.doubleclick.marktinhome.Model.Cart
+ com.doubleclick.marktinhome.Model.Cart$1
+com/doubleclick/ViewHolder/FileViewHolder.java
+ com.doubleclick.ViewHolder.FileViewHolder
+ com.doubleclick.ViewHolder.FileViewHolder$1
+com/doubleclick/marktinhome/Model/CommentsGroup.java
+ com.doubleclick.marktinhome.Model.CommentsGroup
+com/doubleclick/marktinhome/Views/flowingdrawer_core/FlowingMenuLayout.java
+ com.doubleclick.marktinhome.Views.flowingdrawer_core.FlowingMenuLayout
+com/doubleclick/marktinhome/Views/flowingdrawer_core/ViewHelper.java
+ com.doubleclick.marktinhome.Views.flowingdrawer_core.ViewHelper
+com/doubleclick/marktinhome/ui/MainScreen/Groups/ViewActivity.java
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.ViewActivity
+com/doubleclick/marktinhome/databinding/FragmentCartBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentCartBinding
+com/doubleclick/marktinhome/databinding/AllTradmarkBinding.java
+ com.doubleclick.marktinhome.databinding.AllTradmarkBinding
+com/doubleclick/marktinhome/Views/socialtextview/TouchableSpan.java
+ com.doubleclick.marktinhome.Views.socialtextview.TouchableSpan
+com/doubleclick/marktinhome/databinding/ActivityMainRichEditorBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityMainRichEditorBinding
 com/doubleclick/ViewHolder/MessageTextViewHolder.java
  com.doubleclick.ViewHolder.MessageTextViewHolder
  com.doubleclick.ViewHolder.MessageTextViewHolder$1
@@ -770,12 +825,22 @@ com/doubleclick/marktinhome/Adapters/NavChildAdapter.java
  com.doubleclick.marktinhome.Adapters.NavChildAdapter
  com.doubleclick.marktinhome.Adapters.NavChildAdapter$NavChildViewHolder
  com.doubleclick.marktinhome.Adapters.NavChildAdapter$onNavChild
-com/doubleclick/marktinhome/databinding/FragmentMapsBinding.java
- com.doubleclick.marktinhome.databinding.FragmentMapsBinding
+com/doubleclick/marktinhome/Repository/ProductRepository.java
+ com.doubleclick.marktinhome.Repository.ProductRepository
+ com.doubleclick.marktinhome.Repository.ProductRepository$1
+ com.doubleclick.marktinhome.Repository.ProductRepository$10
+ com.doubleclick.marktinhome.Repository.ProductRepository$2
+ com.doubleclick.marktinhome.Repository.ProductRepository$3
+ com.doubleclick.marktinhome.Repository.ProductRepository$4
+ com.doubleclick.marktinhome.Repository.ProductRepository$5
+ com.doubleclick.marktinhome.Repository.ProductRepository$6
+ com.doubleclick.marktinhome.Repository.ProductRepository$7
+ com.doubleclick.marktinhome.Repository.ProductRepository$8
+ com.doubleclick.marktinhome.Repository.ProductRepository$9
 com/doubleclick/marktinhome/databinding/LayoutProductBinding.java
  com.doubleclick.marktinhome.databinding.LayoutProductBinding
-com/doubleclick/marktinhome/databinding/ActivityFilterBinding.java
- com.doubleclick.marktinhome.databinding.ActivityFilterBinding
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
 com/doubleclick/marktinhome/Views/socialtextview/internal/SocialViewHelper.java
  com.doubleclick.marktinhome.Views.socialtextview.internal.SocialViewHelper
  com.doubleclick.marktinhome.Views.socialtextview.internal.SocialViewHelper$1
@@ -784,8 +849,10 @@ com/doubleclick/marktinhome/Views/socialtextview/internal/SocialViewHelper.java
  com.doubleclick.marktinhome.Views.socialtextview.internal.SocialViewHelper$4
  com.doubleclick.marktinhome.Views.socialtextview.internal.SocialViewHelper$SocialClickableSpan
  com.doubleclick.marktinhome.Views.socialtextview.internal.SocialViewHelper$SocialURLSpan
-com/doubleclick/marktinhome/databinding/CommentsGroupLayoutBinding.java
- com.doubleclick.marktinhome.databinding.CommentsGroupLayoutBinding
+com/doubleclick/RichEditor/sample/GlideImageLoader.java
+ com.doubleclick.RichEditor.sample.GlideImageLoader
+com/doubleclick/marktinhome/Views/socialtextview/widget/SocialTextView.java
+ com.doubleclick.marktinhome.Views.socialtextview.widget.SocialTextView
 com/doubleclick/ViewHolder/ImageViewHolder.java
  com.doubleclick.ViewHolder.ImageViewHolder
  com.doubleclick.ViewHolder.ImageViewHolder$1
@@ -797,17 +864,14 @@ com/doubleclick/marktinhome/ui/Splash/Splash2Fragment.java
  com.doubleclick.marktinhome.ui.Splash.Splash2Fragment
 com/doubleclick/marktinhome/ui/MainScreen/Frgments/Profile/menu_profileFragmentDirections.java
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Profile.menu_profileFragmentDirections
-com/doubleclick/RichEditor/sample/fragment/FontSettingFragment.java
- com.doubleclick.RichEditor.sample.fragment.FontSettingFragment
- com.doubleclick.RichEditor.sample.fragment.FontSettingFragment$OnResultListener
+com/doubleclick/ViewModel/CommentsGroupViewModel.java
+ com.doubleclick.ViewModel.CommentsGroupViewModel
+com/doubleclick/marktinhome/Model/Seller.java
+ com.doubleclick.marktinhome.Model.Seller
 com/doubleclick/marktinhome/databinding/LayoutEditBinding.java
  com.doubleclick.marktinhome.databinding.LayoutEditBinding
-com/doubleclick/marktinhome/databinding/KeywordLayoutBinding.java
- com.doubleclick.marktinhome.databinding.KeywordLayoutBinding
-com/doubleclick/marktinhome/databinding/FragmentRecentOrderBinding.java
- com.doubleclick.marktinhome.databinding.FragmentRecentOrderBinding
-com/doubleclick/marktinhome/databinding/ActivityGroupsBinding.java
- com.doubleclick.marktinhome.databinding.ActivityGroupsBinding
+com/doubleclick/marktinhome/Views/customnavigationdrawer/utils/CustomViewFactory.java
+ com.doubleclick.marktinhome.Views.customnavigationdrawer.utils.CustomViewFactory
 com/doubleclick/marktinhome/Views/colorpickerview/ColorPickerView.java
  com.doubleclick.marktinhome.Views.colorpickerview.ColorPickerView
  com.doubleclick.marktinhome.Views.colorpickerview.ColorPickerView$1
@@ -826,15 +890,8 @@ com/doubleclick/marktinhome/Views/flowingdrawer_core/ElasticDrawer.java
  com.doubleclick.marktinhome.Views.flowingdrawer_core.ElasticDrawer$SavedState$1
 com/doubleclick/marktinhome/databinding/ActivityCommentGroupBinding.java
  com.doubleclick.marktinhome.databinding.ActivityCommentGroupBinding
-com/doubleclick/marktinhome/Views/socialtextview/SocialTextView.java
- com.doubleclick.marktinhome.Views.socialtextview.SocialTextView
- com.doubleclick.marktinhome.Views.socialtextview.SocialTextView$1
- com.doubleclick.marktinhome.Views.socialtextview.SocialTextView$LinkItem
- com.doubleclick.marktinhome.Views.socialtextview.SocialTextView$LinkOptions
- com.doubleclick.marktinhome.Views.socialtextview.SocialTextView$OnLinkClickListener
-com/doubleclick/marktinhome/Adapters/ItemGroupsAdapter.java
- com.doubleclick.marktinhome.Adapters.ItemGroupsAdapter
- com.doubleclick.marktinhome.Adapters.ItemGroupsAdapter$ItemViewHolder
+com/doubleclick/marktinhome/RealmDatabase/MyRealmMigration.java
+ com.doubleclick.marktinhome.RealmDatabase.MyRealmMigration
 com/doubleclick/marktinhome/databinding/SliderImageLayoutBinding.java
  com.doubleclick.marktinhome.databinding.SliderImageLayoutBinding
 com/doubleclick/marktinhome/Adapters/ProductAdapter.java
@@ -850,80 +907,40 @@ com/doubleclick/marktinhome/databinding/CommentsGroupLayoutShimmerBinding.java
  com.doubleclick.marktinhome.databinding.CommentsGroupLayoutShimmerBinding
 com/doubleclick/RichEditor/sample/widget/RoundView.java
  com.doubleclick.RichEditor.sample.widget.RoundView
-com/doubleclick/marktinhome/databinding/OrdersBinding.java
- com.doubleclick.marktinhome.databinding.OrdersBinding
-com/doubleclick/marktinhome/databinding/PlayVoiceLeftBinding.java
- com.doubleclick.marktinhome.databinding.PlayVoiceLeftBinding
-com/doubleclick/marktinhome/Adapters/CartAdapter.java
- com.doubleclick.marktinhome.Adapters.CartAdapter
- com.doubleclick.marktinhome.Adapters.CartAdapter$CartViewHolder
-com/doubleclick/marktinhome/databinding/TableRowBinding.java
- com.doubleclick.marktinhome.databinding.TableRowBinding
 com/doubleclick/marktinhome/databinding/FragmentLogInBinding.java
  com.doubleclick.marktinhome.databinding.FragmentLogInBinding
-com/doubleclick/marktinhome/databinding/FragmentEditorMenuBinding.java
- com.doubleclick.marktinhome.databinding.FragmentEditorMenuBinding
 com/doubleclick/marktinhome/databinding/FragmentStatisticsBinding.java
  com.doubleclick.marktinhome.databinding.FragmentStatisticsBinding
-com/doubleclick/marktinhome/databinding/FragmentFontSettingBinding.java
- com.doubleclick.marktinhome.databinding.FragmentFontSettingBinding
 com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/RichFragmentDirections.java
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragmentDirections
 com/doubleclick/marktinhome/databinding/LayoutItemGroupBinding.java
  com.doubleclick.marktinhome.databinding.LayoutItemGroupBinding
 com/doubleclick/marktinhome/databinding/TopDealsBinding.java
  com.doubleclick.marktinhome.databinding.TopDealsBinding
-com/doubleclick/marktinhome/databinding/FragmentMyGroupsBinding.java
- com.doubleclick.marktinhome.databinding.FragmentMyGroupsBinding
-com/doubleclick/marktinhome/ui/Advertisement/AdvertisementActivity.java
- com.doubleclick.marktinhome.ui.Advertisement.AdvertisementActivity
- com.doubleclick.marktinhome.ui.Advertisement.AdvertisementActivity$1
- com.doubleclick.marktinhome.ui.Advertisement.AdvertisementActivity$2
- com.doubleclick.marktinhome.ui.Advertisement.AdvertisementActivity$3
-com/doubleclick/marktinhome/ui/ProductActivity/productFragmentDirections.java
- com.doubleclick.marktinhome.ui.ProductActivity.productFragmentDirections
- com.doubleclick.marktinhome.ui.ProductActivity.productFragmentDirections$1
- com.doubleclick.marktinhome.ui.ProductActivity.productFragmentDirections$ActionProductFragmentToCommentsFragment
-com/doubleclick/marktinhome/ui/MainScreen/Chat/AllUsersFragmentDirections.java
- com.doubleclick.marktinhome.ui.MainScreen.Chat.AllUsersFragmentDirections
- com.doubleclick.marktinhome.ui.MainScreen.Chat.AllUsersFragmentDirections$1
- com.doubleclick.marktinhome.ui.MainScreen.Chat.AllUsersFragmentDirections$ActionAllUsersFragmentToChatFragment
+com/doubleclick/marktinhome/Views/flowingdrawer_core/BuildLayerFrameLayout.java
+ com.doubleclick.marktinhome.Views.flowingdrawer_core.BuildLayerFrameLayout
+ com.doubleclick.marktinhome.Views.flowingdrawer_core.BuildLayerFrameLayout$1
+ com.doubleclick.marktinhome.Views.flowingdrawer_core.BuildLayerFrameLayout$2
 com/doubleclick/marktinhome/databinding/FragmentMonthBinding.java
  com.doubleclick.marktinhome.databinding.FragmentMonthBinding
-com/doubleclick/marktinhome/databinding/BottonNavigationBinding.java
- com.doubleclick.marktinhome.databinding.BottonNavigationBinding
-com/doubleclick/marktinhome/databinding/ActivityChatBinding.java
- com.doubleclick.marktinhome.databinding.ActivityChatBinding
+com/doubleclick/ViewModel/CommentsViewModel.java
+ com.doubleclick.ViewModel.CommentsViewModel
+com/doubleclick/ViewModel/ChatListViewModel.java
+ com.doubleclick.ViewModel.ChatListViewModel
 com/doubleclick/marktinhome/Adapters/HomeAdapter.java
  com.doubleclick.marktinhome.Adapters.HomeAdapter
 com/doubleclick/marktinhome/databinding/EmptyViewBinding.java
  com.doubleclick.marktinhome.databinding.EmptyViewBinding
 com/doubleclick/marktinhome/databinding/MapBinding.java
  com.doubleclick.marktinhome.databinding.MapBinding
-com/doubleclick/marktinhome/Views/customnavigationdrawer/Adapter/RecyclerAdapter.java
- com.doubleclick.marktinhome.Views.customnavigationdrawer.Adapter.RecyclerAdapter
- com.doubleclick.marktinhome.Views.customnavigationdrawer.Adapter.RecyclerAdapter$RecyclerViewHolder
+com/doubleclick/marktinhome/Views/PhotoView/OnGestureListener.java
+ com.doubleclick.marktinhome.Views.PhotoView.OnGestureListener
+com/doubleclick/marktinhome/Model/Rate.java
+ com.doubleclick.marktinhome.Model.Rate
 com/doubleclick/marktinhome/databinding/TradmarkLayoutBinding.java
  com.doubleclick.marktinhome.databinding.TradmarkLayoutBinding
-com/doubleclick/ViewHolder/TopViewHolder.java
- com.doubleclick.ViewHolder.TopViewHolder
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/UploadFragmentDirections.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.UploadFragmentDirections
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.UploadFragmentDirections$1
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.UploadFragmentDirections$ActionUploadFragmentToChildFragment
-com/doubleclick/marktinhome/Adapters/NavAdapter.java
- com.doubleclick.marktinhome.Adapters.NavAdapter
- com.doubleclick.marktinhome.Adapters.NavAdapter$1
- com.doubleclick.marktinhome.Adapters.NavAdapter$NavViewHolder
- com.doubleclick.marktinhome.Adapters.NavAdapter$onClickChild
 com/doubleclick/marktinhome/databinding/LayoutImagesBinding.java
  com.doubleclick.marktinhome.databinding.LayoutImagesBinding
-com/doubleclick/ViewHolder/BannerSliderViewholder.java
- com.doubleclick.ViewHolder.BannerSliderViewholder
- com.doubleclick.ViewHolder.BannerSliderViewholder$1
- com.doubleclick.ViewHolder.BannerSliderViewholder$2
- com.doubleclick.ViewHolder.BannerSliderViewholder$3
- com.doubleclick.ViewHolder.BannerSliderViewholder$4
 com/doubleclick/marktinhome/databinding/ItemVideoRightBinding.java
  com.doubleclick.marktinhome.databinding.ItemVideoRightBinding
 com/doubleclick/marktinhome/ui/MainScreen/MainScreenActivity.java
@@ -940,59 +957,55 @@ com/doubleclick/marktinhome/BaseFragment.java
  com.doubleclick.marktinhome.BaseFragment$6
  com.doubleclick.marktinhome.BaseFragment$7
  com.doubleclick.marktinhome.BaseFragment$7$1
+com/doubleclick/marktinhome/Views/PhotoView/OnViewDragListener.java
+ com.doubleclick.marktinhome.Views.PhotoView.OnViewDragListener
 com/doubleclick/marktinhome/Adapters/AdvAdapter.java
  com.doubleclick.marktinhome.Adapters.AdvAdapter
  com.doubleclick.marktinhome.Adapters.AdvAdapter$1
  com.doubleclick.marktinhome.Adapters.AdvAdapter$AdvViewHolder
-com/doubleclick/marktinhome/databinding/SlidsAdBannerBinding.java
- com.doubleclick.marktinhome.databinding.SlidsAdBannerBinding
 com/doubleclick/ViewHolder/BaseViewHolder.java
  com.doubleclick.ViewHolder.BaseViewHolder
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/menu_storeFragmentDirections.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.menu_storeFragmentDirections
 com/doubleclick/marktinhome/databinding/ItemImageLeftBinding.java
  com.doubleclick.marktinhome.databinding.ItemImageLeftBinding
-com/doubleclick/marktinhome/Adapters/AllUserChatListAdapter.java
- com.doubleclick.marktinhome.Adapters.AllUserChatListAdapter
- com.doubleclick.marktinhome.Adapters.AllUserChatListAdapter$AllUserViewHolder
 com/doubleclick/marktinhome/databinding/PlayVoiceRightBinding.java
  com.doubleclick.marktinhome.databinding.PlayVoiceRightBinding
-com/doubleclick/marktinhome/databinding/FragmentChatListBinding.java
- com.doubleclick.marktinhome.databinding.FragmentChatListBinding
-com/doubleclick/marktinhome/ui/Login/ForgetFragment.java
- com.doubleclick.marktinhome.ui.Login.ForgetFragment
- com.doubleclick.marktinhome.ui.Login.ForgetFragment$1
 com/doubleclick/marktinhome/databinding/FragmentFilterParentBinding.java
  com.doubleclick.marktinhome.databinding.FragmentFilterParentBinding
+com/doubleclick/marktinhome/Views/customnavigationdrawer/data/MenuItem.java
+ com.doubleclick.marktinhome.Views.customnavigationdrawer.data.MenuItem
 com/doubleclick/marktinhome/Adapters/OrderAdapter.java
  com.doubleclick.marktinhome.Adapters.OrderAdapter
  com.doubleclick.marktinhome.Adapters.OrderAdapter$OrderViewHolder
-com/doubleclick/ViewHolder/ChatViewHolder.java
- com.doubleclick.ViewHolder.ChatViewHolder
 com/doubleclick/marktinhome/ui/Splash/Splash4Fragment.java
  com.doubleclick.marktinhome.ui.Splash.Splash4Fragment
+com/doubleclick/marktinhome/Model/Group.java
+ com.doubleclick.marktinhome.Model.Group
+com/doubleclick/marktinhome/Model/Chat.java
+ com.doubleclick.marktinhome.Model.Chat
 com/doubleclick/marktinhome/databinding/ProductRatingsLayoutBinding.java
  com.doubleclick.marktinhome.databinding.ProductRatingsLayoutBinding
 com/doubleclick/marktinhome/databinding/FragmentJoinUsBinding.java
  com.doubleclick.marktinhome.databinding.FragmentJoinUsBinding
 com/doubleclick/marktinhome/databinding/RecentSearchLayoutBinding.java
  com.doubleclick.marktinhome.databinding.RecentSearchLayoutBinding
-com/doubleclick/marktinhome/databinding/VProductRecyclerviewBinding.java
- com.doubleclick.marktinhome.databinding.VProductRecyclerviewBinding
+com/doubleclick/marktinhome/Views/PhotoView/CustomGestureDetector.java
+ com.doubleclick.marktinhome.Views.PhotoView.CustomGestureDetector
+ com.doubleclick.marktinhome.Views.PhotoView.CustomGestureDetector$1
 com/doubleclick/marktinhome/databinding/FragmentMenuProfileBinding.java
  com.doubleclick.marktinhome.databinding.FragmentMenuProfileBinding
+com/doubleclick/marktinhome/Repository/GroupRepository.java
+ com.doubleclick.marktinhome.Repository.GroupRepository
+ com.doubleclick.marktinhome.Repository.GroupRepository$1
+ com.doubleclick.marktinhome.Repository.GroupRepository$2
+ com.doubleclick.marktinhome.Repository.GroupRepository$3
+ com.doubleclick.marktinhome.Repository.GroupRepository$3$1
 com/doubleclick/marktinhome/databinding/FragmentEditHyperlinkBinding.java
  com.doubleclick.marktinhome.databinding.FragmentEditHyperlinkBinding
-com/doubleclick/marktinhome/Adapters/KeywordAdapter.java
- com.doubleclick.marktinhome.Adapters.KeywordAdapter
- com.doubleclick.marktinhome.Adapters.KeywordAdapter$KeyViewHolder
- com.doubleclick.marktinhome.Adapters.KeywordAdapter$OnDelete
-com/doubleclick/marktinhome/databinding/ListGroupBinding.java
- com.doubleclick.marktinhome.databinding.ListGroupBinding
-com/doubleclick/marktinhome/databinding/EditOnProductBinding.java
- com.doubleclick.marktinhome.databinding.EditOnProductBinding
-com/doubleclick/marktinhome/databinding/LayoutUploadBinding.java
- com.doubleclick.marktinhome.databinding.LayoutUploadBinding
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/KeywordBottomSheet.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.KeywordBottomSheet
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.KeywordBottomSheet$Keywords
+com/doubleclick/marktinhome/Views/colorpickerview/ColorUtils.java
+ com.doubleclick.marktinhome.Views.colorpickerview.ColorUtils
 com/doubleclick/marktinhome/databinding/TopDealLayoutBinding.java
  com.doubleclick.marktinhome.databinding.TopDealLayoutBinding
 com/doubleclick/marktinhome/databinding/ActivityCreateGroupBinding.java
@@ -1000,84 +1013,76 @@ com/doubleclick/marktinhome/databinding/ActivityCreateGroupBinding.java
 com/doubleclick/marktinhome/Adapters/ImageAdapter.java
  com.doubleclick.marktinhome.Adapters.ImageAdapter
  com.doubleclick.marktinhome.Adapters.ImageAdapter$ImageViewHolder
-com/doubleclick/marktinhome/databinding/ActivityProductBinding.java
- com.doubleclick.marktinhome.databinding.ActivityProductBinding
+com/doubleclick/marktinhome/Model/Data.java
+ com.doubleclick.marktinhome.Model.Data
 com/doubleclick/marktinhome/databinding/FragmentChildBinding.java
  com.doubleclick.marktinhome.databinding.FragmentChildBinding
-com/doubleclick/marktinhome/Adapters/ProductAdapterSmall.java
- com.doubleclick.marktinhome.Adapters.ProductAdapterSmall
- com.doubleclick.marktinhome.Adapters.ProductAdapterSmall$ProductViewHolder
+com/doubleclick/marktinhome/Model/Favorite.java
+ com.doubleclick.marktinhome.Model.Favorite
+com/doubleclick/marktinhome/Model/RecentOrder.java
+ com.doubleclick.marktinhome.Model.RecentOrder
+com/doubleclick/marktinhome/Views/carousellayoutmanager/DefaultChildSelectionListener.java
+ com.doubleclick.marktinhome.Views.carousellayoutmanager.DefaultChildSelectionListener
+ com.doubleclick.marktinhome.Views.carousellayoutmanager.DefaultChildSelectionListener$OnCenterItemClickListener
+com/doubleclick/marktinhome/Repository/CommentsGroupRepositotry.java
+ com.doubleclick.marktinhome.Repository.CommentsGroupRepositotry
+ com.doubleclick.marktinhome.Repository.CommentsGroupRepositotry$1
+ com.doubleclick.marktinhome.Repository.CommentsGroupRepositotry$1$1
+ com.doubleclick.marktinhome.Repository.CommentsGroupRepositotry$CommentData
+com/doubleclick/marktinhome/ui/MainScreen/Groups/CreateGroup/Step2FragmentArgs.java
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroup.Step2FragmentArgs
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroup.Step2FragmentArgs$1
+ com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroup.Step2FragmentArgs$Builder
 com/doubleclick/marktinhome/databinding/ActivityStartBinding.java
  com.doubleclick.marktinhome.databinding.ActivityStartBinding
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/ParentFragmentDirections.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ParentFragmentDirections
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ParentFragmentDirections$1
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ParentFragmentDirections$ActionParentFragmentToChildFragment
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ParentFragmentDirections$ActionParentFragmentToEditFragment
-com/doubleclick/marktinhome/databinding/NavHeaderMainBinding.java
- com.doubleclick.marktinhome.databinding.NavHeaderMainBinding
+com/doubleclick/marktinhome/Model/CommentsReplyData.java
+ com.doubleclick.marktinhome.Model.CommentsReplyData
 com/doubleclick/marktinhome/databinding/FragmentMainLoginBinding.java
  com.doubleclick.marktinhome.databinding.FragmentMainLoginBinding
-com/doubleclick/marktinhome/databinding/HTopRecyclerviewBinding.java
- com.doubleclick.marktinhome.databinding.HTopRecyclerviewBinding
-com/doubleclick/marktinhome/Adapters/CommentAdapter.java
- com.doubleclick.marktinhome.Adapters.CommentAdapter
- com.doubleclick.marktinhome.Adapters.CommentAdapter$CommentViewHolder
+com/doubleclick/marktinhome/Views/carousellayoutmanager/CarouselChildSelectionListener.java
+ com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselChildSelectionListener
+ com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselChildSelectionListener$1
+ com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselChildSelectionListener$2
 com/doubleclick/marktinhome/ui/MainScreen/Frgments/BottomDialogComment.java
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.BottomDialogComment
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.BottomDialogComment$1
 com/doubleclick/marktinhome/ui/MainScreen/Address/AddressFragmentDirections.java
  com.doubleclick.marktinhome.ui.MainScreen.Address.AddressFragmentDirections
-com/doubleclick/marktinhome/databinding/LeftChatBinding.java
- com.doubleclick.marktinhome.databinding.LeftChatBinding
 com/doubleclick/marktinhome/ui/MainScreen/Frgments/menu_CartFragment.java
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.menu_CartFragment
-com/doubleclick/marktinhome/databinding/LayoutTopDealsBinding.java
- com.doubleclick.marktinhome.databinding.LayoutTopDealsBinding
 com/doubleclick/marktinhome/databinding/FragmentForgetBinding.java
  com.doubleclick.marktinhome.databinding.FragmentForgetBinding
-com/doubleclick/marktinhome/databinding/FragmentProductBinding.java
- com.doubleclick.marktinhome.databinding.FragmentProductBinding
 com/doubleclick/marktinhome/Adapters/ReplyAdapter.java
  com.doubleclick.marktinhome.Adapters.ReplyAdapter
  com.doubleclick.marktinhome.Adapters.ReplyAdapter$ReplyViewHolder
 com/doubleclick/marktinhome/databinding/NotificationExpandedBinding.java
  com.doubleclick.marktinhome.databinding.NotificationExpandedBinding
-com/doubleclick/marktinhome/databinding/ItemLocationLeftBinding.java
- com.doubleclick.marktinhome.databinding.ItemLocationLeftBinding
 com/doubleclick/marktinhome/Adapters/TopCategory.java
  com.doubleclick.marktinhome.Adapters.TopCategory
  com.doubleclick.marktinhome.Adapters.TopCategory$TopViewHilder
-com/doubleclick/marktinhome/Views/colorpickerview/sliders/AlphaSlideBar.java
- com.doubleclick.marktinhome.Views.colorpickerview.sliders.AlphaSlideBar
-com/doubleclick/RichEditor/sample/StartActivity.java
- com.doubleclick.RichEditor.sample.StartActivity
+com/doubleclick/marktinhome/Repository/RateingRepository.java
+ com.doubleclick.marktinhome.Repository.RateingRepository
+ com.doubleclick.marktinhome.Repository.RateingRepository$1
+ com.doubleclick.marktinhome.Repository.RateingRepository$2
 com/doubleclick/RichEditor/sample/fragment/EditHyperlinkFragment.java
  com.doubleclick.RichEditor.sample.fragment.EditHyperlinkFragment
  com.doubleclick.RichEditor.sample.fragment.EditHyperlinkFragment$OnHyperlinkListener
 com/doubleclick/marktinhome/databinding/FragmentStep3Binding.java
  com.doubleclick.marktinhome.databinding.FragmentStep3Binding
-com/doubleclick/marktinhome/databinding/FragmentStep1Binding.java
- com.doubleclick.marktinhome.databinding.FragmentStep1Binding
 com/doubleclick/marktinhome/ui/Splash/Splash3Fragment.java
  com.doubleclick.marktinhome.ui.Splash.Splash3Fragment
 com/doubleclick/marktinhome/databinding/ItemImageRightBinding.java
  com.doubleclick.marktinhome.databinding.ItemImageRightBinding
-com/doubleclick/RichEditor/sample/widget/ColorPaletteView.java
- com.doubleclick.RichEditor.sample.widget.ColorPaletteView
- com.doubleclick.RichEditor.sample.widget.ColorPaletteView$OnColorChangeListener
-com/doubleclick/marktinhome/databinding/ItemContactLeftBinding.java
- com.doubleclick.marktinhome.databinding.ItemContactLeftBinding
+com/doubleclick/marktinhome/Views/carousellayoutmanager/CenterScrollListener.java
+ com.doubleclick.marktinhome.Views.carousellayoutmanager.CenterScrollListener
 com/doubleclick/marktinhome/databinding/BottomDialogCommentBinding.java
  com.doubleclick.marktinhome.databinding.BottomDialogCommentBinding
+com/doubleclick/marktinhome/Views/colorpickerview/ColorHsvPalette.java
+ com.doubleclick.marktinhome.Views.colorpickerview.ColorHsvPalette
 com/doubleclick/marktinhome/databinding/LayoutRecentOrderBinding.java
  com.doubleclick.marktinhome.databinding.LayoutRecentOrderBinding
-com/doubleclick/ViewHolder/TrademarkViewHolder.java
- com.doubleclick.ViewHolder.TrademarkViewHolder
 com/doubleclick/marktinhome/databinding/FragmentMainBinding.java
  com.doubleclick.marktinhome.databinding.FragmentMainBinding
-com/doubleclick/marktinhome/databinding/NotificationCollapsedBinding.java
- com.doubleclick.marktinhome.databinding.NotificationCollapsedBinding
 com/doubleclick/marktinhome/Views/colorpickerview/flag/BubbleFlag.java
  com.doubleclick.marktinhome.Views.colorpickerview.flag.BubbleFlag
 com/doubleclick/marktinhome/Adapters/ChildAdapter.java
@@ -1085,47 +1090,50 @@ com/doubleclick/marktinhome/Adapters/ChildAdapter.java
  com.doubleclick.marktinhome.Adapters.ChildAdapter$1
  com.doubleclick.marktinhome.Adapters.ChildAdapter$ChildViewHolder
  com.doubleclick.marktinhome.Adapters.ChildAdapter$OnChild
-com/doubleclick/marktinhome/databinding/ActivityAddBinding.java
- com.doubleclick.marktinhome.databinding.ActivityAddBinding
-com/doubleclick/ViewHolder/VideoViewHolder.java
- com.doubleclick.ViewHolder.VideoViewHolder
- com.doubleclick.ViewHolder.VideoViewHolder$1
- com.doubleclick.ViewHolder.VideoViewHolder$2
+com/doubleclick/marktinhome/Views/PhotoView/PhotoViewAttacher.java
+ com.doubleclick.marktinhome.Views.PhotoView.PhotoViewAttacher
+ com.doubleclick.marktinhome.Views.PhotoView.PhotoViewAttacher$1
+ com.doubleclick.marktinhome.Views.PhotoView.PhotoViewAttacher$2
+ com.doubleclick.marktinhome.Views.PhotoView.PhotoViewAttacher$3
+ com.doubleclick.marktinhome.Views.PhotoView.PhotoViewAttacher$4
+ com.doubleclick.marktinhome.Views.PhotoView.PhotoViewAttacher$AnimatedZoomRunnable
+ com.doubleclick.marktinhome.Views.PhotoView.PhotoViewAttacher$FlingRunnable
+com/doubleclick/marktinhome/Views/colorpickerview/sliders/AlphaTileDrawable.java
+ com.doubleclick.marktinhome.Views.colorpickerview.sliders.AlphaTileDrawable
+ com.doubleclick.marktinhome.Views.colorpickerview.sliders.AlphaTileDrawable$Builder
 com/doubleclick/marktinhome/ui/MainScreen/Frgments/menu_storeFragment.java
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.menu_storeFragment
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.menu_storeFragment$1
-com/doubleclick/marktinhome/databinding/FragmentTrademarkBinding.java
- com.doubleclick.marktinhome.databinding.FragmentTrademarkBinding
 com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/ChildFragmentDirections.java
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ChildFragmentDirections
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ChildFragmentDirections$1
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ChildFragmentDirections$ActionChildFragmentToEditFragment
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ChildFragmentDirections$ActionChildFragmentToUploadFragment
-com/doubleclick/marktinhome/databinding/ChildLayoutBinding.java
- com.doubleclick.marktinhome.databinding.ChildLayoutBinding
+com/doubleclick/RichEditor/sample/interfaces/OnActionPerformListener.java
+ com.doubleclick.RichEditor.sample.interfaces.OnActionPerformListener
 com/doubleclick/marktinhome/ui/MainScreen/Groups/CreateGroup/Step2FragmentDirections.java
  com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroup.Step2FragmentDirections
  com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroup.Step2FragmentDirections$1
  com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroup.Step2FragmentDirections$ActionStepTwoFragmentToStepThreeFragment
-com/doubleclick/marktinhome/databinding/ActivityCommentsBinding.java
- com.doubleclick.marktinhome.databinding.ActivityCommentsBinding
 com/doubleclick/marktinhome/databinding/ActivityMainScreenBinding.java
  com.doubleclick.marktinhome.databinding.ActivityMainScreenBinding
 com/doubleclick/marktinhome/databinding/ViewColorPaletteBinding.java
  com.doubleclick.marktinhome.databinding.ViewColorPaletteBinding
 com/doubleclick/marktinhome/Views/colorpickerview/FadeUtils.java
  com.doubleclick.marktinhome.Views.colorpickerview.FadeUtils
-com/doubleclick/RichEditor/sample/fragment/EditHyperlinkFragmentDirections.java
- com.doubleclick.RichEditor.sample.fragment.EditHyperlinkFragmentDirections
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/FilterParentFragmentDirections.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.FilterParentFragmentDirections
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.FilterParentFragmentDirections$1
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.FilterParentFragmentDirections$ActionFilterParentFragmentToProductFragment
+com/doubleclick/marktinhome/Adapters/ViewPagerGroupAdapter.java
+ com.doubleclick.marktinhome.Adapters.ViewPagerGroupAdapter
+io/realm/DefaultRealmModule.java
+ io.realm.DefaultRealmModule
 com/doubleclick/marktinhome/ui/Advertisement/EditAdvertisementActivity.java
  com.doubleclick.marktinhome.ui.Advertisement.EditAdvertisementActivity
  com.doubleclick.marktinhome.ui.Advertisement.EditAdvertisementActivity$1
-com/doubleclick/marktinhome/Adapters/BaseMessageAdapter.java
- com.doubleclick.marktinhome.Adapters.BaseMessageAdapter
+com/doubleclick/ViewModel/RecentOrderViewModel.java
+ com.doubleclick.ViewModel.RecentOrderViewModel
+com/doubleclick/marktinhome/Repository/UserRepository.java
+ com.doubleclick.marktinhome.Repository.UserRepository
+ com.doubleclick.marktinhome.Repository.UserRepository$1
+ com.doubleclick.marktinhome.Repository.UserRepository$2
 com/doubleclick/marktinhome/ui/MainScreen/Frgments/RecentOrderFragmentDirections.java
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections$1
@@ -1134,10 +1142,11 @@ com/doubleclick/marktinhome/Adapters/ParentAdapter.java
  com.doubleclick.marktinhome.Adapters.ParentAdapter
  com.doubleclick.marktinhome.Adapters.ParentAdapter$1
  com.doubleclick.marktinhome.Adapters.ParentAdapter$ParentViewHolder
-com/doubleclick/marktinhome/databinding/BottomDialogKeywordBinding.java
- com.doubleclick.marktinhome.databinding.BottomDialogKeywordBinding
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/Profile/menu_profileFragment.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Profile.menu_profileFragment
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/KeywordBottomSheet.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.KeywordBottomSheet
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.KeywordBottomSheet$Keywords
+com/doubleclick/marktinhome/Adapters/KeywordAdapter.java
+ com.doubleclick.marktinhome.Adapters.KeywordAdapter
+ com.doubleclick.marktinhome.Adapters.KeywordAdapter$KeyViewHolder
+ com.doubleclick.marktinhome.Adapters.KeywordAdapter$OnDelete
+com/doubleclick/marktinhome/databinding/ActivityAddBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityAddBinding
+com/doubleclick/marktinhome/databinding/FragmentProductBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentProductBinding

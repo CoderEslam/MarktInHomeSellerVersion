@@ -44,6 +44,7 @@ import com.doubleclick.marktinhome.Views.socialtextview.widget.SocialEditText;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -61,6 +62,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class CreatePostActivity extends AppCompatActivity {
 
     private static final int IMAGE_REQUEST = 100;
+    private static final int VIDEO_REQUEST = 1001;
     // TODO id of Group
     private String id;
     private CircleImageView myImage;
@@ -76,7 +78,9 @@ public class CreatePostActivity extends AppCompatActivity {
     private User user;
     private StorageTask uploadTask;
     private StorageReference storageReference;
+    private String type = "";
     private ArrayList<String> urls = new ArrayList<>();
+    private Uri videoUri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,10 +113,12 @@ public class CreatePostActivity extends AppCompatActivity {
         imageRecycler.addOnScrollListener(new CenterScrollListener());
         layoutManager.setPostLayoutListener(new CarouselZoomPostLayoutListener());
         addImages.setOnClickListener(v -> {
-            openImage("image/*");
+            type = "image";
+            openImage("image/*", IMAGE_REQUEST);
         });
         addVideo.setOnClickListener(v -> {
-            openImage("video/*");
+            type = "video";
+            openImage("video/*", VIDEO_REQUEST);
         });
 
         postbtn.setOnClickListener(new View.OnClickListener() {
@@ -123,11 +129,11 @@ public class CreatePostActivity extends AppCompatActivity {
         });
     }
 
-    public void openImage(String mime) {
+    public void openImage(String mime, int request) {
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
         intent.setType(mime);
         intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
-        startActivityForResult(intent, IMAGE_REQUEST);
+        startActivityForResult(intent, request);
     }
 
     public String getFileExtension(Uri uri) {
@@ -139,6 +145,7 @@ public class CreatePostActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        // TODO Image
         if (requestCode == IMAGE_REQUEST && resultCode == RESULT_OK && data != null) {
             ClipData clipData = data.getClipData();
             if (clipData != null) {
@@ -149,20 +156,26 @@ public class CreatePostActivity extends AppCompatActivity {
                 imageRecycler.setAdapter(new ImagesGroupAdapter(uris, "uri"));
             }
         }
+        // TODO Video
+        if (requestCode == VIDEO_REQUEST && resultCode == RESULT_OK && data != null) {
+            video.setVisibility(View.VISIBLE);
+            videoUri = data.getData();
+            video.setVideoURI(data.getData());
+        }
     }
 
 
-    private void UploadPost() {
+    private void UploadPost(String url) {
         HashMap<String, Object> map = new HashMap<>();
         String Pushid = reference.push().getKey().toString();
         map.put("adminId", user.getId());
         map.put("id", Pushid);
-        map.put("time", new Date().getTime());
+        map.put("time", -1 * new Date().getTime());
         map.put("text", postText.getText().toString());
-        map.put("type", "image");
-        map.put("images", urls.toString());
-        map.put("video", "");
+        map.put("type", type);
+        map.put("meme", url.toString());
         map.put("groupId", id);
+
         reference.child(GROUPS).child(id).child(POSTS).child(Pushid).updateChildren(map);
     }
 
@@ -191,7 +204,7 @@ public class CreatePostActivity extends AppCompatActivity {
                             String url = downloadUri.toString();
                             urls.add(url);
                             if (urls.size() == uris.size()) {
-                                UploadPost();
+                                UploadPost(urls.toString());
                             }
                             pd.dismiss();
                         } else {
@@ -209,6 +222,29 @@ public class CreatePostActivity extends AppCompatActivity {
             }
         } else {
             Toast.makeText(CreatePostActivity.this, "No image selected", Toast.LENGTH_SHORT).show();
+        }
+        if (!videoUri.toString().equals("")) {
+            final StorageReference fileReference = storageReference.child(System.currentTimeMillis() + "." + getFileExtension(videoUri));
+            uploadTask = fileReference.putFile(videoUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                    Task<Uri> task = taskSnapshot.getStorage().getDownloadUrl();
+                    while (!task.isSuccessful()) ;
+                    if (task.isSuccessful()) {
+                        UploadPost(task.getResult().toString());
+                        pd.dismiss();
+                    } else {
+                        Toast.makeText(CreatePostActivity.this, "Failed!", Toast.LENGTH_SHORT).show();
+                        pd.dismiss();
+                    }
+                }
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception e) {
+                    Toast.makeText(CreatePostActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                    pd.dismiss();
+                }
+            });
         }
     }
 }

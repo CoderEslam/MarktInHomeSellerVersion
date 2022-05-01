@@ -9,6 +9,8 @@ import androidx.annotation.NonNull;
 
 import com.doubleclick.AdvInterface;
 import com.doubleclick.marktinhome.Model.Advertisement;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
@@ -28,14 +30,13 @@ public class AdvertisementRepository extends BaseRepository {
     }
 
     public void getAdvertisement() {
-        reference.child(ADVERTISEMENT).addValueEventListener(new ValueEventListener() {
+        reference.child(ADVERTISEMENT).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                advertisements.clear();
+            public void onComplete(@NonNull Task<DataSnapshot> task) {
                 try {
                     if (isNetworkConnected()) {
-                        if (snapshot.exists()) {
-                            for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                        if (task.getResult().exists()) {
+                            for (DataSnapshot dataSnapshot : task.getResult().getChildren()) {
                                 Advertisement advertisement = dataSnapshot.getValue(Advertisement.class);
                                 advertisements.add(advertisement);
                             }
@@ -47,11 +48,6 @@ public class AdvertisementRepository extends BaseRepository {
                 } catch (Exception e) {
                     Log.e("Exception", e.getMessage());
                 }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
             }
         });
     }

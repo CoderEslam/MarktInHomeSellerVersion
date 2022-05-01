@@ -15,7 +15,7 @@ import com.doubleclick.marktinhome.R;
 /**
  * Created By Eslam Ghazy on 2/7/2022
  */
-public class FileViewHolder extends RecyclerView.ViewHolder {
+public class FileViewHolder extends BaseViewHolder {
     public LottieAnimationView lottieAnimationView;
 
     public FileViewHolder(View itemView) {

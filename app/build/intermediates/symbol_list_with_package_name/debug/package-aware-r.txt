@@ -1572,6 +1572,7 @@ color common_google_signin_btn_text_light_disabled
 color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
+color darkgreen
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -2884,6 +2885,7 @@ drawable bg_btn_nor
 drawable bg_btn_pre
 drawable bg_edit
 drawable bg_gray
+drawable bg_green
 drawable bg_image
 drawable bg_product_activity
 drawable bg_text_chat
@@ -3066,6 +3068,8 @@ drawable ic_format_superscript
 drawable ic_format_text_bg_clolr
 drawable ic_format_text_color
 drawable ic_format_underlined
+drawable ic_fullscreen_close
+drawable ic_fullscreen_open
 drawable ic_home_white_24dp
 drawable ic_icon_google
 drawable ic_insert_link
@@ -3552,6 +3556,7 @@ id continer_attacht
 id continuousVelocity
 id coordinator
 id cos
+id countMessage
 id counter_tv
 id counterclockwise
 id cover
@@ -3849,6 +3854,7 @@ id load_more_loading_view
 id loadingAnimView
 id loading_progress
 id loading_text
+id loadmore
 id locale
 id location
 id location_layout
@@ -3892,6 +3898,7 @@ id material_timepicker_view
 id material_value_index
 id media_actions
 id members
+id meme
 id mention
 id menuIV
 id menuLL
@@ -4012,6 +4019,7 @@ id person
 id phone
 id pieChartView
 id pin
+id playVideo
 id plus
 id plusone
 id popuplayout
@@ -4444,6 +4452,7 @@ layout activity_product
 layout activity_seller
 layout activity_start
 layout activity_trademark
+layout activity_view
 layout adapter_camera_item
 layout adapter_folder_list_item
 layout adapter_image_list_item

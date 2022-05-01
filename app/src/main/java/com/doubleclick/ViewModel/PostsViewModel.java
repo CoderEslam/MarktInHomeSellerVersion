@@ -24,8 +24,8 @@ public class PostsViewModel extends ViewModel implements PostsRepository.PostInt
 
     }
 
-    public void loadPosts(String groupId) {
-        postsRepository.AllPosts(groupId);
+    public void loadPosts(String groupId,int num) {
+        postsRepository.AllPosts(groupId,num);
     }
 
     public LiveData<ArrayList<PostData>> getPosts() {

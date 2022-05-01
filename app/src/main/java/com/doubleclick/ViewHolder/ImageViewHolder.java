@@ -32,7 +32,7 @@ import com.doubleclick.marktinhome.Views.PhotoView.PhotoView;
 /**
  * Created By Eslam Ghazy on 2/7/2022
  */
-public class ImageViewHolder extends RecyclerView.ViewHolder {
+public class ImageViewHolder extends BaseViewHolder {
     public PhotoView imageView;
     public ImageView optins;
     private ConstraintLayout ContinnerImage;

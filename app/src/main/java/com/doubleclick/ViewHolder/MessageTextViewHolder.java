@@ -15,7 +15,7 @@ import com.doubleclick.marktinhome.R;
 /**
  * Created By Eslam Ghazy on 2/5/2022
  */
-public class MessageTextViewHolder extends RecyclerView.ViewHolder {
+public class MessageTextViewHolder extends BaseViewHolder {
 
     public TextView textMessage ,textTime;
 //    public ImageView profile_image;

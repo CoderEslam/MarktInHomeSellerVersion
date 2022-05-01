@@ -96,7 +96,7 @@
 49-->[io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\74ba64071c3d566cd155059e3123ed22\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:17:9-33
 50
 51    <application
-51-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:16:5-132:19
+51-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:16:5-135:19
 52        android:name="com.doubleclick.marktinhome.BaseApplication"
 52-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:17:9-40
 53        android:allowBackup="true"
@@ -119,656 +119,662 @@
 62-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:24:9-49
 63        <activity
 63-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:25:9-27:40
-64            android:name="com.doubleclick.marktinhome.ui.MainScreen.Parents.ParentActivity"
-64-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:26:13-65
+64            android:name="com.doubleclick.marktinhome.ui.MainScreen.Groups.ViewActivity"
+64-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:26:13-62
 65            android:exported="false" />
 65-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:27:13-37
 66        <activity
 66-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:28:9-30:40
-67            android:name="com.doubleclick.marktinhome.ui.MainScreen.Groups.Comments.CommentGroupActivity"
-67-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:29:13-79
+67            android:name="com.doubleclick.marktinhome.ui.MainScreen.Parents.ParentActivity"
+67-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:29:13-65
 68            android:exported="false" />
 68-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:30:13-37
 69        <activity
 69-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:31:9-33:40
-70            android:name="com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroupActivity"
-70-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:32:13-69
+70            android:name="com.doubleclick.marktinhome.ui.MainScreen.Groups.Comments.CommentGroupActivity"
+70-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:32:13-79
 71            android:exported="false" />
 71-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:33:13-37
 72        <activity
 72-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:34:9-36:40
-73            android:name="com.doubleclick.marktinhome.ui.MainScreen.Groups.CreatePostActivity"
-73-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:35:13-68
+73            android:name="com.doubleclick.marktinhome.ui.MainScreen.Groups.CreateGroupActivity"
+73-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:35:13-69
 74            android:exported="false" />
 74-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:36:13-37
 75        <activity
-75-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:37:9-40:68
-76            android:name="com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity"
-76-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:38:13-64
-77            android:exported="false"
+75-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:37:9-39:40
+76            android:name="com.doubleclick.marktinhome.ui.MainScreen.Groups.CreatePostActivity"
+76-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:38:13-68
+77            android:exported="false" />
 77-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:39:13-37
-78            android:theme="@style/Theme.MarktInHome.NoActionBar" />
-78-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:40:13-65
-79        <activity
-79-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:41:9-43:40
-80            android:name="com.doubleclick.marktinhome.ui.Advertisement.EditAdvertisementActivity"
-80-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:42:13-71
-81            android:exported="false" />
-81-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:43:13-37
+78        <activity
+78-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:40:9-43:68
+79            android:name="com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity"
+79-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:41:13-64
+80            android:exported="false"
+80-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:42:13-37
+81            android:theme="@style/Theme.MarktInHome.NoActionBar" />
+81-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:43:13-65
 82        <activity
 82-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:44:9-46:40
-83            android:name="com.doubleclick.marktinhome.ui.Trademark.EditTradmarkActivity"
-83-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:45:13-62
+83            android:name="com.doubleclick.marktinhome.ui.Advertisement.EditAdvertisementActivity"
+83-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:45:13-71
 84            android:exported="false" />
 84-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:46:13-37
-85        <!--
-86             TODO: Before you run your application, you need a Google Maps API key.
-87
-88             To get one, follow the directions here:
-89
-90                https://developers.google.com/maps/documentation/android-sdk/get-api-key
-91
-92             Once you have your API key (it starts with "AIza"), define a new property in your
-93             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
-94             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
-95        -->
-96        <meta-data
-96-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:58:9-60:55
-97            android:name="com.google.android.geo.API_KEY"
-97-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:59:13-58
-98            android:value="@string/google_maps_key" />
-98-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:60:13-52
-99
-100        <activity
-100-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:62:9-64:40
-101            android:name="com.doubleclick.DashBoard.DashBoardActivity"
-101-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:63:13-71
-102            android:exported="false" />
-102-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:64:13-37
+85        <activity
+85-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:47:9-49:40
+86            android:name="com.doubleclick.marktinhome.ui.Trademark.EditTradmarkActivity"
+86-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:48:13-62
+87            android:exported="false" />
+87-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:49:13-37
+88        <!--
+89             TODO: Before you run your application, you need a Google Maps API key.
+90
+91             To get one, follow the directions here:
+92
+93                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+94
+95             Once you have your API key (it starts with "AIza"), define a new property in your
+96             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+97             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+98        -->
+99        <meta-data
+99-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:61:9-63:55
+100            android:name="com.google.android.geo.API_KEY"
+100-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:62:13-58
+101            android:value="@string/google_maps_key" />
+101-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:63:13-52
+102
 103        <activity
 103-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:65:9-67:40
-104            android:name="com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatActivity"
-104-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:66:13-60
+104            android:name="com.doubleclick.DashBoard.DashBoardActivity"
+104-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:66:13-71
 105            android:exported="false" />
 105-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:67:13-37
 106        <activity
 106-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:68:9-70:40
-107            android:name="com.doubleclick.marktinhome.ui.MainScreen.Comments.CommentsActivity"
-107-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:69:13-68
+107            android:name="com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatActivity"
+107-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:69:13-60
 108            android:exported="false" />
 108-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:70:13-37
 109        <activity
 109-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:71:9-73:40
-110            android:name="com.doubleclick.marktinhome.ui.ProductActivity.productActivity"
-110-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:72:13-63
+110            android:name="com.doubleclick.marktinhome.ui.MainScreen.Comments.CommentsActivity"
+110-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:72:13-68
 111            android:exported="false" />
 111-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:73:13-37
 112        <activity
 112-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:74:9-76:40
-113            android:name="com.doubleclick.marktinhome.ui.Filter.FilterActivity"
-113-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:75:13-53
+113            android:name="com.doubleclick.marktinhome.ui.ProductActivity.productActivity"
+113-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:75:13-63
 114            android:exported="false" />
 114-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:76:13-37
 115        <activity
 115-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:77:9-79:40
-116            android:name="com.doubleclick.Address.AddressActivity"
-116-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:78:13-67
+116            android:name="com.doubleclick.marktinhome.ui.Filter.FilterActivity"
+116-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:78:13-53
 117            android:exported="false" />
 117-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:79:13-37
 118        <activity
 118-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:80:9-82:40
-119            android:name="com.doubleclick.marktinhome.ui.Trademark.TrademarkActivity"
-119-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:81:13-59
+119            android:name="com.doubleclick.Address.AddressActivity"
+119-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:81:13-67
 120            android:exported="false" />
 120-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:82:13-37
 121        <activity
 121-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:83:9-85:40
-122            android:name="com.doubleclick.marktinhome.ui.Advertisement.AdvertisementActivity"
-122-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:84:13-67
+122            android:name="com.doubleclick.marktinhome.ui.Trademark.TrademarkActivity"
+122-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:84:13-59
 123            android:exported="false" />
 123-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:85:13-37
 124        <activity
 124-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:86:9-88:40
-125            android:name="com.doubleclick.marktinhome.Seller.SellerActivity"
-125-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:87:13-50
+125            android:name="com.doubleclick.marktinhome.ui.Advertisement.AdvertisementActivity"
+125-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:87:13-67
 126            android:exported="false" />
 126-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:88:13-37
 127        <activity
-127-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:89:9-91:39
-128            android:name="com.doubleclick.marktinhome.ui.MainScreen.MainScreenActivity"
-128-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:90:13-61
-129            android:exported="true" />
-129-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:91:13-36
+127-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:89:9-91:40
+128            android:name="com.doubleclick.marktinhome.Seller.SellerActivity"
+128-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:90:13-50
+129            android:exported="false" />
+129-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:91:13-37
 130        <activity
-130-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:92:9-110:20
-131            android:name="com.doubleclick.marktinhome.MainActivity"
-131-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:93:13-41
-132            android:exported="true" >
+130-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:92:9-94:39
+131            android:name="com.doubleclick.marktinhome.ui.MainScreen.MainScreenActivity"
+131-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:93:13-61
+132            android:exported="true" />
 132-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:94:13-36
-133            <intent-filter>
-133-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:95:13-99:29
-134                <action android:name="android.intent.action.MAIN" />
-134-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:96:17-69
-134-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:96:25-66
-135
-136                <category android:name="android.intent.category.LAUNCHER" />
-136-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:98:17-77
-136-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:98:27-74
-137            </intent-filter>
-138            <intent-filter>
-138-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:100:13-109:29
-139                <action android:name="android.intent.action.VIEW" />
-139-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:101:17-69
-139-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:101:25-66
-140
-141                <category android:name="android.intent.category.DEFAULT" />
-141-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:103:17-76
-141-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:103:27-73
-142                <category android:name="android.intent.category.BROWSABLE" />
-142-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:104:17-78
-142-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:104:27-75
+133        <activity
+133-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:95:9-113:20
+134            android:name="com.doubleclick.marktinhome.MainActivity"
+134-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:96:13-41
+135            android:exported="true" >
+135-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:97:13-36
+136            <intent-filter>
+136-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:98:13-102:29
+137                <action android:name="android.intent.action.MAIN" />
+137-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:99:17-69
+137-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:99:25-66
+138
+139                <category android:name="android.intent.category.LAUNCHER" />
+139-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:101:17-77
+139-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:101:27-74
+140            </intent-filter>
+141            <intent-filter>
+141-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:103:13-112:29
+142                <action android:name="android.intent.action.VIEW" />
+142-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:104:17-69
+142-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:104:25-66
 143
-144                <data
-144-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:106:17-108:46
-145                    android:host="www.market.doublethink.com"
-145-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:107:21-62
-146                    android:scheme="https" />
-146-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:108:21-43
-147            </intent-filter>
-148        </activity>
-149        <activity
-149-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:111:9-113:40
-150            android:name="com.doubleclick.RichEditor.sample.RichEditorActivity"
-150-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:112:13-80
-151            android:exported="false" />
-151-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:113:13-37
+144                <category android:name="android.intent.category.DEFAULT" />
+144-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:106:17-76
+144-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:106:27-73
+145                <category android:name="android.intent.category.BROWSABLE" />
+145-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:107:17-78
+145-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:107:27-75
+146
+147                <data
+147-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:109:17-111:46
+148                    android:host="www.market.doublethink.com"
+148-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:110:21-62
+149                    android:scheme="https" />
+149-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:111:21-43
+150            </intent-filter>
+151        </activity>
 152        <activity
 152-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:114:9-116:40
-153            android:name="com.doubleclick.marktinhome.ui.Add.AddActivity"
-153-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:115:13-47
+153            android:name="com.doubleclick.RichEditor.sample.RichEditorActivity"
+153-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:115:13-80
 154            android:exported="false" />
 154-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:116:13-37
-155
-156        <meta-data
-156-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:118:9-120:57
-157            android:name="preloaded_fonts"
-157-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:119:13-43
-158            android:resource="@array/preloaded_fonts" />
-158-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:120:13-54
-159
-160        <service
-160-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:122:9-129:19
-161            android:name="com.doubleclick.marktinhome.Notifications.MyFirebaseMessaging"
-161-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:123:13-62
-162            android:enabled="true"
-162-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:124:13-35
-163            android:exported="true" >
-163-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:125:13-36
-164            <intent-filter>
-164-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:126:13-128:29
-165                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-165-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:127:17-78
-165-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:127:25-75
-166            </intent-filter>
-167        </service>
-168
-169        <receiver android:name="com.doubleclick.Servies.NotificationReceiver" />
-169-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:131:9-81
-169-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:131:19-78
-170
-171        <activity
-171-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:10:9-14:75
-172            android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess"
-172-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:11:13-83
-173            android:configChanges="orientation|keyboardHidden|screenSize"
-173-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:12:13-74
-174            android:theme="@style/ActivityTranslucent"
-174-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:13:13-55
-175            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
-175-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:14:13-72
-176        <activity
-176-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:15:9-20:75
-177            android:name="com.blankj.utilcode.util.UtilsTransActivity"
-177-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:16:13-71
-178            android:configChanges="orientation|keyboardHidden|screenSize"
-178-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:17:13-74
-179            android:multiprocess="true"
-179-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:18:13-40
-180            android:theme="@style/ActivityTranslucent"
-180-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:19:13-55
-181            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
-181-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:20:13-72
-182
-183        <provider
-183-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:22:9-30:20
-184            android:name="com.blankj.utilcode.util.UtilsFileProvider"
-184-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:23:13-70
-185            android:authorities="com.doubleclick.marktinhome.utilcode.provider"
-185-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:24:13-69
-186            android:exported="false"
-186-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:25:13-37
-187            android:grantUriPermissions="true" >
-187-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:26:13-47
-188            <meta-data
-188-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:27:13-29:68
-189                android:name="android.support.FILE_PROVIDER_PATHS"
-189-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:28:17-67
-190                android:resource="@xml/util_code_provider_paths" />
-190-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:29:17-65
-191        </provider>
-192
-193        <service
-193-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:32:9-38:19
-194            android:name="com.blankj.utilcode.util.MessengerUtils$ServerService"
-194-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:33:13-81
-195            android:exported="false" >
-195-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:34:13-37
-196            <intent-filter>
-196-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:35:13-37:29
-197                <action android:name="com.doubleclick.marktinhome.messenger" />
-197-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:36:17-69
-197-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:36:25-66
-198            </intent-filter>
-199        </service>
-200
-201        <activity
-201-->[com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\2e7310e46569f9825091fcb2f56ec25d\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:27:9-29:72
-202            android:name="com.karumi.dexter.DexterActivity"
-202-->[com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\2e7310e46569f9825091fcb2f56ec25d\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:28:13-60
-203            android:theme="@style/Dexter.Internal.Theme.Transparent" />
-203-->[com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\2e7310e46569f9825091fcb2f56ec25d\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:29:13-69
-204        <activity android:name="com.lzy.imagepicker.ui.ImageBaseActivity" />
-204-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:21:9-77
-204-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:21:19-74
-205        <activity
-205-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:22:9-25:55
-206            android:name="com.lzy.imagepicker.ui.ImageGridActivity"
-206-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:23:13-68
-207            android:configChanges="orientation|screenSize"
-207-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:24:13-59
-208            android:theme="@style/ImagePickerTheme" />
-208-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:25:13-52
-209        <activity
-209-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:26:9-30:55
-210            android:name="com.lzy.imagepicker.ui.ImageCropActivity"
-210-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:27:13-68
-211            android:configChanges="orientation|screenSize"
-211-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:28:13-59
-212            android:hardwareAccelerated="false"
-212-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:29:13-48
-213            android:theme="@style/ImagePickerTheme" />
-213-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:30:13-52
-214        <activity
-214-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:31:9-34:65
-215            android:name="com.lzy.imagepicker.ui.ImagePreviewActivity"
-215-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:32:13-71
-216            android:configChanges="orientation|screenSize"
-216-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:33:13-59
-217            android:theme="@style/ImagePickerThemeFullScreen" />
-217-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:34:13-62
-218
-219        <provider
-219-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:36:9-44:20
-220            android:name="com.lzy.imagepicker.ImagePickerProvider"
-220-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:37:13-67
-221            android:authorities="com.doubleclick.marktinhome.provider"
-221-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:38:13-60
-222            android:exported="false"
-222-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:39:13-37
-223            android:grantUriPermissions="true" >
-223-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:40:13-47
-224            <meta-data
-224-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:27:13-29:68
-225                android:name="android.support.FILE_PROVIDER_PATHS"
-225-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:28:17-67
-226                android:resource="@xml/provider_paths" />
-226-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:29:17-65
-227        </provider>
-228
-229        <activity
-229-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
-230            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-230-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
-231            android:excludeFromRecents="true"
-231-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
-232            android:exported="true"
-232-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
-233            android:launchMode="singleTask"
-233-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
-234            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-234-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
-235            <intent-filter>
-235-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
-236                <action android:name="android.intent.action.VIEW" />
-236-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:101:17-69
-236-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:101:25-66
-237
-238                <category android:name="android.intent.category.DEFAULT" />
-238-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:103:17-76
-238-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:103:27-73
-239                <category android:name="android.intent.category.BROWSABLE" />
-239-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:104:17-78
-239-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:104:27-75
+155        <activity
+155-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:117:9-119:40
+156            android:name="com.doubleclick.marktinhome.ui.Add.AddActivity"
+156-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:118:13-47
+157            android:exported="false" />
+157-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:119:13-37
+158
+159        <meta-data
+159-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:121:9-123:57
+160            android:name="preloaded_fonts"
+160-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:122:13-43
+161            android:resource="@array/preloaded_fonts" />
+161-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:123:13-54
+162
+163        <service
+163-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:125:9-132:19
+164            android:name="com.doubleclick.marktinhome.Notifications.MyFirebaseMessaging"
+164-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:126:13-62
+165            android:enabled="true"
+165-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:127:13-35
+166            android:exported="true" >
+166-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:128:13-36
+167            <intent-filter>
+167-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:129:13-131:29
+168                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+168-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:130:17-78
+168-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:130:25-75
+169            </intent-filter>
+170        </service>
+171
+172        <receiver android:name="com.doubleclick.Servies.NotificationReceiver" />
+172-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:134:9-81
+172-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:134:19-78
+173
+174        <activity
+174-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:10:9-14:75
+175            android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess"
+175-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:11:13-83
+176            android:configChanges="orientation|keyboardHidden|screenSize"
+176-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:12:13-74
+177            android:theme="@style/ActivityTranslucent"
+177-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:13:13-55
+178            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+178-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:14:13-72
+179        <activity
+179-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:15:9-20:75
+180            android:name="com.blankj.utilcode.util.UtilsTransActivity"
+180-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:16:13-71
+181            android:configChanges="orientation|keyboardHidden|screenSize"
+181-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:17:13-74
+182            android:multiprocess="true"
+182-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:18:13-40
+183            android:theme="@style/ActivityTranslucent"
+183-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:19:13-55
+184            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+184-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:20:13-72
+185
+186        <provider
+186-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:22:9-30:20
+187            android:name="com.blankj.utilcode.util.UtilsFileProvider"
+187-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:23:13-70
+188            android:authorities="com.doubleclick.marktinhome.utilcode.provider"
+188-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:24:13-69
+189            android:exported="false"
+189-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:25:13-37
+190            android:grantUriPermissions="true" >
+190-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:26:13-47
+191            <meta-data
+191-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:27:13-29:68
+192                android:name="android.support.FILE_PROVIDER_PATHS"
+192-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:28:17-67
+193                android:resource="@xml/util_code_provider_paths" />
+193-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:29:17-65
+194        </provider>
+195
+196        <service
+196-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:32:9-38:19
+197            android:name="com.blankj.utilcode.util.MessengerUtils$ServerService"
+197-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:33:13-81
+198            android:exported="false" >
+198-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:34:13-37
+199            <intent-filter>
+199-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:35:13-37:29
+200                <action android:name="com.doubleclick.marktinhome.messenger" />
+200-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:36:17-69
+200-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:36:25-66
+201            </intent-filter>
+202        </service>
+203
+204        <activity
+204-->[com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\2e7310e46569f9825091fcb2f56ec25d\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:27:9-29:72
+205            android:name="com.karumi.dexter.DexterActivity"
+205-->[com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\2e7310e46569f9825091fcb2f56ec25d\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:28:13-60
+206            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+206-->[com.karumi:dexter:6.2.3] C:\Users\eslam\.gradle\caches\transforms-3\2e7310e46569f9825091fcb2f56ec25d\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:29:13-69
+207        <activity android:name="com.lzy.imagepicker.ui.ImageBaseActivity" />
+207-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:21:9-77
+207-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:21:19-74
+208        <activity
+208-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:22:9-25:55
+209            android:name="com.lzy.imagepicker.ui.ImageGridActivity"
+209-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:23:13-68
+210            android:configChanges="orientation|screenSize"
+210-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:24:13-59
+211            android:theme="@style/ImagePickerTheme" />
+211-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:25:13-52
+212        <activity
+212-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:26:9-30:55
+213            android:name="com.lzy.imagepicker.ui.ImageCropActivity"
+213-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:27:13-68
+214            android:configChanges="orientation|screenSize"
+214-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:28:13-59
+215            android:hardwareAccelerated="false"
+215-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:29:13-48
+216            android:theme="@style/ImagePickerTheme" />
+216-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:30:13-52
+217        <activity
+217-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:31:9-34:65
+218            android:name="com.lzy.imagepicker.ui.ImagePreviewActivity"
+218-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:32:13-71
+219            android:configChanges="orientation|screenSize"
+219-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:33:13-59
+220            android:theme="@style/ImagePickerThemeFullScreen" />
+220-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:34:13-62
+221
+222        <provider
+222-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:36:9-44:20
+223            android:name="com.lzy.imagepicker.ImagePickerProvider"
+223-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:37:13-67
+224            android:authorities="com.doubleclick.marktinhome.provider"
+224-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:38:13-60
+225            android:exported="false"
+225-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:39:13-37
+226            android:grantUriPermissions="true" >
+226-->[com.lzy.widget:imagepicker:0.5.5] C:\Users\eslam\.gradle\caches\transforms-3\5623e57002138ffed83263bced65f22e\transformed\jetified-imagepicker-0.5.5\AndroidManifest.xml:40:13-47
+227            <meta-data
+227-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:27:13-29:68
+228                android:name="android.support.FILE_PROVIDER_PATHS"
+228-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:28:17-67
+229                android:resource="@xml/provider_paths" />
+229-->[com.blankj:utilcodex:1.29.0] C:\Users\eslam\.gradle\caches\transforms-3\913c226d2127b2f53f022b3e9fcbdcee\transformed\jetified-utilcodex-1.29.0\AndroidManifest.xml:29:17-65
+230        </provider>
+231
+232        <activity
+232-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
+233            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+233-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
+234            android:excludeFromRecents="true"
+234-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
+235            android:exported="true"
+235-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
+236            android:launchMode="singleTask"
+236-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
+237            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+237-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
+238            <intent-filter>
+238-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
+239                <action android:name="android.intent.action.VIEW" />
+239-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:104:17-69
+239-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:104:25-66
 240
-241                <data
-241-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:106:17-108:46
-242                    android:host="firebase.auth"
-242-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:107:21-62
-243                    android:path="/"
-244                    android:scheme="genericidp" />
-244-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:108:21-43
-245            </intent-filter>
-246        </activity>
-247        <activity
-247-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
-248            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-248-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
-249            android:excludeFromRecents="true"
-249-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
-250            android:exported="true"
-250-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
-251            android:launchMode="singleTask"
-251-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
-252            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-252-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
-253            <intent-filter>
-253-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
-254                <action android:name="android.intent.action.VIEW" />
-254-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:101:17-69
-254-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:101:25-66
-255
-256                <category android:name="android.intent.category.DEFAULT" />
-256-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:103:17-76
-256-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:103:27-73
-257                <category android:name="android.intent.category.BROWSABLE" />
-257-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:104:17-78
-257-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:104:27-75
+241                <category android:name="android.intent.category.DEFAULT" />
+241-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:106:17-76
+241-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:106:27-73
+242                <category android:name="android.intent.category.BROWSABLE" />
+242-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:107:17-78
+242-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:107:27-75
+243
+244                <data
+244-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:109:17-111:46
+245                    android:host="firebase.auth"
+245-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:110:21-62
+246                    android:path="/"
+247                    android:scheme="genericidp" />
+247-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:111:21-43
+248            </intent-filter>
+249        </activity>
+250        <activity
+250-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
+251            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+251-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
+252            android:excludeFromRecents="true"
+252-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
+253            android:exported="true"
+253-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
+254            android:launchMode="singleTask"
+254-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
+255            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+255-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
+256            <intent-filter>
+256-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
+257                <action android:name="android.intent.action.VIEW" />
+257-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:104:17-69
+257-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:104:25-66
 258
-259                <data
-259-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:106:17-108:46
-260                    android:host="firebase.auth"
-260-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:107:21-62
-261                    android:path="/"
-262                    android:scheme="recaptcha" />
-262-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:108:21-43
-263            </intent-filter>
-264        </activity>
-265
-266        <service
-266-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
-267            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
-267-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
-268            android:enabled="true"
-268-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
-269            android:exported="false" >
-269-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
-270            <intent-filter>
-270-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
-271                <action android:name="com.google.firebase.auth.api.gms.service.START" />
-271-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
-271-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
-272
-273                <category android:name="android.intent.category.DEFAULT" />
-273-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:103:17-76
-273-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:103:27-73
-274            </intent-filter>
-275        </service>
-276        <service
-276-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:74:9-80:19
-277            android:name="com.google.firebase.components.ComponentDiscoveryService"
-277-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:75:13-84
-278            android:directBootAware="true"
-278-->[com.google.firebase:firebase-common:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\422bd0c9a98859763b93e584ea7e09af\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
-279            android:exported="false" >
-279-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:76:13-37
-280            <meta-data
-280-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
-281                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-281-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
-282                android:value="com.google.firebase.components.ComponentRegistrar" />
-282-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
+259                <category android:name="android.intent.category.DEFAULT" />
+259-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:106:17-76
+259-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:106:27-73
+260                <category android:name="android.intent.category.BROWSABLE" />
+260-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:107:17-78
+260-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:107:27-75
+261
+262                <data
+262-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:109:17-111:46
+263                    android:host="firebase.auth"
+263-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:110:21-62
+264                    android:path="/"
+265                    android:scheme="recaptcha" />
+265-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:111:21-43
+266            </intent-filter>
+267        </activity>
+268
+269        <service
+269-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
+270            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+270-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
+271            android:enabled="true"
+271-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
+272            android:exported="false" >
+272-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
+273            <intent-filter>
+273-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
+274                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+274-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
+274-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
+275
+276                <category android:name="android.intent.category.DEFAULT" />
+276-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:106:17-76
+276-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:106:27-73
+277            </intent-filter>
+278        </service>
+279        <service
+279-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:74:9-80:19
+280            android:name="com.google.firebase.components.ComponentDiscoveryService"
+280-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:75:13-84
+281            android:directBootAware="true"
+281-->[com.google.firebase:firebase-common:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\422bd0c9a98859763b93e584ea7e09af\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+282            android:exported="false" >
+282-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:76:13-37
 283            <meta-data
-283-->[com.google.firebase:firebase-database:20.0.3] C:\Users\eslam\.gradle\caches\transforms-3\91f5c8d1c11bfaa58be7c8421ec72fe6\transformed\jetified-firebase-database-20.0.3\AndroidManifest.xml:32:13-34:85
-284                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-284-->[com.google.firebase:firebase-database:20.0.3] C:\Users\eslam\.gradle\caches\transforms-3\91f5c8d1c11bfaa58be7c8421ec72fe6\transformed\jetified-firebase-database-20.0.3\AndroidManifest.xml:33:17-109
+283-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
+284                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+284-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
 285                android:value="com.google.firebase.components.ComponentRegistrar" />
-285-->[com.google.firebase:firebase-database:20.0.3] C:\Users\eslam\.gradle\caches\transforms-3\91f5c8d1c11bfaa58be7c8421ec72fe6\transformed\jetified-firebase-database-20.0.3\AndroidManifest.xml:34:17-82
+285-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\eslam\.gradle\caches\transforms-3\866a40adcd1b21714201d1975b94181c\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
 286            <meta-data
-286-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\eslam\.gradle\caches\transforms-3\4f3a8a443cd5dd6f8b984c94f5a4a813\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:20:13-22:85
-287                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-287-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\eslam\.gradle\caches\transforms-3\4f3a8a443cd5dd6f8b984c94f5a4a813\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:21:17-111
+286-->[com.google.firebase:firebase-database:20.0.3] C:\Users\eslam\.gradle\caches\transforms-3\91f5c8d1c11bfaa58be7c8421ec72fe6\transformed\jetified-firebase-database-20.0.3\AndroidManifest.xml:32:13-34:85
+287                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+287-->[com.google.firebase:firebase-database:20.0.3] C:\Users\eslam\.gradle\caches\transforms-3\91f5c8d1c11bfaa58be7c8421ec72fe6\transformed\jetified-firebase-database-20.0.3\AndroidManifest.xml:33:17-109
 288                android:value="com.google.firebase.components.ComponentRegistrar" />
-288-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\eslam\.gradle\caches\transforms-3\4f3a8a443cd5dd6f8b984c94f5a4a813\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:22:17-82
+288-->[com.google.firebase:firebase-database:20.0.3] C:\Users\eslam\.gradle\caches\transforms-3\91f5c8d1c11bfaa58be7c8421ec72fe6\transformed\jetified-firebase-database-20.0.3\AndroidManifest.xml:34:17-82
 289            <meta-data
-289-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\ce60df215c7530e5978cbccaf99a76e5\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:33:13-35:85
-290                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-290-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\ce60df215c7530e5978cbccaf99a76e5\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:34:17-107
+289-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\eslam\.gradle\caches\transforms-3\4f3a8a443cd5dd6f8b984c94f5a4a813\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:20:13-22:85
+290                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+290-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\eslam\.gradle\caches\transforms-3\4f3a8a443cd5dd6f8b984c94f5a4a813\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:21:17-111
 291                android:value="com.google.firebase.components.ComponentRegistrar" />
-291-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\ce60df215c7530e5978cbccaf99a76e5\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:35:17-82
+291-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\eslam\.gradle\caches\transforms-3\4f3a8a443cd5dd6f8b984c94f5a4a813\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:22:17-82
 292            <meta-data
-292-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:52:13-54:85
-293                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-293-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:53:17-119
+292-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\ce60df215c7530e5978cbccaf99a76e5\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:33:13-35:85
+293                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+293-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\ce60df215c7530e5978cbccaf99a76e5\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:34:17-107
 294                android:value="com.google.firebase.components.ComponentRegistrar" />
-294-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:54:17-82
+294-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\ce60df215c7530e5978cbccaf99a76e5\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:35:17-82
 295            <meta-data
-295-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\eslam\.gradle\caches\transforms-3\c76cb5aaedc521803bab542a7d584e37\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
-296                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-296-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\eslam\.gradle\caches\transforms-3\c76cb5aaedc521803bab542a7d584e37\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+295-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:52:13-54:85
+296                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+296-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:53:17-119
 297                android:value="com.google.firebase.components.ComponentRegistrar" />
-297-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\eslam\.gradle\caches\transforms-3\c76cb5aaedc521803bab542a7d584e37\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+297-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:54:17-82
 298            <meta-data
-298-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\eslam\.gradle\caches\transforms-3\09e23c58910ad7c9dfc8b4f128ff0f14\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
-299                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-299-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\eslam\.gradle\caches\transforms-3\09e23c58910ad7c9dfc8b4f128ff0f14\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+298-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\eslam\.gradle\caches\transforms-3\c76cb5aaedc521803bab542a7d584e37\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+299                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+299-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\eslam\.gradle\caches\transforms-3\c76cb5aaedc521803bab542a7d584e37\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
 300                android:value="com.google.firebase.components.ComponentRegistrar" />
-300-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\eslam\.gradle\caches\transforms-3\09e23c58910ad7c9dfc8b4f128ff0f14\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
-301        </service>
-302
-303        <activity
-303-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:23:9-27:75
-304            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-304-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:24:13-93
-305            android:excludeFromRecents="true"
-305-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:25:13-46
-306            android:exported="false"
-306-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:26:13-37
-307            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-307-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:27:13-72
-308        <!--
-309            Service handling Google Sign-In user revocation. For apps that do not integrate with
-310            Google Sign-In, this service will never be started.
-311        -->
-312        <service
-312-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:33:9-37:51
-313            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-313-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:34:13-89
-314            android:exported="true"
-314-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:35:13-36
-315            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-315-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:36:13-107
-316            android:visibleToInstantApps="true" />
-316-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:37:13-48
-317
-318        <receiver
-318-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:28:9-35:20
-319            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-319-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:29:13-78
-320            android:exported="true"
-320-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:30:13-36
-321            android:permission="com.google.android.c2dm.permission.SEND" >
-321-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:31:13-73
-322            <intent-filter>
-322-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:32:13-34:29
-323                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-323-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:33:17-81
-323-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:33:25-78
-324            </intent-filter>
-325        </receiver>
-326        <!--
-327             FirebaseMessagingService performs security checks at runtime,
-328             but set to not exported to explicitly avoid allowing another app to call it.
-329        -->
-330        <service
-330-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:41:9-48:19
-331            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-331-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:42:13-82
-332            android:directBootAware="true"
-332-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:43:13-43
-333            android:exported="false" >
-333-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:44:13-37
-334            <intent-filter android:priority="-500" >
-334-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:126:13-128:29
-335                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-335-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:127:17-78
-335-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:127:25-75
-336            </intent-filter>
-337        </service> <!-- Needs to be explicitly declared on P+ -->
-338        <uses-library
-338-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\eslam\.gradle\caches\transforms-3\2eafff6e63e1d9dbbc8e43adde90bf0f\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
-339            android:name="org.apache.http.legacy"
-339-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\eslam\.gradle\caches\transforms-3\2eafff6e63e1d9dbbc8e43adde90bf0f\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
-340            android:required="false" />
-340-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\eslam\.gradle\caches\transforms-3\2eafff6e63e1d9dbbc8e43adde90bf0f\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
-341
-342        <activity
-342-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\eslam\.gradle\caches\transforms-3\0ca5a5a97098ed5fc734e43731ad9e73\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-343            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-343-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\eslam\.gradle\caches\transforms-3\0ca5a5a97098ed5fc734e43731ad9e73\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-344            android:exported="false"
-344-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\eslam\.gradle\caches\transforms-3\0ca5a5a97098ed5fc734e43731ad9e73\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-345            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-345-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\eslam\.gradle\caches\transforms-3\0ca5a5a97098ed5fc734e43731ad9e73\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-346
-347        <provider
-347-->[com.google.firebase:firebase-common:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\422bd0c9a98859763b93e584ea7e09af\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
-348            android:name="com.google.firebase.provider.FirebaseInitProvider"
-348-->[com.google.firebase:firebase-common:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\422bd0c9a98859763b93e584ea7e09af\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
-349            android:authorities="com.doubleclick.marktinhome.firebaseinitprovider"
-349-->[com.google.firebase:firebase-common:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\422bd0c9a98859763b93e584ea7e09af\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
-350            android:directBootAware="true"
-350-->[com.google.firebase:firebase-common:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\422bd0c9a98859763b93e584ea7e09af\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
-351            android:exported="false"
-351-->[com.google.firebase:firebase-common:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\422bd0c9a98859763b93e584ea7e09af\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
-352            android:initOrder="100" />
-352-->[com.google.firebase:firebase-common:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\422bd0c9a98859763b93e584ea7e09af\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
-353
-354        <meta-data
-354-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\eslam\.gradle\caches\transforms-3\fdf1035bfbaf026a2c8925544a49a79f\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
-355            android:name="com.google.android.gms.version"
-355-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\eslam\.gradle\caches\transforms-3\fdf1035bfbaf026a2c8925544a49a79f\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
-356            android:value="@integer/google_play_services_version" />
-356-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\eslam\.gradle\caches\transforms-3\fdf1035bfbaf026a2c8925544a49a79f\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
-357
-358        <uses-library
-358-->[androidx.window:window:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\3eadde1409df67b8c42d8f3b5890d36d\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
-359            android:name="androidx.window.extensions"
-359-->[androidx.window:window:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\3eadde1409df67b8c42d8f3b5890d36d\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
-360            android:required="false" />
-360-->[androidx.window:window:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\3eadde1409df67b8c42d8f3b5890d36d\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+300-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\eslam\.gradle\caches\transforms-3\c76cb5aaedc521803bab542a7d584e37\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+301            <meta-data
+301-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\eslam\.gradle\caches\transforms-3\09e23c58910ad7c9dfc8b4f128ff0f14\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+302                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+302-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\eslam\.gradle\caches\transforms-3\09e23c58910ad7c9dfc8b4f128ff0f14\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+303                android:value="com.google.firebase.components.ComponentRegistrar" />
+303-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\eslam\.gradle\caches\transforms-3\09e23c58910ad7c9dfc8b4f128ff0f14\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+304        </service>
+305
+306        <activity
+306-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:23:9-27:75
+307            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+307-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:24:13-93
+308            android:excludeFromRecents="true"
+308-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:25:13-46
+309            android:exported="false"
+309-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:26:13-37
+310            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+310-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:27:13-72
+311        <!--
+312            Service handling Google Sign-In user revocation. For apps that do not integrate with
+313            Google Sign-In, this service will never be started.
+314        -->
+315        <service
+315-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:33:9-37:51
+316            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+316-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:34:13-89
+317            android:exported="true"
+317-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:35:13-36
+318            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+318-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:36:13-107
+319            android:visibleToInstantApps="true" />
+319-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\eslam\.gradle\caches\transforms-3\92f7093ba88374251dfed936a2ddebd2\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:37:13-48
+320
+321        <receiver
+321-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:28:9-35:20
+322            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+322-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:29:13-78
+323            android:exported="true"
+323-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:30:13-36
+324            android:permission="com.google.android.c2dm.permission.SEND" >
+324-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:31:13-73
+325            <intent-filter>
+325-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:32:13-34:29
+326                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+326-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:33:17-81
+326-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:33:25-78
+327            </intent-filter>
+328        </receiver>
+329        <!--
+330             FirebaseMessagingService performs security checks at runtime,
+331             but set to not exported to explicitly avoid allowing another app to call it.
+332        -->
+333        <service
+333-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:41:9-48:19
+334            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+334-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:42:13-82
+335            android:directBootAware="true"
+335-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:43:13-43
+336            android:exported="false" >
+336-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\eslam\.gradle\caches\transforms-3\bd3f53b35b258cfd444e85babd75eb89\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:44:13-37
+337            <intent-filter android:priority="-500" >
+337-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:129:13-131:29
+338                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+338-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:130:17-78
+338-->C:\Users\eslam\AndroidStudioProjects\Eslam\MarketAtHomeforSeller\MarktInHome\app\src\main\AndroidManifest.xml:130:25-75
+339            </intent-filter>
+340        </service> <!-- Needs to be explicitly declared on P+ -->
+341        <uses-library
+341-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\eslam\.gradle\caches\transforms-3\2eafff6e63e1d9dbbc8e43adde90bf0f\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
+342            android:name="org.apache.http.legacy"
+342-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\eslam\.gradle\caches\transforms-3\2eafff6e63e1d9dbbc8e43adde90bf0f\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
+343            android:required="false" />
+343-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\eslam\.gradle\caches\transforms-3\2eafff6e63e1d9dbbc8e43adde90bf0f\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
+344
+345        <activity
+345-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\eslam\.gradle\caches\transforms-3\0ca5a5a97098ed5fc734e43731ad9e73\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+346            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+346-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\eslam\.gradle\caches\transforms-3\0ca5a5a97098ed5fc734e43731ad9e73\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+347            android:exported="false"
+347-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\eslam\.gradle\caches\transforms-3\0ca5a5a97098ed5fc734e43731ad9e73\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+348            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+348-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\eslam\.gradle\caches\transforms-3\0ca5a5a97098ed5fc734e43731ad9e73\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+349
+350        <provider
+350-->[com.google.firebase:firebase-common:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\422bd0c9a98859763b93e584ea7e09af\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+351            android:name="com.google.firebase.provider.FirebaseInitProvider"
+351-->[com.google.firebase:firebase-common:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\422bd0c9a98859763b93e584ea7e09af\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+352            android:authorities="com.doubleclick.marktinhome.firebaseinitprovider"
+352-->[com.google.firebase:firebase-common:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\422bd0c9a98859763b93e584ea7e09af\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+353            android:directBootAware="true"
+353-->[com.google.firebase:firebase-common:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\422bd0c9a98859763b93e584ea7e09af\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+354            android:exported="false"
+354-->[com.google.firebase:firebase-common:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\422bd0c9a98859763b93e584ea7e09af\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+355            android:initOrder="100" />
+355-->[com.google.firebase:firebase-common:20.0.0] C:\Users\eslam\.gradle\caches\transforms-3\422bd0c9a98859763b93e584ea7e09af\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+356
+357        <meta-data
+357-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\eslam\.gradle\caches\transforms-3\fdf1035bfbaf026a2c8925544a49a79f\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+358            android:name="com.google.android.gms.version"
+358-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\eslam\.gradle\caches\transforms-3\fdf1035bfbaf026a2c8925544a49a79f\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+359            android:value="@integer/google_play_services_version" />
+359-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\eslam\.gradle\caches\transforms-3\fdf1035bfbaf026a2c8925544a49a79f\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+360
 361        <uses-library
-361-->[androidx.window:window:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\3eadde1409df67b8c42d8f3b5890d36d\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
-362            android:name="androidx.window.sidecar"
-362-->[androidx.window:window:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\3eadde1409df67b8c42d8f3b5890d36d\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+361-->[androidx.window:window:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\3eadde1409df67b8c42d8f3b5890d36d\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+362            android:name="androidx.window.extensions"
+362-->[androidx.window:window:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\3eadde1409df67b8c42d8f3b5890d36d\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
 363            android:required="false" />
-363-->[androidx.window:window:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\3eadde1409df67b8c42d8f3b5890d36d\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
-364
-365        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
-365-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:13:9-84
-365-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:13:19-81
-366        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
-366-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:14:9-90
-366-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:14:19-87
-367        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
-367-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:15:9-91
-367-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:15:19-88
-368        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
-368-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:16:9-82
-368-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:16:19-79
-369        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
-369-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:17:9-96
-369-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:17:19-93
-370        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
-370-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:18:9-97
-370-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:18:19-94
-371        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
-371-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:19:9-94
-371-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:19:19-91
-372        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
-372-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:20:9-97
-372-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:20:19-94
-373        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
-373-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:21:9-98
-373-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:21:19-95
-374
-375        <service
-375-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:23:9-25:40
-376            android:name="com.paypal.android.sdk.payments.PayPalService"
-376-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:24:13-73
-377            android:exported="false" />
-377-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:25:13-37
-378
-379        <provider
-379-->[androidx.emoji2:emoji2:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\4874ad97dac1eee9e3d305eace247b21\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-380            android:name="androidx.startup.InitializationProvider"
-380-->[androidx.emoji2:emoji2:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\4874ad97dac1eee9e3d305eace247b21\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-381            android:authorities="com.doubleclick.marktinhome.androidx-startup"
-381-->[androidx.emoji2:emoji2:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\4874ad97dac1eee9e3d305eace247b21\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-382            android:exported="false" >
-382-->[androidx.emoji2:emoji2:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\4874ad97dac1eee9e3d305eace247b21\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-383            <meta-data
-383-->[androidx.emoji2:emoji2:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\4874ad97dac1eee9e3d305eace247b21\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-384                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-384-->[androidx.emoji2:emoji2:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\4874ad97dac1eee9e3d305eace247b21\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-385                android:value="androidx.startup" />
-385-->[androidx.emoji2:emoji2:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\4874ad97dac1eee9e3d305eace247b21\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+363-->[androidx.window:window:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\3eadde1409df67b8c42d8f3b5890d36d\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+364        <uses-library
+364-->[androidx.window:window:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\3eadde1409df67b8c42d8f3b5890d36d\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+365            android:name="androidx.window.sidecar"
+365-->[androidx.window:window:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\3eadde1409df67b8c42d8f3b5890d36d\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+366            android:required="false" />
+366-->[androidx.window:window:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\3eadde1409df67b8c42d8f3b5890d36d\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+367
+368        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+368-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:13:9-84
+368-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:13:19-81
+369        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+369-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:14:9-90
+369-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:14:19-87
+370        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+370-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:15:9-91
+370-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:15:19-88
+371        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+371-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:16:9-82
+371-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:16:19-79
+372        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+372-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:17:9-96
+372-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:17:19-93
+373        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+373-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:18:9-97
+373-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:18:19-94
+374        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+374-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:19:9-94
+374-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:19:19-91
+375        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+375-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:20:9-97
+375-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:20:19-94
+376        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+376-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:21:9-98
+376-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:21:19-95
+377
+378        <service
+378-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:23:9-25:40
+379            android:name="com.paypal.android.sdk.payments.PayPalService"
+379-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:24:13-73
+380            android:exported="false" />
+380-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\eslam\.gradle\caches\transforms-3\2c79f5981fdfce20e25cf7c64404bccb\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:25:13-37
+381
+382        <provider
+382-->[androidx.emoji2:emoji2:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\4874ad97dac1eee9e3d305eace247b21\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+383            android:name="androidx.startup.InitializationProvider"
+383-->[androidx.emoji2:emoji2:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\4874ad97dac1eee9e3d305eace247b21\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+384            android:authorities="com.doubleclick.marktinhome.androidx-startup"
+384-->[androidx.emoji2:emoji2:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\4874ad97dac1eee9e3d305eace247b21\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+385            android:exported="false" >
+385-->[androidx.emoji2:emoji2:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\4874ad97dac1eee9e3d305eace247b21\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
 386            <meta-data
-386-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\eslam\.gradle\caches\transforms-3\940c6cfd71dfee3fc6346d357d0d55d0\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-387                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-387-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\eslam\.gradle\caches\transforms-3\940c6cfd71dfee3fc6346d357d0d55d0\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+386-->[androidx.emoji2:emoji2:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\4874ad97dac1eee9e3d305eace247b21\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+387                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+387-->[androidx.emoji2:emoji2:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\4874ad97dac1eee9e3d305eace247b21\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
 388                android:value="androidx.startup" />
-388-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\eslam\.gradle\caches\transforms-3\940c6cfd71dfee3fc6346d357d0d55d0\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-389        </provider>
-390
-391        <service
-391-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\89585c99ac85291f7d9099c1bc533a68\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
-392            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-392-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\89585c99ac85291f7d9099c1bc533a68\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
-393            android:exported="false" >
-393-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\89585c99ac85291f7d9099c1bc533a68\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
-394            <meta-data
-394-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\89585c99ac85291f7d9099c1bc533a68\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
-395                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-395-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\89585c99ac85291f7d9099c1bc533a68\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
-396                android:value="cct" />
-396-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\89585c99ac85291f7d9099c1bc533a68\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
-397        </service>
-398        <service
-398-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\563987dd4eb0a84d4dc3daeac93b60cf\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
-399            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-399-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\563987dd4eb0a84d4dc3daeac93b60cf\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
-400            android:exported="false"
-400-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\563987dd4eb0a84d4dc3daeac93b60cf\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
-401            android:permission="android.permission.BIND_JOB_SERVICE" >
-401-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\563987dd4eb0a84d4dc3daeac93b60cf\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
-402        </service>
-403
-404        <receiver
-404-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\563987dd4eb0a84d4dc3daeac93b60cf\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
-405            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-405-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\563987dd4eb0a84d4dc3daeac93b60cf\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
-406            android:exported="false" />
-406-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\563987dd4eb0a84d4dc3daeac93b60cf\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
-407
-408        <activity
-408-->[io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\74ba64071c3d566cd155059e3123ed22\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:20:9-22:66
-409            android:name="io.card.payment.CardIOActivity"
-409-->[io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\74ba64071c3d566cd155059e3123ed22\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:21:13-58
-410            android:configChanges="keyboardHidden|orientation" />
-410-->[io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\74ba64071c3d566cd155059e3123ed22\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:22:13-63
-411        <activity android:name="io.card.payment.DataEntryActivity" />
-411-->[io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\74ba64071c3d566cd155059e3123ed22\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:23:9-70
-411-->[io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\74ba64071c3d566cd155059e3123ed22\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:23:19-67
-412    </application>
-413
-414</manifest>
+388-->[androidx.emoji2:emoji2:1.0.0] C:\Users\eslam\.gradle\caches\transforms-3\4874ad97dac1eee9e3d305eace247b21\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+389            <meta-data
+389-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\eslam\.gradle\caches\transforms-3\940c6cfd71dfee3fc6346d357d0d55d0\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+390                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+390-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\eslam\.gradle\caches\transforms-3\940c6cfd71dfee3fc6346d357d0d55d0\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+391                android:value="androidx.startup" />
+391-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\eslam\.gradle\caches\transforms-3\940c6cfd71dfee3fc6346d357d0d55d0\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+392        </provider>
+393
+394        <service
+394-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\89585c99ac85291f7d9099c1bc533a68\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+395            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+395-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\89585c99ac85291f7d9099c1bc533a68\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+396            android:exported="false" >
+396-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\89585c99ac85291f7d9099c1bc533a68\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+397            <meta-data
+397-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\89585c99ac85291f7d9099c1bc533a68\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+398                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+398-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\89585c99ac85291f7d9099c1bc533a68\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+399                android:value="cct" />
+399-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\89585c99ac85291f7d9099c1bc533a68\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+400        </service>
+401        <service
+401-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\563987dd4eb0a84d4dc3daeac93b60cf\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+402            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+402-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\563987dd4eb0a84d4dc3daeac93b60cf\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+403            android:exported="false"
+403-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\563987dd4eb0a84d4dc3daeac93b60cf\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+404            android:permission="android.permission.BIND_JOB_SERVICE" >
+404-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\563987dd4eb0a84d4dc3daeac93b60cf\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+405        </service>
+406
+407        <receiver
+407-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\563987dd4eb0a84d4dc3daeac93b60cf\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+408            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+408-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\563987dd4eb0a84d4dc3daeac93b60cf\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+409            android:exported="false" />
+409-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\eslam\.gradle\caches\transforms-3\563987dd4eb0a84d4dc3daeac93b60cf\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+410
+411        <activity
+411-->[io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\74ba64071c3d566cd155059e3123ed22\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:20:9-22:66
+412            android:name="io.card.payment.CardIOActivity"
+412-->[io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\74ba64071c3d566cd155059e3123ed22\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:21:13-58
+413            android:configChanges="keyboardHidden|orientation" />
+413-->[io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\74ba64071c3d566cd155059e3123ed22\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:22:13-63
+414        <activity android:name="io.card.payment.DataEntryActivity" />
+414-->[io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\74ba64071c3d566cd155059e3123ed22\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:23:9-70
+414-->[io.card:android-sdk:5.5.1] C:\Users\eslam\.gradle\caches\transforms-3\74ba64071c3d566cd155059e3123ed22\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:23:19-67
+415    </application>
+416
+417</manifest>

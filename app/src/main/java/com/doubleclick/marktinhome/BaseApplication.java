@@ -43,17 +43,15 @@ public class BaseApplication extends Application {
         super.onCreate();
         context = getApplicationContext();
         EmojiManager.install(new GoogleEmojiProvider());
-
         Realm.init(this); // context, usually an Activity or Application
         RealmConfiguration config = new RealmConfiguration.Builder()
                 .allowQueriesOnUiThread(true)
                 .allowWritesOnUiThread(true)
                 .migration(new MyRealmMigration())
-//                .deleteRealmIfMigrationNeeded()
+                .deleteRealmIfMigrationNeeded()
                 .build();
+        Realm.setDefaultConfiguration(config);
         Realm realm = Realm.getInstance(config);
-        realm.beginTransaction();
-
 
 
         createNotificationChannel();

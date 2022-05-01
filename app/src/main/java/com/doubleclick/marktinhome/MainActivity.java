@@ -7,6 +7,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.FileUtils;
 import android.widget.Toast;
 
 import com.doubleclick.marktinhome.Adapters.ViewPagerAdapter;
@@ -14,6 +15,7 @@ import com.doubleclick.marktinhome.Views.liquid_swipe.LiquidPager;
 import com.doubleclick.marktinhome.ui.MainScreen.MainScreenActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.util.FileUtil;
 
 import java.util.List;
 
@@ -48,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         };
+
 
 
     }

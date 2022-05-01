@@ -3,36 +3,33 @@ package com.doubleclick.marktinhome.Adapters;
 import static com.doubleclick.marktinhome.Model.Constantes.COMMENTS_GROUP;
 import static com.doubleclick.marktinhome.Model.Constantes.LIKES;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.PopupMenu;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.doubleclick.marktinhome.Model.PostData;
-import com.doubleclick.marktinhome.Model.PostsGroup;
 import com.doubleclick.marktinhome.R;
 import com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselLayoutManager;
 import com.doubleclick.marktinhome.Views.carousellayoutmanager.CarouselZoomPostLayoutListener;
 import com.doubleclick.marktinhome.Views.carousellayoutmanager.CenterScrollListener;
 import com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatActivity;
-import com.doubleclick.marktinhome.ui.MainScreen.Frgments.BottomDialogComment;
-import com.doubleclick.marktinhome.ui.MainScreen.Groups.BottomSheetEditor;
 import com.doubleclick.marktinhome.ui.MainScreen.Groups.Comments.CommentGroupActivity;
-import com.doubleclick.marktinhome.ui.MainScreen.Groups.GroupsActivity;
+import com.doubleclick.marktinhome.ui.MainScreen.Groups.ViewActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -57,9 +54,15 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
     private DatabaseReference reference;
     String myId = Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid().toString();
     private boolean LikeChecker = false;
+    private Loadmore loadmore;
 
     public GroupsAdapter(ArrayList<PostData> postsData) {
         this.postsData = postsData;
+    }
+
+    public GroupsAdapter(ArrayList<PostData> postsData, Loadmore loadmore) {
+        this.postsData = postsData;
+        this.loadmore = loadmore;
     }
 
     @NonNull
@@ -96,8 +99,20 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
             });
             popupMenu.show();
         });
-        List<String> image = Arrays.asList(postsData.get(holder.getAdapterPosition()).getPostsGroup().getImages().replace("[", "").replace("]", "").replace(" ", "").split(","));
-        holder.images.setAdapter(new ImagesGroupAdapter(image));
+        if (postsData.get(holder.getAdapterPosition()).getPostsGroup().getType().equals("image")) {
+            List<String> image = Arrays.asList(postsData.get(holder.getAdapterPosition()).getPostsGroup().getMeme().replace("[", "").replace("]", "").replace(" ", "").split(","));
+            holder.images.setAdapter(new ImagesGroupAdapter(image));
+            holder.video.setVisibility(View.GONE);
+            holder.playVideo.setVisibility(View.GONE);
+
+        } else if (postsData.get(holder.getAdapterPosition()).getPostsGroup().getType().equals("video")) {
+            holder.video.setVisibility(View.VISIBLE);
+            holder.images.setVisibility(View.GONE);
+            holder.playVideo.setVisibility(View.VISIBLE);
+        } else {
+            holder.images.setVisibility(View.GONE);
+            holder.video.setVisibility(View.GONE);
+        }
         holder.namePublisher.setText(postsData.get(holder.getAdapterPosition()).getUser().getName());
         Glide.with(holder.itemView.getContext()).load(postsData.get(holder.getAdapterPosition()).getUser().getImage()).into(holder.imagePublisher);
         holder.likeButton.setOnClickListener(new View.OnClickListener() {
@@ -142,6 +157,18 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
             intent.putExtra("user", postsData.get(holder.getAdapterPosition()).getUser());
             holder.itemView.getContext().startActivity(intent);
         });
+        holder.playVideo.setOnClickListener(v -> {
+            Intent intent = new Intent(holder.itemView.getContext(), ViewActivity.class);
+            intent.putExtra("url", postsData.get(holder.getAdapterPosition()).getPostsGroup().getMeme());
+            holder.itemView.getContext().startActivity(intent);
+        });
+
+//        if (postsData.size() - 1 == position) {
+//            holder.loadmore.setVisibility(View.VISIBLE);
+//            holder.loadmore.setOnClickListener(v -> {
+//                loadmore.loadmore(postsData.size() + 1);
+//            });
+//        }
     }
 
     @Override
@@ -153,10 +180,11 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
     public class GroupViewHolder extends RecyclerView.ViewHolder {
         private RecyclerView images;
         private ConstraintLayout ConstraintLayoutimage_name;
-        private ImageView option, like_img;
-        private TextView namePublisher, like_text;
+        private ImageView option, like_img, playVideo;
+        private TextView namePublisher, like_text, loadmore;
         private LinearLayout likeButton, comment, share;
         private CircleImageView imagePublisher;
+        private ImageView video;
 
         public GroupViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -170,6 +198,9 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
             share = itemView.findViewById(R.id.share);
             like_img = itemView.findViewById(R.id.like_img);
             like_text = itemView.findViewById(R.id.like_text);
+            loadmore = itemView.findViewById(R.id.loadmore);
+            video = itemView.findViewById(R.id.video);
+            playVideo = itemView.findViewById(R.id.playVideo);
             CarouselLayoutManager layoutManager = new CarouselLayoutManager(CarouselLayoutManager.HORIZONTAL);
             images.setLayoutManager(layoutManager);
             images.setHasFixedSize(true);
@@ -179,16 +210,22 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
         }
 
         public void setLike(String PostKey) {
+
             reference.child(LIKES).addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
-                    if (dataSnapshot.child(PostKey).hasChild(myId)) {
-                        like_text.setText(String.format("%s Like", String.valueOf(dataSnapshot.child(postsData.get(getAdapterPosition()).getPostsGroup().getId()).getChildrenCount())));
-                        like_img.setImageResource(R.drawable.like_thumb_up);
-                    } else {
-                        like_text.setText(String.format("%s Like", String.valueOf(dataSnapshot.child(postsData.get(getAdapterPosition()).getPostsGroup().getId()).getChildrenCount())));
-                        like_img.setImageResource(R.drawable.ic_like);
+                    try {
+                        if (dataSnapshot.child(PostKey).hasChild(myId)) {
+                            like_text.setText(String.format("%s Like", String.valueOf(dataSnapshot.child(postsData.get(getAdapterPosition()).getPostsGroup().getId()).getChildrenCount())));
+                            like_img.setImageResource(R.drawable.like_thumb_up);
+                        } else {
+                            like_text.setText(String.format("%s Like", String.valueOf(dataSnapshot.child(postsData.get(getAdapterPosition()).getPostsGroup().getId()).getChildrenCount())));
+                            like_img.setImageResource(R.drawable.ic_like);
+                        }
+                    } catch (ArrayIndexOutOfBoundsException e) {
+
                     }
+
                 }
 
                 @Override
@@ -219,5 +256,9 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
         }
     }
 
+
+    public interface Loadmore {
+        void loadmore(int num);
+    }
 
 }

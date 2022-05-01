@@ -29,7 +29,7 @@ import com.doubleclick.marktinhome.R;
 /**
  * Created By Eslam Ghazy on 2/7/2022
  */
-public class VideoViewHolder extends RecyclerView.ViewHolder {
+public class VideoViewHolder extends BaseViewHolder {
 
     private VideoView video;
     private ConstraintLayout ContinerViedo;

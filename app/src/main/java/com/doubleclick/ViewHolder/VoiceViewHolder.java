@@ -33,7 +33,7 @@ import java.util.Objects;
 /**
  * Created By Eslam Ghazy on 2/7/2022
  */
-public class VoiceViewHolder extends RecyclerView.ViewHolder {
+public class VoiceViewHolder extends BaseViewHolder {
 
     private VideoView voice;
     private ConstraintLayout ContinerVoice;
