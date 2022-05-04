@@ -50,13 +50,6 @@
         tools:layout="@layout/fragment_menu_profile">
 
         <action
-            android:id="@+id/action_menu_profile_to_recentOrderFragment"
-            app:destination="@id/recentOrderFragment"
-            app:enterAnim="@anim/lefttoright"
-            app:exitAnim="@anim/righttoleft"
-            app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft" />
-        <action
             android:id="@+id/action_menu_profile_to_joinUsFragment"
             app:destination="@id/joinUsFragment"
             app:enterAnim="@anim/lefttoright"
@@ -188,19 +181,7 @@
         android:name="com.doubleclick.marktinhome.Seller.OrderSelllerFragment"
         android:label="fragment_order_selller"
         tools:layout="@layout/fragment_order_selller" />
-    <fragment
-        android:id="@+id/recentOrderFragment"
-        android:name="com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragment"
-        android:label="fragment_recent_order"
-        tools:layout="@layout/fragment_recent_order">
-        <action
-            android:id="@+id/action_recentOrderFragment_to_productFragment"
-            app:destination="@id/productFragment"
-            app:enterAnim="@anim/lefttoright"
-            app:exitAnim="@anim/righttoleft"
-            app:popEnterAnim="@anim/lefttoright"
-            app:popExitAnim="@anim/righttoleft" />
-    </fragment>
+
     <fragment
         android:id="@+id/joinUsFragment"
         android:name="com.doubleclick.marktinhome.ui.MainScreen.Chat.JoinUsFragment"

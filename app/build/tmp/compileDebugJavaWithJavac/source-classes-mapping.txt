@@ -7,6 +7,9 @@ com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/ChildFragmentArgs.java
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ChildFragmentArgs
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ChildFragmentArgs$1
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.ChildFragmentArgs$Builder
+com/doubleclick/marktinhome/ui/MainScreen/RecentOrderActivity.java
+ com.doubleclick.marktinhome.ui.MainScreen.RecentOrderActivity
+ com.doubleclick.marktinhome.ui.MainScreen.RecentOrderActivity$1
 com/doubleclick/marktinhome/Views/socialtextview/widget/SocialEditText.java
  com.doubleclick.marktinhome.Views.socialtextview.widget.SocialEditText
 com/doubleclick/marktinhome/Adapters/ProductSliderAdapter.java
@@ -304,8 +307,6 @@ com/doubleclick/RichEditor/sample/fragment/FontSettingFragment.java
  com.doubleclick.RichEditor.sample.fragment.FontSettingFragment$OnResultListener
 com/doubleclick/marktinhome/databinding/KeywordLayoutBinding.java
  com.doubleclick.marktinhome.databinding.KeywordLayoutBinding
-com/doubleclick/marktinhome/databinding/FragmentRecentOrderBinding.java
- com.doubleclick.marktinhome.databinding.FragmentRecentOrderBinding
 com/doubleclick/marktinhome/databinding/ActivityGroupsBinding.java
  com.doubleclick.marktinhome.databinding.ActivityGroupsBinding
 com/doubleclick/marktinhome/Views/colorpickerview/listeners/ColorPickerViewListener.java
@@ -416,6 +417,8 @@ com/doubleclick/ViewHolder/BannerSliderViewholder.java
  com.doubleclick.ViewHolder.BannerSliderViewholder$2
  com.doubleclick.ViewHolder.BannerSliderViewholder$3
  com.doubleclick.ViewHolder.BannerSliderViewholder$4
+com/doubleclick/marktinhome/databinding/ActivityRecentOrderBinding.java
+ com.doubleclick.marktinhome.databinding.ActivityRecentOrderBinding
 com/doubleclick/marktinhome/databinding/SlidsAdBannerBinding.java
  com.doubleclick.marktinhome.databinding.SlidsAdBannerBinding
 androidx/databinding/DataBindingComponent.java
@@ -1135,10 +1138,6 @@ com/doubleclick/marktinhome/Repository/UserRepository.java
  com.doubleclick.marktinhome.Repository.UserRepository
  com.doubleclick.marktinhome.Repository.UserRepository$1
  com.doubleclick.marktinhome.Repository.UserRepository$2
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/RecentOrderFragmentDirections.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections$1
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.RecentOrderFragmentDirections$ActionRecentOrderFragmentToProductFragment
 com/doubleclick/marktinhome/Adapters/ParentAdapter.java
  com.doubleclick.marktinhome.Adapters.ParentAdapter
  com.doubleclick.marktinhome.Adapters.ParentAdapter$1

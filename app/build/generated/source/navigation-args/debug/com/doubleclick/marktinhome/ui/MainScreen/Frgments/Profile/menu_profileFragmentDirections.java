@@ -10,11 +10,6 @@ public class menu_profileFragmentDirections {
   }
 
   @NonNull
-  public static NavDirections actionMenuProfileToRecentOrderFragment() {
-    return new ActionOnlyNavDirections(R.id.action_menu_profile_to_recentOrderFragment);
-  }
-
-  @NonNull
   public static NavDirections actionMenuProfileToJoinUsFragment() {
     return new ActionOnlyNavDirections(R.id.action_menu_profile_to_joinUsFragment);
   }

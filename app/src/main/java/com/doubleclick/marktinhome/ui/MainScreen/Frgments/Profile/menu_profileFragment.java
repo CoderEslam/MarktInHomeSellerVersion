@@ -29,6 +29,7 @@ import com.doubleclick.marktinhome.R;
 import com.doubleclick.marktinhome.ui.Add.AddActivity;
 import com.doubleclick.marktinhome.ui.Advertisement.AdvertisementActivity;
 import com.doubleclick.marktinhome.ui.MainScreen.Chat.ChatActivity;
+import com.doubleclick.marktinhome.ui.MainScreen.RecentOrderActivity;
 import com.doubleclick.marktinhome.ui.Trademark.TrademarkActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
@@ -48,7 +49,7 @@ public class menu_profileFragment extends BaseFragment {
     private ImageView editAddress, editPhone, editname;
     private AlertDialog.Builder builder;
     private FloatingActionButton fab;
-    private ConstraintLayout AddProduct, AddAdv, AddTradmark, recentOrder, chat, joinUs, statistices,Groups;
+    private ConstraintLayout AddProduct, AddAdv, AddTradmark, recentOrder, chat, joinUs, statistices;
     private ConstraintLayout logout;
 
     public menu_profileFragment() {
@@ -89,7 +90,6 @@ public class menu_profileFragment extends BaseFragment {
         AddTradmark = view.findViewById(R.id.AddTradmark);
         recentOrder = view.findViewById(R.id.recentOrder);
         statistices = view.findViewById(R.id.statistices);
-        Groups = view.findViewById(R.id.Groups);
         chat = view.findViewById(R.id.chat);
 
         userViewModel.getUser().observe(getViewLifecycleOwner(), user -> {
@@ -144,12 +144,7 @@ public class menu_profileFragment extends BaseFragment {
         });
 
         recentOrder.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(menu_profileFragmentDirections.actionMenuProfileToRecentOrderFragment());
-        });
-        Groups.setOnClickListener(v -> {
-
-
-
+            startActivity(new Intent(requireContext(), RecentOrderActivity.class));
         });
         return view;
     }

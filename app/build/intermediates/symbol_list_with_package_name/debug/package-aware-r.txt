@@ -3242,7 +3242,6 @@ id FLOAT
 id FUNCTION
 id FilterRecycler
 id FilterRecyclerView
-id Groups
 id HORIZONTAL
 id HalfLineIndicator
 id INTEGER
@@ -3365,7 +3364,6 @@ id action_menu_divider
 id action_menu_presenter
 id action_menu_profile_to_groupFragment
 id action_menu_profile_to_joinUsFragment
-id action_menu_profile_to_recentOrderFragment
 id action_menu_store_to_menu_Cart
 id action_mode_bar
 id action_mode_bar_stub
@@ -3374,7 +3372,6 @@ id action_parentFragment_to_childFragment
 id action_parentFragment_to_editFragment
 id action_productFragment_to_commentsFragment
 id action_productFragment_to_homeFragment
-id action_recentOrderFragment_to_productFragment
 id action_settings
 id action_stepOneFragment_to_stepTwoFragment
 id action_stepTwoFragment_to_stepOneFragment
@@ -3749,7 +3746,6 @@ id imageTrademark
 id imageUser
 id imageView
 id imageView12
-id imageView13
 id imageView2
 id imageView3
 id imageView30
@@ -4077,7 +4073,6 @@ id ratingBar
 id ratingSeller
 id ratio
 id recentOrder
-id recentOrderFragment
 id recentSearch
 id recordView
 id rectangle
@@ -4470,6 +4465,7 @@ layout activity_main_rich_editor
 layout activity_main_screen
 layout activity_parent
 layout activity_product
+layout activity_recent_order
 layout activity_seller
 layout activity_start
 layout activity_trademark
@@ -4548,7 +4544,6 @@ layout fragment_order_selller
 layout fragment_pager
 layout fragment_parent
 layout fragment_product
-layout fragment_recent_order
 layout fragment_register
 layout fragment_rich
 layout fragment_splash1

@@ -1,5 +1,6 @@
 package com.doubleclick.marktinhome.ui.MainScreen.Frgments
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -28,6 +29,7 @@ import com.doubleclick.marktinhome.Model.ParentCategory
 import com.doubleclick.marktinhome.Model.Product
 import com.doubleclick.marktinhome.Model.Trademark
 import com.doubleclick.marktinhome.R
+import com.doubleclick.marktinhome.ui.ProductActivity.productActivity
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
@@ -43,7 +45,8 @@ class HomeFragment : BaseFragment(), OnItem, OnProduct, Tradmarkinterface, ViewM
     lateinit var advertisementViewModel: AdvertisementViewModel
     lateinit var trademarkViewModel: TradmarkViewModel
     lateinit var animationView: LottieAnimationView
-//    lateinit var recentSearchViewModel: RecentSearchViewModel
+
+    //    lateinit var recentSearchViewModel: RecentSearchViewModel
     private var idProduct: String = ""
 
 
@@ -106,31 +109,33 @@ class HomeFragment : BaseFragment(), OnItem, OnProduct, Tradmarkinterface, ViewM
 //        })
 
         if (idProduct != "") {
-            reference.child(PRODUCT).child(idProduct).addListenerForSingleValueEvent(object :ValueEventListener{
-                override fun onDataChange(snapshot: DataSnapshot) {
-                    try {
-                        if (isNetworkConnected()) {
-                            if (snapshot.exists()) {
-                                var product: Product? =  snapshot.getValue(Product::class.java)
-                                Log.e("ggggggggggggg", product.toString())
-                                findNavController().navigate(
-                                    HomeFragmentDirections.actionHomeFragmentToProductFragment(
-                                        product
+            reference.child(PRODUCT).child(idProduct)
+                .addListenerForSingleValueEvent(object : ValueEventListener {
+                    override fun onDataChange(snapshot: DataSnapshot) {
+                        try {
+                            if (isNetworkConnected()) {
+                                if (snapshot.exists()) {
+                                    var product: Product? = snapshot.getValue(Product::class.java)
+                                    Log.e("ggggggggggggg", product.toString())
+                                    findNavController().navigate(
+                                        HomeFragmentDirections.actionHomeFragmentToProductFragment(
+                                            product
+                                        )
                                     )
-                                )
+                                }
+                            } else {
+                                ShowToast(context, "No Internet Connection")
                             }
-                        } else {
-                            ShowToast(context, "No Internet Connection")
+                        } catch (e: Exception) {
+
                         }
-                    } catch (e: Exception) {
+                    }
+
+                    override fun onCancelled(error: DatabaseError) {
 
                     }
-                }
-                override fun onCancelled(error: DatabaseError) {
 
-                }
-
-            })
+                })
 
         }
 
@@ -149,11 +154,14 @@ class HomeFragment : BaseFragment(), OnItem, OnProduct, Tradmarkinterface, ViewM
     override fun onItemLong(parentCategory: ParentCategory?) {}
 
     override fun onItemProduct(product: Product?) {
-        findNavController().navigate(
-            HomeFragmentDirections.actionHomeFragmentToProductFragment(
-                product
-            )
-        )
+//        findNavController().navigate(
+//            HomeFragmentDirections.actionHomeFragmentToProductFragment(
+//                product
+//            )
+//        )
+        val intent = Intent(requireContext(), productActivity::class.java);
+        intent.putExtra("product", product);
+        startActivity(intent)
     }
 
     override fun AllTradmark(tradmark: ArrayList<Trademark?>?) {}
