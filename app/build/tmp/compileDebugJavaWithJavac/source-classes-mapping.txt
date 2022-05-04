@@ -27,8 +27,8 @@ com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/RichFragment.java
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$MOnActionPerformListener
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$MRichEditorCallback
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$ShareHTML
-com/doubleclick/marktinhome/databinding/FragmentProductBinding.java
- com.doubleclick.marktinhome.databinding.FragmentProductBinding
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/Profile/menu_profileFragment.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Profile.menu_profileFragment
 com/doubleclick/RichEditor/sample/fragment/EditTableFragmentDirections.java
  com.doubleclick.RichEditor.sample.fragment.EditTableFragmentDirections
 com/doubleclick/marktinhome/databinding/LayautCartBinding.java
@@ -1149,5 +1149,5 @@ com/doubleclick/marktinhome/Adapters/KeywordAdapter.java
  com.doubleclick.marktinhome.Adapters.KeywordAdapter$OnDelete
 com/doubleclick/marktinhome/databinding/ActivityAddBinding.java
  com.doubleclick.marktinhome.databinding.ActivityAddBinding
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/Profile/menu_profileFragment.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Profile.menu_profileFragment
+com/doubleclick/marktinhome/databinding/FragmentProductBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentProductBinding

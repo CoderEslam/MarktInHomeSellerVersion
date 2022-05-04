@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.doubleclick.marktinhome.R;
+import com.nex3z.togglebuttongroup.SingleSelectToggleGroup;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -40,13 +41,25 @@ public final class FragmentUploadBinding implements ViewBinding {
   public final LinearLayout addToggleButton;
 
   @NonNull
+  public final LinearLayout addToggleButtonColor;
+
+  @NonNull
   public final ImageView addView;
+
+  @NonNull
+  public final ImageView addViewColor;
 
   @NonNull
   public final EditText description;
 
   @NonNull
+  public final SingleSelectToggleGroup groupColor;
+
+  @NonNull
   public final HorizontalScrollView horizontalScrollView;
+
+  @NonNull
+  public final HorizontalScrollView horizontalScrollView2;
 
   @NonNull
   public final RecyclerView keys;
@@ -77,8 +90,11 @@ public final class FragmentUploadBinding implements ViewBinding {
 
   private FragmentUploadBinding(@NonNull ConstraintLayout rootView, @NonNull FrameLayout RichTable,
       @NonNull Button Upload, @NonNull Button addKeywords, @NonNull LinearLayout addToggleButton,
-      @NonNull ImageView addView, @NonNull EditText description,
-      @NonNull HorizontalScrollView horizontalScrollView, @NonNull RecyclerView keys,
+      @NonNull LinearLayout addToggleButtonColor, @NonNull ImageView addView,
+      @NonNull ImageView addViewColor, @NonNull EditText description,
+      @NonNull SingleSelectToggleGroup groupColor,
+      @NonNull HorizontalScrollView horizontalScrollView,
+      @NonNull HorizontalScrollView horizontalScrollView2, @NonNull RecyclerView keys,
       @NonNull ConstraintLayout keywords, @NonNull RecyclerView productImages,
       @NonNull EditText productLastPrice, @NonNull EditText productName,
       @NonNull EditText productPrice, @NonNull RatingBar ratingSeller, @NonNull Button selectImages,
@@ -88,9 +104,13 @@ public final class FragmentUploadBinding implements ViewBinding {
     this.Upload = Upload;
     this.addKeywords = addKeywords;
     this.addToggleButton = addToggleButton;
+    this.addToggleButtonColor = addToggleButtonColor;
     this.addView = addView;
+    this.addViewColor = addViewColor;
     this.description = description;
+    this.groupColor = groupColor;
     this.horizontalScrollView = horizontalScrollView;
+    this.horizontalScrollView2 = horizontalScrollView2;
     this.keys = keys;
     this.keywords = keywords;
     this.productImages = productImages;
@@ -153,9 +173,21 @@ public final class FragmentUploadBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.addToggleButtonColor;
+      LinearLayout addToggleButtonColor = ViewBindings.findChildViewById(rootView, id);
+      if (addToggleButtonColor == null) {
+        break missingId;
+      }
+
       id = R.id.addView;
       ImageView addView = ViewBindings.findChildViewById(rootView, id);
       if (addView == null) {
+        break missingId;
+      }
+
+      id = R.id.addViewColor;
+      ImageView addViewColor = ViewBindings.findChildViewById(rootView, id);
+      if (addViewColor == null) {
         break missingId;
       }
 
@@ -165,9 +197,21 @@ public final class FragmentUploadBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.groupColor;
+      SingleSelectToggleGroup groupColor = ViewBindings.findChildViewById(rootView, id);
+      if (groupColor == null) {
+        break missingId;
+      }
+
       id = R.id.horizontalScrollView;
       HorizontalScrollView horizontalScrollView = ViewBindings.findChildViewById(rootView, id);
       if (horizontalScrollView == null) {
+        break missingId;
+      }
+
+      id = R.id.horizontalScrollView2;
+      HorizontalScrollView horizontalScrollView2 = ViewBindings.findChildViewById(rootView, id);
+      if (horizontalScrollView2 == null) {
         break missingId;
       }
 
@@ -226,9 +270,9 @@ public final class FragmentUploadBinding implements ViewBinding {
       }
 
       return new FragmentUploadBinding((ConstraintLayout) rootView, RichTable, Upload, addKeywords,
-          addToggleButton, addView, description, horizontalScrollView, keys, keywords,
-          productImages, productLastPrice, productName, productPrice, ratingSeller, selectImages,
-          trademark);
+          addToggleButton, addToggleButtonColor, addView, addViewColor, description, groupColor,
+          horizontalScrollView, horizontalScrollView2, keys, keywords, productImages,
+          productLastPrice, productName, productPrice, ratingSeller, selectImages, trademark);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

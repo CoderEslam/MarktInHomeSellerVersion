@@ -1293,6 +1293,15 @@ attr tabTextColor
 attr tabUnboundedRipple
 attr targetId
 attr targetPackage
+attr tbgCheckedButton
+attr tbgChildSpacing
+attr tbgChildSpacingForLastRow
+attr tbgFlow
+attr tbgMarkerColor
+attr tbgMaxSelect
+attr tbgRadioStyle
+attr tbgRowSpacing
+attr tbgRtl
 attr telltales_tailColor
 attr telltales_tailScale
 attr telltales_velocityMode
@@ -2124,6 +2133,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color selector_marker_text
 color shimmer_color
 color status_bar
 color switch_thumb_disabled_material_dark
@@ -2132,6 +2142,7 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color tbg_color_default_marker
 color teal_200
 color teal_700
 color test_color
@@ -2883,10 +2894,13 @@ drawable back2
 drawable bg_btn_dis
 drawable bg_btn_nor
 drawable bg_btn_pre
+drawable bg_circle
 drawable bg_edit
 drawable bg_gray
 drawable bg_green
 drawable bg_image
+drawable bg_label_checked
+drawable bg_label_unchecked
 drawable bg_product_activity
 drawable bg_text_chat
 drawable bg_white
@@ -3380,14 +3394,17 @@ id addParent
 id addToggalsLinearLayout
 id addToggalsScrollView
 id addToggleButton
+id addToggleButtonColor
 id addVideo
 id addView
+id addViewColor
 id add_navigation
 id address
 id addressFragment
 id adjust_height
 id adjust_width
 id alertTitle
+id align
 id aligned
 id all
 id allStates
@@ -3683,6 +3700,7 @@ id google
 id graph
 id graph_wrap
 id gridview
+id groupColor
 id group_divider
 id group_nav
 id grouping
@@ -3705,6 +3723,7 @@ id homeAsUp
 id homeFragment
 id honorRequest
 id horizontalScrollView
+id horizontalScrollView2
 id horizontal_only
 id hsv_action_bar
 id hybrid
@@ -3789,6 +3808,7 @@ id iv_action_txt_color
 id iv_action_underline
 id iv_action_undo
 id iv_back
+id iv_bg
 id iv_cover
 id iv_folder_check
 id iv_get_html
@@ -4296,6 +4316,7 @@ id tv_font_size
 id tv_font_spacing
 id tv_image_count
 id tv_prompt
+id tv_text
 id tv_your_ratins
 id unchecked
 id underline
@@ -4686,6 +4707,8 @@ layout user_chat_layout
 layout user_chat_layout_shimmer
 layout v_product_recyclerview
 layout view_color_palette
+layout view_label_button
+layout view_marker_button
 layout widget_navigation_drawer
 menu menu_bottom
 menu menu_chat
@@ -6174,7 +6197,7 @@ styleable ExtendedFloatingActionButton collapsedSize elevation extendMotionSpec 
 styleable ExtendedFloatingActionButton_Behavior_Layout behavior_autoHide behavior_autoShrink
 styleable FloatingActionButton android_enabled backgroundTint backgroundTintMode borderWidth elevation ensureMinTouchTargetSize fabCustomSize fabSize hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec useCompatPadding
 styleable FloatingActionButton_Behavior_Layout behavior_autoHide
-styleable FlowLayout itemSpacing lineSpacing
+styleable FlowLayout itemSpacing lineSpacing tbgChildSpacing tbgChildSpacingForLastRow tbgFlow tbgRowSpacing tbgRtl
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery fontProviderSystemFontFamily
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
@@ -6206,6 +6229,7 @@ styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerti
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
 styleable LottieAnimationView lottie_autoPlay lottie_cacheComposition lottie_colorFilter lottie_enableMergePathsForKitKatAndAbove lottie_fallbackRes lottie_fileName lottie_imageAssetsFolder lottie_loop lottie_progress lottie_rawRes lottie_renderMode lottie_repeatCount lottie_repeatMode lottie_scale lottie_speed lottie_url
 styleable MapAttrs ambientEnabled backgroundColor cameraBearing cameraMaxZoomPreference cameraMinZoomPreference cameraTargetLat cameraTargetLng cameraTilt cameraZoom latLngBoundsNorthEastLatitude latLngBoundsNorthEastLongitude latLngBoundsSouthWestLatitude latLngBoundsSouthWestLongitude liteMode mapId mapType uiCompass uiMapToolbar uiRotateGestures uiScrollGestures uiScrollGesturesDuringRotateOrZoom uiTiltGestures uiZoomControls uiZoomGestures useViewLifecycle zOrderOnTop
+styleable MarkerButton android_textSize android_textColor android_text tbgMarkerColor tbgRadioStyle
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogButtonSpacerVisibility materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialAutoCompleteTextView android_inputType
@@ -6233,6 +6257,7 @@ styleable MotionLabel android_textSize android_typeface android_textStyle androi
 styleable MotionLayout applyMotionScene currentState layoutDescription motionDebug motionProgress showPaths
 styleable MotionScene defaultDuration layoutDuringTransition
 styleable MotionTelltales telltales_tailColor telltales_tailScale telltales_velocityMode
+styleable MultiSelectToggleGroup tbgMaxSelect
 styleable NavAction android_id destination enterAnim exitAnim launchSingleTop popEnterAnim popExitAnim popUpTo popUpToInclusive popUpToSaveState restoreState
 styleable NavArgument android_name android_defaultValue argType nullable
 styleable NavDeepLink android_autoVerify action mimeType uri
@@ -6294,6 +6319,7 @@ styleable TextEffects android_textSize android_typeface android_textStyle androi
 styleable TextInputEditText textInputLayoutFocusedRectEnabled
 styleable TextInputLayout android_enabled android_textColorHint android_maxWidth android_minWidth android_hint boxBackgroundColor boxBackgroundMode boxCollapsedPaddingTop boxCornerRadiusBottomEnd boxCornerRadiusBottomStart boxCornerRadiusTopEnd boxCornerRadiusTopStart boxStrokeColor boxStrokeErrorColor boxStrokeWidth boxStrokeWidthFocused counterEnabled counterMaxLength counterOverflowTextAppearance counterOverflowTextColor counterTextAppearance counterTextColor endIconCheckable endIconContentDescription endIconDrawable endIconMode endIconTint endIconTintMode errorContentDescription errorEnabled errorIconDrawable errorIconTint errorIconTintMode errorTextAppearance errorTextColor expandedHintEnabled helperText helperTextEnabled helperTextTextAppearance helperTextTextColor hintAnimationEnabled hintEnabled hintTextAppearance hintTextColor passwordToggleContentDescription passwordToggleDrawable passwordToggleEnabled passwordToggleTint passwordToggleTintMode placeholderText placeholderTextAppearance placeholderTextColor prefixText prefixTextAppearance prefixTextColor shapeAppearance shapeAppearanceOverlay startIconCheckable startIconContentDescription startIconDrawable startIconTint startIconTintMode suffixText suffixTextAppearance suffixTextColor
 styleable ThemeEnforcement android_textAppearance enforceMaterialTheme enforceTextAppearance
+styleable ToggleButtonGroup android_checkedButton tbgCheckedButton
 styleable Toolbar android_gravity android_minHeight buttonGravity collapseContentDescription collapseIcon contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation logo logoDescription maxButtonHeight menu navigationContentDescription navigationIcon popupTheme subtitle subtitleTextAppearance subtitleTextColor title titleMargin titleMarginBottom titleMarginEnd titleMarginStart titleMarginTop titleMargins titleTextAppearance titleTextColor
 styleable Tooltip android_textAppearance android_textColor android_padding android_layout_margin android_minWidth android_minHeight android_text backgroundTint
 styleable Transform android_transformPivotX android_transformPivotY android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_translationZ android_elevation transformPivotTarget

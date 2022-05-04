@@ -141,6 +141,7 @@
                 android:id="@+id/ratingSeller"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/keywords" />
 
@@ -210,20 +211,8 @@
                     <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
                         android:id="@+id/groupColor"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:tbgCheckedButton="@id/choice_a">
+                        android:layout_height="wrap_content">
 
-                        <com.nex3z.togglebuttongroup.button.CircularToggle
-                            android:id="@+id/choice_a"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="A" />
-
-                        <com.nex3z.togglebuttongroup.button.CircularToggle
-                            android:id="@+id/choice_b"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="B" />
 
                     </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
 

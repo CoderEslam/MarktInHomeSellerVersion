@@ -1292,6 +1292,15 @@ int attr tabTextColor 0x7f0404a1
 int attr tabUnboundedRipple 0x7f0404a2
 int attr targetId 0x7f0404a3
 int attr targetPackage 0x7f0404a4
+int attr tbgCheckedButton 0x7f04055f
+int attr tbgChildSpacing 0x7f040560
+int attr tbgChildSpacingForLastRow 0x7f040561
+int attr tbgFlow 0x7f040562
+int attr tbgMarkerColor 0x7f040563
+int attr tbgMaxSelect 0x7f040564
+int attr tbgRadioStyle 0x7f040565
+int attr tbgRowSpacing 0x7f040566
+int attr tbgRtl 0x7f040567
 int attr telltales_tailColor 0x7f0404a5
 int attr telltales_tailScale 0x7f0404a6
 int attr telltales_velocityMode 0x7f0404a7
@@ -2123,6 +2132,7 @@ int color secondary_text_default_material_dark 0x7f06026f
 int color secondary_text_default_material_light 0x7f060270
 int color secondary_text_disabled_material_dark 0x7f060271
 int color secondary_text_disabled_material_light 0x7f060272
+int color selector_marker_text 0x7f06028c
 int color shimmer_color 0x7f060273
 int color status_bar 0x7f060274
 int color switch_thumb_disabled_material_dark 0x7f060275
@@ -2131,6 +2141,7 @@ int color switch_thumb_material_dark 0x7f060277
 int color switch_thumb_material_light 0x7f060278
 int color switch_thumb_normal_material_dark 0x7f060279
 int color switch_thumb_normal_material_light 0x7f06027a
+int color tbg_color_default_marker 0x7f06028d
 int color teal_200 0x7f06027b
 int color teal_700 0x7f06027c
 int color test_color 0x7f06027d
@@ -2882,10 +2893,13 @@ int drawable back2 0x7f080068
 int drawable bg_btn_dis 0x7f080069
 int drawable bg_btn_nor 0x7f08006a
 int drawable bg_btn_pre 0x7f08006b
+int drawable bg_circle 0x7f0801a1
 int drawable bg_edit 0x7f08006c
 int drawable bg_gray 0x7f08006d
 int drawable bg_green 0x7f08006e
 int drawable bg_image 0x7f08006f
+int drawable bg_label_checked 0x7f0801a2
+int drawable bg_label_unchecked 0x7f0801a3
 int drawable bg_product_activity 0x7f080070
 int drawable bg_text_chat 0x7f080071
 int drawable bg_white 0x7f080072
@@ -3379,14 +3393,17 @@ int id addParent 0x7f0a00b4
 int id addToggalsLinearLayout 0x7f0a00b5
 int id addToggalsScrollView 0x7f0a00b6
 int id addToggleButton 0x7f0a00b7
+int id addToggleButtonColor 0x7f0a0479
 int id addVideo 0x7f0a00b8
 int id addView 0x7f0a00b9
+int id addViewColor 0x7f0a047a
 int id add_navigation 0x7f0a00ba
 int id address 0x7f0a00bb
 int id addressFragment 0x7f0a00bc
 int id adjust_height 0x7f0a00bd
 int id adjust_width 0x7f0a00be
 int id alertTitle 0x7f0a00bf
+int id align 0x7f0a047b
 int id aligned 0x7f0a00c0
 int id all 0x7f0a00c1
 int id allStates 0x7f0a00c2
@@ -3682,6 +3699,7 @@ int id google 0x7f0a01e3
 int id graph 0x7f0a01e4
 int id graph_wrap 0x7f0a01e5
 int id gridview 0x7f0a01e6
+int id groupColor 0x7f0a047e
 int id group_divider 0x7f0a01e7
 int id group_nav 0x7f0a01e8
 int id grouping 0x7f0a01e9
@@ -3704,6 +3722,7 @@ int id homeAsUp 0x7f0a01f9
 int id homeFragment 0x7f0a01fa
 int id honorRequest 0x7f0a01fb
 int id horizontalScrollView 0x7f0a01fc
+int id horizontalScrollView2 0x7f0a047f
 int id horizontal_only 0x7f0a01fd
 int id hsv_action_bar 0x7f0a01fe
 int id hybrid 0x7f0a01ff
@@ -3788,6 +3807,7 @@ int id iv_action_txt_color 0x7f0a024d
 int id iv_action_underline 0x7f0a024e
 int id iv_action_undo 0x7f0a024f
 int id iv_back 0x7f0a0250
+int id iv_bg 0x7f0a0480
 int id iv_cover 0x7f0a0251
 int id iv_folder_check 0x7f0a0252
 int id iv_get_html 0x7f0a0253
@@ -4295,6 +4315,7 @@ int id tv_font_size 0x7f0a0448
 int id tv_font_spacing 0x7f0a0449
 int id tv_image_count 0x7f0a044a
 int id tv_prompt 0x7f0a044b
+int id tv_text 0x7f0a0481
 int id tv_your_ratins 0x7f0a044c
 int id unchecked 0x7f0a044d
 int id underline 0x7f0a044e
@@ -4685,6 +4706,8 @@ int layout user_chat_layout 0x7f0d011a
 int layout user_chat_layout_shimmer 0x7f0d011b
 int layout v_product_recyclerview 0x7f0d011c
 int layout view_color_palette 0x7f0d011d
+int layout view_label_button 0x7f0d011f
+int layout view_marker_button 0x7f0d0120
 int layout widget_navigation_drawer 0x7f0d011e
 int menu menu_bottom 0x7f0e0000
 int menu menu_chat 0x7f0e0001
@@ -7178,9 +7201,14 @@ int styleable FloatingActionButton_showMotionSpec 15
 int styleable FloatingActionButton_useCompatPadding 16
 int[] styleable FloatingActionButton_Behavior_Layout { 0x7f04006a }
 int styleable FloatingActionButton_Behavior_Layout_behavior_autoHide 0
-int[] styleable FlowLayout { 0x7f040262, 0x7f0402c4 }
+int[] styleable FlowLayout { 0x7f040262, 0x7f0402c4, 0x7f040560, 0x7f040561, 0x7f040562, 0x7f040566, 0x7f040567 }
 int styleable FlowLayout_itemSpacing 0
 int styleable FlowLayout_lineSpacing 1
+int styleable FlowLayout_tbgChildSpacing 2
+int styleable FlowLayout_tbgChildSpacingForLastRow 3
+int styleable FlowLayout_tbgFlow 4
+int styleable FlowLayout_tbgRowSpacing 5
+int styleable FlowLayout_tbgRtl 6
 int[] styleable FontFamily { 0x7f040202, 0x7f040203, 0x7f040204, 0x7f040205, 0x7f040206, 0x7f040207, 0x7f040208 }
 int styleable FontFamily_fontProviderAuthority 0
 int styleable FontFamily_fontProviderCerts 1
@@ -7524,6 +7552,12 @@ int styleable MapAttrs_uiZoomControls 22
 int styleable MapAttrs_uiZoomGestures 23
 int styleable MapAttrs_useViewLifecycle 24
 int styleable MapAttrs_zOrderOnTop 25
+int[] styleable MarkerButton { 0x01010095, 0x01010098, 0x0101014f, 0x7f040563, 0x7f040565 }
+int styleable MarkerButton_android_textSize 0
+int styleable MarkerButton_android_textColor 1
+int styleable MarkerButton_android_text 2
+int styleable MarkerButton_tbgMarkerColor 3
+int styleable MarkerButton_tbgRadioStyle 4
 int[] styleable MaterialAlertDialog { 0x7f040056, 0x7f040057, 0x7f040058, 0x7f040059 }
 int styleable MaterialAlertDialog_backgroundInsetBottom 0
 int styleable MaterialAlertDialog_backgroundInsetEnd 1
@@ -7739,6 +7773,8 @@ int[] styleable MotionTelltales { 0x7f0404a5, 0x7f0404a6, 0x7f0404a7 }
 int styleable MotionTelltales_telltales_tailColor 0
 int styleable MotionTelltales_telltales_tailScale 1
 int styleable MotionTelltales_telltales_velocityMode 2
+int[] styleable MultiSelectToggleGroup { 0x7f040564 }
+int styleable MultiSelectToggleGroup_tbgMaxSelect 0
 int[] styleable NavAction { 0x010100d0, 0x7f040179, 0x7f0401b7, 0x7f0401bf, 0x7f040276, 0x7f040381, 0x7f040382, 0x7f040383, 0x7f040384, 0x7f040385, 0x7f0403a9 }
 int styleable NavAction_android_id 0
 int styleable NavAction_destination 1
@@ -8310,6 +8346,9 @@ int[] styleable ThemeEnforcement { 0x01010034, 0x7f0401b4, 0x7f0401b5 }
 int styleable ThemeEnforcement_android_textAppearance 0
 int styleable ThemeEnforcement_enforceMaterialTheme 1
 int styleable ThemeEnforcement_enforceTextAppearance 2
+int[] styleable ToggleButtonGroup { 0x01010148, 0x7f04055f }
+int styleable ToggleButtonGroup_android_checkedButton 0
+int styleable ToggleButtonGroup_tbgCheckedButton 1
 int[] styleable Toolbar { 0x010100af, 0x01010140, 0x7f040095, 0x7f0400f5, 0x7f0400f6, 0x7f040134, 0x7f040135, 0x7f040136, 0x7f040137, 0x7f040138, 0x7f040139, 0x7f0402d7, 0x7f0402d8, 0x7f040313, 0x7f04031c, 0x7f04034b, 0x7f04034d, 0x7f040388, 0x7f040440, 0x7f040442, 0x7f040443, 0x7f040504, 0x7f040508, 0x7f040509, 0x7f04050a, 0x7f04050b, 0x7f04050c, 0x7f04050d, 0x7f04050f, 0x7f040510 }
 int styleable Toolbar_android_gravity 0
 int styleable Toolbar_android_minHeight 1
