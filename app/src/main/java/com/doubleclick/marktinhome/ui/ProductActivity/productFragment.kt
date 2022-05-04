@@ -227,7 +227,6 @@ class productFragment : BaseFragment() {
         mins.setOnClickListener {
 
             if (quantity.text.toString() == "0") {
-                qNumber = 1;
                 quantity.text = qNumber.toString()
                 ShowToast(context, "you can't order less than one!");
                 return@setOnClickListener

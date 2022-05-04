@@ -1,5 +1,8 @@
 package com.doubleclick.marktinhome.ui.MainScreen.Groups;
 
+import static com.doubleclick.marktinhome.Model.Constantes.GROUPS;
+import static com.doubleclick.marktinhome.Model.Constantes.POSTS;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -29,6 +32,8 @@ import com.doubleclick.marktinhome.ui.MainScreen.MainScreenActivity;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.progressindicator.LinearProgressIndicator;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.todkars.shimmer.ShimmerRecyclerView;
 
 import java.text.SimpleDateFormat;
@@ -54,6 +59,7 @@ public class GroupsActivity extends AppCompatActivity implements GroupsAdapter.L
     private GroupViewModel groupViewModel;
     private PostsViewModel postsViewModel;
     private GroupsAdapter groupsAdapter;
+    private DatabaseReference reference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +76,7 @@ public class GroupsActivity extends AppCompatActivity implements GroupsAdapter.L
         postsNum = findViewById(R.id.postsNum);
         username = findViewById(R.id.username);
         history = findViewById(R.id.history);
+        reference = FirebaseDatabase.getInstance().getReference();
         // todo show when there is nothing to show
         nothing = findViewById(R.id.nothing);
         bio = findViewById(R.id.bio);
@@ -156,6 +163,7 @@ public class GroupsActivity extends AppCompatActivity implements GroupsAdapter.L
 
     @Override
     public void delete(String id) {
+        reference.child(GROUPS).child(id/* group id */).child(POSTS).child(id);
         Toast.makeText(GroupsActivity.this, "" + id, Toast.LENGTH_SHORT).show();
     }
 

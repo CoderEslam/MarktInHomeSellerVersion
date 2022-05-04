@@ -35,6 +35,8 @@ import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageTask
 import com.google.firebase.storage.UploadTask
+import com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+import com.nex3z.togglebuttongroup.button.CircularToggle
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -68,6 +70,9 @@ class UploadFragment : BaseFragment(), KeywordAdapter.OnDelete, KeywordBottomShe
     private var colorToggle: Int = 0
     private var texts: ArrayList<String> = ArrayList();
     private lateinit var keywordAdapter: KeywordAdapter;
+    private lateinit var groupColor: SingleSelectToggleGroup
+    private lateinit var addViewColor:ImageView
+    private var colors: ArrayList<Int> = ArrayList();
     val parent_child by navArgs<UploadFragmentArgs>()
     var begin = "<!DOCTYPE html>\n" +
             "<html>\n" +
@@ -113,7 +118,9 @@ class UploadFragment : BaseFragment(), KeywordAdapter.OnDelete, KeywordBottomShe
         description = view.findViewById(R.id.description);
         RichTable = view.findViewById(R.id.RichTable);
         addKeywords = view.findViewById(R.id.addKeywords);
+        groupColor = view.findViewById(R.id.groupColor);
         keys = view.findViewById(R.id.keys);
+        addViewColor = view.findViewById(R.id.addViewColor);
         requireActivity().supportFragmentManager.beginTransaction()
             .replace(RichTable.id, RichFragment()).commit()
         trademark = view.findViewById(R.id.trademark);
@@ -204,14 +211,7 @@ class UploadFragment : BaseFragment(), KeywordAdapter.OnDelete, KeywordBottomShe
             val cardView: CardView = view.findViewById(R.id.cardView);
             val editorder: TextInputEditText = view.findViewById(R.id.editname)
             val color_seek_bar: ColorSeekBar = view.findViewById(R.id.color_seek_bar);
-//            color_seek_bar.setOnColorChangeListener(object : ColorSeekBar.OnColorChangeListener {
-//                override fun onColorChangeListener(color: Int) {
-//                    //gives the selected color
-//                    colorToggle = color;
-//                    cardView.setBackgroundColor(color)
-//                    radio.setTextColor(color)
-//                }
-//            })
+            color_seek_bar.visibility = View.INVISIBLE
             builder.setTitle("Add Options")
             builder.setPositiveButton("ok", DialogInterface.OnClickListener { dialog, which ->
                 radio.setText("" + editorder.text.toString().trim())
@@ -219,6 +219,37 @@ class UploadFragment : BaseFragment(), KeywordAdapter.OnDelete, KeywordBottomShe
                 mapToggleButton["color"] = colorToggle
                 addToggleButton.addView(radio)
                 Log.e("addToggleButton", editorder.text.toString())
+                dialog.dismiss()
+            })
+            builder.setNegativeButton("cancel", DialogInterface.OnClickListener { dialog, which ->
+                dialog.dismiss()
+            })
+            builder.setView(view)
+            builder.show()
+        }
+        addViewColor.setOnClickListener {
+            builder = AlertDialog.Builder(requireContext())
+            var circuleToggle = CircularToggle(requireContext())
+            val view = LayoutInflater.from(context).inflate(R.layout.add_toggal, null, false)
+            val cardView: CardView = view.findViewById(R.id.cardView);
+            val editorder: TextInputEditText = view.findViewById(R.id.editname)
+            val color_seek_bar: ColorSeekBar = view.findViewById(R.id.color_seek_bar);
+            color_seek_bar.visibility = View.VISIBLE
+//            editorder.visibility = View.GONE
+            color_seek_bar.setOnColorChangeListener(object : ColorSeekBar.OnColorChangeListener {
+                override fun onColorChangeListener(color: Int) {
+                    //gives the selected color
+                    colorToggle = color;
+//                    circuleToggle.setBackgroundColor(color)
+                    cardView.setBackgroundColor(color)
+                }
+            })
+            builder.setTitle("Add Options")
+            builder.setPositiveButton("ok", DialogInterface.OnClickListener { dialog, which ->
+                circuleToggle.setText("" + editorder.text.toString().trim())
+//                circuleToggle.setBackgroundColor(colorToggle)
+                circuleToggle.markerColor = colorToggle
+                groupColor.addView(circuleToggle)
                 dialog.dismiss()
             })
             builder.setNegativeButton("cancel", DialogInterface.OnClickListener { dialog, which ->

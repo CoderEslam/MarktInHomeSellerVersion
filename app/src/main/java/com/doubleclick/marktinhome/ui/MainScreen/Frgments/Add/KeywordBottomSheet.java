@@ -57,6 +57,7 @@ public class KeywordBottomSheet extends BottomSheetDialogFragment implements Key
         });
         ok.setOnClickListener(v -> {
             keywords.ItemsKeyword(texts);
+            keys.setVisibility(View.GONE);
         });
         return view;
     }

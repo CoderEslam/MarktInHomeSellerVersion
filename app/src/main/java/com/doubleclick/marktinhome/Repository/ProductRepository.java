@@ -10,6 +10,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.doubleclick.Products;
 import com.doubleclick.Servies.Servies;
@@ -21,6 +22,7 @@ import com.doubleclick.marktinhome.Model.RecentSearch;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.RuntimeExecutionException;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.GenericTypeIndicator;
@@ -56,6 +58,46 @@ public class ProductRepository extends BaseRepository {
 
     // to get All products from Firebase
     public void getProduct() {
+//        reference.child(PRODUCT).addChildEventListener(new ChildEventListener() {
+//            @Override
+//            public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+//                try {
+//                    if (isNetworkConnected()) {
+//                        if (snapshot.exists()) {
+//                            Product p = snapshot.getValue(Product.class);
+////                                    HashMap<String, Object> map = new HashMap<>();
+////                                    map.put("keywords","");
+////                                    dataSnapshot.getRef().updateChildren(map);
+//                            products.add(p);
+//                            product.getProduct(products);
+//
+//                        }
+//                    }
+//                } catch (Exception e) {
+//
+//                }
+//            }
+//
+//            @Override
+//            public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+//
+//            }
+//
+//            @Override
+//            public void onChildRemoved(@NonNull DataSnapshot snapshot) {
+//
+//            }
+//
+//            @Override
+//            public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+//
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
         reference.child(PRODUCT)/*.orderByChild("TotalRating")*/.get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DataSnapshot> task) {

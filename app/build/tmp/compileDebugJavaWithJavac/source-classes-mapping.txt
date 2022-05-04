@@ -27,8 +27,8 @@ com/doubleclick/marktinhome/ui/MainScreen/Frgments/Add/RichFragment.java
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$MOnActionPerformListener
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$MRichEditorCallback
  com.doubleclick.marktinhome.ui.MainScreen.Frgments.Add.RichFragment$ShareHTML
-com/doubleclick/marktinhome/ui/MainScreen/Frgments/Profile/menu_profileFragment.java
- com.doubleclick.marktinhome.ui.MainScreen.Frgments.Profile.menu_profileFragment
+com/doubleclick/marktinhome/databinding/FragmentProductBinding.java
+ com.doubleclick.marktinhome.databinding.FragmentProductBinding
 com/doubleclick/RichEditor/sample/fragment/EditTableFragmentDirections.java
  com.doubleclick.RichEditor.sample.fragment.EditTableFragmentDirections
 com/doubleclick/marktinhome/databinding/LayautCartBinding.java
@@ -541,7 +541,8 @@ com/doubleclick/marktinhome/Adapters/BaseMessageAdapter.java
 com/doubleclick/marktinhome/Repository/PostsRepository.java
  com.doubleclick.marktinhome.Repository.PostsRepository
  com.doubleclick.marktinhome.Repository.PostsRepository$1
- com.doubleclick.marktinhome.Repository.PostsRepository$1$1
+ com.doubleclick.marktinhome.Repository.PostsRepository$2
+ com.doubleclick.marktinhome.Repository.PostsRepository$2$1
  com.doubleclick.marktinhome.Repository.PostsRepository$PostInterface
 com/doubleclick/RichEditor/sample/RichEditorActivity.java
  com.doubleclick.RichEditor.sample.RichEditorActivity
@@ -642,8 +643,8 @@ com/doubleclick/marktinhome/Adapters/GroupsAdapter.java
  com.doubleclick.marktinhome.Adapters.GroupsAdapter$3
  com.doubleclick.marktinhome.Adapters.GroupsAdapter$GroupViewHolder
  com.doubleclick.marktinhome.Adapters.GroupsAdapter$GroupViewHolder$1
- com.doubleclick.marktinhome.Adapters.GroupsAdapter$GroupViewHolder$2
  com.doubleclick.marktinhome.Adapters.GroupsAdapter$Loadmore
+ com.doubleclick.marktinhome.Adapters.GroupsAdapter$OptionPost
 com/doubleclick/marktinhome/Model/PostData.java
  com.doubleclick.marktinhome.Model.PostData
 com/doubleclick/marktinhome/Views/carousellayoutmanager/ItemTransformation.java
@@ -1148,5 +1149,5 @@ com/doubleclick/marktinhome/Adapters/KeywordAdapter.java
  com.doubleclick.marktinhome.Adapters.KeywordAdapter$OnDelete
 com/doubleclick/marktinhome/databinding/ActivityAddBinding.java
  com.doubleclick.marktinhome.databinding.ActivityAddBinding
-com/doubleclick/marktinhome/databinding/FragmentProductBinding.java
- com.doubleclick.marktinhome.databinding.FragmentProductBinding
+com/doubleclick/marktinhome/ui/MainScreen/Frgments/Profile/menu_profileFragment.java
+ com.doubleclick.marktinhome.ui.MainScreen.Frgments.Profile.menu_profileFragment

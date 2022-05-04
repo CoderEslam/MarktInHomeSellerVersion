@@ -45,7 +45,6 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.divyanshu.colorseekbar.ColorSeekBar
-                    android:visibility="invisible"
                     android:id="@+id/color_seek_bar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
